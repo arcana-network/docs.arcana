@@ -143,6 +143,9 @@ nav:
       - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
   - Audit Reports:
     - audit/index.md
+  - Integrations:
+    - Shardeum: 
+      - integrations/shardeum/index.md
   - Contact Us: 
     - support.md
 
