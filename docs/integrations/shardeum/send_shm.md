@@ -18,7 +18,7 @@ In this guide, you will learn how applications using Shardeum Network can levera
 Register and configure your application using the Arcana Developer Dashboard. Next, install the `@arcana/auth` package. Integrate the Auth SDK with your dApp. For details, see [Arcana Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md).
 
 {% include "./code-snippets/import_auth.md" %}
-{% include "./code-snippets/new_auth.md" %}
+{% include "./code-snippets/new_auth_shm.md" %}
 {% include "./code-snippets/init_auth.md" %}
 
 Make sure you have already initialized the wallet before invoking any JSON RPC calls for sending SHM tokens using the Arcana wallet.
@@ -35,19 +35,21 @@ Once the application is registered, configured and integrated with the Auth SDK,
 
 The Arcana wallet springs into action when a user initiates a 'send token' transaction through the wallet UI or the application code triggers the blockchain send transaction programmatically. The following figure shows the Arcana wallet screen that shows up allowing users to input the token amount, gas, and recipient details for sending tokens.
 
-<img src="/img/an_wallet_send_inputs.png" width="300"/>
+<img src="/img/an_wallet_send_shm.png"/>
 
-The wallet displays a 'Proceed' button to allow for user confirmation before the send token transaction is executed on the configured blockchain network. <img src="/img/an_wallet_send.png" width="300"/>
+The wallet displays a 'Proceed' button to allow for user confirmation before the send token transaction is executed on the configured blockchain network. 
+
+<img src="/img/an_wallet_send.png" width="300"/>
 
 ## Receive SHM
 
 To receive tokens, the Sharedeum application does not need to call any JSON RPC calls or have any additional code.
 
-User can simply log into the Shardeum application, visit the 'home' screen of the Arcana wallet by clicking on the 'home' icon on the bottom left. Use the 'Receive' button to view the QR code or copy the receiver's account address.  
+User can simply log into the Shardeum application, and visit the 'home' screen of the Arcana wallet by clicking on the 'home' icon on the bottom left. Use the 'Receive' button to view the QR code or copy the receiver's account address.  
 
-<img src="/img/an_wallet_receive.png" width="600"/>
+<img src="/img/an_wallet_receive_shm.png" width="600"/>
 
-Share this QR code or the account address with the sender. The sender can use the Arcana wallet or any other third-party Web3 wallet to send SHM tokens.  User can view the tokens once they are received in the wallet home screen. For more details on wallet usage, see [Arcana wallet User Guide]({{page.meta.arcana.root_rel_path}}/user_guides/wallet_ui/index.md).
+Share this QR code or the account address with the sender. The sender can use the Arcana wallet or any other third-party Web3 wallet to send SHM tokens.  Users can view the tokens once they are received in the wallet home screen. For more details on wallet usage, see [Arcana wallet User Guide]({{page.meta.arcana.root_rel_path}}/user_guides/wallet_ui/index.md).
 
 **That is all!**  :material-party-popper:
 *You are all set to send and receive SHM using the Arcana wallet.*

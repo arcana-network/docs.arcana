@@ -9,6 +9,11 @@ To enable Arcana wallet in a Web3 application that is using Shardeum, you need t
 
 Follow these three steps to enable Arcana wallet in any application:
 
+``` mermaid
+graph LR
+  A[[1. Register & Configure App]] -.-> B(2. Install & Integrate with Auth SDK) -.-> C(3. Use Web3 wallet operations)
+```
+
 ## Step 1
 
 Use Arcana Developer Dashboard to register and configure Web3 applications. Each registered application is assigned a unique **App Address**. Follow the instructions in the [How to Register and Configure Applications Guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md).
@@ -23,4 +28,4 @@ After initializing the `AuthProvider`, use the social authentication or password
 
 For detailed instructions on how to add 'sign transaction' or 'send token' or 'add/switch network' features programmatically in your application, see [Arcana Wallet Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md).
 
-Developers can programmatically configure Shardeum Network in the Arcana wallet and enable authenticated users to send SHM using the Arcana wallet.
+Developers can programmatically [configure Shardeum Network in the Arcana wallet](./add_switch_shm.md) and enable authenticated users to send SHM using the Arcana wallet. [Learn more...](./send_shm.md)
