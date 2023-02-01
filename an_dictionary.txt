@@ -1,4 +1,3 @@
-dummy
 .dmg
 .json
 .md-button

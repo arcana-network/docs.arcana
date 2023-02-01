@@ -251,11 +251,13 @@ You need to kill the running DKG process to stop the validator node.
 
 ### Re-starting the Node
 
-We are working on providing a cleaner way to stop and restart the node.  Until then, before you restart the node, please make sure that the following are taken care of:
+We are working on providing a cleaner way to stop and restart the node.  Until then, follow these steps to cleanly restart your validator node:
 
-* `dkg.sock` file is created in case the node crashed or did not have a clean shutdown. Make sure you remove this file manually before issuing a `dkg start` command.
-* Use the [latest DKG binary](https://github.com/arcana-network/adkg/releases) before you restart the node. 
-      
+1. Stop all nodes.
+2. Replace the DKG binary with the [latest one](https://github.com/arcana-network/adkg/releases).
+3. Remove `dkg.sock` file, if present.
+4. DO NOT REMOVE the directory that your specified for `--data-dir`.
+5. Start the nodes using the `dkg start` command.      
 
 ## Validator Responsibilities
 
