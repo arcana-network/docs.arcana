@@ -12,7 +12,7 @@ Arcana Network protocol is implemented using a bunch of smart contracts. This se
 
 ## Arcana.sol
 
-Arcana.sol contract is the most important core system contract for the Arcana Network protocol. It manages the Arcana Store functionality for providing dApp user data privacy and access control. It also manages the UI configuration that controls the user experience for signing blockchain transactions. 
+Arcana.sol contract is the most important core system contract for the Arcana Network protocol. It manages the UI configuration that controls the user experience for signing blockchain transactions. In future releases, this contract will also manage the decentralized data store functionality for providing dApp user data privacy and access control.
 
 It is a beacon proxy type of upgradable smart contract. Arcana.sol shares some metadata with other contracts via pass-through data mechanisms. No dApp user file data is stored on this smart contract. 
 
@@ -33,3 +33,7 @@ ArcanaBeacon smart contract points to the latest version of Arcana’s core syst
 This UUPS proxy upgradable smart contract is used to manage the meta transactions.  A meta transaction is a regular Ethereum transaction that contains another transaction, the actual transaction.  Meta transactions are a means of delegating payment of gas fees to an external entity such as Arcana Gateway. They are meant to facilitate the onboarding of first-time dApp users. Arcana uses meta-transactions to implement Arcana Auth related data and access operations. The Arcana Gateway module handles all the meta transactions. 
 
 The forwarder smart contract is used in the context of meta transactions, together with an ERC-2771 compatible contract.  It forwards blockchain transaction calls from the Gateway, made on behalf of the dApp user  (proxy blockchain transactions) to the core system contract, Arcana.sol. 
+
+## NodeList.sol
+
+NodeList.sol contract is the key to managing Arcana's DKG protocol. It keeps track of public information related to ADKG nodes and the epoch details. Besides these, it manages the buffer size for controlling the number of ‘pre-generated’ keys and the information regarding whitelisting of validator nodes.

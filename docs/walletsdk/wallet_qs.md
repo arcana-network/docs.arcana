@@ -9,6 +9,10 @@ arcana:
 
 # Quick Start
 
+!!! danger
+  
+      {% include "./text-snippets/warn_latest_sdk_version.md" %}
+
 In this guide, you will learn how you can quickly integrate your application with the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) to:
 
 * [onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md) easily by configuring one or more [authentication mechanisms]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms).
@@ -61,7 +65,7 @@ After installing and integrating with the Auth SDK, application developers can a
 
 1. Use [plug-and-play]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_plugnplay.md) feature to quickly enable the default pop-up user login interface. Developers are not required to build any user login UI. Application users can choose one of the authentication mechanisms configured by developers when the plug and play default UI offered by the Auth SDK shows up in the context of the application.
 
-2. Build custom UI for your application and call Auth SDK functions for enabling [social authentication]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/index.md) and the [passwordless option]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md) for the application users.
+2. Build custom UI for your application and call Auth SDK functions for enabling [social authentication]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/index.md) and the [passwordless login option]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md) for the application users.
 
 ### Sign Blockchain Transactions
 

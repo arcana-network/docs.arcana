@@ -38,12 +38,6 @@ If this is your first visit to the dashboard, create a new entry for your dApp t
 
 Optionally, you can use defaults for other dApp settings or choose to modify them as per your dApp use case. See [how to configure your dApp guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) for details.
 
-!!! caution
-
-      You can also view and modify configuration settings for your dApp later.  However, not all configuration settings can be changed once selected.
-
-      For example, once you choose the `region` where dApp user data is stored in Arcana Store, you cannot change it later due to [security considerations]({{page.meta.arcana.root_rel_path}}/faq/faq_db.md).
-
 !!! note
 
       You can enable more than one authentication mechanism for dApp end users. In addition to passwordless login, you can also allow dApp users to onboard using other [supported authentication mechanisms]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md).

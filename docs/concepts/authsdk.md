@@ -25,7 +25,7 @@ Developers must first use the [Arcana Developer Dashboard]({{page.meta.arcana.ro
 
 **User Authentication**
 
-  * Developers can configure user onboarding options and allow users to log in easily with a familiar Web2 experience of social authentication and passswordless login
+  * Developers can configure user onboarding options and allow users to log in easily with a familiar Web2 experience of social authentication and passwordless login
   * Users can easily onboard Web3 dApps without having to manage keys and secrets 
   * Developers have a choice to enable plug-and-play authentication in the application with a single line of code or build customized UI that calls social and passwordless login functions of the Auth SDK
 

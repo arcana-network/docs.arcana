@@ -58,7 +58,7 @@ Arcana wallet now supports programmatic addition of custom tokens by application
 
 ## Bug Fixes
 
-  - Logout issue related to the passwordless auth has been fixed
+  - Logout issue related to the passwordless authentication has been fixed
 
 !!! tip
 

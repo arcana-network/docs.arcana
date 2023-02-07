@@ -76,20 +76,6 @@ Frequently asked questions about using the [Arcana Developer Dashboard]({{page.m
 
       For more details, see [Arcana wallet visibility modes]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md)
 
-<!---
-
-## Store Settings
-
----
-
-??? an-faq "Why is Storage Region setting disabled?"
-
-      When you register your application in the dashboard, you will be asked to choose a storage region for your application user data. This is a one-time configuration and cannot be changed later. The **Store** section of the dashboard simply displays the storage region that you selected during registration.
-
-      To change the storage region setting for your application, you will need to delete the application from the dashboard and re-register it, selecting a different storage region during the registration process.
-
--->
-
 ## Wallet Settings
 
 ---

@@ -75,6 +75,16 @@ When 'Mainnet' is selected from the dropdown, if there already exists a 'Mainnet
 
 ![Switch to Mainnet Profile](/img/an_db_new_mainnet_config_creation.png)
 
+!!! caution "Copying Testnet Profile"
+
+      If the developer chooses to create the 'Mainnet' profile by copying the 'Testnet' profile, there is additional setup required to enable the configured social providers for Mainnet usage. Once the 'Mainnet' profile is created, visit the dashboard and copy the `Redirect URI' displayed for Mainnet. You need to add this using the social provider's developer console, similar to the one added for Testnet.
+
+      For example, if Google is enabled in Testnet profile, then during configuration of the social provider using the Google Developer console, the Testnet redirect URI was added.  Use the Mainnet profile redirect URI in the dashboard and re-configure the Google OAuth settings. 
+
+      Add the Mainnet redirect URI value for other social providers that are enabled for Testnet profile and are required for Mainnet as well. Figure below shows how the 'redirect URI' is updated for Mainnet for social providers Google and Twitch.
+
+      ![Update redirect URI](/img/an_db_add_mainnte_redirect_uri.png)
+
 After the selection is made and the developer confirms, the 'Mainnet' profile is created and automatically registered with the Arcana Network. 'Mainnet' configuration requires an additional setting which is not there for 'Testnet' configuration profile. This additional setting is **keyspace** and it is used to allow Web3 application users to share the same wallet address across multiple applications that are deployed on the Arcana 'Mainnet'. Refer to the next section for more details.
 
 !!! note "Mainnet App Address"

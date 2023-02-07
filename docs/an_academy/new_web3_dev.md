@@ -35,7 +35,7 @@ Get a firm grip on the topics listed under the prerequisites section. These will
 * How to build a dApp using [CreateReactApp](https://create-react-app.dev/)?
 * How to build a dApp using [Vue](https://vuejs.org/) starter kit?
 * User onboarding and authentication methods:
-   - Using popular Web2 [Social OAuth](https://auth0.com/learn/social-login/) and [Passwordless login](https://auth0.com/passwordless)
+   - Using popular Web2 [Social OAuth](https://auth0.com/learn/social-login/) and [passwordless login](https://auth0.com/passwordless)
    - Difference between Web2 and [Web3 authentication](https://blog.mycrypto.com/sign-in-with-ethereum-an-alternative-to-centralized-identity-providers)
 * Blockchain basics
   - What is a [blockchain](https://ethereum.org/en/developers/docs/intro-to-ethereum/#what-is-a-blockchain)?

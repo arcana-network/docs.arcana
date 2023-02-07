@@ -11,6 +11,10 @@ arcana:
 
 To integrate your application the Auth SDK, ensure the pre-requisites are met and then follow the instructions based on your application type.
 
+!!! danger
+
+      {% include "./text-snippets/warn_latest_sdk_version.md" %}
+
 **Prerequisites**
 
 1. Go to the Arcana Dashboard and [register your application]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md).

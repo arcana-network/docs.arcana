@@ -14,9 +14,9 @@ Start a conversation 💬 and write to us at 📨 [support@arcana.network](mailt
 
 ## Ask the community
 
-| Forum | Telegram | Discord | GitHub | Twitter |
-: :---: | :---: | :---: | :---: | :---: |
-| :fontawesome-regular-message: [Forum](https://forum.arcana.network/)| :fontawesome-brands-telegram: [Telegram](https://t.me/ArcanaNetwork) | :fontawesome-brands-discord: [Discord](https://discord.gg/6g7fQvEpdy) | :fontawesome-brands-github: [GitHub](https://github.com/orgs/arcana-network/discussions) | :fontawesome-brands-twitter: [Twitter](https://twitter.com/arcananetwork) | 
+| GitHub | Discord | Telegram | Twitter |
+| :---: | :---: | :---: | :---: |
+| :fontawesome-brands-github: [GitHub](https://github.com/orgs/arcana-network/discussions) | :fontawesome-brands-discord: [Discord](https://discord.gg/6g7fQvEpdy) | :fontawesome-brands-telegram: [Telegram](https://t.me/ArcanaNetwork) | :fontawesome-brands-twitter: [Twitter](https://twitter.com/arcananetwork) | 
 
 ## Report Bugs
 

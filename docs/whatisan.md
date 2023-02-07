@@ -63,7 +63,7 @@ At Arcana Network, we are continuously working on improving the product and its 
 
 If you find bugs, have questions, or want to share feedback, please contact us through these channels:
 
-- :material-forum: [Developer Forum](https://forum.arcana.network)
+- :material-forum: {% include "./text-snippets/github_discussion_url.md" %}
 - :fontawesome-brands-discord: [Developer Discord](https://discord.gg/6g7fQvEpdy)
 - :fontawesome-solid-users: [Developer Relations](mailto:devrel@arcana.network)
 - :material-checkbox-multiple-marked-circle-outline: [Contact Support Team](mailto:support@arcana.network)

@@ -10,9 +10,17 @@ arcana:
 
 # Introduction
 
+!!! danger inline end
+
+      {% include "./text-snippets/warn_latest_sdk_version.md" %}
+
 {==
 
 Welcome to the **{{ config.site_name }}**! 
+
+==}
+
+{==
 
 *Let's make user onboarding for Web3 apps a breeze!!!*
 
@@ -20,10 +28,12 @@ Welcome to the **{{ config.site_name }}**!
 
 {{config.extra.arcana.product_name}} offers a simple _user onboarding framework_ and a _non-custodial wallet_ solution for Web3 applications or dApps. 
 
-Designed with both developers and Web3 users in mind, it is easy to integrate and customize, bringing to life a sleek and secure user experience for signing blockchain transactions. It consists of two components: 
+It consists of two components: 
 
 * {{config.extra.arcana.sdk_name}}
 * {{config.extra.arcana.dashboard_name}}
+
+Designed with both developers and Web3 users in mind, the Arcana Auth SDK is easy to integrate and customize, bringing to life a sleek and secure user experience for signing blockchain transactions.
 
 ## {{config.extra.arcana.sdk_name}}
 

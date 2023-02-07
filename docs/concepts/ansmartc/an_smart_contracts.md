@@ -15,5 +15,5 @@ Arcana smart contracts are typical blockchain contracts. These are programs that
 
 Arcana smart contracts define rules that are governed and enforced by Arcana Network. Like any other smart contract, these are deployed once and never deleted. All interactions with Arcana smart contracts are irreversible.
 
-Arcana smart Contracts manage the logic and state for implementing user data privacy and access control. It requires that the dApp user data upload all data into the Arcana Store, as per the dApp configurations. 
+Arcana smart Contracts manage the logic and state for implementing Arcana Network Auth and data privacy protocol. 
 

@@ -18,3 +18,4 @@ The following table lists each Arcana contract, its type, category, and purpose.
 | ArcanaBeacon.sol | UUPS Proxy/Core System | Smart contract to manage the per dApp association between the latest *Arcana.sol* main logic contract and the dApp |
 | BeaconProxy.sol | Beacon Proxy/dApp | This is a per dApp smart contract that stores the data related to the program state. It interacts with ArcanaBeacon smart contract to refer to the latest Arcana core logic contract. |
 | Forwarder.sol | UUPS Proxy/Core System | Manages meta transactions for dApp users. Forwards Gateway proxy calls (on behalf of dApp) to *Arcana.sol* main logic contract |
+| NodeList.sol | Core System | Keeps track of ADKG nodes and their epochs.|

@@ -1,6 +1,6 @@
 # How To Guides
 
-How to configure and use the Auth SDK.
+How to configure, integrate and use the Auth SDK.
 
 [Configure dApp Settings :material-tools:](./config_dapp.md){ .md-button }
 

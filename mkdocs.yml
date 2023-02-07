@@ -55,6 +55,7 @@ nav:
         - tutorials/code_samples/index.md
         - Auth Example: https://github.com/arcana-network/auth/tree/main/examples
         - React Example: tutorials/code_samples/react_code_sample.md
+        - NextJS Example: tutorials/code_samples/nextjs_code_sample.md
         - Vue Example: https://github.com/arcana-network/auth-sample-integration-new
       - Videos: 
         - tutorials/videos/index.md
@@ -116,7 +117,6 @@ nav:
       - Usage Flows: 
         - user_flows/index.md
         - User Auth and DKG: user_flows/user_auth_and_dkg.md
-        - Encryption and KMS: user_flows/encryption_and_kms.md
       - New to Web3:  an_academy/new_web3_dev.md
   - FAQ:
     - faq/index.md
@@ -181,7 +181,7 @@ extra:
             Thanks for your feedback! 
 
 copyright: Copyright &copy; 2022 - 2023 Arcana Network
-repo_url: https://github.com/arcana-network
+repo_url: https://github.com/arcana-network/
 edit_uri: ""
 
 theme:
@@ -192,7 +192,9 @@ theme:
   favicon: img/an_favicon.svg
   custom_dir: docs/overrides
   features: 
+  # - announce.dismiss
     - header.autohide 
+  #  - navigation.path  //Sponsors only
     - navigation.instant
     - navigation.top
     - navigation.tracking

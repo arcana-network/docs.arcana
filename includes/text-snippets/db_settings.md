@@ -27,7 +27,7 @@ Use defaults or provide inputs for the required settings as per your application
     
           For example, if you wish to enable Google and Discord login options for your application, make sure you provide the requisite inputs required for these providers in the settings below.  You can leave other provider entries as blank.
 
-          By default, password-free login is always enabled in the Auth SDK.
+          By default, passwordless login is always enabled in the Auth SDK.
 
     **Social Auth Settings:**
 

@@ -6,4 +6,6 @@ Code samples to demonstrate how to integrate your application with the {{ arcana
 
 [React Example :fontawesome-brands-react:](react_code_sample.md){ .md-button }
 
+[NextJS Example :simple-nextdotjs:](nextjs_code_sample.md){ .md-button }
+
 [Vue Example :fontawesome-brands-vuejs:](https://github.com/arcana-network/auth-sample-integration-new){ .md-button }
