@@ -61,7 +61,7 @@ These tab contain interfaces to perform the following Web3 wallet operations:
 
 ### Sign Transaction
 
-A blockchain transaction sign request can be generated either by the dApp or via a user action. The **Sign Message** wallet screen shows the details of the request. For example, the following figure shows **Personal Sign** request. The user can scroll down and see details of the request and select one of the options to **Reject** or **Approve** the transaction.
+A blockchain transaction sign request can be generated either by the dApp or via user action. The **Sign Message** wallet screen shows the details of the request. For example, the following figure shows **Personal Sign** request. The user can scroll down and see details of the request and select one of the options to **Reject** or **Approve** the transaction.
 
 <img src="/img/an_wallet_personalsign.png" width="350"/>
 
@@ -96,6 +96,44 @@ Once you click **Save**, the newly added network is automatically selected as th
 Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> icon to bring up the wallet token asset tab. Use the network drop-down list to switch to a different network from the list of configured networks.
 
 <img src="/img/an_wallet_switch_ntwk.png" width="200"/>
+
+### Fiat On Ramp
+
+Arcana wallet supports fiat on-ramping that allows wallet users to buy cryptocurrency (native and ERC20 tokens) easily from any of the supported providers:
+
+{% include "./text-snippets/fiat_on_ramp_providers.md" %}
+
+Users can purchase the specific token required for the app with either fiat or another cryptocurrency. Also they can purchase the native cryptocurrency with fiat to pay for transaction or gas fees. After a successful purchase via a third-party fiat on-ramp provider, the purchased tokens or currency is automatically deposited in the Arcana wallet address and displayed in the balance.
+
+To buy cryptocurrency, click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> icon and refer to the token assets wallet tab. Select a chain from the drop-down list. This choice will govern what cryptocurrencies and tokens are available to purchase subject to local country-specific rules.
+
+Click **Buy** to initiate the fiat on-ramp process for your Arcana wallet. 
+
+<img src="/img/an_wallet_onramp_buy.png" width="30%"/>
+
+You will see the list of available fiat on-ramp providers:
+
+<img src="/img/an_wallet_onramp_providers.png" width="30%"/>
+
+Pick up one of the providers and click **Proceed**. This will bring up the provider-specific user interface. Each provider may ask the user to follow country-specific procedures for KYC and list available cryptocurrencies for the selected chain. Also, the basic minimum purchase amount for a country or cryptocurrency may vary across countries and providers.
+
+For example, Transak requires each user to complete KYC by submitting country-specific identification documents. Once the verification is complete only then the user can proceed to purchase the cryptocurrency with Transak.  This verification is a one-time thing and subsequent purchases will not require this additional step. The figure below shows an example of a purchase transaction using Transak.
+
+<img src="/img/an_wallet_fiat_transak.png" width="70%"/>
+
+Similarly, if the fiat on-ramp provider Ramp Network is chosen, you will see the Ramp UI displaying all the available currencies for the selected chain in the Arcana wallet. For the first purchase, you may be required to do KYC formalities as well.
+
+<img src="/img/an_wallet_fiat_rampnetwork.png" width="70%"/>
+
+If you are new to Transak or Ramp, see [Transak User Guide](https://support.transak.com/hc/en-us/articles/360020615378-Buying-cryptocurrency-for-beginners) and [Ramp User Guide](https://support.ramp.network/en/articles/18887-how-to-use-ramp) for step by step details on buying crypto assets.
+
+For details on what assets and cryptocurrency, countries are supported by these providers refer to [Transak coverage](https://docs.transak.com/docs/fiat-currency-country-payment-method-coverage-plus-fees-and-limits) and [Ramp Network coverage](https://support.ramp.network/en/articles/432-what-cryptoassets-does-ramp-support). 
+
+!!! caution "Limitations"
+
+    1. Purchased token assets will not be automatically updated in the Arcana wallet assets tab. Users will need to manually add custom tokens that are purchased via on-ramp providers as these providers do not provide the contract address of the purchased token.
+
+    2. You will not see any notifications for a successful purchase in the activity tab of the Arcana wallet. There is no uniform standard whereby on-ramp providers share this information or 'event' regarding purchase. We may add it in future releases.
 
 ### Manage Token Assets
 
@@ -170,7 +208,7 @@ Once all pending transactions are processed, you will not see the red dot. The A
 <img src="/img/an_wallet_nopending.png" alt="No pending request" width="200" />>
 
 <details markdown><summary markdown>Notification Example</summary><p><h4>Pending Personal Sign</h4>
-  Once the user is logged in using one of the available operations, the application can request the user to sign a personal signature request and authorize blockchain connectivity for the user before issuing any other blockchain transaction. Such pending user requests are highlighted when the wallet is minimized so that user is notified of a pending request.
+  Once the user is logged in using one of the available operations, the application can request the user to sign a personal signature request and authorize blockchain connectivity for the user before issuing any other blockchain transaction. Such pending user requests are highlighted when the wallet is minimized so that the user is notified of a pending request.
 
   ![dApp wallet integration example](/img/an_wallet_min_demo_app.png)
 
