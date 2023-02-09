@@ -130,7 +130,11 @@ If you are new to Transak or Ramp, see [Transak User Guide](https://support.tran
 
 For details on what assets and cryptocurrency, countries are supported by these providers refer to [Transak coverage](https://docs.transak.com/docs/fiat-currency-country-payment-method-coverage-plus-fees-and-limits) and [Ramp Network coverage](https://support.ramp.network/en/articles/432-what-cryptoassets-does-ramp-support). 
 
+<<<<<<< HEAD
 !!! caution "Current Limitations"
+=======
+!!! caution "Limitations"
+>>>>>>> 85b6a0b (Fix: #AR-5342 on-ramp docs)
 
     1. Purchased token assets will not be automatically updated in the Arcana wallet assets tab. Users will need to manually add custom tokens that are purchased via on-ramp providers as these providers do not provide the contract address of the purchased token.
 
