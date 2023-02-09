@@ -1,1 +1,1 @@
-<span><a href="https://authsdk-ref-guide.netlify.app/">Auth SDK Reference Guide</a></span>
+<span><a href="https://authsdk-ref-guide.netlify.app/" target="_blank">Auth SDK Reference Guide</a></span>
