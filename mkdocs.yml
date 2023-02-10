@@ -159,7 +159,7 @@ extra:
     - icon: fontawesome/brands/telegram
       link: https://t.me/ArcanaNetwork
     - icon: fontawesome/brands/discord
-      link: https://discord.com/invite/w6ej4FtqYS
+      link: https://discord.gg/9vrxze3JRR
     - icon: material/chat
       link: https://forum.arcana.network/
   generator: false
@@ -192,7 +192,7 @@ theme:
   favicon: img/an_favicon.svg
   custom_dir: docs/overrides
   features: 
-  # - announce.dismiss
+    - announce.dismiss
     - header.autohide 
   #  - navigation.path  //Sponsors only
     - navigation.instant
