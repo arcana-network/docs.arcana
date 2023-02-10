@@ -97,7 +97,7 @@ Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"
 
 <img src="/img/an_wallet_switch_ntwk.png" width="200"/>
 
-### Fiat On Ramp
+### Fiat On-ramp
 
 Arcana wallet supports fiat on-ramping that allows wallet users to buy cryptocurrency (native and ERC20 tokens) easily from any of the supported providers:
 
