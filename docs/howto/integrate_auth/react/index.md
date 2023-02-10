@@ -9,8 +9,10 @@ arcana:
 
 # React/NextJS Apps
 
-The Arcana Auth SDK can be integrated with React/NextJS applications as well as those that use wallet connector frameworks such as [wagmi]() and [RainbowKit]():
+For detailed instructions, select **one of the options below** as per your application type.
 
-[React/NextJS  :fontawesome-brands-react: :simple-nextdotjs:]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md){ .md-button }
+[React/NextJS  :fontawesome-brands-react: :simple-nextdotjs:]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md){ .md-button } 
 
-[Using Wallet Connectors :material-card-account-mail:]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/react/connectors/index.md){ .md-button }
+[Wagmi Connector :material-card-account-mail:]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wagmi.md){ .md-button } 
+
+[RainbowKit Connector :material-card-account-mail:]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth//integrate_rainbow.md){ .md-button }

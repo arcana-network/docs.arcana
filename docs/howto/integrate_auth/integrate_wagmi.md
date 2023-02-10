@@ -11,6 +11,10 @@ arcana:
 
 In this tutorial, you will learn how to integrate a Web3 application that uses [wagmi](https://wagmi.sh) wallet connector to plug in the [Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).  With wagmi, Web3 developers can allow their users to easily switch between multiple wallets within a single application. Arcana offers a custom wagmi connector to enable use of the Arcana wallet alongside built-in options like MetaMask, WalletConnect, and Coinbase Wallet.
 
+!!! caution "No need to install Auth SDK"
+
+      If you are using the Auth Wagmi Connector then you simply follow the instructions below. This connector includes the Auth SDK. You do not need to install Arcana Auth SDK separately. No need to create a provider. In App.tsx, use wagmi functions.
+
 ## Prerequisites
 
 * Developers need to first log into the Arcana Developer Dashboard: {% include "./text-snippets/db_portal_url.md" %} to register and configure application settings for onboarding users before they can use the `ArcanaConnector` for Wagmi and enable Arcana wallet in their application.
@@ -57,6 +61,10 @@ Now you can provide the newly instantiated ArcanaConnector to the `createClient`
 {% include "./code-snippets/auth_wagmi_use.md" %}
 
 That is all! :material-party-popper:
+
+!!! tip "Wagmi Integration Example"
+
+      Here is the [wagmi integration example source code](https://github.com/arcana-network/auth-wagmi-example) for your reference.
 
 You have successfully integrated your dApp with the Arcana Wagmi Connector. Users can choose and use Arcana wallet or one of the built-in wallet connectors in Wagmi and sign blockchain transactions.
 

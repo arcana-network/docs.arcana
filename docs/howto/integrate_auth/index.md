@@ -26,7 +26,7 @@ To integrate your application the Auth SDK, ensure the pre-requisites are met an
 * If your application is built using React framework, you need to install the Auth SDK and the Auth React library and then integrate with the Auth React component, a wrapper around the Auth SDK. 
 * If your application uses Wagmi or RainbowKit, you can use Auth Wagmi library and create an `ArcanaConnector` to enable user onboarding and signing of blockchain transactions using the Arcana wallet.
 
-For detailed instructions, select the application type below:
+For detailed step-by-step instructions, select **one of the options below** as per your application type.
 
 [Vanilla JS Apps :material-language-javascript:](./integrate_wallet.md){ .md-button }
 

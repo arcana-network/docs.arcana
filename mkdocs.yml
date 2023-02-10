@@ -24,10 +24,8 @@ nav:
         - React Apps: 
           - howto/integrate_auth/react/index.md
           - Simple React/NextJS Apps: howto/integrate_auth/integrate_wallet_react.md
-          - Using Wallet Connectors: 
-            - howto/integrate_auth/react/connectors/index.md
-            - Wagmi: howto/integrate_auth/integrate_wagmi.md
-            - RainbowKit: howto/integrate_auth/integrate_rainbow.md
+          - Wagmi: howto/integrate_auth/integrate_wagmi.md
+          - RainbowKit: howto/integrate_auth/integrate_rainbow.md
         - Vue dApp: howto/integrate_auth/integrate_wallet_vue.md
       - Onboard Users: 
         - howto/onboard_users/index.md

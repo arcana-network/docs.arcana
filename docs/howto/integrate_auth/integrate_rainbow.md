@@ -11,9 +11,13 @@ arcana:
 
 In this tutorial, you will learn how to integrate a Web3 application that uses [RainbowKit](https://www.rainbowkit.com/) with [Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md). RainbowKit works with [wagmi](https://wagmi.sh/) that allows Web3 application users to easily switch between multiple wallets within a single application. Arcana offers a custom wagmi connector that can be used to enable Arcana wallet for applications using RainbowKit.
 
+!!! caution "No need to install Auth SDK"
+
+      If you are using the Auth wagmi Connector for RainbowKit then you simply follow the instructions below. This connector includes the Auth SDK. You do not need to install Arcana Auth SDK separately. No need to create a provider.
+
 ## Prerequisites
 
-* Developers need to log into the Arcana Developer Dashboard: {% include "./text-snippets/db_portal_url.md" %} to register and configure application settings for using the Wagmi `ArcanaConnector`.
+* Developers need to log into the Arcana Developer Dashboard: {% include "./text-snippets/db_portal_url.md" %} to register and configure application settings for using the wagmi `ArcanaConnector`.
 
 * Select the **Auth** tab in the dashboard and choose from a list of supported authentication mechanisms to customize the user onboarding experience. 
 
@@ -59,7 +63,7 @@ Pass the wagmi client as a parameter to `WagmiConfig` component before plugging 
 
 That is all! :material-party-popper:
 
-You have successfully integrated your dApp with the Arcana Wagmi Connector. Users can choose and use Arcana wallet or one of the built-in wallet connectors in Wagmi and sign blockchain transactions.
+You have successfully integrated your dApp with the Arcana wagmi Connector. Users can choose and use Arcana wallet or one of the built-in wallet connectors in wagmi and sign blockchain transactions.
 
 ## What's Next?
 
