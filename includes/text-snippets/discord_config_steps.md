@@ -36,6 +36,6 @@ Revisit the Arcana Developer Dashboard portal. Click on your app entry and visit
 
 Save the settings. Arcana Network assigns an **App Address** to every registered and configured dApp. If you plan to integrate with the Arcana SDKs, you need to save this **App Address**. 
 
-![App Address](/img/an_db_appid.png)
+![App Address](/img/an_db_app_address.png)
 
 *You are all set with Discord Setup. Integrate Web3 application with the Arcana Auth SDK and call social login function when the user chooses to log in.*

@@ -45,7 +45,7 @@ This guide will walk you through the various configuration options available on 
 
 !!! note App Address
 
-      The "App Address" assigned to your application can be found on the top right of the dashboard. ![App Address](/img/an_db_appid.png)
+      The "App Address" assigned to your application can be found on the top right of the dashboard. ![App Address](/img/an_db_app_address_.png)
 
 ### Manage Configurations
 

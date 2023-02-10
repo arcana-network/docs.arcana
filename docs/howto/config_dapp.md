@@ -47,7 +47,7 @@ After registering and configuring the application, install the Auth SDK and then
 
     You can copy the assigned **App Address** once an application is registered and configured using the dashboard. It will be required when you integrate the application with the Auth SDK.
 
-    ![App Address](/img/an_db_appid.png)
+    ![App Address](/img/an_db_app_address.png)
 
 You can reconfigure application settings for Auth SDK usage later anytime by visiting the Arcana Developer Dashboard. Simply log in, select your app entry and double click on it to view the **Configure** screen.
 

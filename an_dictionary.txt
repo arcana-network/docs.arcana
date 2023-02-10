@@ -445,7 +445,6 @@ ansmartctypes
 ansmartcupgrade
 appAddress
 appAddress=Addr1
-appId
 appMode
 arcana
 arcana-wallet
