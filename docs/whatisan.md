@@ -23,10 +23,6 @@ Arcana Network offering consists of two key components:
 
 [Get Started :fontawesome-solid-paper-plane:]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md){ .md-button }
 
-!!! caution
-
-      Arcana Auth SDK and the Developer Dashboard are 🚫 **not recommended for production** usage.
-
 ## Platform Components
 
 === "Dashboard"

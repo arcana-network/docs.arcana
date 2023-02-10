@@ -62,7 +62,7 @@ This will bring up the following wallet UI after logging in using one of the ena
 
 Do not jump into installing, upgrading the Auth SDK in your sources and running your app. That will not suffice. Follow these instructions to properly migrate your app to Arcana Auth SDK v 1.0.0.
 
-1. If you are using v0.3.0, you would already have created a 'Testnet' configuration profile for your app. Use the Arcana Developer Dashboard to create a Mainnet profile. See instructions [here]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#example-new-mainnet-authprovider). Once you have the 'Mainnet' configuration profile ready, copy the new **App Address** assigned to the Mainnet configuration profile.
+1. If you are using v0.3.0, you would already have created a 'Testnet' configuration profile for your app. Use the Arcana Developer Dashboard to create a 'Mainnet' profile. See instructions [here]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#example-new-mainnet-authprovider). Once you have the 'Mainnet' configuration profile ready, copy the new **App Address** assigned to the 'Mainnet' configuration profile.
   
 2. At the time of 'Mainnet' profile creation, you need to specify whether you would like to use the default **App-specific Keys** or use the **Global Keys** feature for your app. To enable global keys feature, developers must submit a verification form and get approval. Wait to onboard users until your receive a response. Otherwise the wallet address assigned to your app users may change after **Global Keys** feature takes effect.
 
@@ -70,7 +70,7 @@ Do not jump into installing, upgrading the Auth SDK in your sources and running 
 
 4. You must update the OAuth redirect URI values for all the social providers configured for your 'Mainnet' profile. Use the respective social provider console. Simply copy the new **redirect URI** value from the application's 'Mainnet' configuration settings dashboard page and add it to the list of redirect URIs setup in the OAuth configuration settings for your provider.  You would have earlier added the redirect URI for 'Testnet' configuration profile, now simply update 'Mainnet' URI too. That's all.
 
-5. Install and upgrade the Auth SDK to v1.0.0. Then update your integration code where you instantiate the `AuthProvider`. Make sure you update the 'Mainnet' **App address**. By default, the `network` parameter is set to ‘mainnet’. If you'd like to first try out the new version with 'Testnet' **make sure** you set the `network` parameter to 'testnet'. 
+5. Install and upgrade the Auth SDK to v1.0.0. Then update your integration code where you instantiate the `AuthProvider`. Make sure you update the 'Mainnet' **App address**. By default, the `network` parameter is set to ‘testnet’. If you'd like to switch your app to using the Arcana Mainnet then **make sure** you set the `network` parameter to 'mainnet'. 
 
 That is all, you are good to go and start using the new, improved Arcana Auth SDK v1.0.0.
 
