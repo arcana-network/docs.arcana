@@ -161,7 +161,9 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/9vrxze3JRR
     - icon: material/chat
-      link: https://forum.arcana.network/
+      link: https://github.com/orgs/arcana-network/discussions
+    #- icon: material/chat
+    #  link: https://forum.arcana.network/
   generator: false
   analytics:
     provider: google
