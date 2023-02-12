@@ -253,7 +253,7 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 
 If you are using an older version of Arcana Auth SDK, simply upgrading the package to v1.0.0 is not sufficient. Your older app configuration settings will no longer work and if you bring up your wallet it will not show any of the configured social providers. 
 
-Please follow the instructions in the [Migration to v1.0.0 Guide]({{page.meta.arcana.root_rel_path}}/migration/main_auth_v1.0.0_migration.md) before integrating the latest Auth SDK.
+Please follow the instructions in the [Migration to v1.0.0 Guide]({{page.meta.arcana.root_rel_path}}/migration/main_auth_v1.0.1_migration.md) before integrating the latest Auth SDK.
 
 If you continue to the issue after migrating properly, please double check the **App Address** that is specified at the time of instantiating the `AuthProvider`.  If you are using v1.0.0, and do not explicitly specify any `network` value while instantiating the `AuthProvider`, then by default 'Mainnet' is selected. In this case, make sure you provide the **App Address** assigned to your app's 'Mainnet' configuration profile. If you specify wrong **App Address** then you will not see the social providers when the wallet UI comes up after login.
 
