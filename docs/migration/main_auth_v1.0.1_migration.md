@@ -1,6 +1,6 @@
 ---
-slug: /migration_to_beta_auth_0_3_0
-id: idmigrationtobetaauth030
+slug: /migration_to_main_auth_1_0_1
+id: idmigrationtomainauth101
 sidebar_custom_props:
   cardIcon: 📂
 arcana:
@@ -36,7 +36,7 @@ The following section lists changes between v0.3.0 and v{% include "./text-snipp
 
 * If a developer wishes to use 'Mainnet' for the app, they need to ensure that the correct configuration profile is selected in the Developer Dashboard. In addition, ensure that during application integration, the new **App Address** assigned to the 'Mainnet' profile is used to instantiate the `AuthProvider`. 
 
-* If the developer does not specify the `network` parameter while instantiating the `AuthProvider` then by default 'Mainnet' is selected. If you plan to run the app on 'Testnet' then make sure to specify 'network' as 'testnet'. See {% include "./text-snippets/authsdkref_url.md" %} for details.
+* If the developer does not specify the `network` parameter while instantiating the `AuthProvider` then by default 'testnet' is selected. If you plan to run the app on 'Mainnet' then make sure to specify `network` as 'mainnet'. See {% include "./text-snippets/authsdkref_url.md" %} for details.
 
 #### Example: New Testnet `AuthProvider` 
 
@@ -58,11 +58,15 @@ This will bring up the following wallet UI after logging in using one of the ena
       
 <img alt="Mainnet Wallet" src="/img/an_migration_mainnet_wallet.png" width="40%"/>
 
-## How to Migrate to v1.0.0?
+## How to Migrate to v1.0.1?
 
-Do not jump into installing, upgrading the Auth SDK in your sources and running your app. That will not suffice. Follow these instructions to properly migrate your app to Arcana Auth SDK v 1.0.0.
+Do not jump into installing, upgrading the Auth SDK in your sources and running your app. 
 
-1. If you are using v0.3.0, you would already have created a 'Testnet' configuration profile for your app. Use the Arcana Developer Dashboard to create a 'Mainnet' profile. See instructions [here]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#example-new-mainnet-authprovider). Once you have the 'Mainnet' configuration profile ready, copy the new **App Address** assigned to the 'Mainnet' configuration profile.
+That will not suffice. You need to re-create your app configuration profile using the Arcana Dashboard and then integrate your app with the latest Auth SDK for successfully onboarding users and using Arcana wallet.
+
+Use the following instructions to properly migrate your app to Arcana Auth SDK v 1.0.1.
+
+1. If you are using v0.3.0, you would already have created a 'Testnet' configuration profile for your app. Due to breaking changes in the latest Auth SDK release, you will be required to re-register your app using the Arcana Dashboard. When you create a new profile for the app, by default, it is assigned as 'Testnet' configuration. To create a 'Mainnet' profile, see instructions [here]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#example-new-mainnet-authprovider). Once you have the 'Mainnet' configuration profile ready, copy the new **App Address** assigned to the 'Mainnet' configuration profile. This will be required during Auth SDK integration later.
   
 2. At the time of 'Mainnet' profile creation, you need to specify whether you would like to use the default **App-specific Keys** or use the **Global Keys** feature for your app. To enable global keys feature, developers must submit a verification form and get approval. Wait to onboard users until your receive a response. Otherwise the wallet address assigned to your app users may change after **Global Keys** feature takes effect.
 
@@ -70,9 +74,11 @@ Do not jump into installing, upgrading the Auth SDK in your sources and running 
 
 4. You must update the OAuth redirect URI values for all the social providers configured for your 'Mainnet' profile. Use the respective social provider console. Simply copy the new **redirect URI** value from the application's 'Mainnet' configuration settings dashboard page and add it to the list of redirect URIs setup in the OAuth configuration settings for your provider.  You would have earlier added the redirect URI for 'Testnet' configuration profile, now simply update 'Mainnet' URI too. That's all.
 
-5. Install and upgrade the Auth SDK to v1.0.0. Then update your integration code where you instantiate the `AuthProvider`. Make sure you update the 'Mainnet' **App address**. By default, the `network` parameter is set to ‘testnet’. If you'd like to switch your app to using the Arcana Mainnet then **make sure** you set the `network` parameter to 'mainnet'. 
+5. Install and upgrade the Auth SDK to v{% include "./text-snippets/latest_auth_sdk.md" %}. Integrate the Auth SDK and initialize the `AuthProvider` by specifying the **App Address**. By default, the `network` parameter is set to ‘testnet’. If you have configured the 'Mainnet' profile using the dashboard and would like to switch your app to using the Arcana Mainnet, then make sure during Auth SDK integration you have provided the correct **App Address** corresponding to the 'Mainnet' configuration in the dashboard while instantiating the `AuthProvider`. Also, you need to specify the `network` parameter as 'mainnet' in the `AuthProvider` constructor. Unless both these parameters correspond to the profile selected in the dashboard, you will not be able to successfully onboard users or enable them to use Arcana wallet to sign blockchain transactions.
 
-That is all, you are good to go and start using the new, improved Arcana Auth SDK v1.0.0.
+6. If you do not want to run your app on the Arcana Mainnet to begin with, you can continue using Arcana Testnet.  Simply skip creation of 'Mainnet' profile. Use the **App Address** assigned to 'Testnet' configuration in the dashboard and create a new `AuthProvider` by specifying 'Testnet' app address.  By default `network` is already set to 'testnet'. You should be able to successfully integrate with the Auth SDK, onboard users and enable them to use Arcana wallet.
+
+That is all, you are good to go and start using the latest Auth SDK.
 
 ## What's New?
 

@@ -11,9 +11,9 @@ arcana:
 
 {==
 
-**Version: v{% include "./text-snippets/latest_auth_sdk.md" %}**
+**Version: v1.0.0**
 
-**Release Date: February 2022**
+**Release Date: February 1st, 2022**
 
 ==}
 
