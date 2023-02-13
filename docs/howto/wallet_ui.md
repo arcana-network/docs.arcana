@@ -15,7 +15,7 @@ This guide is intended for Web3 application users. Developers who wish to progra
 
       To enable Arcana wallet in the context of a Web3 application, you need to first [register your Web3 application]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) and [configure user authentication mechanisms]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md) using the Arcana Dashboard. 
       
-      After that you must install the `@arcana/auth` package and follow the [instructions to integrate your application]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md).
+      After that, you must install the `@arcana/auth` package and follow the [instructions to integrate your application]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md).
 
       For more details, see [Arcana Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md), [Developer Guide for user onboarding]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md) and the [Developer Guide for enabling wallet operations]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md).
 
@@ -36,7 +36,7 @@ Arcana wallet displays the following tabs located at the bottom of the wallet sc
 * <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> User Profile Tab
 * <img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/> Notification Tab
 
-These tab contain interfaces to perform the following Web3 wallet operations:
+These tabs contain interfaces to perform the following Web3 wallet operations:
 
 * Sign (approve, reject) blockchain transactions
 * Add and configure network settings
@@ -116,11 +116,11 @@ You will see the list of available fiat on-ramp providers:
 
 Pick up one of the providers and click **Proceed**. This will bring up the provider-specific user interface. Each provider may ask the user to follow country-specific procedures for KYC and list available cryptocurrencies for the selected chain. Also, the basic minimum purchase amount for a country or cryptocurrency may vary across countries and providers.
 
-For example, Transak requires each user to complete KYC by submitting country-specific identification documents. Once the verification is complete only then the user can proceed to purchase the cryptocurrency with Transak.  This verification is a one-time thing and subsequent purchases will not require this additional step. The figure below shows an example of a purchase transaction using Transak.
+For example, Transak requires each user to complete KYC by submitting country-specific identification documents. Once the verification is complete, the user can purchase the cryptocurrency with Transak.  This verification is a one-time thing and subsequent purchases will not require this additional step. The figure below shows an example of a purchase transaction using Transak.
 
 <img src="/img/an_wallet_fiat_transak.png" width="70%"/>
 
-Similarly, if the fiat on-ramp provider Ramp Network is chosen, you will see the Ramp UI displaying all the available currencies for the selected chain in the Arcana wallet. For the first purchase, you may be required to do KYC formalities as well.
+Similarly, if the fiat on-ramp provider Ramp Network is chosen, you will see the Ramp UI displaying all the available currencies for the selected chain in the Arcana wallet. For the first purchase, you may also be required to do KYC formalities.
 
 <img src="/img/an_wallet_fiat_rampnetwork.png" width="70%"/>
 
