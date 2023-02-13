@@ -48,6 +48,7 @@ These tab contain interfaces to perform the following Web3 wallet operations:
   - List token assets
   - Add custom tokens (ERC-20)
   - Send and receive tokens 
+  - Buy cryptocurrency (native, ERC-20)
 * Manage NFTs
   - List NFT assets
   - View NFT details
