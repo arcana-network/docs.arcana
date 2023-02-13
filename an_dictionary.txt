@@ -712,6 +712,7 @@ idmigrationtobeta1_2
 idmigrationtobeta1_5
 idmigrationtobeta2
 idmigrationtobetaauth030
+idmigrationtomainauth101
 idmigrationtomainnet
 idmintpvtnft
 idnewdevweb3
@@ -739,6 +740,7 @@ idrnbeta1_5
 idrnbetaauth030
 idrnmainauth030
 idrnmainauthv100
+idrnmainauthv101
 idrnmainnet
 idsample_int_wallet
 idsetupauthsdk
@@ -830,6 +832,7 @@ migration_to_beta1_2
 migration_to_beta1_5
 migration_to_beta2
 migration_to_beta_auth_0_3_0
+migration_to_main_auth_1_0_1
 migration_to_mainnet
 minHeadingLevel
 mintpvtnft
@@ -890,6 +893,7 @@ rn_beta_2
 rn_beta_auth_0_3_0
 rn_main_auth_0_3_0
 rn_main_auth_v1_0_0
+rn_main_auth_v1_0_1
 rn_mainnet
 rnbeta1_1
 rpc

@@ -33,7 +33,12 @@ It consists of two components:
 * {{config.extra.arcana.sdk_name}}
 * {{config.extra.arcana.dashboard_name}}
 
-Designed with both developers and Web3 users in mind, the Arcana Auth SDK is easy to integrate and customize, bringing to life a sleek and secure user experience for signing blockchain transactions.
+Designed with both developers and Web3 users in mind, the {{config.extra.arcana.sdk_name}} is easy to integrate and customize, bringing to life a sleek and secure user experience for signing blockchain transactions.
+
+## Usage
+
+To use the {{config.extra.arcana.sdk_name}}, the developers must first configure user onboarding and wallet usage settings through the dashboard and obtain a unique application identifier called **App Address**. Then install the {{config.extra.arcana.sdk_name}} and integrate your app by instantiating the `AuthProvider` using this **App Address**. Initialize the `AuthProvider` before calling any SDK functions. See [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) for details.
+
 
 ## {{config.extra.arcana.sdk_name}}
 
@@ -43,7 +48,7 @@ Designed with both developers and Web3 users in mind, the Arcana Auth SDK is eas
  or wallet connectors such as _Wagmi_ and _Rainbowkit_.
  --->
 
-Powered by cutting-edge cryptographic algorithms, the Auth SDK has built-in _decentralized key generation_ that ensures no single entity owns or manages the user's keys. [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md)
+Powered by cutting-edge cryptographic algorithms, the {{config.extra.arcana.sdk_name}} has built-in _decentralized key generation_ that ensures no single entity owns or manages the user's keys. [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md)
 
 ## {{config.extra.arcana.dashboard_name}}
 

@@ -21,7 +21,7 @@ arcana:
 
 In the previous release, v1.0.0 of the Auth SDK, the default setting for `network` parameter (optional) in the `AuthProvider` constructor was 'mainnet'. But the Dashboard default setting was configured for 'testnet'. This was creating initialization issue whereby the dashboard configuration setting for Auth SDK usage was not corresponding to the default usage setting in the Auth SDK.  As a result, some of the new developers were facing issues in integrating with the social providers as the wallet UI would fail to display the correct configuration settings for onboarding the user.
 
-As a workaround, the developer had to mandatorily override the optional parameter `network` as 'testnet' to ensure correct functioning of the authentication feature.
+As a workaround, the developer had to override the optional parameter `network` as 'testnet' to ensure correct functioning of the authentication feature.
 
 The latest release v{% include "./text-snippets/latest_auth_sdk.md" %} of the Auth SDK fixes this issue.  Now, by default, the Auth SDK sets `network` parameter (optional) in the `AuthProvider` constructor as 'testnet'. If the user does not specify this parameter during `AuthProvider` creation, 'testnet' is selected.  This setting corresponds to the default dashboard configuration setting 'testnet' and the social authentication works as configured.
 

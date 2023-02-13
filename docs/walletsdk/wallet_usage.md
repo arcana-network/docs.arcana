@@ -8,9 +8,9 @@
 2. [Quick Start with `ethers.js`](#quick-start-with-ethersjs)
 3. [Quick Start with `web3.js`](#quick-start-with-web3js)
 4. [Usage](#usage)
-   - [AuthProvider](#authprovider)
-   - [Auth APIs](#auth-apis)
-   - [Arcana Wallet Method](#arcana-wallet-methods)
+    - [AuthProvider](#authprovider)
+    - [Auth APIs](#auth-apis)
+    - [Arcana Wallet Method](#arcana-wallet-methods)
 
 ---
 
@@ -111,6 +111,7 @@ const auth = new AuthProvider(`${appAddress}`, {
   position: 'left',
   theme: 'light',
   alwaysVisible: false,
+  network: 'mainnet', // network can be testnet or mainnet - defaults to testnet
   chainConfig: {
     chainId: CHAIN.POLYGON_MAINNET,
     rpcUrl: '',
