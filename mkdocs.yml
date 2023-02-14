@@ -11,8 +11,9 @@ nav:
   - How-To Guides:
       - howto/index.md
       - Configure dApp Settings: howto/config_dapp.md
-      - Configure Auth Usage:
+      - Configure Auth Usage: 
         - howto/config_social_providers.md
+        - Cognito Setup: howto/config_social_login/cognito_oauth.md
         - Discord Setup: howto/config_social_login/discord_oauth.md
         - GitHub Setup: howto/config_social_login/github_oauth.md
         - Google Setup: howto/config_social_login/google_oauth.md
@@ -32,6 +33,7 @@ nav:
         - Plug and Play Auth: howto/onboard_users/wallet_plugnplay.md
         - Build Social Login: 
           - howto/onboard_users/build_social/index.md
+          - Cognito: howto/onboard_users/build_social/wallet_cognito_oauth.md
           - Discord: howto/onboard_users/build_social/wallet_discord_oauth.md
           - GitHub: howto/onboard_users/build_social/wallet_github_oauth.md
           - Google: howto/onboard_users/build_social/wallet_google_oauth.md

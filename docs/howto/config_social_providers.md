@@ -27,6 +27,8 @@ Developers can enable one or more social authentication providers in Web3 applic
 
 Setting up OAuth may vary from one social login provider to another.  Refer to the provider specific configuration instructions listed below:
 
+[Cognito :fontawesome-brands-aws:]({{page.meta.arcana.root_rel_path}}/howto/config_social_login/cognito_oauth.md){ .md-button }
+
 [Discord :fontawesome-brands-discord:]({{page.meta.arcana.root_rel_path}}/howto/config_social_login/discord_oauth.md){ .md-button }
 
 [GitHub :fontawesome-brands-github:]({{page.meta.arcana.root_rel_path}}/howto/config_social_login/github_oauth.md){ .md-button }

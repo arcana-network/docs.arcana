@@ -98,6 +98,7 @@ ChainID
 ChangeOwnerSignMsgText
 Changelog
 ClientID
+Cognito
 Coinbase
 Comdex
 ComingSoonTutLinkText
@@ -497,6 +498,7 @@ conceptstgsdk
 conceptstore
 config
 config3pwallet
+config_cognito
 config_dapp
 config_dashboard
 config_discord
@@ -571,6 +573,7 @@ faq_nftviewer
 faq_storage
 faq_validator
 fb
+fontawesome-brands-aws
 fontawesome-brands-discord
 fontawesome-brands-github
 fontawesome-brands-google
@@ -613,6 +616,7 @@ howdoiuse
 howitworks
 howto
 howto_app_id
+howto_config_cognito
 howto_config_discord_clientid
 howto_config_github_clientid
 howto_config_twitch
@@ -655,6 +659,7 @@ idconceptsharedkeys
 idconceptstgsdk
 idconceptstore
 idconfig3pwallet
+idconfigcognito
 idconfigdapp
 idconfigdashboard
 idconfigdiscord
