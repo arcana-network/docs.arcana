@@ -20,7 +20,21 @@ Do not close the dashboard browser tab. Open another tab and set up AWS Cognito 
 
 ## Step 2: Use AWS Management Console
 
-Go to the [AWS Management Console](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-idp-settings.html) and register your dApp as a new Cognito client application. ![cognito console](/img/an_dApp_cognito_dev_console.png)
+Go to the [AWS Management Console](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-idp-settings.html) and register your dApp as a new Cognito client application. Login to the console, search for 'Cognito' and you will see the Cognito setup dashboard. You need to add your app as a Cognito client in the context of a Cognito 'User Pool', using this dashboard. If you do not already have a Cognito 'User Pool' setup, create a new User Pool first as highlighted in the figure below. 
+
+!!! caution "Cognito Sign-in Option"
+
+      Make sure you select the **Email ID** as the Cognito sign-in option. 
+      
+![cognito console](/img/an_dApp_cognito_dev_console.png) 
+
+If you already have a user pool setup, select it from the list and double click on it to see the details. Refer to the **App Integration** tab settings and click **Create App Client** on the bottom right of the page.
+
+![cognito create app client](/img/an_dApp_cognito_create_app_client.png) 
+
+You will see the **Create Client** dashboard screen. You need to specify 
+
+![Cognito Create Client Settings](/img/an_dApp_cognito_app_client_settings.png)
 
 Enter the application name. 
 
