@@ -11,7 +11,7 @@ arcana:
 
 You need to first install the Arcana Auth SDK and Auth React component wrapper and configure user onboarding options using the Arcana Dashboard.
 
-To integrate the Arcana Auth SDK and use the Auth React wrapper component, you need to update the `index.js` and `App.js` files as listed below:
+To integrate the Arcana Auth SDK and use the Arcana Auth React Wrapper component, `ProvideAuth`, you need to update the `index.js` and `App.js` files as listed below:
 
 ```js title="index.js" hl_lines="5 6 11 15 17"
 import { StrictMode } from "react";
@@ -38,6 +38,55 @@ root.render(
 ```js title="App.js" hl_lines="2 6 24"
 import React from "react";
 import { Auth } from "@arcana/auth-react";
+import { Button } from "./components";
+import styled from "styled-components";
+import "./styles.css";
+
+const Wrapper = styled.div`
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 20px;
+  display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+const Section = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  > * {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+`;
+
+const LeftSection = styled.div`
+  width: 20%;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid white;
+  }
+`;
+
+const RightSection = styled.div`
+  width: 78%;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+const Heading = styled.h2`
+  color: white;
+  font-family: "Sora", sans-serif;
+  text-align: center;
+`;
 
 export default function App() {
   const [theme, setTheme] = React.useState("light");
@@ -65,6 +114,7 @@ export default function App() {
   );
 }
 ```
+
 ## See Also
 
 * [Auth SDK Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
