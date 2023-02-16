@@ -10,11 +10,13 @@ arcana:
 
 # Send Tokens
 
-[Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) is an embedded Web3 wallet available to all the dApps that [integrate]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md).
+[Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) is a non-custodial, embedded Web3 wallet. Applications that [integrates]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) can enable authenticated users to instantly access the Arcana wallet in the application's context.
 
-In this guide, you will learn how dApps can use the JSON RPC calls supported by the Arcana wallet to allow users to send tokens.
+In this guide, you will learn how applications can use the JSON RPC calls (`eth_sendTransaction`) supported by the Arcana wallet to allow users to send native or custom tokens.
 
-To receive tokens using the Arcana wallet, the dApp user can choose to copy their wallet account address or get a QR code for their account.  The account address or QR code can be shared with the sender in order to receive tokens.
+!!! tip
+
+      To receive tokens using the Arcana wallet, the dApp user can choose to copy their wallet account address or get a QR code for their account.  The account address or QR code can be shared with the sender in order to receive tokens. See [Arcana wallet User Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_manage_tokens.md#manage-token-assets) for details.
 
 ## Prerequisites
 

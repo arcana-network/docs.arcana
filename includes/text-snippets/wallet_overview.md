@@ -1,6 +1,6 @@
-In addition to user onboarding, the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) also offers an embedded Web3 wallet. The Arcana wallet is a *simple, lightweight, non-custodial, configurable wallet*. It allows application developers to manage user experience for signing transactions. It also supports typical Web3 wallet functionality such as sending and receiving tokens, NFTs using any EVM-compatible blockchain and enabling standard JSON RPC calls in applications.
+{% include "./text-snippets/wallet_intro.md" %}
 
-**Supported Web3 Wallet Functions**
+**Supported Web3 Wallet Operations**
 
 * Check account balance
 * Sign blockchain transactions
