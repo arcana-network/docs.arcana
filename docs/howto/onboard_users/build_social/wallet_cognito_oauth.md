@@ -15,7 +15,7 @@ In this guide, you will learn how to enable AWS Cognito authentication and onboa
 
 ## Prerequisites
 
-* Make sure you can access Arcana Developer Dashboard: {% include "./text-snippets/db_portal_url.md" %}
+* Make sure you can access the Arcana Developer Dashboard: {% include "./text-snippets/db_portal_url.md" %}
 * Install the `@arcana/auth` package. For details, see [Arcana Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md).
 
 Note that some steps are performed using [AWS Management Console](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-idp-settings.html), others using Arcana Dashboard. After that simply integrate your dApp with the Arcana Auth SDK to trigger AWS Cognito login and onboard users.
@@ -30,7 +30,7 @@ Note that some steps are performed using [AWS Management Console](https://docs.a
 
 ## Step 4: Integrate with Arcana Auth SDK and trigger Cognito login
 
-Use instructions here to [integrate with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
+Use the instructions here to [integrate with the Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
 
 After integration, use the following code to trigger Cognito login to onboard users:
 
@@ -57,5 +57,5 @@ After enabling user sign-in via Cognito, you can allow authenticated users to ac
 ## See also
 
 * [Arcana authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
-* [How to integrate with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
+* [How to integrate with the Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
 * [Handling authentication errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
