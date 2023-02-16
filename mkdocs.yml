@@ -47,6 +47,9 @@ nav:
         - Check Wallet Balance: howto/arcana_wallet/wallet_balance.md
         - Send Tokens: howto/arcana_wallet/wallet_send.md
         - Watch Assets: howto/arcana_wallet/wallet_watchasset.md
+      - App Deployment:
+        - Arcana Testnet: howto/deploy_apps/testnet.md
+        - Arcana Mainnet: howto/deploy_apps/mainnet.md
   - Tutorials: 
       - tutorials/index.md
       - Code Samples: 

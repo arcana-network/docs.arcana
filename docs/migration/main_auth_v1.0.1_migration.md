@@ -53,16 +53,16 @@ The following section lists changes between v0.3.0 and v{% include "./text-snipp
 
 The latest Auth SDK supports deploying apps on the Arcana Mainnet.
 
-To use Arcana Mainnet, you need to first login into the Arcana Developer dashboard, create a 'Mainnet' configuration profile for your app and choose requisite 'Keyspace' type. In addition to creating the 'Mainnet' configuration profile, developers need to update the Auth SDK integration code for creating a new `AuthProvider`:
+To use Arcana Mainnet, you need to first login into the Arcana Developer dashboard, create a 'Mainnet' configuration profile for your app and choose the requisite 'Keyspace' type. In addition to creating the 'Mainnet' configuration profile, developers need to update the Auth SDK integration code for creating a new `AuthProvider`:
 
 * Use the **App Address** specified to the 'Mainnet' configuration profile in the dashboard
-* Set the `network` parameter in `AuthProvider` constructor to 'mainnet'
+* Set the `network` parameter in the `AuthProvider` constructor to 'mainnet'
 
 Refer to the next section for step-by-step instructions on how to migrate from using an older Auth SDK to the v{% include "./text-snippets/latest_auth_sdk.md" %}.
 
 ## How to Migrate to v1.0.1?
 
-*Do not jump into installing, upgrading the Auth SDK in your sources and running your app.*
+*Do not jump into installing, or upgrading the Auth SDK in your sources and running your app.*
 
 To successfully use the latest Auth SDK, you need to first **re-create your app configuration profile** using the Arcana Dashboard and then integrate your app with the latest Auth SDK for onboarding users and enabling Arcana wallet. 
 
@@ -80,7 +80,7 @@ If you wish to deploy your app on Arcana Testnet, simply follow steps 1 and 3.  
 
 ### Example: Deploy on Testnet
    
-Register your app using the Arcana Developer Dashboard. By default, 'Testnet' configuration profile is created. You can provide the social provider settings as per your user onboarding requirements. Save the **App Address** assigned to your app displayed on the top right of the dashboard screen. This will be required during integration with the Auth SDK as shown below:
+Register your app using the Arcana Developer Dashboard. By default, the 'Testnet' configuration profile is created. You can provide the social provider settings as per your user onboarding requirements. Save the **App Address** assigned to your app displayed on the top right of the dashboard screen. This will be required during integration with the Auth SDK as shown below:
    
 {% include "./code-snippets/init_auth_testnet.md" %}
    
@@ -90,7 +90,7 @@ Once a user authenticates, the following wallet UI is displayed when the app is 
   
 ### Example: Deploy on Mainnet
 
-Register your app using the Arcana Developer Dashboard. By default, 'Testnet' configuration profile is created. Make sure you create a 'Mainnet' profile and save the **App Address** assigned to your app for the 'Mainnet' configuration. It is displayed on the top right of the dashboard screen.
+Register your app using the Arcana Developer Dashboard. By default, the 'Testnet' configuration profile is created. Make sure you create a 'Mainnet' profile and save the **App Address** assigned to your app for the 'Mainnet' configuration. It is displayed on the top right of the dashboard screen.
 
 To bring up your app on Arcana Mainnet, in your integration code, use the `Mainnet` **App Address** and specify the `network` parameter as 'mainnet' while instantiating the `AuthProvider` as shown below:
    
