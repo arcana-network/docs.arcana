@@ -24,7 +24,7 @@ Note that some steps are performed using Google Console, and others using Arcana
 
 !!! tip 
 
-     The **App Address** is displayed on the top right of your dashboard.
+     The **{{config.extra.arcana.app_address}}** is displayed on the top right of your dashboard.
 
      You can revisit the Arcana Dashboard later to view and modify configuration settings. 
 

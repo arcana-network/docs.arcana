@@ -24,13 +24,13 @@ Note that some steps are performed using [GitHub Developer Settings Dashboard](h
 
 !!! tip
 
-      The **App Address** is displayed on the top right of your dashboard.
+      The **{{config.extra.arcana.app_address}}** is displayed on the top right of your dashboard.
 
       You can revisit the Arcana Dashboard later to view and modify configuration settings. 
 
 ## Step 4: Integrate and Use Arcana Auth SDK
 
-Use instructions here to [integrate with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). After integration, use the following code to trigger social login for GitHub:
+Use the instructions here to [integrate with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). After integration, use the following code to trigger social login for GitHub:
 
 {% include "./code-snippets/auth_social_login.md" %}
 

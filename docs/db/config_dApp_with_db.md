@@ -19,7 +19,7 @@ This guide will walk you through the various configuration options available on 
 
 !!! note
 
-      After configuration, each newly created application is assigned a unique **App Address**. This is **required** to integrate the Auth SDK with your application.
+      After configuration, each newly created application is assigned a unique **{{config.extra.arcana.app_address}}**. This is **required** to integrate the Auth SDK with your application.
 
 ## Prerequisites
 
@@ -43,9 +43,9 @@ This guide will walk you through the various configuration options available on 
 
         {% include "./text-snippets/warn_config_wallet_ui.md" %}
 
-!!! note App Address
+!!! note "{{config.extra.arcana.app_address}}"
 
-      The "App Address" assigned to your application can be found on the top right of the dashboard. ![App Address](/img/an_db_app_address.png)
+      The {{config.extra.arcana.app_address}} assigned to your application can be found on the top right of the dashboard. ![Dashboard Client Identifier](/img/an_db_app_address.png)
 
 ### Manage Configurations
 
@@ -53,7 +53,7 @@ Every application that is registered using the Arcana Developer Dashboard is rep
 
 To view configuration details for an application, use the LHS navigation menu and click *Configure* to view/edit the application configuration settings as described in an earlier section of this guide.
 
-Each application can only be associated with two configuration profiles, 'Testnet' and 'Mainnet'. Both these configurations are maintained separately and each is associated with a unique **App Address**. 
+Each application can only be associated with two configuration profiles, 'Testnet' and 'Mainnet'. Both these configurations are maintained separately and each is associated with a unique **{{config.extra.arcana.app_address}}**. 
 
 ![New App config card](/img/an_db_new_app_card.png)
 
@@ -89,9 +89,9 @@ When 'Mainnet' is selected from the dropdown, a new 'Mainnet' profile creation w
 
 After the selection is made and the developer confirms, the 'Mainnet' profile is created and automatically registered with the Arcana Network. 
 
-!!! note "Mainnet App Address"
+!!! note "Mainnet {{config.extra.arcana.app_address}}"
 
-      The newly created 'Mainnet' configuration profile is associated with a brand new unique **App Address**. Developers must specify this new app address while integrating the application with the Auth SDK and deploy it on Arcana 'Mainnet'.
+      The newly created 'Mainnet' configuration profile is associated with a brand new unique **{{config.extra.arcana.app_address}}**. Developers must specify this new {{config.extra.arcana.app_address}} while integrating the application with the Auth SDK and deploy it on Arcana 'Mainnet'.
 
 'Mainnet' configuration requires an additional setting which is not available for the 'Testnet' configuration profile. This additional setting, **Keyspace**, is used to allow Web3 application users to share the same wallet address across multiple applications that are deployed on the Arcana Mainnet. Refer to the next section on configuring keyspace.
 
@@ -113,7 +113,7 @@ You can check the status of **Global Keyspace** verification by using the **Keys
 
 ![Mainnet Global keyspace in review](/img/an_db_global_keysp_inreview.png)
 
-The status will change to **Approved** once verification is complete. You can integrate your application with the Auth SDK but do not deploy it until the verification is complete. Otherwise, users that login before verification is complete may see different wallet addresses after the process is complete.
+The status will change to **Approved** once verification is complete. You can integrate your application with the Auth SDK but do not deploy it until the verification is complete. Otherwise, users that log in before verification is complete may see different wallet addresses after the process is complete.
 
 ![Mainnet Global keyspace approved](/img/an_db_global_keysp_approved.png)
 
@@ -125,7 +125,7 @@ Now your application is configured to use the Arcana Mainnet. You can further ed
 
 There are multiple ways to switch an application from using Testnet to Mainnet. 
 
-* To switch from Testnet to the Mainnet profile, use the application dashboard screen, and select **Configuration >> Social Auth** in the LHS navigation pane. Refer to the dropdown next to 'Testnet' on the top RHS of the screen and choose 'Mainnet'. If there is a preexisting 'Mainnet profile, the app is automatically switched to it and you can see the social authentication settings and assigned **App Address** for the 'Mainnet' profile. Otherwise, the profile wizard gets activated and assists the developer in creating a 'Mainnet' configuration profile for the application. Once the profile is created, a new **App Address** is automatically assigned and the configuration switches to 'Mainnet'.
+* To switch from Testnet to the Mainnet profile, use the application dashboard screen, and select **Configuration >> Social Auth** in the LHS navigation pane. Refer to the dropdown next to 'Testnet' on the top RHS of the screen and choose 'Mainnet'. If there is a preexisting 'Mainnet profile, the app is automatically switched to it. You can view the social authentication settings and the assigned **{{config.extra.arcana.app_address}}** for the 'Mainnet' profile. If there is no 'Mainnet' profile associated with the app, then on selecting 'Mainnet' from the dropdown, the app wizard gets activated and assists in creating a 'Mainnet' configuration profile for the application. Once the profile is created, a new **{{config.extra.arcana.app_address}}** is automatically assigned and the configuration switches to 'Mainnet'.
 
     ![Select Testnet or Mainnet](/img/an_db_testnet_mainnet_select.png)  
 
@@ -135,7 +135,7 @@ There are multiple ways to switch an application from using Testnet to Mainnet.
 
 !!! caution
 
-      Depending upon whether the 'Testnet' **App Address** value or the 'Mainnet' **App Address** value is used to integrate an application with the Auth SDK, the app is deployed on the corresponding Arcana Network. "Testnet" usage is not billed but if an application chooses 'Mainnet' while integrating with the Auth SDK, it will be billed in the forthcoming releases.
+      Depending upon whether the 'Testnet' **{{config.extra.arcana.app_address}}** value or the 'Mainnet' **{{config.extra.arcana.app_address}}** value is used to integrate an application with the Auth SDK, the deployment of the app happens on the respective Arcana Network. "Testnet" usage is not billed but if an application chooses 'Mainnet' while integrating with the Auth SDK, it will be billed in the forthcoming releases.
 
 #### Switch Applications
 

@@ -27,7 +27,7 @@ In this tutorial, you will learn how to integrate a Vue application with the [Ar
 
         For details, see [how to configure one or more social logins]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md).
 
-* Save the **App Address** assigned to the application. It is displayed on the dashboard application page and required to instantiate the `AuthProvider` while integrating the application. 
+* The **{{config.extra.arcana.app_address}}** assigned to the application is displayed on the dashboard application screen. Save the **{{config.extra.arcana.app_address}}** as it will be required for instantiating the `AuthProvider` while integrating the app with the Auth SDK. 
 
 ## Steps
 
@@ -41,13 +41,13 @@ Follow these two steps:
 
 ### Step 2: Initialize the Auth SDK
 
-To integrate the application, first, you need to import Arcana Auth SDK and create a 'new' `AuthProvider`. During instantiation of the `AuthProvider`, specify the unique **App Address** value assigned to your application after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the dashboard. Also, specify the [Arcana wallet visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) via the `alwaysVisible` parameter.
+To integrate the application, first, you need to import Arcana Auth SDK and create a 'new' `AuthProvider`. During instantiation of the `AuthProvider`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to your application after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the dashboard. Also, specify the [Arcana wallet visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) via the `alwaysVisible` parameter.
 
-You can club all the Auth SDK related code in a file `src/lib/auth.js` and export the function that instantiates the `AuthProvider`.
+You can club all the Auth SDK-related code in a file `src/lib/auth.js` and export the function that instantiates the `AuthProvider`.
 
 {% include "./code-snippets/vue_auth_js.md" %}
 
-Next, import and call this exported function in `App.vue` file as shown below:
+Next, import and call this exported function in the `App.vue` file as shown below:
 
 {% include "./code-snippets/vue_app_js.md" %}
 
@@ -61,7 +61,7 @@ After integrating with the Arcana Auth SDK, an application can onboard users thr
 
 ## See also
 
-* Using Auth SDK to enable [Google]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_google_oauth.md) based social authentication
+* Using Auth SDK to enable social authentication via [Google]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_google_oauth.md)
 * [Passwordless authentication using Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md)
 * [Auth SDK Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
 * [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)

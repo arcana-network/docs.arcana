@@ -24,13 +24,13 @@ Note that some steps are performed using [Twitch Developer Dashboard](https://de
 
 !!! tip
 
-      The **App Address** is displayed on the top right of your dashboard.
+      The **{{config.extra.arcana.app_address}}** is displayed on the top right of your dashboard.
 
       You can revisit the Arcana Dashboard later to view and modify configuration settings. 
 
 ## Step 4: Integrate with Arcana Auth SDK and trigger Twitch login
 
-Use instructions here to [integrate with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
+Use the instructions here to [integrate with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
 
 After integration, use the following code to trigger Twitch login to onboard users:
 

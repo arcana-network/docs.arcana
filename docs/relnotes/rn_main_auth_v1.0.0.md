@@ -38,10 +38,10 @@ An under-development application can be deployed on the Arcana Testnet. At the s
     - Copy settings or create a fresh 'Mainnet' profile
     - While editing, easily toggle between 'Testnet' and 'Mainnet' configuration profiles
     - Each profile can be edited and managed independently
-- A new unique **App Address** is associated with the 'Mainnet' configuration profile
+- A new unique **{{config.extra.arcana.app_address}}** is associated with the 'Mainnet' configuration profile
 
     !!! note
-          Do remember to use the correct App Address for integrating with the Auth SDK when you deploy your application on the Mainnet.
+          Do remember to use the correct {{config.extra.arcana.app_address}} for integrating with the Auth SDK when you deploy your application on the Mainnet.
 
 See [how to manage application profiles]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#manage-testnet-and-mainnet-configurations) for details. 
 

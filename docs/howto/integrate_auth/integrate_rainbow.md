@@ -9,7 +9,7 @@ arcana:
 
 # Rainbow Connector
 
-In this tutorial, you will learn how to integrate a Web3 application that uses [RainbowKit](https://www.rainbowkit.com/) with [Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md). RainbowKit works with [wagmi](https://wagmi.sh/) that allows Web3 application users to easily switch between multiple wallets within a single application. Arcana offers a custom wagmi connector that can be used to enable Arcana wallet for applications using RainbowKit.
+In this tutorial, you will learn how to integrate a Web3 application that uses [RainbowKit](https://www.rainbowkit.com/) with [Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md). RainbowKit works with [wagmi](https://wagmi.sh/) which allows Web3 application users to easily switch between multiple wallets within a single application. Arcana offers a custom wagmi connector that can be used to enable Arcana wallet for applications using RainbowKit.
 
 !!! caution "No need to install Auth SDK"
 
@@ -29,7 +29,7 @@ In this tutorial, you will learn how to integrate a Web3 application that uses [
 
           For details, see [how to set up social logins]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md).
 
-* After registering the application, a unique **App Address** is assigned to every application. Save the **App Address** displayed in the dashboard. It is required while instantiating the `ArcanaConnector` for wagmi later.
+* After registering the application, a unique **{{config.extra.arcana.app_address}}** is assigned to every application. Save the **{{config.extra.arcana.app_address}}** displayed in the dashboard. It is required while instantiating the `ArcanaConnector` for wagmi later.
 
 ## Steps
 
@@ -43,7 +43,7 @@ Follow these two steps:
 
 ### Step 2: Configure RainbowKit Connector 
 
-Import Arcana's `auth-wagmi` library and create a 'new' `ArcanaConnector`. During instantiation of the `ArcanaConnector`, specify the unique **App Address** value assigned to your dApp after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the dashboard. 
+Import Arcana's `auth-wagmi` library and create a 'new' `ArcanaConnector`. During instantiation of the `ArcanaConnector`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to your dApp after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the dashboard. 
 
 {% include "./code-snippets/auth_rainbow_configure.md" %}
 
@@ -53,11 +53,11 @@ Now you can provide the newly instantiated ArcanaConnector to the `createClient`
 
 !!! tip
 
-      For more details on `createClient` function of wagmi package, see [wagmi Getting Started Guide](https://wagmi.sh/react/getting-started). Also refer to [RainbowKit documentation](https://www.rainbowkit.com/docs/introduction).
+      For more details on the `createClient` function of wagmi package, see [wagmi Getting Started Guide](https://wagmi.sh/react/getting-started). Also, refer to [RainbowKit documentation](https://www.rainbowkit.com/docs/introduction).
 
 ### Step 3: RainbowKit Context Provider
 
-Pass the wagmi client as a parameter to `WagmiConfig` component before plugging in the `RainbowKitProvider` component in your React/NextJS application.
+Pass the wagmi client as a parameter to the `WagmiConfig` component before plugging in the `RainbowKitProvider` component in your React/NextJS application.
 
 {% include "./code-snippets/auth_rainbow_use.md" %}
 
@@ -67,7 +67,7 @@ You have successfully integrated your dApp with the Arcana wagmi Connector. User
 
 ## What's Next?
 
-You can add Arcana wallet to your application by using the Arcana Auth SDK, even if your application does not already use wagmi or RainbowKit.
+You can add the Arcana wallet to your application by using the Arcana Auth SDK, even if your application does not already use wagmi or RainbowKit.
 
 See [how to integrate applications with Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) for details.
 

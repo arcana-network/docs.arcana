@@ -9,11 +9,11 @@ arcana:
 
 # Wagmi Connector
 
-In this tutorial, you will learn how to integrate a Web3 application that uses [wagmi](https://wagmi.sh) wallet connector to plug in the [Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).  With wagmi, Web3 developers can allow their users to easily switch between multiple wallets within a single application. Arcana offers a custom wagmi connector to enable use of the Arcana wallet alongside built-in options like MetaMask, WalletConnect, and Coinbase Wallet.
+In this tutorial, you will learn how to integrate a Web3 application that uses [wagmi](https://wagmi.sh) wallet connector to plug in the [Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).  With wagmi, Web3 developers can allow their users to easily switch between multiple wallets within a single application. Arcana offers a custom wagmi connector to enable the use of the Arcana wallet alongside built-in options like MetaMask, WalletConnect, and Coinbase Wallet.
 
 !!! caution "No need to install Auth SDK"
 
-      If you are using the Auth Wagmi Connector then you simply follow the instructions below. This connector includes the Auth SDK. You do not need to install Arcana Auth SDK separately. No need to create a provider. In App.tsx, use wagmi functions.
+      If you are using the Auth Wagmi Connector then you simply follow the instructions below. This connector includes the Auth SDK. You do not need to install Arcana Auth SDK separately. No need to create a provider. In the `App.tsx` file, use wagmi functions.
 
 ## Prerequisites
 
@@ -30,11 +30,11 @@ In this tutorial, you will learn how to integrate a Web3 application that uses [
           For details, see [how to set up social logins]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md).
         
 
-* After registering the application, a unique **App Address** is assigned to every application. Save the **App Address** displayed in the dashboard. It is required while instantiating the `ArcanaConnector` for wagmi later.
+* After registering the application, a unique **{{config.extra.arcana.app_address}}** is assigned to every application. Save the **{{config.extra.arcana.app_address}}** displayed in the dashboard. It is required while instantiating the `ArcanaConnector` for wagmi later.
 
 ## Steps
 
-*Integrating Arcana wallet with an application that uses Wagmi is simple!*
+*Integrating the Arcana wallet with an application that uses Wagmi is simple!*
 
 Follow these two steps:
 
@@ -44,7 +44,7 @@ Follow these two steps:
 
 ### Step 2: Configure Arcana Connector 
 
-Import Arcana's `auth-wagmi` library and create a 'new' `ArcanaConnector`. During instantiation of the `ArcanaConnector`, specify the unique **App Address** value assigned to your dApp after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the dashboard. 
+Import Arcana's `auth-wagmi` library and create a 'new' `ArcanaConnector`. During instantiation of the `ArcanaConnector`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to your dApp after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the dashboard. 
 
 {% include "./code-snippets/auth_wagmi_configure.md" %}
 
@@ -54,7 +54,7 @@ Now you can provide the newly instantiated ArcanaConnector to the `createClient`
 
 !!! tip
 
-      For more details on `createClient` function of wagmi package, see [wagmi Getting Started Guide](https://wagmi.sh/react/getting-started).
+      For more details on the `createClient` function of wagmi package, see [wagmi Getting Started Guide](https://wagmi.sh/react/getting-started).
 
 ### Step 3: Use Wagmi Client
 
@@ -66,7 +66,7 @@ That is all! :material-party-popper:
 
       Here is the [wagmi integration example source code](https://github.com/arcana-network/auth-wagmi-example) for your reference.
 
-You have successfully integrated your dApp with the Arcana Wagmi Connector. Users can choose and use Arcana wallet or one of the built-in wallet connectors in Wagmi and sign blockchain transactions.
+You have successfully integrated your dApp with the Arcana Wagmi Connector. Users can choose and use the Arcana wallet or one of the built-in wallet connectors in Wagmi and sign blockchain transactions.
 
 ## What's Next?
 

@@ -29,7 +29,7 @@ In this tutorial, you will learn how to integrate a vanilla JS application with 
 
         For details, see [how to configure one or more social logins]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md).
 
-* Save the **App Address** assigned to the application. It is displayed on the dashboard application page and required to instantiate the `AuthProvider` while integrating the application. 
+* Save the **{{config.extra.arcana.app_address}}** assigned to the application. It is displayed on the dashboard application page and required to instantiate the `AuthProvider` while integrating the application. 
 
 ## Steps
 
@@ -43,7 +43,7 @@ Follow these two steps:
 
 ### Step 2: Initialize the Auth SDK
 
-Import Arcana Auth SDK and create a 'new' `AuthProvider`. During instantiation of the `AuthProvider`, specify the unique **App Address** value assigned to your application after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the dashboard. Also, specify the [Arcana wallet visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) via the `alwaysVisible` parameter.
+Import Arcana Auth SDK and create a 'new' `AuthProvider`. During instantiation of the `AuthProvider`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to your application after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the dashboard. Also, specify the [Arcana wallet visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) via the `alwaysVisible` parameter.
 
 {% include "./code-snippets/import_auth.md" %}
 
