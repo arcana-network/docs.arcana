@@ -226,15 +226,15 @@ Click <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="2
 
 ### Minimize Wallet
 
-If the dApp developer has integrated the Arcana Auth SDK and specified the 'Full UI' wallet visibility mode, the Arcana wallet can be minimized using the 'x' icon on the top right corner of the wallet screen. Minimized wallet displays as a circular widget on the dApp window. 
+If the app developer has integrated the Arcana Auth SDK and specified the 'Full UI' wallet visibility mode, the Arcana wallet UI shows up once the user is authenticated. The wallet UI can be minimized using the 'x' icon on the top right corner of the wallet screen. Minimized wallet displays as a small widget on the application window. Clicking on this widget will maximize the wallet screen. 
 
-<img src="/img/an_wallet_min.png" width="150"/>
+<img src="/img/an_wallet_min_light.png#only-light" width="75"/><img src="/img/an_wallet_min_dark.png#only-dark" width="75"/>
 
-During minimized state, if the dApp issues a transaction or if a user action results in a blockchain transaction sign request, the wallet screen pops up in maximized state in the dApp window.
+During minimized state, if the dApp issues a transaction or if a user action results in a blockchain transaction that requires approval from the user, then the wallet screen pops up in the maximized state in the application window.
 
 ### Logout
 
-Click <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> icon in the bottom of the Arcana wallet screen to bring up the user profile tab. Click **Logout** in the user profile tab to log out.
+Click <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> icon at the bottom of the Arcana wallet screen to bring up the user profile tab. Click **Logout** in the user profile tab to log out.
 
 <img src="/img/an_wallet_profile.png" width="200"/>
 
