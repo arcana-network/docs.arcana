@@ -124,12 +124,15 @@ nav:
     - Validator Nodes: faq/faq_validator.md
   - Release Notes:
     - relnotes/index.md
-    - Auth 1.0.1 (Mainnet/Testnet): relnotes/rn_main_auth_v1.0.1.md
-    - Auth 1.0.0 (Mainnet/Testnet): relnotes/rn_main_auth_v1.0.0.md
+    - Auth 1.0.2 : relnotes/rn_main_auth_v1.0.2.md
+    - Auth 1.0.1 : relnotes/rn_main_auth_v1.0.1.md
+    - Auth 1.0.0 (Mainnet): relnotes/rn_main_auth_v1.0.0.md
     - Auth 0.3.0 (Testnet): relnotes/rn_beta_auth_v0.3.0.md
   - Migration Guides:
     - migration/index.md
-    - v0.3.0 -> v1.0.1: migration/main_auth_v1.0.1_migration.md
+    - v1.0.1 -> v1.0.2: migration/main_auth_v1.0.2_migration.md
+    - v1.0.0 -> v1.0.1: migration/main_auth_v1.0.1_migration.md
+    - v0.3.0 -> v1.0.0: migration/main_auth_v1.0.0_migration.md
     - v0.2.x -> v0.3.0: migration/beta_auth_v0.3.0_migration.md
   - DKG Validators: 
     - validator_intro.md
