@@ -32,6 +32,7 @@ To enable the embedded Arcana wallet in an application, the application develope
 <img src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Arcana Auth Usage Overview" width="50%"/>
 
 ## Register & Configure
+
 First, [register and configure]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) your application using the Arcana dashboard. As part of registration, a unique value, **{{config.extra.arcana.app_address}}**, is assigned to each application. This is required for integrating the application with the Auth SDK.
 
 Developers must choose one or more options to onboard users and [configure social login]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md). This ensures that only the configured onboarding options are enabled in the Auth SDK. 
@@ -76,6 +77,7 @@ Developers can choose to deploy one instance of the app (say, under active devel
 
 By default, when an app is registered, a 'Testnet' configuration profile is associated with the app, and a unique **{{config.extra.arcana.app_address}}** is assigned to this 'Testnet' profile. To deploy your app on the Arcana Mainnet, you need to create a corresponding 'Mainnet' configuration profile and update your Auth SDK integration code to use the **new {{config.extra.arcana.app_address}}** assigned to the app's 'Mainnet' configuration profile. Also, you need to specify the `network` parameter in the `AuthProvider` constructor as the 'mainnet'. For details on how to deploy your app on the Arcana Testnet / Mainnet, see [App Deployment Guide]({{page.meta.arcana.root_rel_path}}/howto/deploy_app.md).
 
+
 ## Examples
 
 Here are some examples of Auth SDK usage:
@@ -91,7 +93,7 @@ Here are some examples of Auth SDK usage:
 ## Developer & User Guides
 
   For more details on how users interact with the Arcana wallet, see [Arcana wallet User Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md). 
-  
+
   Developers can refer to the [Arcana Dashboard User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md) to learn more about how to register and configure the apps. Also, see [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) and the {% include "./text-snippets/authsdkref_url.md" %} for various functions offered by the Auth SDK.
 
 {% include "./text-snippets/sdk_version_info.md" %}
