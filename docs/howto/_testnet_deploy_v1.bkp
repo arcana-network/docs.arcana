@@ -13,7 +13,7 @@ This guide explains what Web3 app developers need to do for deploying their apps
 
 ## Prerequisites
 
-* If your app is already integrated with an older version of the Auth SDK, v0.3.0 or earlier, use the appropriate [Migration Guide]({{page.meta.arcana.root_rel_path}}/migration/index.md) to upgrade to the latest Auth SDK v{% include "./text-snippets/latest_auth_sdk.md" %}. This may require re-registering your app using the Arcana Dashboard and getting a new **App Address** for integrating your app with the Auth SDK.
+* If your app is already integrated with an older version of the Auth SDK, v0.3.0 or earlier, use the appropriate [Migration Guide]({{page.meta.arcana.root_rel_path}}/migration/index.md) to upgrade to the latest Auth SDK v{% include "./text-snippets/latest_auth_sdk.md" %}. This may require re-registering your app using the Arcana Dashboard and getting a new **{{config.extra.arcana.app_address}}** for integrating your app with the Auth SDK.
 
 ## Steps
 
@@ -24,9 +24,9 @@ Log in to the Arcana Developer Dashboard. If you have already registered, you wi
 ![Create App Wizard](/img/an_deploy_testnet_createapp.png)
 ![Manage App Screen](/img/an_deploy_testnet_appcard.png)
 
-After successful registration, a unique **App Address** is assigned to your app. You need to use this **App Address** later while integrating your app with the Auth SDK.
+After successful registration, a unique **{{config.extra.arcana.app_address}}** is assigned to your app. You need to use this **{{config.extra.arcana.app_address}}** later while integrating your app with the Auth SDK.
 
-![Testnet App Address](/img/an_deploy_testnet_appaddress.png)
+![Testnet App Identifier](/img/an_deploy_testnet_appaddress.png)
 
 ### Step 2: Configure Testnet
 
@@ -34,7 +34,7 @@ When a new app entry is created to register a new app, by default, it is registe
 
 After successful registration, you will see the app dashboard screen displaying an app configuration navigation bar in the LHS and app Testnet usage data on the RHS. For a newly registered app, there will be no Testnet usage data displayed on the app dashboard screen. The **Configure** section in the LHS navigation provides options to configure app branding, authentication, and wallet usage settings for using Arcana Testnet.
 
-![Testnet App Address](/img/an_deploy_testnet_config_screen.png)
+![Testnet App Identifier](/img/an_deploy_testnet_config_screen.png)
 
 To learn more about various configuration settings, see [how to use the Arcana Developer Dashboard to configure app settings]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md).
 
@@ -54,7 +54,7 @@ After configuring your app 'Testnet' profile settings using the Arcana Developer
 
 {% include "./code-snippets/auth_install.md" %}
 
-Next, integrate your app with the Auth SDK by creating a new `AuthProvider`. Use the **App Address** assigned to the 'Testnet' configuration profile while instantiating the `AuthProvider`. If you specify the `network` parameter in the `AuthProvider` constructor, assign the value 'testnet' as shown in the code below.  
+Next, integrate your app with the Auth SDK by creating a new `AuthProvider`. Use the **{{config.extra.arcana.app_address}}** assigned to the 'Testnet' configuration profile while instantiating the `AuthProvider`. If you specify the `network` parameter in the `AuthProvider` constructor, assign the value 'testnet' as shown in the code below.  
 
 !!! note "Default Network Setting"
 
@@ -78,7 +78,7 @@ When you bring up your app it will be deployed on the Arcana Testnet. Once an ap
 
 You can visit your app dashboard screen for the 'Testnet' configuration profile and see the Testnet usage. The figure below shows one new user for the test app.
 
-![Testnet App Address](/img/an_deploy_testnet_usage.png)
+![Testnet App Identifier](/img/an_deploy_testnet_usage.png)
 
 That is all! :material-party-popper:
 

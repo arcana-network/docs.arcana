@@ -1,4 +1,4 @@
-To enable Twitch based social authentication in Web3 applications, developers must perform these three steps before integrating with the Arcana Auth SDK.
+To enable social authentication via Twitch in the Web3 applications, developers must perform these three steps before integrating with the Arcana Auth SDK.
 
 ## Step 1: Use Arcana Dashboard
 
@@ -36,8 +36,8 @@ Revisit the Arcana Developer Dashboard portal. Click on your app entry and visit
 
 ![howto_config_twitch](/img/an_dApp_twitch_config.png)
 
-Save the settings. Arcana Network assigns an **App Address** to every registered and configured dApp. You need to save this **App Address** and use it while integrating the dApp with the Auth SDK.
+Save the settings. Arcana Network assigns an **{{config.extra.arcana.app_address}}** to every registered and configured dApp. You need to save this **{{config.extra.arcana.app_address}}** and use it while integrating the dApp with the Auth SDK.
 
-![App Address](/img/an_db_app_address.png)
+![App Identifier](/img/an_db_app_address.png)
 
-*You are all set with Twitch Setup. Integrate Web3 application with the Arcana Auth SDK and call social login function when the user chooses to log in.*
+*You are all set with Twitch Setup. Integrate the Web3 application with the Arcana Auth SDK and call the social login function when the user chooses to log in.*

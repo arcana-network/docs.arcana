@@ -1,6 +1,6 @@
 ```js
-const appAddress = '445007f942f9Ba718953094BbeeeeeB9484cAfd2' //example
-const auth = new AuthProvider(`${appAddress}`, { //required
+const clientId = '445007f942f9Ba718953094BbeeeeeB9484cAfd2' //get clientId via Arcana Dashboard
+const auth = new AuthProvider(`${clientId}`, { //required
   network: 'testnet', //defaults to 'testnet'
   position: 'left', //defaults to right
   theme: 'light', //defaults to dark

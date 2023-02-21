@@ -17,4 +17,4 @@ Application users receive an email verification link or a time-sensitive OTP tha
 
 !!! note
 
-      After passwordless authentication, developers can enable users to access the embedded Web3 Arcana wallet included with the Auth SDK to sign blockchain transactions.
+      After passwordless authentication, developers can enable users access the embedded Web3 Arcana wallet included with the Auth SDK to sign blockchain transactions.
