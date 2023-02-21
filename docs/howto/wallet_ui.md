@@ -122,9 +122,13 @@ For example, Transak requires each user to complete KYC by submitting country-sp
 
 <img src="/img/an_wallet_fiat_transak.png" width="70%"/>
 
-Similarly, if the fiat on-ramp provider Ramp Network is chosen, you will see the Ramp UI displaying all the available currencies for the selected chain in the Arcana wallet. For the first purchase, you may also be required to do KYC formalities.
+Similarly, if the fiat on-ramp provider Ramp Network is chosen, you will see the Ramp UI displaying all the available currencies for the selected chain in the Arcana wallet. 
 
 <img src="/img/an_wallet_fiat_rampnetwork.png" width="70%"/>
+
+For the first purchase, you may also be required to do KYC formalities.
+
+<img src="/img/an_wallet_fiat_kyc_rampnetwork.png" width="70%"/>
 
 If you are new to Transak or Ramp, see [Transak User Guide](https://support.transak.com/hc/en-us/articles/360020615378-Buying-cryptocurrency-for-beginners) and [Ramp User Guide](https://support.ramp.network/en/articles/18887-how-to-use-ramp) for step by step details on buying crypto assets.
 
