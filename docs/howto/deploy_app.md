@@ -21,7 +21,7 @@ This guide explains what Web3 app developers need to do for deploying their apps
 
 * After successful registration, a unique **{{config.extra.arcana.app_address}}** is assigned to your app that will be required later for integrating your app with the Auth SDK. Also, a default 'Testnet' configuration profile is associated with your app. To learn more about various configuration settings, see [how to use the Arcana Developer Dashboard to configure app settings]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md).
 
-* Depending upon your app type, whether it is a vanilla JS app or React or using wallet connectors such as Wagmi or RainbowKit, follow the instructions in the [Auth SDK integration guide]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). Integration involves installing theAuth SDK or the appropriate wrapper SDK (e.g., `auth-wagmi` wrapper SDK) and then instantiating the appropriate `AuthProvider` or react component as the case may be.
+* Depending upon your app type, whether it is a vanilla JS app or React or using wallet connectors such as Wagmi or RainbowKit, follow the instructions in the [Auth SDK integration guide]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). Integration involves installing the Auth SDK or the appropriate wrapper SDK (e.g., `auth-wagmi` wrapper SDK) and then instantiating the appropriate `AuthProvider` or react component as the case may be.
 
 !!! note
 
