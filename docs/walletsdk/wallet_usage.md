@@ -41,13 +41,13 @@ yarn add @arcana/auth
 import { AuthProvider } from '@arcana/auth'
 import { ethers } from 'ethers'
 
-const auth = new AuthProvider(`${appAddress}`)
+const auth = new AuthProvider(`${clientId}`)
 
 window.onload = async () => {
   try {
     await auth.init()
 
-    const arcanaProvider = await auth.loginWithSocial('google')
+    const arcanaProvider = await auth.connect()
     const provider = new ethers.providers.Web3Provider(arcanaProvider)
 
     await provider.getBlockNumber()
@@ -56,6 +56,7 @@ window.onload = async () => {
     // log error
   }
 }
+
 ```
 
 ---
@@ -66,17 +67,16 @@ window.onload = async () => {
 import { AuthProvider } from '@arcana/auth'
 import Web3 from 'web3'
 
-const auth = new AuthProvider(`${appAddress}`)
+const auth = new AuthProvider(`${clientId}`)
 
 window.onload = async () => {
   try {
     await auth.init()
 
-    const arcanaProvider = await auth.loginWithSocial('google')
+    const arcanaProvider = await auth.connect()
     const provider = new Web3(arcanaProvider)
 
     await provider.getBlockNumber()
-    // 14983200
   } catch (e) {
     // log error
   }
@@ -107,11 +107,11 @@ interface ChainConfig {
   rpcUrl?: string
 }
 
-const auth = new AuthProvider(`${appAddress}`, {
-  position: 'left',
-  theme: 'light',
-  alwaysVisible: false,
-  network: 'mainnet', // network can be testnet or mainnet - defaults to testnet
+const auth = new AuthProvider(`${clientId}`, {  //Arcana Unique App Identifier via Dashboard
+  position: 'left', // optional, defaults to right
+  theme: 'light', // optional, defaults to dark theme
+  alwaysVisible: false, // optional, defaults to true
+  network: 'mainnet', // optional, network can be testnet or mainnet - defaults to testnet
   chainConfig: {
     chainId: CHAIN.POLYGON_MAINNET,
     rpcUrl: '',

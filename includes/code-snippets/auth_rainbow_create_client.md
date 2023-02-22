@@ -17,7 +17,7 @@ export const ArcanaRainbowConnector = ({ chains }) => {
       const connector = new ArcanaConnector({
         chains,
         options: {
-          // appId parameter refers to App Address value in the Dashboard
+          // appId parameter refers to Client ID value in the Dashboard
           appId: "20B0B836C92D91Ba2059d6Fa76073Ac431A56B64",
         },
       });

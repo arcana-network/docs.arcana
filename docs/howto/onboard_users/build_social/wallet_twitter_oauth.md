@@ -18,19 +18,19 @@ In this guide, you will learn how to enable Twitter authentication and onboard d
 * Make sure you can access Arcana Developer Dashboard: <{% include "./text-snippets/db_portal_url.md" %}
 * Install the `@arcana/auth` package. For details, see [Arcana Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md).
 
-Note that some steps are performed using [Twitter Developer Portal](https://developer.twitter.com/en/apps), others using Arcana Dashboard. After that simply integrate your dApp with the Arcana Auth SDK to trigger Twitter login and onboard users.
+Note that some steps are performed using [Twitter Developer [Portal](https://developer.twitter.com/en/apps), and others using Arcana Dashboard. After that simply integrate your dApp with the Arcana Auth SDK to trigger Twitter login and onboard users.
 
 {% include "./text-snippets/twitter_config_steps.md" %}
 
 !!! tip
 
-      The **App Address** is displayed on the top right of your dashboard.
+      The **{{config.extra.arcana.app_address}}** is displayed on the top right of your dashboard.
 
       You can revisit the Arcana Dashboard later to view and modify configuration settings. 
 
 ## Step 4: Integrate with Arcana Auth SDK and trigger Twitter login
 
-Use instructions here to [integrate with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). After integration, use the following code to trigger social login for Twitter:
+Use the instructions here to [integrate with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). After integration, use the following code to trigger social login for Twitter:
 
 {% include "./code-snippets/auth_social_login.md" %}
 

@@ -5,9 +5,9 @@ let authInstance
 
 export async function getAuthInstance () {
   if (authInstance == null) {
-    // App Address is a required parameter
+    // Client ID is a required parameter
     // Check SDK Reference Guide for optional parameters
-    authInstance = new AuthProvider(process.env.VUE_APP_ARCANA_APP_ADDRESS, {
+    authInstance = new AuthProvider(process.env.VUE_APP_ARCANA_CLIENT_ID, {
       network: process.env.VUE_APP_ARCANA_NETWORK ?? 'testnet',
       alwaysVisible: true,
       theme: 'light',

@@ -204,6 +204,7 @@ JavaScriptOriginText
 Jira
 KMS
 KV
+KYC
 Keyspace
 Keystore
 KeystoreInput
@@ -269,6 +270,7 @@ RFP
 RHS
 RPC
 RainbowKit
+Ramp
 Rarible
 Reddit
 RedirectURIText
@@ -376,6 +378,7 @@ TemplateArcanaWalletText
 TemplatePasswordlessLoginGitHubLinkText
 TemplatePwdlessLoginText
 Testnet
+Transak
 TrbsAggregateLoginText
 TutGetStartedArcana
 TutorialRefText
@@ -767,6 +770,7 @@ iduitemplates
 iduploadfile
 iduse3pwallet
 idusingminter
+idusingreactconn
 idvalidatoronboarding
 idvalidators
 idviewpvtnft
@@ -947,6 +951,7 @@ use3pwallet
 user-auth
 userInfo
 usingminter
+usingreactconn
 v2
 validator
 validator_nodes

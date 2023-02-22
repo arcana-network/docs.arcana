@@ -15,7 +15,7 @@ In this tutorial, you will learn how to register and configure an application be
 
     The [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) allows developers to customize the user onboarding experience and the blockchain transaction signing experience. 
     
-    Developers can register and configure their app, and are given a unique identifier called an App Address. This is used to [integrate an application]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the Arcana Auth SDK.
+    Developers can register and configure their apps using the dashboard. Each registered app is assigned a unique identifier called the **{{config.extra.arcana.app_address}}**. This is used to [integrate an application]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the Arcana Auth SDK.
 
 ## Prerequisites
 
@@ -45,11 +45,11 @@ After registering and configuring the application, install the Auth SDK and then
 
 !!! note
 
-    You can copy the assigned **App Address** once an application is registered and configured using the dashboard. It will be required when you integrate the application with the Auth SDK.
+    You can copy the assigned **{{config.extra.arcana.app_address}}** once an application is registered and configured using the dashboard. It will be required when you integrate the application with the Auth SDK.
 
-    ![App Address](/img/an_db_app_address.png)
+    ![App unique identifier](/img/an_db_app_address.png)
 
-You can reconfigure application settings for Auth SDK usage later anytime by visiting the Arcana Developer Dashboard. Simply log in, select your app entry and double click on it to view the **Configure** screen.
+You can reconfigure application settings for Auth SDK usage later anytime by visiting the Arcana Developer Dashboard. Simply log in, select your app entry, and double-click on it to view the **Configure** screen.
 
 ## See Also
 

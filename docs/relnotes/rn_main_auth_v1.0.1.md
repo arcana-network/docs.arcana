@@ -25,11 +25,11 @@ There are no changes in the Auth SDK Features in this release.
 
 In the previous release, v1.0.0 of the Auth SDK, the default setting for the `network` parameter (optional) in the `AuthProvider` constructor was 'mainnet'. 
 
-By default, when a developer registers an application using the Arcana Developer Dashboard, only the 'Testnet' configuration profile is created. The **App Address** available on the dashboard corresponds to Arcana Testnet. There is **no 'Mainnet' configuration profile available by default** unless the developer explicitly creates it. 
+By default, when a developer registers an application using the Arcana Developer Dashboard, only the 'Testnet' configuration profile is created. The **{{config.extra.arcana.app_address}}** available on the dashboard corresponds to Arcana Testnet. There is **no 'Mainnet' configuration profile available by default** unless the developer explicitly creates it. 
 
 This was creating an initialization mismatch issue in cases where **developers chose to not create a 'Mainnet' configuration profile** using the Arcana Developer Dashboard but simply continue to deploy the app on Arcana Testnet. 
 
-In this use case, the default 'Testnet' configuration settings specified via the Arcana Developer Dashboard were not compatible with the default `network` setting in the Auth SDK, which pointed to 'mainnet'.  As a result, some of the new developers were facing issues while integrating with the Auth SDK v1.0.0 as they tried to deploy the app on the Arcana Testnet. The configured social providers did not show up in the Auth UI when they created the `AuthProvider` and specified the Arcana Testnet **App Address** without any `network` setting. This caused mismatched default `network`` value, 'mainnet', to take effect for the Auth SDK usage.
+In this use case, the default 'Testnet' configuration settings specified via the Arcana Developer Dashboard were not compatible with the default `network` setting in the Auth SDK, which pointed to 'mainnet'.  As a result, some of the new developers were facing issues while integrating with the Auth SDK v1.0.0 as they tried to deploy the app on the Arcana Testnet. The configured social providers did not show up in the Auth UI when they created the `AuthProvider` and specified the Arcana Testnet **{{config.extra.arcana.app_address}}** without any `network` setting. This caused mismatched default `network`` value, 'mainnet', to take effect for the Auth SDK usage.
 
 As a workaround, the developer had to override the optional parameter `network` as 'testnet' to ensure the correct functioning of the authentication feature when only the 'Testnet' configuration profile was available for a registered application.
 
@@ -49,7 +49,7 @@ See [Auth SDK Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wa
 
 For step-by-step instructions, see [how to integrate with Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) guide. 
 
-Check out the sample dApp integration example with the Arcana SDKs for [React]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md), [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) dApps.
+Check out the sample dApp integration example with the Arcana SDKs for [React]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md) and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) dApps.
 
 ---
 

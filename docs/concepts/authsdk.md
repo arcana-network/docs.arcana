@@ -16,7 +16,7 @@ arcana:
 
 The Arcana Auth SDK integrates with Web3 applications and allows them to quickly onboard users. It offers an embedded, non-custodial Web3 wallet that enables authenticated users to sign blockchain transactions on any EVM-compatible network. 
 
-Developers must first use the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) and [register, configure]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) their application. Each registered application is assigned a unique **App Address** required for integrating with the Auth SDK. 
+Developers must first use the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) and [register, configure]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) their application. Each registered application is assigned a unique **{{config.extra.arcana.app_address}}**. This is used for integrating the app with the Auth SDK. 
 
 <img src="/img/diagrams/d_an_authsdk_light.png#only-light" alt="Auth SDK Diagram" height="20%"/>
 <img src="/img/diagrams/d_an_authsdk_dark.png#only-dark" alt="Auth SDK Diagram Dark" height="20%"/>
