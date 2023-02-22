@@ -21,30 +21,32 @@ Frequently asked questions about using the [Arcana Developer Dashboard]({{page.m
 
       To delete an application in the Arcana Developer Dashboard:
 
-      * Log in to the dashboard.
-      * In the **Manage Apps** dashboard screen, you will see a card for your registered application. Select the card.
-      * Click **Delete**.
-      * Your application registration will be canceled and the **App Address** assigned to your application will no longer work
+      * You need to be logged into the dashboard.
+      * In the **Manage Apps** dashboard screen, select the card displayed for your registered application.
+      * Click the trash icon on the top right to delete the app entry.
+      * Your application registration will be canceled and the **{{config.extra.arcana.app_address}}** assigned to your application will no longer work
+
+      ![Delete App Entry](/img/an_db_delete_app.png)
 
 ??? an-faq "How do I migrate an application from Testnet to Mainnet?"
 
       To migrate an application from Arcana Testnet to Mainnet, follow these steps:
 
-      1. Use the Arcana Developer Dashboard, visit the 'Manage App' dashboard page and select the application entry. By default, when you register any application, a 'Testnet' configuration profile is created for the application.
+      1. Use the Arcana Developer Dashboard, visit the 'Manage App' dashboard page, and select the application entry. By default, when you register any application, a 'Testnet' configuration profile is created for the application.
 
-      2. On the application configuration dashboard screen switch the network from 'Testnet' to 'Mainnet'. You will be asked to approve creation of the application 'Mainnet' configuration profile. To begin with, this is a copy of the 'Testnet' profile but you can edit and manage it independently. Note that a new **App Address** is assigned to the 'Mainnet' profile.
+      2. On the application configuration dashboard screen switch the network from 'Testnet' to 'Mainnet'. You will be asked to approve the creation of the app 'Mainnet' configuration profile. To begin with, this is a copy of the 'Testnet' profile but you can edit and manage it independently. Note that a new **{{config.extra.arcana.app_address}}** is assigned to the 'Mainnet' profile.
 
-      3. Use the 'Mainnet' profile **App Address** in your integration code instead of the earlier one which corresponds to 'Testnet'. You will need to restart your application after this change. This is important. If you fail to make this change, even if you have switched profile in the dashboard, your application will continue to use the 'Testnet' configuration settings.
+      3. Use the 'Mainnet' profile **{{config.extra.arcana.app_address}}** in your integration code instead of the earlier one which corresponds to 'Testnet'. You will need to restart your application after this change. This is important. If you fail to make this change, even if you have switched the profile in the dashboard, your application will continue to use the 'Testnet' configuration settings.
 
     !!! caution
 
-          When switching your application from Arcana Testnet to Mainnet, you must ensure to use the new **App Address** corresponding to the application's 'Mainnet' profile while integrating with the Auth SDK and then bring up your application on the Arcana Mainnet. This will ensure that user onboarding and the blockchain transactions happen as per the Mainnet configuration settings and not as per the Testnet configuration profile. 
+          When switching your application from Arcana Testnet to Mainnet, you must ensure to use the new **{{config.extra.arcana.app_address}}** corresponding to the application's 'Mainnet' profile while integrating with the Auth SDK and then bringing up your application on the Arcana Mainnet. This will ensure that user onboarding and blockchain transactions happen as per the Mainnet configuration settings and not as per the Testnet configuration profile. 
 
 ??? an-faq "How do I delete Mainnet configuration settings and run my application using Arcana Testnet only?"
 
       Once you have enabled 'Mainnet' for an application, you cannot delete the 'Mainnet' configuration profile independently in the current release.  You can [switch your application from 'Mainnet' to 'Testnet']({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#switch-profiles) by using the dropdown button in the application configuration screen. 
 
-      The only way to delete Mainnet settings is to deregister the app and delete the app entry altogether.  This removes both Testnet and Mainnet configuration profiles. You will need to re-register the application.  This will create a totally new **App Address** and you will be required to specify the new App Address when integrating your application with the Auth SDK.  As a result, when your application users log in, they will see brand-new wallet addresses. If you wish to ensure that the user wallet address does not change, you must register your application and request for the ['Shared Key Space']({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md) option at the very start. In that case, users will be allowed to use the same wallet address across all applications in the Arcana ecosystem and even if an application is de-registered and re-registered.
+      The only way to delete Mainnet settings is to deregister the app and delete the app entry altogether.  This removes both Testnet and Mainnet configuration profiles. You will need to re-register the application.  This will create a totally new **{{config.extra.arcana.app_address}}** and you will be required to specify this new {{config.extra.arcana.app_address}} when integrating your application with the Auth SDK.  As a result, when your application users log in, they will see brand-new wallet addresses. If you wish to ensure that the user wallet address does not change, you must register your application and request for the ['Shared Key Space']({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md) option at the very start. In that case, users will be allowed to use the same wallet address across all applications in the Arcana ecosystem and even if an application is de-registered and re-registered.
 
 ## Branding Settings
 
@@ -82,4 +84,4 @@ Frequently asked questions about using the [Arcana Developer Dashboard]({{page.m
 
 ??? an-faq "Why do I need to specify Wallet Website Domain setting?"
 
-      This is an optional setting for additional security. If specified, Arcana Network Auth subsystem uses this setting to restrict Arcana wallet from loading anywhere else other than the application website domain that a developer specifies. for restricting domains, the [frame-ancestor Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/web/http/headers/content-security-policy#frame-ancestors) is used.
+      This is an optional setting for additional security. If specified, the Arcana Network Auth subsystem uses this setting to restrict the Arcana wallet from loading anywhere else other than the application website domain that a developer specifies. for restricted domains, the [frame-ancestor Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/web/http/headers/content-security-policy#frame-ancestors) is used.

@@ -24,17 +24,17 @@ To set up passwordless authentication, you simply need to register your dApp usi
 
 Go to the Arcana Dashboard: {% include "./text-snippets/db_portal_url.md" %}
 
-If this is your first visit to the dashboard, create a new entry for your dApp to register it. Once the dApp is registered using the dashboard, Arcana Network assigns an **App Address** for every dApp.
+If this is your first visit to the dashboard, create a new entry for your dApp to register it. Once the dApp is registered using the dashboard, Arcana Network assigns an **{{config.extra.arcana.app_address}}** for every dApp.
 
-  ![Get App Address](/img/an_db_app_address_.png)
+  ![Get Dashboard App identifier](/img/an_db_app_address_.png)
 
 !!! info
 
-      You need to save this **App Address**.
+      You need to save this **{{config.extra.arcana.app_address}}**.
 
-      After completing the dApp configuration at the dashboard, you will be required to specify this **App Address** while integrating your dApp code with the Arcana Auth SDK.
+      After completing the dApp configuration at the dashboard, you will be required to specify this **{{config.extra.arcana.app_address}}** while integrating your dApp code with the Arcana Auth SDK.
 
-      You can revisit the Arcana Dashboard later and reference the **App Address** displayed on the top right of the dashboard. 
+      You can revisit the Arcana Dashboard later and reference the **{{config.extra.arcana.app_address}}** displayed on the top right of the dashboard. 
 
 Optionally, you can use defaults for other dApp settings or choose to modify them as per your dApp use case. See [how to configure your dApp guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) for details.
 

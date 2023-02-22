@@ -25,7 +25,7 @@ When you migrate from an older version of the Arcana Auth SDK to v0.3.0, there a
 
 ### Developer Dashboard
 
-* There were some breaking changes in the registered application database schema. If you were already using an older version of the Auth SDK, you need to re-register and configure your application again using the latest Arcana Developer Dashboard. The **App Address** assigned to you earlier will not work. You need to re-register and obtain a new one. Make sure you use the new **App Address** while integrating with the Auth SDK.
+* There were some breaking changes in the registered application database schema. If you were already using an older version of the Auth SDK, you need to re-register and configure your application again using the latest Arcana Developer Dashboard. The **{{config.extra.arcana.app_address}}** assigned to you earlier will not work. You need to re-register and obtain a new one. Make sure you use the new **{{config.extra.arcana.app_address}}** while integrating with the Auth SDK.
 
 ### Auth SDK
 
@@ -33,15 +33,15 @@ When you migrate from an older version of the Arcana Auth SDK to v0.3.0, there a
 <img src="/img/icons/i_an_authsdk_dark.png#only-dark" alt="Auth SDK icon" width="50" />
 
 * There is no usage change in the Auth SDK in this release. 
-* After re-registering your app, the dashboard will assign a new **App Address**. You need to use the new app address during integration with the Auth SDK.
+* After re-registering your app, the dashboard will assign a new **{{config.extra.arcana.app_address}}**. You need to use the new {{config.extra.arcana.app_address}} during integration with the Auth SDK.
 
 ## How to Migrate to v0.3.0
 
-1. You need to re-register your app using the Arcana Developer Dashboard. This is required to obtain a fresh **App Address** and use that for integrating with the Auth SDK. The older **App Address** will **NOT WORK** with the latest v0.3.0 release. Follow the instructions in the [How to Configure App Guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) to re-register and configure your app.
+1. You need to re-register your app using the Arcana Developer Dashboard. This is required to obtain a fresh **{{config.extra.arcana.app_address}}** and use that for integrating with the Auth SDK. The older **{{config.extra.arcana.app_address}}** will **NOT WORK** with the latest v0.3.0 release. Follow the instructions in the [How to Configure App Guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) to re-register and configure your app.
 
 2. If you were using the Arcana Storage SDK, it is no longer supported. You need to stop using Storage SDK in your app for the time being until we begin supporting Storage SDK in a future release.
 
-3. You need to [re-integrate your app with the Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) by providing the new **App Address** after re-registering and configuring your application using the developer dashboard.
+3. You need to [re-integrate your app with the Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) by providing the new **{{config.extra.arcana.app_address}}** after re-registering and configuring your application using the developer dashboard.
 
 4. If you had enabled the **Arcana Testnet** blockchain network in Web3 wallet operations, you will need to remove this network altogether as it no longer exists.  The Arcana Network Testnet Blockchain Explorer too is no longer available.  Arcana Network smart contracts are deployed on Polygon now. In this release, Arcana wallet supports all EVM-compatible chains besides the default ones that show in the drop-down.  Use the [Wallet User Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md) and the [Wallet Developer Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) to add and switch networks using the wallet UI or programmatically.
 

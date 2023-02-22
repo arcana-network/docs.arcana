@@ -18,19 +18,19 @@ In this guide, you will learn how to enable Discord authentication and onboard d
 * Make sure you can access Arcana Developer Dashboard: {% include "./text-snippets/db_portal_url.md" %}
 * Install the `@arcana/auth` package. For details, see [Arcana Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md).
 
-Note that some of the configuration steps are performed using [Discord Developer Portal](https://discord.com/developers/applications), and others using the Arcana Dashboard. After configuring Discord, developers can simply integrate the application with the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) and then trigger Discord login when a user chooses to onboard via Discord social login.
+Note that some of the configuration steps are performed using [Discord Developer Portal](https://discord.com/developers/applications), and others using the Arcana Dashboard. After configuring Discord, developers can simply integrate the application with the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) and then trigger Discord login when the user chooses to onboard the app via the Discord social login.
 
 {% include "./text-snippets/discord_config_steps.md" %}
 
 !!! tip
 
-      The **App Address** is displayed on the top right of your dashboard.
+      The **{{config.extra.arcana.app_address}}** is displayed on the top right of your dashboard.
 
       You can revisit the Arcana Dashboard later to view and modify configuration settings. 
       
 ## Step 4: Integrate and Use Arcana Auth SDK 
 
-Use instructions here to [integrate with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). After integration, use the following code to trigger Discord login to onboard users:
+Use the instructions here to [integrate with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). After integration, use the following code to trigger Discord login to onboard users:
 
 {% include "./code-snippets/auth_social_login.md" %}
 

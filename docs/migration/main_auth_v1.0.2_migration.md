@@ -19,19 +19,24 @@ The following section lists changes between v1.0.1 and v{% include "./text-snipp
 
 ### Developer Dashboard
 
-No changes.
+**App Address** is now referred to as **{{config.extra.arcana.app_address}}** in the dashboard. The format of the unique identifier associated with all registered apps has changed. 
 
 ### Auth SDK
 
 <img src="/img/icons/i_an_authsdk_light.png#only-light" alt="Auth SDK icon" width="50" />
 <img src="/img/icons/i_an_authsdk_dark.png#only-dark" alt="Auth SDK icon" width="50" />
 
+* Arcana wallet now supports fiat/on-ramp feature that allows users to buy crypto currency and tokens.
 * The wallet UI has a new minimized widget.
-* Bug fixes - see [release notes]({{page.meta.arcana.root_rel_path}}/relnotes/rn_main_auth_v1.0.2.md) for details.
+* There was a bug that allowed users to log into a different app using the same tab where they had logged in without having to explicitly log in to a different app in the same tab. This is now fixed. For details, see [release notes]({{page.meta.arcana.root_rel_path}}/relnotes/rn_main_auth_v1.0.2.md).
 
 ## How to Migrate to v1.0.2?
 
-Simply upgrade the Auth SDK to the latest v1.0.2. No other change is required.
+Simply upgrade the Auth SDK to the latest v1.0.2. No other change is required. You **do not** need to re-register your apps via the dashboard. Developers can continue to use old **App Address** obtained for using v1.0.0/v1.0.1 with the latest Auth SDK.  However, if you re-register your app and get a new **{{config.extra.arcana.app_address}}**, you cannot use older versions of the SDK and are required to migrate to the latest Auth SDK v1.0.2 or higher.
+
+!!! note "{{config.extra.arcana.app_address}}"
+
+      Earlier, the documentation may have referred to the unique Arcana identifier assigned to each app after registration as **App Address**.  In the latest release, we refer to it as **{{config.extra.arcana.app_address}}**. 
 
 ## What's New?
 

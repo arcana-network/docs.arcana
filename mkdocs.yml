@@ -49,6 +49,7 @@ nav:
         - Check Wallet Balance: howto/arcana_wallet/wallet_balance.md
         - Send Tokens: howto/arcana_wallet/wallet_send.md
         - Watch Assets: howto/arcana_wallet/wallet_watchasset.md
+      - Deploy App: howto/deploy_app.md
   - Tutorials: 
       - tutorials/index.md
       - Code Samples: 
@@ -156,6 +157,7 @@ extra:
     product_name: Arcana Auth
     sdk_name: Arcana Auth SDK
     dashboard_name: Arcana Developer Dashboard
+    app_address: Client ID
   homepage: https://arcana.network
   social:
     - icon: fontawesome/brands/twitter

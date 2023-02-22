@@ -1,10 +1,10 @@
-To enable Google based social authentication in Web3 applications, developers must perform these three steps before integrating with the Arcana Auth SDK.
+To enable social authentication via Google in the Web3 applications, developers must perform these three steps before integrating with the Arcana Auth SDK.
 
 ## Step 1: Use Arcana Dashboard
 
 Go to the Arcana Dashboard: {% include "./text-snippets/db_portal_url.md" %}
 
-Register your dApp by creating a new dApp entry and specifying a name using the 'Create New App' wizard. .
+Register your dApp by creating a new dApp entry and specifying a name using the 'Create New App' wizard.
 
 !!! tip "Registering the Application"
 
@@ -46,8 +46,8 @@ Revisit the Arcana Developer Dashboard portal. Click on your app entry and visit
 
 ![howto_google_auth_type](/img/an_dApp_google_config.png)
 
-Save the settings on the dashboard. Arcana Network assigns an **App Address** to every registered and configured dApp. If you plan to integrate with Arcana SDKs, you need to save this **App Address**. 
+Save the settings on the dashboard. Arcana Network assigns an **{{config.extra.arcana.app_address}}** to every registered and configured dApp. If you plan to integrate with Arcana SDKs, you need to save this **{{config.extra.arcana.app_address}}**. 
 
-![App Address](/img/an_db_app_address.png)
+![App Identifier](/img/an_db_app_address.png)
 
-*You are all set with Google Setup. Integrate Web3 application with the Arcana Auth SDK and call social login function when the user chooses to log in.*
+*You are all set with Google Setup. Integrate the Web3 application with the Arcana Auth SDK and call the social login function when the user chooses to log in.*
