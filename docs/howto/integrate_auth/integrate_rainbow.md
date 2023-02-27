@@ -43,11 +43,11 @@ Follow these two steps:
 
 ### Step 2: Configure RainbowKit Connector 
 
-Import Arcana's `auth-wagmi` library and create a 'new' `ArcanaConnector`. During instantiation of the `ArcanaConnector`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to your dApp after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the dashboard. 
+Import Arcana's `auth-wagmi` library and create a 'new' `ArcanaConnector`. During instantiation of the `ArcanaConnector`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to your dApp after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the dashboard. Set up `ArcanaRainbowConnector` using the newly created `ArcanaConnector`. Initialize the `connectorsForWallets` in the RainbowKit with the `ArcanaRainbowConnector` and export the `connectors` to be used later in the `_app.js` file:
 
 {% include "./code-snippets/auth_rainbow_configure.md" %}
 
-Now you can provide the newly instantiated ArcanaConnector to the `createClient` wagmi function and use the client in the next step.
+Use the `connectors` configured with `ArcanaRainbowConnector` in the `_app.js` file for creating the wagmi client using the `createClient` function:
 
 {% include "./code-snippets/auth_rainbow_create_client.md" %}
 
@@ -57,13 +57,17 @@ Now you can provide the newly instantiated ArcanaConnector to the `createClient`
 
 ### Step 3: RainbowKit Context Provider
 
-Pass the wagmi client as a parameter to the `WagmiConfig` component before plugging in the `RainbowKitProvider` component in your React/NextJS application.
+Finally, pass the wagmi client created earlier as a parameter to the `WagmiConfig` component in the `_app.js` file.
 
 {% include "./code-snippets/auth_rainbow_use.md" %}
 
 That is all! :material-party-popper:
 
-You have successfully integrated your dApp with the Arcana wagmi Connector. Users can choose and use Arcana wallet or one of the built-in wallet connectors in wagmi and sign blockchain transactions.
+!!! tip "RainbowKit Integration Example"
+
+      Here is the [RainbowKit integration example source code](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration) for your reference.
+
+You have successfully integrated your dApp with the Arcana RainbowKit Connector.
 
 ## What's Next?
 

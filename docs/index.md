@@ -42,7 +42,7 @@ To use the {{config.extra.arcana.sdk_name}}, the developers must first configure
 
 ## {{config.extra.arcana.sdk_name}}
 
-{{config.extra.arcana.sdk_name}} is a client-side library that can be integrated with any Web3 application. It works with any application whether it is vanilla JS or built using various application frameworks such as _React, NextJS_, _Remix, _Vue_, or wallet connectors such as _Wagmi_ and _Rainbowkit_.
+{{config.extra.arcana.sdk_name}} is a client-side library that can be integrated with any Web3 application. It works with any application whether it is vanilla JS or built using various application frameworks such as _React, NextJS_, _Remix, _Vue_, or wallet connectors such as _Wagmi_ and _RainbowKit_.
 
 Powered by cutting-edge cryptographic algorithms, the {{config.extra.arcana.sdk_name}} has a built-in _decentralized key_ generation_ that ensures no single entity owns or manages the user's keys. [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md)
 

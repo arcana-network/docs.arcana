@@ -41,7 +41,7 @@ Initialize the newly created `AuthProvider` before invoking any Auth SDK methods
 
 {% include "./code-snippets/init_auth.md" %}
 
-You can use plug-and-play auth via `connect` method or build your auth frontend by plugging in Auth SDK `loginWithSocial` or `loginWithLink` methods. For details see [how to onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md). You can also plug in your business logic and [utilize the Arcana wallet]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for signing blockchain transactions approved by authenticated users.
+You can use plug-and-play auth via `connect` method or build your authentication UI by plugging in Auth SDK `loginWithSocial` or `loginWithLink` methods. For details see [how to onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md). You can also plug in your business logic and [utilize the Arcana wallet]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for signing blockchain transactions approved by authenticated users.
 
 #### Run your App
 
@@ -79,7 +79,7 @@ Initialize the newly created `AuthProvider` before invoking any Auth SDK methods
 
 {% include "./code-snippets/init_auth.md" %}
 
-You can use plug-and-play auth via `connect` method or build your auth frontend by plugging in Auth SDK `loginWithSocial` or `loginWithLink` methods. For details see [how to onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md). You can also plug in your business logic and [utilize the Arcana wallet]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for signing blockchain transactions approved by authenticated users.
+You can use plug-and-play auth via `connect` method or build your authentication UI by plugging in Auth SDK `loginWithSocial` or `loginWithLink` methods. For details see [how to onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md). You can also plug in your business logic and [utilize the Arcana wallet]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for signing blockchain transactions approved by authenticated users.
 
 #### Run your App
 
