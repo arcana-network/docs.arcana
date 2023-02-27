@@ -13,7 +13,7 @@ arcana:
 
 **Version: v{% include "./text-snippets/latest_auth_sdk.md" %}**
 
-**Release Date: February 21th, 2022**
+**Release Date: February 21st, 2022**
 
 ==}
 
@@ -43,7 +43,7 @@ The circular widget displayed when a wallet was minimized by clicking the 'x' ic
 
 ## Bug Fixes
 
-**Securing Localstore/Sessionstore partition**
+**Securing Local/Session store partition**
 
 In the previous release, the embedded wallet UI displayed for an authenticated user in the context of an application was also accessible in a different app's context, if the same tab was used to browse a different app. 
 

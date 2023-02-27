@@ -1,29 +1,22 @@
-```js title="auth-wagmi-example/utils/wagmi_client.ts" hl_lines="23-27"
-import { ArcanaConnector } from "@arcana/auth-wagmi";
-import { polygon, polygonMumbai } from "wagmi/chains";
-import { configureChains, createClient, Chain } from "wagmi";
-import { publicProvider } from "wagmi/providers/public";
+```js title="auth-wagmi-example/pages/_app.js" hl_lines="8 15-19"
+import "../styles/globals.css";
+import "@rainbow-me/rainbowkit/styles.css";
 
-export const connector = (chains: Chain[]) => {
-  return new ArcanaConnector({
-    chains,
-    options: { // appId = Client ID from the Arcana Developer Dashboard
-      appId: `9e0c6715d9ea7aab73535c8c359d8b45ac2587bc`, 
-      theme: 'light',            // optional; Defaults to 'dark'
-      alwaysVisible: false,      // optional; Defaults to true
-      position: 'left'           // optional; Defaults to 'right'
-    },
-  });
-};
+import { configureChains, createClient, WagmiConfig } from "wagmi";
+import { polygon, mainnet } from "wagmi/chains";
+import { publicProvider } from "wagmi/providers/public";
+import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { connectors } from "../utils/wallet";
 
 const { chains, provider } = configureChains(
-  [polygon, polygonMumbai],
+  [mainnet, polygon],
   [publicProvider()]
 );
 
-export const wagmiClient = createClient({
+const wagmiClient = createClient({
   autoConnect: true,
-  connectors: [connector(chains)],
+  connectors: connectors(chains),
   provider,
 });
+...
 ```

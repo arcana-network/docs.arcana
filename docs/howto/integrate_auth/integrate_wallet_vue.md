@@ -43,7 +43,7 @@ Follow these two steps:
 
 To integrate the application, first, you need to import Arcana Auth SDK and create a 'new' `AuthProvider`. During instantiation of the `AuthProvider`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to your application after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the dashboard. Also, specify the [Arcana wallet visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) via the `alwaysVisible` parameter.
 
-You can club all the Auth SDK-related code in a file `src/lib/auth.js` and export the function that instantiates the `AuthProvider`.
+You can club all the Auth SDK integration code in a file `src/lib/auth.js` and export the function that instantiates the `AuthProvider`.
 
 {% include "./code-snippets/vue_auth_js.md" %}
 
