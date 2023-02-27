@@ -58,7 +58,7 @@ Next, provide the newly instantiated and configured `ArcanaConnector` to the `cr
 
 ### Step 3: Use `ArcanaConnector` in Wagmi
 
-You can use the `wagmiClient` created earlier, configured with `ArcanaConnector` in your `_app.tsx` file.
+Now use the `wagmiClient` in `WagmiConfig` component in the `_app.js` file.
 
 {% include "./code-snippets/auth_wagmi_use_app.md" %}
 
