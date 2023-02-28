@@ -152,6 +152,8 @@ nav:
   - Integrations:
     - Shardeum: 
       - integrations/shardeum/index.md
+      - Developer's Guide: integrations/shardeum/integrate_shardeum.md
+      - Using Wallet UI: integrations/shardeum/wallet_config_shardeum.md
   - Contact Us: 
     - support.md
 

@@ -1,11 +1,5 @@
-# Shardeum Docs
+# Using Shardeum Network with Arcana Auth SDK
 
-[Introduction](./shardeum_intro.md){ .md-button }
+[Developers Guide to Integrating Shardeum](./integrate_shardeum.md){ .md-button }
 
-[Enable Arcana Wallet](./integrate_shm.md){ .md-button }
-
-[Add/Switch Sharedeum Network](./add_switch_shm.md){ .md-button }
-
-[Send SHM](./send_shm.md){ .md-button }
-
-[Arcana Wallet User Guide](../../user_guides/wallet_ui/index.md){ .md-button }
+[Wallet Users' Guide: Add Shardeum Network](wallet_config_shardeum.md){ .md-button }
