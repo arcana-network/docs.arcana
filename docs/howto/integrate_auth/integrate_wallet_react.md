@@ -21,7 +21,7 @@ In this tutorial, you will learn how to integrate a React/NextJS application wit
 
     !!! note "Configure Authentication Mechanism"
 
-          You may be required to configure additional details depending on the choice of authentication mechanisms. For example, if the dApp wants to enable users to onboard using the Google social authentication then the developer must set up and specify the [clientID for Google OAuth]({{page.meta.arcana.root_rel_path}}/howto/config_social_login/google_oauth.md) in the Arcana Dashboard before integrating the application.
+          You may be required to configure additional details depending on the choice of authentication mechanisms. For example, if the dApp wants to enable users to onboard using the Google social authentication then the developer must set up and specify the [client ID for Google OAuth]({{page.meta.arcana.root_rel_path}}/howto/config_social_login/google_oauth.md) in the Arcana Dashboard before integrating the application.
 
           For details, see [how to configure one or more social logins]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md).
 
@@ -52,7 +52,9 @@ import App from "./App";
 import { AuthProvider } from "@arcana/auth";
 import { ProvideAuth } from "@arcana/auth-react";
 
-const provider = new AuthProvider(`${clientId}`) // Client ID assigned to the app, see Arcana Dashboard
+
+// clientId: Arcana Unique App Identifier via Dashboard
+const provider = new AuthProvider(`${clientId}`)
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
