@@ -11,9 +11,9 @@ arcana:
 
 {==
 
-**Version: v{% include "./text-snippets/latest_auth_sdk.md" %}**
+**Version: v1.0.2**
 
-**Release Date: February 21st, 2022**
+**Release Date: February 21st, 2023**
 
 ==}
 
@@ -69,7 +69,7 @@ Check out the sample dApp integration example with the Arcana SDKs for [React]({
 
 ---
 
-## Migrate to v{% include "./text-snippets/latest_auth_sdk.md" %}
+## Migrate to v1.0.2
 
 Are you using an older version of the Arcana Auth SDK? Refer to the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and upgrade to the latest version.
 
