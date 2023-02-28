@@ -41,7 +41,8 @@ yarn add @arcana/auth
 import { AuthProvider } from '@arcana/auth'
 import { ethers } from 'ethers'
 
-const auth = new AuthProvider(`${clientId}`)
+// clientId: Arcana Unique App Identifier via Dashboard
+const auth = new AuthProvider(`${clientId}`) 
 
 window.onload = async () => {
   try {
@@ -67,6 +68,8 @@ window.onload = async () => {
 import { AuthProvider } from '@arcana/auth'
 import Web3 from 'web3'
 
+
+// clientId: Arcana Unique App Identifier via Dashboard
 const auth = new AuthProvider(`${clientId}`)
 
 window.onload = async () => {

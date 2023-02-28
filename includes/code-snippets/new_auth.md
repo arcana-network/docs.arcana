@@ -1,5 +1,6 @@
 ```js
-const clientId = '445007f942f9Ba718953094BbeeeeeB9484cAfd2' //get clientId via Arcana Dashboard
+//clientId : Arcana Unique App Identifier via Dashboard
+const clientId = 'xar_test_445007f942f9Ba718953094BbeeeeeB9484cAfd2'
 const auth = new AuthProvider(`${clientId}`, { //required
   network: 'testnet', //defaults to 'testnet'
   position: 'left', //defaults to right

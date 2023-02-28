@@ -15,6 +15,7 @@ export const ArcanaRainbowConnector = ({ chains }) => {
       const connector = new ArcanaConnector({
         chains,
         options: {
+          //clientId : Arcana Unique App Identifier via Dashboard
           clientId: "xar_test_b2dde12aad64eb35d72b2c80926338e178b1fa3f",
         },
       });
