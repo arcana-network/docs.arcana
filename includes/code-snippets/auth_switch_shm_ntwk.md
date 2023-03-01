@@ -2,12 +2,18 @@ This method is specified by [EIP-3326](https://eips.ethereum.org/EIPS/eip-3326)
 
 ```ts
 try {
-  await provider.request({
-    method: 'wallet_switchEthereumChain',
-    params: [{ chainId: '0x1F91' }], // Decimal 8081 for Shardeum Liberty 2.x Network
+  setRequest("wallet_switchEthereumChain");
+  const response = await provider.request({
+    method: "wallet_switchEthereumChain",
+    params: [
+      {
+        chainId: "8081"
+      }
+    ]
   });
-} catch(error) {
-  ...
+  setResult(response);
+} catch (e) {
+  console.log({ e });
 }
 ```
 

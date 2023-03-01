@@ -39,7 +39,7 @@ To enable Arcana wallet after integrating the Web3 app with the Auth SDK, a user
 
 ## Step 4: Configure & Switch to the Shardeum Network
 
-To ensure that the Arcana wallet shows up for an authenticated user with pre-configured Shardeum Network, the developer must configure, add Shardeum Network programmatically by using wallet_addEthereumChain JSON-RPC method and then switch to it via wallet_switchEthereumChain JSON-RPC method.
+To ensure that the Arcana wallet shows up for an authenticated user with pre-configured Shardeum Network, the developer must configure, add Shardeum Network programmatically by using wallet_addEthereumChain JSON-RPC method and then switch to it via wallet_switchEthereumChain JSON-RPC method. Set up requisite hooks for JSON-RPC.
 
 ### Enable JSON-RPC Hooks
 
@@ -49,9 +49,13 @@ To ensure that the Arcana wallet shows up for an authenticated user with pre-con
 
 {% include "./code-snippets/auth_add_shm_ntwk.md" %}
 
+<img alt="wallet SHM add network" src="/img/wallet_shm_add_ntwk.png" width="50%"/>
+
 ### Switch to the Shardeum Network
 
 {% include "./code-snippets/auth_switch_shm_ntwk.md" %}
+
+<img alt="wallet SHM switch network" src="/img/wallet_shm_switch_ntwk.png" width="50%" />
 
 ## Other Web3 Wallet Operations
 
@@ -92,8 +96,6 @@ The Arcana wallet springs into action when a user initiates a 'send token' trans
 <img src="/img/an_wallet_send_shm.png"/>
 
 The wallet displays a 'Proceed' button to allow for user confirmation before the send token transaction is executed on the configured blockchain network. 
-
-<img src="/img/an_wallet_send.png" width="300"/>
 
 ## See Also
 

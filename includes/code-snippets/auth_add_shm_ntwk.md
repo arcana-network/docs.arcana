@@ -2,21 +2,24 @@ The `wallet_addEthereumChain` method is specified by [EIP-3085](https://eips.eth
 
 ```ts
 try {
-  await provider.request({
-    method: 'wallet_addEthereumChain',
-    params: [{
-      chainId: '0x1F91',  // Decimal 8081
-      chainName: 'Shardeum Liberty 2.X',
+  setRequest("wallet_addEthereumChain");
+  const response = await provider.request({
+    method: "wallet_addEthereumChain",
+    params: [
+    {
+      chainId: "8081",
+      chainName: "Shardeum",
+      blockExplorerUrls: ["https://explorer-liberty20.shardeum.org/"],
+      rpcUrls: ["https://liberty20.shardeum.org/"],
       nativeCurrency: {
-        name: 'Shardeum',
-        symbol: 'SHM',
-        decimals: 18,
+      symbol: "	SHM"
       }
-      rpcUrls: ['https://liberty20.shardeum.org/'],
-      blockExplorerUrls: ['https://explorer-liberty20.shardeum.org/']
-    }]
-  })
-} catch(error) {
+     }
+    ]
+  });
+  setResult(response);
+} catch (e) {
+  console.log({ e });
   ...
 }
 
