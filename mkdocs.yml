@@ -104,6 +104,7 @@ nav:
           - concepts/authtype/index.md
           - Social Authentication: concepts/authtype/socialauth.md
           - Passwordless: concepts/authtype/pwdless.md
+        - Usage & Billing: concepts/billing.md
         - Dashboard: concepts/dashboard.md
         - DKG:
           - concepts/dkg/index.md

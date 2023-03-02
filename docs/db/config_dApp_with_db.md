@@ -175,6 +175,32 @@ You can use the dropdown in the top right of the application dashboard screen to
 
 ![Application Usage Stats Mainnet](/img/an_db_app_usage_metrics_mainnet.png)
 
+### Billing
+
+Arcana Network tracks app usage for every developer account in terms of MAU. Developers must set up the billing details once their free usage tier is consumed. Otherwise, the registered apps will be suspended.
+
+#### Set up Billing Details
+
+Click on the user icon on the top right of the dashboard screen. Select **Accounts** in the dropdown. 
+
+<!--- TBD - Screenshot with indicator showing how to bring up accounts page --->
+
+Provide the billing details and payment methods and click **Save**.
+
+![Billing methods and details](/img/an_db_billing_method_details.png)
+
+#### View Billing History
+
+Refer to the 'Billing Details' screen. The 'Estimated Charges' section on the bottom displays a link to view the billing history and download invoices.
+
+![Billing history](/img/an_db_billing_history.png)
+
+#### Pay Bills
+
+To pay the Arcana Network dues, developers can refer to the 'Estimated Charges' section on the bottom right of the 'Billing Details' screen. Click **Continue** to view invoice details and pay the bill.
+
+![Pay Dues](/img/an_db_billing_dues.png)
+
 ### Delete Application
 
 To de-register an application the developers must delete the entry using the dashboard. Go to the 'Manage Apps' dashboard page which lists all the registered applications.  
