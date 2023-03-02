@@ -177,15 +177,33 @@ You can use the dropdown in the top right of the application dashboard screen to
 
 ### Billing
 
-Arcana Network tracks app usage for every developer account in terms of MAU. Developers must set up the billing details once their free usage tier is consumed. Otherwise, the registered apps will be suspended.
+Arcana Network tracks app usage for every developer account in terms of MAU. Invoices are generated at the end of each month and the chargeable amount is auto-deducted using the payment method configured by the developer in their profile section.
 
-#### Set up Billing Details
+To use Arcana Network Auth SDK, developers are not required to enter any payment details until their free usage tier expires. Once the free tier is consumed, developers must set up the billing details in their profile section on the Arcana Developer Dashboard. Otherwise, the registered apps will be suspended and users will not be allowed to log in to any app that is registered using the developer's Arcana account.
 
-Click on the user icon on the top right of the dashboard screen. Select **Accounts** in the dropdown. 
+#### Set up Payment Method
 
-<!--- TBD - Screenshot with indicator showing how to bring up accounts page --->
+Click on the user icon on the top right of the dashboard screen. Select **Profile** in the dropdown. 
 
-Provide the billing details and payment methods and click **Save**.
+![Application Usage Stats Mainnet](/img/an_db_billing_nav.png)
+
+You will see developer's Arcana account profile details. Refer to the **Payment Method** section and provide the card details.
+
+![Application Usage Stats Mainnet](/img/an_db_billing_profile.png)
+
+After updating the payment methods, click **Save**. The amount payable will be auto-deducted using the specified payment method once the invoice is generated at the end of every month. If the payment fails, Arcana will retry it until the grace period (30 days) expires. After the grace period ends and payment is not successful, the developer account will be suspended and no users will be able to log into the registered apps.
+
+#### View Invoice
+
+Click on the user icon on the top right of the dashboard screen. Select **Invoices** in the dropdown. 
+
+![Application Usage Stats Mainnet](/img/an_db_invoices_nav.png)
+
+In the **Invoices** page, you will see the details of the current pending dues followed by the billing history of previous invoices that can be downloaded for reference.
+
+![Application Usage Stats Mainnet](/img/an_db_invoices_details.png)
+
+<!---
 
 ![Billing methods and details](/img/an_db_billing_method_details.png)
 
@@ -200,6 +218,8 @@ Refer to the 'Billing Details' screen. The 'Estimated Charges' section on the bo
 To pay the Arcana Network dues, developers can refer to the 'Estimated Charges' section on the bottom right of the 'Billing Details' screen. Click **Continue** to view invoice details and pay the bill.
 
 ![Pay Dues](/img/an_db_billing_dues.png)
+
+-->
 
 ### Delete Application
 
