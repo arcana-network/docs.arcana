@@ -151,6 +151,12 @@ nav:
       - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
   - Audit Reports:
     - audit/index.md
+  - Blockchains:
+    - EVM Chains:
+      - Shardeum: 
+        - integrations/shardeum/index.md
+        - Developer's Guide: integrations/shardeum/integrate_shardeum.md
+        - Using Wallet UI: integrations/shardeum/wallet_config_shardeum.md
   - Contact Us: 
     - support.md
 
