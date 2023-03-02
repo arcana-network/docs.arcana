@@ -193,7 +193,7 @@ You will see developer's Arcana account profile details. Refer to the **Payment 
 
 After updating the payment methods, click **Save**. The amount payable will be auto-deducted using the specified payment method once the invoice is generated at the end of every month. If the payment fails, Arcana will retry it until the grace period (30 days) expires. After the grace period ends and payment is not successful, the developer account will be suspended and no users will be able to log into the registered apps.
 
-#### View Invoice
+#### View Invoices
 
 Click on the user icon on the top right of the dashboard screen. Select **Invoices** in the dropdown. 
 
