@@ -35,7 +35,7 @@ root.render(
 );
 ```
 
-```js title="App.js" hl_lines="2 6 24"
+```js title="App.js" hl_lines="2 73"
 import React from "react";
 import { Auth } from "@arcana/auth-react";
 import { Button } from "./components";

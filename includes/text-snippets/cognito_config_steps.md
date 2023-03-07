@@ -26,11 +26,11 @@ Go to the [AWS Management Console](https://docs.aws.amazon.com/cognito/latest/de
 
       **Email ID** must be selected as one of the Cognito sign-in options. 
       
-![cognito console](/img/an_dApp_cognito_dev_console.png) 
+![Cognito console](/img/an_dApp_cognito_dev_console.png) 
 
 If you already have a user pool set up, select it from the list and double-click on it to see the details. Refer to the **App Integration** tab settings and click **Create App Client** on the bottom right of the page.
 
-![cognito create app client](/img/an_dApp_cognito_create_app_client.png) 
+![Cognito create app client](/img/an_dApp_cognito_create_app_client.png) 
 
 You will see the **Create Client** dashboard screen. You need to specify the following settings for your app and update the requisite fields in the console:
 
@@ -45,7 +45,7 @@ Then scroll down to the **Hosted UI** section and refer to the **Allowed Callbac
 
 Make sure you add *Cognito User Pool* in the **Identity Provider** section of the settings as shown in the figure above. 
 
-For the **Oauth 2.0 Grant Type** setting, make sure you specify *Authorization Code Grant* and *Implicit Grant* values as shown in the figure below:
+For the **OAuth 2.0 Grant Type** setting, make sure you specify *Authorization Code Grant* and *Implicit Grant* values as shown in the figure below:
 
 ![Cognito Oauth2.0 Grant Type](/img/an_dApp_cognito_app_client_oauth2_grant.png)
 

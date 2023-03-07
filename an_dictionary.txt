@@ -16,6 +16,7 @@ ACL
 ACLs
 ADKG
 AERC721
+ALLOW_REFRESH_TOKEN_AUTH
 ANBlockChainURL
 ANBlockExplorerURL
 ANChainIDText
@@ -100,6 +101,7 @@ ChangeOwnerSignMsgText
 Changelog
 ClientID
 Cognito
+Cognito-based
 Coinbase
 Comdex
 ComingSoonTutLinkText
@@ -167,6 +169,7 @@ ERC-721
 ERC20
 EVM
 EVM-compatible
+EmailID
 Ethereum
 Ethereum-compatible
 Ethereum_Goerli
@@ -177,6 +180,7 @@ Ethers
 Expected
 FullUI
 GOOGLE_ANALYTICS_ID
+Gasless
 GetInfoOutput
 GetPrivateKey
 GetTemplateSourcesText
@@ -289,6 +293,7 @@ SDK.
 SDKIntIssuesText
 SDKVersionNoteText
 SDKs
+SHM
 SMS
 SSD
 SSL
@@ -491,6 +496,8 @@ chunkSize
 ciphertext
 cleartext
 clientID
+cognito
+cognitooauth
 composable
 conceptauthsdk
 conceptdappusage
@@ -654,6 +661,7 @@ idbridges
 idbyok
 idchangefileowner
 idchangeownerpvtnft
+idcognitooauth
 idconceptauthsdk
 idconceptdappusage
 idconceptdb
@@ -982,6 +990,8 @@ verifiers
 viewpvtnft
 vite
 wagmi
+wallet_addEthereumChain
+wallet_switchEthereumChain
 walletaddswitchntwk
 walletbalance
 walletexportkey
