@@ -2,7 +2,7 @@
 
 Code samples to demonstrate how to integrate your application with the {{ arcana.product_name }}.
 
-[Vanilla JS Example :material-language-typescript:](https://github.com/arcana-network/auth/tree/main/examples){ .md-button }
+[Vanilla JS Example :material-language-typescript:](vanilla_html_js_sample.md){ .md-button }
 
 [React Example :fontawesome-brands-react:](react_code_sample.md){ .md-button }
 
