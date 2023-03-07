@@ -13,7 +13,7 @@ arcana:
 
 **Version: v1.0.3**
 
-**Release Date: March 1st, 2023**
+**Release Date: March 8th, 2023**
 
 ==}
 
@@ -23,12 +23,11 @@ arcana:
 
 Arcana Auth SDK now allows Web3 apps to configure AWS Cognito as the social provider for user authentication. See [how to onboard users via Cognito]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_cognito_oauth.md) for details.
 
-
 ## Enhancements
 
 ### Better Login Performance
 
-The Auth SDK has been updated for better login performance.
+The Auth SDK has been updated for better login performance powered by an improved [ADKG subsystem](https://github.com/arcana-network/adkg/releases).
 
 ---
 
@@ -54,4 +53,4 @@ Are you using an older version of the Arcana Auth SDK? Refer to the [Migration G
 
 ## Questions? 
 
-Refer to [FAQ]({{page.meta.arcana.root_rel_path}}/faq/faq_gen.md), [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md) and other developer resources or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support.md).
+Refer to [FAQ]({{page.meta.arcana.root_rel_path}}/faq/faq_gen.md), [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support.md).
