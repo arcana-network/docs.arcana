@@ -54,7 +54,7 @@ nav:
       - tutorials/index.md
       - Code Samples: 
         - tutorials/code_samples/index.md
-        - Auth Example: https://github.com/arcana-network/auth/tree/main/examples
+        - HTML/JS Example: tutorials/code_samples/vanilla_html_js_sample.md
         - React Example: tutorials/code_samples/react_code_sample.md
         - NextJS Example: tutorials/code_samples/nextjs_code_sample.md
         - Vue Example: https://github.com/arcana-network/auth-sample-integration-new
