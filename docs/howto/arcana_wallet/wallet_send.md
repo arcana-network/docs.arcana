@@ -40,7 +40,9 @@ The Arcana wallet springs into action when a user initiates a 'send token' trans
 
 <img src="/img/an_wallet_send_inputs.png" width="300"/>
 
-The wallet displays a 'Proceed' button to allow for user confirmation before the send token transaction is executed on the configured blockchain network. <img src="/img/an_wallet_send.png" width="300"/>
+The wallet displays a 'Proceed' button to allow for user confirmation before the send token transaction is executed on the configured blockchain network. 
+
+<img src="/img/an_wallet_send.png" width="300"/>
 
 ## Receive Tokens
 

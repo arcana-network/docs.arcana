@@ -121,7 +121,7 @@ const auth = new AuthProvider(`${clientId}`, {  //Arcana Unique App Identifier v
   },
 })
 
-await auth.init()
+await auth.init()  // Note: Initialize Auth SDK before calling any other Auth APIs
 ```
 
 See [Get Started with Auth SDK](https://docs.dev.arcana.network/walletsdk/wallet_qs.html) for more Auth SDK usage insights.
@@ -170,6 +170,12 @@ interface UserInfo {
   publicKey: string
 }
 */
+```
+
+Show wallet UI
+
+```js
+auth.showWallet()
 ```
 
 #### Logout
@@ -221,7 +227,7 @@ Arcana wallet implements the following common interfaces exposed by all Ethereum
 
 #### `wallet_addEthereumChain`
 
-This method is specified by [EIP-3085](https://eips.ethereum.org/EIPS/eip-3085)
+This method is specified by [EIP-3085](https://eips.ethereum.org/EIPS/eip-3085).
 
 ```ts
 try {
@@ -253,7 +259,7 @@ interface AddEthereumChainParameter {
 
 #### `wallet_switchEthereumChain`
 
-This method is specified by [EIP-3326](https://eips.ethereum.org/EIPS/eip-3326)
+This method is specified by [EIP-3326](https://eips.ethereum.org/EIPS/eip-3326).
 
 ```ts
 try {

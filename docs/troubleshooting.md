@@ -28,7 +28,7 @@ Storage Region can be configured for any application using the dashboard just on
 
 {% include "./text-snippets/warn_config_wallet_ui.md" %}
 
-### Registered app does not show up in 'Manage Apps' screen on the Developer Dashboard
+### Registered app does not show up in the 'Manage Apps' screen on the Developer Dashboard
 
 After logging into the Arcana Developer Dashboard, you should see any registered apps in previous sessions in the 'Manage Apps' dashboard screens.  There is one card per registered application.
 
@@ -38,15 +38,15 @@ If you do not see your registered application card, check if you used a differen
 
       If you are migrating to the Arcana Auth SDK release v1.0.0, you will not see your pre-registered apps in the dashboard due to some breaking changes. You need to re-register your apps again.
 
-### Aggregate login does not work when GitHub is one of the provider used to login into the Arcana Developer Dashboard
+### Aggregate login does not work when GitHub is one of the providers used to login into the Arcana Developer Dashboard
 
 **Scenario**
 
-A developer logs into the Arcana Dashboard for the very first time, using social authentication provider, say P1. The dashboard shows the 'Manage Apps' screen with 'create new dApp' wizard and zero registered app configuration profile cards. The developer can register a new application and obtain a unique **{{config.extra.arcana.app_address}}** say Addr1. This will create a new app configuration profile card on the 'Manage Apps' screen for the newly registered app. Now if the developer logs out and logs back in using a different social authentication provider, say P2, Arcana Network can recognize that the login is by the same developer. This results in dashboard displaying the 'Manage Apps' screen with the previously registered application configuration profile card. This behavior is supported only if the developer has the same email ID associated with both the social providers P1 and P2.
+A developer logs into the Arcana Dashboard for the very first time, using social authentication provider, say P1. The dashboard shows the 'Manage Apps' screen with the 'create new dApp' wizard and zero registered app configuration profile cards. The developer can register a new application and obtain a unique **{{config.extra.arcana.app_address}}** say Addr1. This will create a new app configuration profile card on the 'Manage Apps' screen for the newly registered app. Now if the developer logs out and logs back in using a different social authentication provider, say P2, Arcana Network can recognize that the login is by the same developer. This results in the dashboard displaying the 'Manage Apps' screen with the previously registered application configuration profile card. This behavior is supported only if the developer has the same email ID associated with both the social providers P1 and P2.
 
 If the user has a different email ID associated with providers P1 and P2 then during the second login with a different provider, the same developer cannot be recognized and associated with the apps registered earlier using the different social provider. The dashboard considers login with a new provider (different email ID) as a new identity and assumes this is a fresh login by a new developer. It brings up the 'Manage Apps' screen where the same user will not be able to see the application configuration card that was present earlier while logging in with a different social provider.
 
-If one of the providers is GitHub, then even if the same email ID is associated with all providers, Arcana Network may fail to associate GitHub identity of the same developer with other providers.  
+If one of the providers is GitHub, then even if the same email ID is associated with all providers, Arcana Network may fail to associate the GitHub identity of the same developer with other providers.  
 
 Is there a way to get this working?
 
@@ -59,7 +59,7 @@ With GitHub, the behavior is different, only if the GitHub user settings are not
 1. In your GitHub profile setting, allow your email to be visible
 2. In the GitHub Email Settings preferences, make sure you do not select the checkbox which says 'Keep my email address private'.
 
-Refer to figure below for details:
+Refer to the figure below for details:
 
 <img alt="GitHub Profile email visible" src="/img/an_trbs_gh_issue_visible_email.png" width="50%"/>
 <img alt="GitHub Email Settings not private" src="/img/an_trbs_gh_issue_email_not_private.png" width="50%"/>
@@ -73,9 +73,9 @@ Refer to figure below for details:
 
 ### Failed to integrate with Arcana SDK due to polyfill issues
 
-Polyfill errors are often encountered by a vast majority of Web3 libraries and applications using node.js libraries. These are often reported in [stackoverflow](https://stackoverflow.com/a/65556946) and in the context of [Vite](https://github.com/vitejs/vite/discussions/3126).
+Polyfill errors are often encountered by a vast majority of Web3 libraries and applications using node.js libraries. These are often reported in [stackoverflow](https://stackoverflow.com/a/65556946) and the context of [Vite](https://github.com/vitejs/vite/discussions/3126).
 
-The polyfilling issues result in developers not being able to import the Arcana SDKs at all in their applications. Bundlers complain or otherwise you may see runtime errors as shown in the [example](https://github.com/facebook/create-react-app/issues/11756) below.
+The polyfilling issues result in developers not being able to import the Arcana SDKs at all in their applications. Bundlers complain or otherwise, you may see runtime errors as shown in the [example](https://github.com/facebook/create-react-app/issues/11756) below.
 
 ```
 If you want to include a polyfill, you need to:
@@ -87,7 +87,7 @@ If you don't want to include a polyfill, you can use an empty module like this:
  @ ./src/index.tsx 17:0-66 27:19-27 29:23-43 30:23-43 34:35-60
  ```
 
- While integrating with Arcana SDKs, if your application encounters similar polyfill errors while using bundlers such as Vue-CLI, or CRA, follow these steps to fix them.  Other bundlers or toolchains may require their own solutions. Some toolchains may do this by default and require no further modification. You can also refer to [sample code](https://github.com/arcana-network/test-vite-app/blob/master/vite.config.js) for details.
+ While integrating with Arcana SDKs, if your application encounters similar polyfill errors while using bundlers such as Vue-CLI, or CRA, follow these steps to fix them.  Other bundlers or toolchains may require their solutions. Some toolchains may do this by default and require no further modification. You can also refer to [sample code](https://github.com/arcana-network/test-vite-app/blob/master/vite.config.js) for details.
 
 #### Vue-CLI
 
@@ -251,11 +251,11 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 
 ### Configured social providers do not show up in the wallet UI with v1.0.0
 
-If you are using an older version of Arcana Auth SDK, simply upgrading the package to v1.0.0 is not sufficient. Your older app configuration settings will no longer work and if you bring up your wallet it will not show any of the configured social providers. 
+If you are using an older version of the Arcana Auth SDK before v1.0.0, simply upgrading the package to v1.0.0 or beyond is not sufficient. Your older app configuration settings will no longer work. If you allow users to log in, their auth plug-and-play pop-up UI will not show any of the configured social providers. 
 
-Please follow the instructions in the [Migration to v1.0.0 Guide]({{page.meta.arcana.root_rel_path}}/migration/main_auth_v1.0.1_migration.md) before integrating the latest Auth SDK.
+Please follow the instructions in the [Migration to v1.0.0 Guide]({{page.meta.arcana.root_rel_path}}/migration/main_auth_v1.0.1_migration.md) before integrating with v1.0.0 Auth SDK. We highly recommend that you use the latest Auth SDK.
 
-If you continue to the issue after migrating properly, please double-check the **{{config.extra.arcana.app_address}}** that is specified at the time of instantiating the `AuthProvider`.  If you are using v1.0.0, and do not explicitly specify any `network` value while instantiating the `AuthProvider`, then by default 'Mainnet' is selected. In this case, make sure you provide the **{{config.extra.arcana.app_address}}** assigned to your app's 'Mainnet' configuration profile. If you specify the wrong **{{config.extra.arcana.app_address}}** then you will not see the social providers when the wallet UI comes up after login.
+If your app users continue to see the same issue of social providers not showing after migrating properly, please double-check the **{{config.extra.arcana.app_address}}** that is specified at the time of instantiating the `AuthProvider`.  If you are using v1.0.0, and do not explicitly specify any `network` value while instantiating the `AuthProvider`, then by default 'Mainnet' is selected. In this case, make sure you provide the **{{config.extra.arcana.app_address}}** assigned to your app's 'Mainnet' configuration profile. If you specify the wrong **{{config.extra.arcana.app_address}}** then you will not see the social providers when the wallet UI comes up after login.
 
 If you choose to specify the `network` parameter as the 'testnet', then make sure you specify the **{{config.extra.arcana.app_address}}** corresponding to the 'Testnet' configuration profile of your app from the dashboard.
 
@@ -282,3 +282,11 @@ Lastly, initialize the `AuthProvider`. This is important as it initializes the e
 !!! caution
 
       If an application integrates with the Auth SDK, it must follow these steps above before calling any other SDK method such as `isLoggedIn()` or `connect()` or `loginWithSocial('providerstring')`.
+
+### User could log in to the Web3 app but subsequent login fails after a developer enables the 'global keys' feature in the app
+
+By default, Arcana Auth is configured to allow app-specific keys for the Web3 apps that integrate with the SDK. Developers can begin deploying their apps on the Arcana Testnet and then deploy them on the Arcana Mainnet.  To use the global keys feature in their apps, the developers are required to fill up an online form, submit it and wait for approval from the Arcana team before global keys are enabled for an app. The status of the feature request is displayed in the Arcana Developer Dashboard. While the feature is in 'review' status, the app can be deployed on the Arcana Testnet and users are allowed to log in and use the app. 
+
+While an app is switching over from the default 'app-specific' keys configuration to the 'global keys' configuration, the developer may choose to allow app users to log in before the global features option is approved. Users that log in before the global keys are approved will be assigned 'app-specific' keys. There is some part of key metadata that is stored locally in the authenticated user's device. In this case, once the feature gets **approved**, the user keys are re-assigned. The keys change from 'app-specific' to 'global keys' and this results in new key metadata. There is a mismatch between the keys or wallet addresses already in use by the users and the new global keys that are now reconfigured for the app users.  As a result, users will not be able to log in to the app anymore.
+
+To fix this issue, the user needs to clear the local storage used by the Arcana wallet on their device by clearing the browser cache and then attempting another login from a fresh browser window.

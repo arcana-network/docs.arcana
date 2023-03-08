@@ -45,9 +45,10 @@ nav:
         - Configure Wallet: howto/arcana_wallet/config_wallet.md
         - Configure Wallet Visibility: howto/arcana_wallet/config_wallet_modes.md
         - Add / Switch Network: howto/arcana_wallet/wallet_add_switch_ntwk.md
-        - Sign Transactions: howto/arcana_wallet/wallet_sign.md
         - Check Wallet Balance: howto/arcana_wallet/wallet_balance.md
         - Send Tokens: howto/arcana_wallet/wallet_send.md
+        - Sign Transactions: howto/arcana_wallet/wallet_sign.md
+        - Show Wallet: howto/arcana_wallet/wallet_show.md
         - Watch Assets: howto/arcana_wallet/wallet_watchasset.md
       - Deploy App: howto/deploy_app.md
   - Tutorials: 
@@ -128,12 +129,14 @@ nav:
     - Validator Nodes: faq/faq_validator.md
   - Release Notes:
     - relnotes/index.md
+    - Auth 1.0.3 : relnotes/rn_main_auth_v1.0.3.md
     - Auth 1.0.2 : relnotes/rn_main_auth_v1.0.2.md
     - Auth 1.0.1 : relnotes/rn_main_auth_v1.0.1.md
     - Auth 1.0.0 (Mainnet): relnotes/rn_main_auth_v1.0.0.md
     - Auth 0.3.0 (Testnet): relnotes/rn_beta_auth_v0.3.0.md
   - Migration Guides:
     - migration/index.md
+    - v1.0.2 -> v1.0.3: migration/main_auth_v1.0.3_migration.md
     - v1.0.1 -> v1.0.2: migration/main_auth_v1.0.2_migration.md
     - v1.0.0 -> v1.0.1: migration/main_auth_v1.0.1_migration.md
     - v0.3.0 -> v1.0.0: migration/main_auth_v1.0.0_migration.md
@@ -165,6 +168,7 @@ extra:
     sdk_name: Arcana Auth SDK
     dashboard_name: Arcana Developer Dashboard
     app_address: Client ID
+    latest_version: 'v1.0.3'
   homepage: https://arcana.network
   social:
     - icon: fontawesome/brands/twitter

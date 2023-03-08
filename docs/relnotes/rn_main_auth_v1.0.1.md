@@ -13,7 +13,7 @@ arcana:
 
 **Version: v1.0.1**
 
-**Release Date: February 10th, 2022**
+**Release Date: February 10th, 2023**
 
 ==}
 

@@ -19,10 +19,12 @@ Once you have integrated your application with the Auth SDK, you can access the 
 
 [Add/Switch Networks :material-wifi-cog:](./wallet_add_switch_ntwk.md){ .md-button }
 
-[Sign Transactions :material-signature-freehand:](./wallet_sign.md){ .md-button }
-
 [Check Wallet Balance :material-wallet:](./wallet_balance.md){ .md-button }
 
 [Send Tokens :fontawesome-solid-coins:](./wallet_send.md){ .md-button }
+
+[Sign Transactions :material-signature-freehand:](./wallet_sign.md){ .md-button }
+
+[Show Wallet :material-signature-freehand:](./wallet_show.md){ .md-button }
 
 [Watch Assets :fontawesome-solid-magnifying-glass-dollar:](./wallet_watchasset.md){ .md-button }
