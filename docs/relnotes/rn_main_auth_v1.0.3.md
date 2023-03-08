@@ -23,6 +23,10 @@ arcana:
 
 Arcana Auth SDK now allows Web3 apps to configure AWS Cognito as the social provider for user authentication. See [how to onboard users via Cognito]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_cognito_oauth.md) for details.
 
+### New API: showWallet()
+
+Developers can use `showWallet()` function to display the in-built Arcana wallet UI in the context of an app integrated with the Auth SDK. The `showWallet()` function can be called in the application context after the `AuthProvider` is created and initialized using the `init` function. Once the app is deployed and the user logs in, the `showWallet` function call brings up the wallet UI. For details, see [Arcana Wallet Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md).
+
 ## Enhancements
 
 ### Better Login Performance

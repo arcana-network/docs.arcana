@@ -45,9 +45,10 @@ nav:
         - Configure Wallet: howto/arcana_wallet/config_wallet.md
         - Configure Wallet Visibility: howto/arcana_wallet/config_wallet_modes.md
         - Add / Switch Network: howto/arcana_wallet/wallet_add_switch_ntwk.md
-        - Sign Transactions: howto/arcana_wallet/wallet_sign.md
         - Check Wallet Balance: howto/arcana_wallet/wallet_balance.md
         - Send Tokens: howto/arcana_wallet/wallet_send.md
+        - Sign Transactions: howto/arcana_wallet/wallet_sign.md
+        - Show Wallet: howto/arcana_wallet/wallet_show.md
         - Watch Assets: howto/arcana_wallet/wallet_watchasset.md
       - Deploy App: howto/deploy_app.md
   - Tutorials: 
