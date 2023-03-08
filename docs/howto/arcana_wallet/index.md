@@ -25,6 +25,6 @@ Once you have integrated your application with the Auth SDK, you can access the 
 
 [Sign Transactions :material-signature-freehand:](./wallet_sign.md){ .md-button }
 
-[Show Wallet :material-signature-freehand:](./wallet_show.md){ .md-button }
+[Show Wallet :material-wallet-plus:](./wallet_show.md){ .md-button }
 
 [Watch Assets :fontawesome-solid-magnifying-glass-dollar:](./wallet_watchasset.md){ .md-button }

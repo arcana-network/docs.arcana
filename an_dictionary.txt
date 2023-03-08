@@ -601,6 +601,7 @@ fontawesome-solid-coins
 fontawesome-solid-file-contract
 fontawesome-solid-file-signature
 fontawesome-solid-magnifying-glass-dollar
+fontawesome-solid-money-check-dollar
 fontawesome-solid-paper-plane
 fontawesome-solid-plug
 fontawesome-solid-puzzle-piece

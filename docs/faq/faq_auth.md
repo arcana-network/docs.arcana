@@ -70,12 +70,12 @@ Frequently asked questions about user onboarding, social authentication, signing
 
       For details, see [Arcana wallet visibility modes]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md).
 
-??? an-faq "How is Arcana wallet different from other non-custodial Web3 wallets?"
+??? an-faq "How is the Arcana wallet different from self-custodial wallets?"
 
-      There are several non-custodial wallets available to the application users.  Arcana wallet has the following key differences:
+      Arcana wallet is a non-custodial wallet. Here is how it differs from the self-custodial wallets:
 
-      | Other non-custodial wallets | Arcana wallet |
+      | Self-custodial wallets | Arcana's non-custodial wallet |
       | :--- | :--- |
-      | Users need to be responsible for and remember their passphrase.| User does not require to remember any passphrase.|
+      | Users need to be responsible for and remember their passphrases.| Users do not require to remember any passphrase.|
       | Users need to manage keys themselves in case of self-custody wallets. | Arcana wallet offers a sweet spot, users don't have to manage keys as in the self-custody wallet and yet their keys can be generated in a decentralized manner via Arcana wallet, a non-custodial wallet.|
-      | Typical non-custodial wallets are very challenging to use for those new to Web3. | Arcana wallet offers a really simple Web2-like onboarding experience for new Web3 users along with complete security and ownership.|
+      | Users that are new to Web3 typically find self-custodial wallets very challenging to use. | Arcana wallet offers a really simple Web2-like onboarding experience for new Web3 users along with complete security and ownership.|

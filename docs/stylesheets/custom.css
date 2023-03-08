@@ -7,6 +7,7 @@
      --md-default-bg-color--lighter: #e7f6ff;
      --md-text-font: "Inter";
      --md-admonition-icon--an-faq: url('/img/icons/icons8-question-mark-48.png');
+     --md-admonition-icon--an-trbs: url('/img/icons/exclamation.png');
 }
 
 [data-md-color-scheme="black"] {
@@ -86,4 +87,21 @@
   .md-typeset .an-faq > summary::before {
     -webkit-mask-image: var(--md-admonition-icon--an-faq);
             mask-image: var(--md-admonition-icon--an-faq);
+}
+
+.md-typeset .admonition.an-trbs,
+  .md-typeset details.an-trbs {
+    border-bottom: var(--md-primary-fg-color--light);
+    border-color: var(--md-default-bg-color);
+}
+  
+.md-typeset .an-trbs > .admonition-title,
+  .md-typeset .an-trbs > summary {
+    background-color: var(--md-default-bg-color);
+}
+  
+.md-typeset .an-trbs > .admonition-title::before,
+  .md-typeset .an-trbs > summary::before {
+    -webkit-mask-image: var(--md-admonition-icon--an-trbs);
+            mask-image: var(--md-admonition-icon--an-trbs);
 }
