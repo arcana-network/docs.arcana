@@ -33,6 +33,12 @@ Developers can use `showWallet()` function to display the in-built Arcana wallet
 
 The Auth SDK has been updated for better login performance powered by an improved [ADKG subsystem](https://github.com/arcana-network/adkg/releases).
 
+## Bug Fixes
+
+**Wallet UI Display for Mobile Apps**
+
+Earlier, the built-in Arcana wallet UI did not utilize the full mobile screen display. This has been fixed now.
+
 ---
 
 ## Get Started
