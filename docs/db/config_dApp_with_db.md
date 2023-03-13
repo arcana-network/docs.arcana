@@ -83,9 +83,11 @@ When 'Mainnet' is selected from the dropdown, a new 'Mainnet' profile creation w
 
       For example, if Google is enabled in your app's 'Testnet' profile, then during the configuration of the social provider using the Google Developer console, the Testnet redirect URI was added.  Copy the 'Mainnet' profile redirect URI value from the Arcana dashboard and use Google Console to re-configure the Google OAuth settings. 
 
-      Make sure that you add the 'Mainnet' redirect URI value for other social providers that are enabled for the 'Testnet' profile. This is required for enabling your app on 'Mainnet'. The figure below shows how the 'redirect URI' is updated for Mainnet for social providers Google and Twitch.
+      Make sure that you add the 'Mainnet' redirect URI value for other social providers that are enabled for the 'Testnet' profile. This is required for enabling your app on 'Mainnet'. 
+      
+      For example, the figure below shows how the 'redirect URI' is updated in a scenario where Google and Twitch were configured for the 'Testnet' configuration profile and that profile was copied for configuring Mainnet usage.
 
-      ![Update redirect URI](/img/an_db_add_mainnte_redirect_uri.png)
+      ![Update redirect URI](/img/an_db_example_add_mainnet_redirect_uri.png)
 
 After the selection is made and the developer confirms, the 'Mainnet' profile is created and automatically registered with the Arcana Network. 
 

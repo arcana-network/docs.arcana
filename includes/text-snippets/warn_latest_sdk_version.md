@@ -1,7 +1,3 @@
-  Please make sure that you follow these instructions in the suggested order, carefully:
+  Auth SDK **v1.0.2** -> **v1.0.3**:  Simply upgrade your installation to the latest Auth SDK v1.0.3 and you are good to go!
   
-    1. **Install the latest Auth SDK** v{% include "./text-snippets/latest_auth_sdk.md" %}
-    2. **Reconfigure your app settings** using the dashboard
-    3. Complete the first two steps and only then **integrate your app** with the Auth SDK 
-  
-    If you are using an older version such as v0.2.2, there may be breaking changes and you need to make appropriate updates and migrate to the next release v0.3.0. After this apply additional changes and migrate to v{% include "./text-snippets/latest_auth_sdk.md" %}. Refer to the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and [Release Notes]({{page.meta.arcana.root_rel_path}}/relnotes/index.md) for more details.
+    Auth SDK **v0.2.2**, **v0.3.0** -> **v1.0.3**: Note that there may be breaking changes that require you need to make appropriate configuration updates and update the integration code and migrate to the latest release. Refer to the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and [Release Notes]({{page.meta.arcana.root_rel_path}}/relnotes/index.md) for more details.

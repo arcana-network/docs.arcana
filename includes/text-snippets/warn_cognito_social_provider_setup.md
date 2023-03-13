@@ -1,0 +1,5 @@
+  Apps integrating with the Arcana Auth SDK can choose multiple social providers for onboarding users. For example, to allow user onboarding via Google and Twitter, you need to set up both these providers in the Arcana Developer Dashboard.  
+  
+    However, if you choose Cognito as one of the multiple providers that the app would like to enable, then other social providers such as Google need not be configured using the Arcana Developer Dashboard.
+  
+    Cognito itself aggregates and directly supports various authentication verifiers such as Google, Facebook, etc. If you would like the app users to onboard via Cognito and authenticate via one of the supported Cognito verifiers, then you can simply use the Cognito Developer console and set up the authentication verifiers such as Google directly. In such cases, it is not required to enable the Cognito-supported authentication verifiers via the Arcana Developer Dashboard. 

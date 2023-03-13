@@ -7,15 +7,15 @@ arcana:
   root_rel_path: ..
 ---
 
-# Auth SDK v1.0.1 -> v{% include "./text-snippets/latest_auth_sdk.md" %} Migration
+# Auth SDK v1.0.1 -> v1.0.2 Migration
 
 This guide is meant for developers who have already integrated apps with an older version of the Arcana Auth SDK and run them using Arcana Network Testnet. If you are new to Arcana Network, please visit [Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md) to get started.
 
-When you migrate from using the Arcana Auth SDK v1.0.1 to the latest v{% include "./text-snippets/latest_auth_sdk.md" %} release, there is no major update besides minor bug fixes and wallet UI updates.
+When you migrate from using the Arcana Auth SDK v1.0.1 to the latest v1.0.2 release, there is no major update besides minor bug fixes and wallet UI updates.
 
 ## What has Changed?
 
-The following section lists changes between v1.0.1 and v{% include "./text-snippets/latest_auth_sdk.md" %}. 
+The following section lists changes between v1.0.1 and v1.0.2. 
 
 ### Developer Dashboard
 

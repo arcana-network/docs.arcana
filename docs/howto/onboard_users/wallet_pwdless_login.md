@@ -26,7 +26,7 @@ Go to the Arcana Dashboard: {% include "./text-snippets/db_portal_url.md" %}
 
 If this is your first visit to the dashboard, create a new entry for your dApp to register it. Once the dApp is registered using the dashboard, Arcana Network assigns an **{{config.extra.arcana.app_address}}** for every dApp.
 
-  ![Get Dashboard App identifier](/img/an_db_app_address_.png)
+  ![Get Dashboard App identifier](/img/an_db_app_address.png)
 
 !!! info
 

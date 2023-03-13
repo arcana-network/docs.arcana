@@ -9,15 +9,23 @@ arcana:
 
 # Application Usage Metrics
 
-Arcana Developer Dashboard tracks the following application usage metrics:
+Arcana Developer Dashboard displays the aggregate value of **Monthly Active Users (MAU)** for the Arcana Mainnet. The aggregate value includes MAU for all the applications that are registered against an Arcana account.
 
-* Aggregate Monthly Active Users (MAU) for all applications that are registered by a dev account to use the 'Mainnet'
-* Per application usage metrics
-  - Total number of logged in users (MAU) that are using the 'Mainnet'
-  - Logged in users (Daily, Monthly) for 'Testnet'/'Mainnet'
+The aggregate usage metrics are displayed in the *Manage Apps Screen*. The per-application metrics are displayed on the *Application Dashboard* screen.
 
-The number of logged in users is tracked separately for the 'Testnet' and 'Mainnet' application profiles.
+* **Manage Apps Screen**: 
+  - Aggregate Monthly Active Users (Mainnet)
+  - Number of free MAU (Mainnet)
+  - Number of paid MAU (Mainnet)
 
-!!! note
+  <img alt="Manage App Usage Metrics" src="/img/an_db_manage_apps_metrics.png" width="75%" />
 
-      The dashboard shows the total number of active users for a specific dApp network profile. It does not show real time user login metrics in the current release.
+* **Application Dashboard**: 
+  - Testnet: Daily MAU, Monthly MAU
+  - Mainnet: Daily MAU, Monthly MAU
+
+  <img alt="Per App Usage Metrics" src="/img/an_db_per_app_metrics.png" width="75%" />
+
+!!! note "Mainnet Usage"
+
+      The number of logged-in users is tracked separately for the 'Testnet' and 'Mainnet' application profiles. Arcana Testnet usage is not billed.

@@ -63,8 +63,8 @@ Revisit the Arcana Developer Dashboard portal. Click on your app entry and visit
 
 ![howto_config_cognito](/img/an_dApp_cognito_config.png)
 
-Save the settings. Arcana Network assigns an **App Address** to every registered and configured dApp. You need to save this **App Address** and use it while integrating the dApp with the Auth SDK.
+Save the settings. Arcana Network assigns a **Client ID** to every registered and configured dApp. You need to save this **Client ID** and use it while integrating the dApp with the Auth SDK.
 
-![App Address](/img/an_db_app_address.png)
+![Client ID](/img/an_db_app_address.png)
 
 *You are all set with Cognito Setup. Integrate the Web3 application with the Arcana Auth SDK and call the social login function when the user chooses to log in.*

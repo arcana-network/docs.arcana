@@ -22,6 +22,10 @@ Developers can enable one or more social authentication providers in Web3 applic
 !!! tip "Passwordless Login"
 
           By default, passwordless login is always available for any application that integrates with the Arcana Auth SDK.  Unlike social authentication, passwordless login does not require any additional setup via the Arcana developer dashboard.
+
+!!! warning "Using Cognito with other social providers"
+
+      {% include "./text-snippets/warn_cognito_social_provider_setup.md" %}          
  
 ## Setup Social Logins
 

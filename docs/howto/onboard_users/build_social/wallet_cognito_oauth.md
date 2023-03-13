@@ -6,7 +6,7 @@ sidebar_custom_props:
   cardIcon: 🤝
 arcana:
   root_rel_path: ../../..
-  social_provider: "'cognito'"
+  social_provider: "'aws'"
 ---
 
 # AWS Cognito
@@ -24,7 +24,7 @@ Note that some steps are performed using [AWS Management Console](https://docs.a
 
 !!! tip
 
-      The **App Address** is displayed on the top right of your dashboard.
+      The **Client ID** is displayed on the top right of your dashboard.
 
       You can revisit the Arcana Dashboard later to view and modify configuration settings. 
 
@@ -49,6 +49,11 @@ Add code in the application to log out an authenticated user:
 **That is all!**  :material-party-popper:
 
 Your dApp is all set for onboarding users via Cognito.
+
+!!! warning "Using Cognito with other social providers"
+
+      {% include "./text-snippets/warn_cognito_social_provider_setup.md" %}
+      
 
 ## What's Next?
 

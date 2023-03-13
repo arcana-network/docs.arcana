@@ -1,6 +1,6 @@
  Go to {% include "./text-snippets/db_portal_url.md" %} and select a login option on the welcome screen.
 
-![Welcome screen](/img/ab_db_welcome.png)
+![Welcome screen](/img/an_db_welcome.png)
 
 !!! tip
     
