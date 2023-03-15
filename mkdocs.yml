@@ -111,6 +111,7 @@ nav:
           - What is DKG?: concepts/dkg.md
           - How does DKG work?: concepts/how_dkg_works.md
         - Gateway: concepts/gateway_nodes.md
+        - MFA: concepts/mfa.md
         - Plug and Play Auth: concepts/plugnplayauth.md
         - Private Key: concepts/privatekey.md
         - Shared Key Space: concepts/sharedkeys.md

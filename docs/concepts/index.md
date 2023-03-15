@@ -16,6 +16,8 @@ These are the building blocks to help you learn about various Arcana Network ter
 
 [DKG :material-key-plus:](dkg/index.md){ .md-button }
 
+[MFA :material-two-factor-authentication:](mfa.md){ .md-button }
+
 [Gateway :fontawesome-solid-torii-gate:](gateway_nodes.md){ .md-button }
 
 [Plug and Play Auth :material-lock: :fontawesome-solid-plug:](plugnplayauth.md){ .md-button }
