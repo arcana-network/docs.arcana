@@ -30,7 +30,7 @@ Note that some steps are performed using [GitHub Developer Settings Dashboard](h
 
 ## Step 4: Integrate and Use Arcana Auth SDK
 
-Use the instructions here to [integrate with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). After integration, use the following code to trigger social login for GitHub:
+Use the instructions here to [integrate with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). After integration, use the following code to trigger user authentication via GitHub:
 
 {% include "./code-snippets/auth_social_login.md" %}
 

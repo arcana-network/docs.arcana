@@ -21,21 +21,21 @@ If you wish to control when the integrated Arcana wallet shows up, see [how to c
 
 ## Integrate and Initialize Auth SDK
 
-Follow instructions here to [integrate Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) in your dApp. During `AuthProvider` instantiation, the following configuration parameters are available:
+Follow the instructions here to [integrate Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) in your dApp. During `AuthProvider` instantiation, the following configuration parameters are available:
 
+* alwaysVisible: by default, set to true, the wallet is always visible
 * position: location of wallet on the application screen.  (default = right)
 * theme: light or dark theme
-* network: the Auth, Gateway and Wallet UI URL
-* chainConfig: the chainID and RPC URL of the blockchain network selected as default
-* redirectUri: Auth SDK redirectUri
+* network: the Auth, Gateway, and Wallet UI URL
+* chainConfig: the chainID and RPC URL of the blockchain network selected as the default
 
 For a complete list of parameters see [Auth SDK Reference Guide](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams).
 
-The sample code here shows how to enable Widget mode while initializing the Auth SDK:
+First, install and import the Auth SDK:
 
 {% include "./code-snippets/import_auth.md" %}
 
-In the following code, Arcana wallet is configured to be displayed on the left side of the application screen. The theme is set as 'light'.
+Next, while creating a new `AuthProvider` make sure you set the appropriate wallet parameter values for theme, position, network, etc.
 
 {% include "./code-snippets/new_auth.md" %}
 {% include "./code-snippets/init_auth.md" %}
@@ -46,7 +46,7 @@ You are all set with customized Arcana wallet settings.
 
 ## What's Next?
 
-You can also configured the Auth SDK wallet visibility to manage blockchain signing user experience.
+You can also configure the Auth SDK wallet visibility to manage the blockchain signing user experience. See [how to configure wallet visibility modes]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_wallet_modes.md) for more details.
 
 ## See also
 

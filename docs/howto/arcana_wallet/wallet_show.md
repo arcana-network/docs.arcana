@@ -16,7 +16,7 @@ In this guide, you will learn how a dApp can display the built-in Arcana wallet 
 
 ## Prerequisites
 
-Register and configure your application using the Arcana Developer Dashboard. Next, install the `@arcana/auth` package. Integrate the Auth SDK with your dApp. For details, see [Arcana Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md).
+Register and configure your application using the Arcana Developer Dashboard. Next, install the `@arcana/auth` package. Integrate the Auth SDK with your app. For details, see [Arcana Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md).
 
 {% include "./code-snippets/import_auth.md" %}
 {% include "./code-snippets/new_auth.md" %}
@@ -32,7 +32,7 @@ After initializing the `AuthProvider` and once the user has authenticated, the a
 
 {% include "./code-snippets/auth_show_wallet.md" %}
 
-If the wallet is not already displayed in the context of the application, `showWallet()` will bring up the following wallet UI. If the wallet is displayed in the minimized mode before `showWallet()` function is called, then it will cause the minimized wallet widget to change into the full wallet UI.
+If the wallet is not already displayed in the context of the application, `showWallet()` will bring up the following wallet UI. If the wallet is displayed in the minimized state before the `showWallet``()`` function is called, then it will cause the minimized wallet state to change into the maximized wallet UI.
 
 <img src="/img/an_wallet_balance.png" width="300"/>
 
@@ -41,9 +41,9 @@ If the wallet is not already displayed in the context of the application, `showW
 
 !!! note
 
-      If the `AuthProvider` is configured in 'Full UI' mode via `alwaysVisible=true` (default), the built-in Arcana wallet will be automatically displayed in the minimized form when the user logs in. If `showWallet()` is called or if the user clicks the minimized wallet widget, then the full wallet UI is displayed.
+      If the `AuthProvider` is configured with the default `alwaysVisible=true` setting, the built-in Arcana wallet will be automatically displayed in the minimized form when the user logs in. If `showWallet()` is called or if the user clicks the minimized wallet UI, then the maximized wallet UI is displayed.
 
-      If `alwaysVisible=false` setting is used, then the built-in Arcana wallet is **not** displayed automatically once the user logs in. It shows up only when a blockchain transaction is triggered. Developers can also bring up the wallet UI for authenticated users by making explicit call to the `showWallet()` function. Note that the `AuthProvider` must be initialized and the user authenticated before the wallet is displayed.
+      If the `alwaysVisible=false` setting is selected by the app developer, then the built-in Arcana wallet is **not displayed** automatically once the user logs in. It shows up only when a blockchain transaction is triggered. Developers can also bring up the wallet UI for authenticated users by making an explicit call to the `showWallet()` function. Note that the `AuthProvider` must be initialized and the user authenticated before the wallet is displayed.
 
 ## What's Next?
 

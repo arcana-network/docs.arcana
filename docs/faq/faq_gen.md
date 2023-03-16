@@ -38,9 +38,9 @@ Frequently asked questions about Arcana Auth SDK usage.
 
 ### If an application uses wallet connector frameworks such as Wagmi or RainbowKit, can Arcana wallet be plugged into those wallet connectors?
 
-Yes. Applications using Wagmi or RainbowKit can simply use the Auth SDK wrapper, 'Auth-wagmi' and enable Arcana wallet as one of the choices for application users besides the built-in wallets that are available with the wallet connect frameworks.
+Yes. Applications using Wagmi or RainbowKit can simply use the Auth SDK wrapper, 'Auth-wagmi', and enable Arcana wallet as one of the choices for application users besides the built-in wallets that are available with the wallet connect frameworks.
 
-For more details, see [using Auth Wagmi Wallet Connector]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wagmi.md) and [using RainbowKit Wallet Connector]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_rainbow.md).
+For more details, see [using Auth Wagmi ]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wagmi.md) Wallet Connector]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wagmi.md) and [using RainbowKit Wallet Connector]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_rainbow.md).
 
 ## User Onboarding
 

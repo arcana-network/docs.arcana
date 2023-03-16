@@ -21,9 +21,9 @@ In this tutorial, you will learn how to integrate a React/NextJS application wit
 
     !!! note "Configure Authentication Mechanism"
 
-          You may be required to configure additional details depending on the choice of authentication mechanisms. For example, if the dApp wants to enable users to onboard using the Google social authentication then the developer must set up and specify the [client ID for Google OAuth]({{page.meta.arcana.root_rel_path}}/howto/config_social_login/google_oauth.md) in the Arcana Dashboard before integrating the application.
+          You may be required to configure additional details depending on the choice of social providers for user authentication. For example, to enable user onboarding via the social provider, Google, the developer must set up and specify the [client ID for Google OAuth]({{page.meta.arcana.root_rel_path}}/howto/config_social/google_oauth.md) in the Arcana Dashboard before integrating the application.
 
-          For details, see [how to configure one or more social logins]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md).
+          For details, refer to the [social provider configuration guides]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md).
 
 * Save the **{{config.extra.arcana.app_address}}** assigned to the dApp by the dashboard. It is required to instantiate the `AuthProvider` while integrating the dApp. 
 
@@ -103,7 +103,7 @@ Once the login component is used in the application to onboard users, authentica
 
 ## See also
 
-* Social authentication using Auth SDK and [Google]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md)
+* How to onboard app users via [Google]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_google_oauth.md)
 * [Passwordless authentication using Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md)
 * [Auth SDK Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
 * [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)

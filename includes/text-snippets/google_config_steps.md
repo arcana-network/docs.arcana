@@ -50,4 +50,4 @@ Save the settings on the dashboard. Arcana Network assigns an **{{config.extra.a
 
 ![App Identifier](/img/an_db_app_address.png)
 
-*You are all set with Google Setup. Integrate the Web3 application with the Arcana Auth SDK and call the social login function when the user chooses to log in.*
+*You are all set with the Google configuration. Integrate the Web3 application with the Arcana Auth SDK and call the user onboarding function when the user chooses to log in.*

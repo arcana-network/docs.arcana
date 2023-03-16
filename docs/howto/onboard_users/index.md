@@ -8,17 +8,15 @@ arcana:
 ---
 # Onboard Users
 
-User onboarding requires developers to first register their applications and configure user onboarding providers using the Arcana Developer Dashboard. After that, users must install and integrate the Auth SDK with their application.
+User onboarding requires developers to first register their applications and configure the social providers using the Arcana Developer Dashboard. Next, install and integrate the registered and configured app with the Auth SDK.
 
-Developers can choose to enable user onboarding in their applications by either using built-in login UI in the Auth SDK or building their own customized user login interfaces and simply call the Auth SDK functions to onboard users.
+Developers can choose to enable user onboarding in their applications by either using the default, built-in UI offered by the Auth SDK through the [plug-and-play authentication feature]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md). Or they can build customized UI and simply call the Auth SDK functions to onboard users.
 
-To use a built-in default user login UI, developers can directly use the [plug-and-play authentication feature]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md) to enable user authentication. Alternately, they can build their own UI and enable social login or passwordless authentication.
+[How to use 'Plug & Play' Auth for user onboarding? :fontawesome-solid-plug:](./wallet_plugnplay.md){ .md-button }
 
-[How to enable 'Plug & Play' Auth? :fontawesome-solid-plug:](./wallet_plugnplay.md){ .md-button }
+[How to build custom Auth for user onboarding? :fontawesome-solid-users:](./build_social/index.md){ .md-button } 
 
-[How to enable 'Social Login'? :fontawesome-solid-users:](./build_social/index.md){ .md-button } 
-
-[How to enable 'Passwordless Login'? :material-email-open-outline:](./wallet_plugnplay.md){ .md-button }
+[How to use 'Passwordless' login? :material-email-open-outline:](./wallet_plugnplay.md){ .md-button }
 
 !!! note
 

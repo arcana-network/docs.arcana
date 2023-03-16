@@ -11,7 +11,7 @@ toc_depth: 2
 
 # Dashboard
 
-Frequently asked questions about using the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to configure an application before integrating it with the Auth SDK.
+Frequently asked questions about using the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to configure authentication settings before integrating an app with the Auth SDK.
 
 ## General
 
@@ -32,27 +32,37 @@ Frequently asked questions about using the [Arcana Developer Dashboard]({{page.m
 
       To migrate an application from Arcana Testnet to Mainnet, follow these steps:
 
-      1. Use the Arcana Developer Dashboard, visit the 'Manage App' dashboard page, and select the application entry. By default, when you register any application, a 'Testnet' configuration profile is created for the application.
+      1. Use the Arcana Developer Dashboard, visit the 'Manage App' dashboard page, and select the application entry. By default, when you register any application, a 'Testnet' configuration profile is created for the application. Click on the app card to see the application configuration dashboard screen.
 
-      2. On the application configuration dashboard screen switch the network from 'Testnet' to 'Mainnet'. You will be asked to approve the creation of the app 'Mainnet' configuration profile. To begin with, this is a copy of the 'Testnet' profile but you can edit and manage it independently. Note that a new **{{config.extra.arcana.app_address}}** is assigned to the 'Mainnet' profile.
+      2. On the application configuration dashboard screen, switch the network from 'Testnet' to 'Mainnet' on the top right to create a 'Mainnet' configuration profile. You will be asked to approve the creation of the 'Mainnet' configuration profile. To begin with, this is a copy of the 'Testnet' profile but you can edit and manage it independently. Note that a new **{{config.extra.arcana.app_address}}** is assigned to the 'Mainnet' profile.
 
       3. Use the 'Mainnet' profile **{{config.extra.arcana.app_address}}** in your integration code instead of the earlier one which corresponds to 'Testnet'. You will need to restart your application after this change. This is important. If you fail to make this change, even if you have switched the profile in the dashboard, your application will continue to use the 'Testnet' configuration settings.
 
     !!! caution
 
-          When switching your application from Arcana Testnet to Mainnet, you must ensure to use the new **{{config.extra.arcana.app_address}}** corresponding to the application's 'Mainnet' profile while integrating with the Auth SDK and then bringing up your application on the Arcana Mainnet. This will ensure that user onboarding and blockchain transactions happen as per the Mainnet configuration settings and not as per the Testnet configuration profile. 
+          To migrate an app from using Testnet to Mainnet, the developers must ensure that the new **{{config.extra.arcana.app_address}}** corresponding to the application's 'Mainnet' profile is used to initialize the `AuthProvider` while integrating the app with the Auth SDK. After that, the app must be restarted to switch over from using Arcana Testnet to the Mainnet. 
+
+??? an-faq "Can a developer run one instance of the app, say dev version on Testnet while publishing the release instance to use the Arcana Mainnet?"
+
+      Yes, developers can run two instances of the app simultaneously, one on the Arcana Testnet and the other on the Mainnet as each app instance is assigned a unique **{{config.extra.arcana.app_address}}**. 
+      
+      Use the 'Mainnet' configuration profile **{{config.extra.arcana.app_address}}** in your app's Auth SDK integration code and instantiate the `AuthProvider`. Then deploy this app instance to use Arcana Mainnet. 
+      
+      Similarly, use the 'Testnet' configuration profile **{{config.extra.arcana.app_address}}** in another copy (branch / different version of the code) of your app where Auth SDK is integrated and instantiate the `AuthProvider`. Then deploy this app instance to run it using the Arcana Testnet.
 
 ??? an-faq "How do I delete Mainnet configuration settings and run my application using Arcana Testnet only?"
 
-      Once you have enabled 'Mainnet' for an application, you cannot delete the 'Mainnet' configuration profile independently in the current release.  You can [switch your application from 'Mainnet' to 'Testnet']({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#switch-profiles) by using the dropdown button in the application configuration screen. 
+      Once you have enabled 'Mainnet' for an application, you cannot delete the 'Mainnet' configuration profile independently in the current release.  You can [switch your application from 'Mainnet' to 'Testnet']({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#switch-profiles) by using the dropdown button in the application configuration screen to edit or modify it. 
 
-      The only way to delete Mainnet settings is to deregister the app and delete the app entry altogether.  This removes both Testnet and Mainnet configuration profiles. You will need to re-register the application.  This will create a totally new **{{config.extra.arcana.app_address}}** and you will be required to specify this new {{config.extra.arcana.app_address}} when integrating your application with the Auth SDK.  As a result, when your application users log in, they will see brand-new wallet addresses. If you wish to ensure that the user wallet address does not change, you must register your application and request for the ['Shared Key Space']({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md) option at the very start. In that case, users will be allowed to use the same wallet address across all applications in the Arcana ecosystem and even if an application is de-registered and re-registered.
+      The only way to delete Mainnet settings is to deregister the app and delete the app entry altogether.  This removes both Testnet and Mainnet configuration profiles. You will need to re-register the application.  This will create a totally new **{{config.extra.arcana.app_address}}** and you will be required to specify this new {{config.extra.arcana.app_address}} when integrating your application with the Auth SDK.  As a result, when you deploy your app and the users log in, they will see brand-new wallet addresses. 
+      
+      If you wish to ensure that the user wallet address does not change, you must register your application and request for the ['Shared Key Space']({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md) option at the very start. In that case, users will be allowed to use the same wallet address across all applications in the Arcana ecosystem and even if an application is de-registered and re-registered.
 
 ## Branding Settings
 
-??? an-faq "Why can't I upload the logo file?"
+??? an-faq "Why do I see an error when uploading the logo file?"
 
-      Make sure the file is less than the 2MB limit for a successful upload.
+      Make sure the file is less than the {% include "./text-snippets/limit_branding_img_size.md" %} limit for a successful upload.
 
 ??? an-faq "How do I change the logo file that I uploaded earlier?"
 
@@ -64,17 +74,19 @@ Frequently asked questions about using the [Arcana Developer Dashboard]({{page.m
 
 ??? an-faq "Is it mandatory to specify all configurations in the Auth section?"
 
-      If you intend to integrate your application with the Arcana Auth SDK for onboarding users, you must specify at least the configuration for the social authentication mechanisms that you would like to allow in your application. If you would only allow user onboarding via passwordless login, then there is no need for any Auth configuration. Simply integrate with the Auth SDK using default settings and call the `loginWithLink` API.
+      If you do not specify any social authentication configurations in your 'Testnet' or 'Mainnet' configuration profile settings in the Arcana Developer dashboard, then your app can only onboard users via the passwordless option that is enabled by default. You can use the plug-and-play UI via the `connect` method or build your own auth UI and use the `loginWithLink` method to onboard users via the passwordless login option.
+      
+      To enable any social providers for app onboarding you must configure them using the dashboard. See the [how to configure social providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md) guide for more details.
 
 ??? an-faq "Can an application enable more than one authentication mechanism?"  
 
-      Yes. The application developer can enable one or more social authentication mechanisms and passwordless login if their use case requires it. This will allow application users to use any of the supported authentication mechanisms to log into the application easily with the comfort and familiarity of the Web2 application onboarding experience.
+      Yes. The application developer can enable one or more social authentication mechanisms and passwordless login. The application users can choose any one of the supported authentication mechanisms to log in easily similar to Web2 app onboarding.
 
 ??? an-faq "Is there a way to control when, which position in the application window, and what type of Arcana wallet is displayed by the Auth SDK?"
 
-      When integrating with the Arcana Auth SDK, the application developer can use the `alwaysVisible` setting to control when the Arcana wallet is displayed and which wallet screens are shown. By default, the Full UI mode is enabled, which means the Arcana wallet is always displayed and the user can minimize it.
+      When integrating with the Arcana Auth SDK, the application developer can use the `alwaysVisible` setting to control whether the Arcana wallet UI is automatically displayed once the user has authenticated (default) or whether it shows up only when a blockchain transaction is triggered that requires the user's approval.
 
-      If `alwaysVisible` is set to false during `AuthProvider` instantiation, the wallet will **only** appear when a blockchain transaction is triggered. The wallet screen will pop up, requesting the user's approval or signature. Once the user takes the appropriate action, the wallet screen will disappear.
+      If `alwaysVisible = false` during `AuthProvider` instantiation and Auth SDK integration with the app, the wallet will **only** appear when a blockchain transaction is triggered. The wallet screen will pop up, requesting the user's approval or signature. Once the user takes the appropriate action, the wallet screen will disappear.
 
       For more details, see [Arcana wallet visibility modes]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md)
 

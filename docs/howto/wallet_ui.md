@@ -15,7 +15,7 @@ Developers who wish to programmatically enable various wallet operations can ref
 
 !!! info "Wallet Developer Guides"
 
-      To enable Arcana wallet in the context of a Web3 application, you need to first [register your Web3 application]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) and [configure user authentication mechanisms]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md) using the Arcana Dashboard. 
+      To enable Arcana wallet in the context of a Web3 application, you need to first [register your Web3 application]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) and [configure social providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md) using the Arcana Developer Dashboard to authenticate users. 
       
       After that, you must install the `@arcana/auth` package and follow the [instructions to integrate your application]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md).
 
@@ -217,7 +217,7 @@ Once all pending transactions are processed, you will not see the red dot. The A
 
   ![dApp wallet integration example](/img/an_wallet_min_demo_app.png)
 
-  Users can click on the wallet to bring up the **Full UI** wallet visibility mode and review, and approve the personal sign request as displayed in the figure below:
+  If the wallet is displayed in the minimized state, users can click on it to maximize the wallet to view, approve the personal sign request as displayed in the figure below:
 
   ![Demo App PersonalSign](/img/an_wallet_personalsign.png)
 
@@ -230,15 +230,15 @@ Click <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="2
 
 ### Minimize Wallet
 
-If the app developer has integrated the Arcana Auth SDK and specified the 'Full UI' wallet visibility mode, the Arcana wallet UI shows up once the user is authenticated. The wallet UI can be minimized using the 'x' icon on the top right corner of the wallet screen. Minimized wallet displays as a small widget on the application window. Clicking on this widget will maximize the wallet screen. 
+The Arcana wallet can be in one of the two states - maximized or minimized. The wallet UI can be minimized using the 'x' icon on the top right corner of the wallet screen. Minimized wallet displays as a small widget on the application window. To maximize the wallet, simply click on it.
 
 <img src="/img/an_wallet_min_light.png#only-light" width="75"/><img src="/img/an_wallet_min_dark.png#only-dark" width="75"/>
 
-During minimized state, if the dApp issues a transaction or if a user action results in a blockchain transaction that requires approval from the user, then the wallet screen pops up in the maximized state in the application window.
+During minimized state, if the dApp issues a transaction or if a user action results in a blockchain transaction that requires approval from the user, then the wallet screen is automatically changed to the maximized state in the application window.
 
 ### Logout
 
-Click <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> icon at the bottom of the Arcana wallet screen to bring up the user profile tab. Click **Logout** in the user profile tab to log out.
+Click the icon at the bottom of the Arcana wallet screen to bring up the user profile tab. Click **Logout** in the user profile tab to log out.
 
 <img src="/img/an_wallet_profile.png" width="200"/>
 

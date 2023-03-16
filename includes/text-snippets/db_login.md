@@ -4,4 +4,4 @@
 
 !!! tip
     
-      The Arcana Network protocol [aggregates multiple social account login identities]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) of Web3 developers under a single user account, allowing them to access their dashboard application settings using any of their social logins.
+      The Arcana Network protocol [aggregates multiple social account login identities]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) of Web3 developers under a single user account. This enables developers to log into the dashboard using any of the supported social providers and access the same developer account in the Arcana Network.

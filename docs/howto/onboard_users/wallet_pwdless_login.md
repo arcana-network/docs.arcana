@@ -40,7 +40,7 @@ Optionally, you can use defaults for other dApp settings or choose to modify the
 
 !!! note
 
-      You can enable more than one authentication mechanism for dApp end users. In addition to passwordless login, you can also allow dApp users to onboard using other [supported authentication mechanisms]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md).
+      You can enable more than one social provider to authenticate dApp users. In addition to passwordless login, you can also allow the users to onboard using other [social providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md).
 
 ### Step 2: Integrate with Arcana Auth SDK
 
@@ -71,7 +71,7 @@ After enabling passwordless login in your dApp, you can allow authenticated user
 ## See also
 
 * [Arcana authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
-* [Configure Social Logins]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md)
+* [Configure Social Providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md)
 * [Troubleshooting authentication errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
 * [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
 * {% include "./text-snippets/authsdkref_url.md" %}

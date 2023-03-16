@@ -30,6 +30,7 @@ Arcana wallet supports fiat on-ramping that allows wallet users to buy cryptocur
 Each registered Web3 app is associated with a unique Arcana Network identifier. Earlier, it was referred to as **App Address**. Now it is referred to as **{{config.extra.arcana.app_address}}** in the documentation and on the Arcana Developer Dashboard screen.
 
 The format of the **{{config.extra.arcana.app_address}}** has also changed but it does not impact Auth SDK usage. Developers can continue to use the existing **App Address** with the new Auth SDK as well. No need to re-register the app if you were using the following Auth SDKs: 
+
 * v1.0.1
 * v1.0.0
 
@@ -40,6 +41,18 @@ The circular widget displayed when a wallet was minimized by clicking the 'x' ic
 | Minimized Wallet Widget v1.0.1 | Minimized Wallet Widget v1.0.2 |
 | :---: | :---:|
 | <img src="/img/an_wallet_min.png" width="75"/> | <img src="/img/an_wallet_min_light.png#only-light" width="75"/> <img src="/img/an_wallet_min_dark.png#only-dark" width="75"/> |
+
+### Auth SDK additions:  Wagmi & RainbowKit support
+
+Typical React/NextJS apps <img alt="react logo" src="/img/react_logo.png" width="2%" /> <img alt="nextjs logo" src="/img/nextjs_logo.png" width="2%" /> integrate with the Arcana Auth SDK by installing the `auth` and `auth-react` npm packages and instantiating the `AuthProvider` and `ProviderAuth` before using them in the app. See [how to integrate a React app with the Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md) guide for details.
+
+The React/NextJS apps that use [Wagmi](https://wagmi.sh/) <img alt="wagmi logo" src="/img/wagmi_logo.png" width="2%" /> can be integrated with the Auth SDK by simply installing the `auth-wagmi` package and instantiating the `ArcanaConnector` wrapper component. For details, see [how to integrate a React app that uses Wagmi]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wagmi.md) guide. 
+
+Similarly, for React apps using the [RainbowKit framework](https://www.rainbowkit.com/), <img alt="rainbowkit logo" src="/img/rainbowkit_logo.png" width="2%" /> see [how to integrate a React app that uses RainbowKit]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_rainbow.md) guide.
+
+!!! tip "Using `auth-wagmi`"
+
+      {% include "./text-snippets/warn_wagmi_noauth.md" %}
 
 ## Bug Fixes
 

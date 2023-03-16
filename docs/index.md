@@ -35,6 +35,14 @@ It consists of two components:
 
 Designed with both developers and Web3 users in mind, the {{config.extra.arcana.sdk_name}} is easy to integrate and customize, bringing to life a sleek and secure user experience for signing blockchain transactions.
 
+{% macro input(name, value='', type='text', size=20) -%}
+    <input type="{{ type }}" name="{{ name }}" value="{{
+        value|e }}" size="{{ size }}">
+{%- endmacro %}
+
+<p>Username = {{ input('username') }}</p>
+<p>Password = {{ input('password', type='password') }}</p>
+
 [Get Started :fontawesome-solid-paper-plane:]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md){ .md-button .md-button--primary}
 
 ## {{config.extra.arcana.sdk_name}}
@@ -57,7 +65,7 @@ Next, install the {{config.extra.arcana.sdk_name}} and integrate your app by ins
 
 <div class="grid card_container" markdown>
   <div class="cards" markdown>
-  <div class="card" markdown><h4><b>:fontawesome-solid-users-line: Onboard Users</b></h4><hr><p ><ul><li>Fast user onboarding for Web3 applications.</li><li>Add user authentication with just a few lines of code.</li><li>Configure user onboarding options and allow users to authenticate via popular Web2 social login or go passwordless.</li></ul></p></div>
+  <div class="card" markdown><h4><b>:fontawesome-solid-users-line: Onboard Users</b></h4><hr><p ><ul><li>Fast user onboarding for Web3 applications.</li><li>Add user authentication with just a few lines of code.</li><li>Configure user onboarding options and allow users to authenticate via popular Web2 social providers or go passwordless.</li></ul></p></div>
   <div class="card" markdown><h4><b>:fontawesome-brands-ethereum: Web3 Transactions</b></h4><hr><p><ul><li>Authenticated users can access the Arcana wallet and sign blockchain transactions.</li><li>Developers can customize the Arcana wallet and manage user experience for EVM-compatible networks.</li><li>Users can perform Web3 wallet operations, such as sending and receiving tokens and NFTs, managing NFT collections, deploying contracts, and interacting with them.</li></ul></p></div>
   <div class="card" markdown><h4><b>:simple-letsencrypt: Secure</b></h4><hr><p><ul><li>Authenticated Web3 application users now have an easy yet secure way to sign blockchain transactions.</li><li>Powered by asynchronous distributed key generation protocol and Shamir's Secret Sharing for security and privacy.</li></ul></p></div>
   <div class="card" markdown><h4><b>:material-gesture-tap-button: Easy to Use</b></h4><hr><p><ul><li>Easily integrate with Web3 vanilla JS, React, NextJS, Remix, and Vue applications.</li><li>Offers an embedded, non-custodial wallet that works within the Web3 application.</li><li>Users do not need to set up any browser extensions to use Web3 wallet.<li>Users do not need to remember any seed phrases or manage keys to sign blockchain transactions.</li></ul></p></div>

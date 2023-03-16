@@ -68,7 +68,7 @@ Check out this video to see Arcana Auth SDK in action when integrated with a sam
 
 Arcana Auth SDK also offers blockchain transaction signing ability for any operations issued for any EVM-compatible blockchain network. This is provided by the embedded Web3 Arcana wallet. Besides the Arcana Network, the wallet also supports other networks and allows users to switch between networks. It allows dApps to enable blockchain `send` transactions, sign transactions and create custom tokens, send or receive them.  See [here]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) for more details about Arcana wallet features.
 
-The dApp developers can [configure Arcana wallet visibility mode]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_wallet_modes.md) as per the desired dApp user experience. Arcana wallet supports multiple [wallet modes]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) whereby blockchain transaction signing can happen automatically without any visible widget or explicitly visible widget where the user has to click for signing.
+The dApp developers can [configure Arcana wallet visibility mode]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_wallet_modes.md) to manage the user's blockchain signing experience. See [wallet visibility modes]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) for details.
 
 Check out this video to see Arcana wallet in action for signing blockchain transactions, checking wallet balances, switching blockchain networks, and more.
 

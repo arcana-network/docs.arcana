@@ -64,11 +64,11 @@ Now that you are familiar with the basics, let us take a look at what Arcana Net
 
 ## Step 2: Getting Started with Auth SDK
 
-To use Arcana Auth SDK in your application, you need to first [register the application]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md). Configure [application settings for social login]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md) before you [integrate your application]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) and call social login functions or any Arcana wallet functions in your application.
+To use Arcana Auth SDK in your application, you need to first [register the application]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md). Configure [social providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md) to onboard users before you [integrate your application]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) and call any Auth SDK functions in your application.
 
 After configuring application settings using the dashboard, you can install the Auth SDK and integrate your application. Once integrated, applications can access `AuthProvider` interface to onboard users and enable authenticated users to sign blockchain transactions.
 
-There are two options enable user onboarding in the applications. For new Web3 developers, we recommend that you use the [Arcana Auth SDK plug and play feature]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md) and use the built in UI to onboard users. Later you can build your own UI and call social login functions as required. For details, see [developer's guide for onboarding users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md). 
+The Auth SDK supports two options for onboarding users via social providers. For the new Web3 developers, we recommend the [Arcana Auth SDK plug and play feature]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md) that offers a built-in user authentication UI to onboard users. Seasoned developers can build custom user authentication UI. For details, see [how to onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md) guide. 
 
 Developers can easily enable Arcana wallet for authenticated users and allow them to sign blockchain transactions. See [developer's guide for enabling Web3 operations using Arcana wallet]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md).
 
@@ -78,7 +78,7 @@ To learn about how the users access Arcana wallet UI to perform Web3 operations 
 
 ## Step 3a: Auth Example
 
-This is a vanilla HTML/JS application that integrates with the Auth SDK, onboards users and allows authenticated users to sign blockchain transactions using the Arcana wallet.
+This is a vanilla HTML/JS application that integrates with the Auth SDK, onboards users, and allows authenticated users to sign blockchain transactions using the Arcana wallet.
 
 [Auth Example (GitHub) :material-login:](https://github.com/arcana-network/auth/tree/main/examples){ .md-button }
 
@@ -88,7 +88,7 @@ Learn how to integrate Arcana Auth SDK in a simple React Application.
 
 [React Example :material-react:]({{page.meta.arcana.root_rel_path}}/tutorials/code_samples/react_code_sample.md){ .md-button }
 
-!!! note "Milestone Achieved!""
+!!! note "Milestone Achieved!"
 
       Congratulations!!! :material-party-popper:
 

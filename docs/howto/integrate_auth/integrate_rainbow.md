@@ -11,9 +11,9 @@ arcana:
 
 In this tutorial, you will learn how to integrate a Web3 application that uses [RainbowKit](https://www.rainbowkit.com/) with [Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md). RainbowKit works with [wagmi](https://wagmi.sh/) which allows Web3 application users to easily switch between multiple wallets within a single application. Arcana offers a custom wagmi connector that can be used to enable Arcana wallet for applications using RainbowKit.
 
-!!! caution "No need to install Auth SDK"
+!!! caution "Deploying `auth-wagmi` package"
 
-      If you are using the Auth wagmi Connector for RainbowKit then you simply follow the instructions below. This connector includes the Auth SDK. You do not need to install Arcana Auth SDK separately. No need to create a provider.
+      {% include "./text-snippets/warn_wagmi_noauth.md" %}
 
 ## Prerequisites
 
@@ -25,9 +25,9 @@ In this tutorial, you will learn how to integrate a Web3 application that uses [
 
     !!! note
 
-          You may be required to configure additional details depending on the choice of authentication mechanisms. For example, if the dApp wants to enable users to onboard using the Google social authentication then the developer must set up and specify the [clientID for Google OAuth]({{page.meta.arcana.root_rel_path}}/howto/config_social_login/google_oauth.md).
+          You may be required to configure additional details depending on the choice of authentication mechanisms. For example, if the dApp wants to enable users to onboard using the Google social authentication then the developer must set up and specify the [clientID for Google OAuth]({{page.meta.arcana.root_rel_path}}/howto/config_social/google_oauth.md).
 
-          For details, see [how to set up social logins]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md).
+          For details, see [how to set up social providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md).
 
 * After registering the application, a unique **{{config.extra.arcana.app_address}}** is assigned to every application. Save the **{{config.extra.arcana.app_address}}** displayed in the dashboard. It is required while instantiating the `ArcanaConnector` for wagmi later.
 

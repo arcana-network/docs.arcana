@@ -10,37 +10,23 @@ arcana:
 
 # Switching Networks
 
-[Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) provides user authentication and blockchain signing functionality via the embedded Web3 wallet - the **Arcana wallet**. The [Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) works in the context of the application and allows authenticated users to add and configure any EVM-compatible network or switch between the configured networks.
+[Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) provides user authentication and blockchain signing functionality via the embedded, non-custodial Web3 wallet - the **Arcana wallet**. 
 
-!!! note
+Web3 apps integrating with the Arcana Auth SDK can easily enable the [Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) in the context of the application and allow authenticated users to use the wallet for adding, configuring any supported blockchain networks, or switching networks.
 
-      Configuring, adding, and switching network features in the Arcana wallet behave differently depending upon how an application developer has integrated and initialized the Arcana Auth SDK.
+There are two ways in which the network that is displayed in the wallet UI can be switched. An authenticated user can switch to a different network via the wallet UI by selecting one from the drop down list. Application developers too can programmatically add and switch to a preferred network such that all authenticated app users will see this developer-configured network when they authenticate and access their respective wallets.
 
 ## Network Switching Behavior
 
-The `alwaysVisible` [input parameter](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams) configured by the application developer at the time of instantiating the `AuthProvider`, controls the blockchain transaction signing experience for the user.
+The `alwaysVisible` [input parameter](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams) configured by the application developer at the time of instantiating the `AuthProvider`, controls the wallet user experience with switching networks.
 
-Let's take a look and how network switching behavior varies depending on `alwaysVisible` configuration settings.
 
-## Widget Mode
+### Network Switching: `alwaysVisible=true`
 
-In the widget mode, `alwaysVisible = false`. 
+By default, `alwaysVisible=true`. If the app developer uses this default setting then the wallet UI shows up right after a user authenticates. The wallet can be minimized by clicking on the 'x' icon in the top right of the wallet screen but the wallet is always visible in the app's context. To switch the network displayed in the wallet UI, a user can simply click on the drop-down list and select an entry from the list to change the network. The app developer can programmatically use [`wallet_addEthereumChain`]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md#switching-chains) and [wallet_switchEthereumChain]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md#switching-chains) methods to add and switch to a supported blockchain network preferred by the app. When a network addition or switching is initiated by the app developer, it requires the user's approval before the network switch takes effect.
 
-In this case a network change can be triggered only programmatically by the application after the following conditions are met:
+### Network Switching:`alwaysVisible=false`
 
-* The wallet has been instantiated by the application,
-* The application user must approve network change requests explicitly via the pop-up wallet screen. 
-
-The application user alone, independently cannot switch the blockchain network in the Arcana wallet. Only the application developer can initiate a network switch programmatically but that itself will not suffice. The application user is also required to approve the programmatically initiated network change by the application developer before a network switch can happen.
-
-## Full UI Mode
-
-In the full UI mode, `alwaysVisible = true` (default).
-
-In this case, the Arcana wallet will always be visible in the application context. The wallet UI can be minimized and expanded by the user. Both application developer as well as users can switch and add networks.
-
-The application developer can programmatically add to the built-in list of networks and the wallet displays them for the user to choose from.
-
-Application users can use the wallet UI to either switch to a different network from the list of available networks or they can add and configure a new network in the wallet UI.
+If the developer has opted for `alwaysVisible=false` while integrating the app with the Auth SDK, then the wallet UI does not show up automatically after a user logs in. It is displayed only if a blockchain transaction is triggered that requires user's approval. Once the user approves the transaction, the wallet UI disappears. There is no way for an authenticated user to add, configure or switch network using the wallet UI. Only the developer can programmatically add and switch network by using the [`wallet_addEthereumChain`]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md#switching-chains) and [wallet_switchEthereumChain]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md#switching-chains) methods. When a network addition or switching is initiated by the app developer, it requires the user's approval before the network switch takes effect.
 
 {% include "./text-snippets/add_wallet_config_warning.md" %}

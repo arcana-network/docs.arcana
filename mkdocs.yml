@@ -10,15 +10,19 @@ nav:
   - Quick Start: walletsdk/wallet_qs.md
   - How-To Guides:
       - howto/index.md
-      - Configure dApp Settings: howto/config_dapp.md
-      - Configure Auth Usage: 
-        - howto/config_social_providers.md
-        - Cognito Setup: howto/config_social_login/cognito_oauth.md
-        - Discord Setup: howto/config_social_login/discord_oauth.md
-        - GitHub Setup: howto/config_social_login/github_oauth.md
-        - Google Setup: howto/config_social_login/google_oauth.md
-        - Twitch Setup: howto/config_social_login/twitch_oauth.md
-        - Twitter Setup: howto/config_social_login/twitter_oauth.md
+      - Register App: howto/config_dapp.md
+      - Configure Auth: 
+        - howto/config_auth/index.md
+        - Social Providers: 
+          - howto/config_social/index.md
+          - Discord Setup: howto/config_social/discord_oauth.md
+          - GitHub Setup: howto/config_social/github_oauth.md
+          - Google Setup: howto/config_social/google_oauth.md
+          - Twitch Setup: howto/config_social/twitch_oauth.md
+          - Twitter Setup: howto/config_social/twitter_oauth.md
+        - Federated Identity Providers:
+          - howto/config_idm/index.md
+          - Cognito: howto/config_idm/cognito_oauth.md
       - Integrate Auth SDK: 
         - howto/integrate_auth/index.md
         - Vanilla JS Apps: howto/integrate_auth/integrate_wallet.md
@@ -31,25 +35,29 @@ nav:
       - Onboard Users: 
         - howto/onboard_users/index.md
         - Plug and Play Auth: howto/onboard_users/wallet_plugnplay.md
-        - Build Social Login: 
+        - Build Social Auth: 
           - howto/onboard_users/build_social/index.md
-          - Cognito: howto/onboard_users/build_social/wallet_cognito_oauth.md
           - Discord: howto/onboard_users/build_social/wallet_discord_oauth.md
           - GitHub: howto/onboard_users/build_social/wallet_github_oauth.md
           - Google: howto/onboard_users/build_social/wallet_google_oauth.md
           - Twitch: howto/onboard_users/build_social/wallet_twitch_oauth.md
           - Twitter: howto/onboard_users/build_social/wallet_twitter_oauth.md
-        - Build Passwordless Login: howto/onboard_users/wallet_pwdless_login.md
+        - Build Passwordless Auth: howto/onboard_users/wallet_pwdless_login.md
       - Enable Arcana Wallet:
         - howto/arcana_wallet/index.md
         - Configure Wallet: howto/arcana_wallet/config_wallet.md
         - Configure Wallet Visibility: howto/arcana_wallet/config_wallet_modes.md
-        - Add / Switch Network: howto/arcana_wallet/wallet_add_switch_ntwk.md
-        - Check Wallet Balance: howto/arcana_wallet/wallet_balance.md
-        - Send Tokens: howto/arcana_wallet/wallet_send.md
-        - Sign Transactions: howto/arcana_wallet/wallet_sign.md
-        - Show Wallet: howto/arcana_wallet/wallet_show.md
-        - Watch Assets: howto/arcana_wallet/wallet_watchasset.md
+        - Web3 Wallet Ops:
+          - howto/arcana_wallet/web3ops/index.md
+          - Add / Switch Network: howto/arcana_wallet/wallet_add_switch_ntwk.md
+          - Check Wallet Balance: howto/arcana_wallet/wallet_balance.md
+          - Send Tokens: howto/arcana_wallet/wallet_send.md
+          - Sign Transactions: howto/arcana_wallet/wallet_sign.md
+          - Show Wallet: howto/arcana_wallet/wallet_show.md
+          - Watch Assets: howto/arcana_wallet/wallet_watchasset.md
+        - Apps using Federated Identity Providers:
+          - howto/plug_idm/index.md
+          - Cognito: howto/plug_idm/wallet_cognito_oauth.md
       - Deploy App: howto/deploy_app.md
   - Tutorials: 
       - tutorials/index.md

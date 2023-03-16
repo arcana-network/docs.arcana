@@ -21,7 +21,7 @@ arcana:
 
 ### Social Provider: AWS Cognito
 
-Arcana Auth SDK now allows Web3 apps to configure AWS Cognito as the social provider for user authentication. See [how to onboard users via Cognito]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_cognito_oauth.md) for details.
+Arcana Auth SDK now allows Web3 apps to configure AWS Cognito as the social provider for user authentication. See [how to onboard users via Cognito]({{page.meta.arcana.root_rel_path}}/howto/plug_idm/wallet_cognito_oauth.md) for details.
 
 ### New API: showWallet()
 

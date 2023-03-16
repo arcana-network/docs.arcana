@@ -9,10 +9,13 @@ Arcana Auth Documentation based on Mkdocs, material design
 
 ## Environment Variables
 
-GOOGLE_ANALYTICS_ID=<Use from Arcana Vault - Contact Ajay>
-DOCS_SITE_URL='https://docs.arcana.network'
-MARKER_IO_DESTINATION_ID="Use from Arcana Vault - Contact Ajay>"
-PYTHON_VERSION="3.8"
+`GOOGLE_ANALYTICS_ID=<Use from Arcana Vault - Contact Ajay>`
+
+`DOCS_SITE_URL='https://docs.arcana.network'`
+
+`MARKER_IO_DESTINATION_ID="Use from Arcana Vault - Contact Ajay>"`
+
+`PYTHON_VERSION="3.8"`
 
 ## Build
 

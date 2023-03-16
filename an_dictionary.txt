@@ -27,6 +27,7 @@ AccessControlOpsListText
 AccessStepsText
 Addr1
 Ajay
+Algorand
 AppID
 AppId
 Arcana
@@ -38,6 +39,7 @@ Arcana_Dev
 Arcana_Testnet
 Auth
 Auth-React
+Auth0
 AuthAddNetworkText
 AuthDKGStepsText
 AuthGetAccountText
@@ -212,6 +214,7 @@ Jira
 KMS
 KV
 KYC
+Kakaotalk
 Keyspace
 Keystore
 KeystoreInput
@@ -251,6 +254,7 @@ Nopending
 OAuth
 OAuth2
 OTP
+Okta
 Onboarding
 OpenSea
 OtpLoginResponse
@@ -436,6 +440,7 @@ Web2
 Web2-like
 Web3
 Webpack
+Wechat
 WhatIsPvtNFTLinkText
 Whitepaper
 XAR
@@ -446,6 +451,7 @@ aggregatelogin
 al.
 already_in_UI_mode
 an-faq
+an-trbs
 anacademy
 ansmartcdeployed
 ansmartcdetails
@@ -518,6 +524,7 @@ config_dashboard
 config_discord
 config_github
 config_google
+config_idm
 config_social
 config_twitch
 config_twitter
@@ -683,6 +690,7 @@ idconfigdiscord
 idconfigdsocial
 idconfiggithub
 idconfiggoogle
+idconfigidm
 idconfigmetamask
 idconfigsocial
 idconfigtwitch
@@ -723,9 +731,11 @@ idhowdkgworks
 idhowdoiuse
 idhtmljscodesample
 idiindexusingwallet
+idindexconfigauth
 idindexintegrate
 idindexuserauth
 idindexwalletdev
+idindexweb3walletops
 idintro
 idmigration_to_main_auth_1_0_0
 idmigration_to_main_auth_1_0_2
@@ -828,10 +838,12 @@ idwalletwatchasset
 idwhatisan
 idwhyan
 inPageProvider
+index_config_auth
 indexintegrate
 indexuserauth
 indexusingwallet
 indexwalletdev
+indexweb3walletops
 init
 instantiation
 interchain
@@ -950,6 +962,7 @@ setupwalletvue
 setupwidgetwallet
 sharded
 sharefile
+showWallet
 signingtx
 signup
 simple-nextdotjs

@@ -1,0 +1,1 @@
+If your Web3 application uses [Wagmi](https://wagmi.sh/) or [RainbowKit](https://www.rainbowkit.com/), you can directly install and integrate with the [Auth wagmi wrapper](https://www.npmjs.com/package/@arcana/auth-wagmi). Using `auth-wagmi` does not require installing the `auth` package as it is wrapped within the `auth-wagmi` package.

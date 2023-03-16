@@ -6,7 +6,7 @@ import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { polygon, mainnet } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
-import { connectors } from "../utils/wallet";
+import { connectors } from "../utils/wagmi_client.ts";
 
 const { chains, provider } = configureChains(
   [mainnet, polygon],
