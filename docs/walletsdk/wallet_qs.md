@@ -45,7 +45,7 @@ To enable the embedded Arcana wallet in an application, the application develope
 
 First, [register and configure]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) your application using the Arcana dashboard. As part of registration, a unique value, **{{config.extra.arcana.app_address}}**, is assigned to each application. This is required for integrating the application with the Auth SDK.
 
-Developers must choose one or more options to onboard users and [configure social login]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md). This ensures that only the configured onboarding options are enabled in the Auth SDK. 
+Developers must choose one or more options to onboard users and [configure social providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md). This ensures that only the configured onboarding options are enabled in the Auth SDK. 
 
 !!! note "Enable multiple login options"
 
@@ -53,7 +53,7 @@ Developers must choose one or more options to onboard users and [configure socia
 
 !!! caution "User Onboarding options"
 
-    If the application is registered but not configured for any social login providers, by default, [passwordless login]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md) is the only option that is enabled for the application users.
+    If the application is registered but none of the available social providers are enabled and configured for user onboarding, then by default, the [passwordless login]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md) is the only option that is available for onboarding app users.
 
 ## Install Auth SDK
 

@@ -18,7 +18,7 @@ To integrate your application the Auth SDK, ensure the pre-requisites are met an
 **Prerequisites**
 
 1. Go to the Arcana Dashboard and [register your application]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md).
-2. Configure the Auth SDK for your user onboarding needs. See [how to enable user onboarding guide]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md).
+2. Configure the Auth SDK usage settings based on the required user onboarding experience and the Arcana wallet usage for signing blockchain transactions. See [how to configure auth]({{page.meta.arcana.root_rel_path}}/howto/config_auth/index.md) section for details.
 
 **Select Integration Method**
 

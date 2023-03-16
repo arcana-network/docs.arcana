@@ -20,7 +20,7 @@ This is totally unlike Web2, where user data is owned by the applications and co
 
 ## Privacy-Preserving Applications
 
-If you are building Web3 applications or dApps that require complete data privacy, and security, the Arcana Network Platform does the heavy lifting for you to onboard users using popular social login and passwordless options. Onboard your dApp users easily and quickly enable them to sign blockchain transactions, manage tokens and more without having to bother about the Web3 secret key management.
+If you are building Web3 applications or dApps that require complete data privacy, and security, the Arcana Network Platform does the heavy lifting for you to onboard users using popular social providers and passwordless options. Onboard your dApp users easily and quickly enable them to sign blockchain transactions, manage tokens and more without having to bother about the Web3 secret key management.
 
 At Arcana, we take security, privacy, and ownership seriously. We are actively working towards tracking and plugging in any vulnerabilities in our solution.
 
@@ -36,9 +36,11 @@ As a Web3 application developer, you can focus on core application logic while d
 
 ### 1. Onboard dApp users effortlessly
 
-Easily plug in popular Web2 sign up/login mechanisms in your Web3 applications and lower the barrier to entry for users. Developers can choose to quickly plug in the built-in default user login UI offered by the Auth SDK.  As an alternative, they can choose to customize and build their own user login UI and call requisite social login functions of the Auth SDK. 
+Developers can easily plug in popular Web2 sign up/login mechanisms in your Web3 applications and lower the barrier to entry for users. 
 
-Read more about the [plug and play auth]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md) feature, [how to enable plug and play in your application]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_plugnplay.md). Learn about the supported [social login providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md) and [how to build social login in your application]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/index.md).
+The Arcana Auth SDK allows developers to choose the default, built-in plug-and-play user authentication UI via `connect` function of the Auth SDK. Or, they can customize and build their own user authentication UI and call `loginWithSocial` and `loginWithLink` functions to allow users to use the configured social providers and passwordless option for onboarding the app. 
+
+Read more about the [plug-and-play auth]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md) feature, [how to enable plug and play in your application]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_plugnplay.md). Learn how to configure and enable [social providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md) and [how to build custom UX for authenticating users via these configured social providers]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/index.md) in your app.
 
 ### 2. Sign blockchain transactions securely
 

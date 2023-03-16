@@ -23,9 +23,9 @@ In this tutorial, you will learn how to integrate a Vue application with the [Ar
 
     !!! tip
 
-        You may be required to configure additional details depending on the choice of authentication mechanisms. For example, if the application wants to enable users to onboard using the Google social authentication then the developer must set up and specify the [clientID for Google OAuth]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_google_oauth.md).
+          You may be required to configure additional details depending on the choice of social providers for user authentication. For example, to enable user onboarding via the social provider, Google, the developer must set up and specify the [client ID for Google OAuth]({{page.meta.arcana.root_rel_path}}/howto/config_social/google_oauth.md) in the Arcana Dashboard before integrating the application.
 
-        For details, see [how to configure one or more social logins]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md).
+          For details, refer to the [social provider configuration guides]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md).
 
 * The **{{config.extra.arcana.app_address}}** assigned to the application is displayed on the dashboard application screen. Save the **{{config.extra.arcana.app_address}}** as it will be required for instantiating the `AuthProvider` while integrating the app with the Auth SDK. 
 

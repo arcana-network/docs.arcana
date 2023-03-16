@@ -30,7 +30,7 @@ Note that some steps are performed using [Twitter Developer [Portal](https://dev
 
 ## Step 4: Integrate with Arcana Auth SDK and trigger Twitter login
 
-Use the instructions here to [integrate with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). After integration, use the following code to trigger social login for Twitter:
+Use the instructions here to [integrate with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). After integration, use the following code to trigger user authentication via Twitter:
 
 {% include "./code-snippets/auth_social_login.md" %}
 

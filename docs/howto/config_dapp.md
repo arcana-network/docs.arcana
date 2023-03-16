@@ -7,7 +7,7 @@ arcana:
   root_rel_path: ..
 ---
 
-# Configure Application
+# Register & Configure Application
 
 In this tutorial, you will learn how to register and configure an application before integrating it with the Auth SDK. 
 

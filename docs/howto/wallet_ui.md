@@ -15,7 +15,7 @@ Developers who wish to programmatically enable various wallet operations can ref
 
 !!! info "Wallet Developer Guides"
 
-      To enable Arcana wallet in the context of a Web3 application, you need to first [register your Web3 application]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) and [configure user authentication mechanisms]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md) using the Arcana Dashboard. 
+      To enable Arcana wallet in the context of a Web3 application, you need to first [register your Web3 application]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) and [configure social providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md) using the Arcana Developer Dashboard to authenticate users. 
       
       After that, you must install the `@arcana/auth` package and follow the [instructions to integrate your application]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md).
 

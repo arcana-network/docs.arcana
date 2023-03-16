@@ -1,8 +1,6 @@
-# Build Social Login
+# Build Social Auth
 
-Create custom UX and wire it to Auth SDK functions for social login to onboard dApp users.
-
-[Cognito :fontawesome-brands-aws:](./wallet_cognito_oauth.md){ .md-button }
+Create custom UX and wire it to Auth SDK functions for onboarding users via the configured social providers.
 
 [Discord :fontawesome-brands-discord:](./wallet_discord_oauth.md){ .md-button }
 

@@ -1,4 +1,4 @@
-To enable AWS Cognito-based social authentication in Web3 applications, developers must perform these three steps before integrating with the Arcana Auth SDK.
+Web3 applications that use AWS Cognito for user authentication can enable the Arcana wallet for the authenticated users. The developers must configure AWS Cognito and then integrate the app with the Arcana Auth SDK.
 
 ## Step 1: Use Arcana Dashboard
 
@@ -67,4 +67,4 @@ Save the settings. Arcana Network assigns a **Client ID** to every registered an
 
 ![Client ID](/img/an_db_app_address.png)
 
-*You are all set with Cognito Setup. Integrate the Web3 application with the Arcana Auth SDK and call the social login function when the user chooses to log in.*
+*You are all set with the Cognito configuration. Integrate the Web3 application with the Arcana Auth SDK. After authentication, users can access Arcana wallet functionality.*

@@ -18,7 +18,7 @@ In this guide, you will learn how to enable Discord authentication and onboard d
 * Make sure you can access Arcana Developer Dashboard: {% include "./text-snippets/db_portal_url.md" %}
 * Install the `@arcana/auth` package. For details, see [Arcana Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md).
 
-Note that some of the configuration steps are performed using [Discord Developer Portal](https://discord.com/developers/applications), and others using the Arcana Dashboard. After configuring Discord, developers can simply integrate the application with the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) and then trigger Discord login when the user chooses to onboard the app via the Discord social login.
+Note that some of the configuration steps are performed using [Discord Developer Portal](https://discord.com/developers/applications), and others using the Arcana Dashboard. After configuring Discord simply integrate the app with the Arcana Auth SDK and trigger user authentication via Discord.
 
 {% include "./text-snippets/discord_config_steps.md" %}
 

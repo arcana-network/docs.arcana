@@ -60,7 +60,7 @@ Frequently asked questions about using the [Arcana Developer Dashboard]({{page.m
 
 ## Branding Settings
 
-??? an-faq "Why do I see error when uploading the logo file?"
+??? an-faq "Why do I see an error when uploading the logo file?"
 
       Make sure the file is less than the {% include "./text-snippets/limit_branding_img_size.md" %} limit for a successful upload.
 
@@ -76,7 +76,7 @@ Frequently asked questions about using the [Arcana Developer Dashboard]({{page.m
 
       If you do not specify any social authentication configurations in your 'Testnet' or 'Mainnet' configuration profile settings in the Arcana Developer dashboard, then your app can only onboard users via the passwordless option that is enabled by default. You can use the plug-and-play UI via the `connect` method or build your own auth UI and use the `loginWithLink` method to onboard users via the passwordless login option.
       
-      To enable any social providers for app onboarding you must configure them using the dashboard. See the [how to configure social login options]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md) guide for more details.
+      To enable any social providers for app onboarding you must configure them using the dashboard. See the [how to configure social providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md) guide for more details.
 
 ??? an-faq "Can an application enable more than one authentication mechanism?"  
 
