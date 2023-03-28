@@ -7,7 +7,7 @@ arcana:
   root_rel_path: ../../..
 ---
 
-# Integrate React Apps
+# Integrate React App
 
 Depending upon whether your React Web3 app is a simple React app or a React app that uses [Wagmi](https://wagmi.sh/) or [RainbowKit](https://www.rainbowkit.com/), you may need to install one or more of the following {{config.extra.arcana.sdk_name}} packages - `auth`, `auth-react`, and `auth-wagmi`.
 

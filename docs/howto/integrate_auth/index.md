@@ -7,7 +7,7 @@ arcana:
   root_rel_path: ../..
 ---
 
-# Integrate {{config.extra.arcana.sdk_name}}
+# Integrate App
 
 To integrate a Web3 app with the {{config.extra.arcana.sdk_name}}, first register and configure the app with Arcana Network, install the {{config.extra.arcana.sdk_name}}, select the appropriate integration method based on your application type, and then follow the instructions to integrate the app.
 
