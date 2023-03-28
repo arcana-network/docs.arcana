@@ -1,5 +1,7 @@
 # References
 
+[State of the {{config.extra.arcana.product_name}}](../state_of_the_ntwk.md){ .md-button }
+
 [{{config.extra.arcana.sdk_name}} Usage Guide](../walletsdk/wallet_usage.md){ .md-button }
 
 [{{config.extra.arcana.sdk_name}} Reference Guide](https://authsdk-ref-guide.netlify.app/){ .md-button }

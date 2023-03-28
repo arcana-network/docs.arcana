@@ -1,6 +1,7 @@
 ---
 slug: /indexusingwallet
 id: idiindexusingwallet
+title: Arcana Wallet User Guide
 sidebar_custom_props:
   cardIcon: 📺
 arcana:

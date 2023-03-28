@@ -1,6 +1,7 @@
 ---
 slug: /indexwalletdev
 id: idindexwalletdev
+title: Enable Arcana Wallet
 sidebar_custom_props:
   cardIcon: 📺
 arcana:

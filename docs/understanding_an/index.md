@@ -1,3 +1,12 @@
+---
+slug: /understandingan
+id: idunderstandingan
+title: Understanding Arcana Auth
+sidebar_custom_props:
+  cardIcon: ✨
+arcana:
+  root_rel_path: ..
+---
 # Understanding {{config.extra.arcana.product_name}}
 
 Learn about what the {{config.extra.arcana.product_name}} offers, why it is required and what are some of its use cases.
