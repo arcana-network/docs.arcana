@@ -1,3 +1,11 @@
+---
+slug: /ansmartcindex
+id: idansmartcindex
+title: Arcana Smart Contracts
+sidebar_custom_props:
+  cardIcon: ▶️
+---
+
 # {{config.extra.arcana.company_name}} Smart Contracts
 
 Learn about the different types of smart contracts used in the {{config.extra.arcana.product_name}}protocol.

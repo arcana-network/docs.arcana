@@ -9,7 +9,7 @@ arcana:
   social_provider: "'discord'"
 ---
 
-# Onboard App users via Discord
+# Discord
 
 In this guide, you will learn how an app that builds a custom login UI and integrates with the {{config.extra.arcana.sdk_name}} can easily onboard users via Discord as the authentication provider.
 

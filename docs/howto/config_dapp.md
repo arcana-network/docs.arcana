@@ -7,7 +7,7 @@ arcana:
   root_rel_path: ..
 ---
 
-# Register & Configure Application
+# Register & Configure App
 
 In this tutorial, you will learn how to register and configure a Web3 app before integrating it with the {{config.extra.arcana.sdk_name}}. 
 

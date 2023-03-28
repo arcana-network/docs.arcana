@@ -1,3 +1,13 @@
+---
+slug: /an_academyindex
+id: idanacademyindex
+title: Arcana Academy
+sidebar_custom_props:
+  cardIcon: ✨
+arcana:
+  root_rel_path: ..
+---
+
 # {{config.extra.arcana.company_name }} Academy
 
 Developer resources for using {{config.extra.arcana.product_name}}.
