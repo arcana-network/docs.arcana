@@ -1,6 +1,8 @@
 ---
 template: home.html
-title: Home
+title: Arcana Auth
 ---
 
-Welcome to {{config.extra.arcana.product_name}} documentation.
+# Arcana Auth
+
+Welcome to Arcana Auth Documentation!
