@@ -48,7 +48,7 @@ If you are new to the Web3 ecosystem, we recommend that you check out the [{{con
 
 Web3 application users can learn more about how to use the {{config.extra.arcana.wallet_name}} for performing Web3 operations by referring to the [{{config.extra.arcana.wallet_name}} User Guide]({{page.meta.arcana.root_rel_path}}/user_guides/wallet_ui/index.md).
 
-Learn about new product features in the [Release Notes]({{page.meta.arcana.root_rel_path}}/relnotes/index.md) section. You can see the detailed changelog for the [{{config.extra.arcana.sdk_name}}](https://github.com/arcana-network/auth/releases/tag/v0.3.0) and [{{config.extra.arcana.dashboard_name}}(https://github.com/arcana-network/developer-dashboard/releases/tag/v0.2.0) to figure out what has changed.
+Learn about new product features in the [Release Notes]({{page.meta.arcana.root_rel_path}}/relnotes/index.md) section. You can see the detailed changelog for the [{{config.extra.arcana.sdk_name}}](https://github.com/arcana-network/auth/releases/tag/v0.3.0) and [{{config.extra.arcana.dashboard_name}}](https://github.com/arcana-network/developer-dashboard/releases/tag/v0.2.0) to figure out what has changed.
 
 If you do not find answers to your questions in our [FAQ]({{page.meta.arcana.root_rel_path}}/faq/index.md) section, drop us an [email](mailto://support@arcana.network) or contact us through the [support channels](#support--feedback).
 
