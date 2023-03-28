@@ -24,14 +24,14 @@ nav:
         - Custom IAM Providers:
           - howto/config_idm/index.md
           - Cognito: howto/config_idm/cognito_oauth.md
-      - Integrate Auth SDK: 
+      - Integrate App: 
         - howto/integrate_auth/index.md
-        - Vanilla JS Apps: howto/integrate_auth/integrate_wallet.md
-        - React Apps: 
+        - Vanilla JS App: howto/integrate_auth/integrate_wallet.md
+        - React App: 
           - howto/integrate_auth/react/index.md
-          - Simple React/NextJS Apps: howto/integrate_auth/integrate_wallet_react.md
-          - Wagmi: howto/integrate_auth/integrate_wagmi.md
-          - RainbowKit: howto/integrate_auth/integrate_rainbow.md
+          - React/NextJS App: howto/integrate_auth/integrate_wallet_react.md
+          - Wagmi App: howto/integrate_auth/integrate_wagmi.md
+          - RainbowKit App: howto/integrate_auth/integrate_rainbow.md
         - Vue dApp: howto/integrate_auth/integrate_wallet_vue.md
       - Onboard Users: 
         - howto/onboard_users/index.md
