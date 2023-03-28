@@ -1,34 +1,36 @@
-To enable social authentication via Google in the Web3 applications, developers must perform these three steps before integrating with the Arcana Auth SDK.
+Web3 apps can select and enable user onboarding via Google by configuring the **Social Auth** settings in the {{config.extra.arcana.dashboard_name}} before integrating the app with the {{config.extra.arcana.sdk_name}}.
 
-## Step 1: Use Arcana Dashboard
+!!! warning
 
-Go to the Arcana Dashboard: {% include "./text-snippets/db_portal_url.md" %}
+      Some of the authentication provider configuration steps are performed using the Google Console, whereas the others use the {{config.extra.arcana.dashboard_name}}. After configuring Google, simply [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and only then add code in the app to trigger user authentication via Google.
+      
+## Step 1: Get Redirect URI
 
-Register your dApp by creating a new dApp entry and specifying a name using the 'Create New App' wizard.
+Go to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
-!!! tip "Registering the Application"
+[Register the app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md#step-2-register-application) by creating a new entry using the 'Create New App' wizard. 
+
+!!! tip "Registering App"
 
       {% include "./text-snippets/socialauth_add_config.md" %}
-  
-You can use defaults for other settings or change them as per your use case. Refer to the [how to configure dApp guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) for details.
 
-Go to the `Configure->Social Auth` configuration section and copy the **redirect URI** value displayed there.  This will be used in the next step to generate Google Client ID.
+Go to the app configuration screen on the {{config.extra.arcana.dashboard_name}} and click **Configure > Social Auth** section in the LHS. Copy the **redirect URI** value displayed on the top RHS. This will be used in the next step to generate Google Client ID.
 
-![redirect_page](/img/an_dApp_config_redirect_uri.png)
+![redirect_page](/img/an_dApp_config_redirect_uri.png){.an-screenshots}
 
-Do not close the dashboard browser tab. Open another tab and continue with the next step. Then come back to the Dashboard tab and complete Google Client ID settings.
+Do not close the {{config.extra.arcana.dashboard_name}} browser tab. Open another tab and continue with the next step. Then come back to the {{config.extra.arcana.dashboard_name}} tab and complete Google Client ID settings.
 
-## Step 2: Use Google Developer Console
+## Step 2: Google Developer Console
 
 Go to the [Google Cloud Console](http://console.cloud.google.com/apis/credentials). Create a new OAuth 2.0 credential for your dApp.
 
-![google_console_redirect](/img/google_console_redirect.png)
+![google_console_redirect](/img/google_console_redirect.png){.an-screenshots}
 
 In the Google Cloud Console, select the option to set up credentials for a web application. 
 
-![Google OAuth ClientID create](/img/an_google_clientID_create.png)
+![Google OAuth ClientID create](/img/an_google_clientID_create.png){.an-screenshots}
 
-Specify the **redirect URI** value to the one that you saved in the previous step from the `Auth` tab of the Arcana Network Dashboard. 
+Specify the **redirect URI** value to the one that you saved in the previous step from the `Auth` tab of the {{config.extra.arcana.dashboard_name}}. 
 
 !!! info "Redirect URI"
 
@@ -36,18 +38,18 @@ Specify the **redirect URI** value to the one that you saved in the previous ste
 
 Complete the steps in Google Cloud Console for creating a new OAuth 2.0 credential. It will generate a unique **ClientID**.
 
-![Google OAuth ClientID copy](/img/an_google_clientID_copy.png)
+![Google OAuth ClientID copy](/img/an_google_clientID_copy.png){.an-screenshots}
 
 Save the **Client ID** assigned by Google. It will be required in the next step.
 
-## Step 3: Update Arcana Dashboard
+## Step 3: Update the {{config.extra.arcana.dashboard_name}}
 
-Revisit the Arcana Developer Dashboard portal. Click on your app entry and visit the application dashboard. Click `Configure->Social Auth` in the LHS navigation bar. Refer to the "Google" settings and paste the **Client ID** assigned by Google Cloud Console in the previous step. 
+Revisit the {{config.extra.arcana.dashboard_name}}. Click on the app entry and visit the application configuration screen. Click **Configure > Social Auth** in the LHS navigation bar. Refer to the "Google" settings and paste the **Client ID** assigned by Google Cloud Console in the previous step. 
 
-![howto_google_auth_type](/img/an_dApp_google_config.png)
+![howto_google_auth_type](/img/an_dApp_google_config.png){.an-screenshots}
 
-Save the settings on the dashboard. Arcana Network assigns an **{{config.extra.arcana.app_address}}** to every registered and configured dApp. If you plan to integrate with Arcana SDKs, you need to save this **{{config.extra.arcana.app_address}}**. 
+Save the settings. {{config.extra.arcana.company_name}} assigns a **{{config.extra.arcana.app_address}}** to every registered app. You need to save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}.
 
-![App Identifier](/img/an_db_app_address.png)
+![App Identifier](/img/an_db_app_address.png){.an-screenshots}
 
-*You are all set with the Google configuration. Integrate the Web3 application with the Arcana Auth SDK and call the user onboarding function when the user chooses to log in.*
+*You are all set with the Google configuration. [Integrate the Web3 app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}, [onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md) and enable the authenticated users to sign blockchain transactions. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.*

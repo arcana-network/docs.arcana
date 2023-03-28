@@ -7,24 +7,17 @@ arcana:
   root_rel_path: ../..
 ---
 
-# Plug and Play Auth
+# Plug-and-Play Auth
 
-In this tutorial, you will learn how dApps can integrate with the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) and use the ['plug and play']({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md)' authentication feature. 
-
-The Auth SDK's plug-and-play authentication simplifies and speeds up the addition of user onboarding functionality in a Web3 application. The developer can configure the user onboarding options on this plug-and-play UI screen using the Arcana Dashboard.
+In this guide, you will learn how Web3 apps can integrate with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) and use the [plug-and-play]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md) feature to onboard users with the built-in login UI. 
 
 ## Prerequisites
 
-* Make sure you can access Arcana Developer Dashboard: {% include "./text-snippets/db_portal_url.md" %}
-* Use the [Arcana Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to [register and configure dApp]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md). 
+* Make sure you can access the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
-!!! caution  "Configure Social Providers"
-    
-      During dApp configuration, make sure you follow steps 1-3 listed for each of the supported social providers and set up the Auth **ClientID** and **Secret** values obtained from the social providers in the Arcana Developer Dashboard.  For details, see [how to configure social providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md).
-
-      Only the configured providers will show up in the plug-and-play pop-up screen as the available onboarding options.  If no providers are configured, only the passwordless login option is enabled by default.
+* Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to [register and configure the app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md). The plug-and-play pop-up UI screen will display only those authentication providers that are configured using the {{config.extra.arcana.dashboard_name}}.  If no authentication providers are configured in the {{config.extra.arcana.dashboard_name}}, then users can only onboard the app via the passwordless login option. See [how to configure authentication providers]({{page.meta.arcana.root_rel_path}}/howto/config_auth/index.md) for details.
   
-* Install the `@arcana/auth` package and [integrate the dApp with Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
+* Follow the instructions as per the app type and [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}} before accessing user onboarding functions of the {{config.extra.arcana.sdk_name}}.
 
 ## Steps
 
@@ -32,30 +25,30 @@ The Auth SDK's plug-and-play authentication simplifies and speeds up the additio
 
 Just a single line of code!
 
-Ensure that you have successfully integrated with the Auth SDK, as listed in the prerequisites section, and initialized the `AuthProvider`. After integrating your dApp with the Auth SDK, simply use the `connect` method to plug built-in user authentication into your application:
+### Step 1: Call User Onboarding Function: `connect`
+
+After successfully integrating the app with the {{config.extra.arcana.sdk_name}}, make sure the `AuthProvider` is successfully initialized. Then simply add a single line of code, call to the `connect` function of the {{config.extra.arcana.sdk_name}} and enable the built-in plug-and-play login UI in the app when a user clicks a button to log in:
 
 {% include "./code-snippets/auth_plugnplay.md" %}
 
-This will bring up the plug-and-play pop-up modal on the dApp window and display the available options for user onboarding. Only those options are displayed that are configured by the dApp developer using the Arcana Developer Dashboard.
+The `connect()` function will bring up the plug-and-play pop-up modal in the app context and display the available options for user onboarding. Only those options are displayed that were earlier configured by the developer using the {{config.extra.arcana.dashboard_name}}.
 
-The figure below shows the plug-and-play pop-up authentication screen for Arcana wallet for a sample dApp that allowed only Google social authentication and passwordless login.
+The figure below shows the plug-and-play pop-up authentication screen for a test app where the developer had registered and configured Google as the social provider for authentication. The passwordless login option is enabled by default.
 
-<img src="/img/an_plug_n_play_auth.png" width="300"/>
+![Plug-and-Play Login UI](/img/an_plug_n_play_auth.png){.an-screenshots-noeffects width="30%"}
 
 That is all! :material-party-popper:
 
-You have successfully enabled the plug-and-play authentication feature to onboard the app users.
+The plug-and-play user onboarding feature is successfully enabled in an app integrated with the {{config.extra.arcana.sdk_name}}.
 
 ## What's Next?
 
-Besides onboarding the dApp users via plug-and-play authentication, the Auth SDK can be utilized for enabling [Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) to sign blockchain transactions.
-
-Once the Auth SDK is integrated with a dApp, authenticated users can access the Arcana wallet for signing blockchain transactions on any EVM-compatible network. 
+After enabling the plug-and-play user onboarding feature in the app, developers can use other {{config.extra.arcana.sdk_name}} functions and enable Web3 wallet operations for authenticated users. See [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md), [how to enable the {{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.
 
 ## See also
 
-* Onboarding users via [Google]({{page.meta.arcana.root_rel_path}}/howto/config_social/google_oauth.md)
-* [Passwordless authentication using Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md)
-* [Auth SDK Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
-* [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
+* [Configure authentication providers]({{page.meta.arcana.root_rel_path}}/howto/config_auth/index.md)
+* [Build custom login UI]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/index.md)
+* [{{config.extra.arcana.sdk_name}}Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
+* [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
 * {% include "./text-snippets/authsdkref_url.md" %}

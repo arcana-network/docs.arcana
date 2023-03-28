@@ -1,8 +1,8 @@
 # References
 
-[Auth Usage Guide](../walletsdk/wallet_usage.md){ .md-button }
+[{{config.extra.arcana.sdk_name}} Usage Guide](../walletsdk/wallet_usage.md){ .md-button }
 
-[Auth SDK Reference Guide](https://authsdk-ref-guide.netlify.app/){ .md-button }
+[{{config.extra.arcana.sdk_name}} Reference Guide](https://authsdk-ref-guide.netlify.app/){ .md-button }
 
 [Handling Auth Errors](../walletsdk/wallet_err.md){ .md-button }
 
@@ -10,4 +10,4 @@
 
 [Troubleshooting Guide](../troubleshooting.md){ .md-button }
 
-[Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08){ .md-button }
+[{{config.extra.arcana.company_name}} Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08){ .md-button }

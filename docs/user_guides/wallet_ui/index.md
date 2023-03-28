@@ -7,9 +7,11 @@ arcana:
   root_rel_path: ../..
 ---
 
-# Arcana Wallet User Guide
+# {{config.extra.arcana.wallet_name}} User Guide
 
-The [Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) is a tool that is built into a Web3 application. It is used to manage the user's digital assets and can be accessed by users who have signed in to the application. It is part of the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md), that allows Web3 applications to easily authenticate their users and manage blockchain signing experience.
+The [{{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) is an embedded, non-custodial Web3 wallet that is available to all authenticated app users once the app integrates with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md). 
+
+Users can perform various Web3 wallet operations and sign blockchain transactions using the {{config.extra.arcana.wallet_name}}.
 
 [Basic Wallet Operations :material-signature-image:](../../howto/wallet_ui.md){ .md-button }
 

@@ -1,36 +1,40 @@
-Web3 applications that use AWS Cognito for user authentication can enable the Arcana wallet for the authenticated users. The developers must configure AWS Cognito and then integrate the app with the Arcana Auth SDK.
+Web3 apps that use AWS Cognito for user authentication can enable authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}. This requires configuring AWS Cognito before integrating the app with the {{config.extra.arcana.sdk_name}}.
 
-## Step 1: Use Arcana Dashboard
+!!! warning
 
-Go to the Arcana Dashboard: {% include "./text-snippets/db_portal_url.md" %}
+      Some of the authentication provider configuration steps are performed using the [AWS Management Console](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-idp-settings.html), whereas the others use the {{config.extra.arcana.dashboard_name}}. After configuring AWS Cognito, simply [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and only then add code in the app to use the {{config.extra.arcana.sdk_name}} functions for enabling authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}.
 
-Register your dApp by creating a new dApp entry and specifying a name using the 'Create New App' wizard. 
+## Step 1: Get Redirect URI
 
-!!! tip "Registering the Application"
+Go to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
+
+[Register the app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md#step-2-register-application) by creating a new entry using the 'Create New App' wizard. 
+
+!!! tip "Registering App"
           
       {% include "./text-snippets/socialauth_add_config.md" %}
 
-Use defaults for other settings or change them as per your use case. Refer to the [how to configure dApp guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) for details.
+Use defaults for configuration settings or edit them as per the app requirements. See the [ How to configure an app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) guide for details.
 
-Go to the `Configure->Social Auth` configuration section and copy the **redirect URI** value displayed there.   This will be used in the next step to generate Cognito OAuth credentials.
+Go to the app configuration screen on the {{config.extra.arcana.dashboard_name}} and click **Configure > Social Auth** section in the LHS. Copy the **redirect URI** value displayed on the top RHS. This will be used in the next step to generate Cognito OAuth credentials.
 
-![redirect_page](/img/an_dApp_config_redirect_uri.png)
+![redirect_page](/img/an_dApp_config_redirect_uri.png){an-screenshots}
 
-Do not close the dashboard browser tab. Open another tab and set up AWS Cognito OAuth. Then come back to the Dashboard tab and complete the dApp configuration settings.
+Do not close the {{config.extra.arcana.dashboard_name}} browser tab. Open another tab and set up AWS Cognito OAuth. Then come back to the {{config.extra.arcana.dashboard_name}} tab and complete the app configuration settings.
 
-## Step 2: Use AWS Management Console
+## Step 2: AWS Management Console
 
-Go to the [AWS Management Console](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-idp-settings.html) and register your dApp as a new Cognito client application. Log in to the console, search for 'Cognito' and you will see the Cognito setup dashboard. Using this dashboard, you need to add your app as a Cognito client in the context of a Cognito 'User Pool'. If you do not already have a Cognito 'User Pool' setup, create a new User Pool first as highlighted in the figure below. 
+Go to the [AWS Management Console](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-idp-settings.html) and register your app as a new Cognito client application. Log in to the console, search for 'Cognito' and you will see the Cognito setup dashboard. Use the Cognito setup dashboard to add the app as a Cognito client in the context of a Cognito 'User Pool'. If a Cognito 'User Pool' is not already set up, create a new User Pool first as highlighted in the figure below. 
 
 !!! caution "Cognito Sign-in Options"
 
       **Email ID** must be selected as one of the Cognito sign-in options. 
       
-![Cognito console](/img/an_dApp_cognito_dev_console.png) 
+![Cognito console](/img/an_dApp_cognito_dev_console.png){an-screenshots}
 
-If you already have a user pool set up, select it from the list and double-click on it to see the details. Refer to the **App Integration** tab settings and click **Create App Client** on the bottom right of the page.
+If a user pool is already set up, simply select it from the list and double-click on it to see the details. Refer to the **App Integration** tab settings and click **Create App Client** on the bottom right of the page.
 
-![Cognito create app client](/img/an_dApp_cognito_create_app_client.png) 
+![Cognito create an app client](/img/an_dApp_cognito_create_app_client.png){an-screenshots} 
 
 You will see the **Create Client** dashboard screen. You need to specify the following settings for your app and update the requisite fields in the console:
 
@@ -39,32 +43,32 @@ You will see the **Create Client** dashboard screen. You need to specify the fol
 * Client Secret: *Select the 'Do not generate client secret' option*
 * Authentication Flows: *Select ALLOW_REFRESH_TOKEN_AUTH*
 
-Then scroll down to the **Hosted UI** section and refer to the **Allowed Callback URLs** field. In this field, add the **Redirect URI** copied from Arcana Dashboard in the previous step.
+Next, scroll down to the **Hosted UI** section and refer to the **Allowed Callback URLs** field. In this field, add the **Redirect URI** copied from the {{config.extra.arcana.dashboard_name}} in the previous step.
 
-![Cognito Create Client Settings](/img/an_dApp_cognito_app_client_settings.png)
+![Cognito Create Client Settings](/img/an_dApp_cognito_app_client_settings.png){an-screenshots}
 
 Make sure you add *Cognito User Pool* in the **Identity Provider** section of the settings as shown in the figure above. 
 
 For the **OAuth 2.0 Grant Type** setting, make sure you specify *Authorization Code Grant* and *Implicit Grant* values as shown in the figure below:
 
-![Cognito Oauth2.0 Grant Type](/img/an_dApp_cognito_app_client_oauth2_grant.png)
+![Cognito Oauth2.0 Grant Type](/img/an_dApp_cognito_app_client_oauth2_grant.png){an-screenshots}
 
-In the **Custom Scope** section, ensure that the attribute **EmailID** has read access. This is used by Arcana Auth SDK to enable the [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature.
+In the **Custom Scope** section, ensure that the attribute **EmailID** has read access. This is used by {{config.extra.arcana.sdk_name}} to enable the [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature.
 
 Save the new client app settings.  You will see the new client app entry in the user pool page under the **App Client List** section. 
 
-![Cognito Client App List](/img/an_dApp_cognito_app_client_list.png)
+![Cognito Client App List](/img/an_dApp_cognito_app_client_list.png){an-screenshots}
 
-Copy the **ClientID** that is automatically generated by Cognito for the newly registered Client App. It will be required in the next step while completing the Arcana dashboard dApp configuration.
+Copy the **ClientID** that is automatically generated by Cognito for the newly registered Client App. It will be required in the next step while completing the app configuration using the {{config.extra.arcana.dashboard_name}}.
 
-## Step 3: Update Arcana Dashboard
+## Step 3: Update {{config.extra.arcana.dashboard_name}}
 
-Revisit the Arcana Developer Dashboard portal. Click on your app entry and visit the application dashboard. Click `Configure->Social Auth` in the LHS navigation bar. Refer to the "Cognito" field and paste the **Client ID** assigned by AWS Management Console after the Cognito OAuth setup in the previous step, in the input text field. 
+Revisit the {{config.extra.arcana.dashboard_name}}. Click on the app entry and visit the application dashboard. Click **Configure > Social Auth** section in the LHS navigation bar. Refer to the "Cognito" field and paste the **Client ID** assigned by AWS Management Console after the Cognito OAuth setup in the previous step, in the input text field. 
 
-![howto_config_cognito](/img/an_dApp_cognito_config.png)
+![howto_config_cognito](/img/an_dApp_cognito_config.png){an-screenshots}
 
-Save the settings. Arcana Network assigns a **Client ID** to every registered and configured dApp. You need to save this **Client ID** and use it while integrating the dApp with the Auth SDK.
+Save the settings. {{config.extra.arcana.company_name}}assigns a unique **{{config.extra.arcana.app_address}}** to every registered app. Save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}.
 
-![Client ID](/img/an_db_app_address.png)
+![Client ID](/img/an_db_app_address.png){an-screenshots}
 
-*You are all set with the Cognito configuration. Integrate the Web3 application with the Arcana Auth SDK. After authentication, users can access Arcana wallet functionality.*
+*You are all set with the Cognito configuration. Next, [integrate the Web3 app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}} and enable the authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.*

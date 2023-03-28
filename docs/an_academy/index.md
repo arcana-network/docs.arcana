@@ -1,10 +1,10 @@
-# Arcana Academy
+# {{config.extra.arcana.company_name }} Academy
 
-Developer resources for using Arcana Auth SDK.
+Developer resources for using {{config.extra.arcana.product_name}}.
 
-[Understanding Arcana Auth :material-bookshelf:](../understanding_an/index.md){ .md-button }
+[Understanding {{config.extra.arcana.product_name}} :material-bookshelf:](../understanding_an/index.md){ .md-button }
 
-[Architecture :fontawesome-solid-users-gear:](../howitworks.md){ .md-button }
+[{{config.extra.arcana.product_name}} Architecture :fontawesome-solid-users-gear:](../howitworks.md){ .md-button }
 
 [Concepts :fontawesome-solid-puzzle-piece:](../concepts/index.md){ .md-button }
 

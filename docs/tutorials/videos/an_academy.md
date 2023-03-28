@@ -10,73 +10,68 @@ arcana:
 
 # Get Started
 
-Everything you need to get started with Arcana Auth is lined up here!
+Everything you need to get started with the {{config.extra.arcana.product_name}} product is lined up here!
 
-## Arcana Network (60 seconds)
+## {{config.extra.arcana.company_name}} (60 seconds)
 
 {% include "./text-snippets/tut_getstarted_arcana_url.md" %}
 
 ---
 
-## Arcana Network Overview (6 Minutes)
+## {{config.extra.arcana.company_name}} Overview (6 Minutes)
 
 {% include "./text-snippets/tut_mission_url.md" %}
 
 ---
 
-## Using Arcana Auth SDK
+## {{config.extra.arcana.sdk_name}} Usage
 
-To use the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md), you must first register your dApp using the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) and then integrate your dApp for:
+Apps can integrate with the {{config.extra.arcana.sdk_name}} to enable:
 
-* **User authentication:** Onboarding new users via the familiar Web2 social authentication, passwordless login options
+* **User authentication:** Onboarding new users via the familiar Web2 authentication providers, passwordless login options
 
-* **Enabling Blockchain transactions:** Securely signing blockchain transactions using standard EIP-1193 Ethereum provider, send blockchain transactions, send and receive custom tokens, switching blockchain network, and [more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
+* **Signing blockchain transactions:** Securely signing blockchain transactions using standard EIP-1193 Ethereum provider, perform other Web3 wallet operations such as send blockchain transactions, sending and receiving native and custom tokens, adding/switching blockchain networks, and [more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
 
 ## Dashboard
 
-The dApp developers can use the dashboard to [configure Arcana Auth SDK usage]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md). Developers must register their dApp with Arcana Network using the dashboard before using Auth SDK.
+Developers can use the {{config.extra.arcana.dashboard_name}} to [register and configure app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md). Registering the app with {{config.extra.arcana.company_name}} associates a unique {{config.extra.arcana.app_address}} that is needed for integrating the app with the {{config.extra.arcana.sdk_name}}.
 
 {% include "./text-snippets/tut_comingsoontut_url.md" %}
 
 ---
 
-## Auth SDK
+### Integrating App
 
-Arcana Auth SDK uses modern distributed key generation, symmetric key cryptography, and decentralized storage of asymmetric key shares meant for user identity and access management. It allows dApps to onboard users for Web3 applications without necessarily having to set up and manage a wallet. The Auth SDK also enables signing blockchain transactions and executing send transactions through the embedded Web3 wallet called the Arcana wallet.  
+Web3 developers can [integrate app with the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) only after the following pre-requisites are met:
 
-### Integrating with the Auth SDK
+* The app is registered using the {{config.extra.arcana.dashboard_name}} and is assigned a unique {{config.extra.arcana.app_address}}.
+* Developer has configured the user onboarding options via the {{config.extra.arcana.dashboard_name}}. 
 
-Web3 developers can [integrate their dApp with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) for one or more of the following reasons:
-
-* Onboard dApp users via social authentication, Passwordless login
-* Obtain an EIP-1193 standard Ethereum provider for enabling Web3 operations
-* Use the Auth SDKs embedded Web3 wallet provider for allowing users to sign blockchain transactions
-
-
-Check out this video to see how to integrate your dApp with the Auth SDK.
+Check out this video to see how to integrate a Web3 app with the {{config.extra.arcana.sdk_name}}.
 
 {% include "./text-snippets/tut_comingsoontut_url.md" %}
 
-### Onboard dApp Users
+### Onboard Users
 
-Check out this video to see Arcana Auth SDK in action when integrated with a sample dApp. It shows how a dApp user can seamlessly onboard a dApp using Google OAuth. 
+After integrating the app with the {{config.extra.arcana.sdk_name}}, add code to onboard users via the configured authentication mechanisms.
+
+Check out this video to see the {{config.extra.arcana.wallet_name}} in action when a user logs into an app that is integrated with the {{config.extra.arcana.sdk_name}}. It shows how an app user can quickly authenticate using Google and access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions. 
 
 {% include "./text-snippets/tut_comingsoontut_url.md" %}
-
 
 ### Sign Blockchain Transactions
 
-Arcana Auth SDK also offers blockchain transaction signing ability for any operations issued for any EVM-compatible blockchain network. This is provided by the embedded Web3 Arcana wallet. Besides the Arcana Network, the wallet also supports other networks and allows users to switch between networks. It allows dApps to enable blockchain `send` transactions, sign transactions and create custom tokens, send or receive them.  See [here]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) for more details about Arcana wallet features.
+The {{config.extra.arcana.sdk_name}} enables the embedded, non-custodial {{config.extra.arcana.wallet_name}} for every authenticate user to sign blockchain transactions on any [supported networks]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md#supported-blockchains). [Learn more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) about the  {{config.extra.arcana.wallet_name}} features.
 
-The dApp developers can [configure Arcana wallet visibility mode]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_wallet_modes.md) to manage the user's blockchain signing experience. See [wallet visibility modes]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) for details.
+The app developers can [configure {{config.extra.arcana.wallet_name}} visibility mode]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_walletvisibility.md) to manage the user's blockchain signing experience. [Learn more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) about wallet visibility and other configurations.
 
-Check out this video to see Arcana wallet in action for signing blockchain transactions, checking wallet balances, switching blockchain networks, and more.
+Check out this video to see the  {{config.extra.arcana.wallet_name}} in action for signing blockchain transactions, checking wallet balances, switching blockchain networks, and more.
 
 {% include "./text-snippets/tut_comingsoontut_url.md" %}
 
 !!! tip
 
-      See [Auth SDK Use cases]({{page.meta.arcana.root_rel_path}}/use_cases.md).
+      See [ {{config.extra.arcana.sdk_name}} Use cases]({{page.meta.arcana.root_rel_path}}/use_cases.md).
 
 ---
 

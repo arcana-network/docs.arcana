@@ -9,23 +9,21 @@ arcana:
 
 # NextJS App Code Sample
 
-You need to first [configure user onboarding options and other settings]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the {% include "./text-snippets/db_portal_url.md" %}. After that, install Arcana Auth SDK and integrate your NextJS app.
+You need to first [register the app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. Then [configure authentication providers]() for onboarding users. After that, install the `{{config.extra.arcana.auth_sdk_pkg_name}}` and the `{{config.extra.arcana.react_sdk_pkg_name}}` packages and integrate the NextJS app.
 
-Here is a very basic NextJS app that is created using the [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) template. It integrates with Arcana Auth SDK and uses the [plug and play]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md) feature to allow user onboarding and signing of blockchain transactions. 
-
-See [sample NextJS app source](https://github.com/arcana-network/auth-next-js) at GitHub.
+See [sample NextJS app source](https://github.com/arcana-network/auth-next-js) at GitHub. This is a very basic NextJS app that is created using the [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) template. It integrates with the {{config.extra.arcana.sdk_name}} and uses the built-in, [plug-and-play]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md) login UI to onboard users and allow them to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}. 
 
 ## Registration & Configuration
 
-The following dashboard screen shows that a test deployment of NextJS app is configured to onboard users via Google, Twitch, and passwordless login. Follow the instructions in the [how to configure your app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) guide for details.
+The following {{config.extra.arcana.dashboard_name}} screen shows the 'Testnet' configuration settings for the NextJS app such that users can onboard it via Google, Twitch, and passwordless login. See [how to configure app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) for details.
 
-![NextJS App config](/img/nextjs_app_db_setup_google_twitch.png)
+![NextJS App config](/img/nextjs_app_db_setup_google_twitch.png){.an-screenshots}
 
-After configuring your app, copy and use the **{{config.extra.arcana.app_address}}** assigned to the app and displayed in the dashboard on the top RHS.
+After configuring the app, copy and use the **{{config.extra.arcana.app_address}}** assigned to the app and displayed in the dashboard on the top right of the {{config.extra.arcana.dashboard_name}} screen. It will be used during the app integration with the {{config.extra.arcana.sdk_name}}.
 
-## Integrate Auth SDK
+## Integrate App
 
-In the sample code, refer to the  `auth/getArcanaAuth.js` file. It shows how `AuthProvider` is instantiated. Before you run this test app, you need to register your app and obtain the Arcana **{{config.extra.arcana.app_address}}** assigned to your app via the dashboard. This {{config.extra.arcana.app_address}} is used during the instantiation of the `AuthProvider`.
+In the sample code, refer to the  `auth/getArcanaAuth.js` file. It shows how `AuthProvider` is instantiated. Use the **{{config.extra.arcana.app_address}}** assigned to the app earlier.
 
 ```js title="auth/getArcanaAuth.js" hl_lines="1 3-5"
 import { AuthProvider } from "@arcana/auth";
@@ -43,7 +41,7 @@ const getAuth = () => {
 
 ### `pages/app.js` 
 
-After integrating the Auth SDK and instantiating the `AuthProvider`, update `_app.js` to plug in the Arcana `AuthProvider` context `ProvideAuth` into the NextJS app. 
+After integrating the {{config.extra.arcana.sdk_name}} and instantiating the `AuthProvider`, update `_app.js` to plug in the `AuthProvider` context `ProvideAuth` into the NextJS app. 
 
 ```js title="pages/_app.js" hl_lines="1 2 8 12 16"
 import { getAuth } from "../auth/getArcanaAuth";
@@ -66,13 +64,11 @@ export default function App({ Component, pageProps }) {
 }
 ```
 
-The Auth context provider `ProvideAuth` is implemented in `auth/useArcanaAuth.js`.  Refer to the code to see how other `AuthProvider` methods besides the plug-and-play `connect` method can be used to access login, logout, and other supported functionality.
+The Auth context provider `ProvideAuth` is implemented in `auth/useArcanaAuth.js`.  Refer to the code to see how other `AuthProvider` methods besides the plug-and-play `connect` method can be used to access functions such as logout.
 
 ### `pages/index.js`
 
-Next, update `index.js` to use plug-and-play authentication provided by the Arcana Auth SDK with a single line of code that calls the `connect` method when the app user chooses to click **Connect** in the app UI. 
-
-See highlighted code to understand how Auth SDK plug-and-play authentication is used via `connect` method. This invokes the built-in authentication UI into the context of the integrating application. 
+Next, update `index.js` and add code to onboard users via the built-in, plug-and-play login UI and call the `connect` function when the app user chooses to click **Connect** in the app UI. 
 
 ```js title="index.js" hl_lines="2 8-25 31"
 import React from "react";
@@ -114,26 +110,28 @@ export default function IndexPage() {
 }
 ```
 
-## Sample App Usage
-All right, now that you have configured Auth SDK usage via the dashboard and plugged in all the code in the basic create-next-app template, it is time to run the sample NextJS app. Here is what you will see when you run the NextJS sample app:
+## Deploy Sample App
 
-![NextJS App UI Connect](/img/nextjs_connectauth.png)
+After registering, configuring, integrating the app with the {{config.extra.arcana.sdk_name}}, and adding code to onboard users, it is time to run the sample NextJS app. Here is what you will see when you run the NextJS sample app:
 
-On clicking connect, the NextJS sample app user will see the plug-and-play login screen which was configured by the developer using the Arcana dashboard for Google and Twitch login. Passwordless authentication is enabled by default. 
+![NextJS App UI Connect](/img/nextjs_connectauth.png){.an-screenshots}
+
+On clicking connect, the NextJS sample app user will see the plug-and-play login screen with options to use Google and Twitch and log into the app. Passwordless authentication is enabled by default. 
 
 !!! note
 
-      In the NextJS sample app, the login options displayed in the "plug-and-play pop-up authentication screen" will only be the ones that have been set up by the developer through the developer dashboard.
+      In the NextJS sample app, the login options displayed in the "plug-and-play pop-up UI" will only be the ones that have been set up by the developer through the {{config.extra.arcana.dashboard_name}}.
 
-![App login plug and play](/img/nextjs_applogin.png)
+![App login plug and play](/img/nextjs_applogin.png){.an-screenshots}
 
-After successful authentication, an app user will see a minimized wallet. On clicking the wallet icon, the full Arcana wallet UI is displayed. The logo displayed on the minimized wallet screen and the top left logo in the maximized wallet can be configured by the app developer using the Arcana dashboard.
+After successful authentication, an app user will see a minimized wallet. On clicking the wallet icon, the full {{config.extra.arcana.wallet_name}} UI is displayed. The logo displayed on the minimized wallet screen and the top left logo in the maximized wallet can be configured by the app developer using the Arcana dashboard.
 
-![Wallet Display NextJS App](/img/nextjs_wallet_display.png)
+![Wallet Display NextJS App](/img/nextjs_wallet_display.png){.an-screenshots}
 
-See [Arcana Wallet User Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md), [Arcana Wallet Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md), and [Dashboard User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md) for more details.
+See [{{config.extra.arcana.wallet_name}} User Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md), [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md), and the [{{config.extra.arcana.dashboard_name}} User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md) for more details.
 
-!!! caution "Use the latest Auth SDK"
+!!! caution "Use the latest {{config.extra.arcana.sdk_name}}"
 
-      Check the package.json file in the sample NextJS sources and ensure that you are using the latest Auth SDK npm release.
+      Check the package.json file in the sample NextJS sources and ensure that you are using the latest {{config.extra.arcana.sdk_name}} npm release.
+
       The current release is: v{% include "./text-snippets/latest_auth_sdk.md" %}

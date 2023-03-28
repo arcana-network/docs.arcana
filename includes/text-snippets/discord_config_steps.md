@@ -1,41 +1,52 @@
-To enable Discord social authentication in Web3 applications, developers must perform these three steps before integrating with the Arcana Auth SDK.
 
-## Step 1: Use Arcana Dashboard
+Web3 apps can select and enable user onboarding via Discord by configuring the **Social Auth** settings in the {{config.extra.arcana.dashboard_name}} before integrating the app with the {{config.extra.arcana.sdk_name}}.
 
-Go to the Arcana Dashboard: {% include "./text-snippets/db_portal_url.md" %} 
+!!! warning
 
-Register your dApp by creating a new dApp entry and specifying a name using the 'Create New App' wizard. 
+      Some of the authentication provider configuration steps are performed using the [Discord Developer Portal](https://discord.com/developers/applications), whereas the others use the {{config.extra.arcana.dashboard_name}}. After configuring Discord, simply [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and only then add code in the app to trigger user authentication via Discord.
+      
+## Step 1: Get Redirect URI
 
-!!! tip "Registering the Application"
+Go to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %} 
+
+[Register the app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md#step-2-register-application) by creating a new entry using the 'Create New App' wizard. 
+
+!!! tip "Registering App"
     
       {% include "./text-snippets/socialauth_add_config.md" %}
 
-You can choose to use defaults for other settings or change them as per your use case. For more details, see [How to configure dApp Guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) for details.
+Go to the app configuration screen on the {{config.extra.arcana.dashboard_name}} and click **Configure > Social Auth** section in the LHS. Copy the **redirect URI** value displayed on the top RHS.  This will be used in the next step to set up Discord OAuth.
 
-Go to the `Configure->Social Auth` configuration section and copy the **redirect URI** value displayed there.  This will be used in the next step to setup Discord OAuth.![redirect_page](/img/an_dApp_config_redirect_uri.png)
+![redirect_page](/img/an_dApp_config_redirect_uri.png){.an-screenshots}
 
-Do not close the dashboard browser tab. Open another tab and set up Discord OAuth. Then revisit the Dashboard tab to complete the dApp configuration settings.
+Do not close the  {{config.extra.arcana.dashboard_name}} browser tab. Open another tab and set up Discord OAuth. Then revisit the  {{config.extra.arcana.dashboard_name}} tab to complete the app configuration.
 
-## Step 2: Use Discord Developer Portal
+## Step 2: Discord Developer Portal
 
-Go to the [Discord Developer Portal](https://discord.com/developers/applications) and create a new application.![discord console](/img/an_dApp_discord_dev_console.png)
+Go to the [Discord Developer Portal](https://discord.com/developers/applications) and create a new application. 
 
-You need to set up OAuth 2.0 credentials for your newly created dApp entry in the Discord Developer Portal. Click **OAuth2** in the Discord Developer Portal LHS navigation pane, you will see the **Redirects** field. Specify the **Redirect URI** copied from the Arcana Developer Dashboard in the previous step. ![discord console](/img/an_dApp_discord_dev_oauth_uri.png)
+![discord console](/img/an_dApp_discord_dev_console.png){.an-screenshots}
 
-Save the application settings in Discord Developer Portal. 
+You need to set up OAuth 2.0 credentials for your newly created app entry in the Discord Developer Portal. Click **OAuth2** in the Discord Developer Portal LHS navigation pane, you will see the **Redirects** field. Specify the **Redirect URI** copied from the  {{config.extra.arcana.dashboard_name}} in the previous step. 
 
-The **General Information** page in the Discord Developer Portal shows a unique **Application ID** and a **public key** assigned by Discord for your application entry. ![Discord OAuth ClientID](/img/an_dApp_discord_clientID.png)
+![discord console](/img/an_dApp_discord_dev_oauth_uri.png){.an-screenshots}
 
-Copy the **Application ID** and the **public key**. It will be required in the next step while configuring Discord settings using Arcana Dashboard.
+Save the app settings in Discord Developer Portal. 
 
-## Step 3: Update Arcana Dashboard
+The **General Information** page in the Discord Developer Portal shows a unique **Application ID** and a **public key** assigned by Discord for your application entry. 
 
-Revisit the Arcana Developer Dashboard portal. Click on your app entry and visit the application dashboard. Click `Configure->Social Auth` in the LHS navigation bar and refer to the "Discord" settings. Paste the **Application ID** and **public key** assigned by Discord, in the previous step as the ClientID and secret respectively. 
+![Discord OAuth ClientID](/img/an_dApp_discord_clientID.png){.an-screenshots}
 
-![howto_config_discord_clientid](/img/an_dApp_discord_config.png)
+Copy the **Application ID** and the **public key**. It will be required in the next step while configuring Discord settings using the  {{config.extra.arcana.dashboard_name}}.
 
-Save the settings. Arcana Network assigns an **{{config.extra.arcana.app_address}}** to every registered and configured dApp. If you plan to integrate with the Arcana SDKs, you need to save this **{{config.extra.arcana.app_address}}**. 
+## Step 3: Update the {{config.extra.arcana.dashboard_name}}
 
-![App Identifier](/img/an_db_app_address.png)
+Revisit the {{config.extra.arcana.dashboard_name}} tab and view the app configuration screen. Click **Configure > Social Auth** in the LHS navigation bar and refer to the "Discord" settings. Paste the **Application ID** and **public key** assigned by Discord, in the previous step in the `ClientID` and `secret` fields respectively. 
 
-*You are all set with the Discord configuration. Integrate the Web3 application with the Arcana Auth SDK and call the user onboarding function when the user chooses to log in.*
+![howto_config_discord_clientid](/img/an_dApp_discord_config.png){.an-screenshots}
+
+Save the settings. {{config.extra.arcana.company_name}} assigns a **{{config.extra.arcana.app_address}}** to every registered app. Save the **{{config.extra.arcana.app_address}}** as it will be required during integration with the {{config.extra.arcana.sdk_name}}. 
+
+![App Identifier](/img/an_db_app_address.png){.an-screenshots}
+
+*You are all set with the Discord configuration. [Integrate the Web3 app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}, [onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md) and enable the authenticated users to sign blockchain transactions. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.*

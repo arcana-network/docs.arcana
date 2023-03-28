@@ -9,11 +9,11 @@ arcana:
 
 # Handling Errors
 
-If you integrate a dApp with the Arcana Auth SDK, you might encounter some of the following errors depending on user actions, dApp logic, and the sequence of API calls. 
+If you integrate a Web3 app with the {{config.extra.arcana.sdk_name}}, you might encounter some of the following errors depending on user actions, app logic, and the sequence of {{config.extra.arcana.sdk_name}} function calls. 
 
-For more insights, refer to the [troubleshooting guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md).
+For more insights, refer to the [{{config.extra.arcana.sdk_name}} troubleshooting guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md).
 
-## Auth SDK Error Messages
+## {{config.extra.arcana.sdk_name}} Error Messages
 
 | Error  |  Description |
 | ---    |  ---  |

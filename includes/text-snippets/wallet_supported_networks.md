@@ -1,4 +1,6 @@
-**EVM-compatible blockchain networks**:
+<!--**Configured Blockchain Networks (Default)**:-->
+
+**Pre-configured {{config.extra.arcana.wallet_name}} chains (default)**
 
   * Ethereum_Goerli
   * Ethereum_Mainnet
@@ -6,8 +8,4 @@
   * Polygon_Mainnet
   * Polygon_Mumbai_Testnet
 
-For more details, see [Supported Chains](https://dev-authsdk-ref-guide.netlify.app/enums/chain).
-
-**Other blockchain networks**: (Coming soon!)
-
-We are working on supporting Cosmos, Solana, Near, TON, and Algorand in the upcoming Auth SDK releases.
+See [Default Chain Definitions](https://dev-authsdk-ref-guide.netlify.app/enums/chain) for network codes.

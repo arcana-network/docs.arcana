@@ -1,6 +1,6 @@
-# Arcana Smart Contracts
+# {{config.extra.arcana.company_name}} Smart Contracts
 
-Learn about the different types of smart contracts used in the Arcana Network protocol.
+Learn about the different types of smart contracts used in the {{config.extra.arcana.product_name}}protocol.
 
 [Overview :fontawesome-solid-file-contract:](./an_smart_contracts.md){ .md-button }
 

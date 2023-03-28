@@ -20,5 +20,5 @@ Start a conversation 💬 and write to us at 📨 [support@arcana.network](mailt
 
 ## Report Bugs
 
-* [Dashboard Bugs](https://github.com/arcana-network/developer-dashboard/issues)
-* [Auth SDK Bugs](https://github.com/arcana-network/auth/issues)
+* [{{config.extra.arcana.dashboard_name}} Bugs](https://github.com/arcana-network/developer-dashboard/issues)
+* [{{config.extra.arcana.sdk_name}} Bugs](https://github.com/arcana-network/auth/issues)

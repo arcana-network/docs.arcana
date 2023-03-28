@@ -1,30 +1,23 @@
 ---
 slug: /socialauth
 id: idsocialauth
-title: Social Authentication
 sidebar_custom_props:
   cardIcon: ▶️
 arcana:
   root_rel_path: ../..
 ---
 
-# Social Authentication
+# Social Providers
 
 <img src="/img/icons/i_an_socialauth_light.png#only-light" width="50"/>
 <img src="/img/icons/i_an_socialauth_dark.png#only-dark" width="50"/>
 
-Social authentication allows applications to onboard users and validate their identity through popular Web2 authentication provider. Arcana Auth SDK supports social authentication in Web3 applications for the following providers:
+Social authentication providers are popular Web2 user identity providers that allow apps to onboard users and validate the user identity. The {{config.extra.arcana.sdk_name}} supports user authentication in Web3 applications via the following social providers:
 
 {% include "./text-snippets/auth_supported.md" %}
 
-In Web2 applications, social authentication is typically triggered by a pop-up or redirect to a provider chosen by the user. This is a familiar and easy way for users to onboard new applications without managing multiple identities. However, a centralized system with a few organizations controls user authentication. 
+In Web2 applications, user authentication is typically triggered by a pop-up or via a redirect to a selected provider's web page. This is a familiar and comfortable way for users to onboard a new application without bothering to manage multiple identities. However, this is a centralized authentication system controlled by the social provider. 
 
-In the Web3 ecosystem, decentralized systems of actors use trustless protocols and cryptography to verify user identity in a decentralized manner. These systems use encrypted, sharded keys that are not stored with any single entity, but users must manage their own secret keys, which can be a barrier to entry for Web3 applications. 
+In the Web3 ecosystem, distributed systems of actors use trustless protocols and cryptography to verify user identity in a decentralized manner. These systems use encrypted, key shares that are not stored with any single entity, but users are required to generate, manage and secure their secret keys. This complexity is a big barrier to entry into the Web3 app ecosystem. 
 
-Auth SDK lowers this barrier by providing a convenient and secure way for users to onboard Web3 applications in a decentralized manner.
-
-!!! info  "Aggregate Logins"
-
-    Arcana supports the [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature that can identify application users even if they use different authentication mechanisms to log in. Aggregate login ensures there are no duplicate user identities or Arcana Web3 wallet addresses assigned to the same user.  
-
-    Aggregate login feature works **only if** the user specifies the **same** email ID to register with different social authentication providers and passwordless login.
+The {{config.extra.arcana.sdk_name}} lowers this barrier to entry into the Web3 app ecosystem by providing a convenient yet fully secure and privacy-preserving way for users to onboard Web3 apps and sign blockchain transactions.

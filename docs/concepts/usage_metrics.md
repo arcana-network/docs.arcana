@@ -9,7 +9,7 @@ arcana:
 
 # Application Usage Metrics
 
-Arcana Developer Dashboard displays the aggregate value of **Monthly Active Users (MAU)** for the Arcana Mainnet. The aggregate value includes MAU for all the applications that are registered against an Arcana account.
+{{config.extra.arcana.dashboard_name}} displays the aggregate value of **Monthly Active Users (MAU)** for the {{config.extra.arcana.company_name}} Mainnet. The aggregate value includes MAU for all the applications that are registered against a developer's {{config.extra.arcana.company_name}} account.
 
 The aggregate usage metrics are displayed in the *Manage Apps Screen*. The per-application metrics are displayed on the *Application Dashboard* screen.
 
@@ -28,4 +28,4 @@ The aggregate usage metrics are displayed in the *Manage Apps Screen*. The per-a
 
 !!! note "Mainnet Usage"
 
-      The number of logged-in users is tracked separately for the 'Testnet' and 'Mainnet' application profiles. Arcana Testnet usage is not billed.
+      The number of logged-in users is tracked separately for the 'Testnet' and 'Mainnet' application profiles. {{config.extra.arcana.company_name}} Testnet usage is not billed.

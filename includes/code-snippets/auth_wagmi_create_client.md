@@ -1,22 +1,27 @@
-```js title="auth-wagmi-example/pages/_app.js" hl_lines="8 15-19"
-import "../styles/globals.css";
-import "@rainbow-me/rainbowkit/styles.css";
+```js title="auth-wagmi-example/utils/wagmi_client.ts" hl_lines="15-24"
 
-import { configureChains, createClient, WagmiConfig } from "wagmi";
-import { polygon, mainnet } from "wagmi/chains";
+import { ArcanaConnector } from "@arcana/auth-wagmi";
+import { polygon, polygonMumbai } from "wagmi/chains";
+import { configureChains, createClient, Chain } from "wagmi";
 import { publicProvider } from "wagmi/providers/public";
-import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
-import { connectors } from "../utils/wagmi_client.ts";
+
+export const connector = (chains: Chain[]) => {
+  return new ArcanaConnector({
+    chains,
+    options: {
+      clientId: `xar_live_d7c88d9b033d100e4200d21a5c4897b896e60063`,
+    },
+  });
+};
 
 const { chains, provider } = configureChains(
-  [mainnet, polygon],
+  [polygon, polygonMumbai],
   [publicProvider()]
 );
 
-const wagmiClient = createClient({
+export const wagmiClient = createClient({
   autoConnect: true,
-  connectors: connectors(chains),
+  connectors: [connector(chains)],
   provider,
 });
-...
 ```

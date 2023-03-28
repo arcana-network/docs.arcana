@@ -1,7 +1,6 @@
 ---
 slug: /faq_validator
 id: idfaqvalidator
-title: Validator Onboarding
 sidebar_custom_props:
   cardIcon: 🙋
 arcana:

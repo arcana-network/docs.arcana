@@ -1,8 +1,3 @@
-* Developers must use the Arcana Developer Dashboard to configure the Auth SDK usage settings before integrating their application.
+* To use the {{config.extra.arcana.dashboard_name}}, developers must have an account with one of the supported social providers. Or they can use the passwordless sign-in option.
 
-* Log in to the Arcana Developer Dashboard using one of the social provider accounts listed below. Or use the passwordless sign in option.
-
-    - Google
-    - GitHub
-    - Twitch
-    - Discord
+    {% include "./text-snippets/db_supported_oauth.md" %}

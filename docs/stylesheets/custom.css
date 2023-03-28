@@ -1,10 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@100;200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400&display=block");
 
 :root > * {
-     --md-primary-fg-color:        #058aff;
+     /*--md-primary-fg-color:        #058aff;
      --md-primary-fg-color--light: #13a3fd;
      --md-primary-fg-color--dark:  #5cf5ff;
      --md-default-bg-color--lighter: #e7f6ff;
+     */
+     --md-primary-bg-color: #ffffff;
+     --md-primary-fg-color: #424242;
+     --md-default-bg-color--light: #aaaaaa;
+     --md-default-bg-color--lighter: #fafafa;
+     --md-primary-fg-color--light: #262626;
+     --md-primary-fg-color--lighter: #424447;
+     --md-primary-fg-color--dark:  #19191c;
+     --md-typeset-a-color: #057eff;
+     --md-accent-fg-color:  rgb(132, 144, 149);
+     --md-accent-fg-color--transparent:   hsla(190, 5%, 49%, 0.1);
+     --md-accent-bg-color:                hsla(0, 0%, 100%, 1);
+     --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
      --md-text-font: "Inter";
      --md-admonition-icon--an-faq: url('/img/icons/icons8-question-mark-48.png');
      --md-admonition-icon--an-trbs: url('/img/icons/exclamation.png');
@@ -14,8 +27,13 @@
     --md-hue: 360; 
 }
 
+.md-logo {
+  height: 3 rem;
+}
+
 .md-button {
     border-radius: 0.3rem !important;
+    border-color:
 }
 
 .md-grid {
@@ -32,13 +50,18 @@
       -45deg,
       transparent,
       transparent 0.5rem,
-    rgba(155, 253, 19, 0.255) 0.25rem,
-    rgba(19, 253, 253, 0.25) 1rem) !important;
+    rgba(57, 49, 49, 0.255) 0.25rem,
+    rgba(14, 210, 217, 0.25) 1rem) !important;
     font-family: "Inter", sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
     color: var(--md-secondary-fg-color);
     overflow: auto;
     text-align: center;
+    height: 1.5rem;
+}
+
+.md-banner__inner {
+  font-size: 0.5rem;
 }
 
 .md-nav__item--section {
@@ -72,6 +95,15 @@
     padding: 0.2rem;
 }
 
+.md-typeset .admonition,
+.md-typeset details  {
+    border-radius: 5px;
+    border-width: 0rem;
+    border-left-width: 0.2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+} 
+
 .md-typeset .admonition.an-faq,
   .md-typeset details.an-faq {
     border-bottom: var(--md-primary-fg-color--light);
@@ -104,4 +136,28 @@
   .md-typeset .an-trbs > summary::before {
     -webkit-mask-image: var(--md-admonition-icon--an-trbs);
             mask-image: var(--md-admonition-icon--an-trbs);
+}
+
+.an-screenshots {
+  border-radius: 5px;
+  display: block;
+  width: 75%;
+  /* Use these to centre all screenshots (if required )
+  margin-left: auto;
+  margin-right: auto;
+  */
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.an-screenshots-noeffects {
+  border-radius: 5px;
+}
+
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
 }
