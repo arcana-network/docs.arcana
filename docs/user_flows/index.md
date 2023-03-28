@@ -1,5 +1,5 @@
 # Usage Flows
 
-Check out control flows for various Auth SDK operations.
+Check out control flows for various {{config.extra.arcana.sdk_name}} features.
 
-[User Auth and DKG](./user_auth_and_dkg.md){ .md-button }
+[User Authentication and DKG Access](./user_auth_and_dkg.md){ .md-button }

@@ -10,7 +10,7 @@
 4. [Usage](#usage)
     - [AuthProvider](#authprovider)
     - [Auth APIs](#auth-apis)
-    - [Arcana Wallet Method](#arcana-wallet-methods)
+    - [Web3 Wallet Operations](#web3-wallet-operations)
 
 ---
 
@@ -209,7 +209,7 @@ const encrypted = await EthCrypto.encryptWithPublicKey(
 
 ---
 
-## Arcana Wallet Methods
+## Web3 Wallet Operations
 
 Arcana wallet is an embedded Web3 wallet offered via the Auth SDK. It uses [Ethereum JSON-RPC](https://ethereum.github.io/execution-apis/api-documentation/) to interact with the blockchains.
 

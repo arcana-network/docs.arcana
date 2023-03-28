@@ -6,7 +6,7 @@ sidebar_custom_props:
   cardIcon: 🌐
 ---
 
-# User Auth and DKG
+# User Authentication and DKG Access
 
 ![User Auth](/img/user_auth_dkg-light.svg#only-light)
 ![User Auth](/img/user_auth_dkg-dark.svg#only-dark)

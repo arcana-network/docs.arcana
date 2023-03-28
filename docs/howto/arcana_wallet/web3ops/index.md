@@ -9,7 +9,7 @@ arcana:
 
 # Web3 Wallet Operations
 
-The Arcana wallet supports [standard Ethereum JSON-RPC specification APIs](https://ethereum.github.io/execution-apis/api-documentation/) and the following Web3 operations:
+The {{config.extra.arcana.wallet_name}}  supports [standard Ethereum JSON-RPC specification APIs](https://ethereum.github.io/execution-apis/api-documentation/) and the following Web3 operations:
 
 [Add/Switch Networks :material-wifi-cog:]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/wallet_add_switch_ntwk.md){ .md-button }
 

@@ -1,7 +1,6 @@
 ---
 slug: /arcanawalletoview
 id: idarcanawalletoview
-title: Overview
 sidebar_custom_props:
   cardIcon: ▶️
 arcana:

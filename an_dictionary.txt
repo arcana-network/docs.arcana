@@ -200,6 +200,7 @@ HDWallet
 HTML
 Hashicorp
 HighwayHash
+IAM
 IBFT
 ID1
 IPFS
@@ -256,6 +257,7 @@ OAuth2
 OTP
 Okta
 Onboarding
+OpenID
 OpenSea
 OtpLoginResponse
 P1
@@ -271,6 +273,7 @@ Polyfill
 Polygon_Mainnet
 Polygon_Mumbai_Testnet
 Pre
+Pre-configured
 Programmatically
 ProviderEngine
 PublicKeyOutput
@@ -278,6 +281,7 @@ PvtBetaGHBranchText
 Pwdless
 PwdlessAuthConfigText
 QoS
+README
 RFP
 RHS
 RPC
@@ -426,6 +430,7 @@ Vn
 Vue
 Vue-CLI
 Wagmi
+WagmiConfig
 WalletConfigWarningText
 WalletConnect
 WalletConnectProvider
@@ -594,6 +599,7 @@ faq_nftviewer
 faq_storage
 faq_validator
 fb
+fedidmauth
 fontawesome-brands-aws
 fontawesome-brands-discord
 fontawesome-brands-github
@@ -723,6 +729,7 @@ idfaqgen
 idfaqnftviewer
 idfaqstorage
 idfaqvalidator
+idfedidmauth
 idgeneratedelegatekey
 idgithuboauth
 idgoogleoauth

@@ -7,43 +7,47 @@ arcana:
   root_rel_path: ../..
 ---
 
-# Integrate Vue application
+# Integrate Vue App
 
-In this tutorial, you will learn how to integrate a Vue application with the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) to enable user onboarding and signing of blockchain transactions via the embedded Web3 [Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
+In this guide, you will learn how to integrate a Vue application with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md).
 
+<!--
 [Try Auth Example :material-rocket-launch:](https://9mt0h4.csb.app/){ .md-button .md-button--primary}
+-->
 
 ## Prerequisites
 
-* Developers must first log into the Arcana Developer Dashboard: {% include "./text-snippets/db_portal_url.md" %}
+* Developers need to first log into the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
-* Use the dashboard to [register and configure]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) your Vue application settings for using the Auth SDK. Click on the *Auth* tab in the dashboard. Configure the application settings as per the required user onboarding experience.  Choose and configure from a list of supported authentication mechanisms:
+* Use the {{config.extra.arcana.dashboard_name}} to [register and configure]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) the Vue app before integrating with the {{config.extra.arcana.sdk_name}}. 
+
+* Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more supported authentication providers for onboarding the app users.
 
     {% include "./text-snippets/auth_supported.md" %}
 
-    !!! tip
+    !!! tip "Configure Authentication Providers"
 
-          You may be required to configure additional details depending on the choice of social providers for user authentication. For example, to enable user onboarding via the social provider, Google, the developer must set up and specify the [client ID for Google OAuth]({{page.meta.arcana.root_rel_path}}/howto/config_social/google_oauth.md) in the Arcana Dashboard before integrating the application.
+          You may be required to configure additional provider details for different authentication providers. In the case of Google, the developer must use Google Developer Console to set up the app and generate a Google assigned [client ID for Google OAuth]({{page.meta.arcana.root_rel_path}}/howto/config_social/google_oauth.md). This Google ClientID will be configured in the {{config.extra.arcana.dashboard_name}} **Social Auth** settings before integrating the app.
 
-          For details, refer to the [social provider configuration guides]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md).
+          For details, see [how to configure authentication providers]({{page.meta.arcana.root_rel_path}}/howto/config_auth/index.md).
 
-* The **{{config.extra.arcana.app_address}}** assigned to the application is displayed on the dashboard application screen. Save the **{{config.extra.arcana.app_address}}** as it will be required for instantiating the `AuthProvider` while integrating the app with the Auth SDK. 
+* Save the **{{config.extra.arcana.app_address}}** assigned to the app displayed in the {{config.extra.arcana.dashboard_name}}. It is required while integrating the app with the {{config.extra.arcana.sdk_name}} and creating the `AuthProvider`. 
 
 ## Steps
 
-*Integrating your application with the Auth SDK is simple!*
+*Integrating a Vue app with the {{config.extra.arcana.sdk_name}} is simple!*
 
 Follow these two steps:
 
-### Step 1: Install Auth SDK
+### Step 1: Install `{{config.extra.arcana.auth_sdk_pkg_name}}` package
 
 {% include "./code-snippets/auth_install.md" %}
 
-### Step 2: Initialize the Auth SDK
+### Step 2: Initialize the {{config.extra.arcana.sdk_name}}
 
-To integrate the application, first, you need to import Arcana Auth SDK and create a 'new' `AuthProvider`. During instantiation of the `AuthProvider`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to your application after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the dashboard. Also, specify the [Arcana wallet visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) via the `alwaysVisible` parameter.
+To integrate the application, first, you need to import `{{config.extra.arcana.auth_sdk_pkg_name}}` and create an `AuthProvider`. During instantiation of the `AuthProvider`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) it using the {{config.extra.arcana.dashboard_name}}. Also, specify the [{{config.extra.arcana.wallet_name}} visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) via the `alwaysVisible` parameter to manage the wallet user experience.
 
-You can club all the Auth SDK integration code in a file `src/lib/auth.js` and export the function that instantiates the `AuthProvider`.
+You can club all the {{config.extra.arcana.sdk_name}} integration code in a file `src/lib/auth.js` and export the function that instantiates the `AuthProvider`.
 
 {% include "./code-snippets/vue_auth_js.md" %}
 
@@ -53,16 +57,16 @@ Next, import and call this exported function in the `App.vue` file as shown belo
 
 That is all! :material-party-popper:
 
-You have successfully integrated your Vue application with the Auth SDK and can invoke any supported functions.
+The Vue app is now successfully integrated with the {{config.extra.arcana.sdk_name}}.
 
 ## What's Next?
 
-After integrating with the Arcana Auth SDK, an application can onboard users through social authentication and passwordless login. The application users can utilize the embedded Arcana wallet to sign blockchain transactions, transfer or send blockchain tokens, etc.
+After integrating an app with the {{config.extra.arcana.sdk_name}}, developers can add code to [onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md) and [enable the {{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for authenticated users to sign blockchain transactions.
 
 ## See also
 
-* Using Auth SDK to enable social authentication via [Google]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_google_oauth.md)
-* [Passwordless authentication using Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md)
-* [Auth SDK Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
-* [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
+* Using the {{config.extra.arcana.sdk_name}} to [ enable social authentication via Google]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_google_oauth.md)
+* [Passwordless authentication]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md)
+* [{{config.extra.arcana.sdk_name}} Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
+* [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
 * {% include "./text-snippets/authsdkref_url.md" %}

@@ -10,19 +10,21 @@ arcana:
 
 # Sign Transactions
 
-[Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) is an embedded Web3 wallet available to all the dApps that [integrate]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md)..
-
-In this guide, you will learn how a dApp can add functionality to allow users to sign blockchain transactions by using the JSON RPC calls supported by Arcana wallet. 
+In this guide, you will learn how Web3 apps that integrate with the {{config.extra.arcana.sdk_name}} can use the standard Ethereum JSON RPC calls supported by the {{config.extra.arcana.wallet_name}} and programmatically allow authenticated users to sign blockchain transactions.
 
 ## Prerequisites
 
-Register and configure your application using the Arcana Developer Dashboard. Next, install the `@arcana/auth` package. Integrate the Auth SDK with your dApp. For details, see [Arcana Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md).
+* Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to [register the app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) and obtain a unique {{config.extra.arcana.app_address}} required for integrating the app with the {{config.extra.arcana.sdk_name}}.
 
-{% include "./code-snippets/import_auth.md" %}
-{% include "./code-snippets/new_auth.md" %}
-{% include "./code-snippets/init_auth.md" %}
+* Follow the instructions to [configure authentication providers]({{page.meta.arcana.root_rel_path}}/howto/config_auth/index.md) before integrating the app with the {{config.extra.arcana.sdk_name}}.
+  
+* Use the appropriate integration method as per the app type and [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}.
 
-Make sure you have already initialized the wallet before invoking any JSON RPC call to sign a transaction using Arcana wallet.
+* Add code in the integrated app to [onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md). The Web3 wallet operations can be invoked programmatically in an app only in the context of an authenticated user.
+
+## Steps
+
+Make sure you have addressed the prerequisites before adding code to invoke any Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}}. After that, plug in the necessary code to set up requisite hooks for JSON/RPC standard Ethereum calls.
 
 {% include "./code-snippets/auth_json_rpc_setup.md" %}
 
@@ -30,22 +32,25 @@ Make sure you have already initialized the wallet before invoking any JSON RPC c
 
 {% include "./code-snippets/auth_sign_transaction.md" %}
 
-The following figure shows how Arcana wallet displays the details of a blockchain sign transaction and asks the user to approve or reject it:
+The following figure shows how the {{config.extra.arcana.wallet_name}} displays the details of a blockchain sign transaction request and asks the user to approve or reject it:
 
 <img src="/img/an_wallet_sign.png" width="300"/>
 
 **That is all!**  :material-party-popper:
-*You are all set to allow dApp users to sign blockchain transactions.*
+
+*The Web3 app is all set to programmatically allow the authenticated app users to sign blockchain transactions.*
 
 ## What's Next?
 
-For a complete list of other JSON RPC calls supported by Arcana wallet, see [JSON-RPC Specifications](https://ethereum.github.io/execution-apis/api-documentation/).
+After registering the app, configuring authentication providers, integrating the {{config.extra.arcana.sdk_name}} with the app and onboarding users, developers can further add code in the app to sign blockchain transactions, send and receive native, ERC20, or custom tokens, and other [Web3 wallet operations]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/web3ops/index.md).
+
+For a complete list of other JSON RPC calls supported by the {{config.extra.arcana.wallet_name}}, see [JSON-RPC Specifications](https://ethereum.github.io/execution-apis/api-documentation/).
 
 ## See also
 
-* [Arcana wallet capabilities]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md)
-* [Configure Arcana wallet Visibility]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_wallet_modes.md)
+* [{{config.extra.arcana.wallet_name}} capabilities]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md)
+* [Configure {{config.extra.arcana.wallet_name}} visibility]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_walletvisibility.md)
 * [Send transaction]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/wallet_send.md)
-* [Watch Token Assets]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/wallet_watchasset.md)
-* [Check account balance]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/wallet_balance.md)
+* [Watch crypto Assets]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/wallet_watchasset.md)
+* [Check the wallet account balance]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/wallet_balance.md)
 * {% include "./text-snippets/authsdkref_url.md" %}

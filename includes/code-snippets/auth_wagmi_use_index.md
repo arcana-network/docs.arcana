@@ -1,4 +1,4 @@
-```js title="auth-wagmi-example/pages/index.tsx"
+```js title="auth-wagmi-example/pages/index.tsx" hl_lines="1 4-6 16"
 import { useAccount, useConnect } from "wagmi";
 
 export default function Home() {

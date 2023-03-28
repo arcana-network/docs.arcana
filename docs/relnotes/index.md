@@ -1,6 +1,6 @@
 # Release Notes
 
-Learn about the latest features offered by the Auth SDK, changes in usage and bug fixes.
+Learn about the latest features offered by the {{config.extra.arcana.sdk_name}}, changes in usage, and bug fixes.
 
 [Auth v1.0.3 :material-note-text:](./rn_main_auth_v1.0.3.md){ .md-button }
 

@@ -1,3 +1,3 @@
-  Auth SDK **v1.0.2** -> **v1.0.3**:  Simply upgrade your installation to the latest Auth SDK v1.0.3 and you are good to go!
+  **{{config.extra.arcana.sdk_name}} v1.0.2 -> v1.0.3**:  Simply upgrade your installation to the latest `{{config.extra.arcana.auth_sdk_pkg_name}}` package v1.0.3 and you are good to go!
   
-    Auth SDK **v0.2.2**, **v0.3.0** -> **v1.0.3**: Note that there may be breaking changes that require you need to make appropriate configuration updates and update the integration code and migrate to the latest release. Refer to the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and [Release Notes]({{page.meta.arcana.root_rel_path}}/relnotes/index.md) for more details.
+    **{{config.extra.arcana.sdk_name}} v0.2.2, v0.3.0 -> v1.0.3**: Note that there may be breaking changes that require you to reconfigure your app and also update the integration code. For more information, see [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and [Release Notes]({{page.meta.arcana.root_rel_path}}/relnotes/index.md).

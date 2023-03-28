@@ -11,28 +11,31 @@ arcana:
 
 # AWS Cognito
 
-In this guide, you will learn how to configure AWS Cognito and integrate the Arcana Auth SDK with a Web3 app that uses AWS Cognito for onboarding users. After integrating with the Auth SDK, the developers can enable the authenticated users to access the embedded, non-custodial Arcana wallet.
+In this guide, you will learn how to configure AWS Cognito and integrate the {{config.extra.arcana.sdk_name}} with a Web3 app that builds custom UI for authenticating users via AWS Cognito. After integrating with the {{config.extra.arcana.sdk_name}}, developers can allow authenticated users to sign blockchain transactions using the embedded, non-custodial {{config.extra.arcana.wallet_name}}.
 
 ## Prerequisites
 
-* Make sure you can access the Arcana Developer Dashboard: {% include "./text-snippets/db_portal_url.md" %}
-* Install the `@arcana/auth` package. For details, see [Arcana Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md).
+* Make sure you can access the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
-Note that some steps are performed using [AWS Management Console](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-idp-settings.html), others using Arcana Dashboard. Once the users are authenticated using AWS Cognito, the developer can call Auth SDK functions to access Web3 wallet operations offered by the embedded Arcana wallet from within the app context.
+* Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to [register the app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) and obtain a unique {{config.extra.arcana.app_address}} required for integrating the app with the {{config.extra.arcana.sdk_name}}.
 
-{% include "./text-snippets/cognito_config_steps.md" %}
+* Carefully [follow the instructions to configure AWS Cognito]({{page.meta.arcana.root_rel_path}}/howto/config_idm/cognito_oauth.md) as the authentication provider.
+  
+* Use the appropriate integration method as per the app type and [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}} before accessing the user onboarding function of the {{config.extra.arcana.sdk_name}}.
 
-!!! tip
+!!! info "Using `{{config.extra.arcana.wagmi_sdk_pkg_name}}`"
 
-      The **Client ID** is displayed on the top right of your dashboard.
+      If an app uses Wagmi or RainbowKit wallet connector and the developer chooses to integrate the app with the {{config.extra.arcana.sdk_name}} via the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package, then it is **not possible to build custom UI to onboard users** as described in the steps below. {% include "./text-snippets/warn_wagmi_pnp_limitation.md" %}
+    
+## Steps
 
-      You can revisit the Arcana Dashboard later to view and modify configuration settings. 
+*Using AWS Cognito to onboard users in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} is simple!*
 
-## Step 4: Integrate with Arcana Auth SDK
+Just a single line of code!
 
-Use the instructions here to [integrate with the Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
+## Step 1: Call `loginWithSocial` function
 
-After integration, use the following code to trigger Cognito login to onboard users:
+Make sure that all the prerequisites listed above are met. The app should be successfully registered, configured, and integrated with the {{config.extra.arcana.sdk_name}}, before adding code to onboard users via AWS Cognito.
 
 {% include "./code-snippets/auth_social_login.md" %}
 
@@ -40,7 +43,7 @@ Check if a user is logged in:
 
 {% include "./code-snippets/auth_isloggedin.md" %}
 
-Use other Auth SDK functions in your dApp. See [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) for details.
+After onboarding users, developers can add code to access the other {{config.extra.arcana.sdk_name}} functions in the app. See [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) for details.
 
 Add code in the application to log out an authenticated user:
 
@@ -48,17 +51,17 @@ Add code in the application to log out an authenticated user:
 
 **That is all!**  :material-party-popper:
 
-Your app is all set for authenticating users via AWS Cognito. Authenticated users can instantly access the Arcana wallet to sign blockchain transactions.
+Your app is all set for authenticating users via AWS Cognito. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
 
-!!! warning "Apps using Federated Identity Providers"
+!!! warning "Apps using Custom IAM Providers"
 
       {% include "./text-snippets/warn_cognito_social_provider_setup.md" %}
 
 ## What's Next?
 
-To know more about how to use Web3 wallet operations programmatically in your app, see [Arcana Wallet Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md). Refer to the [Arcana Wallet User's Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md) for more information on how authenticated app users can access the wallet UI.
+To know more about how to use Web3 wallet operations programmatically in your app, see [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md). Refer to the [{{config.extra.arcana.wallet_name}} User's Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md) for more information on how authenticated app users can access the wallet UI.
 ## See also
 
-* [Arcana authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
-* [How to integrate with the Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
+* [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
+* [How to integrate with the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
 * [Handling authentication errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)

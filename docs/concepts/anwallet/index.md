@@ -1,10 +1,10 @@
-# Arcana Web3 Wallet
+# {{config.extra.arcana.wallet_name}} 
 
-The Auth SDK offers an embedded Web3 wallet - the Arcana wallet. Use the Arcana wallet to configure dApp user wallet experience, sign blockchain transactions, execute send transaction on supported blockchains, switch to a different blockchain network and manage tokens and NFTs.
+The {{config.extra.arcana.sdk_name}} offers an embedded Web3 wallet - the {{config.extra.arcana.wallet_name}}. Use the {{config.extra.arcana.wallet_name}} to configure the user's blockchain signing experience, and allow authenticated users to perform Web3 wallet operations such as executing send transactions on supported blockchains, switching to a different blockchain network and managing tokens and NFTs.
 
 [Overview :material-folder-text:](./arcanawallet_oview.md){ .md-button }
 
-[Wallet Features :material-wallet:](./walletfeatures.md){ .md-button }
+[Wallet Features:material-wallet:](./walletfeatures.md){ .md-button }
 
 [Wallet Visibility :material-folder-text:](./walletuimodes.md){ .md-button }
 
@@ -12,4 +12,4 @@ The Auth SDK offers an embedded Web3 wallet - the Arcana wallet. Use the Arcana 
 
 [Using Web3 Wallet vs. Key :material-folder-text:](./arcanawallet_oview.md){ .md-button }
 
-[Sign Transaction Messages :material-folder-text:](./arcanawallet_oview.md){ .md-button }
+[Sign Transactions :material-folder-text:](./arcanawallet_oview.md){ .md-button }

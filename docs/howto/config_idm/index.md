@@ -7,7 +7,7 @@ arcana:
   root_rel_path: ../..
 ---
 
-# Federated Identity Providers
+# Custom IAM Providers
 
 [Cognito :fontawesome-brands-aws:](./cognito_oauth.md){ .md-button }
 
@@ -21,6 +21,6 @@ arcana:
 
 -->
 
-!!! warning "Apps using Federated Identity Providers"
+!!! warning "Apps using Custom IAM Providers"
 
       {% include "./text-snippets/warn_cognito_social_provider_setup.md" %}   

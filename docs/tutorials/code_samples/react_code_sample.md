@@ -9,9 +9,9 @@ arcana:
 
 # Using React Auth Wrapper
 
-You need to first install the Arcana Auth SDK and Auth React component wrapper and configure user onboarding options using the Arcana Dashboard.
+You need to first register your app using the {{config.extra.arcana.dashboard_name}} and obtain a unique {{config.extra.arcana.app_address}}. Next, configure user onboarding options for the app using the {{config.extra.arcana.dashboard_name}}. Then install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and the Auth React component wrapper `{{config.extra.arcana.react_sdk_pkg_name}}` package and integrate the app with the {{config.extra.arcana.sdk_name}} before adding code to onboard users.
 
-To integrate the Arcana Auth SDK and use the Arcana Auth React Wrapper component, `ProvideAuth`, you need to update the `index.js` and `App.js` files as listed below:
+To integrate the {{config.extra.arcana.sdk_name}} and use the Auth React Wrapper component, `ProvideAuth`, you need to update the `index.js` and `App.js` files as listed below:
 
 ```js title="index.js" hl_lines="5 6 11 15 17"
 import { StrictMode } from "react";
@@ -117,6 +117,6 @@ export default function App() {
 
 ## See Also
 
-* [Auth SDK Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
-* [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
+* [{{config.extra.arcana.sdk_name}} Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
+* [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
 * {% include "./text-snippets/authsdkref_url.md" %}

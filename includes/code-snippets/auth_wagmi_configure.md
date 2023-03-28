@@ -1,38 +1,17 @@
-```js title="auth-wagmi-example/utils/wagmi_client.ts" hl_lines="5 7-25 28-33"
-//This example shows both MetaMask and Arcana Wallet as RainbowKit wallet options
-import { connectorsForWallets } from "@rainbow-me/rainbowkit";
-import { metaMaskWallet } from "@rainbow-me/rainbowkit/wallets";
+```js title="auth-wagmi-example/utils/wagmi_client.ts" hl_lines="1 6-13"
 
 import { ArcanaConnector } from "@arcana/auth-wagmi";
+import { polygon, polygonMumbai } from "wagmi/chains";
+import { configureChains, createClient, Chain } from "wagmi";
+import { publicProvider } from "wagmi/providers/public";
 
-export const ArcanaRainbowConnector = ({ chains }) => {
-  return {
-    id: "arcana-auth",
-    name: "Arcana Wallet",
-    iconUrl: "",
-    iconBackground: "#101010",
-    createConnector: () => {
-      const connector = new ArcanaConnector({
-        chains,
-        options: {
-          //clientId : Arcana Unique App Identifier via Dashboard
-          clientId: "xar_test_b2dde12aad64eb35d72b2c80926338e178b1fa3f",
-        },
-      });
-      return {
-        connector,
-      };
+export const connector = (chains: Chain[]) => {
+  return new ArcanaConnector({
+    chains,
+    options: {
+      clientId: `xar_live_d7c88d9b033d100e4200d21a5c4897b896e60063`,
     },
-  };
+  });
 };
-
-const connectors = (chains) =>
-  connectorsForWallets([
-    {
-      groupName: "Recommended",
-      wallets: [ArcanaRainbowConnector({ chains }), metaMaskWallet({ chains })],
-    },
-  ]);
-
-export { connectors };
+...
 ```

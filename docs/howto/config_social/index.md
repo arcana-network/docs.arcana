@@ -19,6 +19,6 @@ arcana:
 
 [Twitter :fontawesome-brands-twitter:]({{page.meta.arcana.root_rel_path}}/howto/config_social/twitter_oauth.md){ .md-button }
 
-!!! tip "Passwordless Login"
+!!! info "Passwordless Login"
 
-          By default, passwordless login is always available for any application that integrates with the Arcana Auth SDK.  Unlike social providers, using passwordless option does not require any additional setup via the Arcana developer dashboard. 
+          By default, passwordless login is always available for any application that integrates with the {{config.extra.arcana.sdk_name}}.  Unlike social providers, passwordless option is enabled by default and requires no configuration. 

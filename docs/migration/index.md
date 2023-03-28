@@ -1,6 +1,6 @@
 # Migration Guides
 
-We recommend that you use the most recent Arcana Auth SDK. Use the migration guide to learn how to migrate to the latest version.
+We recommend that you use the most recent {{config.extra.arcana.sdk_name}}. Use the migration guide to learn how to migrate to the latest version.
 
 [Auth SDK v1.0.2 -> v1.0.3](main_auth_v1.0.3_migration.md){ .md-button }
 

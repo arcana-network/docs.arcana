@@ -1,12 +1,12 @@
 # Concepts
 
-These are the building blocks to help you learn about various Arcana Network terms and usage.
+These are the building blocks to help you learn about various {{config.extra.arcana.product_name}} terms and usage.
 
 [Aggregate Login :material-login:](authtype/aggregatelogin.md){ .md-button }
 
-[Arcana Web3 Wallet :material-wallet:](anwallet/index.md){ .md-button }
+[{{config.extra.arcana.wallet_name}} :material-wallet:](anwallet/index.md){ .md-button }
 
-[Auth SDK :material-lock: :fontawesome-solid-file-signature:](authsdk.md){ .md-button }
+[{{config.extra.arcana.sdk_name}} :material-lock: :fontawesome-solid-file-signature:](authsdk.md){ .md-button }
 
 [Authentication :material-lock-check:](authtype/arcanaauth.md){ .md-button }
 
@@ -20,7 +20,7 @@ These are the building blocks to help you learn about various Arcana Network ter
 
 [Gateway :fontawesome-solid-torii-gate:](gateway_nodes.md){ .md-button }
 
-[Plug and Play Auth :material-lock: :fontawesome-solid-plug:](plugnplayauth.md){ .md-button }
+[Plug-and-Play Auth :material-lock: :fontawesome-solid-plug:](plugnplayauth.md){ .md-button }
 
 [Private Key :material-key:](privatekey.md){ .md-button }
 
