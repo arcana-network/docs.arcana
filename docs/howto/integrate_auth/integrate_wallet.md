@@ -7,7 +7,7 @@ arcana:
   root_rel_path: ../..
 ---
 
-# Integrate Vanilla JS App
+# Integrate Vanilla HTML/CSS/JS App
 
 In this guide, you will learn how to integrate a vanilla HTML/CSS/JS app with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md).
 
