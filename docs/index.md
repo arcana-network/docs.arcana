@@ -1,6 +1,6 @@
 ---
 template: home.html
-title: Arcana Auth
+title: Home
 ---
 
 # Arcana Auth
