@@ -1,4 +1,4 @@
-site_name: Auth Docs
+site_name: Auth
 
 # Remove for dev
 site_url: ""
@@ -6,7 +6,8 @@ use_directory_urls: false
 # upto here
 
 nav: 
-  - Introduction: index.md
+  - index.md
+  - Introduction: introduction.md
   - Quick Start: walletsdk/wallet_qs.md
   - How-To Guides:
       - howto/index.md
