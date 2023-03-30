@@ -1,0 +1,70 @@
+<!--Arcana Custom Quick Start Page Layout -->
+{% extends "main.html" %}
+
+{% block tabs %}
+    {% if "navigation.tabs.sticky" not in features %}
+        {% if "navigation.tabs" in features %}
+            {% include "partials/tabs.html" %}
+        {% endif %}
+    {% endif %}
+{% endblock %}
+
+<main class="md-main" data-md-component="main">
+    <div class="md-main__inner md-grid">
+        {% block site_nav %}
+          {% if nav %}
+            {% if page.meta and page.meta.hide %}
+              {% set hidden = "" if "navigation" in page.meta.hide %}
+            {% endif %}
+            <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" {{ hidden }}>
+              <div class="md-sidebar__scrollwrap">
+                <div class="md-sidebar__inner">
+                  {% include "partials/nav.html" %}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+          {% if "toc.integrate" not in features %}
+            {% if page.meta and page.meta.hide %}
+              {% set hidden = "hidden" if "toc" in page.meta.hide %}
+            {% endif %}
+            <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" {{ hidden }}>
+              <div class="md-sidebar__scrollwrap">
+                <div class="md-sidebar__inner"  id="sec-sidebar-text">
+                  {% include "partials/toc.html" %}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endblock %}
+        {% block container %}
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              {% block content %}
+              {% endblock %}
+              <label for="selection">Select App Type:</label>
+              <select id="selection" onchange="function()">
+                  <option value="option1">HTML/CSS/JS Web App</option>
+                  <option value="option2">React/NextJS App</option>
+                  <option value="option3">Wagmi App</option>
+                  <option value="option4">Vue App</option>
+              </select>
+              <div id="textA" style="display:block;"></div>
+              <div id="textB" style="display:none;"></div>
+              <div id="textC" style="display:none"></div>
+              <div id="textD" style="display:none"></div>
+              
+              <script src="./javascripts/andropdown.js"></script>
+            </article>
+          </div>
+        {% endblock %}
+        {% include "partials/javascripts/content.html" %}
+      </div>
+      {% if "navigation.top" in features %}
+        <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+          {% include ".icons/material/arrow-up.svg" %}
+          {{ lang.t("top") }}
+        </button>
+      {% endif %}
+</main>
+{% block footer %} {{ super() }} {% endblock %}
