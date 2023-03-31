@@ -1,5 +1,5 @@
 ---
-slug: /
+slug: /intro
 id: idintro
 sidebar_custom_props:
   cardIcon: 📚
