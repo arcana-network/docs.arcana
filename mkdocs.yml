@@ -7,8 +7,8 @@ use_directory_urls: false
 
 nav: 
   - index.md
-  - New Quick Start: quick_start.md
   - Introduction: introduction.md
+  - Test: walletsdk/wallet_test.md
   - Quick Start: walletsdk/wallet_qs.md
   - How-To Guides:
       - howto/index.md
