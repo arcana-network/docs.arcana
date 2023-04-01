@@ -1,8 +1,10 @@
 ---
 template:  quick_start.html
-title: Interactive Quick Start
+title: Test
+arcana:
+  root_rel_path: ../..
 ---
 
-# New Quick Start
+# Test 123
 
 This is the default Quick Start content.
