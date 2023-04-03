@@ -46,9 +46,10 @@
               <label for="selection_reg">1. Register App:</label>
                 <select id="selection_reg" onchange="function()">
                   <option value="option0">None</option>
-                  <option value="option1">Testnet</option>
-                  <option value="option2">Mainnet</option>
-                  <option value="option3">Global Keys</option>
+                  <option value="option1">Get ClientID</option>
+                  <option value="option2">Testnet Registration</option>
+                  <option value="option3">Mainnet Registration</option>
+                  <option value="option4">Request Global Keys</option>
                 </select> 
               </div>
               <div>
@@ -94,7 +95,8 @@
               </select>
               </div>
 
-              <div id="testnet" style="display:block;"></div>
+              <div id="clientid" style="display:block;"></div>
+              <div id="testnet" style="display:none;"></div>
               <div id="mainnet" style="display:none;"></div>
               <div id="globalkeys" style="display:none"></div>
 
