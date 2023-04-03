@@ -153,7 +153,7 @@ Developers can monitor their registered application usage statistics via the {{c
 
 #### Account Usage Metrics
 
-The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer account. This is an aggregate score across all the applications that are registered for a dev account and configured to use the {{config.extra.arcana.company_name}} Mainnet. Any application using the 'Testnet' are not billed and not included in this overall account usage statistic.
+The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer account. This is an aggregate score across all the applications that are registered for a developer account and configured to use the {{config.extra.arcana.company_name}} Mainnet. Any application using the 'Testnet' are not billed and not included in this overall account usage statistic.
 
 ![App usage metrics](/img/an_db_metrics.png){.an-screenshots}
 
