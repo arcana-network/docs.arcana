@@ -79,7 +79,7 @@ An authenticated app user can access the {{config.extra.arcana.wallet_name}} UI 
 
 ### Use Web3 Wallet Operations
 
-Developers can add code to programmatically call the Web3 walletoperations for authenticated users in the HTML/CSS/JS app, as required. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) and the [{{config.extra.arcana.dashboard_name}} User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md) for more details.
+Developers can add code to programmatically call the Web3 wallet operations for authenticated users in the HTML/CSS/JS app, as required. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) and the [{{config.extra.arcana.dashboard_name}} User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md) for more details.
 
 !!! caution "Use the latest {{config.extra.arcana.sdk_name}}"
 
