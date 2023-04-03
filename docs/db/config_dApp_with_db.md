@@ -187,25 +187,33 @@ To begin using the {{config.extra.arcana.sdk_name}}, the app developers don't ne
 
 Click on the user icon on the top right of the {{config.extra.arcana.dashboard_name}} screen. Select **Profile** in the dropdown. 
 
-![Application Usage Stats Mainnet](/img/an_db_billing_nav.png)
+![Application Usage Stats Mainnet](/img/an_db_billing_nav.png){.an-screenshots}
 
-You will see the developer's {{config.extra.arcana.company_name}} account profile details. 
+You will see the developer's {{config.extra.arcana.company_name}} account profile details. The developer account **name** and **public identifier** (email) are automatically retrieved based on the account used to log into the {{config.extra.arcana.dashboard_name}}.
 
-Update the organization and address details. Click **Save**. Next, refer to the **Payment Method** section and provide the card details. Click **Save**.
+Developers are required to update the following profile details and then click **Save**. 
 
-![Application Usage Stats Mainnet Billing Profile](/img/an_db_billing_profile.png)
+* Organization
+* Billing Address Details
+* Payment Method
 
-The amount payable will be auto-deducted using the specified payment method once the invoice is generated at the end of every month. If the payment fails, the payment provider will automatically retry the payment until the grace period expires (30 days). After the grace period ends and the payment is not successful, the developer account will be suspended and no users will be able to log into the registered apps.
+![Application Usage Stats Mainnet Billing Profile](/img/an_db_billing_profile.png){.an-screenshots}
 
 #### View Invoices
 
-Click on the user icon on the top right of the {{config.extra.arcana.dashboard_name}} screen. Select **Invoices** in the dropdown. 
+Click on the user icon on the top right of the {{config.extra.arcana.dashboard_name}} screen. Select **Invoices** in the dropdown.
 
-![Application Usage Stats Mainnet](/img/an_db_invoices_nav.png)
+![Application Usage Stats Mainnet](/img/an_db_invoices_nav.png){.an-screenshots}
 
 On the **Invoices** page, you will see the details of the current pending dues followed by the billing history of previous invoices that can be downloaded for reference.
 
-![Application Usage Stats Mainnet](/img/an_db_invoices_details.png)
+![Application Usage Stats Mainnet](/img/an_db_invoices_details.png){.an-screenshots}
+
+#### View Billing Notifications
+
+Click the bell icon to view all notifications for the developer account. Check the [billing notifications]({{page.meta.arcana.root_rel_path}}/concepts/billing.md#notifications) list for details.
+
+![Dev account notifications](/img/an_db_notifications_nav.png){.an-screenshots}
 
 <!---
 
