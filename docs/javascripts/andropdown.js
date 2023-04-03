@@ -57,9 +57,10 @@ function fetchPageContent(pageUrl) {
 }
 
 const pageData_reg = {
-  option1: { url: '/db/config_dapp_with_db.html#testnet', regType: 0 },
-  option2: { url: '/db/config_dapp_with_db.html#mainnet', regType: 1 },
-  option3: { url: '/db/config_dapp_with_db.html#configure-mainnet-keyspace', regType: 2 },
+  option1: { url: '/howto/config_dapp.html', regType: 0 },
+  option2: { url: '/db/config_dapp_with_db.html#testnet', regType: 1 },
+  option3: { url: '/db/config_dapp_with_db.html#mainnet', regType: 2 },
+  option4: { url: '/db/config_dapp_with_db.html#configure-mainnet-keyspace', regType: 3 },
 };
 
 const pageData_config = {
