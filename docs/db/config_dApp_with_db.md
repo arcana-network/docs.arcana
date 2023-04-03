@@ -213,7 +213,7 @@ On the **Invoices** page, you will see the details of the current pending dues f
 
 Click the bell icon to view all notifications for the developer account. Check the [billing notifications]({{page.meta.arcana.root_rel_path}}/concepts/billing.md#notifications) list for details.
 
-![Dev account notifications](/img/an_db_notifications_nav.png){.an-screenshots}
+![Developer account notifications](/img/an_db_notifications_nav.png){.an-screenshots}
 
 <!---
 
