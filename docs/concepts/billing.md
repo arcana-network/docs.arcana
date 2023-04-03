@@ -17,7 +17,7 @@ There is a promotional free usage tier available for each developer account. Onc
 
 Beyond the free tier, the {{config.extra.arcana.company_name}} Mainnet usage for all the registered apps in the developer account is charged. The billing cycle is **monthly**.
 
-A single invoice is raised for every developer account on the last day of every calendar month. It contains the aggregate app usage and billing details for all the apps in that account put together.  Developer can use the {{config.extra.arcana.dashboard_name}} to view the invoice and usage details.
+A single invoice is raised for every developer account on the last day of every calendar month. It contains the aggregate app usage and billing details for all the apps in that account put together.  Developers can use the {{config.extra.arcana.dashboard_name}} to view the invoice and usage details.
 
 ### Outstanding Dues
 
