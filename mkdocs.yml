@@ -138,6 +138,7 @@ nav:
     - Validator Nodes: faq/faq_validator.md
   - Release Notes:
     - relnotes/index.md
+    - Auth 1.0.4 : relnotes/rn_main_auth_v1.0.4.md
     - Auth 1.0.3 : relnotes/rn_main_auth_v1.0.3.md
     - Auth 1.0.2 : relnotes/rn_main_auth_v1.0.2.md
     - Auth 1.0.1 : relnotes/rn_main_auth_v1.0.1.md
@@ -145,6 +146,7 @@ nav:
     - Auth 0.3.0 (Testnet): relnotes/rn_beta_auth_v0.3.0.md
   - Migration Guides:
     - migration/index.md
+    - v1.0.3 -> v1.0.4: migration/main_auth_v1.0.4_migration.md
     - v1.0.2 -> v1.0.3: migration/main_auth_v1.0.3_migration.md
     - v1.0.1 -> v1.0.2: migration/main_auth_v1.0.2_migration.md
     - v1.0.0 -> v1.0.1: migration/main_auth_v1.0.1_migration.md
