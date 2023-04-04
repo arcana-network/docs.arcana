@@ -19,7 +19,7 @@ Welcome to **{{config.extra.arcana.product_name }}** documentation!
 
 Use {{config.extra.arcana.product_name}} to easily onboard users to Web3 apps through the familiar Web2 authentication providers. The authenticated users can instantly access the embedded, non-custodial {{config.extra.arcana.wallet_name}} and sign blockchain transactions. 
 
-Designed for developers and Web3 users, {{config.extra.arcana.product_name}} is easy to integrate and offers a simple yet secure, and customizable user experience for signing blockchain transactions. It is powered by cutting-edge cryptographic algorithms and a built-in _decentralized key generation subsystem_ that ensures no single entity owns or manages the user's keys. 
+Designed for developers and Web3 users, {{config.extra.arcana.product_name}} is easy to integrate and offers a simple yet secure, and customizable user experience for signing blockchain transactions. It is powered by cutting-edge cryptographic algorithms and a built-in _distributed key generation subsystem_ that ensures no single entity owns or manages the user's keys. 
 
 !!! note "Already using {{config.extra.arcana.product_name}}?"
 
