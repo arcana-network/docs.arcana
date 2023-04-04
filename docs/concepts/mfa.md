@@ -23,7 +23,7 @@ The figure below shows a high-level overview of how Arcana MFA works as part of 
 
 ### Security Questions
 
-At the very first login, the user is prompted to set up MFA. Once MFA is selected, the app users must answer at least 5 pre-packaged security questions or create custom questions and store the answers. The answers to security questions are required to create one of the 'multi-factor' components that are used to verify the user's identity.
+At the very first login, the user is prompted to set up MFA. Once MFA is selected, the app users must answer at least 5 prepackaged security questions or create custom questions and store the answers. The answers to security questions are required to create one of the 'multi-factor' components that are used to verify the user's identity.
 
 The Arcana ecosystem does not provide a means to retrieve or create a backup copy of these user-specified questions/answers. The app users are responsible for memorizing or securing their MFA questions/answers.
 
@@ -56,9 +56,9 @@ Web3 app developers have no control over enabling or disabling MFA for an app th
 
 * As part of MFA, there is some encrypted information stored on the user's local device. If this information is lost or if a user logs into the same Web3 app using a different device or uses a different browser then the Arcana MFA algorithm is capable of detecting this scenario and reconstructing the missing information by asking the user to regenerate this information. The user must supply **one** of the following pieces of information to regenerate the local MFA factor:
 
-  - Answer three of the five MFA security questions that were stored earlier during the MFA setup. 
-  - Provide the encryption PIN that was used to encrypt and store the recovery information in the Arcana ecosystem.
+    - Answer three of the five MFA security questions that were stored earlier during the MFA setup. 
+    - Provide the encryption PIN that was used to encrypt and store the recovery information in the Arcana ecosystem.
   
-  Based on the user's recovery choice, either the user's answers or the PIN input locally can be used to decrypt the backup MFA component stored in the Arcana ecosystem and verify the user's identity.
+    Based on the user's recovery choice, either the user's answers or the PIN input locally can be used to decrypt the backup MFA component stored in the Arcana ecosystem and verify the user's identity.
 
-* Once an app user answers the MFA security question for an MFA-enabled app, those same answers will work for other MFA apps that are deployed in the Arcana ecosystem.
+* The recovery of the local MFA factor is per device. Once an app user answers the MFA security question for an MFA-enabled app, those same answers will work for other MFA apps too when the same device is used to log into those apps deployed in the Arcana ecosystem.
