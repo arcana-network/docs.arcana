@@ -52,3 +52,7 @@ If the user logs into an app using a different device or a different browser, th
 <img src="/img/an_mfa_recover_options.png" alt="Recovery Options" class="an-screenshots-noeffects" width="55%"/>
 
 Once the user provides one of these options, the local MFA factor is regenerated and the user will not be asked for it again on the same device or the browser app unless local storage is cleared for some reason.
+
+## MFA User Errors
+
+* **Incorrect Security Answer**: This error is displayed during MFA secret recovery process if the user fails to provide the correct answer to the security question. If the user does not remember the answer, the alternative is to try using the PIN for completing the MFA secret recovery process.
