@@ -3,6 +3,11 @@
 
 {{ super() }}
 
+
+{% block announce %}
+  <div class="an_announcement"> 🎉<span class="blink_me">{{config.extra.arcana.sdk_name}} Mainnet Release {{ config.extra.arcana.latest_version }} is now live!</span>⚡⚡⚡</div>
+{% endblock %}
+
 {% block content %}
 <style>
     :root > * {
@@ -28,6 +33,7 @@
 
     .md-main {
         flex-grow: 0;
+        margin-top: -2%;
     }
 
     .md-main__inner {
@@ -42,12 +48,13 @@
 
     .tx-container {
         padding-top: 0rem;
-        background: linear-gradient(to top, var(--md-primary-bg-color), rgb(1, 79, 91) 99%,#fff 99%)
+        background: linear-gradient(to top, var(--md-primary-bg-color), rgb(1, 79, 91) 99%,#fff 99%);
     }
 
-    .tx-container-need-help {
-        padding-top: 0rem;
-        display: block;
+    .tx-ref {
+        /*margin: 32px 2.8rem;*/
+        color: var(--md-primary-bg-color);
+        padding: 1rem;
     }
 
     .tx-hero {
@@ -146,6 +153,16 @@
         word-break: break-word
     }
 
+    .feature-item-4 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        box-sizing: border-box;
+        padding: 0 15px;
+        margin: 0.5rem;
+        text-align: center;
+        word-break: break-word
+    }
+
     .feature-item h2, .feature-item-2 h2 .feature-item-3 a{
         color: var(--md-primary-fg-color);
         font-weight: 300;
@@ -169,7 +186,7 @@
         display: block;
     }
 
-    .feature-item-2 a, .feature-item-3 a {
+    .feature-item-2 a, .feature-item-3 a{
         color: var(--md-primary-fg-color);
     }
 
@@ -494,21 +511,18 @@
     </div>
 </div>
 
-<div style="display: block; text-align: center;">
-    <div>
-        <a href="./state_of_the_ntwk.html" title="State of Arcana Auth" class="tx-hero-2">
-        State of Arcana Auth
-        </a>
+<div class="tx-hero">
+    <div class="tx-ref">
+        <a href="./state_of_the_ntwk.html">State of Arcana Auth</a>
     </div>
-    <div>
-        <a href="./audit/index.html" title="Audit Reports" class="tx-hero-2">
-        Audit Reports
-        </a>
+    <div class="tx-ref">
+        <a href="./audit/index.html">Audit Reports</a>
     </div>
-    <div>
-        <a href="https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08" title="Technical Whitepaper" class="tx-hero-2">
-        Arcana Technical Whitepaper
-        </a>
+    <div class="tx-ref">
+        <a href="https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08">Arcana Technical Whitepaper</a>
+    </div>
+    <div class="tx-ref">
+        <a href="./faq/index.md">FAQ</a>
     </div>
 </div>
 
