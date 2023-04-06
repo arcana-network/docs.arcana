@@ -282,13 +282,3 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
       While an app is switching over from the default 'app-specific' keys configuration to the 'global keys' configuration, the developer may choose to allow app users to log in before the global features option is approved. Users that log in before the global keys are approved will be assigned 'app-specific' keys. There is some part of key metadata that is stored locally in the authenticated user's device. In this case, once the feature gets **approved**, the user keys are re-assigned. The keys change from 'app-specific' to 'global keys' and this results in new key metadata. There is a mismatch between the keys or {{config.extra.arcana.walket_name}} addresses already in use by the users and the new global keys that are now reconfigured for the app users.  As a result, users will not be able to log in to the app anymore.
 
       To fix this issue, the user needs to clear the local storage used by the {{config.extra.arcana.wallet_name}} on their device by clearing the browser cache and then attempting another login from a fresh browser window.
-
-## Billing Issues
-
----
-
-??? an-trbs "Unable to add a payment method for billing purposes."
-
-      If you enter the payment method details such as the card number, expiry date, etc., and click save, you may see an error saying that the card details could not be saved.
-
-      The payment providers require the address and location details before they can add a card as the payment method for settling the {{config.extra.arcana.company_name}} Mainnet usage dues.  Make sure you have submitted a valid address in the {{config.extra.arcana.dashboard_name}} 'Profile' page, save the address details, then update the payment method, and click **Save** to save the payment method for billing.
