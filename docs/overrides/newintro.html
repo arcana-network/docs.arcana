@@ -3,22 +3,28 @@
 
 {{ super() }}
 
-
 {% block announce %}
   <div class="an_announcement"> 🎉<span class="blink_me">{{config.extra.arcana.sdk_name}} Mainnet Release {{ config.extra.arcana.latest_version }} is now live!</span>⚡⚡⚡</div>
 {% endblock %}
 
 {% block content %}
+{{ super() }}
 <style>
     :root > * {
-     /*--md-primary-fg-color:        #058aff;
-     --md-primary-fg-color--light: #13a3fd;
-     --md-primary-fg-color--dark:  #5cf5ff;
+     --md-primary-fg-color:        #23313c;
+     --md-primary-fg-color--light: #637c8b;
+     --md-primary-fg-color--lighter: #637c8b5f;
+     --md-primary-fg-color--dark:  #121314;
      --md-default-bg-color--lighter: #e7f6ff;
-     */
      --md-primary-bg-color: #fcfcfc;
-    }
 
+    }
+/*
+    [data-theme="light"] img[src$="#only-dark"],
+    [data-theme="dark"] img[src$="#only-light"] {
+        display: none;
+    }
+*/
     .md-sidebar--secondary {
         width: 2%;
     }
@@ -97,8 +103,8 @@
 
     .tx-hero .md-button--primary {
         background-color: var(--md-primary-bg-color);
-        color: hsla(280deg, 37%, 48%, 1);
-        border-color: var(--md-primary-bg-color)
+        color: var(--md-primary-fg-color--light);
+        border-color: var(--md-primary-bg-color);
     }
 
     .tx-hero .md-button:focus,
@@ -108,44 +114,36 @@
         border-color: var(--md-accent-fg-color)
     }
 
-    .feature-item h2 svg, .feature-item-2 h2 svg {
-        height: 30px;
-        float: left;
-        margin-right: 10px;
-        transform: translateY(10%);
-        color: var(--md-primary-fg-color);
-    }
-
     .top-hr {
         margin-top: 42px;
     }
 
     .feature-item {
-        font-family: 'Lato', sans-serif;
+        font-family: 'Inter', sans-serif;
         font-weight: 300;
         box-sizing: border-box;
         padding: 0 15px;
         word-break: break-word;
+        padding: 1rem 1.5rem;
     }
 
     .feature-item-2 {
-        font-family: 'Lato', sans-serif;
+        font-family: 'Inter', sans-serif;
         font-weight: 300;
         box-sizing: border-box;
-        padding: 0 15px;
-        border: 2px solid #eaeaea;
+        padding: 0.75rem 1rem;
         border-radius: 5px;
+        border: 1px dotted #aeaeae;
         margin: 0.5rem;
-        text-align: center;
-        word-break: break-word
+        word-break: break-word;
+        box-shadow: 0 4px 8px 0 var(--md-primary-fg-color--light);
     }
 
     .feature-item-3 {
-        font-family: 'Lato', sans-serif;
+        font-family: 'Inter', sans-serif;
         font-weight: 600;
         box-sizing: border-box;
         padding: 0 15px;
-        border: 2px solid #eaeaea;
         background-color: #eaeaea;
         border-radius: 5px;
         margin: 0.5rem;
@@ -153,18 +151,7 @@
         word-break: break-word
     }
 
-    .feature-item-4 {
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        box-sizing: border-box;
-        padding: 0 15px;
-        margin: 0.5rem;
-        text-align: center;
-        word-break: break-word
-    }
-
-    .feature-item h2, .feature-item-2 h2 .feature-item-3 a{
-        color: var(--md-primary-fg-color);
+    .feature-item h2, .feature-item-2 h2 {
         font-weight: 300;
         font-size: 25px;
         white-space: nowrap;
@@ -181,13 +168,8 @@
         line-height: 1.8em;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
-        color: var(--md-primary-fg-color);
         margin: 0 0 10px;
         display: block;
-    }
-
-    .feature-item-2 a, .feature-item-3 a{
-        color: var(--md-primary-fg-color);
     }
 
     @media screen and (max-width:30em) {
@@ -261,7 +243,7 @@
         }
 
         .feature-item-2:hover {
-            background-color: #aeaeae47;
+            background-color: var(--md-primary-fg-color--lighter);
             border-radius: 3px;
         }
     }
@@ -279,7 +261,7 @@
         margin-right: auto;
         margin-left: auto;
         margin-top: 15px;
-        font-family: 'Lato', sans-serif;
+        font-family: 'Inter', sans-serif;
         font-size: 23px;
         font-weight: 300;
         padding-bottom: 10px;
@@ -326,6 +308,17 @@
         color: var(--md-primary-bg-color);
         justify-content: center;
     }
+    .a-link-color {
+        color: var(--md-default-fg-color);
+    }
+
+    .help-bg-color {
+        background-color: var(--md-primary-fg-color--lighter);
+    }
+
+    .h3-color {
+        color: var(--md-primary-fg-color--light);
+    }
 
 </style>
 <section class="tx-container">
@@ -337,14 +330,12 @@
             <div class="tx-hero__content">
                 <h1> {{config.extra.arcana.product_name}} Documentation</h1>
                 <p><i>For Web3 app builders!</i></p>
-                <p>Enable Web2-like <b>user onboarding</b> in <b>Web3 apps.</b></p><p>Let authenticated users <b>sign blockchain transactions.</b></p>
+                <p></p>
+                <ul><li>Enable Web2-like <b>user onboarding</b> in <b>Web3 apps.</b></li><li>Let authenticated users <b>sign blockchain transactions.</b></li></ul>
                 <p><a style="color:var(--md-primary-bg-color); text-decoration: underline;" href="./introduction.html" >Learn More... </a></p>
-                <a href="https://dashboard.arcana.network" title="{{config.extra.arcana.dashboard_name}}" class="md-button md-button--primary">
-                Register App
-                </a>
-                <a href="./walletsdk/wallet_qs.html" title="Quick Start" class="md-button">
-                Get started
-                </a>
+                <p></p>
+                <a href="https://dashboard.arcana.network" title="{{config.extra.arcana.dashboard_name}}" class="md-button md-button--primary">Register App</a>
+                <a href="./walletsdk/wallet_qs.html" title="Quick Start" class="md-button">Get started</a>
             </div>
         </div>
     </div>
@@ -359,47 +350,29 @@
 <div class="top-hr">
     <div class="feature-item">
         <a href="./howto/integrate_auth/index.html">
-            <h2>
-                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path
-                        d="M15 17v-3h3v-2l4 3.5-4 3.5v-2h-3m2 1v3h-3v2l-4-3.5 4-3.5v2h3M12 8c-2.21 0-4 1.8-4 4 0 1.91 1.35 3.54 3.21 3.92L16 11.86A3.997 3.997 0 0012 8m0 6c-1.1 0-2-.89-2-2s.9-2 2-2 2 .9 2 2-.89 2-2 2m9.66-5.27l-2-3.46c-.12-.22-.38-.31-.61-.22l-2.49 1c-.51-.41-1.06-.74-1.69-1l-.37-2.63A.506.506 0 0014 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.26-1.17.59-1.69 1L5 5.05c-.23-.09-.5 0-.61.22l-2 3.46c-.13.21-.08.49.11.64L4.57 11l-.07 1 .07 1-2.11 1.63c-.2.15-.25.43-.12.64l2 3.46c.11.27.4.38.66.27l2.5-1c.24.19.5.37.76.53l1.65-1.4c-.77-.33-1.45-.82-2-1.45l-2.41 1-.77-1.3L6.8 13.8a5.55 5.55 0 010-3.6L4.69 8.65l.75-1.3 2.41 1c.78-.9 1.83-1.53 3-1.78l.4-2.57h1.5l.37 2.62c1.17.24 2.22.88 3 1.77l2.41-1 .75 1.3-2.08 1.51c.09.26.16.53.2.8h2l2.1-1.63a.48.48 0 00.16-.64M12 8c-2.21 0-4 1.8-4 4 0 1.91 1.35 3.54 3.21 3.92L16 11.86A3.997 3.997 0 0012 8m0 6c-1.1 0-2-.89-2-2s.9-2 2-2 2 .9 2 2-.89 2-2 2m0-6c-2.21 0-4 1.8-4 4 0 1.91 1.35 3.54 3.21 3.92L16 11.86A3.997 3.997 0 0012 8m0 6c-1.1 0-2-.89-2-2s.9-2 2-2 2 .9 2 2-.89 2-2 2z" />
-                </svg>
-                -->
-                <picture>
-                    <source srcset="./img/icons/i_web_app_dark.png" media="(prefers-color-scheme: dark)" width="7% "/>
-                    <img src="./img/icons/i_web_app_light.png" width="7%"/>
-                </picture> Web Apps
-            </h2>
-            <p>Enable Arcana Auth in Web Apps! It can be any vanilla HTML/CSS/JS app, React/NextJS app or apps that use wallet connectors such as Wagmi and RainbowKit</p>
+            <div class="a-link-color">
+                <h3 class="h3-color"><img src="./img/icons/i_web_app_dark.png#only-dark" width="7% "/><img src="./img/icons/i_web_app_light.png#only-light" width="7%"/> Web Apps</h3>
+                <p>Enable Arcana Auth in Web Apps! </p>
+                <p>We support vanilla HTML/CSS/JS app, React/NextJS app or apps that use wallet connectors such as Wagmi and RainbowKit.</p>
+            </div>
         </a>
     </div>
 
     <div class="feature-item">
         <a href="./index.html">
-            <h2>
-                <!--
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path
-                        d="M16 17v2H2v-2s0-4 7-4 7 4 7 4m-3.5-9.5A3.5 3.5 0 109 11a3.5 3.5 0 003.5-3.5m3.44 5.5A5.32 5.32 0 0118 17v2h4v-2s0-3.63-6.06-4M15 4a3.39 3.39 0 00-1.93.59 5 5 0 010 5.82A3.39 3.39 0 0015 11a3.5 3.5 0 000-7z" />
-                </svg>
-                -->
-                <img src="./img/icons/mobile-icon.png"/> 
-                Integrate Mobile Apps
-            </h2>
-            <p>Enable Arcana Auth in Mobile Apps! It can be any native iOS, Android or hybrid mobile platform app that uses React Native & Flutter. </p><p><mark>Coming soon!!!</mark></p>
+            <div class="a-link-color">
+                <h3 class="h3-color"><img src="./img/icons/mobile-icon.png#only-dark"/><img src="./img/icons/mobile-icon.png#only-light"/> Integrate Mobile Apps</h3>
+                <p>Enable Arcana Auth in Mobile Apps! </p>
+                <p>It can be any native iOS, Android or hybrid mobile platform app that uses React Native & Flutter. </p><p><mark><b>Coming soon!!!</b></mark></p>
+            </div>
         </a>
     </div>
     <div class="feature-item">
         <a href="./index.html">
-            <h2>
-                <!--
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M20.4 14.5L16 10 4 20"/>
-                </svg>
-                -->
-                <img src="./img/icons/gaming-icon.png"/> 
-                Integrate Gaming Apps
-            </h2>
-            <p>Enable Arcana Auth in Gaming Apps! It can be using any gaming platforms such as Unity, Unreal.</p><p><mark>Coming soon!!!</mark></p>
+            <div class="a-link-color">
+                <h3 class="h3-color"><img src="./img/icons/gaming-icon.png#only-dark"/> <img src="./img/icons/gaming-icon.png#only-light"/> Integrate Gaming Apps</h3>
+                <p>Enable Arcana Auth in Gaming Apps!</p><p>It can be using any gaming platforms such as Unity, Unreal.</p><p><mark><b>Coming soon!!!</b></mark></p>
+            </div>
         </a>  
     </div>
 </div>
@@ -412,68 +385,57 @@
 
 <div class="top-hr">
     <div class="feature-item-2">
-        <a href="./howto/config_dApp.html" title="Register & Configure App">
-            <h2>
-                <picture>
-                    <source srcset="./img/icons/i_config_dapp_dark.png" media="(prefers-color-scheme: dark)" width="7% "/>
-                    <img src="./img/icons/i_config_dapp_light.png" width="7%"/>
-                </picture>  Register & Configure App
-            </h2>
-            <p>Use Arcana Developer Dashboard to register the app and configure authentication providers, blockchain signing experience and more.</p>
+        <a href="./howto/config_dApp.html">
+            <div class="a-link-color">
+                <h3 class="h3-color"><img src="./img/icons/i_config_dapp_dark.png#only-dark" width="7%"/><img src="./img/icons/i_config_dapp_light.png#only-light" width="7%"/> Register & Configure App</h3>
+                <p>Use Arcana Developer Dashboard to register the app and configure authentication providers, blockchain signing experience and more.</p>
+        </div>
         </a>
     </div>
+
     <div class="feature-item-2">
-        <a href="./howto/onboard_users/build_social/index.html" title="Build Custom Auth UX">
-            <h2>
-                <picture>
-                    <source srcset="./img/icons/i_build_custom_auth_dark.png" media="(prefers-color-scheme: dark)" width="7% "/>
-                    <img src="./img/icons/i_build_custom_auth_light.png" width="7%"/>
-                </picture> Build Custom Auth UX
-            </h2>
-            <p>Build custom login UX and onboard users with configured authentication providers.</p>
-            </a>
-    </div>
-    <div class="feature-item-2">
-        <a href="./howto/onboard_users/wallet_plugnplay.html" title="Plug and Play Auth UX" >
-            <h2>
-                <picture>
-                    <source srcset="./img/icons/i_plug_and_play_dark.png" media="(prefers-color-scheme: dark)" width="7% "/>
-                    <img src="./img/icons/i_plug_and_play_light.png" width="7%"/>
-                </picture> Plug and Play Auth UX
-            </h2>
-            <p>Configure authentication providers and quickly onboard users with the built-in login UX.</p>
+        <a href="./howto/onboard_users/build_social/index.html">
+            <div class="a-link-color">
+                <h3 class="h3-color"><img src="./img/icons/i_build_custom_auth_dark.png#only-dark" width="7%"/><img src="./img/icons/i_build_custom_auth_light.png#only-light" width="7%"/> Build Custom Auth UX</h3>
+                <p>Build custom login UX and onboard users with configured authentication providers.</p>
+            </div>
         </a>
-     </div>
+    </div>
+
+    <div class="feature-item-2">
+        <a href="./howto/onboard_users/wallet_plugnplay.html">
+            <div class="a-link-color">
+                <h3 class="h3-color"><img src="./img/icons/i_plug_and_play_dark.png#only-dark" width="7%"/><img src="./img/icons/i_plug_and_play_light.png#only-light" width="7%"/> Plug and Play Auth UX</h3>
+                <p>Configure authentication providers and quickly onboard users with the built-in login UX.</p>
+            </div>
+        </a>
+    </div>
 </div>
 <div class="top-hr">
     <div class="feature-item-2">
-        <a href="./user_guides/index.html" title="User Guides">
-            <h2>
-                <img src="./img/icons/i-user-guide.png" width="7%"/> User Guides
-            </h2>
-            <p>Learn how to use the Arcana Developer Dashboard to configure Auth SDK usage. Figure out how to use the Arcana Wallet UI for Web3 wallet operations.</p>
+        <a href="./user_guides/index.html">
+            <div class="a-link-color">
+                <h3 class="h3-color"><img src="./img/icons/i-user-guide-dark.png#only-dark" width="7%"/><img src="./img/icons/i-user-guide-light.png#only-light" width="7%"/> User Guides</h3>
+                <p>Learn how to use the Arcana Developer Dashboard to configure Auth SDK usage. Figure out how to use the Arcana Wallet UI for Web3 wallet operations.</p>
+            </div>
         </a>
-</div>
-<div class="feature-item-2">
-    <a href="./howto/index.html" title="How-to Guides">
-        <h2>
-            <img src="./img/icons/i-howto-guide.png" width="7%"/>  How-to Guides
-        </h2>
-        <p>See step by step instructions on integrating and using Arcana Auth.</p>
-    </a>
-</div>
-<div class="feature-item-2">
-    <a href="./tutorials/code_samples/index.html" title="Example Code">
-        <h2>
-            <picture>
-                <source srcset="./img/icons/i-code-sample-dark.png" media="(prefers-color-scheme: dark)" width="7% "/>
-                <img src="./img/icons/i-code-sample-light.png" width="7%"/>
-            </picture>
-            Example Code
-        </h2>
-        <p>Refer to working examples of different types of app can integrate and use Arcana Auth.</p>
-    </a>
-</div>
+    </div>
+    <div class="feature-item-2">
+        <a href="./howto/index.html">
+            <div class="a-link-color">
+                <h3 class="h3-color"><img src="./img/icons/i-howto-guide-dark.png#only-dark" width="7%"/><img src="./img/icons/i-howto-guide-light.png#only-light" width="7%"/> How-to Guides</h3>
+                <p>See step by step instructions on integrating and using Arcana Auth.</p>
+            </div>
+        </a>
+    </div>
+    <div class="feature-item-2">
+        <a href="./tutorials/code_samples/index.html">
+            <div class="a-link-color">
+                <h3 class="h3-color"><img src="./img/icons/i-code-sample-light.png#only-light" width="7%"/><img src="./img/icons/i-code-sample-dark.png#only-dark" width="7%"/> Example Code</h3>
+                <p>Refer to working examples of different types of app can integrate and use Arcana Auth.</p>
+            </div>
+        </a>
+    </div>
 </div>
 
 <div class="top-hr">
@@ -483,25 +445,17 @@
 </div>
 
 <div class="tx-hero">
-    <div class="feature-item-3">
-      <a href="https://calendly.com/arcana-network/arcana-demo-walkthrough">
-        Schedule a Demo
-      </a>
+    <div class="feature-item-3 help-bg-color">
+      <a href="https://calendly.com/arcana-network/arcana-demo-walkthrough"><div class="a-link-color" style="padding: 0.5rem 0.5rem;">Schedule a Demo</div></a>
     </div>
-    <div class="feature-item-3">
-      <a href="https://github.com/orgs/arcana-network/discussions">
-        GitHub Discussions
-      </a>  
+    <div class="feature-item-3 help-bg-color">
+      <a href="https://github.com/orgs/arcana-network/discussions"><div class="a-link-color" style="padding: 0.5rem 0.5rem;">GitHub Discussions</div></a>  
     </div>
-    <div class="feature-item-3">
-      <a href="https://discord.gg/6g7fQvEpdy">
-        Arcana Community Discord
-      </a> 
+    <div class="feature-item-3 help-bg-color">
+      <a href="https://discord.gg/6g7fQvEpdy"><div class="a-link-color" style="padding: 0.5rem 0.5rem;">Arcana Community Discord</div></a> 
     </div>
-    <div class="feature-item-3">
-      <a href="mailto:support@arcana.network">
-        Contact Us
-      </a> 
+    <div class="feature-item-3 help-bg-color">
+      <a href="mailto:support@arcana.network"><div class="a-link-color" style="padding: 0.5rem 0.5rem;">Contact Us</div></a> 
     </div>
 </div>
 
