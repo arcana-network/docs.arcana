@@ -25,3 +25,5 @@ graph LR
 ```
 
 Aggregate login also works in the case of developers logging into the {{config.extra.arcana.dashboard_name}} to register and configure their applications. If a developer uses multiple login options to log into the {{config.extra.arcana.dashboard_name}} and the email ID is not the same across the selected authentication providers, then each login by the same developer is considered as a different unique developer account. In this case, any applications configured by the developer using say, provider **A** to log into the {{config.extra.arcana.dashboard_name}}, will not be visible to the same developer when using provider **B** to log into the {{config.extra.arcana.dashboard_name}}.
+
+{% include "./text-snippets/aggrlogin-nocognito-support.md" %}
