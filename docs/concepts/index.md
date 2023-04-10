@@ -12,6 +12,8 @@ These are the building blocks to help you learn about various {{config.extra.arc
 
 [Auth Types :material-clipboard-text-search-outline:](authtype/index.md){ .md-button }
 
+[Billing :fontawesome-solid-money-check-dollar:](billing.md){ .md-button }
+
 [Dashboard :material-monitor-dashboard:](dashboard.md){ .md-button }
 
 [DKG :material-key-plus:](dkg/index.md){ .md-button }

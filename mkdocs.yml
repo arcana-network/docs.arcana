@@ -116,6 +116,7 @@ nav:
           - Social Providers: concepts/authtype/socialauth.md
           - Custom IAM Providers: concepts/authtype/customauth.md
           - Passwordless: concepts/authtype/pwdless.md
+        - Usage & Billing: concepts/billing.md
         - Dashboard: concepts/dashboard.md
         - DKG:
           - concepts/dkg/index.md

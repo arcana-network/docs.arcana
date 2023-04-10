@@ -41,7 +41,7 @@ This guide will walk you through the various configuration options available on 
 
 !!! info "{{config.extra.arcana.app_address}}"
 
-      The {{config.extra.arcana.app_address}} assigned to your application can be found on the top right of the {{config.extra.arcana.dashboard_name}} screen. ![Dashboard Client Identifier](/img/an_db_app_address.png){.an-screenshots}
+      The {{config.extra.arcana.app_address}} assigned to your application can be found on the top right of the {{config.extra.arcana.dashboard_name}} screen. ![App Client Identifier](/img/an_db_app_address.png){.an-screenshots}
 
 ### Manage Configurations
 
@@ -153,9 +153,9 @@ Developers can monitor their registered application usage statistics via the {{c
 
 #### Account Usage Metrics
 
-The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer account. This is an aggregate score across all the applications that are registered for a dev account and configured to use the {{config.extra.arcana.company_name}} Mainnet. Any application using the 'Testnet' are not billed and not included in this overall account usage statistic.
+The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer account. This is an aggregate score across all the applications that are registered for a developer account and configured to use the {{config.extra.arcana.company_name}} Mainnet. Any application using the 'Testnet' are not billed and not included in this overall account usage statistic.
 
-![Dashboard metrics](/img/an_db_metrics.png){.an-screenshots}
+![App usage metrics](/img/an_db_metrics.png){.an-screenshots}
 
 !!! caution
 
@@ -177,11 +177,73 @@ You can use the dropdown in the top right of the application dashboard screen to
 
 ![Application Usage Stats Mainnet](/img/an_db_app_usage_metrics_mainnet_anim.gif){.an-screenshots}
 
+### Billing
+
+{{config.extra.arcana.company_name}} tracks the Mainnet app usage for every developer account in terms of MAU. Invoices are generated at the end of each month and the chargeable amount is auto-deducted using the payment method configured by the developer in their profile section. See [billing and pricing]({{page.meta.arcana.root_rel_path}}/concepts/billing.md) for details.
+
+To begin using the {{config.extra.arcana.sdk_name}}, the app developers don't need to update the profile details including the billing information. Once the apps consume the free tier of {{config.extra.arcana.company_name}} Mainnet usage, the developer must provide the billing details via the profile section of the {{config.extra.arcana.dashboard_name}}. Otherwise, the registered apps will be suspended and users will not be allowed to log in to any app that is registered using the developer account.
+
+#### Set up Payment Method
+
+Click on the user icon on the top right of the {{config.extra.arcana.dashboard_name}} screen. Select **Profile** in the dropdown. 
+
+![Application Usage Stats Mainnet](/img/an_db_billing_nav.png){.an-screenshots}
+
+You will see the developer's {{config.extra.arcana.company_name}} account profile details. The developer account **name** and **public identifier** (email) are automatically retrieved based on the account used to log into the {{config.extra.arcana.dashboard_name}}.
+
+Developers are required to update the following profile details and then click **Save**. 
+
+* Organization
+* Billing Address Details
+* Payment Method
+
+![Application Usage Stats Mainnet Billing Profile](/img/an_db_billing_profile.gif){.an-screenshots}
+
+!!! note "Payment Method"
+
+       By default, the 'Payment Method' section is disabled. 
+       
+       Enter the billing address details and click **Save**. The payment method section is enabled for input only after the billing address details are provided.
+
+#### View Invoices
+
+Click on the user icon on the top right of the {{config.extra.arcana.dashboard_name}} screen. Select **Invoices** in the dropdown.
+
+![Application Usage Stats Mainnet](/img/an_db_invoices_nav.png){.an-screenshots}
+
+On the **Invoices** page, you will see the details of the current pending dues followed by the billing history of previous invoices that can be downloaded for reference.
+
+![Application Usage Stats Mainnet](/img/an_db_invoices_details.png){.an-screenshots}
+
+#### View Billing Notifications
+
+Click the bell icon to view all notifications for the developer account. Check the [billing notifications]({{page.meta.arcana.root_rel_path}}/concepts/billing.md#notifications) list for details.
+
+![Developer account notifications](/img/an_db_notifications_nav.png){.an-screenshots}
+
+<!---
+
+![Billing methods and details](/img/an_db_billing_method_details.png)
+
+#### View Billing History
+
+Refer to the 'Billing Details' screen. The 'Estimated Charges' section on the bottom displays a link to view the billing history and download invoices.
+
+![Billing history](/img/an_db_billing_history.png)
+
+#### Pay Bills
+
+To pay the Arcana Network dues, developers can refer to the 'Estimated Charges' section on the bottom right of the 'Billing Details' screen. Click **Continue** to view invoice details and pay the bill.
+
+![Pay Dues](/img/an_db_billing_dues.png)
+
+-->
+
 ### Delete Application
 
 To de-register an application the developers must delete the entry using the {{config.extra.arcana.dashboard_name}}. Go to the 'Manage Apps' dashboard page which lists all the registered applications.  
 
-![Manage Apps Dashboard](/img/an_db_manage_apps.png){.an-screenshots}
+![Manage Apps Screen](/img/an_db_manage_apps.png){.an-screenshots}
 
 Select the application you wish to de-register and choose **Delete**.
 
