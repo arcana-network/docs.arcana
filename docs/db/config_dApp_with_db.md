@@ -197,7 +197,13 @@ Developers are required to update the following profile details and then click *
 * Billing Address Details
 * Payment Method
 
-![Application Usage Stats Mainnet Billing Profile](/img/an_db_billing_profile.png){.an-screenshots}
+![Application Usage Stats Mainnet Billing Profile](/img/an_db_billing_profile.gif){.an-screenshots}
+
+!!! note "Payment Method"
+
+       By default, the 'Payment Method' section is disabled. 
+       
+       Enter the billing address details and click **Save**. The payment method section is enabled for input only after the billing address details are provided.
 
 #### View Invoices
 
