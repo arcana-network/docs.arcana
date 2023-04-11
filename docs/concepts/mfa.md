@@ -37,7 +37,7 @@ There are only two options:
 * User authentication with no MFA
 * User authentication with MFA
 
-Web3 app developers have no control over enabling or disabling MFA for an app that is integrated with the Auth SDK. The app users choose to enable or disable it at the very first login. They can enable MFA at a later point in time by using the Arcana wallet UI. 
+Web3 app developers have no control over enabling or disabling MFA for an app that is integrated with the Auth SDK. The app users choose to enable or disable it at the very first login. If they choose to skip configuring it on the first login they will be prompted on every 3rd login wether they would like to configure MFA. They can also enable MFA at a later point in time by using the Arcana wallet UI. If they choose "Don't Ask Again" then they will not be prompted on that device. 
 
 !!! caution "Cannot disable MFA once enabled"
 
