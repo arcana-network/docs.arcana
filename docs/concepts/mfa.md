@@ -15,7 +15,7 @@ In the context of the Arcana Auth, MFA makes user verification more robust and s
 
 ## How does MFA work?
 
-The MFA feature of the Arcana Auth SDK is enabled by default for all apps that integrate with the Auth SDK. Developers are not required to configure anything to use this feature. App users have complete control over whether they wish to enable MFA for their app account access or not.  
+The MFA feature of the Arcana Auth SDK is enabled by default for all apps that integrate with the Auth SDK. Developers are not required to configure anything to use this feature. App users have complete control over whether they wish to enable MFA for their wallet or not.  
 
 The figure below shows a high-level overview of how Arcana MFA works as part of the user login process.
 
