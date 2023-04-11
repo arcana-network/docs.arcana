@@ -51,7 +51,7 @@ Web3 app developers have no control over enabling or disabling MFA for an app th
 
 ### With MFA
 
-* At the very first login to an app that is integrated with the Auth SDK, the user is prompted for choosing MFA. The user chooses to enable MFA. Once enabled, MFA cannot be disabled for a user account. Every time the user logs into the app subsequently, using the same browser and same device, there will be no prompt but MFA will be active.  
+* At the very first login to an app that is integrated with the Auth SDK, the user is prompted for enabling MFA. The user goes through the steps of enabling MFA as described above. Once enabled, MFA cannot be disabled for a user account. Subsequently, every time the user logs into the app using the same browser and same device, MFA will be active & no additional verification steps will be required.  
 
 * As part of MFA, there is some encrypted information stored on the user's local device. If this information is lost or if a user logs into the same Web3 app using a different device or uses a different browser then the Arcana MFA algorithm is capable of detecting this scenario and reconstructing the missing information by asking the user to regenerate this information. The user must supply **one** of the following pieces of information to regenerate the local MFA factor:
 
