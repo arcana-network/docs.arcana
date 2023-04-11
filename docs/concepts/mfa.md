@@ -23,7 +23,7 @@ The figure below shows a high-level overview of how Arcana MFA works as part of 
 
 ### Security Questions
 
-At the very first login, the user is prompted to set up MFA. Once MFA is selected, the app users must answer at least 5 prepackaged security questions or create custom questions and store the answers. The answers to security questions are required to create one of the 'multi-factor' components that are used to verify the user's identity.
+At the very first login, the user is prompted to set up MFA. The first step is to configure recovery method 1 - security questions. Users must choose 5 security questions either from the existing question bank or by adding their own custom questions. The combination of questions and answers are used as a seed to generate one of the shares of the user's private key. 
 
 The Arcana ecosystem does not provide a means to retrieve or create a backup copy of these user-specified questions/answers. The app users are responsible for memorizing or securing their MFA questions/answers.
 
