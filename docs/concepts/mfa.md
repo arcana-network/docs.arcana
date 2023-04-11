@@ -26,7 +26,7 @@ The figure below shows a high-level overview of how Arcana MFA works as part of 
 At the very first login, the user is prompted to set up MFA. The first step is to configure recovery method 1 - security questions. Users must choose 5 security questions either from the existing question bank or by adding their own custom questions. The combination of questions and answers are used as a seed to generate one of the shares of the user's private key. 
 
 
-### Encryption Pin
+### Recovery Pin
 
 The final step in the MFA setup requires the user to provide an alphanumeric PIN of at least 6 digits. This pin is used to encrypt and store one of the multiple factors used by MFA to verify the user's identity. This is the backup component that is encrypted and stored in the Arcana ecosystem and utilized in case the user changes the device or the local encrypted component is lost/erased from the browser's cache.
 
