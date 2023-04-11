@@ -56,7 +56,7 @@ Web3 app developers have no control over enabling or disabling MFA for an app th
 * As part of MFA, there is some encrypted information stored on the user's local device. If this information is lost or if a user logs into the same Web3 app using a different device or uses a different browser then the Arcana MFA algorithm is capable of detecting this scenario and reconstructing the missing information by asking the user to regenerate this information. The user must supply **one** of the following pieces of information to regenerate the local MFA factor:
 
     - Answer three of the five MFA security questions that were stored earlier during the MFA setup. 
-    - Provide the encryption PIN that was used to encrypt and store the recovery information in the Arcana ecosystem.
+    - Provide the recovery pin.
   
     Based on the user's recovery choice, either the user's answers or the PIN input locally can be used to decrypt the backup MFA component stored in the Arcana ecosystem and verify the user's identity.
 
