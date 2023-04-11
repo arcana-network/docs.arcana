@@ -11,7 +11,7 @@ arcana:
 
 Multi-factor authentication requires an app user to pass one more level of verification when accessing their wallet from a new browser or device. It is a more secure method of identity management and recovery. This is done partly by storing a local share of the private key on the user's machine and if that share is lost then they will have to either answer security questions (any 3 of the 5 questions) or enter their recovery pin to access their wallet.
 
-In the context of the Arcana Auth SDK, MFA makes user verification more robust and secure. With MFA, access to the user's identity or keys is no longer solely dependent upon the state-of-the-art asynchronous distributed key generation ([ADKG]({{page.meta.arcana.root_rel_path}}/concepts/dkg/index.md)) subsystem. The user's keys are generated at the client end using ADKG key shares and other factors including answers to security questions and random encrypted key shares.
+In the context of the Arcana Auth, MFA makes user verification more robust and secure. With MFA, even if a malicious actor gains access to a user's email they will not be able to log in to that user's wallet on another device unless they answer that user's security questions or provide recovery pin. Apart from that enabling MFA also has the added advantage allowing the user's keys to be accessible regardless of the existence of Arcana. 
 
 ## How does MFA work?
 
