@@ -58,6 +58,6 @@ Web3 app developers have no control over enabling or disabling MFA for an app th
     - Answer three of the five MFA security questions that were stored earlier during the MFA setup. 
     - Provide the recovery pin.
   
-    Based on the user's recovery choice, either the user's answers or the PIN input locally can be used to decrypt the backup MFA component stored in the Arcana ecosystem and verify the user's identity.
+    Based on the user's recovery choice, either the user's answers or the PIN will be used to verify the user's identity.
 
 * The recovery of the local MFA factor is per device. Once an app user answers the MFA security question for an MFA-enabled app, those same answers will work for other MFA apps too when the same device is used to log into those apps deployed in the Arcana ecosystem.
