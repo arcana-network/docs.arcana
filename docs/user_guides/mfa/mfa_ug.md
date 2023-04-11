@@ -25,7 +25,7 @@ Click **Proceed** to the next step of the MFA setup. The user must provide answe
 
 As a user, make sure that the responses to the security questions are saved locally so that they are not forgotten when it comes time to recover access to the wallet. 
 
-## Backup PIN
+## Recovery PIN
 
 The last step of MFA setup requires the user to provide a 6-digit alphanumeric PIN that is used to encrypt the backup of one of the MFA constituents and store it in the Arcana ecosystem. 
 
