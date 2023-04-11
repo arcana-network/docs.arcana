@@ -80,6 +80,7 @@ nav:
         - Export Private Key: howto/wallet_exkey.md
         - Manage Tokens: howto/wallet_manage_tokens.md
         - Manage NFTs: howto/wallet_manage_nft.md
+      - MFA Setup User Guide: user_guides/mfa/mfa_ug.md
   - Arcana Academy:
       - an_academy/index.md
       - About Arcana Auth:
@@ -122,6 +123,7 @@ nav:
           - What is DKG?: concepts/dkg.md
           - How does DKG work?: concepts/how_dkg_works.md
         - Gateway: concepts/gateway_nodes.md
+        - MFA: concepts/mfa.md
         - Plug and Play Auth: concepts/plugnplayauth.md
         - Private Key: concepts/privatekey.md
         - Shared Key Space: concepts/sharedkeys.md

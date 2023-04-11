@@ -1,3 +1,5 @@
+mfa
+idmfa
 .dmg
 .json
 .md-button
