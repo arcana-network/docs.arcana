@@ -38,7 +38,7 @@ The MFA setup is complete and user's account is enabled for MFA use.
 
 If the user chose to not enable MFA at the first login into the app, it can be enabled later. Note that once enabled, MFA cannot be disabled for a user account.
 
-To enable MFA, log into the app that is integrated with the {{config.extra.arcana.sdk_name}}. Access the {{config.extra.arcana.wallet_name}} and click on the **User Profile** tab to view the wallet screen. Choose **Setup Now** and then click **Proceed** to set up security questions, answers and specify the required PIN to encrypt the backup share of MFA as described in the previous section.
+To enable MFA, log into the app that is integrated with the {{config.extra.arcana.sdk_name}}. Access the {{config.extra.arcana.wallet_name}} and click on the **User Profile** tab to view the wallet screen. Choose **Setup Now** and then click **Proceed** to set up security questions, answers and specify the recovery PIN as described in the previous section.
 
 <img src="/img/an_mfa_enable_later_tab.gif" alt="Enable later" class="an-screenshots-noeffects" width="35%"/>
 
