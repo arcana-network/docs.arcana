@@ -47,7 +47,7 @@ Web3 app developers have no control over enabling or disabling MFA for an app th
 
 ### No MFA
 
-* A user logs into the app integrated with the Auth SDK for the first time. The user chooses to not use MFA. In this case, the user is **never** prompted on subsequent logins to set up MFA.  However, the user can choose at a later point in time to enable MFA. The user can log into the app, access the Arcana wallet and then enable MFA using the **User Profile** tab.
+* A user logs into the app integrated with the Auth SDK for the first time. The user chooses to not use MFA. In this case, the user is **never** prompted to set up MFA on subsequent logins into the same browser on that device.  However, the user can choose at a later point in time to enable MFA. The user can log into the app, access the Arcana wallet and then enable MFA using the **User Profile** tab.
 
 ### With MFA
 
