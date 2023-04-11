@@ -23,7 +23,7 @@ Click **Proceed** to the next step of the MFA setup. The user must provide answe
 
 <img src="/img/an_mfa_setup_qa.png" alt="MFA qa setup" class="an-screenshots-noeffects" width="55%"/>
 
-Make sure you save the responses to the security questions.
+As a user, make sure that the responses to the security questions are saved locally so that they are not forgotten when it comes time to recover access to the wallet. 
 
 ## Backup PIN
 
