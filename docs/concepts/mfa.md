@@ -9,7 +9,7 @@ arcana:
 
 # Multi-Factor Authentication (MFA)
 
-Multi-factor authentication requires an app user to provide two or more verification factors to prove their identity. It is a more secure method of identity management and recovery. If a user loses the local verification component of the identity that is encrypted and stored securely in the browser in the app's context then it can be recovered. To recover the encrypted stored share in the Arcana ecosystem, the user must answer a minimum of three security questions correctly or they must provide the secret and decrypt the stored component in the Arcana ecosystem.
+Multi-factor authentication requires an app user to pass one more level of verification when accessing their wallet from a new browser or device. It is a more secure method of identity management and recovery. This is done partly by storing a local share of the private key on the user's machine and if that share is lost then they will have to either answer security questions (any 3 of the 5 questions) or enter their recovery pin to access their wallet.
 
 In the context of the Arcana Auth SDK, MFA makes user verification more robust and secure. With MFA, access to the user's identity or keys is no longer solely dependent upon the state-of-the-art asynchronous distributed key generation ([ADKG]({{page.meta.arcana.root_rel_path}}/concepts/dkg/index.md)) subsystem. The user's keys are generated at the client end using ADKG key shares and other factors including answers to security questions and random encrypted key shares.
 
