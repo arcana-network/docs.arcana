@@ -60,4 +60,4 @@ Web3 app developers have no control over enabling or disabling MFA for an app th
   
     Based on the user's recovery choice, either the user's answers or the PIN will be used to verify the user's identity.
 
-* The recovery of the local MFA factor is per device. Once an app user answers the MFA security question for an MFA-enabled app, those same answers will work for other MFA apps too when the same device is used to log into those apps deployed in the Arcana ecosystem.
+* The recovery of the local MFA factor is per device. Meaning, once an app user answers the MFA security question for an MFA-enabled app they will not be prompted to answer the questions again for any other app on the same device as long as they are logging into the same wallet.
