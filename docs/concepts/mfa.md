@@ -28,7 +28,7 @@ At the very first login, the user is prompted to set up MFA. The first step is t
 
 ### Recovery Pin
 
-The final step in the MFA setup requires the user to provide an alphanumeric PIN of at least 6 digits. This pin is used to encrypt and store one of the multiple factors used by MFA to verify the user's identity. This is the backup component that is encrypted and stored in the Arcana ecosystem and utilized in case the user changes the device or the local encrypted component is lost/erased from the browser's cache.
+The final step in the MFA setup requires the user to provide an alphanumeric PIN of at least 6 digits. This pin is used to encrypt and store one of the multiple factors used by MFA to verify the user's identity. This is the backup component that is encrypted and stored on the Arcana Network and utilized in case the user changes the device or the local encrypted component is lost/erased from the browser's cache.
 
 ## MFA Configuration Options
 
