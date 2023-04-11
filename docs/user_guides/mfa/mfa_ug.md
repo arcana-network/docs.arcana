@@ -27,7 +27,7 @@ As a user, make sure that the responses to the security questions are saved loca
 
 ## Recovery PIN
 
-The last step of MFA setup requires the user to provide a 6-digit alphanumeric PIN that is used to encrypt the backup of one of the MFA constituents and store it in the Arcana ecosystem. 
+The last step of MFA setup requires the user to provide a 6-digit alphanumeric PIN that is an additional recovery method for the user. 
 
 <img src="/img/an_mfa_pin.png" alt="MFA PIN" class="an-screenshots-noeffects" width="60%"/>
 
