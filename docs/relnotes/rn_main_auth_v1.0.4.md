@@ -21,18 +21,19 @@ arcana:
 
 ### Billing & Invoices
 
-Arcana Auth SDK now supports billing and invoice for Arcana Mainnet usage. See [Billing & Invoices]() for details. Also, checkout out the Arcana Dashboard Guide to learn how developers can access and update their account billing information, and check pending invoices and billing history.
+{{config.extra.arcana.sdk_name}} now supports [billing and invoicing feature]({{page.meta.arcana.root_rel_path}}/concepts/billing.md) for Arcana Mainnet usage. Developers can use {{config.extra.arcana.dashboard_name}} to enter billing information and payment methods and to see any pending invoices or past payment details.
 
 ### Multi-Factor Authentication (MFA)
 
-Arcana Auth SDK provides more robust user authentication through multi-factor authentication. Web3 app users can choose to enable MFA when logging in. Once enabled, it cannot be turned off. Developers can choose to make MFA optional for their apps or make it mandatory for user sign-in. See [Arcana MFA]() for details on how MFA works in apps that integrate with the Arcana Auth SDK.
+The latest {{config.extra.arcana.sdk_name}} provides enhanced wallet security for more robust user authentication through multi-factor authentication. Web3 app users can choose to enable it when they log into an app. Once enabled, it cannot be turned off. For details, see [how Arcana MFA]({{page.meta.arcana.root_rel_path}}/concepts/mfa.md) works in apps that integrate with the {{config.extra.arcana.sdk_name}}.
 
-For details, see how to enable MFA in web3 apps. App users can refer to the MFA user's guide to learn more about how to set up MFA.
+App users can set up MFA individually for their app accounts and enable enhanced wallet security. See the [MFA user's guide]({{page.meta.arcana.root_rel_path}}/user_guides/mfa/mfa_ug.md) for details.
 
 ## Enhancements
 
 ### Better Login Performance
-TBD
+
+Users can now log in to Web3 apps even quicker than before with the latest speed boost in the {{config.extra.arcana.sdk_name}}. 
 
 ## Bug Fixes
 
@@ -60,4 +61,4 @@ Are you using an older version of the Arcana Auth SDK? Refer to the [Migration G
 
 ## Questions? 
 
-Refer to [FAQ]({{page.meta.arcana.root_rel_path}}/faq/faq_gen.md), [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support.md).
+Refer to [FAQ]({{page.meta.arcana.root_rel_path}}/faq/faq_gen.md), [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources, or contact [Arcana]({{page.meta.arcana.root_rel_path}}/support.md) Support]({{page.meta.arcana.root_rel_path}}/support.md).

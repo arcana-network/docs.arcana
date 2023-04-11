@@ -15,11 +15,15 @@ When you migrate from using the Arcana Auth SDK v1.0.3 to the latest v{% include
 
 ## What has Changed?
 
-There are no usage changes.
+There are no usage changes. 
 
-## How to Migrate to v1.0.3?
+## How to Migrate to v1.0.4?
 
 Simply upgrade the Auth SDK and re-run your Web3 app.
+
+!!! note "Using older releases?"
+
+      If you are using an older version than v1.0.3, please refer to the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and follow the instructions to upgrade to the latest release.
 
 ## What's New?
 
