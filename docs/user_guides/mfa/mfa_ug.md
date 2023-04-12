@@ -17,7 +17,7 @@ See [how MFA works]({{page.meta.arcana.root_rel_path}}/concepts/mfa.md) for more
 
 Log in to an app that is integrated with the {{config.extra.arcana.sdk_name}} using one of the available authentication providers. At the very first login user is prompted to set up enhanced wallet security by configuring two-factor authentication:
 
-<img src="/img/an_mfa_setup_firstlogin.png" alt="MFA first login setup prompt" class="an-screenshots-noeffects" width="45%"/>
+<img src="/img/an_mfa_setup_firstlogin.gif" alt="MFA first login setup prompt" class="an-screenshots-noeffects" width="25%"/>
 
 Click **Proceed** to set up MFA.
 
@@ -27,18 +27,18 @@ User must provide answers to five security questions and create a recovery PIN.
 
 You can use the security questions already listed in the drop-down list or create custom questions by clicking in the question field and editing them.
 
-<img src="/img/an_mfa_setup_qa.png" alt="MFA qa setup" class="an-screenshots-noeffects" width="55%"/>
+<img src="/img/an_mfa_setup_qa.png" alt="MFA qa setup" class="an-screenshots-noeffects" width="30%"/>
 
 ### Recovery PIN 
 
 The MFA setup also requires the user to provide a 6-digit alphanumeric PIN which is an additional recovery method for the user. 
 
-<img src="/img/an_mfa_pin.png" alt="MFA PIN" class="an-screenshots-noeffects" width="60%"/>
+<img src="/img/an_mfa_pin.png" alt="MFA PIN" class="an-screenshots-noeffects" width="30%"/>
 
 That is all! 
 After saving the PIN, MFA Setup is complete, and enhanced wallet security is enabled.
 
-<img src="/img/an_mfa_complete.png" alt="MFA PIN" class="an-screenshots-noeffects" width="60%"/>
+<img src="/img/an_mfa_complete.png" alt="MFA PIN" class="an-screenshots-noeffects" width="30%"/>
 
 !!! note 
 
@@ -50,7 +50,7 @@ If the user chose to not enable MFA at the first login into the app, it can be e
 
 To enable MFA, log into the app that is integrated with the {{config.extra.arcana.sdk_name}}. Access the {{config.extra.arcana.wallet_name}} and click on the **User Profile** tab to view the wallet screen. Choose **Setup Now** and then click **Proceed** to set up security questions, and answers and specify the recovery PIN as described in the previous section.
 
-<img src="/img/an_mfa_enable_later_tab.png" alt="Enable later" class="an-screenshots-noeffects" width="25%"/>
+<img src="/img/an_mfa_enable_later_tab.png" alt="Enable later" class="an-screenshots-noeffects" width="20%"/>
 
 ## MFA Recovery
 
@@ -59,7 +59,7 @@ If the user logs into an app using a different device or a different browser, th
 * Enter the MFA recovery PIN stored during the MFA setup earlier
 * Answer three security questions correctly
 
-<img src="/img/an_mfa_recover_options.png" alt="Recovery Options" class="an-screenshots-noeffects" width="55%"/>
+<img src="/img/an_mfa_recover_options.png" alt="Recovery Options" class="an-screenshots-noeffects" width="35%"/>
 
 Once the user provides one of these options, the local MFA factor is regenerated and the user will not be asked for it again on the same device or the browser app unless local storage is cleared for some reason.
 
