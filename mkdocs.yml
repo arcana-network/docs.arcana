@@ -125,6 +125,7 @@ nav:
   - Reference:
       - reference/index.md
       - State of the Arcana Auth: state-of-the-arcana-auth.md
+      - Coming Soon: arcana-coming-soon.md
       - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
       - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
