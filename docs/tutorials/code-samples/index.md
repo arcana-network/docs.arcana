@@ -1,6 +1,7 @@
 ---
 alias: index-code-samples
-title: 'List of code samples to help Web3 app developers to get started and integrate apps with the Arcana Auth SDK.'
+title: 'Code Samples'
+description: 'List of code samples to help Web3 app developers to get started and integrate apps with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ../..
 ---

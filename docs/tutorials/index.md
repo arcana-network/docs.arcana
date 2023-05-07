@@ -1,6 +1,6 @@
 ---
 alias: index-tutorials
-title: 'List of tutorials for Arcana Auth'
+title: 'Tutorials'
 description: 'Code Samples and Video tutorials to get developers started quickly with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..

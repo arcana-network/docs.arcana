@@ -20,7 +20,8 @@ The MFA feature is enabled by default for all apps that integrate with the {{con
 
 The figure below shows a high-level overview of how {{config.extra.arcana.company_name}} MFA works as part of the user login process.
 
-![Concept no MFA](/img/concept_mfa.png){.an-screenshots}
+![Concept MFA](/img/concept_mfa_light.png#only-light){.an-screenshots}
+![Concept MFA](/img/concept_mfa_dark.png#only-dark){.an-screenshots}
 
 ### Security Questions
 

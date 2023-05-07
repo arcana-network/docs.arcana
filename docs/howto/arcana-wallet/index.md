@@ -1,6 +1,6 @@
 ---
 alias: index-arcana-wallet
-title: 'Enable Arcana Wallet Web3 Operations'
+title: 'Enable Arcana Wallet'
 description: 'How to call the Arcana wallet and Web3 wallet operations in an app integrated with the Arcana Auth SDK for performing wallet operations programmatically.'
 arcana:
   root_rel_path: ../..
