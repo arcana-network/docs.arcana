@@ -35,27 +35,23 @@ Use the **NFT Assets** tab of the {{config.extra.arcana.wallet_name}} to manage 
 
 In the **NFT Assets** tab, refer to the  **Assets** section to view a list of NFT thumbnails for each NFT that is associated with the wallet address.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_assets.png" width="20%"/><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_asset_thumbnail.gif" width="20%"/><br></br><br></br>
 
 ## View NFT Details
 
-In the **NFT Assets** tab, click on the thumbnail of the NFT.  
+In the **NFT Assets** tab, click on the thumbnail of the NFT.  This will bring up the wallet screen showing NFT details such as the owner's address, who created the NFT, description, attributes, and other public metadata of the selected NFT.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_asset_thumbnail.png" width="20%"/><br></br><br></br>
-
-This will bring up the wallet screen showing NFT details such as the owner's address, who created the NFT, description, attributes, and other public metadata of the selected NFT.
-
-<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_details.png" width="20%"/><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_details.gif" width="20%"/><br></br><br></br>
 
 ## Send NFTs
 
 Click **Send** on the **NFT Assets** tab to bring up the **Send NFT** wallet screen where you can specify the receiver's address and the gas fee details.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_send_inputs.png" width="20%"/><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_send_inputs.gif" width="20%"/><br></br><br></br>
 
 Click **Proceed** to preview the NFT send transaction. Use the **Send** button to confirm the transaction or the **Back** button to return to the transaction details screen.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_send_confirm.png" width="20%"/><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_send_confirm.gif" width="20%"/><br></br><br></br>
 
 Once a send transaction is confirmed, it shows up as pending in the NFT Assets Activity tab. After the transaction is processed, it shows as confirmed (completed) in the activity tab.
 
@@ -73,9 +69,9 @@ To share an NFT, you need to first select the NFT.  You can select the NFT by cl
 
 ## Receive NFTs
 
-To receive NFTs, refer to the **NFT Assets** tab and click **Receive**. This will open up a wallet screen displaying the wallet address and the QR code. You can copy the wallet account address or the QR code for the wallet account and share it with the NFT sender to receive an NFT.
+To receive NFTs, refer to the **Token Assets** tab and click **Receive**. This will open up a wallet screen displaying the wallet address and the QR code. You can copy the wallet account address or the QR code for the wallet account and share it with the NFT sender to receive an NFT.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_receive.png" width="40%"/><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_receive.gif" width="20%"/><br></br><br></br>
 
 ## Manage NFT collections
 
