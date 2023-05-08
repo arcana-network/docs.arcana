@@ -30,11 +30,13 @@ The latest release of the {{config.extra.arcana.product_name}} product consists 
 
 ### Automatically Fetch NFTs
 
-Earlier, {{config.extra.arcana.wallet_name}} did not automatically fetch all the NFTs belonging to a user account. The user was required to manually add the NFT information (the contract address, token ID) to display the NFT assets in the Arcana wallet.  In this release, the {{config.extra.arcana.wallet_name}} automatically fetches all the NFTs belonging to an account that are minted using the supported blockchains:
+Earlier, {{config.extra.arcana.wallet_name}} did not automatically fetch the NFTs belonging to a user account. The user was required to manually add the NFT information (the contract address, token ID) to display the NFT assets in the Arcana wallet.  In this release, the {{config.extra.arcana.wallet_name}} automatically fetches the NFTs belonging to the wallet address.
 
-{% include "./text-snippets/supported_nft_autofetch_chains.md" %}
+!!! note "Auto-fetching NFTs"
 
-For the NFTs minted on the non-supported blockchains, the {{config.extra.arcana.wallet_name}} user can manually add them. See the [[use-wallet-to-manage-nfts#manage-nft-collections|{{config.extra.arcana.wallet_name}} User's Guide]] for details.
+      This feature works only for the NFTs that are minted using the supported blockchains. {% include "./text-snippets/supported_nft_autofetch_chains.md" %}
+      
+      For the NFTs minted on the non-supported blockchains, the {{config.extra.arcana.wallet_name}} user can manually add them. See the [[use-wallet-to-manage-nfts#manage-nft-collections|{{config.extra.arcana.wallet_name}} User's Guide]] for details.
 
 ## Product Enhancements
 
