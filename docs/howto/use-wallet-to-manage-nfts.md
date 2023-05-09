@@ -22,7 +22,7 @@ The {{config.extra.arcana.wallet_name}} allows users to view, transact and manag
 
 * List NFT assets associated with the wallet address
 * View NFT details
-* Send, and share NFTs
+* Transfer NFTs
 * Monitor NFT transaction activity
 * Manage NFT collections
   - Add a new collection
@@ -65,11 +65,16 @@ Users can click on the downward arrow to see details of the NFT transaction.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_activity_details.png" width="20%"/><br></br><br></br>
 
+<!--
+
+Note: The sharing of NFTs was in the Figma design but not implemented in the wallet UI. Hence commenting out on May9th 2023 as suggested by Anirudh.
+
 ## Share NFTs
 
 To share an NFT, you need to first select the NFT.  You can select the NFT by clicking on the thumbnail in the **NFT Assets** tab of the {{config.extra.arcana.wallet_name}}. This will bring up the **NFT Details** screen. Click **Share** as highlighted in the wallet screen below to share the NFT.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_share.png" width="20%"/><br></br><br></br>
+-->
 
 ## Receive NFTs
 
@@ -115,10 +120,7 @@ Click on the pen to bring up the collection details screen. You can edit or dele
 
 Click the <img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/> tab on the bottom right of the {{config.extra.arcana.wallet_name}} screen to see wallet transaction activity and notifications.
 
-The wallet notification screen displays a list of different blockchain transaction activities that were initiated by the app or the user. You can see the following NFT transactions for the current app user login session: 
-
-- NFT Send transactions
-- NFT Share transactions
+The wallet notification screen displays a list of different blockchain transaction activities that were initiated by the app or the user. You can see the NFT transfer transactions carried out by the app user for the current login session as shown in the figure below: 
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notify.png" width="20%"/><br></br><br></br>
 
