@@ -26,9 +26,11 @@ These are the building blocks to help you learn about various {{config.extra.arc
 
 [[concept-dkg|DKG :material-key-plus:]]{ .md-button }
 
-[[concept-mfa|MFA :material-two-factor-authentication:]]{ .md-button }
-
 [[concept-gateway-node|Gateway :fontawesome-solid-torii-gate:]]{ .md-button }
+
+[[concept-manage-chains|Manage Chains :material-list-box:]]{ .md-button}
+
+[[concept-mfa|MFA :material-two-factor-authentication:]]{ .md-button }
 
 [[concept-plug-and-play-auth|Plug-and-Play Auth :material-lock: :fontawesome-solid-plug:]]{ .md-button }
 
