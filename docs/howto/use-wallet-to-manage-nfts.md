@@ -46,7 +46,11 @@ In the **NFT Assets** tab, select and click the NFT thumbnail to view its detail
 
 You can transfer NFTs to a different wallet address. There are two ways to do this.  You can click **Send** on the **NFT Assets** tab to initiate the 'Send NFT' workflow to bring up the **Send NFT** wallet screen. Select the NFT, specify the receiver's address and the gas fee details and then click **Proceed**.
 
+<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_send_opt1.gif" width="20%"/><br></br><br></br>
+
 Alternatively, instead of clicking the **Send** on the **NFT Assets** tab you can first click on the NFT thumbnail in the **NFT Assets** tab. This will bring up the NFT details screen. Click the :fontawesome-solid-paper-plane: icon below the NFT image to initiate the 'Send NFT' workflow. Specify the receiver's address, the gas fee details and then click **Proceed**.
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_send_opt2.gif" width="20%"/><br></br><br></br>
 
 Once you click on **Proceed**, you can preview the NFT send transaction before submitting it. Use the **Send** button in the transaction preview screen to confirm or choose the **Back** button to return to the transaction details screen to re-review or modify it.
 
@@ -111,18 +115,23 @@ The wallet notification screen displays a list of different blockchain transacti
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notify.png" width="20%"/><br></br><br></br>
 
-Once a send transaction is confirmed, it shows up as pending in the NFT Assets Activity tab. After the transaction is processed, it shows as confirmed (completed) in the activity tab.
+Once a send NFT transaction is confirmed, it is processed. On completion, it will show up as 'success' in the **Notifiation Tab**.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_activity.png" width="20%"/><br></br><br></br>
 
 In the **Notifications Tab**, you can select a transaction and click the downward arrow :fontawesome-solid-caret-down: to view its details.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notification_details_send_nft.png" width="20%"/><br></br><br></br>
+
+<!--
+
 ### Filter Activity
 
 You can view all activities in the list or filter them based on whether the blockchain transactions were initiated by the user or the app. Click on the filter icon and choose the desired option.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notify_filter_nav_options.png" width="40%"/><br></br><br></br>
+
+-->
 
 **That is all!**  :material-party-popper:
 
