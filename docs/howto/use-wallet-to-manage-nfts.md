@@ -8,7 +8,7 @@ arcana:
 
 # Manage NFT Assets
 
-In this guide, Web3 app users can learn how to manage NFT assets through the {{config.extra.arcana.wallet_name}} UI.
+In this guide, Web3 app users can learn how to use the {{config.extra.arcana.wallet_name}} UI and manage NFT assets.
 
 ## Prerequisites
 
@@ -18,22 +18,17 @@ In this guide, Web3 app users can learn how to manage NFT assets through the {{c
 
 ## NFT Operations
 
-The {{config.extra.arcana.wallet_name}} allows users to view, transact and manage both types of NFT assets: image and video type. The following NFT operations are supported:
+The {{config.extra.arcana.wallet_name}} allows users to view, transact and manage both types of NFT assets: image and video type. 
 
-* List NFT assets associated with the wallet address
-* View NFT details
-* Transfer NFTs
-* Monitor NFT transaction activity
-* Manage NFT collections
-  - Add a new collection
-  - Edit a collection
-  - Delete collection
+The following NFT operations are supported:
 
-Use the **NFT Assets** tab of the {{config.extra.arcana.wallet_name}} to manage NFTs. To view the **NFT Assets** tab screen, click the <img src="/img/icons/an_wallet_nft_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_nft_icon_dark.png#only-dark" width="20"/> tab at the bottom of the {{config.extra.arcana.wallet_name}} screen.
+{% include "./text-snippets/nft_ops.md" %}
 
 ## List NFTs
 
-In the **NFT Assets** tab, refer to the  **Assets** section to view a list of NFT thumbnails for each NFT that is associated with the wallet address.
+To view the **NFT Assets** associated with the wallet address, click the <img src="/img/icons/an_wallet_nft_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_nft_icon_dark.png#only-dark" width="20"/> tab at the bottom of the {{config.extra.arcana.wallet_name}}.
+
+Scroll down the **NFT Assets** tab. The **Assets** section displays a list of NFT thumbnails for each NFT that is associated with the wallet address.
       
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_asset_thumbnail.gif" width="20%"/><br></br><br></br>
 
@@ -43,27 +38,19 @@ In the **NFT Assets** tab, refer to the  **Assets** section to view a list of NF
 
 ## View NFT Details
 
-In the **NFT Assets** tab, click on the thumbnail of the NFT.  This will bring up the wallet screen showing NFT details such as the owner's address, who created the NFT, description, attributes, and other public metadata of the selected NFT.
+In the **NFT Assets** tab, select and click the NFT thumbnail to view its details.  This will bring up the wallet screen showing NFT metadata such as the description and attributes of the selected NFT.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_details.gif" width="20%"/><br></br><br></br>
 
 ## Send NFTs
 
-Click **Send** on the **NFT Assets** tab to bring up the **Send NFT** wallet screen where you can specify the receiver's address and the gas fee details.
+You can transfer NFTs to a different wallet address. There are two ways to do this.  You can click **Send** on the **NFT Assets** tab to initiate the 'Send NFT' workflow to bring up the **Send NFT** wallet screen. Select the NFT, specify the receiver's address and the gas fee details and then click **Proceed**.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_send_inputs.gif" width="20%"/><br></br><br></br>
+Alternatively, instead of clicking the **Send** on the **NFT Assets** tab you can first click on the NFT thumbnail in the **NFT Assets** tab. This will bring up the NFT details screen. Click the :fontawesome-solid-paper-plane: icon below the NFT image to initiate the 'Send NFT' workflow. Specify the receiver's address, the gas fee details and then click **Proceed**.
 
-Click **Proceed** to preview the NFT send transaction. Use the **Send** button to confirm the transaction or the **Back** button to return to the transaction details screen.
+Once you click on **Proceed**, you can preview the NFT send transaction before submitting it. Use the **Send** button in the transaction preview screen to confirm or choose the **Back** button to return to the transaction details screen to re-review or modify it.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_send_confirm.gif" width="20%"/><br></br><br></br>
-
-Once a send transaction is confirmed, it shows up as pending in the NFT Assets Activity tab. After the transaction is processed, it shows as confirmed (completed) in the activity tab.
-
-<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_activity.png" width="20%"/><br></br><br></br>
-
-Users can click on the downward arrow to see details of the NFT transaction.
-
-<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_activity_details.png" width="20%"/><br></br><br></br>
 
 <!--
 
@@ -78,7 +65,7 @@ To share an NFT, you need to first select the NFT.  You can select the NFT by cl
 
 ## Receive NFTs
 
-To receive NFTs, refer to the **Token Assets** tab and click **Receive**. This will open up a wallet screen displaying the wallet address and the QR code. You can copy the wallet account address or the QR code for the wallet account and share it with the NFT sender to receive an NFT.
+In the **Token Assets** tab click **Receive**. This will bring up the wallet screen displaying the wallet address and the QR code. You can copy the wallet account address or the QR code for the wallet account and share it with the NFT sender to receive an NFT.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_receive.gif" width="20%"/><br></br><br></br>
 
@@ -116,23 +103,29 @@ Click on the pen to bring up the collection details screen. You can edit or dele
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_collection_modify.png" width="20%"/><br></br><br></br>
 
-## Monitor NFT Activity
+## Monitor NFT Send Transaction
 
 Click the <img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/> tab on the bottom right of the {{config.extra.arcana.wallet_name}} screen to see wallet transaction activity and notifications.
 
-The wallet notification screen displays a list of different blockchain transaction activities that were initiated by the app or the user. You can see the NFT transfer transactions carried out by the app user for the current login session as shown in the figure below: 
+The wallet notification screen displays a list of different blockchain transaction activities that were initiated by the app or the user. You can see the NFT 'Send' transactions carried out by the wallet address. Only the activity for the current user login session is displayed: 
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notify.png" width="20%"/><br></br><br></br>
+
+Once a send transaction is confirmed, it shows up as pending in the NFT Assets Activity tab. After the transaction is processed, it shows as confirmed (completed) in the activity tab.
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_activity.png" width="20%"/><br></br><br></br>
+
+In the **Notifications Tab**, you can select a transaction and click the downward arrow :fontawesome-solid-caret-down: to view its details.
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notification_details_send_nft.png" width="20%"/><br></br><br></br>
+### Filter Activity
 
 You can view all activities in the list or filter them based on whether the blockchain transactions were initiated by the user or the app. Click on the filter icon and choose the desired option.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notify_filter_nav_options.png" width="40%"/><br></br><br></br>
 
-To see the details of a transaction, click on the arrow next to the transaction type in the list to expand the view.
-
-<img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notification_details_send_nft.png" width="20%"/><br></br><br></br>
-
 **That is all!**  :material-party-popper:
+
 *You are all set to manage your NFTs using the {{config.extra.arcana.wallet_name}}.*
 
 ## What's Next?

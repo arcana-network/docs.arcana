@@ -44,7 +44,7 @@ The {{config.extra.arcana.wallet_name}} UI allows an authenticated user to perfo
 * Manage NFTs
   - List NFT assets
   - View NFT details
-  - Send, share NFTs (ERC-721, ERC-1155)
+  - Send NFTs (ERC-721, ERC-1155)
   - Add NFT collections
   - Modify (edit, delete) NFT collections
 * View user profile details
@@ -163,21 +163,22 @@ For more details, see [[use-wallet-ui-to-manage-tokens|how to view, select, send
 
 ### Manage NFT Assets
 
-Click the <img src="/img/icons/an_wallet_nft_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_nft_icon_dark.png#only-dark" width="20"/> tab on the bottom of the {{config.extra.arcana.wallet_name}} to bring up the NFT assets screen. It allows the user to perform the following operations:
+Click the <img src="/img/icons/an_wallet_nft_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_nft_icon_dark.png#only-dark" width="20"/> tab on the bottom of the {{config.extra.arcana.wallet_name}} to bring up the NFT assets screen and manage NFTs associated with the wallet address. The following NFT operations can be performed by the authenticated Web3 app user through the  NFT Assets tab:
+
+**General Wallet Operations**
 
 * View, and copy the {{config.extra.arcana.wallet_name}} address
 * View wallet address details on the 'Block Explorer' associated with the selected network
 * Refresh the wallet screen
 * Add/Select network
-* View NFT assets associated with the wallet address
-* View NFT details
-* Send, and share NFTs
-* View NFT transaction activity
-* Manage NFT collections
+
+**NFT Operations**
+
+{% include "./text-snippets/nft_ops.md" %}
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_asset_thumbnail.gif" width="20%"/>
 
-For details, see [[use-wallet-to-manage-nfts|how to send, share, and manage NFTs using the {{config.extra.arcana.wallet_name}}]] UI.
+For details, see [[use-wallet-to-manage-nfts|how Web3 app users can send NFTs, manage NFT collections and monitor NFT transactions through the {{config.extra.arcana.wallet_name}}]].
 
 ### View User Profile Details
 
