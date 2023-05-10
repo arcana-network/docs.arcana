@@ -45,8 +45,8 @@ The {{config.extra.arcana.wallet_name}} UI allows an authenticated user to perfo
   - List NFT assets
   - View NFT details
   - Send NFTs (ERC-721, ERC-1155)
-  - Add NFT collections
-  - Modify (edit, delete) NFT collections
+  - Add NFTs
+  - Modify (edit, delete) NFTs
 * View user profile details
 * Monitor blockchain transaction-related notifications
 * Export private key
@@ -178,7 +178,7 @@ Click the <img src="/img/icons/an_wallet_nft_icon_light.png#only-light" width="2
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_asset_thumbnail.gif" width="20%"/>
 
-For details, see [[use-wallet-to-manage-nfts|how Web3 app users can send NFTs, manage NFT collections and monitor NFT transactions through the {{config.extra.arcana.wallet_name}}]].
+For details, see [[use-wallet-to-manage-nfts|how Web3 app users can send NFTs, manage NFTs and monitor NFT transactions through the {{config.extra.arcana.wallet_name}}]].
 
 ### View User Profile Details
 

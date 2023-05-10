@@ -36,7 +36,7 @@ Earlier, {{config.extra.arcana.wallet_name}} did not automatically fetch the NFT
 
       This feature works only for the NFTs that are minted using the supported blockchains. {% include "./text-snippets/supported_nft_autofetch_chains.md" %}
       
-      For the NFTs minted on the non-supported blockchains, the {{config.extra.arcana.wallet_name}} user can manually add them. See the [[use-wallet-to-manage-nfts#manage-nft-collections|{{config.extra.arcana.wallet_name}} User's Guide]] for details.
+      For the NFTs minted on the non-supported blockchains, the {{config.extra.arcana.wallet_name}} user can manually add them. See the [[use-wallet-to-manage-nfts#manage-nfts|{{config.extra.arcana.wallet_name}} User's Guide]] for details.
 
 ## Product Enhancements
 

@@ -2,8 +2,8 @@
 * View NFT details
 * Send NFT
 * Receive NFT
-* Manage NFT collections
+* Manage NFTs
 
-    * Add a new collection
-    * Edit a collection
-    * Delete collection
+    * Add an NFT
+    * Edit NFT entry
+    * Delete NFT entry

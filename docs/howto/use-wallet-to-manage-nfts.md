@@ -1,7 +1,7 @@
 ---
 alias: use-wallet-to-manage-nfts
 title: 'Manage NFTs'
-description: 'Web3 app users can view NFT details, send and share NFTs, monitor NFT transaction activity done via the Arcana wallet and create NFT collections.'
+description: 'Web3 app users can view NFT details, send NFTs, monitor NFT transaction activity done via the Arcana wallet and manually add NFTs for chains that are not supported via Ankr.'
 arcana:
   root_rel_path: ..
 ---
@@ -73,37 +73,35 @@ In the **Token Assets** tab click **Receive**. This will bring up the wallet scr
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_receive.gif" width="20%"/><br></br><br></br>
 
-## Manage NFT collections
+## Manage NFTs
 
-Use the **NFT Assets** tab wallet screen and click **Manage**.
+The {{config.extra.arcana.wallet_name}} automatically fetches the NFTs associated with the wallet address for the chains that are supported by Ankr.  For non-supported chains, users can manually add the NFTs in the wallet through the **Manage NFT** feature.
+
+To manually add the NFT, use the **NFT Assets** tab wallet screen and click **Manage**.
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_manage_nav.gif" width="20%"/><br></br><br></br>
+
+This will bring up the **Manage NFTs** wallet screen. 
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_manage.png" width="20%"/><br></br><br></br>
 
-This will bring up the **Manage Collections** wallet screen. 
+You can add a new NFT manually and edit, update the NFT contract address details. The collection name for the NFT will be populated automatically if the user owns the NFT. User can also delete the NFT that is manually added or edit the contract address.  Note deleting the NFT simply removes it from the wallet, it does not destroy it. A user can always add it back as long as the ownership resides with the user.
+
+### Add NFT Entry
+
+Click **New** in the **Manage NFTs** screen to add an NFT. Provide requisite inputs and click **Save**.
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_add_nft.gif" width="20%"/><br></br><br></br>
+
+The newly added NFT in displayed in the **Manage NFTs** screen.
+
+### Modify NFT Entry
+
+To edit or delete a manually added NFT, click the NFT in the **Manage NFTs** wallet screen and you will see a pen icon when an entry is selected.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_collections.png" width="20%"/><br></br><br></br>
 
-Using the **Manage Collection** wallet screen, you can add or modify an NFT collection linked to your wallet account.
-
-### Add a New Collection
-
-Click **New** in the **Manage Collections** screen to add a new collection. Provide requisite inputs in the **Add Collection** and click **Add** to save the new collection.
-
-<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_add_collection.png" width="20%"/><br></br><br></br>
-
-If you provide incorrect details such as the NFT contract address or the 'tokenID', the addition will fail with the following error:
-
-<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_add_collection_error.png" width="20%"/><br></br><br></br>
-
-After successful addition, you can see the newly added NFT collection in the **Manage Collections** screen.
-
-### Modify a Collection
-
-To edit or delete a collection, choose the collection in the **Manage Collections** wallet screen and you will see a pen icon when a collection is selected.
-
-<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_collections.png" width="20%"/><br></br><br></br>
-
-Click on the pen to bring up the collection details screen. You can edit or delete the collection and click **Save**.
+Click on the pen to bring up the NFT details screen. You can edit or delete the NFT and click **Save**.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_collection_modify.png" width="20%"/><br></br><br></br>
 

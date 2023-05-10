@@ -97,7 +97,7 @@ Here are some examples of {{config.extra.arcana.sdk_name}} usage:
 
      - Enable authenticated users [[sign-transaction|to sign blockchain transactions]] by setting the {{config.extra.arcana.wallet_name}} visibility parameter while instantiating the `AuthProvider`. 
      - Use pre-configured blockchains or [[add-switch-network|add other supported blockchain networks programmatically]] as per your app requirements. Refer to the list of [[state-of-the-arcana-auth#supported-blockchains|supported blockchain networks]].
-     - Allow authenticated app users to use the {{config.extra.arcana.wallet_name}} and check account balances, send or receive ERC-20, ERC-721, and ERC-1155 tokens, deploy smart contracts, interact with smart contracts, switch networks, manage NFT collections. See the [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]].  
+     - Allow authenticated app users to use the {{config.extra.arcana.wallet_name}} and check account balances, send or receive ERC-20, ERC-721, and ERC-1155 tokens, deploy smart contracts, interact with smart contracts, switch networks, manage NFTs. See the [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]].  
   
 ## Developer & User Guides
 
