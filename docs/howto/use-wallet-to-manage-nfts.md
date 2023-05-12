@@ -99,11 +99,11 @@ The newly added NFT in displayed in the **Manage NFTs** screen.
 
 To edit or delete a manually added NFT, click the NFT in the **Manage NFTs** wallet screen and you will see a pen icon when an entry is selected.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_collections.png" width="20%"/><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_entry.png" width="20%"/><br></br><br></br>
 
 Click on the pen to bring up the NFT details screen. You can edit or delete the NFT and click **Save**.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_collection_modify.png" width="20%"/><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_entry_modify.png" width="20%"/><br></br><br></br>
 
 ## Monitor NFT Send Transaction
 
