@@ -16,7 +16,9 @@ Once the app is integrated with the {{config.extra.arcana.sdk_name}}, developers
 
 The guides below describe how to configure the {{config.extra.arcana.wallet_name}} while integrating the app with the {{config.extra.arcana.sdk_name}} and then add code to call Web3 wallet operations in the context of the authenticated users.
 
-[[configure-wallet-visibility|Configure {{config.extra.arcana.wallet_name}} :material-tools:]]{ .md-button }
+[[configure-wallet-visibility|Configure {{config.extra.arcana.wallet_name}} Visibility :material-tools:]]{ .md-button }
+
+[[configure-wallet-chains|Manage {{config.extra.arcana.wallet_name}} Chains :material-tools:]]{ .md-button }
 
 [[index-web3-wallet-ops|Web3 Wallet Ops :material-wallet:]]{ .md-button }
 

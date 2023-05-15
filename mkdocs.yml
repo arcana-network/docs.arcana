@@ -55,6 +55,7 @@ nav:
       - Enable Arcana Wallet:
         - howto/arcana-wallet/index.md
         - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md
+        - Manage Chains: howto/arcana-wallet/config-wallet-chains.md
         - Web3 Wallet Ops:
           - howto/arcana-wallet/web3-ops/index.md
           - Add / Switch Network: howto/arcana-wallet/add-switch-ntwk.md
@@ -171,6 +172,7 @@ nav:
           - What is DKG?: concepts/dkg.md
           - How does DKG work?: concepts/how-dkg-works.md
         - Gateway: concepts/gateway-node.md
+        - Manage Chains: concepts/manage-chains.md
         - MFA: concepts/mfa.md
         - Plug and Play Auth: concepts/plug-and-play-auth.md
         - Private Key: concepts/private-key.md
