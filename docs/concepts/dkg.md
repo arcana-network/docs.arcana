@@ -8,8 +8,8 @@ arcana:
 
 # DKG
 
-The Distributed Key Generator (DKG) uses cryptographic techniques to allow multiple parties to collaborate in generating a shared public and private key set, without relying on any trusted third parties for key retrieval. This is a departure from traditional public key encryption systems.
+Distributed Key Generation (DKG) uses cryptographic techniques to allow multiple parties to collaborate in generating a shared public and private key set, without relying on any trusted third parties for key retrieval. This is a departure from traditional public key encryption systems.
 
-The {{config.extra.arcana.product_name}} protocol's distributed key generation subsystem efficiently and securely generates private keys for authenticated Web3 app users. This enables them to sign blockchain transactions using the embedded, non-custodial {{config.extra.arcana.wallet_name}}. These are ECDSA keys on the [secp256k1](https://www.secg.org/sec2-v2.pdf) curve and are compatible with all EVM-compatible chains. In a future release, {{config.extra.arcana.company_name}} will also support other curves and blockchain networks that are not EVM-compatible. The {{config.extra.arcana.sdk_name}} abstracts these keys for every authenticated user and provides a secure way to sign transactions on the blockchain.
+In the early alpha release, the {{config.extra.arcana.product_name}} protocol used Shamir's Secret Sharing (SSS) mechanism for generating distributed keys for authenticated Web3 app users. This enabled users to sign blockchain transactions using the embedded, non-custodial {{config.extra.arcana.wallet_name}}. However SSS algorithm has its limitations. In the early beta release, the {{config.extra.arcana.product_name}} used the verifiable secret sharing (VSS) techniques and [[concept-adkg|asynchronous distributed key generation (ADKG)]] to solve several of the limitations of the SSS mechanism. 
 
-See [[concept-how-dkg-works|how the {{config.extra.arcana.product_name}} DKG works]] for details. 
+Refer to the [[concept-how-adkg-works|latest ADKG implementation in Arcana Network]] for details. You can also find the older DKG implementation (deprecated), notes [[concept-how-dkg-works|here]]. 
