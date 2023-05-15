@@ -2,6 +2,7 @@ Click **Configure** in the LHS navigation of the app configuration screen in the
 
 * Branding
 * Social Auth 
+* Chain Management
 * Arcana Wallet
 * Keyspace (Available only after the 'Mainnet' profile is created)
 
@@ -30,6 +31,18 @@ Use the defaults or provide inputs for various settings as per your application 
     
     * **Redirect URI:** Displays the URL auto-generated for each registered app by {{config.extra.arcana.company_name}}. This is required to complete **OAuth** verification via the selected authentication providers.
     * **Social Auth:** Select and [[index-configure-auth|configure authentication providers]] for onboarding app users. <br></br><img class="an-screenshots" alt="Social OAuth" src="/img/an_db_configure_social.png"></img>
+
+=== "Chain Management"
+
+    Use the chain management section to specify the subset of chains from the list of supported blockchains that are configured for the {{config.extra.arcana.wallet_name}} out of the box. This specified subset will be displayed in the {{config.extra.arcana.wallet_name}} UI when a user logs into an app that is integrated with the {{config.extra.arcana.sdk_name}}. Developers can also specify which chain will be the default and show up in the wallet 'Network' dropdown list on the top.
+
+    <img src="/img/an_db_chain_mngt_options.png" alt="Chain Management Settings" class="an-screenshots"/>
+
+    **Add Chains:** Click **Add Chains** to add a new blockchain to the {{config.extra.arcana.wallet_name}}. Make sure it is one of the [[state-of-the-arcana-auth#supported-blockchains|supported blockchains]] for the {{config.extra.arcana.product_name}} product.
+
+    <img src="/img/an_db_chains_default.gif" alt="Set Default Chain" class="an-screenshots"/>
+
+    For details, see [[configure-wallet-chains|how to manage chains]].
 
 === "{{config.extra.arcana.wallet_name}}"
 
