@@ -85,7 +85,9 @@ This will bring up the **Manage NFTs** wallet screen.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_manage.png" width="20%"/><br></br><br></br>
 
-You can add a new NFT manually and edit, update the NFT contract address details. The collection name for the NFT will be populated automatically if the user owns the NFT. User can also delete the NFT that is manually added or edit the contract address.  Note deleting the NFT simply removes it from the wallet, it does not destroy it. A user can always add it back as long as the ownership resides with the user.
+You can add, edit and update the NFT details. Note that the collection name is automatically fetched and displayed once the correct collection address is entered in the NFT details screen. The NFT owner should have the same wallet address otherwise it cannot be manually added to the {{config.extra.arcana.wallet_name}}.
+
+The NFT owner can also delete an NFT that is manually added.  Deleting the NFT simply removes it from the wallet, it does not destroy it. A user can always add it back as long as the ownership resides with the user.
 
 ### Add NFT Entry
 
