@@ -1,4 +1,4 @@
-The following chains are supported for auto-fetching of NFTs:
+The {{config.extra.arcana.wallet_name}} supports auto-fetching of NFTs for the following chains:
 
     * Ethereum
     * Fantom
@@ -9,4 +9,4 @@ The following chains are supported for auto-fetching of NFTs:
     * Syscoin
     * Optimism
 
-    For the latest updated list, see [here](https://www.ankr.com/docs/rpc-service/chains/chains-list/).
+    For a full list of chains supported by Ankr APIs, see [here](https://www.ankr.com/docs/advanced-api/overview/#chains-supported).
