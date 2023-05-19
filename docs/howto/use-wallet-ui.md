@@ -252,7 +252,7 @@ In the minimized state, the wallet displays a red dot with a number indicating p
 
 If a blockchain transaction is triggered via the app that requires the user's approval, the user will see a transaction request screen. If the wallet was in minimized state at the time the request was generated, then the transaction request will show up in a minimized wallet screen. It will display basic details of the transaction along with the buttons to approve or reject. 
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_smtx_sign_msg.png" width="20%"/>>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_smtx_sign_msg.png" width="20%"/>
 
 The user can click on the top right arrow icon in the minimized transaction screen to view more details of the transaction. 
 
