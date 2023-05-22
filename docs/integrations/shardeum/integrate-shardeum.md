@@ -94,7 +94,7 @@ Get the user information via the social provider token directly in the authentic
 
 {% include "./code-snippets/auth_sendtransaction.md" %}
 
-The {{config.extra.arcana.wallet_name}} springs into action when a user initiates a 'send token' transaction through the wallet UI or the application code triggers the blockchain send transaction programmatically. The following figure shows the {{config.extra.arcana.wallet_name}} screen that shows up allowing users to input the token amount, gas, and recipient details for sending tokens.
+The {{config.extra.arcana.wallet_name}} springs into action when a user initiates a 'send token' transaction through the wallet UI or the application code triggers the blockchain send transaction programmatically. The following figure shows how users can input the token amount, gas, and recipient details in the {{config.extra.arcana.wallet_name}} UI for sending tokens.
 
 <img src="/img/an_wallet_send_shm.png"/>
 

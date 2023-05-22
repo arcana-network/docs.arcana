@@ -123,7 +123,7 @@ On clicking connect, the NextJS sample app user will see the plug-and-play login
 
 ![App login plug and play](/img/nextjs_applogin.png){.an-screenshots}
 
-After successful authentication, an app user will see a minimized wallet. On clicking the wallet icon, the full {{config.extra.arcana.wallet_name}} UI is displayed. The logo displayed on the minimized wallet screen and the top left logo in the maximized wallet can be configured by the app developer using the Arcana dashboard.
+After successful authentication, an app user will see the wallet in its minimized state. On clicking the minimized wallet, the maximized {{config.extra.arcana.wallet_name}} is displayed. The logo displayed on the maximized wallet can be customized by the app developer through the Arcana dashboard.
 
 ![Wallet Display NextJS App](/img/nextjs_wallet_display.png){.an-screenshots}
 

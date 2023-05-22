@@ -8,9 +8,7 @@ arcana:
 
 # Basic Wallet Operations
 
-This guide is for the {{config.extra.arcana.wallet_name}} UI users. It lists various Web3 wallet operations and how to access them through the wallet UI.
-
-Developers who wish to programmatically enable the Web3 wallet operations in an app can refer to the {{config.extra.arcana.wallet_name}} Developers Guide.
+This guide explains the Web3 operations of the {{config.extra.arcana.wallet_name}} and how users can access different functions through its UI. Developers looking to enable these operations programmatically in their apps can refer to the [[index-arcana-wallet| {{config.extra.arcana.wallet_name}} Developers Guide]].
 
 ??? info "{{config.extra.arcana.wallet_name}} Developer Guide"
 
@@ -36,27 +34,31 @@ The {{config.extra.arcana.wallet_name}} UI allows an authenticated user to perfo
 * Add and configure network settings
 * Switch networks
 * Manage token assets (native and custom)
-  - Check account balance
-  - List token assets
-  - Add custom tokens (ERC-20)
-  - Send and receive tokens 
-  - Buy cryptocurrency (native, ERC-20)
+    - Check account balance
+    - List token assets
+    - Add custom tokens (ERC-20)
+    - Send and receive tokens 
+    - Buy cryptocurrency (native, ERC-20)
 * Manage NFTs
-  - List NFT assets
-  - View NFT details
-  - Send NFTs (ERC-721, ERC-1155)
-  - Add NFTs
-  - Modify (edit, delete) NFTs
+    - List NFT assets
+    - View NFT details
+    - Send NFTs (ERC-721, ERC-1155)
+    - Add NFTs
+    - Modify (edit, delete) NFTs
 * View user profile details
-* Monitor blockchain transaction-related notifications
+* Monitor blockchain transaction-related activity
 * Export private key
 * Logout
 
-When a user logs in, the following wallet screen is displayed.
+When a user logs in to the app, {{config.extra.arcana.wallet_name}} is displayed in its minimized form in the app's context. 
+
+<img src="/img/an_wallet_min_light.png#only-dark" width="8%"/><img src="/img/an_wallet_min_dark.png#only-light" width="8%"/> 
+
+Clicking on it displays the maximized wallet UI on the left or the right side of the app's UI window as configured by the app developer.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_home.png" width="20%"/>
 
-Users can access various Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}} UI via the following tabs located at the bottom of the wallet screen:
+Users can access various Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}} using the following tabs located at the bottom of the wallet:
 
 * <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> Token Assets Tab 
 * <img src="/img/icons/an_wallet_nft_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_nft_icon_dark.png#only-dark" width="20"/> NFT Assets Tab
@@ -65,13 +67,13 @@ Users can access various Web3 wallet operations supported by the {{config.extra.
 
 ### Sign Transaction
 
-A blockchain transaction sign request can be generated either by the app, programmatically, or in response to a user action in the {{config.extra.arcana.wallet_name}} UI. The **Sign Message** wallet screen shows the details of the request. The figure below shows a **Personal Sign** request displayed in the {{config.extra.arcana.wallet_name}} screen. Users can scroll down and see details of the request before selecting one of the options to **Reject** or **Approve** the transaction.
+A blockchain sign transaction can be triggered either by the app, programmatically, or in response to a user action in the {{config.extra.arcana.wallet_name}} UI. A blockchain transaction results in a notification as displayed in the figure below. Users can scroll down and see details of the request before selecting one of the options to **Reject** or **Approve** the transaction.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_personalsign.png" width="35%"/>
 
-If the user does not take any action but chooses to close the transaction request using the<img src="/img/icons/wallet_close_icon.png" width="15"/> icon on the top right of the {{config.extra.arcana.wallet_name}} screen, the wallet switches from maximized screen state to the minimized state but continues to show in the app screen. If there are any pending transactions they are highlighted in the minimized state with a red dot. 
+If the user does not take any action for the transaction notification but chooses to ignore it using the<img src="/img/icons/wallet_close_icon.png" width="15"/> icon on the top right of the {{config.extra.arcana.wallet_name}}, the wallet switches from maximized to the minimized state but continues to show in the app screen. If there are any pending transactions they are highlighted in the minimized state with a red dot. 
 
-Once the user takes action on the pending transactions, the wallet notification screen will show a **No Pending Requests!** message.
+Once the user takes action on the pending transaction notification, it disappears and the wallet displays **No Pending Requests!** message.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nopending.png" width="20%"/>
 
@@ -109,7 +111,7 @@ Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width=
 
 Users can purchase the specific token required for the app with either fiat or another cryptocurrency. Also, they can purchase the native cryptocurrency with fiat to pay for the transaction or gas fees. After a successful purchase via a third-party fiat on-ramp provider, the purchased tokens or currency is automatically deposited in the {{config.extra.arcana.wallet_name}} address and displayed in the balance.
 
-To buy cryptocurrency, click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/>  and refer to the token assets wallet screen. Select a chain from the drop-down list. This choice will govern what cryptocurrencies and tokens are available to purchase subject to local country-specific rules.
+To buy cryptocurrency, click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/>  and refer to the token assets tab. Select a chain from the drop-down list. This choice will govern what cryptocurrencies and tokens are available to purchase subject to local country-specific rules.
 
 Click **Buy** to initiate the fiat on-ramp process for your {{config.extra.arcana.wallet_name}}. 
 
@@ -141,7 +143,7 @@ For details on what assets and cryptocurrency, countries are supported by these 
 
     1. Purchased token assets will not be automatically updated in the {{config.extra.arcana.wallet_name}} assets screen. Users will need to manually add custom tokens that are purchased via on-ramp providers as these providers do not provide the contract address of the purchased token.
 
-    2. You will not see any activity listed for a successful purchase when you click on the notification screen of the {{config.extra.arcana.wallet_name}}. There is no uniform standard whereby on-ramp providers share this information or 'event' regarding purchase. We may add it in future releases.
+    2. You will not see any activity listed for a successful purchase when you click on the notification tab of the {{config.extra.arcana.wallet_name}} UI. There is no uniform standard whereby on-ramp providers share this information or 'event' regarding purchase. We may add it in future releases.
 
 ### Manage Token Assets
 
@@ -150,7 +152,7 @@ Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width=
 * View, and copy the {{config.extra.arcana.wallet_name}} address
 * View wallet address details on the Block Explorer
 * Add/Select network
-* Refresh the wallet screen
+* Refresh the wallet UI
 * View the total wallet balance in the native currency
 * List native and custom tokens in the wallet
 * Add new custom tokens
@@ -163,13 +165,13 @@ For more details, see [[use-wallet-ui-to-manage-tokens|how to view, select, send
 
 ### Manage NFT Assets
 
-Click the <img src="/img/icons/an_wallet_nft_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_nft_icon_dark.png#only-dark" width="20"/> tab on the bottom of the {{config.extra.arcana.wallet_name}} to bring up the NFT assets screen and manage NFTs associated with the wallet address. The following NFT operations can be performed by the authenticated Web3 app user through the  NFT Assets tab:
+Click the <img src="/img/icons/an_wallet_nft_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_nft_icon_dark.png#only-dark" width="20"/> tab on the bottom of the {{config.extra.arcana.wallet_name}} to bring up the NFT assets tab view and manage NFTs associated with the wallet address. The following NFT operations can be performed by the authenticated Web3 app user through the  NFT Assets tab:
 
 **General Wallet Operations**
 
 * View, and copy the {{config.extra.arcana.wallet_name}} address
 * View wallet address details on the 'Block Explorer' associated with the selected network
-* Refresh the wallet screen
+* Refresh the wallet UI
 * Add/Select network
 
 **NFT Operations**
@@ -182,7 +184,7 @@ For details, see [[use-wallet-to-manage-nfts|how Web3 app users can send NFTs, m
 
 ### View User Profile Details
 
-Click the <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> tab on the bottom of the {{config.extra.arcana.wallet_name}} to see the user profile screen displaying these details:
+Click the <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> tab on the bottom of the {{config.extra.arcana.wallet_name}} to see the user profile details:
 
 * User name 
 * Email ID used to log into the wallet
@@ -198,7 +200,7 @@ Click the <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" widt
 
 Click the <img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/> tab on the bottom right of the {{config.extra.arcana.wallet_name}} to view the notifications screen.
 
-The wallet notifications screen list all transactions processed using the {{config.extra.arcana.wallet_name}} for different digital assets such as native tokens, custom tokens, and NFTs. It also displays pending blockchain transaction approval requests, if any. 
+The notifications tab of the {{config.extra.arcana.wallet_name}} lists all transactions processed using the wallet for different digital assets such as native tokens, custom tokens, and NFTs. It also displays pending blockchain transaction approval requests, if any. 
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notify.png" width="20%"/>
 
@@ -232,59 +234,59 @@ Once all pending transactions are processed, you will not see the red dot. The {
 
 Click the <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> tab on the bottom left of the {{config.extra.arcana.wallet_name}} to see the user profile screen. It provides an option to export the user's private key. For details, see [[use-wallet-to-export-keys|how to export a user's private key]] guide.
 
-### Minimized Wallet Screen
+### Minimized Wallet State
 
 The {{config.extra.arcana.wallet_name}} is displayed as an embedded wallet within the context of the Web3 app that is integrated with The {{config.extra.arcana.sdk_name}}. 
 
-When the user authenticates, the wallet is shown as an icon on the screen in a minimized state. 
+Right after a user authenticates, the wallet is displayed in its minimized state. 
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_min_light.png#only-dark" width="7%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_min_dark.png#only-light" width="7%"/>
 
-On clicking, it expands to display the fully maximized wallet screen. It can be minimized by clicking the '∨' icon on the top right corner of the wallet screen. 
+On clicking, it expands to display the wallet in its maximized state. It can be minimized again by clicking the '∨' icon on the top right corner. 
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_max_light.png#only-dark" width="20%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_max_dark.png#only-light" width="20%"/>
 
-In the minimized state, the wallet displays a red dot with a number indicating pending transactions waiting for user's approval,
+In the minimized state, the wallet displays a red dot with a number indicating pending transactions waiting for the user's approval,
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_min_light.gif#only-dark" width="7%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_min_dark.gif#only-light" width="7%"/>
 
 ### View Transaction Summary & Details
 
-If a blockchain transaction is triggered via the app that requires the user's approval, the user will see a transaction request screen. If the wallet was in minimized state at the time the request was generated, then the transaction request will show up in a minimized wallet screen. It will display basic details of the transaction along with the buttons to approve or reject. 
+If a blockchain transaction is triggered via the app that requires the user's approval, the user will see a transaction notification. If the wallet was in minimized state at the time the request was generated, then the notification will show up with a summary of the transaction along with the buttons to approve or reject. 
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_smtx_sign_msg.png" width="20%"/>
 
-The user can click on the top right arrow icon in the minimized transaction screen to view more details of the transaction. 
+The user can click on the top right arrow icon in the transaction notification to view its details. 
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_sign_msg.png" width="20%"/>
 
-Here is an example of how a `eth_sendTransaction` triggers an approval request from the user. A minimized send transaction screen is displayed:
+Here is an example of how an `eth_sendTransaction` triggers a transaction notification and approval request for the user. The send transaction notification summary is displayed:
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_smtx_send_tx.png" width="20%"/>
 
-In the case of the send transaction request or sign transaction request, the details screen allows the user to edit the gas fees before approving the request. 
+In the case of the send transaction request or sign transaction request, the notification details allows the user to edit the gas fees before approving the request. 
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_send_tx.gif" width="20%"/>
 
-For other transactions that do not involve gas fees such as personal sign or signature requests, the details screen simply shows the message details about what is required to be signed.
+For other transactions that do not involve gas fees such as personal sign or signature requests, the notification details  simply shows the transaction details for a review by the user before taking an action to approve or reject.
 
-Here is an example of signature request message displayed in a summarized form:
+Here is an example of a signature request notification summary:
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_smtx_req_sign.png" width="20%"/>
 
-On clicking at the top right icon, user can see the signature request details:
+On clicking the top right arrow icon, user can see the signature request transaction notification details view:
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_req_sign.png" width="20%"/>
 
 ### Logout
 
-Click the <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> tab at the bottom of the {{config.extra.arcana.wallet_name}} screen to bring up the user profile screen. Click **Logout** in the user profile screen to log out.
+Click the <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> tab at the bottom of the {{config.extra.arcana.wallet_name}} UI to bring up the user profile tab view. Click **Logout** in the user profile tab view to log out.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_profile.png" width="20%"/>
 
 **That is all!**  :material-party-popper:
 
-*You are now well-versed with various {{config.extra.arcana.wallet_name}} screens and how to use the {{config.extra.arcana.wallet_name}} to perform blockchain transactions.*
+*You are now well-versed with the {{config.extra.arcana.wallet_name}} UI and how to perform blockchain transactions using the same.*
 
 ## What's Next?
 

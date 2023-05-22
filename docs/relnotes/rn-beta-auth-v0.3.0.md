@@ -30,7 +30,7 @@ This release of the {{config.extra.arcana.product_name}} product consists of the
 
 ### NFT Support
 
-A new separate wallet screen is now available to manage and view details related to the NFTs owned by the wallet address.
+A new wallet tab is now available to manage and view details related to the NFTs owned by the wallet address.
 
   - View any NFT of the type image, audio, or video
   - Transfer NFTs from within the wallet
@@ -40,16 +40,16 @@ Refer to the [[use-wallet-to-manage-nfts|documentation on managing NFT Assets]].
 
 <img src="/img/an_wallet_nft_asset_thumbnail.png" width="200"/>
 
-### Combined notification screen
+### Combined notification UI
 
-This release has a new UI for blockchain transaction notifications. This combined notification screen in the Arcana wallet lists the following type of blockchain transaction activity:
+This release has a new UI for blockchain transaction notifications. This combined notification UI in the Arcana wallet lists the following type of blockchain transaction activity:
 
   - Send transactions for native as well as custom ERC20 tokens
   - Send transactions for NFTs
   - Smart contract deployment
   - Smart contract interaction
 
-See the [[arcana-wallet-user-guide#wallet-notifications|notifications screen]] for details.
+See the [[arcana-wallet-user-guide#view-transaction-summary-details|notifications tab]] for details.
 
 <img src="/img/an_wallet_combined_notify.png" width="200"/>
 
@@ -63,7 +63,7 @@ See the [[arcana-wallet-user-guide#wallet-notifications|notifications screen]] f
 
   - The {{config.extra.arcana.company_name}} Storage SDK is no longer supported. If you were using the Storage SDK in your application, contact the {{config.extra.arcana.company_name}} support team. 
 
-  - The activity tab was earlier located next to the assets tab on the main {{config.extra.arcana.wallet_name}} screen. All the information in the activity tab earlier can now be accessed via the newly added notifications screen.
+  - The activity tab was earlier located next to the assets tab in the {{config.extra.arcana.wallet_name}} UI. All the information displayed in the activity tab earlier can now be accessed via the newly added notifications tab.
 
 ## Bug Fixes
 

@@ -45,7 +45,7 @@ If the app is using an older version of the {{config.extra.arcana.sdk_name}}, re
 
 ### Minimized Wallet Widget Update
 
-The circular widget displayed when a wallet was minimized by clicking the 'x' icon on the top right of the wallet screen has changed. In the current release, the minimized wallet state is displayed in the form of a smaller widget. 
+The circular widget displayed when a wallet was minimized by clicking the 'x' icon on the top right of the wallet in its maximized state has changed. In the current release, the minimized wallet state is displayed in the form of a smaller widget. 
 
 | Minimized Wallet Widget v1.0.1 | Minimized Wallet Widget v1.0.2 |
 | :---: | :---:|

@@ -80,13 +80,6 @@ toc_depth: 2
 
       Yes. The application developer can enable one or more authentication providers and passwordless login. The application users can choose any one of the supported authentication mechanisms to log in easily, similar to Web2 app onboarding.
 
-??? an-faq "Is there a way to control when, which position in the application window, and what type of the {{config.extra.arcana.wallet_name}}is displayed by the {{config.extra.arcana.sdk_name}}?"
-
-      When integrating with the {{config.extra.arcana.sdk_name}}, the application developer can use the `alwaysVisible` setting to control whether the {{config.extra.arcana.wallet_name}} UI is automatically displayed once the user has authenticated (default) or it shows up only when a blockchain transaction is triggered that requires the user's approval.
-
-      If `alwaysVisible = false` when `AuthProvider` is instantiated during app integration with the {{config.extra.arcana.sdk_name}}, the wallet will **only** appear when a blockchain transaction is triggered. The wallet screen will pop up, requesting the user's approval or signature. Once the user takes the appropriate action, the wallet screen will disappear.
-
-      For more details, see [{{config.extra.arcana.wallet_name}} visibility modes]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md)
 
 ## Wallet Settings
 
@@ -95,3 +88,23 @@ toc_depth: 2
 ??? an-faq "Why do I need to specify Wallet Website Domain setting?"
 
       This is an optional setting for additional security. If specified, the {{config.extra.arcana.product_name}} subsystem uses this setting to restrict the {{config.extra.arcana.wallet_name}} from loading anywhere else other than the application website domain that a developer specifies. for restricted domains, the [frame-ancestor Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/web/http/headers/content-security-policy#frame-ancestors) is used.
+
+??? an-faq "Is there a way to control when, which position in the application window, and what kind of theme is used for displaying the {{config.extra.arcana.wallet_name}} in the apps' context?"
+
+      **Wallet Display Controls**
+
+      1. **Visibility** 
+      
+           The application developer can use the `alwaysVisible` parameter in the `AuthProvider` to control whether the {{config.extra.arcana.wallet_name}} UI is automatically displayed once the user has authenticated (default) or it shows up only when a blockchain transaction is triggered that requires the user's approval.
+
+           If `AuthProvider` is instantiated with `alwaysVisible = false` then the wallet UI will not be displayed by default in the app's context. However, when a blockchain transaction is triggered by the app, a transaction notification is displayed in the app's context, requesting the user's approval for the transaction. Once the user takes the appropriate action, the transaction notification will disappear.
+
+           For more details, see [{{config.extra.arcana.wallet_name}} visibility modes]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md)
+
+      2. **Position**
+
+           The `position` parameter in the `AuthProvider` controls whether the wallet is displayed on the left or the right side of the Web3 app UI window.
+
+      3. **Light/Dark Theme**
+
+           The `theme` parameter in the `AuthProvider` controls whether the wallet is displayed using the light theme or the dark theme.  Developers can set the theme via the {{config.extra.arcana.dashboard_name}} by using the 'Branding' tab on the LHS.

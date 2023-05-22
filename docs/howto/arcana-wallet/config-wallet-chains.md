@@ -24,7 +24,7 @@ Log in to the {{config.extra.arcana.dashboard_name}} and click your registered a
 
 ![Chain Management Nav](/img/an_db_chains_mngt_nav.png){.an-screenshots}
 
-This will bring up the chain configuration screen as shown below:
+This will bring up the chain configuration UI as shown below:
 
 ![Chain Management Settings](/img/an_db_chain_mngt_options.png){.an-screenshots}
 

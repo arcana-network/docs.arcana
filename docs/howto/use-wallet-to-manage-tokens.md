@@ -27,7 +27,7 @@ In this guide, Web3 app users can learn how to manage token assets through the {
 
 ## Check Balance
 
-Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> tab at the bottom left of the {{config.extra.arcana.wallet_name}} screen. It shows the account balance for the wallet account in the selected network. It also shows a list of token assets in the wallet account and their corresponding amounts.
+Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> tab at the bottom left of the {{config.extra.arcana.wallet_name}}. It shows the account balance for the wallet account in the selected network. It also shows a list of token assets in the wallet account and their corresponding amounts.
 
 Click **Refresh** to fetch the latest account balance. If you use the {{config.extra.arcana.wallet_name}} to send native or custom tokens, the account balance gets automatically updated once the transfer is processed.
 
@@ -39,13 +39,13 @@ Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width=
 
 If you do not see your custom token already listed in the token asset list, click the <img src="/img/icons/an_wallet_addtoken_icon.png" width="50"/> icon to add your custom token.
 
-You will see a custom token specification wallet screen. 
+A custom token specification UI is displayed in the wallet.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_add_custom_token.png" width="20%"/><br></br><br></br>
 
 Add the **Token Contract Address**. Once you add the address, the {{config.extra.arcana.wallet_name}} validates whether it is an ERC-20 standard custom token. After the contract is verified, the wallet automatically fetches the **Token Symbol** and the **Token Decimal** values as configured in the custom contract.
 
-Click **Save** to add the custom token. The newly added custom token will show up under the account balance section on the main wallet screen.
+Click **Save** to add the custom token. The newly added custom token will show up under the account balance section on the wallet.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_custom_tokens.png" width="20%"/><br></br><br></br>
 
@@ -61,7 +61,7 @@ Use the drop-down list by clicking on the arrow next to the native token symbol 
  
 ## Send Tokens
 
-Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> tab at the bottom left of the wallet screen to view the tokens associated with the wallet account.
+Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/>tab in the wallet to view the tokens associated with the wallet account.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_home.png" width="20%"/><br></br><br></br>
 
@@ -85,7 +85,7 @@ Click **Refresh** to see the updated account balance after the sender transactio
 
 ## Monitor Token Activity
 
-Click the <img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/> tab on the bottom right of the {{config.extra.arcana.wallet_name}} screen to see wallet transaction activity and pending request notifications.
+Click the <img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/> tab on the bottom right of the {{config.extra.arcana.wallet_name}} to see wallet transaction activity and pending request notifications.
 
 The wallet notification screen displays a list of different blockchain transaction activities that were initiated by the app or the user for the current dApp user login session: 
 

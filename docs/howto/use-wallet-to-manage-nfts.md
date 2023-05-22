@@ -38,17 +38,17 @@ Scroll down the **NFT Assets** tab. The **Assets** section displays a list of NF
 
 ## View NFT Details
 
-In the **NFT Assets** tab, select and click the NFT thumbnail to view its details.  This will bring up the wallet screen showing NFT metadata such as the description and attributes of the selected NFT.
+In the **NFT Assets** tab, select and click the NFT thumbnail to view its details.  This display the NFT asset along with its metadata such as the description and attributes.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_details.gif" width="20%"/><br></br><br></br>
 
 ## Send NFTs
 
-You can transfer NFTs to a different wallet address. There are two ways to do this.  You can click **Send** on the **NFT Assets** tab to initiate the 'Send NFT' workflow to bring up the **Send NFT** wallet screen. Select the NFT, specify the receiver's address and the gas fee details and then click **Proceed**.
+You can transfer NFTs to a different wallet address. There are two ways to do this.  You can click **Send** on the **NFT Assets** tab to initiate the 'Send NFT' workflow. Select the NFT, specify the receiver's address and the gas fee details and then click **Proceed**.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_send_opt1.gif" width="20%"/><br></br><br></br>
 
-Alternatively, instead of clicking the **Send** on the **NFT Assets** tab you can first click on the NFT thumbnail in the **NFT Assets** tab. This will bring up the NFT details screen. Click the :fontawesome-solid-paper-plane: icon below the NFT image to initiate the 'Send NFT' workflow. Specify the receiver's address, the gas fee details and then click **Proceed**.
+Alternatively, instead of clicking **Send** in the **NFT Assets** tab, click the NFT thumbnail itself in the **NFT Assets** tab. It will display the NFT asset and its details. Click the :fontawesome-solid-paper-plane: icon below the NFT asset to initiate the 'Send NFT' workflow. Specify the receiver's address, and the gas fee details before clicking **Proceed**.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_send_opt2.gif" width="20%"/><br></br><br></br>
 
@@ -62,14 +62,14 @@ Note: The sharing of NFTs was in the Figma design but not implemented in the wal
 
 ## Share NFTs
 
-To share an NFT, you need to first select the NFT.  You can select the NFT by clicking on the thumbnail in the **NFT Assets** tab of the {{config.extra.arcana.wallet_name}}. This will bring up the **NFT Details** screen. Click **Share** as highlighted in the wallet screen below to share the NFT.
+To share an NFT, you need to first select the NFT.  You can select the NFT by clicking on the thumbnail in the **NFT Assets** tab in the {{config.extra.arcana.wallet_name}}. When **NFT Details** are displayed, click **Share** to share the NFT.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_share.png" width="20%"/><br></br><br></br>
 -->
 
 ## Receive NFTs
 
-In the **Token Assets** tab click **Receive**. This will bring up the wallet screen displaying the wallet address and the QR code. You can copy the wallet account address or the QR code for the wallet account and share it with the NFT sender to receive an NFT.
+In the **Token Assets** tab click **Receive** to display the wallet address and the QR code. Copy the wallet account address or the QR code and share it with the NFT sender for receiving an NFT.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_receive.gif" width="20%"/><br></br><br></br>
 
@@ -77,15 +77,15 @@ In the **Token Assets** tab click **Receive**. This will bring up the wallet scr
 
 The {{config.extra.arcana.wallet_name}} automatically fetches the NFTs associated with the wallet address for the chains that are supported by Ankr.  For non-supported chains, users can manually add the NFTs in the wallet through the **Manage NFT** feature.
 
-To manually add the NFT, use the **NFT Assets** tab wallet screen and click **Manage**.
+To manually add the NFT, use the **NFT Assets** tab in the wallet and click **Manage**.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_manage_nav.gif" width="20%"/><br></br><br></br>
 
-This will bring up the **Manage NFTs** wallet screen. 
+The **Manage NFT** wallet UI is displayed.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_manage.png" width="20%"/><br></br><br></br>
 
-You can add, edit and update the NFT details. Note that the collection name is automatically fetched and displayed once the correct collection address is entered in the NFT details screen. The NFT owner should have the same wallet address otherwise it cannot be manually added to the {{config.extra.arcana.wallet_name}}.
+Use the **Manage NFTs** wallet UI to manually add, edit and update the NFT details. Note that the NFT collection name is automatically fetched and displayed once the correct collection contract address is entered. The NFT owner should have the same wallet address otherwise it cannot be manually added to the {{config.extra.arcana.wallet_name}}.
 
 The NFT owner can also delete an NFT that is manually added.  Deleting the NFT simply removes it from the wallet, it does not destroy it. A user can always add it back as long as the ownership resides with the user.
 
@@ -99,17 +99,17 @@ The newly added NFT in displayed in the **Manage NFTs** screen.
 
 ### Modify NFT Entry
 
-To edit or delete a manually added NFT, click the NFT in the **Manage NFTs** wallet screen and you will see a pen icon when an entry is selected.
+To edit or delete a manually added NFT, use the **Manage NFTs** wallet UI, click the NFT to see a pen icon next to the selected entry.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_entry.png" width="20%"/><br></br><br></br>
 
-Click on the pen to bring up the NFT details screen. You can edit or delete the NFT and click **Save**.
+Click the pen to edit the NFT details. You can also delete the NFT and click **Save**.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_entry_modify.png" width="20%"/><br></br><br></br>
 
 ## Monitor NFT Send Transaction
 
-Click the <img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/> tab on the bottom right of the {{config.extra.arcana.wallet_name}} screen to see wallet transaction activity and notifications.
+Click the <img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/> tab on the bottom right of the {{config.extra.arcana.wallet_name}} to see wallet transaction activity and notifications.
 
 The wallet notification screen displays a list of different blockchain transaction activities that were initiated by the app or the user. You can see the NFT 'Send' transactions carried out by the wallet address. Only the activity for the current user login session is displayed: 
 

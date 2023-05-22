@@ -42,6 +42,6 @@ The {{config.extra.arcana.wallet_name}} allows authenticated users to securely p
 
 * **Monitor Transaction Activity:** The {{config.extra.arcana.wallet_name}} **Notifications** tab displays all the blockchain transaction activity that is approved by the application user. This includes native or custom token send transactions, NFT exchange transactions, ERC-20 smart contract deployment, and contract interactions. It also shows any pending transactions that are waiting on the user's action. 
 
-    If a red dot is displayed on the **Notifications** tab at the bottom right of the {{config.extra.arcana.wallet_name}} screen, then it signifies that there are pending blockchain transactions waiting on application user approval. The application user can click on the red dot and process the pending blockchain transaction. 
+    If there is a red dot displayed on the **Notifications** tab at the bottom right of the {{config.extra.arcana.wallet_name}} UI, it indicates pending blockchain transactions waiting on user approval. A user can click on the red dot and process the pending blockchain transaction. 
 
 * **Supports JSON RPC:** The {{config.extra.arcana.wallet_name}} offers the standard EIP-1193 Ethereum provider interface that can be used by applications to call any [Ethereum JSON RPC](https://ethereum.github.io/execution-apis/api-documentation/) methods.

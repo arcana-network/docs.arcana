@@ -20,7 +20,7 @@ When you migrate from an older version of the {{config.extra.arcana.sdk_name}} t
 
 * Now you can use the {{config.extra.arcana.sdk_name}} and the {{config.extra.arcana.wallet_name}} on any supported EVM-compatible chain for user onboarding and signing of blockchain transactions.
 
-* The blockchain transaction activity is no longer available in the form of a tab in the main Arcana wallet screen. You can see the activity listed in the newly added combined notification screen in the Arcana wallet.
+* The blockchain transaction activity is no longer available in the form of a tab in the main {{config.extra.arcana.wallet_name}}. You can see the activity listed in the newly added combined notification screen in the {{config.extra.arcana.wallet_name}} .
 
 ### {{config.extra.arcana.dashboard_name}} 
 
@@ -44,7 +44,7 @@ When you migrate from an older version of the {{config.extra.arcana.sdk_name}} t
 
 4. If you had enabled the **{{config.extra.arcana.company_name}}  Testnet** blockchain network in Web3 wallet operations, you will need to remove this network altogether as it no longer exists.  Also, the {{config.extra.arcana.company_name}} Testnet Blockchain Explorer is no longer available.  {{config.extra.arcana.company_name}}  smart contracts are deployed on Polygon now. In this release, the {{config.extra.arcana.wallet_name}} supports all EVM-compatible chains besides the default ones that show in the drop-down.  Use the [[arcana-wallet-user-guide|Wallet User Guide]] and the [[index-arcana-wallet|Wallet Developer Guide]] to add and switch networks using the wallet UI or programmatically.
 
-5. The wallet activity tab on the wallet token asset tab is gone. A new 'notification' tab is added to the wallet screen. You can see the list of all activities in the [[arcana-wallet-user-guide#wallet-notifications|notification tab]]. It lists send tokens, contract deployment, and contract interaction transactions performed by the wallet user.
+5. The wallet activity tab on the wallet token asset tab is gone. A new 'notification' tab is available in the wallet. You can see the list of all activities in the [[arcana-wallet-user-guide#wallet-notifications|notification tab]]. It lists send tokens, contract deployment, and contract interaction transactions performed by the wallet user.
 
 ## What's New?
 

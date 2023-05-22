@@ -36,7 +36,7 @@ Once the app is registered, configured, and integrated with the {{config.extra.a
 
 {% include "./code-snippets/auth_sendtransaction.md" %}
 
-The {{config.extra.arcana.wallet_name}} displays a request for user approval when the 'send token' transaction is triggered by the app programmatically. The following figure shows the {{config.extra.arcana.wallet_name}} screen displaying the 'send-token' request. It shows the token amount, gas charges, and recipient details. User must approve the send token transaction for successfully sending the tokens to the recipient.
+The {{config.extra.arcana.wallet_name}} displays a transaction notification for user approval in response to the 'send token' transaction triggered by the app programmatically. The following figure shows the {{config.extra.arcana.wallet_name}} displaying the 'send-token' notification. It shows the token amount, gas charges, and recipient details. The user must approve the send token transaction before the tokens can be successfully sent to the recipient.
 
 <img src="/img/an_wallet_send_inputs.png" width="300"/>
 

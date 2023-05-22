@@ -21,7 +21,9 @@ The `alwaysVisible` [input parameter](https://authsdk-ref-guide.netlify.app/inte
 
 ### Network Switching: `alwaysVisible=true`
 
-By default, `alwaysVisible=true`. If the app developer uses this default setting then the wallet UI shows up right after a user authenticates. The wallet can be minimized by clicking on the 'x' icon in the top right of the wallet screen but the wallet is always visible in the app's context. To switch the network displayed in the wallet UI, a user can simply click on the drop-down list and select an entry from the list to change the network. The app developer can programmatically use [[web-auth-usage-guide#switching-chains | `wallet_addEthereumChain`]] and [[web-auth-usage-guide#switching-chains | `wallet_switchEthereumChain`]] methods to add and switch to a supported blockchain network preferred by the app. When a network addition or switching is initiated by the app developer, it requires the user's approval before the network switch takes effect.
+By default, `alwaysVisible=true` when a new `AuthProvider` is instantiated during the integration of the app with the {{config.extra.arcana.sdk_name}}. With this default setting the wallet UI is displayed right after a user authenticates in the minimized state. Users can click on it to bring up the maximized wallet. Minimized or maximized, `alwaysVisible=true` ensures that the wallet is always visible in the app's context. To switch the network displayed in the wallet, the user can simply click on the drop-down list and select an entry from the list to change the network. 
+
+Another way to switch the wallet network is when the app developer programmatically adds it by calling [[web-auth-usage-guide#switching-chains | `wallet_addEthereumChain`]] and [[web-auth-usage-guide#switching-chains | `wallet_switchEthereumChain`]] methods. When a network addition or switching is initiated by the app developer, it requires the user's approval before the network switch actually takes effect.
 
 ### Network Switching:`alwaysVisible=false`
 
