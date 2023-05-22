@@ -21,8 +21,8 @@ The chain management feature of the {{config.extra.arcana.sdk_name}} allows deve
 
 The chain management feature is currently supported for EVM-compatible chains. Also, besides configuring these chains via the dashboard, the developers can programmatically add any new supported EVM-compatible chain using the `wallet_addEthereumChain` method supported by the {{config.extra.arcana.wallet_name}}.
 
-!!! caution "Reconfiguring Chains"
+!!! caution "Changing Chains"
 
-      Reconfiguring chains does not result in any change in the wallet address. If a user logs into a chain that is not EVM-compatible but supported by {{config.extra.arcana.product_name}}, then a new set of keys is assigned to the authenticated user for every chain that is not EVM-compatible.
+      If you change the chain list displayed in the wallet for EVM-compatible chains, it won't affect your wallet address. However, if you log into a chain that is not EVM-compatible but supported by {{config.extra.arcana.product_name}}, you will be assigned a new set of keys for that specific chain.
 
       If an app uses the 'Global Keys' feature, then the user has the same wallet address across all the apps in the {{config.extra.arcana.company_name}} ecosystem for all the EVM-compatible chains. In case of 'app-specific' keys (default), the user will be assigned a new wallet address for every app that a user logs into irrespective of the blockchain type - whether it is EVM-compatible or not.

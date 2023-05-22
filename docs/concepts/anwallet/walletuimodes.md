@@ -1,6 +1,6 @@
 ---
 alias: concept-wallet-visibility
-title: 'Wallet Visiblity'
+title: 'Wallet Visibility'
 description: 'Is the wallet always visible in the app context or can it be shown only when needed, learn more.'
 arcana:
   root_rel_path: ../..

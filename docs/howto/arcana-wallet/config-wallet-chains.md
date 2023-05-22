@@ -40,7 +40,7 @@ If the chain you wish to make default is already listed in the subset of chains 
 
 ### Step 2: Add Chain
 
-Click **Add Chain** button on the top right of the 'Chain Managemet' dashboard screen.
+Click **Add Chain** button on the top right of the 'Chain Management' dashboard screen.
 
 {% include "./text-snippets/add_chain_specs.md" %}
 

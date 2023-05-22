@@ -42,13 +42,13 @@ Earlier, {{config.extra.arcana.wallet_name}} did not automatically fetch the NFT
 
 ---
 
-### Enh A
+### Enhancement A
 
-lorem ipsum
+Details
 
-### Enh B
+### Enhancement B
 
-lorem ipsum
+Details
 
 ## Bug Fixes
 

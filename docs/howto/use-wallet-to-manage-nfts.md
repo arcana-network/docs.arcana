@@ -115,7 +115,7 @@ The wallet notification screen displays a list of different blockchain transacti
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notify.png" width="20%"/><br></br><br></br>
 
-Once a send NFT transaction is confirmed, it is processed. On completion, it will show up as 'success' in the **Notifiation Tab**.
+Once a send NFT transaction is confirmed, it is processed. On completion, it will show up as 'success' in the **Notification Tab**.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_activity.png" width="20%"/><br></br><br></br>
 

@@ -63,7 +63,7 @@ The following billing notifications are displayed:
 | Billing | Add card details for processing the payment. | The first time a developer logins, this message is displayed in the notifications section. |
 | Billing | Invoice for the current month has been generated. | Once the free-tier is over, at the end of every billing cycle, the dues are computed and an invoice is created. Developer is notified of the same.|
 | Billing | Payment successfully processed for this month. | Once the free-tier is over, monthly invoices are raised and payment automatically deducted from the specified payment method. |
-| Billing | Payment has been declined.| This notification will be displayed if he specified payment method fails when the invoice dues are processed, or if there are any payment errors due to insufficient funds. |
+| Billing | Payment has been declined.| This notification will be displayed if the specified payment method fails when the invoice dues are processed, or if there are any payment errors due to insufficient funds. |
 
 <!-- 
 ## Billing Errors and Troubleshooting
