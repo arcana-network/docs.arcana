@@ -19,7 +19,7 @@ toc_depth: 2
 
       If you need to completely disable the {{config.extra.arcana.wallet_name}} feature in the app, you can request a private build of the {{config.extra.arcana.wallet_name}} by [contacting us]({{page.meta.arcana.root_rel_path}}/support.md) with the use case details."
 
-??? an-faq "Will the Arcana Network's decentralized key generation algorithm be affected if a node with a key share becomes temporarily inaccessible?"
+??? an-faq "Will the Arcana Network's distrbuted key generation algorithm be affected if a node with a key share becomes temporarily inaccessible?"
 
       No, Arcana's [ADKG]({{page.meta.arcana.root_rel_path}}/concepts/dkg/index.md) algorithm can still generate the key using the key shares from the other nodes that are accessible. The algorithm is designed to tolerate a certain number of nodes being inaccessible, depending on the total number of participating nodes. For more details, see [Arcana's Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08).
 
@@ -69,5 +69,5 @@ toc_depth: 2
       | Self-custodial wallets | Arcana's non-custodial wallet |
       | :--- | :--- |
       | Users need to be responsible for and remember their passphrases.| Users do not require to remember any passphrase.|
-      | Users need to manage keys themselves in case of self-custody wallets. | {{config.extra.arcana.wallet_name}} offers a sweet spot, users don't have to manage keys as in the self-custody wallet and yet their keys can be generated in a decentralized manner via the {{config.extra.arcana.wallet_name}}, a non-custodial wallet.|
+      | Users need to manage keys themselves in case of self-custody wallets. | {{config.extra.arcana.wallet_name}} offers a sweet spot, users don't have to manage keys as in the self-custody wallet and yet their keys can be generated in a distributed manner via the {{config.extra.arcana.wallet_name}}, a non-custodial wallet.|
       | Users that are new to Web3 typically find self-custodial wallets very challenging to use. | {{config.extra.arcana.wallet_name}} offers a really simple Web2-like onboarding experience for new Web3 users without sacrificing security and ownership.|
