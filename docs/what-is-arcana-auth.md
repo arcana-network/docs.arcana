@@ -41,15 +41,15 @@ The primary audience for this documentation is Web3 application developers.
 
 Seasoned Web3 developers can jump right in with the [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]], [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] and {% include "./text-snippets/authsdkref_url.md" %}.
 
-Developers can refer to the [How To Guides]({{page.meta.arcana.root_rel_path}}/howto/index.md) to learn more about how to register and configure the Web3 applications before they can be integrated with the {{config.extra.arcana.wallet_name}}.
+Developers can refer to the [[index-howto-guides|How To Guides]] to learn more about how to register and configure the Web3 applications before they can be integrated with the {{config.extra.arcana.wallet_name}}.
 
-If you are new to the Web3 ecosystem, we recommend that you check out the [[index-arcana-academy|{{config.extra.arcana.company_name}} Academy]] section first before jumping into the [Tutorials]({{page.meta.arcana.root_rel_path}}/tutorials/index.md) and [[index-code-samples|code samples]]. 
+If you are new to the Web3 ecosystem, we recommend that you check out the [[index-arcana-academy|{{config.extra.arcana.company_name}} Academy]] section first before jumping into the [[index-tutorials| Tutorials]] and [[index-code-samples|code samples]]. 
 
 Web3 application users can learn more about how to use the {{config.extra.arcana.wallet_name}} for performing Web3 operations by referring to the [[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]].
 
-Learn about new product features in the [Release Notes]({{page.meta.arcana.root_rel_path}}/relnotes/index.md) section. You can see the detailed changelog for the [{{config.extra.arcana.sdk_name}}](https://github.com/arcana-network/auth/releases/tag/v0.3.0) and [{{config.extra.arcana.dashboard_name}}](https://github.com/arcana-network/developer-dashboard/releases/tag/v0.2.0) to figure out what has changed.
+Learn about new product features in the [[rn-main-auth-v1.0.4|Release Notes]]. You can see the detailed changelog for the [{{config.extra.arcana.sdk_name}}](https://github.com/arcana-network/auth/compare/v1.0.2...v1.0.3) and [{{config.extra.arcana.dashboard_name}}](https://github.com/arcana-network/developer-dashboard/compare/1.0.2...v1.0.4) to figure out what has changed.
 
-If you do not find answers to your questions in our [FAQ]({{page.meta.arcana.root_rel_path}}/faq/index.md) section, drop us an [email](mailto://support@arcana.network) or contact us through the [support channels](#support--feedback).
+If you do not find answers to your questions in our [[index-faq| FAQ]], drop us an [email](mailto://support@arcana.network) or contact us through the [support channels](#support--feedback).
 
 ## Support & Feedback
 

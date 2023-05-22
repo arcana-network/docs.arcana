@@ -1,1 +1,1 @@
-<span>1.0.3</span>
+<span>1.0.4</span>

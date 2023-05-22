@@ -149,10 +149,8 @@ nav:
       - Auth SDK: faq/faq-auth.md
       - Validator Nodes: faq/faq-validator.md
     - Troubleshooting Guide: troubleshooting.md
-    - Release Notes: 
-      - relnotes/index.md
-      - Migration Guide:
-        - migration/index.md
+    - Release Notes: relnotes/rn-main-auth-v1.0.4.md
+    - Migration Guide: migration/main-auth-v1.0.4-migration.md
     - Archives: 
         - archives/index.md
         - Migration Guides:

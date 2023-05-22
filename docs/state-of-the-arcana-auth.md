@@ -19,7 +19,7 @@ arcana:
 * [Billing and invoicing feature]({{page.meta.arcana.root_rel_path}}/concepts/billing.md) for Arcana Mainnet usage.
 * New theme for the {{config.extra.arcana.product_name}} documentation.
 
-See [[index-latest-release-note|{{config.extra.arcana.product_name}} Release Notes]] for details.
+See [[rn-main-auth-v1.0.4|{{config.extra.arcana.product_name}} Release Notes]] for details.
 
 ## Mode of Operation
 
