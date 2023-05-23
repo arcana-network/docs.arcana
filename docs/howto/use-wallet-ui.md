@@ -123,21 +123,15 @@ You will see the list of available fiat on-ramp providers:
 
 Pick up one of the providers and click **Proceed**. This will bring up the provider-specific user interface. Each provider may ask the user to follow country-specific procedures for KYC and list available cryptocurrencies for the selected chain. Also, the basic minimum purchase amount for a country or cryptocurrency may vary across countries and providers.
 
-For example, Transak requires each user to complete KYC by submitting country-specific identification documents. Once the verification is complete, the user can purchase the cryptocurrency with Transak.  This verification is a one-time thing and subsequent purchases will not require this additional step. The figure below shows an example of a purchase transaction using Transak.
+{% include "./text-snippets/fiat_on_ramp_providers_ui_example.md" %}
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_fiat_transak.png" width="50%"/>
-
-Similarly, if the fiat on-ramp provider Ramp Network is chosen, you will see the Ramp UI displaying all the available currencies for the selected chain in the {{config.extra.arcana.wallet_name}}. 
-
-<img class="an-screenshots-noeffects" src="/img/an_wallet_fiat_rampnetwork.png" width="50%"/>
-
-For the first purchase, you may also be required to do KYC formalities.
+For the first purchase, you may also be required to do KYC formalities as per the terms and conditions of the provider that is selected in the wallet.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_fiat_kyc_rampnetwork.png" width="50%"/>
 
-If you are new to Transak or Ramp, see [Transak User Guide](https://support.transak.com/en/articles/7846055-buying-cryptocurrency-for-beginners) and [Ramp User Guide](https://support.ramp.network/en/articles/18887-how-to-use-ramp) for step-by-step details on buying crypto assets.
+{% include "./text-snippets/fiat_on_ramp_providers_ug.md" %}
 
-For details on what assets and cryptocurrency, countries are supported by these providers refer to [Transak coverage](https://docs.transak.com/docs/fiat-currency-country-payment-method-coverage-plus-fees-and-limits) and [Ramp Network coverage](https://support.ramp.network/en/articles/432-what-cryptoassets-does-ramp-support). 
+{% include "./text-snippets/fiat_on_ramp_providers_coverage.md" %}
 
 !!! caution "Current Limitations"
 

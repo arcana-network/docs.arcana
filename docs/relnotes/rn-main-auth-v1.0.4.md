@@ -67,6 +67,10 @@ When a blockchain transaction is triggered via the Web3 app for the user's walle
 
 Previously, the transaction notification view provided all the transaction details based on the transaction type. In the latest release, the notification now shows a summary of the transaction by default, with options for the user to accept or reject the transaction. To view more details, the user can click on the '^' symbol in the top right corner of the transaction summary. In certain cases, like 'Send Token' or 'Sign Transaction', the detailed notification also shows the gas fees and allows the user to edit the gas amount before approving the transaction, if needed.
 
+### Buy Fiat via Onramp.money
+
+The {{config.extra.arcana.wallet_name}} allows users to buy crypto currency. In this release a new provider ['Onramp Money'](https://onramp.money/) is also supported. For details, see [[arcana-wallet-user-guide#fiat-on-ramp|supported on-ramping providers for the wallet]].
+
 ## Bug Fixes
 
 ---
