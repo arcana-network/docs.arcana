@@ -71,7 +71,7 @@ Previously, the transaction notification view provided all the transaction detai
 
 ---
 
-* List bug fixes here
+* The issue with loading the {{config.extra.arcana.dashboard_name}} login screen when Phantom wallet extension was enabled in the browser is fixed in this release. 
 
 
 ## Get Started
