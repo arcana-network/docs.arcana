@@ -10,12 +10,19 @@ arcana:
 
 {==
 
-**Release Date: May 22, 2023**  
+**Release Date: May 23, 2023**  
 
 The latest release of the {{config.extra.arcana.product_name}} product consists of the following components:
 
-* [{{config.extra.arcana.sdk_name}} v1.0.4](https://www.npmjs.com/package/@arcana/auth/v/1.0.4)
+* {{config.extra.arcana.sdk_name}}
+      - [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
+      - [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react)
+      - [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) 
+      - [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
+      
 * [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.network/)
+
+* [{{config.extra.arcana.wallet_name}} UI](https://github.com/arcana-network/wallet-ui)
 
 ==}
 
