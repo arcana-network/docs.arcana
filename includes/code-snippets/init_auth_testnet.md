@@ -9,6 +9,7 @@ const provider = new AuthProvider(
     chainId: CHAIN.POLYGON_MUMBAI_TESTNET,      // selected chain in the wallet network dropdown UI
   },
   alwaysVisible: true,
+  setWindowProvider: true,
   debug: true,
   position: 'right',
   theme: 'dark',

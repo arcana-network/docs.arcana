@@ -76,13 +76,17 @@ Previously, the transaction notification view provided all the transaction detai
 
 ### Buy Fiat via Onramp.money
 
-The {{config.extra.arcana.wallet_name}} allows users to buy crypto currency. In this release a new provider ['Onramp Money'](https://onramp.money/) is also supported. For details, see [[arcana-wallet-user-guide#fiat-on-ramp|supported on-ramping providers for the wallet]].
+The {{config.extra.arcana.wallet_name}} allows users to buy cryptocurrency. In this release, a new provider ['Onramp Money'](https://onramp.money/) is also supported. For details, see [[arcana-wallet-user-guide#fiat-on-ramp|supported on-ramping providers for the wallet]].
+
+### `AuthProvider` Usage
+
+A new parameter is now supported in the `AuthProvider` constructor for explicitly setting the `window.ethereum` to the provider in the app's context. By default, it is not set. Developer must provide `setWindowProvider=true` to ensure that `window.ethereum` is set when `AuthProvider` is instantiated.  See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] for details.
 
 ## Bug Fixes
 
 ---
 
-* The issue with loading the {{config.extra.arcana.dashboard_name}} login screen when Phantom wallet extension was enabled in the browser is fixed in this release. 
+* The issue with loading the {{config.extra.arcana.dashboard_name}} login screen when the Phantom wallet extension was enabled in the browser is fixed in this release. 
 
 
 ## Get Started

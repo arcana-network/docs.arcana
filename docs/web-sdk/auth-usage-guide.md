@@ -128,6 +128,7 @@ const auth = new AuthProvider(`${clientId}`, {  //Arcana Unique App Identifier v
   theme: 'light', // optional, defaults to dark theme
   alwaysVisible: false, // optional, defaults to true
   network: 'mainnet', // optional, network can be testnet or mainnet - defaults to testnet
+  setWindowProvider: true, //optional, defaults to false
   chainConfig: {
     chainId: CHAIN.POLYGON_MAINNET,
     rpcUrl: '',
