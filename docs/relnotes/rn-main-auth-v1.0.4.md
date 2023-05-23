@@ -32,7 +32,7 @@ The latest release of the {{config.extra.arcana.product_name}} product consists 
 
 ### Automatically Fetch NFTs
 
-Earlier, {{config.extra.arcana.wallet_name}} did not automatically fetch the NFTs belonging to a user account. The user was required to manually add the NFT information (the contract address, token ID) to display the NFT assets in the Arcana wallet.  In this release, the {{config.extra.arcana.wallet_name}} automatically fetches the NFTs belonging to the wallet address.
+Previously, the {{config.extra.arcana.wallet_name}} did not automatically display the NFTs owned by the wallet address. The user was required to manually add the NFT information (the contract address, token ID) to display the NFT assets in the Arcana wallet.  In this release, the {{config.extra.arcana.wallet_name}} automatically fetches the NFTs belonging to the wallet address for the selected blockchain.
 
 !!! note "Auto-fetching NFTs"
 
@@ -44,7 +44,7 @@ Earlier, {{config.extra.arcana.wallet_name}} did not automatically fetch the NFT
 
 The latest release of the {{config.extra.arcana.product_name}} product supports Web3-React apps. 
 
-The newly released `{{config.extra.arcana.web3_react_sdk_pkg_name}}` package can be installed along with the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and Web3-React apps can be integrated easily for onboarding users just like other wallet connector frameworks such as Wagmi and RainbowKit.
+The newly released `{{config.extra.arcana.web3_react_sdk_pkg_name}}` package can be installed along with the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and Web3-React apps can be integrated easily for onboarding users just like other wallet connectors such as Wagmi and RainbowKit.
 
 Web3-React apps can use either the built-in plug-and-play login UI or build their own custom UI and use {{config.extra.arcana.product_name}} functions to onboard users via the configured authentication providers. For details, see [[index-web3-react-onboard-users|how to onboard users in Web3-React applications]].
 
@@ -64,23 +64,25 @@ For details, see [[index-onboard-users| how to onboard users]], select the app t
 
 Now developers can configure the blockchains as per the app requirements and set one of them as the default chain using the {{config.extra.arcana.dashboard_name}}. Once a user authenticates, the wallet is displayed and it shows these app developer-configured chains in the drop-down list with one of them set as the default. 
 
-Previously, the {{config.extra.arcana.sdk_name}} supported a hardcoded set of chains with one of them set as the default chain. The developer could only add and switch chains programmatically [[state-of-the-arcana-auth#supported-blockchains|as long as it was a supported chain]]. The `wallet_addEthereumChain` and `wallet_switchEthereumChain` JSON-RPC calls could be used by devs to add and switch chains. They could  change the default chain through the `chainConfig` option in the `AuthProvider`. In the latest release of the {{config.extra.arcana.sdk_name}}, app developers have more flexibility in specifying the list of chains that are supported for a Web3 app and also set one of them as the default. This can be achieved programmatically as in the earlier releases or through the dashboard. 
+Previously, the {{config.extra.arcana.sdk_name}} supported a hardcoded set of chains with one of them set as the default chain. The developer could only add and switch chains programmatically [[state-of-the-arcana-auth#supported-blockchains|as long as it was a supported chain]]. The `wallet_addEthereumChain` and `wallet_switchEthereumChain` JSON-RPC calls could be used by devs to add and switch chains. They could change the default chain through the `chainConfig` option in the `AuthProvider`. In the latest release of the {{config.extra.arcana.sdk_name}}, app developers have more flexibility in specifying the list of chains that are supported for a Web3 app and also set one of them as the default. This can be achieved programmatically and also through the {{config.extra.arcana.dashboard_name}} settings. 
 
 The wallet user can also add any new [[state-of-the-arcana-auth#supported-blockchains|supported chain]] through the {{config.extra.arcana.wallet_name}} UI. Only the chains configured by the app developer persist across the user login sessions.
+
+{% include "./text-snippets/specify_default_chain_example.md" %}
 
 ### Transaction Notification Summary
 
 When a blockchain transaction is triggered via the Web3 app for the user's wallet, the {{config.extra.arcana.sdk_name}} brings up a transaction notification in the app's context displaying the transaction details and options for the wallet user to accept or reject it. 
 
-Previously, the transaction notification view provided all the transaction details based on the transaction type. In the latest release, the notification now shows a summary of the transaction by default, with options for the user to accept or reject the transaction. To view more details, the user can click on the '^' symbol in the top right corner of the transaction summary. In certain cases, like 'Send Token' or 'Sign Transaction', the detailed notification also shows the gas fees and allows the user to edit the gas amount before approving the transaction, if needed.
+Previously, the transaction notification view provided all the transaction details based on the transaction type. In the latest release, the notification now shows a summary of the transaction by default, with options for the user to accept or reject the transaction. To view more details, the user can click on the '^' symbol in the top right corner of the transaction summary. In certain cases, like 'Send Token' or 'Sign Transaction', the detailed notification also shows the gas fees and allows the user to edit the gas amount before approving the transaction if needed.
 
 ### Buy Fiat via Onramp.money
 
 The {{config.extra.arcana.wallet_name}} allows users to buy cryptocurrency. In this release, a new provider ['Onramp Money'](https://onramp.money/) is also supported. For details, see [[arcana-wallet-user-guide#fiat-on-ramp|supported on-ramping providers for the wallet]].
 
-### `AuthProvider` Usage
+### Usage Update: `AuthProvider`
 
-A new parameter is now supported in the `AuthProvider` constructor for explicitly setting the `window.ethereum` to the provider in the app's context. By default, it is not set. Developer must provide `setWindowProvider=true` to ensure that `window.ethereum` is set when `AuthProvider` is instantiated.  See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] for details.
+A new parameter is now supported in the `AuthProvider` constructor for explicitly setting the `window.ethereum` to the provider in the app's context. Previously, it was set by default. In the latest release, by default, it is **not set**. The developer must specify `setWindowProvider=true` while instantiating the `AuthProvider` to ensure that `window.ethereum` is set when `AuthProvider` is instantiated.  See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] for details.
 
 ## Bug Fixes
 
