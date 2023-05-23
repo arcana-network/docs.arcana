@@ -38,7 +38,7 @@ Scroll down the **NFT Assets** tab. The **Assets** section displays a list of NF
 
 ## View NFT Details
 
-In the **NFT Assets** tab, select and click the NFT thumbnail to view its details.  This display the NFT asset along with its metadata such as the description and attributes.
+In the **NFT Assets** tab, select and click the NFT thumbnail to view its details.  This displays the NFT asset along with its metadata such as the description and attributes.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_details.gif" width="20%"/><br></br><br></br>
 
