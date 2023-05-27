@@ -32,6 +32,7 @@ nav:
         - Custom IAM Providers:
           - howto/config-idm/index.md
           - Cognito: howto/config-idm/cognito-oauth.md
+          - Firebase: howto/config-idm/firebase-oauth.md
       - Integrate App: 
         - howto/integrate-app/index.md
         - Vanilla JS App: howto/integrate-app/vanilla-html-css-js.md
