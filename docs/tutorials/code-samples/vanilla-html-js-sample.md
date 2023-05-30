@@ -37,8 +37,8 @@ const auth = new AuthProvider(`${clientId}`, {
   theme: "light", //defaults to dark
   alwaysVisible: true, //defaults to true, wallet always visible after user logs in
   chainConfig: {
-    chainId: CHAIN.POLYGON_MAINNET, //defaults to CHAIN.ETHEREUM_MAINNET
-    rpcUrl: "https://polygon-rpc.com" //defaults to 'https://rpc.ankr.com/eth'
+    chainId: '137', //Polygon, defaults to 'Ethereum'
+    rpcUrl: "https://rpc.ankr.com/polygon_mumbai" //defaults to 'https://rpc.ankr.com/eth'
   }
 });
 ...

@@ -37,7 +37,7 @@ The latest release allows developers more flexibility as they can configure bloc
 
 Earlier, developers could programmatically manage chains only via the add/switch chain functions and the default chain setting was done via the `chainConfig` option of the `AuthProvider`. Now this can also be managed using the dashboard. For details, see [[dashboard-user-guide#configure-application| how to configure app settings]]. 
 
-In the latest release v1.0.4, developers can use the {{config.extra.arcana.dashboard_name}} to configure blockchains and specify a default chain. Later, in the app integration code, they can override the default chain programmatically using the `chainConfig` parameter. The default chain configuration setting in the {{config.extra.arcana.dashboard_name}} can be overridden with the `chainConfig` option while instantiating the `AuthProvider` **only if** the default chain selected in the `chainConfig` option is one of the list of chains configured through the {{config.extra.arcana.dashboard_name}}. If the selected chain is not part of the {{config.extra.arcana.dashboard_name}} blockchain settings then the default chain configured in the {{config.extra.arcana.dashboard_name}} setting takes precedence and is displayed in the wallet UI. The rest of the dashboard configured ones show in the dropdown list.
+In the latest release v1.0.4, developers can use the {{config.extra.arcana.dashboard_name}} to configure blockchains and specify a default chain. Later, in the app integration code, they can override the default chain programmatically using the `chainConfig` parameter. The default chain configuration setting in the {{config.extra.arcana.dashboard_name}} can be overridden with the `chainConfig` option while instantiating the `AuthProvider` **only if** the default chain selected in the `chainConfig` option is present in the list of chains configured through the {{config.extra.arcana.dashboard_name}}. If the selected chain is not part of the {{config.extra.arcana.dashboard_name}} blockchain settings then the default chain configured in the {{config.extra.arcana.dashboard_name}} setting takes precedence and is displayed in the wallet UI. The rest of the dashboard configured ones show in the dropdown list.
 
 {% include "./text-snippets/specify_default_chain_example.md" %}
 
@@ -58,6 +58,14 @@ However, if the apps use `window.ethereum` browser setting or wallet connectors 
 Previously, Web3 desktop apps could integrate with the {{config.extra.arcana.sdk_name}} and directly access the [standard EIP-1193 Ethereum provider](https://eips.ethereum.org/EIPS/eip-1193) via `window.ethereum` in the web browser. In the latest release of the {{config.extra.arcana.sdk_name}}, `window.ethereum` is not automatically set to the provider. To enable this feature, specify `setWindowProvider=true` when creating the `AuthProvider`.
      
 For details, see [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]].
+
+### Apps using `CHAIN` enum
+
+If you are upgrading any app that is using `CHAIN` enum in the `chainConfig` option of the `AuthProvider` to v1.0.4, then there is a breaking change. 
+
+Update the integration code to **not** use the `CHAIN` enum as it is no longer supported.  Instead, use the chain identifier of the chain that you are specifying in the `chainConfig` parameter.  For example:
+
+{% include "./code-snippets/chain_config.md" %}
 
 ### Wagmi or RainbowKit Apps
 

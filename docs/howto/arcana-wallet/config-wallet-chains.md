@@ -34,7 +34,7 @@ The {{config.extra.arcana.sdk_name}} has a default subset of blockchain networks
 
 <img src="/img/an_db_default_subset_wallet_chains.gif" width="30%" alt="Default subset of chains in wallet UI"/>
 
-For the latest information on the default subset, see [{{config.extra.arcana.sdk_name}} Reference Guide](https://authsdk-ref-guide.netlify.app/enums/chain).
+For the latest information on the default subset, see [[state-of-the-arcana-auth#supported-blockchains|supported blockchains]].
 
 If the chain you wish to make default is already listed in the subset of chains that are configured to be displayed by the {{config.extra.arcana.wallet_name}}, simply click it and use the instructions in [Step 3 below](#step-3-make-chain-default-optional) to specify it as the default chain. Otherwise, first, add that chain and then make it the default chain for the wallet.
 
