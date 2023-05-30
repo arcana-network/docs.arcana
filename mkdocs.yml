@@ -20,6 +20,10 @@ nav:
     - quick-start/index.md
     - Web Apps: quick-start/web-apps-quick-start.md
     - Unity Apps: quick-start/unity-quick-start.md
+    - Mobile: 
+      - quick-start/mobile/index.md
+      - Flutter Apps: quick-start/flutter-quick-start.md
+      - React-Native Apps: quick-start/react-native-quick-start.md
   - Getting Started:
       - howto/index.md
       - Register App: howto/configure-auth.md
@@ -261,6 +265,8 @@ extra:
     product_name: Arcana Auth
     sdk_name: Arcana Auth SDK
     gaming_sdk_name: Arcana Auth Gaming SDK
+    flutter_sdk_name: Arcana Auth Flutter SDK
+    react_native_sdk_name: Arcana Auth React-Native SDK
     dashboard_name: Arcana Developer Dashboard
     wallet_name: Arcana wallet
     app_address: Client ID
