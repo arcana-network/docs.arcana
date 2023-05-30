@@ -47,7 +47,7 @@ If you are new to the Web3 ecosystem, we recommend that you check out the [[inde
 
 Web3 application users can learn more about how to use the {{config.extra.arcana.wallet_name}} for performing Web3 operations by referring to the [[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]].
 
-Learn about new product features in the [[rn-main-auth-v1.0.4|Release Notes]]. You can see the detailed changelog for the [{{config.extra.arcana.sdk_name}}](https://github.com/arcana-network/auth/compare/v{{config.extra.arcana.previous_version}}...{{config.extra.arcana.latest_version}}) and [{{config.extra.arcana.dashboard_name}}](https://github.com/arcana-network/developer-dashboard/compare/{{config.extra.arcana.previous_version_dashboard}}...{{config.extra.arcana.latest_version_dashboard}}) to figure out what has changed.
+Learn about new product features in the [[rn-main-auth-v1.0.4|Release Notes]]. You can see the detailed changelog for the [{{config.extra.arcana.sdk_name}}](https://github.com/arcana-network/auth/compare/v{{config.extra.arcana.previous_version}}...v{{config.extra.arcana.latest_version}}) and [{{config.extra.arcana.dashboard_name}}](https://github.com/arcana-network/developer-dashboard/compare/v{{config.extra.arcana.previous_version_dashboard}}...v{{config.extra.arcana.latest_version_dashboard}}) to figure out what has changed.
 
 If you do not find answers to your questions in our [[index-faq| FAQ]], drop us an [email](mailto://support@arcana.network) or contact us through the [support channels](#support--feedback).
 

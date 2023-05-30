@@ -116,11 +116,11 @@ import { AuthProvider } from '@arcana/auth' // From npm
 #### Initialize AuthProvider
 
 ```ts
-import { AuthProvider, CHAIN } from '@arcana/auth'
+import { AuthProvider } from '@arcana/auth'
 
 interface ChainConfig {
-  chainId: CHAIN
-  rpcUrl?: string
+  chainId: 'number', // Example: Polygon Mumbai Testnet specify '80001'
+  rpcUrl?: 'string'
 }
 
 const auth = new AuthProvider(`${clientId}`, {  //Arcana Unique App Identifier via Dashboard
@@ -130,8 +130,8 @@ const auth = new AuthProvider(`${clientId}`, {  //Arcana Unique App Identifier v
   network: 'mainnet', // optional, network can be testnet or mainnet - defaults to testnet
   setWindowProvider: true, //optional, defaults to false
   chainConfig: {
-    chainId: CHAIN.POLYGON_MAINNET,
-    rpcUrl: '',
+    chainId: '80001', //Polygon Mumbai Testnet ChainId
+    rpcUrl: 'https://rpc.ankr.com/polygon_mumbai', 
   },
 })
 
