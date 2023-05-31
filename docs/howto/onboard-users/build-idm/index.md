@@ -13,3 +13,5 @@ Web3 apps that use one of the supported custom IAM providers for authenticating 
 For detailed instructions on how to integrate such apps with the {{config.extra.arcana.sdk_name}}, select the appropriate custom IAM provider below:
 
 [[build-iam-cognito-auth|Cognito :fontawesome-brands-aws:]]{ .md-button }
+
+[[build-iam-steam-auth|Steam :material-steam:]]{ .md-button }
