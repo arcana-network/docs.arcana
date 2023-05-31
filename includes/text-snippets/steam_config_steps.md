@@ -25,7 +25,7 @@ Go to the app configuration screen on the {{config.extra.arcana.dashboard_name}}
 
 -->
 
-Do not close the {{config.extra.arcana.dashboard_name}} browser tab. Open another tab and browse Steam Community Site and obtain the API Key. Then come back to the {{config.extra.arcana.dashboard_name}} tab and complete the app configuration settings.
+Do not close the {{config.extra.arcana.dashboard_name}} browser tab. Open another tab and browse Steam Community Site and obtain the API Key in the next step. Then come back to the {{config.extra.arcana.dashboard_name}} tab and complete the app configuration settings.
 
 ## Step 2: Get Steam OAuth API Key
 
