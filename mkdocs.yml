@@ -278,6 +278,8 @@ extra:
     react_sdk_pkg_name: auth-react
     wagmi_sdk_pkg_name: auth-wagmi
     web3_react_sdk_pkg_name: auth-web3-react
+    mobile_flutter_sdk_pkg_name: arcana_auth_flutter
+    mobile_react_native_sdk_pkg_name: auth-react-native
   homepage: https://arcana.network
   social:
     - icon: fontawesome/brands/twitter
