@@ -9,7 +9,7 @@ arcana:
 
 # User Login with Steam OAuth
 
-In this guide, you will learn how to Steam OAuth and integrate the {{config.extra.arcana.sdk_name}} with a Web3 app that builds custom UI for authenticating users. After integrating with the {{config.extra.arcana.sdk_name}}, developers can allow authenticated users to sign blockchain transactions using the embedded, non-custodial {{config.extra.arcana.wallet_name}}.
+In this guide, you will learn how to integrate the {{config.extra.arcana.sdk_name}} with a Web3 app that builds custom UI for authenticating users via Steam OAuth. After integrating with the {{config.extra.arcana.sdk_name}}, developers can allow authenticated users to sign blockchain transactions using the embedded, non-custodial {{config.extra.arcana.wallet_name}}.
 
 ## Prerequisites
 
