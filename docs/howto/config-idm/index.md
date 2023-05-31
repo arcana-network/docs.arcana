@@ -12,6 +12,7 @@ arcana:
 
 [[config-auth-firebase|Firebase :material-firebase:]]{ .md-button }
 
+[[config-auth-steam|Steam :material-steam:]]{ .md-button }
 
 <!--
 
