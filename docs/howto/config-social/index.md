@@ -14,6 +14,8 @@ arcana:
 
 [[config-auth-google|Google :fontawesome-brands-google:]]{ .md-button }
 
+[[config-auth-steam|Steam :material-steam:]]{ .md-button }
+
 [[config-auth-twitch|Twitch :fontawesome-brands-twitch:]]{ .md-button }
 
 [[config-auth-twitter|Twitter :fontawesome-brands-twitter:]]{ .md-button }
