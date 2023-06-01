@@ -10,8 +10,6 @@ arcana:
 
 [[config-auth-cognito|Cognito :fontawesome-brands-aws:]]{ .md-button }
 
-[[config-auth-steam|Steam :material-steam:]]{ .md-button }
-
 <!--
 
 \[[config-auth-auth0| Auth0 :fontawesome-brands-discord:]]{ .md-button }
