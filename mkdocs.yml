@@ -33,7 +33,7 @@ nav:
         - Custom IAM Providers:
           - howto/config-idm/index.md
           - Cognito: howto/config-idm/cognito-oauth.md
-          - Firebase: howto/config-idm/firebase-oauth.md
+          - Firebase: howto/config-idm/firebase-auth.md
       - Integrate App: 
         - howto/integrate-app/index.md
         - Vanilla JS App: howto/integrate-app/vanilla-html-css-js.md
@@ -63,6 +63,7 @@ nav:
             - Build Custom Auth:
               - howto/onboard-users/build-idm/index.md
               - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
+              - Firebase: howto/onboard-users/build-idm/firebase-login.md
         - React Apps:
           - howto/onboard-users/react/index.md
           - React/NextJS Apps: 
@@ -82,6 +83,7 @@ nav:
               - Build Custom Auth:
                 - howto/onboard-users/build-idm/index.md
                 - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
+                - Firebase: howto/onboard-users/build-idm/firebase-login.md
           - Wagmi Apps: 
             - howto/onboard-users/wagmi/index.md
             - Plug-and-Play Auth: howto/onboard-users/wagmi/wagmi-pnp-ui.md
@@ -111,6 +113,7 @@ nav:
               - Build Custom Auth:
                 - howto/onboard-users/build-idm/index.md
                 - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
+                - Firebase: howto/onboard-users/build-idm/firebase-login.md
       - Enable Arcana Wallet:
         - howto/arcana-wallet/index.md
         - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md

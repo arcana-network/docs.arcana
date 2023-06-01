@@ -1,6 +1,6 @@
 ---
 alias: index-build-iam-providers
-title: 'Custom IAM Providers'
+title: 'Apps using Custom IAM Providers'
 description: 'List of custom IAM Providers that are supported by Arcana Auth and how to build user authentication for onboarding Web3 app users in apps integrated with the Arcana SDK.'
 arcana:
   root_rel_path: ../../..
