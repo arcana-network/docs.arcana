@@ -27,13 +27,13 @@ nav:
           - Discord Setup: howto/config-social/discord-oauth.md
           - GitHub Setup: howto/config-social/github-oauth.md
           - Google Setup: howto/config-social/google-oauth.md
+          - Steam: howto/config-idm/steam-oauth.md
           - Twitch Setup: howto/config-social/twitch-oauth.md
           - Twitter Setup: howto/config-social/twitter-oauth.md
         - Custom IAM Providers:
           - howto/config-idm/index.md
           - Cognito: howto/config-idm/cognito-oauth.md
           - Firebase: howto/config-idm/firebase-oauth.md
-          - Steam: howto/config-idm/steam-oauth.md
       - Integrate App: 
         - howto/integrate-app/index.md
         - Vanilla JS App: howto/integrate-app/vanilla-html-css-js.md
@@ -57,12 +57,12 @@ nav:
               - Discord: howto/onboard-users/build-social/discord-oauth.md
               - GitHub: howto/onboard-users/build-social/github-oauth.md
               - Google: howto/onboard-users/build-social/google-oauth.md
+              - Steam: howto/onboard-users/build-social/steam-oauth.md
               - Twitch: howto/onboard-users/build-social/twitch-oauth.md
               - Twitter: howto/onboard-users/build-social/twitter-oauth.md
             - Build Custom Auth:
               - howto/onboard-users/build-idm/index.md
               - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
-              - Steam: howto/onboard-users/build-idm/steam-oauth.md
         - React Apps:
           - howto/onboard-users/react/index.md
           - React/NextJS Apps: 
@@ -76,12 +76,12 @@ nav:
                 - Discord: howto/onboard-users/build-social/discord-oauth.md
                 - GitHub: howto/onboard-users/build-social/github-oauth.md
                 - Google: howto/onboard-users/build-social/google-oauth.md
+                - Steam: howto/onboard-users/build-social/steam-oauth.md
                 - Twitch: howto/onboard-users/build-social/twitch-oauth.md
                 - Twitter: howto/onboard-users/build-social/twitter-oauth.md
               - Build Custom Auth:
                 - howto/onboard-users/build-idm/index.md
                 - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
-                - Steam: howto/onboard-users/build-idm/steam-oauth.md
           - Wagmi Apps: 
             - howto/onboard-users/wagmi/index.md
             - Plug-and-Play Auth: howto/onboard-users/wagmi/wagmi-pnp-ui.md
@@ -105,13 +105,12 @@ nav:
                 - Discord: howto/onboard-users/build-social/discord-oauth.md
                 - GitHub: howto/onboard-users/build-social/github-oauth.md
                 - Google: howto/onboard-users/build-social/google-oauth.md
+                - Steam: howto/onboard-users/build-social/steam-oauth.md
                 - Twitch: howto/onboard-users/build-social/twitch-oauth.md
                 - Twitter: howto/onboard-users/build-social/twitter-oauth.md
               - Build Custom Auth:
                 - howto/onboard-users/build-idm/index.md
                 - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
-                - Steam: howto/onboard-users/build-idm/steam-oauth.md
-
       - Enable Arcana Wallet:
         - howto/arcana-wallet/index.md
         - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md
