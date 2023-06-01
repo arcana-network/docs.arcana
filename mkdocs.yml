@@ -56,7 +56,7 @@ nav:
               - Discord: howto/onboard-users/build-social/discord-oauth.md
               - GitHub: howto/onboard-users/build-social/github-oauth.md
               - Google: howto/onboard-users/build-social/google-oauth.md
-              - Steam: howto/onboard-users/build-idm/steam-oauth.md
+              - Steam: howto/onboard-users/build-social/steam-oauth.md
               - Twitch: howto/onboard-users/build-social/twitch-oauth.md
               - Twitter: howto/onboard-users/build-social/twitter-oauth.md
             - Build Custom Auth:
@@ -75,7 +75,7 @@ nav:
                 - Discord: howto/onboard-users/build-social/discord-oauth.md
                 - GitHub: howto/onboard-users/build-social/github-oauth.md
                 - Google: howto/onboard-users/build-social/google-oauth.md
-                - Steam: howto/onboard-users/build-idm/steam-oauth.md
+                - Steam: howto/onboard-users/build-social/steam-oauth.md
                 - Twitch: howto/onboard-users/build-social/twitch-oauth.md
                 - Twitter: howto/onboard-users/build-social/twitter-oauth.md
               - Build Custom Auth:
@@ -104,7 +104,7 @@ nav:
                 - Discord: howto/onboard-users/build-social/discord-oauth.md
                 - GitHub: howto/onboard-users/build-social/github-oauth.md
                 - Google: howto/onboard-users/build-social/google-oauth.md
-                - Steam: howto/onboard-users/build-idm/steam-oauth.md
+                - Steam: howto/onboard-users/build-social/steam-oauth.md
                 - Twitch: howto/onboard-users/build-social/twitch-oauth.md
                 - Twitter: howto/onboard-users/build-social/twitter-oauth.md
               - Build Custom Auth:
