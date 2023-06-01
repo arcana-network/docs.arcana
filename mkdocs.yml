@@ -34,7 +34,7 @@ nav:
           - Discord Setup: howto/config-social/discord-oauth.md
           - GitHub Setup: howto/config-social/github-oauth.md
           - Google Setup: howto/config-social/google-oauth.md
-          - Steam: howto/config-idm/steam-oauth.md
+          - Steam: howto/config-social/steam-oauth.md
           - Twitch Setup: howto/config-social/twitch-oauth.md
           - Twitter Setup: howto/config-social/twitter-oauth.md
         - Custom IAM Providers:
