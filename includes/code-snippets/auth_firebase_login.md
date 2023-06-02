@@ -1,11 +1,16 @@
-```js title="App.vue" hl_lines="3 25-28"
+```js title="App.vue" hl_lines="3 5-13 30-33"
 import { initializeApp } from 'firebase/app'
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth'
 import { AuthProvider, BearerAuthentication } from '@arcana/auth'
 
 const config = {
-  apiKey: 'API_KEY', // Obtain this after registering app at Firebase console
-  authDomain: 'PROJECT_ID.firebaseapp.com', // Project ID Domain setting in the Firebase console
+  apiKey: "AIzaSyBddysLWM9CcpNEVLbUz52YwyQL_uytQX0", // Obtain this after registering app at Firebase console
+  authDomain: "arc4n4-docx.firebaseapp.com", // Project ID Domain setting in the Firebase console
+  projectId: "some-projectid-example-arc4n4-docx",
+  storageBucket: "some-storage-arc4n4-docx.appspot.com",
+  messagingSenderId: "2xxxx318486297382",
+  appId: "4:3184ddddddd7382:web:8b639axxxxxxxx39f85fe7",
+  measurementId: "G-EGccccccLDR"
 };
 
 const firebaseApp = initializeApp(config)
