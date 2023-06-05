@@ -1,4 +1,4 @@
-```js title="App.vue" hl_lines="3 5-13 30-33"
+```js title="App.vue" hl_lines="3 5-13 30-32 35-43"
 import { initializeApp } from 'firebase/app'
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth'
 import { AuthProvider, BearerAuthentication } from '@arcana/auth'
@@ -17,17 +17,26 @@ const firebaseApp = initializeApp(config)
 const firebaseAuth = getAuth(firebaseApp)
 
 //Create Arcana Auth Provider
-const auth = new AuthProvider("xar_live_123940ytyoxxxxxxx343o404") // Get client ID from Arcana Developer Dashboard
+// Get client ID 'xar_live_xxxxxx' from Arcana Developer Dashboard
 
+const auth = new AuthProvider("xar_live_123940ytyoxxxxxxx343o404",{
+  network: "mainnet", //change it to testnet or mainnet
+}) 
 export default {
   name: 'App',
   data: () => ({
     email: '',
     password: ''
   }),
+  mounted () {
+    AP.init().then((k) => console.log(k)).catch(e => console.error(e)) //Initialize the Auth Provider
+  },
   methods: {
     async ultimate (upm) {
-        await auth.init()  // Initialize Arcana Auth
+        if (await AP.isLoggedIn()) {
+          window.alert('Already logged in')
+          return
+        }
         await auth.loginWithBearer(BearerAuthentication.firebase, {
         uid: upm.user.uid,
         token: upm.user.accessToken
