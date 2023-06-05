@@ -40,6 +40,10 @@ That is all! :material-party-popper:
 
 The plug-and-play user onboarding feature is successfully enabled in an app integrated with the {{config.extra.arcana.sdk_name}}.
 
+!!! warning "No plug-and-play support for Firebase authentication."
+
+      {% include "./text-snippets/warn_firebase_no_pnp.md" %}
+
 ## What's Next?
 
 After enabling the plug-and-play user onboarding feature in the app, developers can use other {{config.extra.arcana.sdk_name}} functions and enable Web3 wallet operations for authenticated users. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]], [[index-arcana-wallet|how to enable the {{config.extra.arcana.wallet_name}}]] for details.

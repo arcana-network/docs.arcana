@@ -1,0 +1,1 @@
+The [[concept-plug-and-play-auth|plug and play feature]] of the {{config.extra.arcana.product_name}} product is not supported for Firebase. Developers must build a custom login UI and add code to onboard users. For details, see [[build-iam-firebase-auth|onboarding users via Firebase and custom login UI]]

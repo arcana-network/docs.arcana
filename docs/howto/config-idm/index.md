@@ -10,13 +10,14 @@ arcana:
 
 [[config-auth-cognito|Cognito :fontawesome-brands-aws:]]{ .md-button }
 
+[[config-auth-firebase|Firebase :material-firebase:]]{ .md-button }
+
+
 <!--
 
 \[[config-auth-auth0| Auth0 :fontawesome-brands-discord:]]{ .md-button }
 
 \[[config-auth-okta|Okta :fontawesome-brands-github:]]{ .md-button }
-
-\[[config-auth-firebase|Firebase :fontawesome-brands-google:]]{ .md-button }
 
 -->
 

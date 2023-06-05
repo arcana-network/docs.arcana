@@ -513,6 +513,8 @@ blockchain
 blockchain-powered
 blockchains
 build-iam-cognito-auth
+build-iam-firebase-auth
+build-iam-steam-auth
 build-password-less-auth
 bundlers
 byok
@@ -568,8 +570,10 @@ conceptstore
 config
 config-auth-cognito
 config-auth-discord
+config-auth-firebase
 config-auth-github
 config-auth-google
+config-auth-steam
 config-auth-twitch
 config-auth-twitter
 config3pwallet
@@ -616,6 +620,7 @@ decryptfilewallet
 decrypting
 defaultValue
 dev
+devs
 dis-incentivizes
 discord-social-auth
 discordoauth
@@ -629,6 +634,7 @@ dropdown
 enabledelegate
 encryptfilewallet
 encrytion-and-kms
+enum
 et
 eth
 eth_accounts
@@ -699,6 +705,7 @@ googleoauth
 googleoauth_authsdk
 grey
 handleRedirectPage
+hardcoded
 hotfix
 how-to-use-auth
 howdkgworks
@@ -708,6 +715,7 @@ howto
 howto_app_id
 howto_config_cognito
 howto_config_discord_clientid
+howto_config_firebase
 howto_config_github_clientid
 howto_config_twitch
 howto_config_twitter_clientid
@@ -969,6 +977,7 @@ loginWithSocial
 mainnet
 makeMetaDataURL
 manage-testnet-and-mainnet-configurations
+material-firebase
 material-language-javascript
 material-vuejs
 material-wifi-cog
@@ -1136,6 +1145,7 @@ v1.0.0
 v1.0.1
 v1.0.2
 v1.0.3
+v1.0.4
 v2
 validator
 validator_nodes
