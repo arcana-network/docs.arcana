@@ -4,7 +4,9 @@ All the apps registered against the developer's account show up as cards in the 
 
 Click on the *Create New App* wizard, the first card on the *Manage Apps* screen, to register a new app. <img class="an-screenshots-noeffects" src="/img/icons/dashboard_newappwizard.png" alt="create new app wizard icon" width="10%"/> 
 
-Click the wizard and specify the name of the app to be registered in the **App Name** field. When you click **Create**, the app is registered for using the {{config.extra.arcana.company_name}} Testnet by default.
+Click the wizard and specify the name of the app to be registered in the **App Name** field. Also, select a default chain for the app. This is the chain that is selected as the default chain in the wallet UI once a user logs into the application. 
+
+When you click **Create**, the app is registered for using the {{config.extra.arcana.company_name}} Testnet by default.
 
 ![Register dApp](/img/an_db_create_newapp_anim.gif){.an-screenshots}
 
