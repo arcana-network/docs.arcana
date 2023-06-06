@@ -20,9 +20,7 @@ In this guide, you will learn how to integrate a Vue application with the [{{con
 
 * Use the {{config.extra.arcana.dashboard_name}} to [[configure-auth|register and configure]] the Vue app before integrating with the {{config.extra.arcana.sdk_name}}. 
 
-* Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more supported authentication providers for onboarding the app users.
-
-    {% include "./text-snippets/auth_supported.md" %}
+* Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more [[state-of-the-arcana-auth#user-onboarding-options|supported authentication providers]] for onboarding the app users.
 
     !!! tip "Configure Authentication Providers"
 

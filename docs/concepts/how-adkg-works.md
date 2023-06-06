@@ -28,9 +28,9 @@ Also, unlike the other synchronous DKG protocol models, ADKG protocol is immune 
 
 ## Assumptions
 
-The ADKG protocol works under the assumption that in an asynchronous network of **n ≥ 3t + 1** nodes, where at most **t** nodes could be malicious.
+The ADKG protocol works under the assumption that in an asynchronous network of `n ≥ 3t + 1` nodes, where at most `t` nodes could be malicious.
 
-The protocol can achieve an expected communication cost of O(κn$^3$ ) and terminates in expected O(log n) rounds. Here **κ** is the security parameter. For example, if a collision-resistant hash function is used, in that case, **κ** denotes the size of the hash function's output.
+The protocol can achieve an expected communication cost of O(`κ`n$^3$ ) and terminates in expected O(log n) rounds. Here `κ` is the security parameter. For example, if a collision-resistant hash function is used, in that case, `κ` denotes the size of the hash function's output.
 
 ## Implementation Notes
 

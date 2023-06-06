@@ -8,6 +8,8 @@ arcana:
 
 # Release Notes
 
+[[rn-main-auth-v1.0.5|Auth v1.0.5 :material-note-text:]]{ .md-button }
+
 [[rn-main-auth-v1.0.4|Auth v1.0.4 :material-note-text:]]{ .md-button }
 
 [[index-may3-23-release-note| Dashboard update May 3, 2023 :material-note-text:]]{ .md-button }

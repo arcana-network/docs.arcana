@@ -24,7 +24,7 @@ Arcana DKG is a permissioned system that only allows a trusted group of partners
 
 1. Validator node
 2. Monitoring tools
-3. Have a Hashicorp cloud server (or self-hosted server)
+3. Have a Hashicorp cloud server (or self-hosted server) preferably on a separate server than the validator node
 4. Enable a [KV Secrets Engine](https://developer.hashicorp.com/vault/docs/secrets/kv) with path value set to `secret`. 
 
    ```sh
@@ -279,6 +279,31 @@ We are working on providing a cleaner way to stop and restart the node.  Until t
 ### Monitor Validator Metrics
 
 At present, besides CPU and memory, we do not have any other specific metrics that need to be monitored for the validator node.  Watch out this section for updates!
+
+## Migrating Validator Node
+
+If you want to migrate the validator node to another server (for backup or temporary purposes) there are a couple of options available. Make sure you have addressed the prerequisites first before migrating the validator setup to another node.
+
+### Migration Prerequisites
+
+* Backup the 'data' directory of the validator node
+* Backup the Hashicorp vault data on a separate node
+
+### Migration Option 1: Node with same Domain and IP Address
+
+Follow the steps listed under [starting a validator node](#validator-node-setup) section except the instructions in step 2b to bring up a new validator node. The new node can simply be started and join in the ADKG protocol, other nodes are not required to be restarted.
+
+### Migration Option 2: Node with same Domain and different IP Address
+
+You need to notify the Arcana team as this may require coordinating with other validator node operators.  Follow the steps listed under [starting a validator node](#validator-node-setup) section except the instructions in step 2b to bring up a new validator node. Before starting up the node, wait for all the other nodes in the ADKG subsystem to restart in a synchronized manner. In this case, all validator nodes have to restart together.
+
+### Migration to a different IP Address and Domain
+
+We **do not support** migrating the validator node to a different one that has a different domain and a different IP address. In future releases too, the new node with a different domain and IP address will not be treated as a reincarnate of the previous node but as a brand 'new' replacement node. Adding such a node will follow Arcana's ADKG recovery and repair protocol enhancements. In that case, there is no use backing up the validator node data.  Our protocol will re-generate and repair key shares where applicable, in case one node goes down and a different one joins in the ADKG subsystem.
+
+!!! caution  "Backup Data Directory of the Validator Node"
+
+      ADKG protocol is under active development for robustness and key repair, regeneration mechanisms. We highly recommend that you back up the 'data' directory of the validator node in any case.
 
 ## Rewards
 

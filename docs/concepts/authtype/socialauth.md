@@ -13,7 +13,7 @@ arcana:
 
 Social authentication providers are popular Web2 user identity providers that allow apps to onboard users and validate the user identity. The {{config.extra.arcana.sdk_name}} supports user authentication in Web3 applications via the following social providers:
 
-{% include "./text-snippets/auth_supported.md" %}
+{% include "./text-snippets/socialauth_supported.md" %}
 
 In Web2 applications, user authentication is typically triggered by a pop-up or via a redirect to a selected provider's web page. This is a familiar and comfortable way for users to onboard a new application without bothering to manage multiple identities. However, this is a centralized authentication system controlled by the social provider. 
 

@@ -1138,6 +1138,7 @@ use-wallet-ui-to-manage-tokens
 use3pwallet
 user-auth
 user-auth-dkg-flow
+user-onboarding-options
 userInfo
 usingminter
 usingreactconn
@@ -1146,6 +1147,7 @@ v1.0.1
 v1.0.2
 v1.0.3
 v1.0.4
+v1.0.5
 v2
 validator
 validator_nodes

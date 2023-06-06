@@ -167,12 +167,13 @@ nav:
       - Auth SDK: faq/faq-auth.md
       - Validator Nodes: faq/faq-validator.md
     - Troubleshooting Guide: troubleshooting.md
-    - Release Notes: relnotes/rn-main-auth-v1.0.4.md
-    - Migration Guide: migration/main-auth-v1.0.4-migration.md
+    - Release Notes: relnotes/rn-main-auth-v1.0.5.md
+    - Migration Guide: migration/main-auth-v1.0.5-migration.md
     - Archives: 
         - archives/index.md
         - Migration Guides:
           - migration/archives/index.md
+          - v1.0.3 -> v1.0.4: migration/main-auth-v1.0.4-migration.md         
           - v1.0.2 -> v1.0.3: migration/main-auth-v1.0.3-migration.md
           - v1.0.1 -> v1.0.2: migration/main-auth-v1.0.2-migration.md
           - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
@@ -180,6 +181,7 @@ nav:
           - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
         - Release Notes:
           - relnotes/archives/index.md
+          - Auth 1.0.4 : relnotes/rn-main-auth-v1.0.4.md
           - Release May3-2023: relnotes/rn-main-auth-May3-23.md
           - Auth 1.0.3 : relnotes/rn-main-auth-v1.0.3.md
           - Auth 1.0.2 : relnotes/rn-main-auth-v1.0.2.md

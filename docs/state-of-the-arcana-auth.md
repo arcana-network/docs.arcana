@@ -86,16 +86,24 @@ At Arcana, we take the security and privacy of applications seriously and believ
 
 ### User Onboarding Options
 
-The [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) allows Web3 apps to integrate and onboard users via one or more of the supported user authentication mechanisms:
+The [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] allows Web3 apps to integrate and onboard users via one or more of the supported user authentication mechanisms:
 
-{% include "./text-snippets/auth_supported.md" %}
+**Social Providers**
 
-We are working on supporting additional social providers for onboarding users. Watch out for the upcoming {{config.extra.arcana.sdk_name}} releases:
+{% include "./text-snippets/socialauth_supported.md" %}
 
-- Telegram
-- LINE
-- Wechat
-- Kakaotalk
+**Custom IAM Providers**
+
+{% include "./text-snippets/custom_idm_supported.md" %}
+
+!!! abstract "Coming soon!" 
+
+      We are working on supporting additional authentication providers in the upcoming {{config.extra.arcana.sdk_name}} releases:
+
+      - Telegram
+      - LINE
+      - Wechat
+      - Kakaotalk
 
 !!! tip
 
