@@ -421,7 +421,7 @@ plugins:
   - redirects:
       redirect_maps:
         'introduction.md': 'introducing-arcana-auth.md'
-        'walletsdk/wallet_qs.md': 'quick-start/auth-quick-start.md'
+        'walletsdk/wallet_qs.md': 'quick-start/index.md'
         'walletsdk/wallet_err.md': 'web-sdk/auth-error-msg.md'
         'walletsdk/wallet_usage.md': 'web-sdk/auth-usage-guide.md'
         'an_academy/new_web3_dev.md': 'an-academy/new-to-web3.md'

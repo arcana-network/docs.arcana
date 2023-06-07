@@ -62,7 +62,7 @@ export default function App() {
   const authRef = React.useRef(null);
 
   return (
-    <View style={{ flex: 1 }}>
+    <View >
       <Auth clientId="xar_test_xxx" theme="light" ref={authRef} />
     </View>
   );
@@ -175,10 +175,10 @@ const request = (method, params) => {
 
 Refer to the following sample code to understand how to handle events in the React-Native app related to the Web3 operations initiated by the Arcana wallet.
 
-```javascript
+```js
 
- return (
-    <View style={{flex: 1}}>
+return (
+    <View >
       <Button
         title={"Get User Info"}
         onPress={() =>
@@ -215,7 +215,8 @@ Refer to the following sample code to understand how to handle events in the Rea
       />
     </View>
   );
- ```
+
+```
 
 After integrating the React-Native app with the {{config.extra.arcana.react_native_sdk_name}} and adding code to onboard users via 'Google', you can deploy the app.  Depending upon the environment selected during the Auth SDK initialization earlier, the app will be deployed on the Arcana Testnet or Mainnet.
 
