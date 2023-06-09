@@ -121,18 +121,20 @@ nav:
                 - howto/onboard-users/build-idm/index.md
                 - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
                 - Firebase: howto/onboard-users/build-idm/firebase-login.md
-      - Enable Arcana Wallet:
-        - howto/arcana-wallet/index.md
-        - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md
-        - Manage Chains: howto/arcana-wallet/config-wallet-chains.md
-        - Web3 Wallet Ops:
-          - howto/arcana-wallet/web3-ops/index.md
-          - Add / Switch Network: howto/arcana-wallet/add-switch-ntwk.md
-          - Check Wallet Balance: howto/arcana-wallet/balance.md
-          - Send Tokens: howto/arcana-wallet/send.md
-          - Sign Transactions: howto/arcana-wallet/sign.md
-          - Show Wallet: howto/arcana-wallet/show.md
-          - Watch Assets: howto/arcana-wallet/watchasset.md
+      - Wallet Ops:
+        - Enable Arcana Wallet:
+          - howto/arcana-wallet/index.md
+          - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md
+          - Manage Chains: howto/arcana-wallet/config-wallet-chains.md
+          - Web3 Wallet Ops:
+            - howto/arcana-wallet/web3-ops/index.md
+            - Add / Switch Network: howto/arcana-wallet/add-switch-ntwk.md
+            - Check Wallet Balance: howto/arcana-wallet/balance.md
+            - Send Tokens: howto/arcana-wallet/send.md
+            - Sign Transactions: howto/arcana-wallet/sign.md
+            - Show Wallet: howto/arcana-wallet/show.md
+            - Watch Assets: howto/arcana-wallet/watchasset.md
+        - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
       - Deploy App: howto/deploy-app.md
   - Tutorials: 
       - tutorials/index.md

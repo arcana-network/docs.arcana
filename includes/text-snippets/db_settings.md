@@ -62,4 +62,8 @@ Use the defaults or provide inputs for various settings as per your application 
 
            It is possible to use **App-Specific Keys** (default) at the start and change the keyspace type later to **Global Keys**. However, transitioning between the two will cause the user's wallet address to change.
 
+    !!! caution "Custom Wallet UI: Global Keys Not supported"
+
+      If a developer chooses the custom wallet UI feature during app registration, only app-specific keys are supported for such apps for security reasons. What this means is that authenticated users will see different wallet addresses when they sign in using the same authentication provider in a different app in the {{config.extra.arcana.company_name}} ecosystem.
+
 Make sure you save the configuration settings before leaving the {{config.extra.arcana.dashboard_name}} page in your browser.
