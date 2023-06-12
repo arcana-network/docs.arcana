@@ -30,9 +30,23 @@ The latest release of the {{config.extra.arcana.product_name}} product consists 
 
 ---
 
+### Auth for Gaming Apps (Unity)
+
+The {{config.extra.arcana.product_name}} product now allows gaming apps built using the Unity framework to easily onboard users through the {{config.extra.arcana.sdk_name}} and sign blockchain transactions. Developers must install the `{{config.extra.arcana.gaming_sdk_pkg_name}}` package and refer to the [[unity-quick-start|Arcana Auth Quick Start Guide for Gaming Apps]] to integrate Unity apps with the {{config.extra.arcana.sdk_name}} SDK.
+
+We are working on supporting other gaming platforms in the future, stay tuned. 
+
+### Auth for Mobile Apps
+
+The {{config.extra.arcana.product_name}} product now allows mobile apps built using Flutter and React-Native frameworks to easily onboard users through the {{config.extra.arcana.sdk_name}} and sign blockchain transactions. 
+
+Flutter app developers must install the `{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}` package and refer to the [[flutter-quick-start|Arcana Auth Quick Start Guide for Flutter Apps]] to integrate Web3 Flutter apps with the {{config.extra.arcana.sdk_name}} SDK.
+
+React-Native app developers must install the `{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}` package and refer to the [[react-native-quick-start|Arcana Auth Quick Start Guide for React-Native Apps]] to integrate Web3 React-Native apps with the {{config.extra.arcana.sdk_name}} SDK.
+
 ### Steam OAuth Support
 
-Web3 applications that integrate with the {{config.extra.arcana.sdk_name}} can now onboard users via [Steam OAuth](https://partner.steamgames.com/doc/webapi_overview/oauth). See [[config-auth-steam|how to configure Steam as an onboarding option]] section for more details. After configuring one or more authentication providers through the {{config.extra.arcana.dashboard_name}}, applications can onboard users with a single line of code using `loginWithSocial` call. Developers can use the built-in plug-and-play login UI feature of the the {{config.extra.arcana.sdk_name}} or use a custom login UI and allow users to onboard the app using Steam. See [[index-onboard-users|how to onboard users]] section and choose the app type for instructions on how to onboard users with Steam.
+Web3 applications that integrate with the {{config.extra.arcana.sdk_name}} can now onboard users via [Steam OAuth](https://partner.steamgames.com/doc/webapi_overview/oauth). See [[config-auth-steam|how to configure Steam as an onboarding option]] section for more details. After configuring one or more authentication providers through the {{config.extra.arcana.dashboard_name}}, applications can onboard users with a single line of code using `loginWithSocial` call. Developers can use the built-in plug-and-play login UI feature of the {{config.extra.arcana.sdk_name}} or use a custom login UI and allow users to onboard the app using Steam. See [[index-onboard-users|how to onboard users]] section and choose the app type for instructions on how to onboard users with Steam.
 
 ### Firebase Auth Support
 
