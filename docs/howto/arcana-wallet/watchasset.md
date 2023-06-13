@@ -35,8 +35,6 @@ Add code for watching token assets associated with the logged in user's wallet a
 
 When a new asset is bought, sold or shared using the authenticated user's wallet address, the app can track the change in asset values and prompt the user to display the wallet with the updated values.
 
-<img src="/img/an_wallet_send_inputs.png" width="300"/>
-
 **That is all!**  :material-party-popper:
 
 *The web3 app is all set to programmatically watch assets associated with the {{config.extra.arcana.wallet_name}}.*

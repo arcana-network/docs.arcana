@@ -1,6 +1,6 @@
 ---
 alias: index-video-tutorials
-title: 'List of Arcana Video Tutorials'
+title: 'Video Tutorials'
 description: 'Video tutorials for getting started with Arcana Auth product.'
 arcana:
   root_rel_path: ../..

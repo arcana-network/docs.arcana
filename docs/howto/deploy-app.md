@@ -52,7 +52,7 @@ After registering the app, configuring it for the 'Testnet' configuration profil
 
 An authenticated app user will see the following wallet UI when using the Arcana Testnet.
       
-<img alt="Testnet Wallet" src="/img/an_migration_testnet_wallet.png" width="20%"/>  
+<img alt="Testnet Wallet" src="/img/an_migration_testnet_wallet.png" width="35%"/>  
 
 #### Monitor Testnet Usage
 
@@ -92,7 +92,7 @@ After registering the app, configuring it for the 'Mainnet' configuration profil
 
 An authenticated app user will see the following wallet UI when using the Arcana Mainnet.
       
-<img alt="Testnet Wallet" src="/img/an_migration_mainnet_wallet.png" width="20%"/>  
+<img alt="Testnet Wallet" src="/img/an_migration_mainnet_wallet.png" width="35%"/>  
 
 #### Monitor Mainnet Usage
 

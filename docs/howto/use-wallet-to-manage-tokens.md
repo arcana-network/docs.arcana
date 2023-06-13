@@ -31,7 +31,7 @@ Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width=
 
 Click **Refresh** to fetch the latest account balance. If you use the {{config.extra.arcana.wallet_name}} to send native or custom tokens, the account balance gets automatically updated once the transfer is processed.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_home.png" width="20%"/><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_home.png" width="35%"/><br></br><br></br>
 
 ## Add Custom Tokens
 
@@ -41,13 +41,13 @@ If you do not see your custom token already listed in the token asset list, clic
 
 A custom token specification UI is displayed in the wallet.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_add_custom_token.png" width="20%"/><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_add_custom_token.png" width="35%"/><br></br><br></br>
 
 Add the **Token Contract Address**. Once you add the address, the {{config.extra.arcana.wallet_name}} validates whether it is an ERC-20 standard custom token. After the contract is verified, the wallet automatically fetches the **Token Symbol** and the **Token Decimal** values as configured in the custom contract.
 
 Click **Save** to add the custom token. The newly added custom token will show up under the account balance section on the wallet.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_custom_tokens.png" width="20%"/><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_custom_tokens.png" width="35%"/><br></br><br></br>
 
 ## Select Native/Custom Token
 
@@ -55,29 +55,29 @@ Before sending tokens, users can specify whether they intend to transfer native 
 
 Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> tab to view native and custom tokens screen.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_choose_custom.png" width="20%"/><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_choose_custom.png" width="35%"/><br></br><br></br>
 
 Use the drop-down list by clicking on the arrow next to the native token symbol and choose one of the custom tokens that are already added to the {{config.extra.arcana.wallet_name}}. 
  
 ## Send Tokens
 
-Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/>tab in the wallet to view the tokens associated with the wallet account.
+Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="35"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/>tab in the wallet to view the tokens associated with the wallet account.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_home.png" width="20%"/><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_home.png" width="35%"/><br></br><br></br>
 
 Click **Send** to initiate the send tokens workflow in the {{config.extra.arcana.wallet_name}} by bringing up the following screen:
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_send_inputs.png" width="20%"/><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_send_inputs.png" width="35%"/><br></br><br></br>
 
 Choose the appropriate token that you wish to send from the dropdown list, enter the transfer amount, and requisite gas fees, and click **Proceed**. A preview screen shows the details of the send transaction. Click **Send** to confirm or click **Back** if you wish to change any transaction details. 
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_send.png" width="20%"/><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_send.png" width="35%"/><br></br><br></br>
 
 ## Receive Tokens
 
-Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> tab at the bottom left of the wallet to receive tokens from another wallet address. Click **Receive** and copy the QR code or the wallet address. Share it with the sender for receiving tokens in your account.  
+Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> tab at the bottom left of the wallet to receive tokens from another wallet address. Click the QR icon <img src="/img/icons/an_wallet_qr_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_qr_dark.png#only-dark" width="20"/> on the top right of the wallet and copy the QR code or the wallet address. Share it with the sender for receiving tokens in your account.  
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_receive_qr.png" width="20%"/><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_receive_qr.png" width="35%"/><br></br><br></br>
 
 Click **Refresh** to see the updated account balance after the sender transaction is complete.
 
@@ -92,15 +92,11 @@ The wallet notification screen displays a list of different blockchain transacti
 - Send transactions for native or custom tokens
 - Contract Deployment
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notify.png" width="20%"/><br></br><br></br>
-
-You can view all activities in the list or filter them based on whether the blockchain transactions were initiated by the user or the app. Click on the filter icon and choose the desired option.
-
-<img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notify_filter_nav_options.png" width="45%"/><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notify.png" width="35%"/><br></br><br></br>
 
 To see details of a send transaction, click on the arrow to expand the view.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notification_details_send_token.png" width="20%" /><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notification_details_send_token.png" width="35%" /><br></br><br></br>
 
 !!! tip
 

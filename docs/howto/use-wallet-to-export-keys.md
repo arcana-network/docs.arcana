@@ -26,15 +26,15 @@ This guide explains how a web3 user can export their private key by using the {{
 
 Make sure that the wallet is in the maximized state. Click the **User Profile** tab. Under the 'Private Key' section, you will see the **Export Key** option.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_export_key_screen.png" width="20%"/>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_export_key_screen.png" width="35%"/>
 
 When a user selects **Export Key**, you will see the following confirmation screen:
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_export_key_confirm.png" width="20%"/>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_export_key_confirm.png" width="35%"/>
 
 If the user chooses to **Proceed**, two options are available to export the key. Users can either copy or download the private key from the wallet.  
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_export_key_copy.png" width="20%"/>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_export_key_copy.png" width="35%"/>
 
 !!! note "Security and Privacy"
 

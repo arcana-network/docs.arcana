@@ -34,7 +34,7 @@ A user must be successfully authenticated before calling the `showWallet()` func
 
 If the {{config.extra.arcana.wallet_name}} is not already displayed in the context of the application, `showWallet()` will bring up the following {{config.extra.arcana.wallet_name}} UI screen. If the {{config.extra.arcana.wallet_name}} is already displayed in the minimized state before the `showWallet``()`` function is called, then it will cause the minimized wallet state to change into the maximized {{config.extra.arcana.wallet_name}} UI.
 
-<img src="/img/an_wallet_balance.png" width="300"/>
+<img src="/img/an_wallet_home.png" width="300"/>
 
 **That is all!**  :material-party-popper:
 
