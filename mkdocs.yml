@@ -29,6 +29,7 @@ nav:
         - quick-start/mobile/index.md
         - Flutter Apps: quick-start/flutter-quick-start.md
         - React-Native Apps: quick-start/react-native-quick-start.md
+      - Auth-Core: quick-start/auth-core-quick-start.md
     - New to Web3:  an-academy/new-to-web3.md
   - Getting Started:
       - howto/index.md
@@ -285,6 +286,7 @@ extra:
     company_name: Arcana
     product_name: Arcana Auth
     sdk_name: Arcana Auth SDK
+    auth_core_sdk_name: Arcana Auth-Core SDK
     gaming_sdk_name: Arcana Auth Gaming SDK
     flutter_sdk_name: Arcana Auth Flutter SDK
     react_native_sdk_name: Arcana Auth React-Native SDK
@@ -297,6 +299,7 @@ extra:
     latest_version_dashboard: !ENV [DASHBOARD_VERSION, '1.0.6']
     latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_VERSION, 'Beta-0.3']
     auth_sdk_pkg_name: auth
+    auth_core_sdk_pkg_name: auth-core
     react_sdk_pkg_name: auth-react
     wagmi_sdk_pkg_name: auth-wagmi
     web3_react_sdk_pkg_name: auth-web3-react
