@@ -12,16 +12,22 @@ arcana:
 
 * Download the {{config.extra.arcana.sdk_name}} npm packages required as per the Web3 application type: 
 
-    - All app types: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
-    - Add on package for simple React apps: [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react)
-    - Add on package for Wagmi/RainbowKit apps: [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) 
-    - Add on package for Web3-React apps: [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
+    - **Web3/Desktop Apps**
+      - All app types: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
+      - Add on package for simple React apps: [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react)
+      - Add on package for Wagmi/RainbowKit apps: [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) 
+      - Add on package for Web3-React apps: [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
+    - **Mobile Apps**
+      - Flutter apps: {{config.extra.arcana.flutter_sdk_name}} [`{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}`]
+      - React-Native apps: {{config.extra.arcana.react_native_sdk_name}} [`{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}`]
+    - **Gaming Apps**
+      - Unity apps: {{config.extra.arcana.gaming_sdk_name}} [`{{config.extra.arcana.gaming_sdk_pkg_name}}`]
 
-* Access the latest {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
+* Use the {{config.extra.arcana.dashboard_name}} to register and configure Auth usage: {% include "./text-snippets/db_portal_url.md" %}
 
 ## What's New?
 
-See [[rn-main-auth-v1.0.4|{{config.extra.arcana.product_name}} Release Notes]] for details.
+See [[rn-main-auth-v1.0.5|{{config.extra.arcana.product_name}} Release Notes]] for details.
 
 ## Mode of Operation
 
@@ -64,11 +70,11 @@ We have come a long way since our alpha release that offered a distributed DKG. 
 
 ## Security
 
-### Key Shares
+### Key Share Assembly
 
-{{config.extra.arcana.product_name}} components do not store any key shares that belong to the app user. The key shares are used to generate the user's keys only at the client end after user verification. 
+{{config.extra.arcana.company_name}} does not store any key shares that belong to the app user. The key shares are created by ADKG subsystem and assigned to the authenticated user. Key shares are used to generate the user's private key only in the context of the Web3 app, at the client end, after user verification. Enhanced wallet security (MFA feature) further secures the key generation process even if the user changes the device used to log in to the Web3 app that is integrated with {{config.extra.arcana.product_name}} product.
 
-### Key Generation
+### Key Share Generation
 
 {{config.extra.arcana.product_name}} combines several algorithms to have a highly secure and robust ADKG subsystem. It uses a [robust asynchronous DPSS mechanism](https://eprint.iacr.org/2022/971) to ensure that no single node in the system has access to the user's keys and that the system can handle malicious nodes. We are also working on other enhancements to this ADKG subsystem to enable key share repair, key share refresh, and more. Besides these other enhancements include {{config.extra.arcana.product_name}} multi-factor authentication (MFA), and multi-party computation (MPC) for even stronger security without compromising on ease of use for Web3 users.
 
@@ -78,7 +84,7 @@ At Arcana, we take the security and privacy of applications seriously and believ
 
 ## Supported Browsers
 
-{{config.extra.arcana.sdk_name}} can be integrated with any applications that work on one of the supported browsers:
+{{config.extra.arcana.sdk_name}} can be integrated with any Web3 Desktop application that works with the following browsers:
 
 {% include "./text-snippets/supported_browsers.md" %}
 
@@ -121,8 +127,16 @@ The [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] allows Web3 apps to in
 
       Besides supporting all EVM-compatible blockchain networks, we are working on supporting other chains that are not EVM-compatible in the upcoming releases. For e.g., Cosmos, Solana, Near, TON, and Algorand
 
-## {{config.extra.arcana.dashboard_name}} Login Options
+## {{config.extra.arcana.dashboard_name}} 
+
+### Login Options
 
 The Web3 app developers can log into the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) via one of these social providers or use passwordless login:
 
 {% include "./text-snippets/db_supported_oauth.md" %}
+
+### Supported Browsers
+
+The {{config.extra.arcana.dashboard_name}} can be accessed using one of the supported browsers:
+
+{% include "./text-snippets/supported_browsers.md" %}

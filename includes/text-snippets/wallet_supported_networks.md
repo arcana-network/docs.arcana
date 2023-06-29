@@ -12,4 +12,4 @@
 * Polygon 
 * Shardeum Sphinx 1.x
 
-<img src="/img/an_wallet_default_chain_list.png" alt="Supported Blockchains Image" width="50%" class="an-screenshots"/>>
+<img src="/img/an_wallet_default_chain_list.png" alt="Supported Blockchains Image" width="50%" class="an-screenshots"/>

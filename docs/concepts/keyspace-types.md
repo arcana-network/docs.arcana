@@ -1,29 +1,75 @@
 ---
 alias: concept-keyspace-type
 title: 'Keyspace Types: App-Specific vs. Global Keys'
-description: 'Developers can choose the keyspace type as per the application use case at the time of registering an app. Changing keyspace later may change user keys.'
+description: 'During app registration, developers have the option to choose the keyspace type based on the application requirements. However, changing the keyspace later may result in a change in user keys.'
 arcana:
   root_rel_path: ..
 ---
 
 # App-Specific vs. Global Keys
 
-Arcana Network allows Web3 application developers to have the flexibility of choosing the desired levels of data security and ease of use as per the application requirements.
+{{config.extra.arcana.company_name}} provides developers using the {{config.extra.arcana.product_name}} product with two user key options:
 
-In the case of Web2 applications, it is common to use the same password across different applications.  If you translate this user behavior in Web3 applications, developers may want to allow the application users to use the same wallet address across different applications that use the {{config.extra.arcana.company_name}} ecosystem. Similar to the Web2 application behavior of allowing the same password across diverse applications, the option of allowing Web3 authenticated users to have the same user keys or the same wallet address across Web3 applications may result in simpler user experience but at the risk of reduced security. Any malicious actor that is able to hack into one of the applications could potentially do so for all the other applications that are relying on the same user password or wallet address. 
+* App-specific keys
+* Global keys
 
-{{config.extra.arcana.product_name}} associates cryptographic key pair with every authenticated user. Keys are associated with the user's wallet address. A user's keys are the gateway to accessing Web3 applications, signing blockchain transactions, and managing wallet assets. You can equate keys to 'passwords' in the Web2 applications but they are more secure. A user's self-sovereign identity is realized through these secure keys that are not stored anywhere in the {{config.extra.arcana.product_name}} ecosystem. To construct a key, multiple key shares are required. These shares are split across multiple DKG participating nodes and no single node has access to the user's keys.
+These key types enable Web3 application developers to tailor the user experience based on their specific requirements for privacy, security, and ease of use.
 
-By default, every application is configured to use the highly secure **App-specific Keys** whereby the user's application keys or the wallet address is unique across different applications that integrate with the {{config.extra.arcana.sdk_name}} and are part of the {{config.extra.arcana.company_name}} ecosystem. As a result, an authenticated user will be assigned a unique set of keys and a different wallet address for every application.
+## User Experience
 
-To facilitate the same wallet address for an authenticated user across different applications in the {{config.extra.arcana.company_name}} ecosystem, developers must select the **Global Keys** option. Global keys enable a Web2-like user experience in Web3 applications but it requires developers to be whitelisted via a manual verification process for security reasons.
+|**App-specific Keys**|**Global Keys**|
+|:--- | :--- |
+| Default configuration.| Developers must explicitly select this configuration.|
+| Available for both Testnet/Mainnet configuration profile and app deployments.| Available only in the Mainnet configuration and app deployment.|
+| User sees a unique, different key/wallet address when they log into any app that is integrated with the {{config.extra.arcana.product_name}} product.| User sees the same key/wallet address irrespective of which app they log in as long as they use the same onboarding mechanism and the app is integrated with the {{config.extra.arcana.product_name}} product.|
+| No known security vulnerability.| Potential vulnerability - if the user account in one app gets hacked, all the others are exposed as well due to the single key/wallet address.|
+
+### Global Keys Tradeoffs
+
+In Web2 applications, users commonly use the same password for multiple applications. Similarly, in Web3 applications integrated with the Arcana Auth product, developers may opt to allow users to use a single wallet address across all integrated applications.
+
+This behavior mirrors the simplicity of Web2 applications, where users have the same password for different applications. While providing the same user keys/wallet address across Web3 apps simplifies the user experience, it also introduces a security risk. This vulnerability becomes significant if there are financial consequences involved. If a malicious actor breaches one such app and gains access to a user's global keys, they could potentially access the user's digital assets across all other applications as well.
 
 ## Enabling Global Keys
 
-To enable the user experience of having the same wallet address across different applications, developers must use the {{config.extra.arcana.dashboard_name}} and select the **Global Keys** option. To whitelist an application, the developer must get themselves verified from {{config.extra.arcana.company_name}} by filling out an online form. It may take a couple of hours to get the feature enabled after verification. Refer to the verification status in the {{config.extra.arcana.dashboard_name}} and once it is approved, the **Global Keys** are enabled for the application. 
+To enable a shared wallet address across applications, developers can enable global keys via the {{config.extra.arcana.dashboard_name}} by updating the Mainnet configuration. After selecting the global keys option, developers must request activation via an online form; feature activation may take a few hours after verification.
 
-!!! caution
+!!! caution "Mainnet only feature"
 
       This feature is **only** available for applications deployed on the {{config.extra.arcana.company_name}} Mainnet.
-      
-      Developers can register applications and choose to opt for the 'Global Keys' feature. It may take some time for manual verification.  Meanwhile, if developers continue to integrate their application with the {{config.extra.arcana.sdk_name}} while waiting for approval for the global keys, and allowing application users to log in, the users will be assigned unique wallet addresses. These wallet addresses may change later once the request for using the shared keys feature is granted.
+
+### Submit Request
+
+To enable the 'Global Keys' feature, developers can submit a request after registering their applications and creating the Mainnet configuration profile that has the 'global keys' option enabled. The request will undergo manual verification, which may take some time. Developers can check the verification status in the {{config.extra.arcana.dashboard_name}}. Once approved, the application will have 'Global Keys' enabled. During the verification process, developers can continue using the 'app-specific' keys option on Arcana Testnet.
+
+Once the application is approved for global keys, it can be deployed on Mainnet, and users will notice a change in key/wallet address values when logging in with global keys.
+
+!!! warning "Mainnet deployment before approval"
+
+      Deploying the app on Mainnet with the 'app-specific' keys option before global keys approval results in two key/wallet address changes for users. The first change occurs during the transition from Testnet to Mainnet deployment using app-specific keys. The second change happens after the request is approved, shifting the app's keyspace from 'app-specific' to 'global keys'.
+
+## Global Keys Limitations
+
+The 'Global Keys' option is exclusive to apps configured for 'Mainnet' usage. These apps are integrated with {{config.extra.arcana.company_name}} product using the 'Mainnet' {{config.extra.arcana.app_address}} and deployed on the Mainnet. Here are some limitations related to the use of global keys:
+
+### Switching Keyspace
+
+Initially, apps can be registered and configured to use app-specific keys (default). These apps can integrate with {{config.extra.arcana.product_name}} using the assigned {{config.extra.arcana.app_address}} for the 'Testnet' configuration profile and deploy on Testnet.
+
+When apps are ready for Mainnet deployment, developers can create a Mainnet configuration profile and choose the global keys option. It is advisable to wait for the global keys request update before deploying the app on Mainnet. This ensures that users will only experience a single change in keys/wallet addresses from Testnet to Mainnet.
+
+Please note that once an app deployed on Mainnet switches to the 'Global Keys' option, reverting back may have side effects. When switching back, the authenticated user's keys/wallet address will change to a different one.
+
+### Custom Wallet UI
+
+If a developer selects the custom wallet UI feature during app registration, the app can only utilize app-specific keys. The global keys option is not available for apps using the custom wallet UI due to security concerns.
+
+This implies that users of Web3 apps configured with the custom wallet UI will have distinct wallet addresses, even if they use the same authentication provider to log in to another app integrated with the {{config.extra.arcana.product_name}} product within the {{config.extra.arcana.company_name}} ecosystem.
+
+The reason for this restriction is to reduce a potential security vulnerability. See the security section below for details.
+
+### Security
+
+While {{config.extra.arcana.company_name}} follows a stringent validation process to enable global keys for apps, the usage of 'global keys' introduces a potential security vulnerability for the users of such apps.
+
+This vulnerability is a trade-off for the convenience offered by global keys. Global keys allow users to have the same wallet address for the same onboarding provider across all apps integrated with the {{config.extra.arcana.product_name}} product. This unified wallet address allows users to seamlessly utilize digital assets across various apps. However, if one of these apps becomes malicious, the user's key is no longer confined to that particular app, granting unauthorized access to the user's information across all apps using 'global keys'.
