@@ -56,7 +56,7 @@ Web3 app developers can easily onboard users via the built-in, plug-and-play log
 
 ## Step 4: Programmatically Use Shardeum Network
 
-Web3 app developers can integrate the app with the {{config.extra.arcana.sdk_name}} and call `wallet_addEthereumChain` JSON-RPC method to programmatically add other flavors of Shardeum networks in the list of preconfigured networks via the  {{config.extra.arcana.dashboard_name}}. They can also switch to the required network via the `wallet_switchEthereumChain` call. Make sure that the requisite hooks for JSON-RPC are set up in the app.
+Web3 app developers can integrate the app with the {{config.extra.arcana.sdk_name}} and call `wallet_addEthereumChain` JSON-RPC method to programmatically add other flavors of Shardeum networks in the list of pre-configured networks via the  {{config.extra.arcana.dashboard_name}}. They can also switch to the required network via the `wallet_switchEthereumChain` call. Make sure that the requisite hooks for JSON-RPC are set up in the app.
 
 ### Enable JSON-RPC Hooks
 

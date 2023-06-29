@@ -8,7 +8,7 @@ arcana:
 
 # Export Private Key 
 
-This guide explains how a web3 user can export their private key by using the {{config.extra.arcana.wallet_name}} UI. 
+This guide explains how a user can export their private keys from the {{config.extra.arcana.wallet_name}} UI. 
 
 !!! caution "Security Risk"
 

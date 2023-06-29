@@ -40,7 +40,7 @@ React-Native app developers must install the `{{config.extra.arcana.mobile_react
 
 ### White-labeled Auth 
 
-The new white-labeled auth feature allows Web3 app developers to configure the {{config.extra.arcana.sdk_name}} and disable the built-in {{config.extra.arcana.wallet_name}} UI. Developers can replace it with a custom wallet UI and build necessary interfaces to call the web3 wallet operations themselves along with notification UI for requesting user approval for signing a blockchain transaction. See [[custom-wallet-ui|how to plug in a custom wallet UI]] and use the white-labeled auth feature. 
+The new white-labeled auth feature allows Web3 app developers to configure the {{config.extra.arcana.sdk_name}} and disable the built-in {{config.extra.arcana.wallet_name}} UI. Developers can replace it with a custom wallet UI and build necessary interfaces to call the Web3 wallet operations themselves along with notification UI for requesting user approval for signing a blockchain transaction. See [[custom-wallet-ui|how to plug in a custom wallet UI]] and use the white-labeled auth feature. 
 
 ### Steam OAuth Support
 
