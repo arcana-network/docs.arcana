@@ -455,6 +455,7 @@ Web2
 Web2-like
 Web3
 Web3-React
+Web3-like
 WebView
 Webpack
 Webview
@@ -944,6 +945,7 @@ index-config-iam-providers
 index-config-social-providers
 index-configure-auth
 index-custom-ui-onboard-users
+index-dev-guides
 index-dev-resources
 index-dkg
 index-faq
@@ -1002,6 +1004,7 @@ maxHeadingLevel
 metamask
 mfa
 mfa-user-guide
+migrate-app-testnet-mainnet
 migration_to_beta1_1
 migration_to_beta1_2
 migration_to_beta1_5
@@ -1024,6 +1027,7 @@ no-UI
 non-Arcana
 non-EVM
 npm
+octicons-cross-reference-16
 octicons-file-code-16
 octicons-key-24
 onboard-rainbow-app-custom-ui
@@ -1122,6 +1126,7 @@ sharefile
 showWallet
 signingtx
 signup
+simple-bookstack
 simple-hive_blockchain
 simple-nextdotjs
 socialauth
