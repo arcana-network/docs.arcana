@@ -13,5 +13,3 @@ arcana:
 [[faq-db| {{config.extra.arcana.dashboard_name}} Queries]]{ .md-button }
 
 [[faq-auth| {{config.extra.arcana.sdk_name}} Usage Queries]]{ .md-button }
-
-[[faq-validator|Validator Onboarding Queries]]{.md-button }

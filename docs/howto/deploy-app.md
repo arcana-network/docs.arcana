@@ -30,7 +30,7 @@ Developers can choose to configure and deploy one instance of the app under acti
 
 * Only authenticated users are allowed to sign blockchain transactions and perform Web3 wallet operations using the {{config.extra.arcana.wallet_name}}. Before deploying the app, developers can add code to onboard users. Choose built-in plug-and-play login UI via `connect` method or build custom login UI by calling the `loginWithSocial` and `loginWithLink` methods. For details, see [[index-onboard-users|how to onboard users]]. You can also plug in additional business logic and [[index-arcana-wallet|utilize the {{config.extra.arcana.wallet_name}}]] programmatically for allowing authenticated users to sign blockchain transactions. 
 
-### Configure Testnet
+## Configure Testnet
 
 To deploy on Arcana Testnet, while integrating the app with the {{config.extra.arcana.sdk_name}}, make sure that a new `AuthProvider` is created using the **Testnet {{config.extra.arcana.app_address}}**. Refer to the Testnet configuration profile in the {{config.extra.arcana.dashboard_name}} to view and copy the Testnet {{config.extra.arcana.app_address}} that is assigned by default when the app is registered.
 
@@ -46,19 +46,19 @@ Next, call the `init` function to initialize the newly created `AuthProvider` be
 
 If you have integrated the app using the Testnet {{config.extra.arcana.app_address}}, your app is ready to be deployed on Arcana Testnet. Optionally, add the user onboarding code and logic for initiating blockchain transactions programmatically.
 
-#### Deploy on Testnet
+### Deploy on Testnet
 
 After registering the app and integrating it using the correct Testnet {{config.extra.arcana.app_address}}, you are all set to deploy and test your app on the Arcana Testnet. Simply Bring up the app. When users log in, the app will automatically use the Arcana Testnet. The wallet address assigned to authenticated the user will correspond to Arcana Testnet.
 
 <img alt="Testnet Wallet" src="/img/an_deploy_testnet_wallet.png" width="35%"/>  
 
-#### Monitor Testnet Usage
+### Monitor Testnet Usage
 
 Visit the app dashboard screen in the {{config.extra.arcana.dashboard_name}} to view the 'Testnet' configuration profile and monitor Arcana Testnet usage. The figure below shows one new user for the test app.
 
 <img alt="Testnet App Identifier" src="/img/an_deploy_testnet_usage.png" width="70%"/>
 
-### Configure Mainnet
+## Configure Mainnet
 
 Before deploying the app on the Arcana Mainnet, make sure that there exists a 'Mainnet' configuration profile for the app. By default, when you register an app, only the 'Testnet' configuration profile is created. See [[dashboard-user-guide#manage-configurations|how to create the 'Mainnet' configuration profile]] section in the {{config.extra.arcana.dashboard_name}} User Guide.
 
@@ -80,13 +80,13 @@ Next, call the `init` function to initialize the newly created `AuthProvider` be
 
 If you have integrated the app using the Mainnet {{config.extra.arcana.app_address}}, your app is ready to be deployed on Arcana Mainnet. Optionally, add the user onboarding code and logic for initiating blockchain transactions programmatically.
 
-#### Deploy on Mainnet
+### Deploy on Mainnet
 
 After registering the app, configuring it for the 'Mainnet' configuration profile, integrating the app with the {{config.extra.arcana.sdk_name}} by using the 'Mainnet' **{{config.extra.arcana.app_address}}**, and optionally adding code to onboard users, other business logic, your app is ready to be deployed on the Mainnet. Simply Bring up the app. When users log in, the app will automatically use the Arcana Mainnet. The wallet address assigned to authenticated the user will correspond to Arcana Mainnet.
       
 <img alt="Testnet Wallet" src="/img/an_deploy_mainnet_wallet.png" width="35%"/>  
 
-#### Monitor Mainnet Usage
+### Monitor Mainnet Usage
 
 Visit the app dashboard screen to view the 'Mainnet' configuration profile and monitor Arcana Mainnet usage. Note that Arcana Mainnet usage is tracked in terms of MAU and billed. The figure below shows one new user for the test app deployed on Mainnet.
 

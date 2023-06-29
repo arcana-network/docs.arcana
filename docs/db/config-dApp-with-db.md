@@ -82,7 +82,7 @@ After the selection is made and the developer confirms, the 'Mainnet' profile is
 
 !!! caution "Copying Testnet Profile"
 
-      If the developer chooses to create the 'Mainnet' profile by copying the 'Testnet' profile, there is an additional setup required to enable the configured social providers. Once the 'Mainnet' profile is created, visit the application dashboard screen and copy the `Redirect URI' displayed for the 'Mainnet' profile. You need to update this `Redirect URI` value using the respective social provider's developer console, similar to the one added that you added earlier in the case of the 'Testnet' profile.
+      If the developer chooses to create the 'Mainnet' profile by copying the 'Testnet' profile, there is an additional setup required to update the configuration of the social provider settings. Once the 'Mainnet' profile is created, click the application configuration social login section in the LHS navigation of the {{config.extra.arcana.dashboard_name}} and copy the `Redirect URI' displayed for the 'Mainnet' profile. You need to update this `Redirect URI` value from the Testnet ones to the Mainnet ones for the respective social provider. To do this, use the social provider-specific developer console or dashboard.
 
 ??? example "Example: Copying Google Profile"
       

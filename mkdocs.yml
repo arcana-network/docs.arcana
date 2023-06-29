@@ -143,16 +143,46 @@ nav:
             - Watch Assets: howto/arcana-wallet/watchasset.md
         - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
       - Deploy App: howto/deploy-app.md
-  - User Guides:
-      - user-guides/index.md
-      - Arcana Dashboard: db/config-dApp-with-db.md
-      - Arcana Wallet UI: 
-        - user-guides/wallet-ui/index.md
-        - Basic Wallet Operations: howto/use-wallet-ui.md
-        - Export Private Key: howto/use-wallet-to-export-keys.md
-        - Manage Tokens: howto/use-wallet-to-manage-tokens.md
-        - Manage NFTs: howto/use-wallet-to-manage-nfts.md
-      - MFA Setup: user-guides/mfa/mfa-ug.md
+  - Developer Resources:
+    - dev-resources/index.md
+    - Release Notes: relnotes/rn-main-auth-v1.0.5.md
+    - SDK Migration: migration/main-auth-v1.0.5-migration.md
+    - Testnet > Mainnet: howto/migrate-testnet-mainnet.md
+    - Developer Guides:
+      - dev-resources/dev-guides/index.md
+      - Dashboard User Guide: db/config-dApp-with-db.md
+      - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
+      - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
+      - Troubleshooting Guide: troubleshooting.md
+      - Handling Auth Errors: web-sdk/auth-error-msg.md
+    - FAQ:
+      - faq/index.md
+      - General: faq/faq-gen.md
+      - Dashboard: faq/faq-db.md
+      - Auth SDK: faq/faq-auth.md
+    - Changelog:
+      - changelog/index.md
+      - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.4
+      - Dashboard Changelog: https://github.com/arcana-network/developer-dashboard/releases/tag/v1.0.5
+    - Archives: 
+        - archives/index.md
+        - Release Notes:
+          - relnotes/archives/index.md
+          - Auth 1.0.4 : relnotes/rn-main-auth-v1.0.4.md
+          - Release May3-2023: relnotes/rn-main-auth-May3-23.md
+          - Auth 1.0.3 : relnotes/rn-main-auth-v1.0.3.md
+          - Auth 1.0.2 : relnotes/rn-main-auth-v1.0.2.md
+          - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
+          - Auth 1.0.0 (Mainnet): relnotes/rn-main-auth-v1.0.0.md
+          - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
+        - SDK Migration:
+          - migration/archives/index.md
+          - v1.0.3 -> v1.0.4: migration/main-auth-v1.0.4-migration.md         
+          - v1.0.2 -> v1.0.3: migration/main-auth-v1.0.3-migration.md
+          - v1.0.1 -> v1.0.2: migration/main-auth-v1.0.2-migration.md
+          - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
+          - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
+          - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
   - Tutorials: 
       - tutorials/index.md
       - Code Samples: 
@@ -167,45 +197,15 @@ nav:
       - Videos: 
         - tutorials/videos/index.md
         - Get Started: tutorials/videos/get-started.md
-  - Developer Resources:
-    - dev-resources/index.md
-    - Release Notes: relnotes/rn-main-auth-v1.0.5.md
-    - Migration Guide: migration/main-auth-v1.0.5-migration.md
-    - References:
-      - reference/index.md
-      - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
-      - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
-      - FAQ:
-        - faq/index.md
-        - General: faq/faq-gen.md
-        - Dashboard: faq/faq-db.md
-        - Auth SDK: faq/faq-auth.md
-        - Validator Nodes: faq/faq-validator.md
-      - Troubleshooting Guide: troubleshooting.md
-      - Handling Auth Errors: web-sdk/auth-error-msg.md
-      - Changelog:
-        - changelog/index.md
-        - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.4
-        - Dashboard Changelog: https://github.com/arcana-network/developer-dashboard/releases/tag/v1.0.5
-      - Archives: 
-          - archives/index.md
-          - Migration Guides:
-            - migration/archives/index.md
-            - v1.0.3 -> v1.0.4: migration/main-auth-v1.0.4-migration.md         
-            - v1.0.2 -> v1.0.3: migration/main-auth-v1.0.3-migration.md
-            - v1.0.1 -> v1.0.2: migration/main-auth-v1.0.2-migration.md
-            - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
-            - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
-            - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
-          - Release Notes:
-            - relnotes/archives/index.md
-            - Auth 1.0.4 : relnotes/rn-main-auth-v1.0.4.md
-            - Release May3-2023: relnotes/rn-main-auth-May3-23.md
-            - Auth 1.0.3 : relnotes/rn-main-auth-v1.0.3.md
-            - Auth 1.0.2 : relnotes/rn-main-auth-v1.0.2.md
-            - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
-            - Auth 1.0.0 (Mainnet): relnotes/rn-main-auth-v1.0.0.md
-            - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
+  - User Guides:
+      - user-guides/index.md
+      - Arcana Wallet UI: 
+        - user-guides/wallet-ui/index.md
+        - Basic Wallet Operations: howto/use-wallet-ui.md
+        - Export Private Key: howto/use-wallet-to-export-keys.md
+        - Manage Tokens: howto/use-wallet-to-manage-tokens.md
+        - Manage NFTs: howto/use-wallet-to-manage-nfts.md
+      - MFA Setup: user-guides/mfa/mfa-ug.md
   - Blockchain Integrations:
       - EVM Chains:
         - Shardeum: 
@@ -278,6 +278,7 @@ nav:
         - User Auth and DKG: user-flows/user-auth-and-dkg.md
   - DKG Validators: 
     - onboard-validators.md
+    - Validator FAQ: faq/faq-validator.md
   - Contact Us: 
     - support.md
 

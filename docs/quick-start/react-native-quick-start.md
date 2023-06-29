@@ -25,8 +25,7 @@ Follow these steps to register, configure, integrate, and use the {{config.extra
 
 ## Register & Configure
 
-First, follow the instructions to [[configure-auth|register and con
-figure]] the app using the {{config.extra.arcana.dashboard_name}}. As part of the app registration, a unique value, **{{config.extra.arcana.app_address}}**, is assigned to each app. This is required for integrating the app with the {{config.extra.arcana.react_native_sdk_name}}.
+First, follow the instructions to [[configure-auth|register and configure]] the app using the {{config.extra.arcana.dashboard_name}}. As part of the app registration, a unique value, **{{config.extra.arcana.app_address}}**, is assigned to each app. This is required for integrating the app with the {{config.extra.arcana.react_native_sdk_name}}.
 
 During app configuration, developers can enable one or more options to onboard app users.
 
@@ -42,7 +41,7 @@ After registering and configuring the React-Native app, follow these steps to in
 
 ### Step 1: Install Auth SDK
 
-You need to install the [`{{config.extra.arcana.react_native_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react-native) package.
+You need to install the [`{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react-native) package.
 
 ```bash
 npm i @arcana/auth-react-native
