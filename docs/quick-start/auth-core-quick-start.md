@@ -27,13 +27,13 @@ Use this guide to integrate apps with the {{config.extra.arcana.auth_core_sdk_na
 
 To integrate a Web3 app with the {{config.extra.arcana.auth_core_sdk_name}}, developers must:
 
-* Register the app using the {{config.extra.arcana.dashboard_name}}
-* Configure {{config.extra.arcana.auth_core_sdk_name}} usage by setting up blockchain configurations, social login options using the {{config.extra.arcana.dashboard_name}}
-* Install the `{{config.extra.arcana.auth_core_sdk_pkg_name}}`
-* Integrate the app code by creating an `AuthProvider` with requisite parameters and initialize the {{config.extra.arcana.auth_core_sdk_name}}
-* Implement user login UI and add code to call {{config.extra.arcana.auth_core_sdk_name}} functions to onboard users
-* Implement the logic with or without wallet UI for allowing authenticated users to review, reject or sign blockchain transactions
-* Secure authenticated user's cryptographic assets including keys
+* Register the app using the {{config.extra.arcana.dashboard_name}}.
+* Configure {{config.extra.arcana.auth_core_sdk_name}} usage by setting up blockchain configurations, and social login options using the {{config.extra.arcana.dashboard_name}}.
+* Install the `{{config.extra.arcana.auth_core_sdk_pkg_name}}`.
+* Integrate the app code by creating an `AuthProvider` with requisite parameters and initialize the {{config.extra.arcana.auth_core_sdk_name}}.
+* Implement user login UI and add code to call {{config.extra.arcana.auth_core_sdk_name}} functions to onboard users.
+* Implement the app logic, add UI code to allow authenticated users to perform Web3 wallet operations such as sending tokens, interacting with contracts, etc. Add notification UI code (optional) to allow users to review, reject or approve blockchain transactions.
+* Secure authenticated user's cryptographic assets including keys.
 
 ## Register & Configure
 
@@ -92,8 +92,9 @@ The {{config.extra.arcana.auth_core_sdk_name}} offers two kinds of flows:
 The `AuthProvider` can be initialized for a UI flow that uses a pop-up modal within the current app context or redirects to a different app page after login. For more details, see [here](https://github.com/arcana-network/auth-core/blob/dev/readme.md#flow-modes).
 
 ```js
+const clientId = "xar_test_d24f70cd300823953dfa2a7f5b7c7c113356b1ad"; // obtained after app registration via dashboard
 const auth = await AuthProvider.init({
-   appId: `${clientId}`, /* obtained after registering the app with the Arcana Developer Dashboard */
+   appId: clientId, /* obtained after registering the app with the Arcana Developer Dashboard */
    flow: 'redirect', /* can be 'popup' or 'redirect' */
    redirectUri:''    /* can be ignored for redirect flow if same as login page */
 });
