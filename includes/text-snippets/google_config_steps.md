@@ -2,7 +2,9 @@ Web3 apps can select and enable user onboarding via Google by configuring the **
 
 !!! warning
 
-      Some of the authentication provider configuration steps are performed using the Google Console, whereas the others use the {{config.extra.arcana.dashboard_name}}. After configuring Google, simply [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and only then add code in the app to trigger user authentication via Google.
+      1. Some of the authentication provider configuration steps are performed using the Google Console, whereas the others use the {{config.extra.arcana.dashboard_name}}. After configuring Google, simply [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and only then add code in the app to trigger user authentication via Google.
+
+      2. {% include "./text-snippets/warn_global_keys_no_social_clientid_setup.md" %}
       
 ## Step 1: Get Redirect URI
 

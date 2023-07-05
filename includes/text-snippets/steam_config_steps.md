@@ -2,9 +2,11 @@ Web3 apps that use Steam for user authentication can enable authenticated users 
 
 !!! warning
 
-      Some of the authentication provider configuration steps are performed using the [Steam Community Website ](https://steamcommunity.com/login/home/?goto=%2Fdev%2Fapikey), whereas the others use the {{config.extra.arcana.dashboard_name}}. 
+      1. Some of the authentication provider configuration steps are performed using the [Steam Community Website ](https://steamcommunity.com/login/home/?goto=%2Fdev%2Fapikey), whereas the others use the {{config.extra.arcana.dashboard_name}}. 
       
-      **Developers must have a Steam account and have at least $5 worth of purchased games in the account before they can obtain the Steam API Key.**  First set up this key using the  {{config.extra.arcana.dashboard_name}} before you can [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and add code to use the {{config.extra.arcana.sdk_name}} functions for onboarding users and enabling authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}.
+      2. **Developers must have a Steam account and have at least $5 worth of purchased games in the account before they can obtain the Steam API Key.**  First set up this key using the  {{config.extra.arcana.dashboard_name}} before you can [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and add code to use the {{config.extra.arcana.sdk_name}} functions for onboarding users and enabling authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}.
+
+      3. {% include "./text-snippets/warn_global_keys_no_social_clientid_setup.md" %}
 
 ## Step 1: Register App
 

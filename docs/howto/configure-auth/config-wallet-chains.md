@@ -8,7 +8,7 @@ arcana:
 
 # Configure Wallet Chains
 
-Web3 app developers can use  {{config.extra.arcana.product_name}} product to easily onboard users with Web3-like social login and allow authenticated users to sign blockchain transactions. The authenticated users can instantly access the built-in {{config.extra.arcana.wallet_name}} UI in the app's context.
+Web3 app developers can use {{config.extra.arcana.product_name}} product to easily onboard users with Web3-like social login and allow authenticated users to sign blockchain transactions. The authenticated users can instantly access the built-in {{config.extra.arcana.wallet_name}} UI in the app's context.
 
 The {{config.extra.arcana.product_name}} product is pre-configured with a subset of chains from the list of [[state-of-the-arcana-auth#supported-blockchains|supported blockchain networks]]. Ethereum is set as the default chain. By default, this pre-configured subset of supported blockchain networks, with Ethereum set as the default chain, is displayed in the {{config.extra.arcana.wallet_name}} UI.
 
