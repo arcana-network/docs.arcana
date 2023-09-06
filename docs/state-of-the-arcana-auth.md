@@ -127,6 +127,10 @@ The [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] allows Web3 apps to in
 
       Besides supporting all EVM-compatible blockchain networks, we are working on supporting other chains that are not EVM-compatible in the upcoming releases. For e.g., Cosmos, Solana, Near, TON, and Algorand
 
+#### Gasless Networks
+
+Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable [[concept-gasless-transactions|gasless transactions in the app]] for one or more of the [supported chains](https://docs.biconomy.io/docs/supportedchains/). For more details, see [[configure-gasless|how to configure gasless transactions]]
+
 ## {{config.extra.arcana.dashboard_name}} 
 
 ### Login Options

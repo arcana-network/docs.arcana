@@ -66,3 +66,7 @@ Once gas tanks are set up, developers can integrate the app with the {{config.ex
 !!! info "Public Keys"
 
       The `getPublicKey()` method of the `AuthProvider` in the {{config.extra.arcana.sdk_name}} returns the key associated with the user's EoA.  The {{config.extra.arcana.product_name}} maintains the association of each user's SCW and EoA address for apps where the gasless feature is enabled.
+
+## Supported Chains
+
+The {{config.extra.arcana.product_name}} product gasless feature is powered by [Biconomy Gasless SDK v2](https://docs.biconomy.io/docs/overview). Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable gasless operations in the app for one or more of the [supported chains](https://docs.biconomy.io/docs/supportedchains/).

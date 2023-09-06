@@ -612,6 +612,7 @@ config_twitter
 configmetamask
 configs
 configure-auth
+configure-gasless
 configure-mainnet-keyspace
 configwalletconnect
 configwalletmodes
