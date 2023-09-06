@@ -12,6 +12,7 @@
 3b
 3pw_config
 3t
+ABI
 ACL
 ACLs
 ADKG
@@ -172,6 +173,7 @@ EIP1559
 ERC-1155
 ERC-20
 ERC-2771
+ERC-4337
 ERC-721
 ERC20
 EVM
@@ -286,6 +288,7 @@ Pre
 Pre-configured
 Programmatically
 ProviderEngine
+ProviderRpcError
 PublicKeyOutput
 PvtBetaGHBranchText
 Pwdless
@@ -470,6 +473,7 @@ XAR
 XARs
 ZK-SNARK
 accesscontrol
+accountsChanged
 addselect-a-network
 aggregatelogin
 al.
@@ -533,6 +537,7 @@ byok
 cairo
 cancelled
 cardIcon
+chainChanged
 chainID
 changefileowner
 changelog
@@ -553,16 +558,19 @@ concept-ansc-types
 concept-ansc-upgradable
 concept-arcana-auth
 concept-arcana-dashboard
+concept-arcana-jwt-token
 concept-arcana-smart-contract
 concept-arcana-wallet-overview
 concept-authsdk
 concept-dkg
+concept-gasless-transactions
 concept-how-adkg-works
 concept-how-dkg-works
 concept-index-ansc
 concept-index-arcana-wallet
 concept-index-auth-type
 concept-index-custom-auth
+concept-jwt-token-validation
 concept-keyspace-type
 concept-mfa
 concept-plug-and-play-auth
@@ -713,6 +721,7 @@ format_signmsg
 frictionless
 gRPC
 gasless
+gasless-enabled
 generatedelegatekey
 getAvailableLogins
 getPublicKey

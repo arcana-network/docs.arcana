@@ -51,7 +51,7 @@ Click on the 'ellipsis' next to the gas tank where you wish to add credits. It d
 
 * Deposit
 * Withdraw
-* Manage Whitelis
+* Manage Whitelist
 
 <img src="/img/an_gl_gas_tank_action.png" alt="Gas Tank Actions" class="an-screenshots"/>
 
@@ -73,6 +73,14 @@ To whitelist one or more app functions, choose **Manage Whitelist** and specify 
 You will see the various functions listed on the RHS. Use the radio buttons to choose the ones that are whitelisted for gasless.  Only these app functions will qualify for a gasless operation when the user chooses to perform any blockchain transactions associated with these operations.
 
 <img src="/img/an_gl_db_whitelist.gif" alt="withdraw from Gas Tank" class="an-screenshots"/>
+
+### Optional: Pause/Resume Gasless
+
+Developers can choose to pause and resume gas tank operations in the app config settings. When paused, users pay gas fees for whitelisted app operations.
+
+Use the **Enable** toggle in the app configuration settings page of the dashboard to pause and resume a configured gas tank.
+
+<img src="/img/an_gl_gas_tank_pause.png" alt="Gas Tank Actions" class="an-screenshots"/>
 
 That is all! 🎉
 
