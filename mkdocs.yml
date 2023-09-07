@@ -163,6 +163,7 @@ nav:
       - General: faq/faq-gen.md
       - Dashboard: faq/faq-db.md
       - Auth SDK: faq/faq-auth.md
+      - Gasless: faq/faq-gasless.md
     - Changelog:
       - changelog/index.md
       - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.4

@@ -36,7 +36,9 @@ Select the app card, click *Configure* and select the **Gasless** section in the
 
 <img src="/img/an_gl_db_new_config.png" alt="Set up Gas Tanks" class="an-screenshots"/>
 
-To add a new gas tank, choose **Add Gas Tank** on the right. You need to provide a name for the gas tank and select a chain that will be serviced by this gas tank. Note that you can only set up one gas tank per blockchain network. You will see a new gas tank in the dashboard.
+To add a new gas tank, choose **Add Gas Tank** on the right. You need to provide a name for the gas tank and select a chain that will be serviced by this gas tank. Refer to the list of [[concept-gasless-transactions#supported-chains|supported chains]] where gas tanks can be set up to enable the gasless feature.
+
+Note that you can only set up one gas tank per blockchain network. You will see a new gas tank in the dashboard.
 
 <img src="/img/an_gl_db_add_gas_tank.gif" alt="Add Gas Tank" class="an-screenshots"/>
 
@@ -88,7 +90,9 @@ You have successfully configured gasless operation for the application users.
 
 ## What's next?
 
-Complete app configuration using the {{config.extra.arcana.dashboard_name}} and begin integrating the app with the {{config.extra.arcana.sdk_name}}. Add code to onboard users and allow authenticated users to access the embedded {{config.extra.arcana.sdk_name}} [[index-configure-auth|how to configure {{config.extra.arcana.wallet_name}} usage]].
+For more details, see [[faq-gasless|FAQ - Gasless Transactions]]. 
+
+After configuring gasless, developers can refer to other app configuration settings in the {{config.extra.arcana.dashboard_name}} and then integrate the app with the {{config.extra.arcana.sdk_name}}. If not already done, add code to onboard users and allow authenticated users to access the embedded {{config.extra.arcana.sdk_name}} [[index-configure-auth|how to configure {{config.extra.arcana.wallet_name}} usage]].
 
 ## See Also
 
