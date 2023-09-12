@@ -54,7 +54,7 @@ Web3 developers can integrate apps with the {{config.extra.arcana.sdk_name}} to 
 
 ## Secure with MFA
 
-Gaming, DeFi and other Web3 apps that deal with user's crypto assets, NFTs can further secure user data by utilizing the [[concept-mfa|MFA feature]]. Each user is not just associated with their private keys but another piece of encrypted data for identity validation. The {{config.extra.arcana.sdk_name}} works across devices and browsers.
+Gaming, DeFi and other Web3 apps that deal with user's crypto assets, NFTs can further secure user data by utilizing the [[concept-mfa|MFA feature]]. A user can set up various recovery methods for their wallet to enhance security. Whenever they try to login from a new device they will have to provide one of the two in order to login. The {{config.extra.arcana.sdk_name}} works across devices and browsers.
 
 ## Enable Gasless Transactions
 
