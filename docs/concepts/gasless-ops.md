@@ -26,7 +26,7 @@ If the gas tanks are depleted or empty, the user will have to pay gas fees for t
 
 In the context of gasless transactions set up for apps, the user accounts for such apps are not the typical traditional 'Externally Owned Accounts' (EoA). The users of gasless-enabled apps are assigned 'Smart Contract Wallet' (SCW) accounts based on Ethereum account abstraction smart contract specification [ERC-4337](https://www.erc4337.io/docs).
 
-## How Gasless Works?
+## How does Gasless Work?
 
 ### Gas Available
 
