@@ -20,7 +20,7 @@ Apps that integrate with {{config.extra.arcana.sdk_name}} can seamlessly offer g
 
 The authenticated users gain instant access to {{config.extra.arcana.wallet_name}} and can sign blockchain transactions without having to pay for the gas fees. Note that the users still need to have requisite crypto assets in the wallet or tokens to pay for whatever operation they are performing using the app, only gas fees for such operations are waived off.
 
-If the gas tanks are depleted or empty, the user will have to pay gas fees for the transaction.
+If the gas tanks are depleted or empty, the user will have to pay gas fees for the transaction from their Smart Contract Wallets.
 
 ## Gasless User Accounts
 
