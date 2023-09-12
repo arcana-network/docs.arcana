@@ -46,7 +46,7 @@ The Gasless feature can only be configured once. It is a one-time setting. Once 
 
 1. Add one or more Gas Tanks. Only one gas tank can be set up per blockchain network.
 2. Deposit crypto assets in the Gas Tanks
-3. Whitelist App operations by specifying verified contracts or providing the ABI of the contracts and choosing whitelisted operations.
+3. Whitelist App operations by specifying verified contracts or providing the ABI of the contracts and selecting which functions to whitelist.
 4. Optionally, developers can also choose to pause and resume gas tanks configured for an app.
 
 Once gas tanks are set up, developers can integrate the app with the {{config.extra.arcana.sdk_name}}, add code to onboard users and deploy the app on the Testnet or the Mainnet.
