@@ -60,7 +60,7 @@ Use the defaults or provide inputs for various settings as per your application 
     
     Developers must explicitly set up gas tanks per blockchain network to enable paymasters to bear gas fees for sponsored transactions for that specific chain. The gas tanks should have sufficient crypto assets deposited to fund the app user's transactions. Also, developers must whitelist one or more app operations for gasless transactions.  Only the gas fees for the whitelisted operations will be paid via the gas tank as long as there is sufficient credit in the gas tank. 
     
-    For all the non-whitelisted app operations, or in case the gas tank assets run out, the transaction gas fees will have to be paid by the individual user via the user's wallet account associated with the app. 
+    For all the non-whitelisted app operations, or in case the gas tank assets run out, the transaction gas fees will have to be paid by the individual user via the user's smart contract wallet associated with the app. 
 
     Gasless transactions require enabling **SCW** user accounts or [[concept-gasless-transactions#gasless-user-accounts|'gasless accounts']] that are different from the typical **EOA** user accounts.
 
