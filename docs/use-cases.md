@@ -56,10 +56,11 @@ Web3 developers can integrate apps with the {{config.extra.arcana.sdk_name}} to 
 
 Gaming, DeFi and other Web3 apps that deal with user's crypto assets, NFTs can further secure user data by utilizing the [[concept-mfa|MFA feature]]. A user can set up various recovery methods for their wallet to enhance security. Whenever they try to login from a new device they will have to provide one of the two in order to login. The {{config.extra.arcana.sdk_name}} works across devices and browsers.
 
+<!-- AR-6971 
 ## Enable Gasless Transactions
 
 With the [[concept-gasless-transactions|gasless transactions]] feature, Web3 apps can improve adoption by  exempting them from paying gas fees for blockchain transactions. Developers can set up gas tanks that are equipped with requisite crypto assets to pay gas fees for a specific blockchain network. Sponsors bear the gas fees while users only pay for whatever transaction they carry out such as transferring ERC20 tokens to another user. Users can have a Web2-like app onboarding experience and not pay the gas fees.
-
+-->
 ## Upcoming Features
 
 * Non-EVM Chain Support

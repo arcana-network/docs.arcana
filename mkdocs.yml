@@ -46,7 +46,7 @@ nav:
           - howto/config-idm/index.md
           - Cognito: howto/config-idm/cognito-oauth.md
           - Firebase: howto/config-idm/firebase-auth.md
-        - Gasless: howto/configure-gasless.md
+      #  - Gasless: howto/configure-gasless.md
       - Integrate App: 
         - howto/integrate-app/index.md
         - Install SDK: sdk-installation.md
@@ -162,7 +162,7 @@ nav:
       - General: faq/faq-gen.md
       - Dashboard: faq/faq-db.md
       - Auth SDK: faq/faq-auth.md
-      - Gasless: faq/faq-gasless.md
+    #  - Gasless: faq/faq-gasless.md
     - Changelog:
       - changelog/index.md
       - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.4
@@ -280,7 +280,7 @@ nav:
           - How does DKG work?: concepts/how-dkg-works.md
           - What is ADKG?: concepts/adkg.md
           - How does ADKG work?: concepts/how-adkg-works.md
-        - Gasless Transactions: concepts/gasless-ops.md
+        # - Gasless Transactions: concepts/gasless-ops.md
         - Gateway: concepts/gateway-node.md
         - JWT Token: concepts/an_jwt_token.md
         - Manage Chains: concepts/manage-chains.md

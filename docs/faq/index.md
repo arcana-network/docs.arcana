@@ -14,4 +14,6 @@ arcana:
 
 [[faq-auth| {{config.extra.arcana.sdk_name}} Usage Queries]]{ .md-button }
 
+<!-- AR-6971 
 [[faq-gasless| Gasless Transaction Queries]]{ .md-button }
+-->

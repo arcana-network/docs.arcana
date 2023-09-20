@@ -54,6 +54,7 @@ Use the defaults or provide inputs for various settings as per your application 
 
     * **Wallet:** Website Domain - Set the website domain used by the server, to secure and restrict {{config.extra.arcana.wallet_name}} from loading anywhere else other than the specified domain. {{config.extra.arcana.company_name}} uses the frame-ancestor CSP for restricted domains.<br></br><img class="an-screenshots" alt="Social OAuth" src="/img/an_db_configure_wallet.png"></img>
 
+<!-- #AR-6971
 === "Gasless"
 
     Use the 'Gasless' section to configure [[concept-gasless-transactions|gasless transactions]] for app users.  
@@ -69,7 +70,7 @@ Use the defaults or provide inputs for various settings as per your application 
     <img src="/img/an_gl_db_new_config.png" alt="Set up Gas Tanks" class="an-screenshots"/>
 
     For details, see [[configure-gasless|how to configure gasless transactions]] in apps integrating with the {{config.extra.arcana.sdk_name}}.
-
+-->
 === "Keyspace"
 
     Use the **Keyspace** section to select the **App-specific** (default) or **Global Keys** feature. Global keys are less secure but allow app users to have the same wallet address across different applications in the {{config.extra.arcana.company_name}} ecosystem. Learn more about [[concept-keyspace-type|App-specific and global keys]] and how to use the [[dashboard-user-guide#configure-mainnet-keyspace|{{config.extra.arcana.dashboard_name}}User Guide]] to configure keyspace.

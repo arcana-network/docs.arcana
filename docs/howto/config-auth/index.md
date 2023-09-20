@@ -16,4 +16,6 @@ Use these guides to learn how to use the [{{config.extra.arcana.dashboard_name}}
 
 [[index-config-iam-providers|Custom IAM Providers :material-identifier:]]{ .md-button }
 
+<!--- AR-6971 
 [[configure-gasless|Gasless :material-gas-station-off:]]{ .md-button }
+-->
