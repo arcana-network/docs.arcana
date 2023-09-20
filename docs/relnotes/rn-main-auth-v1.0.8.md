@@ -12,6 +12,8 @@ arcana:
 
 **Release Date: September 20, 2023**  
 
+Version: **{{config.extra.arcana.latest_version}}**
+
 The {{config.extra.arcana.product_name}} product consists of the following components:
 
 * {{config.extra.arcana.sdk_name}} 
