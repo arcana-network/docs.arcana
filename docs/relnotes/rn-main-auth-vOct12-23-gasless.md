@@ -32,11 +32,11 @@ The {{config.extra.arcana.product_name}} product consists of the following compo
 
 ==}
 
-## What has changed?
+## What's New?
 
-### Enhancements
+<img src="/img/icon_new_light.png#only-light" alt="New icon" width="3%" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="3%" />
 
-**Gasless Feature**
+### Gasless Transactions
 
 Developers can make it easier for Web3 app users to get started and encourage more people to use their apps by removing the Web3 gas fee obstacle with the {{config.extra.arcana.product_name}} gasless feature. Discover how [[concept-gasless-transactions|gasless transactions]] work, [[configure-gasless|how to configure gasless and set up gas tanks for an app]]. If you have any other queries regarding the gasless feature, refer to the [[faq-gasless|gasless FAQ]].
 
@@ -44,11 +44,17 @@ Developers can make it easier for Web3 app users to get started and encourage mo
 
       Apps that enable the gasless feature may sometimes find cryptic errors returned in case of the transaction failure. This is a limitation due to the Biconomy SDK used by {{config.extra.arcana.product_name}} to support this feature. Refer to the error handling section on [[web-gasless-error-msg#debugging-gasless-errors|how to debug gasless issues]] and pinpoint the exact cause and fix it using Tenderly.
 
-**Gasless Usage Change** 
+### Gasless Usage Changes
+
+#### App Users
+
+Gasless enabled apps will not require to pay any gas fees for any of the whitelisted blockchain operations. Besides zero gas fees, the app users will see a change in their wallet address when gasless is enabled for an app.
 
 Earlier, there was only a single EoA wallet address associated with each authenticated app user. Apps with gasless feature will require to configure gas tank for one or more blockchain networks. For such apps the app user account will be associated with two types of wallet addresses: an EoA address and a SCW address. By default, all gasless transactions happen via the SCW account. Users can switch between EoA and SCW accounts using the wallet UI. For details, see [[rn-main-auth-v{{config.extra.arcana.date_release_tag}}|{{config.extra.arcana.product_name}} v{{config.extra.arcana.date_release_tag}} release notes]].
 
-### Bug Fixes
+#### Developers
+
+In addition to configuring the social provider and customizing wallet experience, chains, etc., developers must set up gas tanks for the blockchain net
 
 **xyz**
 

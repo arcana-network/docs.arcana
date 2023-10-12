@@ -36,4 +36,4 @@ Apps using older versions of the {{config.extra.arcana.sdk_name}} must refer to 
 
 <img src="/img/icon_new_light.png#only-light" alt="New icon" width="3%" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="3%" />
 
-See [[rn-main-auth-v1.0.8|{{config.extra.arcana.product_name}} v1.0.8 release notes]] and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
+See [[rn-main-auth-v{{config.extra.arcana.product_name}}|{{config.extra.arcana.product_name}} v1.0.8 release notes]] and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
