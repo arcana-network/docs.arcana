@@ -50,11 +50,11 @@ If the custom login UI is configured such that it allows a single authentication
 
 _Enable Authentication Provider_
 
-{% include "./code-snippets/auth_wagmi_configure_custom_ui.md" %}
+{% include "./code-snippets/auth_web3_react_configure_custom_ui.md" %}
 
 _Enable Passwordless Login_
 
-{% include "./code-snippets/auth_wagmi_configure_custom_ui_pwdless.md" %}
+{% include "./code-snippets/auth_web3_react_configure_custom_ui_pwdless.md" %}
 
 ### Step 3: Use ArcanaConnector
 
