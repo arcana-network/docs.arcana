@@ -61,7 +61,7 @@ nav:
           - howto/config-idm/index.md
           - Cognito: howto/config-idm/cognito-oauth.md
           - Firebase: howto/config-idm/firebase-auth.md
-      #  - Gasless: howto/configure-gasless.md
+        - Gasless: howto/configure-gasless.md
     - Integrate:
       - Web apps:
         - Integrate App: 
@@ -169,9 +169,9 @@ nav:
       - howto/deploy-app.md
   - Developer Resources:
     - dev-resources/index.md
-    - Release Notes: relnotes/rn-main-auth-v1.0.8.md
+    - Release Notes: relnotes/rn-main-auth-vOct12-23-gasless.md
     - Installation Guide: sdk-installation.md
-    - SDK Migration Guide: migration/main-auth-v1.0.8-migration.md
+    - SDK Migration Guide: migration/main-auth-vOct12-23-gasless-migration.md
     - Testnet > Mainnet Deployment Migration Guide: howto/migrate-testnet-mainnet.md
     - Developer Guides:
       - dev-resources/dev-guides/index.md
@@ -183,13 +183,13 @@ nav:
         - Web SDK: 
           - web-sdk/err/index.md
           - Auth Errors: web-sdk/auth-error-msg.md
-          #- Gasless Errors: web-sdk/gasless-error-msg.md
+          - Gasless Errors: web-sdk/gasless-error-msg.md
     - FAQ:
       - faq/index.md
       - General: faq/faq-gen.md
       - Dashboard: faq/faq-db.md
       - Auth SDK: faq/faq-auth.md
-      #- Gasless: faq/faq-gasless.md
+      - Gasless: faq/faq-gasless.md
     - Changelog:
       - changelog/index.md
       - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.4
@@ -198,6 +198,7 @@ nav:
         - archives/index.md
         - Release Notes:
           - relnotes/archives/index.md
+          - Auth Oct12-23-gasless: relnotes/rn-main-auth-vOct-12-23-gasless.md
           - Auth 1.0.8 : relnotes/rn-main-auth-v1.0.8.md
           - Auth 1.0.7 : relnotes/rn-main-auth-v1.0.7.md
           - Auth 1.0.6 : relnotes/rn-main-auth-v1.0.6.md
@@ -211,7 +212,7 @@ nav:
           - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
         - SDK Migration:
           - migration/archives/index.md
-          - v1.0.8 -> v1.0.9: migration/main-auth-v1.0.9-migration.md
+          - v1.0.8 -> vOct12-23-gasless: migration/main-auth-vOct12-23-gasless-migration.md
           - v1.0.7 -> v1.0.8: migration/main-auth-v1.0.8-migration.md
           - v1.0.6 -> v1.0.7: migration/main-auth-v1.0.7-migration.md
           - v1.0.5 -> v1.0.6: migration/main-auth-v1.0.6-migration.md
@@ -293,7 +294,7 @@ nav:
         - How does DKG work?: concepts/how-dkg-works.md
         - What is ADKG?: concepts/adkg.md
         - How does ADKG work?: concepts/how-adkg-works.md
-      # - Gasless Transactions: concepts/gasless-ops.md
+        - Gasless Transactions: concepts/gasless-ops.md
       - Gateway: concepts/gateway-node.md
       - JWT Token: concepts/an_jwt_token.md
       - Key Space Type: concepts/keyspace-types.md
@@ -330,9 +331,10 @@ extra:
     dashboard_name: Arcana Developer Dashboard
     wallet_name: Arcana wallet
     app_address: Client ID
-    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.8']
+    date_release_tag: !ENV [DATE_RELEASE_TAG,'Oct12-23-gasless']
+    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.7']
     previous_version_dashboard: !ENV [PREVIOUS_DASHBOARD_VERSION, '1.0.4']
-    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.9']
+    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.8']
     latest_version_dashboard: !ENV [DASHBOARD_VERSION, '1.0.5']
     latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_VERSION, 'Beta-0.3']
     auth_sdk_pkg_name: auth
@@ -581,7 +583,7 @@ plugins:
         'concepts/ansmartc/an_smartc_details.md': 'concepts/ansmartc/an-smartc-deployed.md'
         'concepts/ansmartc/an_smartc_flows.md': 'concepts/ansmartc/an-smartc-deployed.md'
         'concepts/ansmartc/an_smartc_upgrades.md': 'concepts/ansmartc/an-smart-contracts.md'
-        'relnotes/latest.md': 'relnotes/rn-main-auth-v1.0.9.md'
+        'relnotes/latest.md': 'relnotes/rn-main-auth-vOct12-23-gasless.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

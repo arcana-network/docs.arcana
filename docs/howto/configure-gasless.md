@@ -92,7 +92,7 @@ You have successfully configured gasless operation for the application users.
 
 For more details, see [[faq-gasless|FAQ - Gasless Transactions]].
 
-After configuring gasless, developers can refer to other app configuration settings in the {{config.extra.arcana.dashboard_name}} and then integrate the app with the {{config.extra.arcana.sdk_name}}. If not already done, add code to onboard users and allow authenticated users to access the embedded {{config.extra.arcana.sdk_name}} [[index-configure-auth|how to configure {{config.extra.arcana.wallet_name}} usage]].
+After configuring gasless, developers can refer to other app configuration settings in the {{config.extra.arcana.dashboard_name}} and then integrate the app with the {{config.extra.arcana.sdk_name}}. If not already done, add code to onboard users and configure the [[index-arcana-wallet| embedded {{config.extra.arcana.wallet_name}} usage]] and allow authenticated users to sign blockchain transactions.
 
 ## See Also
 

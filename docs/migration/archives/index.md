@@ -10,6 +10,8 @@ arcana:
 
 We recommend that you use the most recent {{config.extra.arcana.sdk_name}}. Use the appropriate migration guide to learn how to migrate to the latest version.
 
+[[migration-guide-vOct12-23-gasless|Auth SDK v1.0.8 -> vOct12-23-gasless]]{ .md-button }
+
 [[migration-guide-v1.0.8|Auth SDK v1.0.7 -> v1.0.8]]{ .md-button }
 
 [[migration-guide-v1.0.7|Auth SDK v1.0.6 -> v1.0.7]]{ .md-button }
