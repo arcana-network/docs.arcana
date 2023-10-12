@@ -52,13 +52,9 @@ Get a firm grip on the topics listed under the prerequisites section. These will
     - What is a [wallet](https://ethereum.org/en/wallets/#main-content) and how it is used in the blockchain context?
     - Build a [decentralized Book Rental Web3 app](https://developers.tron.network/docs/build-a-web3-app), set up smart contracts, and more.
 
-<!---
-
 * Blockchain advanced topics:
 
     - [Gasless transactions](https://docs-gasless.biconomy.io/products/enable-gasless-transactions)
-
--->
 
 * Basic cryptography
 

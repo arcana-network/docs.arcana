@@ -294,7 +294,7 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 
       To fix this issue, the user needs to clear the local storage used by the {{config.extra.arcana.wallet_name}} on their device by clearing the browser cache and then attempting another login from a fresh browser window.
 
-<!---
+
 ## Gasless Errors
 
 ---
@@ -302,5 +302,3 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 ??? an-trbs "Gasless transaction is failing with the generic error 'user0p execution failed'. What is the real cause of the error?"
 
       The {{config.extra.arcana.sdk_name}} leverages Biconomy Gasless SDK under the covers and is limited by the errors reported by the same. In case of generic errors such as *'user0p execution failed'*, or others that do not point to any actionable reason for failure, the app developers must use Tenderly to pin-point the exact cause of failure and then take corrective action. [[web-gasless-error-msg|Learn more...]]
-
---->

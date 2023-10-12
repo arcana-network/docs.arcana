@@ -74,11 +74,6 @@ await auth.init()
 <img src="/img/relnote_1.0.8_compact_login.png" alt="Compact UI login mode" class="an-screenshots-noeffects" width="85%"/>
 
 For more details, see [`AuthProvider` constructor parameters](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams).
-<!--- AR-6971 
-**Gasless Feature**
-
-Developers can simplify user onboarding, reduce the Web3 gas-fees barrier to entry and drive up the app adoption through the gasless transactions feature (early beta) in the {{config.extra.arcana.product_name}} product. See [[concept-gasless-transactions|gasless transactions]] and [[configure-gasless|how to configure gasless]] and set up gas tanks.
--->
 
 ### Bug Fixes
 

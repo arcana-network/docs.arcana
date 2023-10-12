@@ -98,16 +98,12 @@ Here are some examples of {{config.extra.arcana.sdk_name}} usage.
   
 ## See Also
 
-
-<!-- Add under Developer Guides 
-    * [[configure-gasless|Enabling Gasless Operations in an App]]
--->
-
 === "Developer Guides"
 
     * [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User Guide]]
     * [[configure-wallet-visibility|Configuring {{config.extra.arcana.wallet_name}} visibility]]
     * [[dashboard-user-guide#configure-mainnet-keyspace|Using Global vs. Local Keys]]
+    * [[configure-gasless|Enabling Gasless Operations in an App]]
     * [[index-video-tutorials|Video Tutorials]]
     * [User Authentication]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md)
     * [[index-arcana-wallet|Developer's Guide for {{config.extra.arcana.wallet_name}}]]

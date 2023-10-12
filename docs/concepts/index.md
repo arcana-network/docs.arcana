@@ -26,9 +26,7 @@ These are the building blocks to help you learn about various {{config.extra.arc
 
 [[index-dkg|Distributed Key Generation :material-key-plus:]]{ .md-button }
 
-<!---
 [[concept-gasless-transactions| Gasless Transactions :material-gas-station-off:]]{ .md-button }
---->
 
 [[concept-gateway-node|Gateway :fontawesome-solid-torii-gate:]]{ .md-button }
 
