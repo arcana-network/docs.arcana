@@ -5,6 +5,7 @@ Click **Configure** in the LHS navigation of the app configuration screen in the
 * Chain Management
 * Arcana Wallet
 * Keyspace (Available only after the 'Mainnet' profile is created)
+* Gasless
 
 Use the defaults or provide inputs for various settings as per your application use case. These settings control {{config.extra.arcana.sdk_name}} usage, user onboarding, and blockchain transaction signing experience.
 
