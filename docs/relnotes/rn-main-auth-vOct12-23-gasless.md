@@ -42,7 +42,7 @@ Developers can make it easier for Web3 app users to get started and encourage mo
 
 !!! caution "Debugging gasless issues"
 
-      Apps that enable the gasless feature may sometimes find cryptic errors returned in case of the transaction failure. This is a limitation due to the Biconomy SDK used by {{config.extra.arcana.product_name}} to support this feature. Refer to the error handling section on [[web-gasless-error-msg#debugging-gasless-errors|how to debug gasless issues]] and pinpoint the exact cause and fix it using Tenderly.
+      Apps that enable the gasless feature may sometimes find cryptic errors returned in case of the transaction failure. Refer to the error handling section on [[web-gasless-error-msg#debugging-gasless-errors|how to debug gasless issues]] and pinpoint the exact cause and fix it using Tenderly.
 
 ### Gasless Usage Changes
 
