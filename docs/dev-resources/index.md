@@ -8,11 +8,11 @@ arcana:
 
 # Developer Resources
 
-[[rn-main-auth-v1.0.8|Release Notes :material-order-alphabetical-ascending:]]{ .md-button }
+[[rn-main-auth-v{{config.extra.arcana.date_release_tag}}|Release Notes :material-order-alphabetical-ascending:]]{ .md-button }
 
 [[sdk-installation|Installation Guide :material-elevation-rise:]]{ .md-button }
 
-[[migration-guide-v1.0.8| SDK Migration Guide :material-arrow-up:]]{ .md-button }
+[[migration-guide-v{{config.extra.arcana.date_release_tag}}| SDK Migration Guide :material-arrow-up:]]{ .md-button }
 
 [[migrate-app-testnet-mainnet| Testnet > Mainnet Deployment Migration Guide:material-elevation-rise:]]{ .md-button }
 
