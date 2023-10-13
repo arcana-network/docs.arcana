@@ -36,11 +36,15 @@ Earlier, there was only a single EoA wallet address associated with each authent
 
 Apps using older versions of the {{config.extra.arcana.sdk_name}} prior to v{{config.extra.arcana.latest_version}} must refer to the [[index-migration-guides|migration guides]] and upgrade to the latest release.
 
-Apps using v{{config.extra.arcana.latest_version}} do not need to upgrade the {{config.extra.arcana.sdk_name}}. There is no change required if apps do not wish to use the gasless feature. Apps that need to use the gasless feature must follow these steps:
+Apps using v{{config.extra.arcana.latest_version}} **do not need to upgrade** the {{config.extra.arcana.sdk_name}}. There is no change required if apps do not wish to use the gasless feature. Apps that need to enable the [[concept-gasless-transactions|gasless transactions]] must follow these steps:
 
-1. Configure Gas Tanks on one or more supported blockchain networks.
-2. Add funds to the gas tank.
-3. No changes in the integration code or {{config.extra.arcana.app_address}}. So no need to re
+1. Use the {{config.extra.arcana.dashboard_name}} to:
+    * [[configure-gasless|Configure Gas Tanks]] on one or more supported blockchain networks.
+    * Add sufficient funds to the gas tank.
+    * Whitelist contract functions - only whitelisted operations are gasless, others need to pay gas fees.
+2. Gasless does not require any changes in the integration code or {{config.extra.arcana.app_address}}. 
+3. Gasless does not require app redeployment.
+4. Make sure before issuing the gasless blockchain operations in the app, the blockchain network is same as the one on which gas tank is set up. Also, make sure the SCW wallet address is used for the blockchain transaction. There are two addresses associated with the [[concept-gasless-transactions#gasless-user-accounts|gasless user accounts]] - EoA and SCW. Only SCW transactions qualify as gasless. See [[faq-gasless|gasless FAQ for more usage insights.]]
 
 ## Release Details
 

@@ -15,6 +15,22 @@ Upon successful authentication, {{config.extra.arcana.sdk_name}} returns a uniqu
 
 Developers can use `getUser()` method to access the JWT token via the [`UserInfo`](https://authsdk-ref-guide.netlify.app/interfaces/userinfo) return value. This token expires after 3 minutes. The app developer must first [[concept-jwt-token-validation|verify the token returned by Arcana]] and then post-verification, create newer app-specific JWT token, if required, and use them for subsequent calls.
 
+```js
+/* Make sure
+   1. AuthProvider is created and initialized via .init() call
+   2. User is onboarded via plug and play login UI .connect() call 
+      or 
+      with custom login UI loginWithSocial, loginWithLink, loginWithBearer calls
+*/
+try {
+  const userInfo = await auth.getUser();
+  const jwtToken = userInfo.loginToken;
+  console.log("Arcana JWT Token: ", jwtToken);
+} catch (e) {
+  console.log(e);
+}
+```
+
 !!! note "User validation"
 
       Note that the {{config.extra.arcana.sdk_name}} uses the JWT token returned by the social provider, after user authentication, to verify the user internally before creating its own Arcana JWT token and returning it to the app.
