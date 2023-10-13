@@ -294,7 +294,7 @@ nav:
         - How does DKG work?: concepts/how-dkg-works.md
         - What is ADKG?: concepts/adkg.md
         - How does ADKG work?: concepts/how-adkg-works.md
-        - Gasless Transactions: concepts/gasless-ops.md
+      - Gasless Transactions: concepts/gasless-ops.md
       - Gateway: concepts/gateway-node.md
       - JWT Token: concepts/an_jwt_token.md
       - Key Space Type: concepts/keyspace-types.md
