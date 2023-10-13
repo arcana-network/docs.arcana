@@ -133,4 +133,4 @@ See [[arcana-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]],
 
       Check the package.json file in the sample NextJS sources and ensure that you are using the latest {{config.extra.arcana.sdk_name}} npm release.
 
-      The current release is: v{{config.extra.arcana.latest_version}}
+      The current {{config.extra.arcana.sdk_name}} release is: v{{config.extra.arcana.latest_version}}

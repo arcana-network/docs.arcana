@@ -84,4 +84,4 @@ Developers can add code to programmatically call the Web3 wallet operations for 
 
       Check the package.json file in the code sandbox sources and ensure that you are using the latest `{{config.extra.arcana.auth_sdk_pkg_name}}` package.
 
-      The current release is: v{{config.extra.arcana.latest_version}}
+      The current {{config.extra.arcana.sdk_name}} release is: v{{config.extra.arcana.latest_version}}

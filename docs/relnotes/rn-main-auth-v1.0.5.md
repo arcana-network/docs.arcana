@@ -80,7 +80,7 @@ Check out the sample dApp integration example for apps using [[react-code-sample
 
 If you have integrated the app with the {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.previous_version}} package you can choose to either continue to use it with the latest {{config.extra.arcana.product_name}} product release.
 
-To enable Steam or Firebase authentication, you must upgrade to the v{{config.extra.arcana.latest_version}}. Upgrading is easy, simply follow the [[migration-guide-v1.0.5|migration guide]] for a swift upgrade.
+To enable Steam or Firebase authentication, you must upgrade to the v1.0.5 or later. Upgrading is easy, simply follow the [[migration-guide-v1.0.5|migration guide]] for a swift upgrade.
 
 Please note, in case are using an older version of the {{config.extra.arcana.sdk_name}} prior to v{{config.extra.arcana.previous_version}} then refer to the appropriate [[index-migration-guides|Migration Guides]] and upgrade to the latest version.
 

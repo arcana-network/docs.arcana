@@ -8,7 +8,7 @@ arcana:
   
 # State of the {{config.extra.arcana.product_name}}
 
-## Latest Release v{{config.extra.arcana.latest_version}}
+## Latest Release v{{config.extra.arcana.date_release_tag}}
 
 * Download the {{config.extra.arcana.sdk_name}} npm packages required as per the Web3 application type: 
 
@@ -135,7 +135,11 @@ By default, it enables a *pre-configured list* of chains. App developers can add
 
 #### Gasless Networks
 
-Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable [[concept-gasless-transactions|gasless transactions in the app]] for one or more of the [supported chains](https://docs.biconomy.io/docs/supportedchains/). For more details, see [[configure-gasless|how to configure gasless transactions]]
+Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable [[concept-gasless-transactions|gasless transactions in the app]] for one or more of the [supported chains](https://docs.biconomy.io/docs/supportedchains/). 
+
+{{config.extra.arcana.product_name}} gasless feature is powered by the Biconomy Gasless SDK. 
+
+For more details, see [[configure-gasless|how to configure gasless transactions]]
 
 ## {{config.extra.arcana.dashboard_name}} 
 

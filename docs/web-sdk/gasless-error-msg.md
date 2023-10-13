@@ -23,15 +23,15 @@ Refer to [Biconomy Errors](https://docs.biconomy.io/docs/troubleshooting/commone
 
 ## Debugging Gasless Errors
 
-Arcana Network's gasless feature leverages the Biconomy SDK under the covers. The error handling for gasless transactions in the {{config.extra.arcana.sdk_name}} is [limited by the error handling offered by the Biconomy SDK](https://docs.biconomy.io/docs/category/troubleshooting). Biconomy does not return very specific error messages in many cases making it very challenging to pinpoint the actual cause of the gasless transaction failure.
+Arcana Network's gasless feature leverages the Biconomy SDK under the covers. The error handling for gasless transactions in the {{config.extra.arcana.sdk_name}} is [limited by the error handling offered by the Biconomy SDK](https://docs.biconomy.io/docs/category/troubleshooting). 
 
-For example, the following error may be displayed for a gasless transaction:
+For example, you may see the following error for a gasless transaction:
 
 {==
 Transaction reverted in simulation with reason: user0p execution failed. Use handle0psCallData to simulate transaction to check transaction execution steps.
 ==}
 
-This error message is not very helpful. Real cause is not listed. The same error may be returned for more than one error conditions by the Biconomy SDK. The {{config.extra.arcana.sdk_name}} simply forwards the error returned by the Biconomy APIs to the Web3 app. 
+The same error may be returned for more than one error conditions.
 
 Sometimes, the error mentioned above occurs even if the developer has properly set up gas tanks, whitelisted contracts/functions, and there's enough gas for gasless transactions. In these cases, the issue is often that the user didn't have enough tokens in their wallet to complete the gasless token transfer, although the error message doesn't clarify this specific cause.
 

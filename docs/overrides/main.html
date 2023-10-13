@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block announce %}
-  <p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="/relnotes/rn-main-auth-v{{config.extra.arcana.latest_version}}.html">Release v{{ config.extra.arcana.latest_version }} </a><span class="blink_me"> live on Mainnet now!</span> ⚡⚡⚡ </p>
+  <p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="/relnotes/rn-main-auth-v{{config.extra.arcana.date_release_tag}}.html">Release v{{ config.extra.arcana.date_release_tag }} </a><span class="blink_me"> live on Mainnet now!</span> ⚡⚡⚡ </p>
 {% endblock %}
 {% block extrahead %}
   {{ super() }}
