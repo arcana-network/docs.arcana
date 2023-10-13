@@ -14,7 +14,7 @@ If you are new to Arcana Network, please visit [[auth-quick-start|{{config.extra
 
 ## Backward Compatibility
 
-The latest release of the {{config.extra.arcana.product_name}} product does require any upgrades to the {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.latest_version}}.
+The latest release of the {{config.extra.arcana.product_name}} product does NOT require any upgrades to the {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.latest_version}}.
 
 ### Same Wallet Address
 
