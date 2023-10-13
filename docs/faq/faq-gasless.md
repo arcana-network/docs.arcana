@@ -21,7 +21,7 @@ toc_depth: 2
 
       There can only be a single gas tank configured per blockchain network for every registered app.
 
-??? an-faq "Can the developer add a gas tank for any EVM-compatible chain that is configured in the **Chain Management** app settings?"
+??? an-faq "Can the developer add a gas tank for any EVM-compatible supported chain that is configured in the **Chain Management** app settings?"
 
       No. 
       
@@ -37,17 +37,17 @@ toc_depth: 2
       
       For whitelisted operations, the SCW address is used to sign the blockchain transactions. The gas fees are covered via the SCW account through the gas tank. Non-whitelisted functions require users to pay gas fees through the active account in {{config.extra.arcana.wallet_name}} UI. Gasless-enabled apps default to the active SCW address, but users can switch between EoA and SCW addresses. If a user selects the EoA address while gas tanks are active, the transaction occurs via EoA, and the user covers the gas fee.
 
-      Developers need to ensure that the EoA account is used for creating blockchain requests to sign personal messages or to export the private key. See [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337) and [EIP-1291](https://eips.ethereum.org/EIPS/eip-1271) and [[concept-gasless-transactions#user-experience|user experience]]for details.
+      Developers need to ensure that they use SCW address when issuing blockchain requests for app operations that are whitelisted. Also, developers must ensure that they use the EoA address for creating blockchain requests related to sign personal messages or to export the private key. See [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337) and [EIP-1291](https://eips.ethereum.org/EIPS/eip-1271) and [[concept-gasless-transactions#user-experience|user experience]]for details.
 
 ??? an-faq "Which of the two addresses, EoA or SCW, is displayed in the {{config.extra.arcana.wallet_name}} UI in the case of gasless transactions?"
 
-      Gasless transactions are set by default to use the SCW address in {{config.extra.arcana.wallet_name}} and the same is displayed in the wallet UI. Users must use the SCW address for gasless transactions; switching to the EoA address incurs user gas fees. Gasless functionality is exclusive to SCW addresses. 
+      If the developer has set up the gas tank for blockchain network, say network N, and also configured network N as the active network to be displayed in the wallet UI, then the wallet is enabled for gasless transactions on network N. The wallet UI will display the SCW address. Users can use the wallet UI to switch between the SCW and EoA address. However, they must use the SCW address for gasless transactions; switching to the EoA address incurs user gas fees. Gasless functionality is exclusive to SCW addresses. 
       
       If gas tanks aren't configured for the active blockchain, only the EoA address is shown in {{config.extra.arcana.wallet_name}} UI.
 
 ??? an-faq "Can the gasless feature be enabled later?"
 
-      Yes, developers can enable the gasless feature after deploying the app on the Testnet or Mainnet. However, this change affects the user's wallet address experience on blockchain networks with gas tanks.
+      Yes, developers can seamlessly enable the gasless feature even later, after deploying the app on the Testnet or Mainnet. They can enable the gasless feature by setting up gas tanks for a blockchain network and it does not require app redeployment. However, note that this change affects the user's wallet address experience on blockchain networks with gas tanks.
       
       If gas tanks are set up for the active network in the wallet, users will have both the EoA and an additional SCW address. Before enabling the gasless feature, users will only see the EoA address in the wallet UI. Once gasless is enabled, the SCW address becomes active instead of the EoA address and handles gas fees. Users can switch between EoA and SCW addresses through the wallet UI.
       
@@ -71,7 +71,17 @@ toc_depth: 2
       
       Gasless adheres to the ERC-4337 account abstraction specification and ERC-1291 Signature Validation methods for contract addresses.
       
-      App developers should use EoA addresses for messages requiring personal signing or accessing user keys. All other blockchain transactions should utilize the SCW address to ensure gas fees are covered for the user. If a user deliberately chooses the EoA address via the wallet UI then any subsequent transaction will incur gas fees as they use the EoA address.
+      App developers should use EoA addresses for messages requiring personal signing or accessing user keys. All other blockchain transactions that are meant to be gasless should utilize the SCW address to ensure gas fees are covered for the user. For transferring tokens and digital assets, if a user deliberately chooses the EoA address via the wallet UI then any subsequent transaction will incur gas fees as they use the EoA address.
+
+??? an-faq "If a eveloper sets up a gas tanks on network N, uses SCW address and then issues the transaction on a different network with no gas tank, why does the transaction fail?"
+
+      This will not work and cause transaction error. Only transactions issued using the SCW address on the network where gas tank is set up (network N in this case) will be gasless and successful if there are sufficient funds in the tank and the SCW wallet address.
+      
+      If the developers sets up a gas tank on network N and issues transaction on Network G using the SCW address, they will see transaction error due to gasless network and address mismatch. In this case, the network is wrong and also SCW is not applicable for network G where a gas tank is not set up. User accounts on Network N will be gasless accounts with dual EoA and SCW addresses. For Network G only EoA is valid and hence you will see the blockchain transaction error. Transactions issued on the other network will not be gasless and can only use EoA address.
+
+??? an-faq "Will the transaction be gasless if the dev sets up a gas tank on network N, uses EoA for issuing the blockchain transaction associated with the whitelisted operations?"
+
+      No. EoA accounts on network N where gas tank is set up and funded, will incur gas fees. Dev must use SCW accounts only to ensure gasless transactions.
 
 ## MFA
 

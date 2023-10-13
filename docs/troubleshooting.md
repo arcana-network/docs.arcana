@@ -302,3 +302,19 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 ??? an-trbs "Gasless transaction is failing with the generic error 'user0p execution failed'. What is the real cause of the error?"
 
       The {{config.extra.arcana.sdk_name}} leverages Biconomy Gasless SDK under the covers and is limited by the errors reported by the same. In case of generic errors such as *'user0p execution failed'*, or others that do not point to any actionable reason for failure, the app developers must use Tenderly to pin-point the exact cause of failure and then take corrective action. [[web-gasless-error-msg|Learn more...]]
+
+??? an-trbs "Gasless is enabled for the chain, transactions are successful but gas fees are charged, why is that?"
+
+      There can be multiple reasons for the same:
+
+      * **Insufficient Gas**: Gas tanks that are empty or do not have sufficient funds can cause this issue. In Layer 2 chains a minimum $1-2 and for Layer 1 chains, a minimum of $5-10 should be available in the gas tank for successful gasless transactions.
+      * **Wrong Network**: Gasless works only for the blockchain network where gas tank is set up, not for other networks. If gas tank is set up for chain 1 and transactions are issued on chain 2 where no gas tank exists, the transaction will not be gasless.
+      * **Wrong Address**: When gas tank is set up for a blocchain network, gasless user accounts for such networks are associated with two addresses, EoA and SCW. For other chains where no gas tank is set up, user accounts have only 1 traditional wallet address, the EoA address. If the transaction is issued using the EoA account, it will not be gasless even if there is a gas tank for the selected chain and there are funds in the tank.  Only SCW addresses can be used for gasless transactions.
+      * **User Action Override**: The developer may have set up the correct network and SCW address but the user may switch the wallet address from SCW to EoA using the wallet UI at runtime. In this case, the gas fees will be charged on EoA as the SCW address was not used to perform the transaction.
+      * **Other**: There may be other reasons as well that can be due to the underlying gasless providers used by the {{config.extra.arcana.product_name}} product. [[web-gasless-error-msg|Learn more...]]
+
+??? an-trbs "Gasless is enabled for the chain, gas tank has sufficient funds, user has funds in the wallet but the transaction, say sending 10 native tokens to another wallet, fails, why?"
+
+      Check the wallet address that is being used to make this transaction of sending 10 native tokens. Gasless operations use SCW wallet address. If the user's EoA address has sufficient funds but the SCW wallet has zero or insufficient funds, less than 10 tokens, the transaction will fail. This is because for chains where gasless is enabled, SCW address is used to perform wallet operations and smart contract functions.
+
+      
