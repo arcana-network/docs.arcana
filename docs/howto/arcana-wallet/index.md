@@ -8,12 +8,25 @@ arcana:
 
 # Enable {{config.extra.arcana.wallet_name}}
 
-By default, Web3 apps integrated with the {{config.extra.arcana.sdk_name}} can enable the authenticated users to instantly access the {{config.extra.arcana.wallet_name}} and perform various Web3 wallet operations such as adding/switching blockchain networks, checking their wallet balance, managing crypto assets, and [more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md). Developers can alternatively choose to not use the default {{config.extra.arcana.wallet_name}} UI and use a [[custom-wallet-ui|custom wallet UI]]. This choice is made during the [[configure-auth|app registration]].
+There are two ways to configure the user blockchain transaction signing experience. 
 
-During app integration, developers can specify the wallet visibility parameter to manage the user experience for signing blockchain transactions. Developers can access the standard Ethereum provider `AuthProvider` and add code to use various Web3 wallet functions programmatically for the authenticated users. 
+* Using the {{config.extra.arcana.dashboard_name}} to choose built-in or custom {{config.extra.arcana.wallet_name}} UI
+* Specifying the wallet visibility when creating a new `AuthProvider` instance
 
-The guides below describe how to configure the {{config.extra.arcana.wallet_name}} while integrating the app with the {{config.extra.arcana.sdk_name}} and then add code to call Web3 wallet operations in the context of the authenticated users. 
+## Dashboard:  Built-in vs. Custom Wallet UI
 
-[[configure-wallet-visibility|Configure {{config.extra.arcana.wallet_name}} Visibility :material-tools:]]{ .md-button }
+By default, Web3 apps integrated with the {{config.extra.arcana.sdk_name}} can enable the authenticated users to instantly access the built-in, embedded {{config.extra.arcana.wallet_name}} UI and perform various Web3 wallet operations such as adding/switching blockchain networks, checking their wallet balance, managing crypto assets, and [more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
 
-[[index-web3-wallet-ops|Web3 Wallet Ops :material-wallet:]]{ .md-button }
+Developers can alternatively choose to not use the default {{config.extra.arcana.wallet_name}} UI and use a [[custom-wallet-ui|custom wallet UI]]. This choice is made during the [[configure-auth|app registration]] and cannot be reverted.
+
+## `AuthProvider` Wallet Visibility
+
+During app integration, when a new `AuthProvider` is instantiated, you can specify the wallet visibility parameter to manage the user experience for signing blockchain transactions. Also, you can access the standard Ethereum provider, `AuthProvider`, and add code to use various Web3 wallet operations programmatically in the context of the authenticated users.
+
+## {{config.extra.arcana.wallet_name}} Developer Guides
+
+[[custom-wallet-ui| Enabling custom wallet UI :fontawesome-solid-gears:]]{ .md-button }
+
+[[configure-wallet-visibility|Configure built-in {{config.extra.arcana.wallet_name}} UI Visibility :material-tools:]]{ .md-button }
+
+[[index-web3-wallet-ops|Enabling Web3 Wallet Ops :material-wallet:]]{ .md-button }

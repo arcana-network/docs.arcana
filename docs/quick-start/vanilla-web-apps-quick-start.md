@@ -68,62 +68,64 @@ After successful initialization, you can use any `AuthProvider` functions in the
 
 {% include "./code-snippets/provider.md" %}
 
-After integrating with the {{config.extra.arcana.sdk_name}} add code to onboard users.
+After integrating with the {{config.extra.arcana.sdk_name}}, add code to onboard users.
 
 ## Step 4: Onboard Users
 
+You have two options to onboard users:
+
+* Plug-and-play authentication using the built-in login UI
+* Custom login UI
+
+### Built-in Login UI
+
+To use the built-in login UI and onboard users, just add a single line of code and call the `connect` function of the `AuthProvider`.
+
+{% include "./code-snippets/auth_plugnplay.md" %}
+
+This will will bring up the built-in login UI within the app context. It shows only those social providers that were configured earlier using the dashboard. Passwordless login option is enabled by default.
+
+The figure below shows the built-in login UI plug-and-play pop-up authentication screen for a test app. In this example the app is configured to use Google as the social provider for authentication.
+
+![Plug-and-Play Login UI](/img/an_plug_n_play_auth.png){.an-screenshots-noeffects width="30%"}
+
+There is also a **compact** form of the built-in login UI modal available to onboard users. It is not enabled by default. To enable the compact modal, make sure you create the `AuthProvider` with `compact` parameter of `connectOptions` set to `true` as shown below:
+
+{% include "./code-snippets/auth_plugnplay_compact.md" %}
+
+!!! warning "No plug-and-play support for Firebase authentication."
+
+      {% include "./text-snippets/warn_firebase_no_pnp.md" %}
+
+### Custom Login UI
+
+To use a custom login UI, instead of `connect` use the following functions as per the authentication provider type:
+
+* Social Providers: `loginWithSocial`
+* Custom IAM Providers: `loginWithBearer`
+* Passwordless Login:  `loginWithLink`
+
+For sample code and details on how to onboard users via a custom login UI, see [[index-custom-ui-onboard-users|how to enable configured providers when using a custom login UI]].
+
+Next, let us take a look at how to enable authenticated users to sign blockchain transactions in apps integrated with the {{config.extra.arcana.sdk_name}}.
+
 ## Step 5: Enable Wallet Operations
 
-## Step 6: Deploy App
+After onboarding users, add code to use the `AuthProvider` and call standard JSON RPC Web3 wallet functions programmatically. The {{config.extra.arcana.wallet_name}} is available in the app's context right after a user logs in. It allows authenticated users to [[sign-transaction|sign blockchain transactions]], send and receive tokens, NFTs, and [[index-arcana-wallet| more]].
 
-
-## Steps
-
-### Register & Configure
-
-First, [[configure-auth|register and configure]] the app using the {{config.extra.arcana.dashboard_name}}. A unique **{{config.extra.arcana.app_address}}**, is assigned to each newly registered app. This is required when integrating the app with the {{config.extra.arcana.sdk_name}}.
-
-Then [[index-configure-auth|configure one or more authentication providers]] for onboarding app users. For configuration setting details, see [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]. 
-
-!!! info "Password-less Option"
-
-      If the app is registered without enabling and configuring any supported authentication providers, only the passwordless login option is available by default.
-
-### Install {{config.extra.arcana.sdk_name}}
-
-{{config.extra.arcana.sdk_name}} supports diverse Web3 apps. Depending upon the type of Web3 app, developers may need to install one or more {{config.extra.arcana.product_name}} packages and integrate the app. See [[sdk-installation| SDK installation guide]] for more details.
-
-### Integrate App
-
-Follow the integration instructions [[index-integrate-app|as per the app type]] and manage blockchain signing user experience with [[concept-wallet-visibility|wallet visibility settings]] during instantiation of the `AuthProvider`.
-
-After integrating with the {{config.extra.arcana.sdk_name}} app developers can use the `AuthProvider` to access the standard Ethereum Web3 provider interface in the context of an authenticated user. Use `AuthProvider` functions to onboard users, and sign blockchain transactions. 
-
-=== "Onboard Users"
-
-    After installing and integrating with the {{config.extra.arcana.sdk_name}}, app developers can add code to [[index-onboard-users|onboard the users]] via one of the two available methods:
-
-    1. Use the [[concept-plug-and-play-auth|plug-and-play login UI]] feature to instantly access the built-in, default user login UI provided by the {{config.extra.arcana.sdk_name}}. Simply [[use-plug-play-auth|call `connect` method of the `AuthProvider`]] to bring up the plug-and-play login UI that displays all the authentication mechanisms configured by the app developer. User can select one and onboard the app.
-
-    2. Build a [[index-custom-ui-onboard-users|custom user login UI]] for the app and call the appropriate {{config.extra.arcana.sdk_name}} functions for onboarding users via the configured social providers and the passwordless login option.
-
-=== "Sign Blockchain Transactions"
-
-    After onboarding users, developers can add code to use the `AuthProvider` in the app and call standard JSON RPC Web3 wallet functions programmatically in the context of an authenticated user. Enable authenticated users to [[sign-transaction|sign blockchain transactions]], send and receive tokens, NFTs, and [[index-arcana-wallet|more ]] using the {{config.extra.arcana.wallet_name}}.
+By default, the built-in {{config.extra.arcana.wallet_name}} UI is displayed. The decision to choose a custom wallet UI must be made at the time of registering the app. When creating a new app, specify the **Wallet UI Mode** setting as `custom UI' instead of the default `Arcana UI`. See [[custom-wallet-ui|how to enable custom wallet UI]] for details.
 
 For more insights, see {% include "./text-snippets/authsdkref_url.md" %}, and the [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]].
 
-### Deploy App
+Next, deploy the app on Testnet, validate and then deploy on the Mainnet.
 
-An app integrated with the {{config.extra.arcana.sdk_name}} can be deployed for use only **after** the developer has completed these steps:
+## Step 6: Deploy App
 
-* Register and configure the app via the {{config.extra.arcana.dashboard_name}} 
-* Integrate the app with the {{config.extra.arcana.sdk_name}} 
-* Implement code to onboard users and interact with necessary contracts based on the app's business logic.
+You can deploy an app instance (say, one under active development) on the {{config.extra.arcana.company_name}} Testnet while simultaneously deploying a stable version of their app (say, one validated on Testnet and ready for users) on the {{config.extra.arcana.company_name}} Mainnet.
 
-Developers can choose to deploy one instance of the app (say, under active development) on the {{config.extra.arcana.company_name}} Testnet while simultaneously deploying a stable version of their app (say, one validated on Testnet and ready for users) on the {{config.extra.arcana.company_name}} Mainnet.
+By default, when an app is registered, a 'Testnet' configuration profile is associated with the app, and a unique **{{config.extra.arcana.app_address}}** is assigned to this 'Testnet' profile. To deploy your app on the {{config.extra.arcana.company_name}} Mainnet, you need to create a corresponding 'Mainnet' configuration profile and update the {{config.extra.arcana.sdk_name}} integration code to use the **new {{config.extra.arcana.app_address}}** assigned to the app's 'Mainnet' configuration profile. 
 
-By default, when an app is registered, a 'Testnet' configuration profile is associated with the app, and a unique **{{config.extra.arcana.app_address}}** is assigned to this 'Testnet' profile. To deploy your app on the {{config.extra.arcana.company_name}} Mainnet, you need to create a corresponding 'Mainnet' configuration profile and update the {{config.extra.arcana.sdk_name}} integration code to use the **new {{config.extra.arcana.app_address}}** assigned to the app's 'Mainnet' configuration profile. For details on how to deploy your app on the {{config.extra.arcana.company_name}} Testnet / Mainnet, see [[deploy-app|App Deployment Guide]].
+For details on how to deploy your app on the {{config.extra.arcana.company_name}} Testnet / Mainnet, see [[deploy-app|App Deployment Guide]].
 
 !!! tip "Testnet -> Mainnet"
 
@@ -131,23 +133,23 @@ By default, when an app is registered, a 'Testnet' configuration profile is asso
 
 ## Examples
 
-Here are some examples of {{config.extra.arcana.sdk_name}} usage.
+Here are some examples of {{config.extra.arcana.sdk_name}} integration with vanilla HTML/CSS/JS app.
 
 ??? abstract "Enable Google Login"
 
-      Follow the instructions [[google-social-auth|in this guide]] and allow Web3 app users to log in via Google. 
+      Integrate a simple HTML/CSS/JS app and [[google-social-auth|onboard users via Google]]. 
 
 ??? abstract "Manage Blockchain Signing Experience"
 
-      Follow the instructions [[sign-transaction|in this guide]] to customize the user experience when signing blockchain transactions using the built-in {{config.extra.arcana.wallet_name}} UI.
+      Integrate app and [[sign-transaction|Customize the user experience for signing blockchain transactions]] via the built-in {{config.extra.arcana.wallet_name}} UI.
 
 ??? abstract "Add/Switch Blockchain Networks"
 
-      Follow the instructions in this guide to [[add-switch-network|customize the pre-configured list of blockchain networks]] available to Web3 app users or change the default network when the embedded wallet UI shows up. Refer to the list of [[state-of-the-arcana-auth#supported-blockchains|supported blockchain networks]].
+      Integrate app and [[add-switch-network|customize the pre-configured list of blockchain networks]] available to Web3 app users or change the default network in the built-in {{config.extra.arcana.wallet_name}} UI. See [[state-of-the-arcana-auth#supported-blockchains|supported blockchain networks for reference]].
 
-??? abstract "Enable built-in  {{config.extra.arcana.wallet_name}} UI"
+??? abstract "Enable built-in {{config.extra.arcana.wallet_name}} UI"
 
-      Follow instructions in the [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] to enable authenticated app users to instantly access the wallet UI to check account balance, send or receive ERC-20, ERC-721, and ERC-1155 tokens, deploy smart contracts, interact with smart contracts, switch networks, manage NFTs and more.
+      Follow instructions in the [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] to enable authenticated app users to instantly access the built-in, {{config.extra.arcana.wallet_name}} UI to check account balance, send or receive ERC-20, ERC-721, and ERC-1155 tokens, deploy smart contracts, interact with smart contracts, switch networks, manage NFTs and more.
   
 ## See Also
 
