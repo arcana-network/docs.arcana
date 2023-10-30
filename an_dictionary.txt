@@ -577,6 +577,8 @@ concept-arcana-jwt-token
 concept-arcana-smart-contract
 concept-arcana-wallet-overview
 concept-authsdk
+concept-custom-login-ui
+concept-custom-wallet-ui
 concept-dkg
 concept-gasless-transactions
 concept-how-adkg-works
@@ -1044,6 +1046,7 @@ material-firebase
 material-github
 material-language-javascript
 material-vuejs
+material-wallet-bifold
 material-wifi-cog
 maxHeadingLevel
 metamask

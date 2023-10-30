@@ -136,6 +136,10 @@ async function sendTransaction() {
 ...
 ```
 
+!!! tip "Getting Private Key with Custom Wallet UI"
+
+      {% include "./code-snippets/custom-wallet-ui-pvt-key.md" %}
+
 **That is all!**  :material-party-popper:
 
 *The Web3 app is all set to _use custom wallet UI and allow authenticated app users_ to sign blockchain transactions.*

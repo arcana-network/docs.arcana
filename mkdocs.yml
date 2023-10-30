@@ -299,6 +299,8 @@ nav:
         - Custom IAM Providers: concepts/authtype/customauth.md
         - Passwordless: concepts/authtype/pwdless.md
       - Usage & Billing: concepts/billing.md
+      - Custom Login UI: concepts/custom-login-ui.md
+      - Custom Wallet UI: concepts/custom-wallet-ui.md
       - Dashboard: concepts/dashboard.md
       - DKG:
         - concepts/dkg/index.md

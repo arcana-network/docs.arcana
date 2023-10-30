@@ -22,6 +22,10 @@ These are the building blocks to help you learn about various {{config.extra.arc
 
 [[concept-usage-billing|Billing :fontawesome-solid-money-check-dollar:]]{ .md-button }
 
+[[concept-custom-login-ui|Custom Login UI :material-login:]]{ .md-button }
+
+[[concept-custom-wallet-ui|Custom Wallet UI :material-wallet-bifold:]]{ .md-button }
+
 [[concept-arcana-dashboard|Dashboard :material-monitor-dashboard:]]{ .md-button }
 
 [[index-dkg|Distributed Key Generation :material-key-plus:]]{ .md-button }
