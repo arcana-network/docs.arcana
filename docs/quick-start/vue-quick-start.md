@@ -1,7 +1,7 @@
 ---
 alias: vue-quick-start
 title: 'Quick Start: Vue Apps'
-description: 'Get Started quickly with Arcana Auth product for Vue apps by using these step-by-step instructions. Use the Arcana Develoepr Dashboard to register the app, get a client ID and then use the client ID to integrate the app with the Arcana Auth SDK.'
+description: 'Get Started quickly with Arcana Auth product for Vue apps by using these step-by-step instructions. Use the Arcana Developer Dashboard to register the app, get a client ID and then use the client ID to integrate the app with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
 ---
