@@ -20,7 +20,16 @@ nav:
       - Product Details: auth-overview.md
     - Quick Start: 
       - quick-start/index.md
-      - Web Apps: quick-start/web-apps-quick-start.md
+      - Web Apps: 
+        - quick-start/web/index.md
+        - HTML/CSS/JS: quick-start/vanilla-web-apps-quick-start.md
+        - React:
+          - quick-start/web/react/index.md
+          - React/NextJS: quick-start/react-nextjs-quick-start.md
+          - Wagmi: quick-start/wagmi-quick-start.md
+          - RainbowKit: quick-start/rainbowkit-quick-start.md
+          - Web3-React: quick-start/web3-react-quick-start.md
+        - Vue: quick-start/vue-quick-start.md
       - Mobile: 
         - quick-start/mobile/index.md
         - Flutter Apps: quick-start/flutter-quick-start.md

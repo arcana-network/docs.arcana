@@ -1,12 +1,12 @@
 ---
-alias: web-apps-quick-start
-title: 'Quick Start: Web Apps'
-description: 'Get Started quickly using these step-by-step instructions. Register the Web3 app, obtain a ClientID and then integrate the app with the Arcana Auth SDK.'
+alias: wagmi-quick-start
+title: 'Quick Start: Wagmi Apps'
+description: 'Get Started quickly using these step-by-step instructions for using the Arcana Auth product in Wagmi walletconnector apps. Use Arcana Developer dashboard to first register the app, get a client ID and use this client ID to integrate the app with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
 ---
 
-# Quick Start: Web Apps
+# Quick Start: Wagmi Apps
 
 !!! note "Already using {{config.extra.arcana.sdk_name}}?"
   
