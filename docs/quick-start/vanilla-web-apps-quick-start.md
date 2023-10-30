@@ -14,7 +14,7 @@ arcana:
 
 ## Overview
 
-To enable Arcana Auth in a vanilla HTML/CSS/JS app, you need to first use the {{config.extra.arcana.dashboard_name}} to register the app and configure usage settings. After that you must install and integrate the {{config.extra.arcana.sdk_name}}. Once integrated, you can add code in your app and call requisite functions to onboard users and enable them to sign blockchain transactions. Lastly, the app must be deployed on the Testnet/Mainnet.
+To implement {{config.extra.arcana.product_name}} in a vanilla HTML/CSS/JS app, start by registering your app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.sdk_name}}, integrate it with your app, and initialize the `AuthProvider`. You'll need to add code to facilitate user onboarding and enable them to sign blockchain transactions. Finally, deploy your app on the Testnet or Mainnet
 
 <img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
 <img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
@@ -41,11 +41,11 @@ Next, integrate the app with the {{config.extra.arcana.sdk_name}} by instantiati
 
 ## Step 3: Integrate App
 
-In the app, add code to import `{{config.extra.arcana.auth_sdk_pkg_name}}` and create a 'new' `AuthProvider`.
+Add code to import `{{config.extra.arcana.auth_sdk_pkg_name}}` and create a 'new' `AuthProvider`.
 
 {% include "./code-snippets/import_auth.md" %}
 
-At the time of creating a new `AuthProvider`, specify the unique **{{config.extra.arcana.app_address}}** obtained earlier during to the app registration. 
+Create a new `AuthProvider`, specify the unique **{{config.extra.arcana.app_address}}** obtained earlier during to the app registration. 
 
 {% include "./code-snippets/new_auth.md" %}
 
@@ -55,9 +55,9 @@ Initialize the newly instantiated `AuthProvider`.
 
 !!! caution "Initialize First!"
 
-    The app must use wait until the `init` call is complete before invoking any of the other {{config.extra.arcana.sdk_name}} functions such as onboarding users by triggering user login, obtaining the standard Ethereum provider, adding/switching networks in the wallet, etc.
+    The app must use `await` until the `init()` call is complete, before invoking any of the other {{config.extra.arcana.sdk_name}} functions.
 
-Besides specifying the required {{config.extra.arcana.app_address}}, you can optionally customize the following settings in the `AuthProvider` constructor:
+You can optionally customize the following settings in the `AuthProvider` constructor:
 
 ---
 * `alwaysVisible`: [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility mode]] - always visible in the app context or only if a blockchain transaction is triggered by the app
@@ -68,15 +68,16 @@ Besides specifying the required {{config.extra.arcana.app_address}}, you can opt
 * `theme`: wallet theme - `light`|`dark`
 * `setWindowProvider`: set `window.ethereum` in the app context with the standard EIP-1193 Ethereum provider value
 * `connectOptions`: built-in login UI compact mode - `true`|`false`
----
 
 See [`AuthProvider` constructor parameters](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams) for details.
 
-After successful initialization, you can call any `AuthProvider` function. For example, the code below shows how to access the standard EIP-1193 Ethereum provider:
+---
+
+After initializing the `AuthProvider`, you can call any of its exported functions. For example, the code below shows how to access the standard EIP-1193 Ethereum provider:
 
 {% include "./code-snippets/provider.md" %}
 
-Next, onboard users in your app.
+Next, facilitate user onboarding in your app.
 
 ## Step 4: Onboard Users
 
@@ -95,7 +96,7 @@ The figure below shows the built-in login UI plug-and-play pop-up authentication
 
 ![Plug-and-Play Login UI](/img/an_plug_n_play_auth.png){.an-screenshots-noeffects width="30%"}
 
-You can choose to use a **compact** form of the built-in login UI modal instead of the regular one displayed above. To enable compact login UI modal, you must instantiate the `AuthProvider` with `compact` parameter of `connectOptions` set to `true` as shown below:
+You can choose to use a **compact** form of the built-in login UI modal instead of the regular one displayed above. To enable compact login UI modal, instantiate the `AuthProvider` with `compact` parameter of `connectOptions` set to `true` as shown below:
 
 {% include "./code-snippets/auth_plugnplay_compact.md" %}
 
@@ -105,7 +106,7 @@ You can choose to use a **compact** form of the built-in login UI modal instead 
 
       {% include "./text-snippets/warn_firebase_no_pnp.md" %}
 
-Instead of using the built-in plug-and-play login UI, to onboard users via a custom login UI, simply use the following functions instead of `connect`. Note, you need to call different functions depending upon the [[concept-index-auth-type|type of the authentication providers]] that you wish to enable for user onboarding:
+Instead of onboarding users through the built-in plug-and-play login UI, you can instead use a custom login UI. Simply use the following functions instead of `connect`. Note, you need to call different functions depending upon the [[concept-index-auth-type|type of the authentication providers]] that you wish to enable for user onboarding:
 
 * Social Providers: `loginWithSocial`
 * Custom IAM Providers: `loginWithBearer`
@@ -127,7 +128,7 @@ The {{config.extra.arcana.wallet_name}} appears in a compact form within the app
 
 <img src="/img/an_wallet_min_light_vanilla.gif#only-dark" width="50%"/><img src="/img/an_wallet_min_dark_vanilla.gif#only-light" width="50%"/> 
 
-By default, the built-in {{config.extra.arcana.wallet_name}} UI is displayed in the app's context. It can be replaced by a custom wallet UI if required. The decision to choose a custom wallet UI must be made at the time of registering the app. When creating a new app, specify the **Wallet UI Mode** setting as `custom UI` instead of the default `Arcana UI`. See [[custom-wallet-ui|how to enable custom wallet UI]] for details.
+By default, users see the built-in {{config.extra.arcana.wallet_name}} UI displayed in the app's context. Developers can instead choose a custom wallet UI. The decision to choose a custom wallet UI must be made at the time of registering the app. When creating a new app, specify the **Wallet UI Mode** setting as `custom UI` instead of the default `Arcana UI`. See [[custom-wallet-ui|how to enable custom wallet UI]] for details. 
 
 Refer to the {% include "./text-snippets/authsdkref_url.md" %}, and the [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]].
 
@@ -139,7 +140,7 @@ When an app is registered, by default, a 'Testnet' configuration profile is asso
 
 However, to deploy your app on the {{config.extra.arcana.company_name}} Mainnet, you need to first create a corresponding 'Mainnet' configuration profile. Also, you must update the {{config.extra.arcana.sdk_name}} integration code in your app to use the **new {{config.extra.arcana.app_address}}** assigned to the app's 'Mainnet' configuration profile before deploying it on the Mainnet.
 
-You can deploy an app instance (say, one under active development) on the Testnet while simultaneously deploying a stable version of their app (say, one validated on Testnet and ready for users) on the Mainnet.
+You can deploy an app instance in active development on the Testnet. Simultaneously, you can deploy a stable version of the app, validated on the Testnet and ready for users, on the Mainnet.
 
 See [[deploy-app|App Deployment Guide]] for details.
 
@@ -152,7 +153,9 @@ See [[deploy-app|App Deployment Guide]] for details.
 
 ## Examples
 
-Here are some examples of {{config.extra.arcana.sdk_name}} integration with vanilla HTML/CSS/JS app.
+Refer to the submodule `sample-auth-html-css-js` in the GitHub repo: [Auth Examples](https://github.com/arcana-network/auth-examples) for a HTML/CSS/JS sample app that integrates with the {{config.extra.arcana.sdk_name}}.
+
+Here are some other examples of {{config.extra.arcana.sdk_name}} vanilla HTML/CSS/JS app that demonstrate integrating with the {{config.extra.arcana.sdk_name}}.
 
 [[google-social-auth|Onboard Users with Google]]{ .md-button }
 
