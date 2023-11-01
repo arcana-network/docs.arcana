@@ -80,9 +80,50 @@ Next, in the app `index.js` file, import the `ProvideAuth` component from the `{
 
 ## Step 4: Onboard Users
 
-To onboard users, update the `App.js` file by importing `Auth` and `useAuth` components from the `{{config.extra.arcana.react_sdk_pkg_name}}` package. Then render them in the `App` function. You can configure the wallet UI layout settings using `Auth` component props. Plug it to the user login route. Once the user chooses to log in, they will see the built-in, plug-and-play login UI pop up in the app context and allow the users to log in.
+You have two options to onboard users:
+
+* Enable [[concept-plug-and-play-auth|plug-and-play authentication]] through the built-in login UI
+* Use [[concept-custom-login-ui|custom login UI]]
+
+The built-in login UI is enabled by default. 
+
+Update the `App.js` file by importing `Auth` from the `{{config.extra.arcana.react_sdk_pkg_name}}` package and rendering it in the `App` function to bring up the default login component. You can configure the wallet UI theme layout using `Auth` component props. Once the user selects app log in UI option, they will see the built-in, plug-and-play login UI pop up in the app context displaying all the configured authentication providers.
+
+You can also use the `useAuth` hook and refer to the `Auth` component states.
 
 {% include "./code-snippets/auth_react_useauth.md" %}
+
+The figure below shows the built-in login UI plug-and-play pop-up authentication screen for a test app. In this example the app is configured to use Google as the social provider for authentication.
+
+![Plug-and-Play Login UI](/img/an_plug_n_play_auth.png){.an-screenshots-noeffects width="30%"}
+
+You can choose to use a **compact** form of the built-in login UI modal instead of the regular one displayed above. To enable compact login UI modal, instantiate the `AuthProvider` with `compact` parameter of `connectOptions` set to `true` as shown below:
+
+{% include "./code-snippets/auth_plugnplay_compact.md" %}
+
+<img src="/img/relnote_1.0.8_compact_login.png" alt="Compact UI login mode" class="an-screenshots-noeffects"/>
+
+!!! warning "No plug-and-play support for Firebase authentication."
+
+      {% include "./text-snippets/warn_firebase_no_pnp.md" %}
+
+Instead of onboarding users through the built-in plug-and-play login UI, you can instead use a custom login UI. Simply use the following functions instead of `connect`. Note, you need to call different functions depending upon the [[concept-index-auth-type|type of the authentication providers]] that you wish to enable for user onboarding:
+
+* Social Providers: `loginWithSocial`
+* Custom IAM Providers: `loginWithBearer`
+* Passwordless Login:  `loginWithLink`
+
+For more details, see [Auth React SDK Reference Guide](https://auth-react-sdk-ref-guide.netlify.app/).
+
+{% include "./code-snippets/auth_react_useauth_custom.md" %}
+
+For sample code and details on how to onboard users in a {{page.meta.arcana.app_type}} app via a custom login UI, see [[index-react-nextjs-custom-ui-onboard-users|how to enable configured providers when using a custom login UI]].
+
+!!! tip "Arcana JWT Token"
+
+      {% include "./text-snippets/jwt_token.md" %}
+
+Next, enable authenticated users to sign blockchain transactions.
 
 ## Step 5: Enable Wallet Operations
 

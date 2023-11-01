@@ -1,3 +1,3 @@
 ```js
-await wallet.loginWithLink(`${email}`)
+await auth.loginWithLink(`${email}`)
 ```

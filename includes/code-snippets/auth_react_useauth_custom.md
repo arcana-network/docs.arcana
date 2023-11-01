@@ -2,11 +2,11 @@
 import { useAuth } from "@arcana/auth-react";
 
 function App() {
-  const { loading, isLoggedIn, connect, user } = useAuth()
+  const { loading, isLoggedIn, connect, user, loginWithSocial } = useAuth()
 
   const onConnectClick = async () => {
     try {
-      await connect();
+      await loginWithSocial('google');
     } catch (err) {
       console.log({ err });
       // Handle error
@@ -19,7 +19,7 @@ function App() {
   if (!isLoggedIn) {
     return (
       <button onClick={onConnectClick}>
-        Login UI (Built-in)
+        Connect with Google
       </button>
     );
   }
