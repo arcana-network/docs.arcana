@@ -28,11 +28,3 @@ Instead of onboarding users through the built-in plug-and-play login UI, you can
 * Social Providers: `loginWithSocial`
 * Custom IAM Providers: `loginWithBearer`
 * Passwordless Login:  `loginWithLink`
-
-For sample code and details on how to onboard users in a {{page.meta.arcana.app_type}} app via a custom login UI, see [[index-custom-ui-onboard-users|how to enable configured providers when using a custom login UI]].
-
-!!! tip "Arcana JWT Token"
-
-      {% include "./text-snippets/jwt_token.md" %}
-
-Next, enable authenticated users to sign blockchain transactions.

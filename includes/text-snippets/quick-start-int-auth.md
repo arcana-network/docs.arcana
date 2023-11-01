@@ -1,4 +1,4 @@
-Add code to import `{{config.extra.arcana.auth_sdk_pkg_name}}` and create a 'new' `AuthProvider`.
+Add code to import `AuthProvider` from the `{{config.extra.arcana.auth_sdk_pkg_name}}` package.
 
 {% include "./code-snippets/import_auth.md" %}
 

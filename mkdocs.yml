@@ -25,6 +25,7 @@ nav:
         - HTML/CSS/JS: quick-start/vanilla-web-apps-quick-start.md
         - React:
           - quick-start/web/react/index.md
+          - React: quick-start/react-quick-start.md
           - React/NextJS: quick-start/react-nextjs-quick-start.md
           - Wagmi: quick-start/wagmi-quick-start.md
           - RainbowKit: quick-start/rainbowkit-quick-start.md
@@ -339,6 +340,7 @@ extra:
     company_name: Arcana
     product_name: Arcana Auth
     sdk_name: Arcana Auth SDK
+    react_sdk_name: Arcana Auth React SDK
     auth_core_sdk_name: Arcana Auth-Core SDK
     gaming_sdk_name: Arcana Auth Gaming SDK
     flutter_sdk_name: Arcana Auth Flutter SDK
@@ -351,6 +353,7 @@ extra:
     previous_version_dashboard: !ENV [PREVIOUS_DASHBOARD_VERSION, '1.0.4']
     latest_version: !ENV [AUTH_SDK_VERSION,'1.0.8']
     latest_version_dashboard: !ENV [DASHBOARD_VERSION, '1.0.5']
+    latest_auth_react_sdk_version: !ENV [AUTH_REACT_SDK_VERSION, '0.0.3']
     latest_auth_flutter_sdk_version: !ENV [AUTH_FLUTTER_SDK_VERSION, '0.0.6']
     latest_auth_react_native_sdk_version: !ENV [AUTH_REACT_NATIVE_SDK_VERSION, '0.0.4']
     latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_SDK_VERSION, 'Beta-0.3']

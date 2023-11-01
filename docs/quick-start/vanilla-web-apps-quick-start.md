@@ -28,6 +28,8 @@ For {{page.meta.arcana.app_type}} app, install the [`{{config.extra.arcana.auth_
 
 {% include "./code-snippets/auth_install.md" %}
 
+{% include "./text-snippets/watch_auth_github_repo.md" %}
+
 Next, integrate the app with the {{config.extra.arcana.sdk_name}} by instantiating and calling the requisite `AuthProvider` functions.
 
 ## Step 3: Integrate App
@@ -37,6 +39,14 @@ Next, integrate the app with the {{config.extra.arcana.sdk_name}} by instantiati
 ## Step 4: Onboard Users
 
 {% include "./text-snippets/quick-start-auth-onboard.md" %}
+
+For sample code and details on how to onboard users in a {{page.meta.arcana.app_type}} app via a custom login UI, see [[index-custom-ui-onboard-users|how to enable configured providers when using a custom login UI]].
+
+!!! tip "Arcana JWT Token"
+
+      {% include "./text-snippets/jwt_token.md" %}
+
+Next, enable authenticated users to sign blockchain transactions.
 
 ## Step 5: Enable Wallet Operations
 
@@ -50,6 +60,15 @@ Next, integrate the app with the {{config.extra.arcana.sdk_name}} by instantiati
 
 {% include "./text-snippets/quick-start-common-examples.md" %}
 
+Here are some other examples of {{config.extra.arcana.sdk_name}} {{page.meta.arcana.app_type}} app that demonstrate integrating with the {{config.extra.arcana.sdk_name}}.
+
+[[google-social-auth|Onboard Users with Google]]{ .md-button }
+
+[[configure-wallet-visibility|Manage blockchain signing user experience]]{ .md-button }
+
 ## See Also
 
 {% include "./text-snippets/quick-start-see-also.md" %}
+
+{% include "./text-snippets/prod_version_info.md" %}
+

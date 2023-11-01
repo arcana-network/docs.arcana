@@ -50,27 +50,7 @@ Import the `AuthProvider` from the `{{config.extra.arcana.auth_sdk_pkg_name}}` p
 
 Next, import the `ProviderAuth` component from the `{{config.extra.arcana.react_sdk_pkg_name}}` package and render it using the Web3 provider as props.
 
-```js title="index.js"
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import { AuthProvider } from "@arcana/auth";
-import { ProvideAuth } from "@arcana/auth-react";
-import App from "./App";
-
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-const provider = new AuthProvider(
-  "xar_dev_5fd5338ee82834d59eee58f37b676bdabdfa41e9", //required
-); //See SDK Reference Guide for optional parameters
-
-root.render(
-  <StrictMode>
-    <ProvideAuth provider={provider}>
-      <App />
-    </ProvideAuth>
-  </StrictMode>
-);
-```
+{% include "./code-snippets/auth_react_provideauth.md" %}
 
 ### Step 4: Update `App.js`
 
@@ -78,31 +58,7 @@ Finally to integrate the app with the {{config.extra.arcana.sdk_name}}, update t
 
 Once the user logs in successfully set the route to the post-login page in your application.
 
-```js title="App.js"
-import { Auth, useAuth } from "@arcana/auth-react";
-
-const onLogin = () => {
-  // Route to authenticated page
-}
-function App() {
-  const auth = useAuth();
-  return (
-    <div>
-      {auth.loading ? (
-        "Loading"
-      ) : auth.isLoggedIn ? (
-        <p>Logged In</p>
-      ) : (
-        <div>
-          <Auth externalWallet={true} theme={"light"} onLogin={onLogin}/>
-        </div>
-      )}
-    </div>
-  );
-}
-
-export default App;
-```
+{% include "./code-snippets/auth_react_useauth.md" %}
 
 That is all! :material-party-popper:
 

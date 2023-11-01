@@ -15,5 +15,3 @@
 
     * [[arcana-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]].
     * [[mfa-user-guide|MFA Setup Guide]]
-
-{% include "./text-snippets/prod_version_info.md" %}

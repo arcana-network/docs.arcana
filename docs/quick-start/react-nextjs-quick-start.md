@@ -4,6 +4,8 @@ title: 'Quick Start: React/NextJS Apps'
 description: 'Get Started quickly using these step-by-step instructions for using the Arcana Auth product in React/NextJS apps. Use Arcana Developer dashboard to first register the app, get a client ID and use this client ID to integrate the app with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
+  app_type: "'React/NextJS'"
+  app_example_submodule: "'`sample-auth-vue`'"
 ---
 
 # Quick Start: React/NextJS Apps
