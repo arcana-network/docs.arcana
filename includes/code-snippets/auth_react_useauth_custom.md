@@ -4,9 +4,10 @@ import { useAuth } from "@arcana/auth-react";
 function App() {
   const { loading, isLoggedIn, connect, user, loginWithSocial } = useAuth()
 
+  // custom login UI
   const onConnectClick = async () => {
     try {
-      await loginWithSocial('google');
+      await loginWithSocial('google'); 
     } catch (err) {
       console.log({ err });
       // Handle error

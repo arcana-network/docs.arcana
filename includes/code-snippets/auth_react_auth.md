@@ -35,6 +35,8 @@ root.render(
 ```js title="App.js" hl_lines="1 4 7"
 import { Auth } from "@arcana/auth-react";
 
+
+// Use <Auth/> to use the built-in, plug & play login UI
 function App() {
   const [theme, setTheme] = React.useState("light");
   return (

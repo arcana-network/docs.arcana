@@ -6,7 +6,7 @@ function App() {
 
   const onConnectClick = async () => {
     try {
-      await connect();
+      await connect(); // Built-in, plug & play login UI
     } catch (err) {
       console.log({ err });
       // Handle error
