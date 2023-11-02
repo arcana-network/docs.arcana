@@ -6,6 +6,7 @@ arcana:
   root_rel_path: ..
   app_type: "'React'"
   app_example_submodule: "'`sample-auth-react`'"
+  social_provider: "'google'"
 ---
 
 # Quick Start: React Apps
@@ -38,15 +39,15 @@ For {{page.meta.arcana.app_type}} app, install the following packages:
 
 {% include "./code-snippets/auth_install.md" %}
 
+{% include "./text-snippets/watch_auth_github_repo.md" %}
+
 ### {{config.extra.arcana.react_sdk_name}}
 
 {% include "./code-snippets/auth_react_install.md" %}
 
-Next, integrate the app with the installed SDKs.
-
-{% include "./text-snippets/watch_auth_github_repo.md" %}
-
 {% include "./text-snippets/watch_auth_react_github_repo.md" %}
+
+Next, integrate the app with the installed SDKs.
 
 ## Step 3: Integrate App
 
@@ -109,6 +110,8 @@ Instead of onboarding users through the built-in plug-and-play login UI, you can
 * Passwordless Login:  `loginWithLink`
 
 For more details, see [Auth React SDK Reference Guide](https://auth-react-sdk-ref-guide.netlify.app/).
+
+The sample code below shows how to onboard users with a custom Login UI via 'Google' authentication.
 
 {% include "./code-snippets/auth_react_useauth_custom.md" %}
 

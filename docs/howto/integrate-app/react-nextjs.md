@@ -8,7 +8,7 @@ arcana:
 
 # Integrate React/NextJS App
 
-In this guide, discover how to integrate a React/NextJS app with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) using the Auth React wrapper. The wrapper employs React Hooks to set Auth component props with necessary initialization values for configuring the {{config.extra.arcana.sdk_name}} and the Arcana wallet.
+In this guide, discover how to integrate a React/NextJS app with the {{config.extra.arcana.product_name}} product. Use the Auth React wrapper that provides React Hooks to set Auth component props with necessary initialization values for configuring the {{config.extra.arcana.sdk_name}} and the Arcana wallet.
 
 ## Prerequisites
 
@@ -24,49 +24,45 @@ In this guide, discover how to integrate a React/NextJS app with the [{{config.e
 
           For details, see [[index-configure-auth|how to configure authentication providers]].
 
-* Save the **{{config.extra.arcana.app_address}}** assigned to the app displayed in the {{config.extra.arcana.dashboard_name}}. It is required while integrating the app with the {{config.extra.arcana.sdk_name}} and creating the `AuthProvider`. 
+* Save the **{{config.extra.arcana.app_address}}** assigned to the app displayed in the {{config.extra.arcana.dashboard_name}}. It is required while integrating the app with the {{config.extra.arcana.sdk_name}} and creating the `AuthProvider`.
 
 ## Steps
 
-*Integrating a React/NextJS app with the {{config.extra.arcana.sdk_name}} is simple!*
+*Integrating a React/NextJS app with the {{config.extra.arcana.product_name}} product is simple!*
+
+First install the {{config.extra.arcana.sdk_name}}: 
 
 ### Step 1: Install `{{config.extra.arcana.auth_sdk_pkg_name}}`
-
-To integrate with the {{config.extra.arcana.product_name}} React components, install the {{config.extra.arcana.sdk_name}} via the `{{config.extra.arcana.auth_sdk_pkg_name}}` package.
 
 {% include "./code-snippets/auth_install.md" %}
 
 ### Step 2: Install `{{config.extra.arcana.react_sdk_pkg_name}}`
 
-Next, install the Auth React component wrapper via the `{{config.extra.arcana.react_sdk_pkg_name}}` package. 
+Next, install the {{config.extra.arcana.react_sdk_name}} to access the Auth React component wrapper:
 
 {% include "./code-snippets/auth_react_install.md" %}
 
-### Step 3: Update `index.js`
+### Step 3: Initialize `AuthProvider`, Use `ProviderAuth`
 
-A typical React application consists of `index.js` and `App.js` files. First update the `index.js` file. 
-
-Import the `AuthProvider` from the `{{config.extra.arcana.auth_sdk_pkg_name}}` package. Instantiate the `AuthProvider` and get a Web3 provider. 
+A typical React application consists of `index.js` and `App.js` files. First update the `index.js` file and add code to import the `AuthProvider` from the `{{config.extra.arcana.auth_sdk_pkg_name}}` package. Instantiate the `AuthProvider` and get a Web3 provider.
 
 Next, import the `ProviderAuth` component from the `{{config.extra.arcana.react_sdk_pkg_name}}` package and render it using the Web3 provider as props.
 
 {% include "./code-snippets/auth_react_provideauth.md" %}
 
-### Step 4: Update `App.js`
+### Step 4: Use `useAuth` Hook
 
-Finally to integrate the app with the {{config.extra.arcana.sdk_name}}, update the `App.js` file by importing `Auth` and `useAuth` from the `{{config.extra.arcana.react_sdk_pkg_name}}` package, rendering it in the `App` function. You can configure the wallet layout settings using `Auth` component props. 
-
-Once the user logs in successfully set the route to the post-login page in your application.
+Use React hook `useAuth` from the `{{config.extra.arcana.react_sdk_pkg_name}}` package, rendering it in the `App` function. You can configure the wallet layout settings using `Auth` component props.
 
 {% include "./code-snippets/auth_react_useauth.md" %}
 
 That is all! :material-party-popper:
 
-The React/Next.js app is now successfully integrated with the {{config.extra.arcana.sdk_name}} using the Auth-React wrapper. Refer to the [Auth Examples](https://github.com/arcana-network/auth-examples) for working integration examples.
+The React/Next.js app is now successfully integrated with the {{config.extra.arcana.product_name}} product. Refer to the [Auth Examples](https://github.com/arcana-network/auth-examples).
 
 ## What's Next?
 
-After integrating an app with the {{config.extra.arcana.sdk_name}}, developers can add code to [[index-onboard-users|onboard users]] and [[index-arcana-wallet|enable Web3 wallet operations]] for authenticated users to sign blockchain transactions.
+After integrating an app developers can add code to [[index-onboard-users|onboard users]] and [[index-arcana-wallet|enable Web3 wallet operations]] for authenticated users to sign blockchain transactions.
 
 ## See also
 

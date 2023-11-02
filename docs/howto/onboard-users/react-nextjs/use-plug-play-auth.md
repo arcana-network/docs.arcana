@@ -21,8 +21,6 @@ In this guide, you will learn how {{page.meta.arcana.app_type}} Web3 apps can in
 
 ## Steps
 
-*Using the plug-and-play authentication feature is simple!*
-
 {% include "./text-snippets/use-react-pnp-auth.md" %}
 
 For `auth-react` SDK usage details, see [{{config.extra.arcana.react_sdk_name}} Reference Guide](https://dev--auth-react-sdk-ref-guide.netlify.app/).

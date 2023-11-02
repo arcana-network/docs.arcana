@@ -5,7 +5,9 @@ description: 'Learn how to add user onboarding in React/NextJS Web3 apps using c
 arcana:
   root_rel_path: ../../../../..
   social_provider: "'discord'"
+  social_provider_name: "Discord"
+  social_provider_tag: "discord"
   app_type: "React/NextJS"
 ---
 
-{%include "./text-snippets/build-social/discord-oauth.md" %}
+{%include "./text-snippets/build-social/react/social-provider-oauth.md" %}

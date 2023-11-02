@@ -7,4 +7,4 @@ arcana:
   app_type: "React/NextJS"
 ---
 
-{% include "./text-snippets/build-pwdless-auth.md" %}
+{% include "./text-snippets/react-build-pwdless-auth.md" %}

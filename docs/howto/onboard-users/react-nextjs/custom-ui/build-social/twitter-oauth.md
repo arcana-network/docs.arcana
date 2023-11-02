@@ -8,4 +8,4 @@ arcana:
   app_type: "React/NextJS"
 ---
 
-{%include "./text-snippets/build-social/twitter-oauth.md" %}
+{%include "./text-snippets/build-social/react/social-provider-oauth.md" %}
