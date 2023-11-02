@@ -18,36 +18,43 @@ arcana:
 
 ## Overview
 
-{% include "./text-snippets/quick-start-overview.md" %}
+To implement {{config.extra.arcana.product_name}} in a {{page.meta.arcana.app_type}} app, start by registering your app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.react_sdk_name}}, integrate the app, initialize the `AuthProvider`. You'll need to add code to facilitate user onboarding via `ProvideAuth` app wrapper and `useAuth` React hooks. Then call {{config.extra.arcana.sdk_name}} functions and allow users to sign blockchain transactions. Finally, deploy your app on the Testnet or Mainnet.
+
+<img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
+<img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
 
 ## Step 1: Register & Configure App
 
 {% include "./text-snippets/quick-start-reg-config.md" %}
 
-## Step 2: Install SDK
+## Step 2: Install SDKs
 
 For {{page.meta.arcana.app_type}} app, install the following packages:
 
 * [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth)
 * [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react)
 
+### {{config.extra.arcana.sdk_name}}
+
 {% include "./code-snippets/auth_install.md" %}
 
+### {{config.extra.arcana.react_sdk_name}}
+
 {% include "./code-snippets/auth_react_install.md" %}
+
+Next, integrate the app with the installed SDKs.
 
 {% include "./text-snippets/watch_auth_github_repo.md" %}
 
 {% include "./text-snippets/watch_auth_react_github_repo.md" %}
 
-Next, integrate the app with the {{config.extra.arcana.product_name}} product.
-
 ## Step 3: Integrate App
 
-First, add code to import `AuthProvider` from the `{{config.extra.arcana.auth_sdk_pkg_name}}` and get a Web3 provider.
+Begin app integration by importing `AuthProvider` from the `{{config.extra.arcana.auth_sdk_pkg_name}}` package.
 
 {% include "./code-snippets/import_auth.md" %}
 
-Create a new `AuthProvider`, specify the unique **{{config.extra.arcana.app_address}}** obtained earlier during to the app registration. 
+Create a new `AuthProvider` instance. Specify the unique **{{config.extra.arcana.app_address}}** obtained during the app registration. This gives you access to a Web3 provider.
 
 {% include "./code-snippets/new_auth.md" %}
 
@@ -62,6 +69,7 @@ Initialize the newly instantiated `AuthProvider`.
 You can optionally customize the following settings in the `AuthProvider` constructor:
 
 ---
+
 * `alwaysVisible`: [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility mode]] - always visible in the app context or only if a blockchain transaction is triggered by the app
 * `chainConfig`:
       - `chainId`: chain identifier for the active chain in the wallet
@@ -70,30 +78,35 @@ You can optionally customize the following settings in the `AuthProvider` constr
 * `theme`: wallet theme - `light`|`dark`
 * `setWindowProvider`: set `window.ethereum` in the app context with the standard EIP-1193 Ethereum provider value
 * `connectOptions`: built-in login UI compact mode - `true`|`false`
+
 ---
 
 See [`AuthProvider` constructor parameters](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams) for details.
 
-Next, in the app `index.js` file, import the `ProvideAuth` component from the `{{config.extra.arcana.react_sdk_pkg_name}}` package. Then use the Web3 provider instantiated via the `AuthProvider` earlier to render the `ProvideAuth` component:
+Next, in the app `index.js` file, import the `ProvideAuth` component from the `{{config.extra.arcana.react_sdk_pkg_name}}` package. Then use the Web3 provider from `AuthProvider` as props to render the `ProvideAuth` component:
 
 {% include "./code-snippets/auth_react_provideauth.md" %}
 
+The app is now integrated with the {{config.extra.arcana.sdk_name}} and the {{config.extra.arcana.react_sdk_name}}. Next, add code to onboard users.
+
 ## Step 4: Onboard Users
 
-You have two options to onboard users:
+Choose one of the options below to enable configured authentication providers and facilitate user onboarding:
 
-* Enable [[concept-plug-and-play-auth|plug-and-play authentication]] through the built-in login UI
+* Use[[concept-plug-and-play-auth|plug-and-play authentication]] through the built-in login UI
 * Use [[concept-custom-login-ui|custom login UI]]
 
-The built-in login UI is enabled by default. 
+The built-in login UI is enabled by default.
 
-Update the `App.js` file by importing `Auth` from the `{{config.extra.arcana.react_sdk_pkg_name}}` package and rendering it in the `App` function to bring up the default login component. You can configure the wallet UI theme layout using `Auth` component props. Once the user selects app log in UI option, they will see the built-in, plug-and-play login UI pop up in the app context displaying all the configured authentication providers.
+Update the `App.js` file by importing `Auth` from the `{{config.extra.arcana.react_sdk_pkg_name}}` package and rendering it in the `App` function to bring up the default login UI component. You can configure the wallet UI theme layout using `Auth` component props. Once the user clicks to log in, they will see the built-in, plug-and-play login UI pop up in the app context displaying all the configured authentication providers.
+
+{% include "./code-snippets/auth_react_auth.md" %}
 
 You can also use the `useAuth` hook and refer to the `Auth` component states.
 
 {% include "./code-snippets/auth_react_useauth.md" %}
 
-The figure below shows the built-in login UI plug-and-play pop-up authentication screen for a test app. In this example the app is configured to use Google as the social provider for authentication.
+The figure below shows the built-in login UI plug-and-play pop-up authentication screen for a test app.
 
 ![Plug-and-Play Login UI](/img/an_plug_n_play_auth.png){.an-screenshots-noeffects width="30%"}
 

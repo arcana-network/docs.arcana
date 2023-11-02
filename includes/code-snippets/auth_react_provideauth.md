@@ -1,4 +1,4 @@
-```js title="index.js" hl_lines="3-4 9-18 22-24"
+```js title="index.js" hl_lines="3-4 10-12 16-18"
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { AuthProvider } from "@arcana/auth";
@@ -20,6 +20,7 @@ root.render(
   </StrictMode>
 );
 ```
+
 ---
 ```js title="app.js" hl_lines="2 4 8"
 import React from "react";
