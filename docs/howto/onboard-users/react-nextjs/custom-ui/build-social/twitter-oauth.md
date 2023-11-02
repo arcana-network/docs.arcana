@@ -5,6 +5,8 @@ description: 'Learn how to add user onboarding in React/NextJS apps using custom
 arcana:
   root_rel_path: ../../../../..
   social_provider: "'twitter'"
+  social_provider_name: "Twitter"
+  social_provider_tag: "twitter"
   app_type: "React/NextJS"
 ---
 
