@@ -1,17 +1,4 @@
-```js title="index.js" hl_lines="2 4 8"
-import React from "react";
-import { Auth } from "@arcana/auth-react";
-
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Sample Auth React App</h1>
-      <Auth />
-    </div>
-  );
-```
-
-```js title="app.js" hl_lines="3-4 9-18 22-24"
+```js title="index.js" hl_lines="3-4 9-18 22-24"
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { AuthProvider } from "@arcana/auth";
@@ -32,4 +19,17 @@ root.render(
     </ProvideAuth>
   </StrictMode>
 );
+```
+---
+```js title="app.js" hl_lines="2 4 8"
+import React from "react";
+import { Auth } from "@arcana/auth-react";
+
+export default function App() {
+  return (
+    <div className="App">
+      <h1>Sample Auth React App</h1>
+      <Auth />
+    </div>
+  );
 ```
