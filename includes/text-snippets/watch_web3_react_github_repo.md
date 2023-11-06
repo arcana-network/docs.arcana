@@ -1,0 +1,3 @@
+!!! tip "Watch Auth-Web3-React SDK Releases"
+
+      Get notified about newer `auth-web3-react` [releases](https://github.com/arcana-network/auth-web3-react/releases) by [watching GitHub repository](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications#subscription-options): [`auth-react`](https://github.com/arcana-network/auth-web3-react).

@@ -1,5 +1,5 @@
-```js title="example/connectors/arcanaWallet.ts" hl_lines="2-3 68 10 13 24 29"
-
+```js title="example/connectors/arcanaWallet.ts" hl_lines="2-3 6 8-16 22-27 29"
+// custom ui onboarding - google
 import { ArcanaConnector } from "@arcana/auth-web3-react"
 import { AuthProvider } from "@arcana/auth"
 import { initializeConnector } from "@web3-react/core"
