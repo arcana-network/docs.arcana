@@ -400,6 +400,7 @@ repo_name: arcana-network/auth
 edit_uri: https://github.com/arcana-network/auth-mkdocs/blob/main/docs
 
 theme:
+  language: en
   name: material
   logo: img/arcana-logo-white.svg
   icon:
@@ -539,8 +540,8 @@ plugins:
         'user_guides/wallet_ui/index.md': 'user-guides/wallet-ui/index.md'
         'user_guides/mfa/mfa_ug.md': 'user-guides/mfa/mfa-ug.md'
         'db/config_dApp_with_db.md': 'db/config-dApp-with-db.md'
-        'integrations/shardeum/integrate_shardeum.md': 'integrations/shardeum/integrate-shardeum.md'
-        'integrations/shardeum/wallet_config_shardeum.md': 'integrations/shardeum/wallet-config-shardeum.md'
+        #'integrations/shardeum/integrate_shardeum.md': 'integrations/shardeum/integrate-shardeum.md'
+        #'integrations/shardeum/wallet_config_shardeum.md': 'integrations/shardeum/wallet-config-shardeum.md'
         'tutorials/code_samples/index.md': 'tutorials/code-samples/index.md'
         'tutorials/code_samples/vanilla_html_js_sample.md': 'tutorials/code-samples/vanilla-html-js-sample.md'
         'tutorials/code_samples/react_code_sample.md': tutorials/code-samples/react-code-sample.md
