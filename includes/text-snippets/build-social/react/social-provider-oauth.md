@@ -1,6 +1,6 @@
 # User Login with {{page.meta.arcana.social_provider_name}}
 
-In this guide, you will learn how a React app integrated with the {{config.extra.arcana.sdk_name}} and  {{config.extra.arcana.react_sdk_name}} can onboard users with a custom login UI through {{page.meta.arcana.social_provider_name}} authentication.
+In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.sdk_name}} and  {{config.extra.arcana.react_sdk_name}} can onboard users with a custom login UI through {{page.meta.arcana.social_provider_name}} authentication.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ In this guide, you will learn how a React app integrated with the {{config.extra
     
 ## Steps
 
-*Using {{page.meta.arcana.social_provider_name}} to onboard users in a React app is simple!*
+*Using {{page.meta.arcana.social_provider_name}} to onboard users in a {{page.meta.arcana.app_type}} app is simple!*
 
 ## Step 1: Use `loginWithSocial`
 
@@ -22,7 +22,7 @@ In this guide, you will learn how a React app integrated with the {{config.extra
 
 **That is all!**  :material-party-popper:
 
-The React app is all set for onboarding users via {{page.meta.arcana.social_provider_name}}.
+The {{page.meta.arcana.app_type}} app is all set for onboarding users via {{page.meta.arcana.social_provider_name}}.
 
 !!! tip "Arcana JWT Token"
 

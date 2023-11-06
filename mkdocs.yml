@@ -25,7 +25,6 @@ nav:
         - HTML/CSS/JS: quick-start/vanilla-web-apps-quick-start.md
         - React:
           - quick-start/web/react/index.md
-          - React: quick-start/react-quick-start.md
           - React/NextJS: quick-start/react-nextjs-quick-start.md
           - Wagmi: quick-start/wagmi-quick-start.md
           - RainbowKit: quick-start/rainbowkit-quick-start.md

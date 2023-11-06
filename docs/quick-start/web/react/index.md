@@ -8,9 +8,7 @@ arcana:
 
 # Quick Start: React Apps
 
-[[react-quick-start|React Apps :material-react:]]{ .md-button }
-
-[[react-nextjs-quick-start|React/NextJS Apps :fontawesome-brands-js:]]{ .md-button }
+[[react-nextjs-quick-start|React Apps :material-react::fontawesome-brands-js:]]{ .md-button }
 
 [[wagmi-quick-start|Wagmi Apps :material-transit-connection-variant:]]{ .md-button }
 
