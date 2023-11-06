@@ -2,13 +2,26 @@
   
 <!-- Content --> 
 {% block content %} 
-  <div>
-    <img src="/img/arcabot_blink.gif" width="30%"/>
-    <h1 style="font-size: 5rem;">404</h1> 
-    <h2>Oops! Page not found...</h2>
-  </div>
-  <div>
-    <p>For more information, use the <b>Search</b> bar above or <a class="a-link-color" href="/support.html">reach out to us</a>.
-    </p>
-  </div>
+<style>
+  .md-main{
+   background: url(/img/404-background.png), lightgray 50% / cover;
+ }
+ 
+</style>
+    <!--
+    <div>
+      <p style="background-color: transparent; text-align: center;font-size: 6rem; color: white; opacity: 0.3; font-weight: 700; margin-top: -5%">404</p> 
+      <p style="background-color: transparent; text-align: center; color: white; font-size: 1.15rem; margin-top: -20%;">Oops! Something went wrong.</p>
+      <p style="background-color: transparent; text-align: center; font-size: 0.5rem; color: white">We couldn't find the page you're looking for.</p>
+    </div>
+    -->
+
+    <div style="position: relative; margin-inline: 0;">
+      <p style="background-color: transparent; text-align: center;font-size: 6rem; color: white; opacity: 0.3; font-weight: 700; margin: 0">404</p> 
+      <div style="position: absolute; bottom: 3%; left: 30%; margin-inline: 0;">
+        <p style="background-color: transparent; text-align: center; font-size: 1.15rem; color: white">Oops! Something went wrong.</p>
+        <p style="background-color: transparent; text-align: center; font-size: 0.5rem; font-weight: 100; color: white">We couldn't find the page you're looking for.</p>
+     </div> 
+    </div>
+
 {% endblock %}
