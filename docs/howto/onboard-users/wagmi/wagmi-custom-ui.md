@@ -40,7 +40,7 @@ Follow these three steps:
 
 Import `{{config.extra.arcana.auth_sdk_pkg_name}}` and `{{config.extra.arcana.wagmi_sdk_pkg_name}}` packages. First create an `AuthProvider` by specifying the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] through the {{config.extra.arcana.dashboard_name}}. 
 
-Next, create the `ArcanaConnector` and specify the `AuthProvider`. 
+Next, create the `ArcanaConnector` and specify the `AuthProvider`.
 
 If the custom login UI is configured such that it allows a single authentication provider to onboard users, developers can specify the provider as an additional parameter while creating the `ArcanaConnector`. Otherwise, if the custom login UI offers multiple authentication provider options then developers can create a single `ArcanaConnector` without specifying the authentication provider and later call the `setLogin` function for the selected provider, in response to the user's onboarding choice.
 

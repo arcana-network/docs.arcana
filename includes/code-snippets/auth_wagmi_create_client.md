@@ -1,7 +1,6 @@
 === "`auth-wagmi` version < v2.0.0"
 
-    ```js title="App.js" hl_lines="9 10 21-29 39 41"
-
+    ```js title="App.js" hl_lines="9 10 22-30 39 40"
     // Note:  
     // This sample code is for 
     // wagmi versions <1.x.x and auth-wagmi <2.0.0
@@ -75,6 +74,9 @@
         chains,
         options: {
           auth: newAuthProvider(),
+          login: {
+            provider: "google",
+          },
         },
       });
     };

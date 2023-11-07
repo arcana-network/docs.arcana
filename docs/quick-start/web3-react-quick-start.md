@@ -15,7 +15,7 @@ arcana:
   
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
-      {% include "./text-snippets/warn_latest_react_sdk_version.md" %}
+      {% include "./text-snippets/warn_latest_web3_react_sdk_version.md" %}
 
 ## Overview
 

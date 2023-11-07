@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@100;200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400&display=block");
+
+:root > * {
+     --md-primary-fg-color: #242424;
+     --md-primary-fg-color--dark: #9a9a9a;
+     --md-primary-fg-color--lighter: #5e5e5e;
+     --md-primary-fg-color--light: #c2c2c2;
+     --md-default-bg-color--light: #aaaaaa;
+     --md-default-bg-color--lighter: #e7f6ff;
+     --md-primary-bg-color: #ffffff;
+     --md-typeset-a-color: #057eff;
+     --md-accent-fg-color:  rgb(132, 144, 149);
+     --md-accent-fg-color--transparent:   hsla(190, 5%, 49%, 0.1);
+     --md-accent-bg-color:                hsla(0, 0%, 100%, 1);
+     --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
+     --md-text-font: "Inter";
+     --md-admonition-icon--an-faq: url('/img/icons/icons8-question-mark-48.png');
+     --md-admonition-icon--an-trbs: url('/img/icons/exclamation.png');
+     --md-primary-an-heading-color:   var(--md-primary-fg-color--lighter);
+     --md-primary-an-banner-text-color: var(--md-an-blink-me-link-color);
+     --md-banner-color-1: var(--md-primary-bg-color);
+     --md-banner-color-2: var(--md-an-hero-slate-gradient-dark);
+     --md-an-card-color-hover: rgba(247, 246, 245, 0.9);
+     --md-an-hero-slate-gradient-dark: rgba(34, 36, 47, 0.99);
+     --md-typeset-mark-color: rgba(247, 247, 163, 0.25);
+     --md-banner-color-yellow: var(--md-typeset-mark-color);
+     --md-an-banner-color-purple: rgb(85, 65, 190);
+     --md-an-header-color-purple: rgb(24,21,59); 
+     --md-an-color-light-purple: rgb(192, 188, 223);
+     --md-an-blink-me-link-color: blue;
+     --md-an-banner-bg: rgb(111, 215,145);
+    }
+
+[data-md-color-scheme="black"] {
+    --md-hue: 360; 
+}
+
+:root > [data-md-color-scheme="slate"]{
+  --md-primary-fg-color--lighter: #929292;
+  --md-an-card-color-hover: var(--md-primary-fg-color--dark);
+  --md-typeset-mark-color: rgba(56, 59, 82, 0.95);
+  --md-banner-color-yellow: rgba(247, 247, 163, 0.25);
+  --md-an-banner-color-purple: rgb(59, 52, 150);
+  --md-an-header-color-purple: rgb(16,14,36); 
+  --md-an-color-light-purple: rgb(26, 24, 38);
+}
+
+.critic .block {
+  background-color: var(--md-typeset-mark-color);
+}
+
+/* Highlight tabs when active */
+
+.md-tabs__item {
+  border: 1px 1px 1px 0 solid gray;
+  border-radius: 5px 5px 0 0;
+} 
+
+.md-tabs__item:hover{
+  background-color: var(--md-accent-bg-color);
+  /*color: var(--md-accent-fg-color);*/
+  color: var(--md-an-header-color-purple);
+} 
+
+.md-tabs__link--active, .md-tabs__link:focus, .md-tabs__link:hover {
+  text-decoration: underline; 
+  text-decoration-color: var(--md-accent-bg-color);
+  text-underline-offset: 0.25rem;
+}
+
+.md-header {
+  /*background: linear-gradient(to bottom, var(--md-primary-bg-color), var(--md-primary-fg-color) 19%,#aaa 69%);*/
+  background-color: var(--md-an-header-color-purple);
+}
+
+.md-social {
+  margin-right: 6%; /*To accommodate chatbase bot icon */
+}
+
+.md-button {
+    border-radius: 0.3rem !important;
+}
+
+.md-typeset .md-button {
+  border-radius: 0.3rem !important;
+  border-color: var(--md-default-fg-color--light);
+  color: var(--md-default-fg-color--light);
+}
+
+.md-grid {
+  max-width: 100vw; 
+}
+
+.md-content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.md-banner {
+    background: var(--md-an-banner-bg);
+    /*
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--md-banner-color-1) 2%,
+      var(--md-accent-bg-color--light) 4%,
+      var(--md-banner-color-2) 2%) !important;
+    */
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    color: var(--md-primary-an-banner-text-color);
+    overflow: hidden;
+    text-align: center;
+    height: 1.7rem;
+    margin-top: -0.5rem;
+  }
+
+.md-banner__inner {
+  font-size: 0.7rem;
+}
+
+.md-nav__item--section {
+    padding: 0.5rem;
+}
+
+.cards {
+    max-width: "80%";
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr, 2fr;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(247, 246, 245, 0.2);
+    transition: 0.3s;
+    padding: 1rem;
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+}
+
+.card:hover {
+    /* On mouse-over, add a deeper shadow */
+    box-shadow: 0 8px 16px 0 rgba(247, 246, 245, 0.2);
+}
+
+.card_container {
+    /* Add some padding inside the card container */
+    padding: 0.2rem;
+}
+
+.md-typeset .admonition,
+.md-typeset details  {
+    border-radius: 5px;
+    border-width: 0rem;
+    border-left-width: 0.2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+} 
+
+.md-typeset .admonition.an-faq,
+  .md-typeset details.an-faq {
+    border-bottom: var(--md-primary-fg-color--light);
+    border-color: var(--md-default-bg-color);
+}
+  
+.md-typeset .an-faq > .admonition-title,
+  .md-typeset .an-faq > summary {
+    background-color: var(--md-default-bg-color);
+}
+  
+.md-typeset .an-faq > .admonition-title::before,
+  .md-typeset .an-faq > summary::before {
+    -webkit-mask-image: var(--md-admonition-icon--an-faq);
+            mask-image: var(--md-admonition-icon--an-faq);
+}
+
+.md-typeset .admonition.an-trbs,
+  .md-typeset details.an-trbs {
+    border-bottom: var(--md-primary-fg-color--light);
+    border-color: var(--md-default-bg-color);
+}
+  
+.md-typeset .an-trbs > .admonition-title,
+  .md-typeset .an-trbs > summary {
+    background-color: var(--md-default-bg-color);
+}
+  
+.md-typeset .an-trbs > .admonition-title::before,
+  .md-typeset .an-trbs > summary::before {
+    -webkit-mask-image: var(--md-admonition-icon--an-trbs);
+            mask-image: var(--md-admonition-icon--an-trbs);
+}
+
+.an-screenshots {
+  border-radius: 5px;
+  display: block;
+  width: 75%;
+  /* Use these to centre all screenshots (if required )
+  margin-left: auto;
+  margin-right: auto;
+  */
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.an-screenshots-noeffects {
+  border-radius: 5px;
+}
+
+.blink_me {
+  animation: blinker 2s linear infinite;
+  color: var(--md-primary-an-banner-text-color);
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+.width_35pc {
+  width: 25%;
+}
+
+.width_85pc {
+  width: 25%;
+}
+
+.an-marker-text-highlight {
+  background-color: yellow;
+}
+
+.video_container {
+  display: flexbox;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.arcana_video {
+  flex-grow: 1;
+  border: solid 0.2em transparent;
+}
+

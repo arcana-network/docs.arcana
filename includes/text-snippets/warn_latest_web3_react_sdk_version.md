@@ -1,0 +1,1 @@
+*In addition to the latest {{config.extra.arcana.sdk_name}}, for **Web3-React** apps, you must also use the latest {{config.extra.arcana.web3_react_sdk_name}} release:* [**v{{config.extra.arcana.latest_auth_web3_react_sdk_version}}**](https://www.npmjs.com/package/@arcana/auth-web3-react)
