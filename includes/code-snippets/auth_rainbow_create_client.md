@@ -1,6 +1,6 @@
 === "`auth-wagmi` version < v2.0.0"
 
-    ```js title="pages/App.js" hl_lines="12 19 20"
+    ```js title="pages/App.js" hl_lines="12 20"
 
     // Note:  
     // This sample code is for 
@@ -30,7 +30,7 @@
 
 === "`auth-wagmi` version > v2.0.0"
 
-    ```js title="pages/App.js" hl_lines="9 18 19"
+    ```js title="pages/App.js" hl_lines="8 12"
     // Note:  
     // This sample code is for 
     // wagmi versions 1.x.x and auth-wagmi 2.0.0

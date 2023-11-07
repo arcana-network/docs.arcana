@@ -19,7 +19,7 @@ arcana:
 
 ## Overview
 
-To implement {{config.extra.arcana.product_name}} in a {{page.meta.arcana.app_type}} app, start by registering your app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.wagmi_sdk_name}}, integrate the app, and initialize the `AuthProvider`. You'll need to add code to create an `ArcanaConnector` and specify the `AuthProvider`. Use appropriate configuration in the `ArcanaConnector` constructor and specify the type of user onboarding. Finally, add code to enable authenticated users to sign blockchain transactions and deploy your app on the Testnet or Mainnet.
+To implement {{config.extra.arcana.product_name}} in a {{page.meta.arcana.app_type}} app, start by registering your app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.wagmi_sdk_name}}, integrate the app, and initialize the `AuthProvider`. You'll need to add code to create an `ArcanaConnector` and specify the `AuthProvider`. Use the appropriate configuration in the `ArcanaConnector` constructor and specify the type of user onboarding. Finally, add code to enable authenticated users to sign blockchain transactions and deploy your app on the Testnet or Mainnet.
 
 <img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
 <img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
@@ -102,19 +102,21 @@ Now use `WagmiConfig` component to bring up the built-in login UI when the user 
 
 {% include "./code-snippets/auth_wagmi_use_app.md" %}
 
+For sample code and details, see [[onboard-wagmi-app-pnp-ui|how to onboard users through the configured authentication providers using the built-in, plug-and-play login UI]], in a {{page.meta.arcana.app_type}} app.
+
 ### Custom Login UI
 
 To use a custom login UI instead of the default, built-in plug-and-play login UI, make sure you specify the login type during the instantiation of the `ArcanaConnector` itself.
 
-_Enable Authentication Provider_
+_Custom Login UI: Social Auth_
 
 {% include "./code-snippets/auth_wagmi_configure_custom_ui.md" %}
 
-_Enable Passwordless Login_
+_Custom Login UI: Passwordless_
 
 {% include "./code-snippets/auth_wagmi_configure_custom_ui_pwdless.md" %}
 
-Next, provide the newly instantiated and configured `ArcanaConnector` to set up Wagmi: 
+Next, provide the newly instantiated and configured `ArcanaConnector` to set up Wagmi depending upon which version of Wagmi is used in the app:
 
 {% include "./code-snippets/auth_wagmi_create_client.md" %}
 
@@ -130,7 +132,7 @@ Here is how you can use `setLogin()` instead of specifying `login` type value wh
 
 {% include "./code-snippets/auth_wagmi_use_index.md" %}
 
-For sample code and details, see [[onboard-web3-react-app-custom-ui|how to onboard users through the configured authentication providers using a custom login UI]], in a {{page.meta.arcana.app_type}} app.
+For sample code and details, see [[onboard-wagmi-app-custom-ui|how to onboard users through the configured authentication providers using a custom login UI]], in a {{page.meta.arcana.app_type}} app.
 
 !!! tip "Arcana JWT Token"
 

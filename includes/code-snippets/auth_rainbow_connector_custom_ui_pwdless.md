@@ -1,4 +1,4 @@
-```js title="utils/wallet.js" hl_lines="5-6 17-22 34 38"
+```js title="utils/wallet.js" hl_lines="5-6 10-28 34 39"
 //This example uses Arcana Rainbow connector and MetaMask
 
 import { connectorsForWallets } from "@rainbow-me/rainbowkit";
@@ -18,9 +18,29 @@ export const ArcanaRainbowConnector = ({ chains }) => {
       const connector = new ArcanaConnector({
         chains,
         options: {
-          auth: getAuthProvider()
+          auth: getAuthProvider(),
+          login:  {
+              provider: 'passwordless', 
+              email: 'abc@example.com' //optional
+            } // Optional, specify login details here or during ArcanaConnector instantiation or in the setLogin function
         }
       });
+      
+      ...
+      // Custom UI Alternative 
+      // Use setLogin function after creating the connector.
+
+      /*
+      const auth = new AuthProvider(`${arcana_client_id}`) // Singleton
+
+      ...
+
+      connector.setLogin({
+        provider: 'passwordless',
+        email: 'abc@example.com' //optional
+      })
+      */
+
       return {
         connector
       };
