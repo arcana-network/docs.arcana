@@ -7,6 +7,7 @@ arcana:
   app_type: "'Web3-React'"
   app_example_submodule: "'`sample-auth-web3-react`'"
   social_provider: "'google'"
+  custom_login_ui_tag: "onboard-web3-react-app-custom-ui"
 ---
 
 # Quick Start: Web3-React Apps
@@ -14,6 +15,8 @@ arcana:
 !!! note "Already using {{config.extra.arcana.sdk_name}}?"
   
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
+
+!!! warning "Web3-React Apps"
 
       {% include "./text-snippets/warn_latest_web3_react_sdk_version.md" %}
 
@@ -53,22 +56,26 @@ Create a new `AuthProvider` instance. Specify the unique **{{config.extra.arcana
 
 {% include "./code-snippets/new_auth.md" %}
 
-You can optionally customize the following settings in the `AuthProvider` constructor:
+??? example "`AuthProvider` Optional Parameters"
 
----
+      You can optionally customize the following settings in the `AuthProvider` constructor:
 
-* `alwaysVisible`: [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility mode]] - always visible in the app context or only if a blockchain transaction is triggered by the app
-* `chainConfig`:
-      - `chainId`: chain identifier for the active chain in the wallet
-      - `rpcUrl`: RPC Url for the specified chain identifier
-* `position`:  wallet position within the app context - `left`|`right`
-* `theme`: wallet theme - `light`|`dark`
-* `setWindowProvider`: set `window.ethereum` in the app context with the standard EIP-1193 Ethereum provider value
-* `connectOptions`: built-in login UI compact mode - `true`|`false`
+      ---
+      **`alwaysVisible`:** [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility mode]] - always visible in the app context or only if a blockchain transaction is triggered by the app
 
----
+      ** `chainConfig`:**  use `chainId` to specify the chain identifier for the active chain in the wallet and `rpcUrl` for specifying the RPC Url for that chain identifier
 
-See [`AuthProvider` constructor parameters](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams) for details.
+      ** `position`:**  wallet position within the app context - `left`|`right`
+
+      ** `theme`:** wallet theme - `light`|`dark`
+
+      ** `setWindowProvider`:** set `window.ethereum` in the app context with the standard EIP-1193 Ethereum provider value
+
+      ** `connectOptions`:** built-in login UI compact mode - `true`|`false`
+
+      ---
+
+      See [`AuthProvider` constructor parameters](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams) for details.
 
 Next, import the `ArcanaConnector` from the `{{config.extra.arcana.web3_react_sdk_pkg_name}}` package.
 
@@ -82,44 +89,27 @@ The app is now integrated with the {{config.extra.arcana.sdk_name}} and the {{co
 
 ## Step 4: Onboard Users
 
-Choose one of the options below to enable configured authentication providers and facilitate user onboarding:
-
-* Use[[concept-plug-and-play-auth|plug-and-play authentication]] through the built-in login UI
-* Use [[concept-custom-login-ui|custom login UI]]
-
-### Built-in Login UI
-
 {% include "./code-snippets/auth_web3_react_configure_pnp.md" %}
 
-### Custom Login UI
-
-Instead of onboarding users through the built-in plug-and-play login UI, you can instead use a custom login UI. Simply use one of the following login functions. Note, that you need to call different functions depending upon the [[concept-index-auth-type|type of the authentication providers]] that you wish to enable for user onboarding:
-
-* Social Providers: `loginWithSocial`
-* Custom IAM Providers: `loginWithBearer`
-* Passwordless Login:  `loginWithLink`
-
-For usage details, see [Auth React SDK Reference Guide](https://auth-react-sdk-ref-guide.netlify.app/).
-
-The sample code below shows how to onboard users in a {{page.meta.arcana.app_type}} app with a custom Login UI via 'Google' authentication.
-
-{% include "./code-snippets/auth_web3_react_configure_custom_ui.md" %}
-
-For sample code and details, see [[onboard-web3-react-app-custom-ui|how to onboard users through the configured authentication providers using a custom login UI]], in a {{page.meta.arcana.app_type}} app.
+<!--
+For usage details, see [Auth Web3 React SDK Reference Guide](https://auth-react-sdk-ref-guide.netlify.app/).
+-->
 
 !!! tip "Arcana JWT Token"
 
       {% include "./text-snippets/jwt_token.md" %}
 
-Next, enable authenticated users to sign blockchain transactions.
+**That's all!!!** :material-party-popper:
 
-## Step 5: Enable Wallet Operations
+{==
 
-{% include "./text-snippets/quick-start-enable-wallet.md" %}
+Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.product_name}}.
 
-## Step 6: Deploy App
+==}
 
-{% include "./text-snippets/quick-start-deploy.md" %}
+## Next Steps
+
+{% include "./text-snippets/quick-start-next-steps.md" %}
 
 ## Examples
 

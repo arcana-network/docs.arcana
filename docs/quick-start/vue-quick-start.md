@@ -6,6 +6,8 @@ arcana:
   root_rel_path: ..
   app_type: "'Vue'"
   app_example_submodule: "'`sample-auth-vue`'"
+  custom_login_ui_tag: "index-custom-ui-onboard-users"
+  firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
 
 # Quick Start: Vue Apps
@@ -46,15 +48,14 @@ For sample code and details on how to onboard users in a {{page.meta.arcana.app_
 
       {% include "./text-snippets/jwt_token.md" %}
 
-Next, enable authenticated users to sign blockchain transactions.
+**That's all!!!** :material-party-popper:
+Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.product_name}}.
 
-## Step 5: Enable Wallet Operations
+Authenticated users can log in and instantly access a Web3 wallet from within the app's context.
 
-{% include "./text-snippets/quick-start-enable-wallet.md" %}
+## Next Steps
 
-## Step 6: Deploy App
-
-{% include "./text-snippets/quick-start-deploy.md" %}
+{% include "./text-snippets/quick-start-next-steps.md" %}
 
 ## Examples
 

@@ -520,7 +520,7 @@ plugins:
   - alias
   - meta-descriptions:
       export_csv: true
-      quiet: false
+      quiet: true
       enable_checks: false
       min_length: 50
       max_length: 160

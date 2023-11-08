@@ -1,3 +1,3 @@
 !!! tip "Watch Auth-React Releases"
 
-      Get notified about newer `{{config.extra.arcana.react_sdk_pkg_name}}` [releases](https://github.com/arcana-network/auth-react/releases) by [watching GitHub repository](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications#subscription-options): [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://github.com/arcana-network/auth-react).
+      Get notified about newer [`{{config.extra.arcana.react_sdk_pkg_name}}` releases](https://github.com/arcana-network/auth-react/releases) by [watching](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications#subscription-options) the [`auth-react`](https://github.com/arcana-network/auth-react) GitHub repository.

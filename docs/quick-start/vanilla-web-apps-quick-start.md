@@ -6,9 +6,11 @@ arcana:
   root_rel_path: ..
   app_type: "'Vanilla HTML/CSS/JS'"
   app_example_submodule: "'`sample-auth-html-css-js`'"
+  custom_login_ui_tag: "index-custom-ui-onboard-users"
+  firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
 
-# Quick Start: HTML/CSS/JS Apps
+# Quick Start: Vanilla HTML/CSS/JS Apps
 
 !!! note "Already using {{config.extra.arcana.sdk_name}}?"
   
@@ -30,7 +32,7 @@ For {{page.meta.arcana.app_type}} app, install the [`{{config.extra.arcana.auth_
 
 {% include "./text-snippets/watch_auth_github_repo.md" %}
 
-Next, integrate the app with the {{config.extra.arcana.sdk_name}} by instantiating and calling the requisite `AuthProvider` functions.
+Next, integrate the app with the {{config.extra.arcana.sdk_name}} by instantiating the `AuthProvider`.
 
 ## Step 3: Integrate App
 
@@ -40,21 +42,23 @@ Next, integrate the app with the {{config.extra.arcana.sdk_name}} by instantiati
 
 {% include "./text-snippets/quick-start-auth-onboard.md" %}
 
-For sample code and details on how to onboard users in a {{page.meta.arcana.app_type}} app via a custom login UI, see [[index-custom-ui-onboard-users|how to enable configured providers when using a custom login UI]].
-
 !!! tip "Arcana JWT Token"
 
       {% include "./text-snippets/jwt_token.md" %}
 
-Next, enable authenticated users to sign blockchain transactions.
+**That's all!!!** :material-party-popper:
 
-## Step 5: Enable Wallet Operations
+{==
 
-{% include "./text-snippets/quick-start-enable-wallet.md" %}
+Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.product_name}}.
 
-## Step 6: Deploy App
+==}
 
-{% include "./text-snippets/quick-start-deploy.md" %}
+Authenticated users can log in and instantly access a Web3 wallet from within the app's context.
+
+## Next Steps
+
+{% include "./text-snippets/quick-start-next-steps.md" %}
 
 ## Examples
 
@@ -71,4 +75,3 @@ Here are some other examples of {{config.extra.arcana.sdk_name}} {{page.meta.arc
 {% include "./text-snippets/quick-start-see-also.md" %}
 
 {% include "./text-snippets/prod_version_info.md" %}
-

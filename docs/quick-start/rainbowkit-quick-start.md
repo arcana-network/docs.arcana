@@ -7,6 +7,7 @@ arcana:
   app_type: "'RainbowKit'"
   app_example_submodule: "'`sample-auth-rainbowkit`,`sample-auth-rainbow-viem`'"
   social_provider: "'google'"
+  ustom_login_ui_tag: "onboard-rainbow-app-custom-ui"
 ---
 
 # Quick Start: RainbowKit Apps
@@ -14,6 +15,8 @@ arcana:
 !!! note "Already using {{config.extra.arcana.sdk_name}}?"
   
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
+
+!!! warning "RainbowKit Apps"
 
       {% include "./text-snippets/warn_latest_wagmi_sdk_version.md" %}
 
@@ -55,20 +58,26 @@ Create a new `AuthProvider` instance. Specify the unique **{{config.extra.arcana
 
 You can optionally customize the following settings in the `AuthProvider` constructor:
 
----
+??? example "`AuthProvider` Optional Parameters"
 
-* `alwaysVisible`: [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility mode]] - always visible in the app context or only if a blockchain transaction is triggered by the app
-* `chainConfig`:
-      - `chainId`: chain identifier for the active chain in the wallet
-      - `rpcUrl`: RPC Url for the specified chain identifier
-* `position`:  wallet position within the app context - `left`|`right`
-* `theme`: wallet theme - `light`|`dark`
-* `setWindowProvider`: set `window.ethereum` in the app context with the standard EIP-1193 Ethereum provider value
-* `connectOptions`: built-in login UI compact mode - `true`|`false`
+      You can optionally customize the following settings in the `AuthProvider` constructor:
 
----
+      ---
+      **`alwaysVisible`:** [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility mode]] - always visible in the app context or only if a blockchain transaction is triggered by the app
 
-See [`AuthProvider` constructor parameters](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams) for details.
+      **`chainConfig`:**  use `chainId` to specify the chain identifier for the active chain in the wallet and `rpcUrl` for specifying the RPC Url for that chain identifier
+
+      **`position`:**  wallet position within the app context - `left`|`right`
+
+      **`theme`:** wallet theme - `light`|`dark`
+
+      **`setWindowProvider`:** set `window.ethereum` in the app context with the standard EIP-1193 Ethereum provider value
+
+      **`connectOptions`:** built-in login UI compact mode - `true`|`false`
+
+      ---
+
+      See [`AuthProvider` constructor parameters](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams) for details.
 
 Next, import the `ArcanaConnector` from the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package. Create a new `ArcanaConnector` and specify the `AuthProvider` instantiated earlier.
 
@@ -77,18 +86,12 @@ Next, import the `ArcanaConnector` from the `{{config.extra.arcana.wagmi_sdk_pkg
 !!! tip "Wagmi `createClient` and `configClient`"
 
       For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and [Wagmi 1.x.y Migration Guide](https://wagmi.sh/react/migration-guide).
+
 <!--
 See [`ArcanaConnector` constructor parameters](https://auth-wagmi-sdk-ref-guide.netlify.app/interfaces/constructorparams) for details.
 -->
 
 ## Step 4: Onboard Users
-
-Choose one of the options below to enable configured authentication providers and facilitate user onboarding:
-
-* Use[[concept-plug-and-play-auth|plug-and-play authentication]] through the built-in login UI
-* Use [[concept-custom-login-ui|custom login UI]]
-
-### Built-in Login UI
 
 For onboarding users via the built-in, plug-and-play login UI (default), simply provide the newly instantiated and configured `ArcanaConnector` to set up Wagmi. You can set up Wagmi connector configuration before onboarding users by using `createClient` or `createConfig` depending upon whether you are using Wagmi version before v2.0 or later.
 
@@ -106,45 +109,23 @@ Now use `WagmiConfig` and `RainbowKitProvider` components to bring up the built-
 
 For sample code and details, see how to enable configured authentication providers and [[onboard-rainbow-app-pnp-ui|onboard users via the built-in, plug-and-play login UI]], in a {{page.meta.arcana.app_type}} app.
 
-### Custom Login UI
-
-To use a custom login UI instead of the default, built-in plug-and-play login UI, make sure you specify the login type during the instantiation of the `ArcanaConnector` itself.
-
-_Custom Login UI: Social Auth_
-
-{% include "./code-snippets/auth_rainbow_connector_custom_ui.md" %}
-
-_Custom Login UI: Passwordless_
-
-{% include "./code-snippets/auth_rainbow_connector_custom_ui_pwdless.md" %}
-
-Next, provide the newly instantiated and configured `ArcanaConnector` to set up Wagmi depending upon which version of Wagmi is used in the app:
-
-{% include "./code-snippets/auth_rainbow_create_client.md" %}
-
-!!! tip "Wagmi `createClient` and `configClient`"
-
-      For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and [Wagmi 1.x.y Migration Guide](https://wagmi.sh/react/migration-guide).
-
-Use the `WagmiConfig` and `RainbowKitProvider` components in the app.
-
-{% include "./code-snippets/auth_rainbow_use.md" %}
-
-For sample code and details, see [[onboard-rainbow-app-custom-ui|how to onboard users through the configured authentication providers using a custom login UI]], in a {{page.meta.arcana.app_type}} app.
+{% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
 
 !!! tip "Arcana JWT Token"
 
       {% include "./text-snippets/jwt_token.md" %}
 
-Once users are onboard, allow them to sign blockchain transactions by enabling wallet operations in the app.
+**That's all!!!** :material-party-popper:
 
-## Step 5: Enable Wallet Operations
+{==
 
-{% include "./text-snippets/quick-start-enable-wallet.md" %}
+Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.product_name}}.
 
-## Step 6: Deploy App
+==}
 
-{% include "./text-snippets/quick-start-deploy.md" %}
+## Next Steps
+
+{% include "./text-snippets/quick-start-next-steps.md" %}
 
 ## Examples
 

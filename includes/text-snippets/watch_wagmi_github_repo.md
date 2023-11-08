@@ -1,3 +1,3 @@
 !!! tip "Watch Auth Wagmi SDK Releases"
 
-      Get notified about newer `{{config.extra.arcana.wagmi_sdk_pkg_name}}` [releases](https://github.com/arcana-network/auth-wagmi/releases) by [watching GitHub repository](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications#subscription-options): [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://github.com/arcana-network/auth-wagmi).
+      Get notified about newer [`{{config.extra.arcana.wagmi_sdk_pkg_name}}` releases](https://github.com/arcana-network/auth-wagmi/releases) by [watching](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications#subscription-options) the [`auth-wagmi`](https://github.com/arcana-network/auth-wagmi) GitHub repository.

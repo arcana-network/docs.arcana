@@ -28,8 +28,11 @@ Use the defaults or provide inputs for various settings as per your application 
     
           To enable Google and Discord login options for an app, configure these social providers in the {{config.extra.arcana.dashboard_name}}.  You can leave other social provider entries blank.
 
-          By default, passwordless login is always enabled in the {{config.extra.arcana.sdk_name}}.
-    
+    ??? example "Password-less Onboarding"
+
+          By default, passwordless login is always enabled in the {{config.extra.arcana.sdk_name}}. If the app is registered and no authentication provider is configured through the dashboard, users can only log into the app via the passwordless login by specifying an email and clicking on the the verification link.
+
+        
     * **Redirect URI:** Displays the URL auto-generated for each registered app by {{config.extra.arcana.company_name}}. This is required to complete **OAuth** verification via the selected authentication providers.
     * **Social Auth:** Select and [[index-configure-auth|configure authentication providers]] for onboarding app users. <br></br><img class="an-screenshots" alt="Social OAuth" src="/img/an_db_configure_social.png"></img>
 

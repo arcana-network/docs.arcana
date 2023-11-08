@@ -1,1 +1,1 @@
-*In addition to the latest {{config.extra.arcana.sdk_name}}, for **React** apps, you must also use the latest {{config.extra.arcana.react_sdk_name}} release:* [**v{{config.extra.arcana.latest_auth_react_sdk_version}}**](https://www.npmjs.com/package/@arcana/auth-react)
+In addition to the latest {{config.extra.arcana.sdk_name}}, for **React** apps, you must also use the latest {{config.extra.arcana.react_sdk_name}} release: [**v{{config.extra.arcana.latest_auth_react_sdk_version}}**](https://www.npmjs.com/package/@arcana/auth-react)

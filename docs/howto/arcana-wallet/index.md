@@ -8,9 +8,9 @@ arcana:
 
 # Enable {{config.extra.arcana.wallet_name}}
 
-There are two ways to configure the user blockchain transaction signing experience. 
+Manage the user experience during signing of the blockchain transactions by:
 
-* Using the {{config.extra.arcana.dashboard_name}} to choose built-in or custom {{config.extra.arcana.wallet_name}} UI
+* Selecting the default, built-in, {{config.extra.arcana.wallet_name}} UI or a custom wallet UI
 * Specifying the wallet visibility when creating a new `AuthProvider` instance
 
 ## Dashboard:  Built-in vs. Custom Wallet UI
