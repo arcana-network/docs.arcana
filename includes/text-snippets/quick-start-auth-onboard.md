@@ -7,7 +7,7 @@ The built-in login UI is enabled by default. To use it, just add a single line o
 
 {% include "./code-snippets/auth_plugnplay.md" %}
 
-This will will bring up the login modal displaying the configured social providers. Passwordless login option is enabled by default.
+This will bring up the login modal displaying the configured social providers. Passwordless login option is enabled by default.
 
 The figure below shows the built-in login UI plug-and-play pop-up authentication screen for a test app. In this example the app is configured to use Google as the social provider for authentication.
 

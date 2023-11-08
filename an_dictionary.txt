@@ -1,3 +1,6 @@
+Url
+app_example_submodule
+Auth-Web3-React
 .dmg
 .json
 .md-button
