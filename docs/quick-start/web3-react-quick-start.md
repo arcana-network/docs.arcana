@@ -56,26 +56,7 @@ Create a new `AuthProvider` instance. Specify the unique **{{config.extra.arcana
 
 {% include "./code-snippets/new_auth.md" %}
 
-??? example "`AuthProvider` Optional Parameters"
-
-      You can optionally customize the following settings in the `AuthProvider` constructor:
-
-      ---
-      **`alwaysVisible`:** [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility mode]] - always visible in the app context or only if a blockchain transaction is triggered by the app
-
-      ** `chainConfig`:**  use `chainId` to specify the chain identifier for the active chain in the wallet and `rpcUrl` for specifying the RPC Url for that chain identifier
-
-      ** `position`:**  wallet position within the app context - `left`|`right`
-
-      ** `theme`:** wallet theme - `light`|`dark`
-
-      ** `setWindowProvider`:** set `window.ethereum` in the app context with the standard EIP-1193 Ethereum provider value
-
-      ** `connectOptions`:** built-in login UI compact mode - `true`|`false`
-
-      ---
-
-      See [`AuthProvider` constructor parameters](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams) for details.
+{% include "./text-snippets/quick-start-authprovider-optional.md" %}
 
 Next, import the `ArcanaConnector` from the `{{config.extra.arcana.web3_react_sdk_pkg_name}}` package.
 
@@ -94,6 +75,10 @@ The app is now integrated with the {{config.extra.arcana.sdk_name}} and the {{co
 <!--
 For usage details, see [Auth Web3 React SDK Reference Guide](https://auth-react-sdk-ref-guide.netlify.app/).
 -->
+
+See [sample Web3-React app](https://github.com/arcana-network/auth-web3-react/tree/main/example) for details.
+
+{% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
 
 !!! tip "Arcana JWT Token"
 
