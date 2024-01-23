@@ -50,11 +50,11 @@ Once the application is approved for global keys, it can be deployed on Mainnet,
 
 ## Global Keys: Wallet User Experience
 
-When the global keys option is set for an application using the {{config.extra.arcana.sdk_name}}, it alters the user experience of the default {{config.extra.arcana.wallet_name}}.
+When the global keys option is set for an application using the {{config.extra.arcana.sdk_name}}, it alters the user experience when interacting with the {{config.extra.arcana.wallet_name}}.
 
 For instance, in the scenario of a personal sign transaction, with the default app-specific key setup, initiating a personal sign message request prompts the {{config.extra.arcana.wallet_name}} to display a pop-up within the same app context as the visible wallet. However, when configured with global keys, the personal sign message appears in a new browser tab. Users can take necessary actions in this tab and subsequently close it.
 
-TBD: Screenshot comparing app specific and global key configured personal sign experience. 
+<img src="/img/an_wallet_no_clickjacking.gif" alt="Previous wallet behavior (No clickjacking fix)" class="an-screenshots-noeffects" width="50%"/><img src="/img/an_wallet_clickjacking.gif" alt="Wallet usage with clickjacking fix" class="an-screenshots-noeffects" width="50%"/>
 
 ## Global Keys Limitations
 
