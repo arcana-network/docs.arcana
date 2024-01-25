@@ -66,7 +66,7 @@ Make sure that you specify the unique client ID assigned to the app during regis
     // For logging in
     const loginWithGoogle = () => {
       if(authRef !== null){
-        authRef.current.loginWithSocial().then(() => {
+        authRef.current.loginWithSocial("google").then(() => {
           // logged in
         }).catch(err => {
           // already logged in
@@ -75,6 +75,10 @@ Make sure that you specify the unique client ID assigned to the app during regis
       }
     }
     ```
+
+    !!! tip "Arcana JWT Token"
+
+          {% include "./text-snippets/jwt_token.md" %}
 
     **Logout**
 
