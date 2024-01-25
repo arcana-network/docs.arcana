@@ -36,6 +36,8 @@ Add code in the application to log out an authenticated user:
 
 The Web3 app is all set for onboarding users via Twitter. 
 
+{% include "./text-snippets/aggrlogin-notwitter-support.md" %}
+
 !!! tip "Arcana JWT Token"
 
      {% include "./text-snippets/jwt_token.md" %}
