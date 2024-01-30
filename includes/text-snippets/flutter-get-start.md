@@ -67,6 +67,10 @@ Once initialized, you can call the `AuthProvider` functions for onboarding users
     }).catchError(...);
     ```
 
+    !!! tip "Arcana JWT Token"
+
+          {% include "./text-snippets/jwt_token.md" %}
+
     **Logout**
 
     Call the logout method in response to a user's choice to log out.  Once a user is authenticated, the Arcana wallet can be displayed in the context of the Flutter app. The Arcana wallet UI also provides an option to log out via the profile tab.
