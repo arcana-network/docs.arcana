@@ -240,6 +240,13 @@ To pay the Arcana Network dues, developers can refer to the 'Estimated Charges' 
 
 -->
 
+### Non-EVM Chains
+
+Use the dashboard to enable [[concept-non-evm-chains|non-EVM chains]] in your Web3 apps. 
+
+* [[solana-dashboard-user-guide|Solana]]
+* Other non-EVM chains *(Coming Soon!)*
+
 ### Delete Application
 
 To de-register an application the developers must delete the entry using the {{config.extra.arcana.dashboard_name}}. Go to the 'Manage Apps' dashboard page which lists all the registered applications.  

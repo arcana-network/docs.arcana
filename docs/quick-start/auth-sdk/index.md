@@ -13,3 +13,5 @@ arcana:
 [[mobile-quick-start|Mobile Apps :fontawesome-solid-mobile-screen:]]{ .md-button }
 
 [[gasless-quick-start|Gasless Apps :material-gas-station-off:]]{ .md-button }
+
+[[solana-quick-start|Solana Apps :material-atom-variant:]]{ .md-button }

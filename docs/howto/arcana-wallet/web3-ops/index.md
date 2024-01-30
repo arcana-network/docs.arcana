@@ -8,16 +8,6 @@ arcana:
 
 # Web3 Wallet Operations
 
-The {{config.extra.arcana.wallet_name}}  supports [standard Ethereum JSON-RPC specification APIs](https://ethereum.github.io/execution-apis/api-documentation/) and the following Web3 operations:
+[[index-evm-web3-wallet-ops| EVM: Web3 Wallet Ops :chains:]]{ .md-button }
 
-[[add-switch-network|Add/Switch Networks :material-wifi-cog:]]{ .md-button }
-
-[[check-balance|Check Wallet Balance :material-wallet:]]{ .md-button }
-
-[[send-transaction|Send Tokens :fontawesome-solid-coins:]]{ .md-button }
-
-[[sign-transaction|Sign Transactions :material-signature-freehand:]]{ .md-button }
-
-[[show-wallet|Show Wallet :material-wallet-plus:]]{ .md-button }
-
-[[watch-assets|Watch Assets :fontawesome-solid-magnifying-glass-dollar:]]{ .md-button }
+[[solana-wallet-ops| Solana: Web3 Wallet Ops :chains:]]{ .md-button }

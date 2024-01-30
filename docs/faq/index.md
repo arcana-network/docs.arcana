@@ -15,3 +15,5 @@ arcana:
 [[faq-auth| {{config.extra.arcana.sdk_name}}]]{ .md-button }
 
 [[faq-gasless| Gasless Transactions]]{ .md-button }
+
+[[faq-solana| Solana]]{ .md-button }

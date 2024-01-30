@@ -36,7 +36,7 @@ Next, integrate the app with the {{config.extra.arcana.sdk_name}} by instantiati
 
 ## Step 3: Integrate App
 
-{% include "./text-snippets/quick-start-int-auth.md" %}
+{% include "./text-snippets/quick-start-int-auth-evm.md" %}
 
 ## Step 4: Onboard Users
 

@@ -1,9 +1,9 @@
 site_name: Documentation
 # For dev
-#site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
+site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
 
 # For main
-site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
+#site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
 
 use_directory_urls: false
 # up to here
@@ -44,6 +44,7 @@ nav:
           - Flutter Apps: quick-start/flutter-quick-start.md
           - React-Native Apps: quick-start/react-native-quick-start.md
         - Gasless Apps: quick-start/gasless-quick-start.md
+        - Solana Apps: quick-start/solana-quick-start.md
       - Auth-Core SDK: quick-start/auth-core-quick-start.md
       - Gasless SDK: quick-start/gasless-standalone-quick-start.md
     - References:
@@ -90,7 +91,7 @@ nav:
       - howto/sdks/index.md
       - Auth:
         - howto/integrate/index.md
-        - Web apps:
+        - Web App:
           - howto/integrate-app/index.md
           - Integrate:
             - howto/integrate-app/app-type/index.md
@@ -103,9 +104,10 @@ nav:
               - Web3-React App: howto/integrate-app/web3-react.md
             - Vue App: howto/integrate-app/vue.md
             - Gasless App: howto/integrate-app/gasless.md
+            - Solana App: howto/integrate-app/solana.md
           - Onboard Users: 
             - howto/onboard-users/index.md
-            - Vanilla JS Apps:
+            - Vanilla JS App:
               - howto/onboard-users/vanilla/index.md
               - Plug-and-Play Login UI: howto/onboard-users/vanilla/use-plug-play-auth.md
               - Custom Login UI:
@@ -123,9 +125,9 @@ nav:
                   - howto/onboard-users/vanilla/custom-ui/build-idm/index.md
                   - Cognito: howto/onboard-users/vanilla/custom-ui/build-idm/cognito-oauth.md
                   - Firebase: howto/onboard-users/vanilla/custom-ui/build-idm/firebase-login.md
-            - React Apps:
+            - React App:
               - howto/onboard-users/react/index.md
-              - React/NextJS Apps: 
+              - React/NextJS App: 
                 - howto/onboard-users/react-nextjs/index.md
                 - Plug-and-Play Login UI: howto/onboard-users/react-nextjs/use-plug-play-auth.md
                 - Custom Login UI:
@@ -143,19 +145,19 @@ nav:
                     - howto/onboard-users/react-nextjs/custom-ui/build-idm/index.md
                     - Cognito: howto/onboard-users/react-nextjs/custom-ui/build-idm/cognito-oauth.md
                     - Firebase: howto/onboard-users/react-nextjs/custom-ui/build-idm/firebase-login.md
-              - Wagmi Apps: 
+              - Wagmi App: 
                 - howto/onboard-users/wagmi/index.md
                 - Plug-and-Play Login UI: howto/onboard-users/wagmi/wagmi-pnp-ui.md
                 - Custom Login UI: howto/onboard-users/wagmi/wagmi-custom-ui.md
-              - RainbowKit Apps: 
+              - RainbowKit App: 
                 - howto/onboard-users/rainbow/index.md
                 - Plug-and-Play Login UI: howto/onboard-users/rainbow/rainbow-pnp-ui.md 
                 - Custom Login UI: howto/onboard-users/rainbow/rainbow-custom-ui.md
-              - Web3-React Apps:
+              - Web3-React App:
                 - howto/onboard-users/web3-react/index.md
                 - Plug-and-Play Login UI: howto/onboard-users/web3-react/web3-react-pnp-ui.md 
                 - Custom Login UI: howto/onboard-users/web3-react/web3-react-custom-ui.md
-            - Vue Apps: 
+            - Vue App: 
                 - howto/onboard-users/vue/index.md
                 - Plug-and-Play Login UI: howto/onboard-users/vue/use-plug-play-auth.md
                 - Custom Login UI:
@@ -174,6 +176,7 @@ nav:
                     - Cognito: howto/onboard-users/vue/custom-ui/build-idm/cognito-oauth.md
                     - Firebase: howto/onboard-users/vue/custom-ui/build-idm/firebase-login.md
             - Gasless App: howto/onboard-users/gasless.md
+            - Solana App: howto/onboard-users/solana.md
           - Handle Events: howto/handle-provider-events.md
           - Wallet Ops:
             - wallet-ops/index.md
@@ -182,17 +185,23 @@ nav:
               - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md
               - Web3 Wallet Ops:
                 - howto/arcana-wallet/web3-ops/index.md
-                - Add / Switch Network: howto/arcana-wallet/add-switch-ntwk.md
-                - Check Wallet Balance: howto/arcana-wallet/balance.md
-                - Send Tokens: howto/arcana-wallet/send.md
-                - Sign Transactions: howto/arcana-wallet/sign.md
-                - Show Wallet: howto/arcana-wallet/show.md
-                - Watch Assets: howto/arcana-wallet/watchasset.md
+                - EVM Chains:
+                  - howto/arcana-wallet/web3-ops/evm/index.md
+                  - Add / Switch Network: howto/arcana-wallet/add-switch-ntwk.md
+                  - Check Wallet Balance: howto/arcana-wallet/balance.md
+                  - Send Tokens: howto/arcana-wallet/send.md
+                  - Sign Transactions: howto/arcana-wallet/sign.md
+                  - Show Wallet: howto/arcana-wallet/show.md
+                  - Watch Assets: howto/arcana-wallet/watchasset.md
+                - Solana: 
+                  - howto/arcana-wallet/web3-ops/solana/index.md
+                  - JSON-RPC Ops: howto/arcana-wallet/solana-json-rpc-ops.md
+                  - Web3 Wallet Ops: howto/arcana-wallet/solana-wallet-ops.md
             - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
-      - Mobile SDK:
-        - howto/mobile/index.md
-        - Flutter Apps: howto/mobile/flutter-get-started.md
-        - React-Native Apps: howto/mobile/react-native-get-started.md
+        - Mobile App:
+          - howto/mobile/index.md
+          - Flutter Apps: howto/mobile/flutter-get-started.md
+          - React-Native Apps: howto/mobile/react-native-get-started.md
       - Auth-Core SDK: quick-start/auth-core-quick-start.md
       - Gasless SDK: quick-start/gasless-standalone-quick-start.md
     - Deploy:
@@ -201,13 +210,14 @@ nav:
       - Testnet > Mainnet Migration: howto/migrate-testnet-mainnet.md
   - Developer Resources:
     - dev-resources/index.md
+    - Release Notes: relnotes/rn-main-auth-v1.0.9.md
     - Gasless SDK Release Notes: relnotes/rn-main-scw-v0.0.25.md
-    - Auth SDK Release Notes: relnotes/rn-main-auth-vOct12-23-gasless.md
-    - Installation Guide: sdk-installation.md
-    - Auth SDK Migration Guide: migration/main-auth-v1.0.8-migration.md
+    - Auth Installation Guide: sdk-installation.md
+    - Auth SDK Migration Guide: migration/main-auth-v1.0.9-migration.md
     - Developer Guides:
       - dev-resources/dev-guides/index.md
       - Dashboard User Guide: db/config-dApp-with-db.md
+      - Solana Configuration Guide: db/config-dApp-with-db-for-Solana.md
       - SDK Reference Guides:
         - dev-resources/sdk-ref/index.md
         - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
@@ -221,6 +231,7 @@ nav:
         - Dashboard: faq/faq-db.md
         - Auth SDK: faq/faq-auth.md
         - Gasless: faq/faq-gasless.md
+        - Solana: faq/faq-solana.md
       - Troubleshooting Guide: troubleshooting.md
       - Error Handling: 
         - Web SDK: 
@@ -236,6 +247,7 @@ nav:
       - archives/index.md
       - Release Notes:
         - relnotes/archives/index.md
+        - Auth 1.0.9-rc.1 : relnotes/rn-main-auth-v1.0.9.md
         - Gasless SDK: relnotes/rn-main-scw-v0.0.25.md
         - Auth Oc12-2023: relnotes/rn-main-auth-vOct12-23-gasless.md
         - Auth 1.0.8 : relnotes/rn-main-auth-v1.0.8.md
@@ -251,6 +263,7 @@ nav:
         - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
       - Auth SDK Migration:
         - migration/archives/index.md
+        - vOct12-23-gasless -> v1.0.9-rc.1: migration/main-auth-v1.0.9-migration.md
         - v1.0.8 -> vOct12-23-gasless: migration/main-auth-vOct12-23-gasless-migration.md
         - v1.0.7 -> v1.0.8: migration/main-auth-v1.0.8-migration.md
         - v1.0.6 -> v1.0.7: migration/main-auth-v1.0.7-migration.md
@@ -345,6 +358,7 @@ nav:
       - Key Space Type: concepts/keyspace-types.md
       - Manage Chains: concepts/manage-chains.md
       - MFA: concepts/mfa.md
+      - Non-EVM Chains: concepts/non-evm-chains.md
       - Plug-and-Play Auth: concepts/plug-and-play-auth.md
       - Private Key: concepts/private-key.md
       - Smart Contracts:
@@ -369,6 +383,7 @@ extra:
   arcana:
     company_name: Arcana
     product_name: Arcana Auth
+    site_status: !ENV [SITE_STATUS,'draft']
     sdk_name: Arcana Auth SDK
     react_sdk_name: Arcana Auth React SDK
     wagmi_sdk_name: Arcana Auth Wagmi SDK
@@ -381,10 +396,10 @@ extra:
     dashboard_name: Arcana Developer Dashboard
     wallet_name: Arcana wallet
     app_address: Client ID
-    product_release_tag: !ENV [PRODUCT_RELEASE_TAG,'Oct12-23-gasless']
-    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.7']
+    product_release_tag: !ENV [PRODUCT_RELEASE_TAG,'1.0.9-rc.1']
+    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.8']
     previous_version_dashboard: !ENV [PREVIOUS_DASHBOARD_VERSION, '1.0.4']
-    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.8']
+    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.9-rc.1']
     latest_version_dashboard: !ENV [DASHBOARD_VERSION, '1.0.6']
     latest_version_wallet_ui: !ENV [WALLET_UI_VERSION, '1.0.6']
     latest_auth_react_sdk_version: !ENV [AUTH_REACT_SDK_VERSION, '0.0.3']

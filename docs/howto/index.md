@@ -20,6 +20,8 @@ arcana:
 
     [[configure-gasless|Setup gasless transactions :material-gas-station-off:]]{ .md-button }
 
+    [[solana-dashboard-user-guide|Configure non-EVM Solana Chain :chains:]]{ .md-button }
+
 === "Integrate SDKs"
 
     ## Auth
@@ -36,14 +38,19 @@ arcana:
 
         [[index-web3-wallet-ops|Web3 Wallet Ops :material-wallet-plus-outline:]]{ .md-button }
 
-        [[gasless-quick-start|Gasless transactions ({{config.extra.arcana.wallet_name}})  :material-gas-station-off:]]{ .md-button }
-
-
     ??? abstract "Mobile Apps"
 
         [[flutter-quick-start|Flutter Apps :simple-flutter:]]{ .md-button }
 
         [[react-native-quick-start|React-Native Apps :simple-react:]]{ .md-button }
+
+    ??? abstract "Gasless Apps"
+
+        [[gasless-quick-start|Gasless Apps :material-gas-station-off:]]{ .md-button }
+
+    ??? abstract "Solana Apps"
+
+        [[solana-quick-start|Solana Apps :material-atom-variant:]]{ .md-button }
 
     ## Gasless
 

@@ -37,6 +37,8 @@ After installing the SDK, follow the detailed step-by-step integration instructi
 
 [[integrate-gasless-app|Gasless App :material-gas-station-off:]]{ .md-button }
 
+[[integrate-solana-app|Solana App :simple-bookstack:]]{ .md-button }
+
 ## Onboard Users
 
 After integration, the Web3 apps can add code to onboard users via the configured authentication providers and passwordless by using built-in plug-and-play auth UI or custom login UI.
@@ -48,6 +50,8 @@ After integration, the Web3 apps can add code to onboard users via the configure
 [[index-vue-onboard-users| Vue Apps :material-card-account-mail:]]{ .md-button }
 
 [[gasless-user-onboarding|Gasless App :material-gas-station-off:]]{ .md-button }
+
+[[solana-user-onboarding|Solana App :simple-bookstack:]]{ .md-button }
 
 ## Handle Events
 

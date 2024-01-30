@@ -15,3 +15,5 @@ arcana:
 [[integrate-vue-app|Vue App :material-vuejs:]]{ .md-button }
 
 [[integrate-gasless-app|Gasless App :material-gas-station-off:]]{ .md-button }
+
+[[integrate-solana-app|Solana App :simple-bookstack:]]{ .md-button }

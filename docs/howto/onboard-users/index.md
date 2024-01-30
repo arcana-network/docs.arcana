@@ -13,13 +13,13 @@ After integration, the Web3 apps can add code to onboard users via the configure
 
 [[index-vanilla-onboard-users|Vanilla HTML/CSS/JS App :fontawesome-solid-plug:]]{ .md-button }
 
-[[index-react-onboard-users|React App :material-card-account-mail:]]{ .md-button }
+[[index-react-onboard-users| React App :material-card-account-mail:]]{ .md-button }
 
-[[index-vue-onboard-users|Vue App :material-card-account-mail:]]{ .md-button }
-
-[[gasless-user-onboarding|Gasless App :material-gas-station-off:]]{ .md-button }
+[[index-vue-onboard-users| Vue App :material-card-account-mail:]]{ .md-button }
 
 [[gasless-user-onboarding|Gasless App :material-gas-station-off:]]{ .md-button }
+
+[[solana-user-onboarding|Solana App :simple-bookstack:]]{ .md-button }
 
 !!! tip  "Auto-Reconnect Enhancement"
 

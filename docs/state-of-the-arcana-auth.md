@@ -151,6 +151,12 @@ By default, it enables a *pre-configured list* of chains. App developers can add
 
     To include a new EVM-compatible chain in {{config.extra.arcana.product_name}}'s default pre-configured list, {{config.extra.arcana.company_name}} collaborates strategically with the chain's team/community. While we can add any such chain, our approach aims to increase the {{config.extra.arcana.product_name}} adoption and maximize our reach and engagement within the chain's development community.
 
+!!! info "Non-EVM chain support"
+
+      We are working on supporting other non-EVM chains besides **Solana** in the upcoming releases. For e.g., Cosmos, Near, TON, and Algorand.
+
+#### Gasless Networks
+
 ### {{config.extra.arcana.gasless_sdk_name}}
 
  The {{config.extra.arcana.company_name}} SDKs are powered by Biconomy support the same blockchain networks as Biconomy. See {% include "./text-snippets/biconomy/gasless_supported_networks.md" %} for details. Note that these networks may be a subset of the ones supported by the {{config.extra.arcana.wallet_name}} and the {{config.extra.arcana.sdk_name}}.
@@ -172,6 +178,7 @@ Install and integrate with the appropriate {{config.extra.arcana.sdk_name}} pack
     * Add on package for Web3-React apps: [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
     * Auth-Core SDK for Web3 apps that need secure access to user's private keys while building custom login, wallet operations UX: [`{{config.extra.arcana.auth_core_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-core)
     * Gasless Transactions with {{config.extra.arcana.wallet_name}}: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth)
+    * Solana Apps: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
 
 === "Mobile Apps"
     * Flutter apps: {{config.extra.arcana.flutter_sdk_name}} [`{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}`](https://pub.dev/packages/arcana_auth_flutter)

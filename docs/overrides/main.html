@@ -9,6 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {% endblock %}
 
+{% block content %}
+  <div class="watermark">{{config.extra.arcana.site_status}}</div>
+  {{ super() }}
+{% endblock %}
+
+
 {% block scripts %}
   <!-- Add scripts that need to run before here -->
   {{ super() }}

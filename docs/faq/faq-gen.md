@@ -21,6 +21,12 @@ toc_depth: 2
 
       First, [[configure-auth|register the app and configure the app settings]] using the {{config.extra.arcana.dashboard_name}}. Use the unique {{config.extra.arcana.app_address}} assigned by Arcana Network to [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}. Add code in the app to use the {{config.extra.arcana.sdk_name}} functions and [[index-onboard-users|onboard users]]. The authenticated users can instantly access the {{config.extra.arcana.wallet_name}} in the app context and sign blockchain transactions. Developers can control the user experience for signing blockchain transactions with the appropriate [[configure-wallet-visibility|wallet visibility settings]]. The wallet can be displayed for the authenticated users in the app context always or the app can be configured to display blockchain transaction request notifications for approval by the user only when a transaction is triggered. Developers can display wallet as per the application logic using the `showWallet()` function.
 
+??? an-faq "How can developers access the standard EIP-1193 provider from the `AuthProvider` object once the Auth SDK is integrated with the Web3 app?
+
+      In case of EVM chains, developers can access the EIP-1193 provider once an `AuthProvider` object is created and `init` function is successful. See code snippets below for details:
+
+      {% include "./code-snippets/provider.md" %}
+
 ## Application Frameworks
 
 ---

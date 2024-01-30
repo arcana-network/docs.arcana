@@ -8,7 +8,9 @@ arcana:
 
 # Developer Guides
 
-[[dashboard-user-guide|Dashboard User Guide :material-monitor-dashboard:]]{ .md-button }
+[[dashboard-user-guide| Dashboard User Guide :material-monitor-dashboard:]]{ .md-button }
+
+[[solana-dashboard-user-guide| Solana Configuration Guide :material-monitor-dashboard:]]{ .md-button }
 
 [[index-sdk-ref| SDK Reference Guides :material-bookshelf:]]{ .md-button }
 

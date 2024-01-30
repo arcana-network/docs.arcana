@@ -258,3 +258,13 @@
   border: solid 0.2em transparent;
 }
 
+.watermark {
+  opacity: 0.1;
+  font-size: 100px;
+  position: absolute;
+  cursor: default;
+  user-select: none;
+  text-transform: uppercase;
+  transform-origin: center center;
+  transform: rotate(45deg);
+}

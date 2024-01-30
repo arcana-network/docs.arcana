@@ -1004,6 +1004,7 @@ idwalletwatchasset
 idwhatisan
 idwhyan
 inPageProvider
+incentivize
 index-about-auth
 index-arcana-academy
 index-arcana-auth-references
@@ -1018,6 +1019,7 @@ index-custom-ui-onboard-users
 index-dev-guides
 index-dev-resources
 index-dkg
+index-evm-web3-wallet-ops
 index-faq
 index-howto-guides
 index-howto-sdks
@@ -1029,6 +1031,7 @@ index-react-nextjs-custom-ui-onboard-users
 index-react-nextjs-onboard-users
 index-reg-config
 index-sdk-ref
+index-solana-web3-wallet-ops
 index-validators
 index-vue-build-iam-providers
 index-vue-build-social-providers
@@ -1049,6 +1052,7 @@ instantiation
 integrate-gasless-app
 integrate-react-nextjs-app
 integrate-shardeum
+integrate-solana-app
 integrate-vue-app
 integrate-wagmi-app
 integrate-web3-react-app
@@ -1219,8 +1223,11 @@ simple-hive_blockchain
 simple-nextdotjs
 site-url
 socialauth
+solana
 solana-dashboard-user-guide
+solana-json-rpc-ops
 solana-quick-start
+solana-user-onboarding
 solana-wallet-ops
 stackoverflow
 staking
@@ -1286,7 +1293,7 @@ v1.0.5
 v1.0.6
 v1.0.7
 v1.0.8
-v1.0.9-beta.2
+v1.0.9
 v2
 v2.0
 vOct12-23-gasless
