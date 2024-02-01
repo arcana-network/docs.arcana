@@ -8,7 +8,7 @@ arcana:
 
 # Plug & Play Auth
 
-In earlier beta releases, apps were required to integrate with the {{config.extra.arcana.sdk_name}} in order to onboard users with custom login UI. For instance, to onboard users via Google, the custom login UI code was required to call the `loginWithSocial('google')` method. Similarly, the passwordless login option was required to provision an email input field and call `loginWithLink` in the SDK.
+In earlier beta releases, apps were required to integrate with the {{config.extra.arcana.sdk_name}} in order to onboard users with a custom login UI. For instance, the custom login UI code was required to call the `loginWithSocial('google')` method to onboard users via Google. Similarly, the passwordless login option was required to provision an email input field and call `loginWithLink` in the SDK.
 
 Now, the latest Arcana Auth SDK offers a 'plug-and-play' feature, with a built-in login UI, eliminating the need for custom UI code, unless preferred. This feature is referred to as 'plug-and-play auth'. 
 
