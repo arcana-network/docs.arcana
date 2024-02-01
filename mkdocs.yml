@@ -58,6 +58,8 @@ nav:
         - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
         - Arcana ADKG: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20230228T054948Z.pdf
       - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
+      - Privacy: legal/PRIVACY.pdf
+      - Terms of Use: legal/TERMS.pdf
     #- Integration Partners:
         #- EVM Chains:
           #- Shardeum: 
