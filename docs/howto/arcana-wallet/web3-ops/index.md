@@ -11,3 +11,5 @@ arcana:
 [[index-evm-web3-wallet-ops| EVM: Web3 Wallet Ops :chains:]]{ .md-button }
 
 [[solana-wallet-ops| Solana: Web3 Wallet Ops :chains:]]{ .md-button }
+
+[[mvx-web3-wallet-ops| MultiversX: Web3 Wallet Ops :chains:]]{ .md-button }

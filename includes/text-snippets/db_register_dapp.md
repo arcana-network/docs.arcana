@@ -12,9 +12,10 @@ In the 'Manage Apps' dashboard, click *Create New App* wizard to register a new 
 
 **Registration Settings**
 
-To register a new app, the developer needs to provide the following settings. 
+To register a new app, the developer needs to provide the following settings:
 
 * App name
+* Chain Type: EVM, Solana, MultiversX
 * Default Blockchain
 * Wallet UI Mode
 
@@ -28,9 +29,17 @@ All emails related to a registered app billing or user login will mention the la
 
       To edit the name of a registered app entry, use the pen icon. Click ++enter++ in the editable text field to save the changes.
 
+**Chain Type**
+
+Developers need to decide at the time of registration whether the app will use the EVM chains or one of the non-EVM chains supported by the {{config.extra.arcana.sdk_name}}.
+
+{% include "./text-snippets/non-evm-warning.md" %}
+
 **Default Blockchain**
 
-The default blockchain refers to the chain selection displayed in the wallet once the user logs into an app that is integrated with the {{config.extra.arcana.product_name}}. The default chain can be changed programmatically via the app developer once the user approves switching of the chain. Also, the user can change the default chain anytime by using the wallet UI.
+The chain marked as default is the one that is selected and displayed in the wallet once the user logs into an app that is integrated with the {{config.extra.arcana.product_name}}.
+
+The default chain can be changed programmatically via the app developer once the user approves switching of the chain. Also, the user can change the default chain anytime by using the wallet UI. Chains can be switched to any one of the ones displayed in the pre-configured list in the wallet UI or in the app chain settings displayed in the dashboard.
 
 **Wallet UI Mode**
 

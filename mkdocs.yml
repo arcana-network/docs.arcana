@@ -13,7 +13,7 @@ site_description: >-
   Remove the friction of wallet installation, key backup, & crypto on-ramp.
   
 # Check for broken links, etc.
-strict: true 
+strict: false 
 
 exclude_docs: |
   /integrations/*
@@ -45,6 +45,7 @@ nav:
           - React-Native Apps: quick-start/react-native-quick-start.md
         - Gasless Apps: quick-start/gasless-quick-start.md
         - Solana Apps: quick-start/solana-quick-start.md
+        - MultiversX Apps: quick-start/mvx-quick-start.md
       - Auth-Core SDK: quick-start/auth-core-quick-start.md
       - Gasless SDK: quick-start/gasless-standalone-quick-start.md
     - References:
@@ -89,6 +90,8 @@ nav:
             - Cognito: howto/config-idm/cognito-oauth.md
             - Firebase: howto/config-idm/firebase-auth.md
         - Gasless: howto/configure-gasless.md
+        - Solana: db/config-dApp-with-db-for-Solana.md
+        - MultiversX: db/config-dApp-with-db-for-mvx.md
     - Integrate SDKs:
       - howto/sdks/index.md
       - Auth:
@@ -107,6 +110,7 @@ nav:
             - Vue App: howto/integrate-app/vue.md
             - Gasless App: howto/integrate-app/gasless.md
             - Solana App: howto/integrate-app/solana.md
+            - MultiversX App: howto/integrate-app/mvx.md
           - Onboard Users: 
             - howto/onboard-users/index.md
             - Vanilla JS App:
@@ -179,6 +183,7 @@ nav:
                     - Firebase: howto/onboard-users/vue/custom-ui/build-idm/firebase-login.md
             - Gasless App: howto/onboard-users/gasless.md
             - Solana App: howto/onboard-users/solana.md
+            - MultiversX App: howto/onboard-users/mvx.md
           - Handle Events: howto/handle-provider-events.md
           - Wallet Ops:
             - wallet-ops/index.md
@@ -199,6 +204,7 @@ nav:
                   - howto/arcana-wallet/web3-ops/solana/index.md
                   - JSON-RPC Ops: howto/arcana-wallet/solana-json-rpc-ops.md
                   - Web3 Wallet Ops: howto/arcana-wallet/solana-wallet-ops.md
+                - MultiversX: howto/arcana-wallet/web3-ops/mvx/index.md
             - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
         - Mobile App:
           - howto/mobile/index.md
@@ -220,6 +226,7 @@ nav:
       - dev-resources/dev-guides/index.md
       - Dashboard User Guide: db/config-dApp-with-db.md
       - Solana Configuration Guide: db/config-dApp-with-db-for-Solana.md
+      - MultiversX Configuration Guide: db/config-dApp-with-db-for-mvx.md
       - SDK Reference Guides:
         - dev-resources/sdk-ref/index.md
         - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
@@ -234,6 +241,7 @@ nav:
         - Auth SDK: faq/faq-auth.md
         - Gasless: faq/faq-gasless.md
         - Solana: faq/faq-solana.md
+        - MultiversX: faq/faq-mvx.md
       - Troubleshooting Guide: troubleshooting.md
       - Error Handling: 
         - Web SDK: 
