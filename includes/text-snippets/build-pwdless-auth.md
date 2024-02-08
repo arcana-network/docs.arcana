@@ -18,13 +18,27 @@ In this guide, you will learn how to integrate {{page.meta.arcana.app_type}} app
 
 *Enabling passwordless login in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} is simple!*
 
-Make sure that all the prerequisites listed above are met. The app should be successfully registered, configured, and integrated with the {{config.extra.arcana.sdk_name}}, before adding code to onboard users via the passwordless login option.
+After integrating the app, add the code to onboard users in a passwordless manner using the SDK method listed below. 
 
-### Step 1: Onboard Users
+App users must supply an email ID to receive the OTP for logging into the app. An OTP is sent to the specified email ID. When the user provides the same OTP in the app context, authentication is complete and a wallet address is assigned to the user.
 
-After integrating the app, add the code to use `loginWithLink` (deprecated), `loginWithOTPStart` and `loginWithOTPComplete` functions of the {{config.extra.arcana.sdk_name}} and trigger passwordless login to onboard the users. App users are required to supply an email ID as input for passwordless login. An OTP is sent to the specified email ID. When the user provides the same OTP in the app context, authentication is complete and a wallet address is assigned to the user.
+### Login with link
 
 {% include "./code-snippets/auth_pwdless.md" %}
+
+### Login with OTP
+
+!!! tip "Global vs. App Specific Keys"
+
+      Apps using global keys are not required to add custom UI so that users can enter the OTP during log in. A built-in UI is automatically displayed in the UI context. User must enter the OTP received via email in this UI.
+
+      Apps using app-specific keys must add custom UI code that allows users to input the OTP during log in. The `isCompleteRequired` boolean returns `true` for apps using app-specific keys.
+
+!!! note "MFA Enabled / Disabled"
+
+      During passwordless login via OTP, apps that configured for MFA and those using overlays are required to hide it to enable OTP input. Use `isMFARequired` callback in the `loginWithOTPComplete` method to hide the overlay.
+
+{% include "./code-snippets/auth_pwdless_otp.md" %}
 
 Check if the user has logged in successfully:
 

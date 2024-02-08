@@ -16,13 +16,31 @@ In this guide, you will learn how {{page.meta.arcana.app_type}} app can use the 
 
 *Enabling passwordless login in a React app is simple!*
 
-Make sure that all the prerequisites listed above are met. The app should be successfully registered, configured, and integrated with the {{config.extra.arcana.sdk_name}}, before adding code to onboard users via the passwordless login option.
+After integrating the app, add the code to onboard users in a passwordless manner using the SDK method listed below. 
 
-### Step 1: Onboard Users
+!!! tip "`useAuth() hook`"
 
-After integrating the app, add the code to onboard users in a passwordless manner. Use `loginWithLink` (deprecated) `loginWithOTPStart` and `loginWithOTPComplete` through the `useAuth` hook offered by the {{config.extra.arcana.react_sdk_name}} and trigger passwordless login to onboard the users. App users are required to supply an email ID as input for passwordless login.
+     Use `loginWithLink` (deprecated) `loginWithOTPStart` and `loginWithOTPComplete` through the `useAuth` hook offered by the {{config.extra.arcana.react_sdk_name}} and trigger passwordless login to onboard the users. 
 
-{% include "./code-snippets/auth_react_useauth_pwdless.md" %}
+App users must supply an email ID to receive the OTP for logging into the app. An OTP is sent to the specified email ID. When the user provides the same OTP in the app context, authentication is complete and a wallet address is assigned to the user.
+
+### Login with link
+
+{% include "./code-snippets/auth_pwdless.md" %}
+
+### Login with OTP
+
+!!! tip "Global vs. App Specific Keys"
+
+      Apps using global keys are not required to add custom UI so that users can enter the OTP during log in. A built-in UI is automatically displayed in the UI context. User must enter the OTP received via email in this UI.
+
+      Apps using app-specific keys must add custom UI code that allows users to input the OTP during log in. The `isCompleteRequired` boolean returns `true` for apps using app-specific keys.
+
+!!! note "MFA Enabled / Disabled"
+
+      During passwordless login via OTP, apps that configured for MFA and those using overlays are required to hide it to enable OTP input. Use `isMFARequired` callback in the `loginWithOTPComplete` method to hide the overlay.
+
+{% include "./code-snippets/auth_pwdless_otp.md" %}
 
 **That is all!**  :material-party-popper:
 

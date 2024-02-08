@@ -1,17 +1,10 @@
 ```js
-const login = await auth.loginWithOTPStart(`${email}`)
-await login.begin()
-
-if(login.isCompleteRequired) {
-  await loginWithOTPComplete(`${otp}`, onMFARequired() => {
-    // Hide overlay(if used in the app)
-  })
-}
+await auth.loginWithLink(`${email}`)
 ```
 
-!!! caution "Deprecated: loginWithLink"
+!!! caution "Deprecated"
 
-      ```js
-      await auth.loginWithLink(`${email}`)
-      ```
+      `loginWithLink` is deprecated.
+
+      Use `loginWithOTPStart`, `loginWithOTPComplete` for passwordless login with OTP. The OTP will be received via email supplied in `loginWithOTPStart` call.
 
