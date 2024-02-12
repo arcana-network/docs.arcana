@@ -236,10 +236,12 @@ nav:
         - Solana: faq/faq-solana.md
       - Troubleshooting Guide: troubleshooting.md
       - Error Handling: 
+        - err/index.md
         - Web SDK: 
           - web-sdk/err/index.md
           - Auth Errors: web-sdk/auth-error-msg.md
           - Gasless Errors: web-sdk/gasless-error-msg.md
+        - Dashboard: db/db-err-messages.md
     - Changelog:
       - changelog/index.md
       - Auth SDK: https://github.com/arcana-network/auth/releases/tag/v1.0.9
