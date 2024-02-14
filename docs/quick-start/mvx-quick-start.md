@@ -52,7 +52,7 @@ Next, add code to enable Web3 operations in the app through the {{config.extra.a
 
 ## Step 5: Web3 Operations
 
-After adding code to onboard users, developers can enable Web3 wallet operations in the MultiversXapp. For details, see [[mvx-web3-wallet-ops|howt to issue Web3 wallet operations]] in a MultiversX app.
+After adding code to onboard users, developers can enable Web3 wallet operations in the MultiversX app. For details, see [[mvx-web3-wallet-ops|how to issue Web3 wallet operations in a MultiversX app]].
 
 **That's all!!!** :material-party-popper:
 

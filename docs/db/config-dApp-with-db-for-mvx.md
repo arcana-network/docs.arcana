@@ -26,7 +26,7 @@ Log into the {{config.extra.arcana.dashboard_name}} to register the app. Create 
 
 ## Configure App
 
-The chain type and the default chain are already pre-selected during the app registration. Use the **Chain Management** configuration section to configure the MultiversX chains.
+The chain type and the default chain are already pre-configured during the app registration. Use the **Chain Management** configuration section to configure the MultiversX chains.
 
 ### Manage MultiversX chains
 
