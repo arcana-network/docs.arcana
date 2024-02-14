@@ -28,15 +28,27 @@ arcana:
      
      Developers can soon enable/disable MFA for enhanced security. App users can choose to set up MFA through Q/A and PIN. These are used to restore access on a new device when a user switches devices.
      
--    :simple-hive_blockchain:{.lg .middle } **MultiversX** 
+<!---
+-    :simple-hive_blockchain:{.lg .middle } **Radix** 
 
      ---
   
      *Support for newer blockchain networks!* 
      
      
-     MultiversX blockchain uses a state sharding scheme for practical scalability, eliminating energy and computational waste while ensuring distributed fairness through a Secure Proof of Stake (SPoS) consensus.
+     The Radix Public Network is a Layer-1 Decentralized-Finance (DeFi) platform.
 
-     Apps using [MultiversX](https://multiversx.com/) will soon be able to enable social login and gasless transactions with {{config.extra.arcana.company_name}} SDKs.
+     Apps using [Radix](https://www.radixdlt.com//) will soon be able to enable social login by integrating with the  {{config.extra.arcana.sdk_name}} and allow authenticated users to sign blockchain transactions using the embedded, non-custodial {{config.extra.arcana.wallet_name}}.
+
+-->
+
+-    :simple-hive_blockchain:{.lg .middle } **Wallet Off-Ramp** 
+
+     ---
+  
+     *Support for off-ramping crypto!* 
+     
+     
+     The {{config.extra.arcana.wallet_name}} users can already use the [[arcana-wallet-user-guide#fiat-on-ramp|on-ramp feature]] and load the wallet using fiat and supported cryptocurrencies. Soon, users will have the off-ramp feature that allows them to exchange cryptocurrencies for fiat.
 
 </div>

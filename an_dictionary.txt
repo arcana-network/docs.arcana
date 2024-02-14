@@ -164,6 +164,7 @@ DemoAppSrcGitHubText
 DemoAppURLText
 DemoTemplateDependencyText
 Dev
+Devnet
 DiscordStep1Text
 DiscordStep2Text
 DiscordStep3Text
@@ -717,6 +718,7 @@ faq-auth
 faq-db
 faq-gasless
 faq-gen
+faq-mvx
 faq-solana
 faq-validator
 faq_auth
@@ -1050,6 +1052,7 @@ indexweb3walletops
 init
 instantiation
 integrate-gasless-app
+integrate-mvx-app
 integrate-react-nextjs-app
 integrate-shardeum
 integrate-solana-app
@@ -1103,6 +1106,10 @@ migration_to_mainnet
 minHeadingLevel
 mintpvtnft
 mkdocs
+mvx-dashboard-user-guide
+mvx-quick-start
+mvx-user-onboarding
+mvx-web3-wallet-ops
 new-to-web3
 newdevweb3
 nextjs-code-sample
@@ -1222,6 +1229,7 @@ signup
 simple-bookstack
 simple-hive_blockchain
 simple-nextdotjs
+simple-xrp
 site-url
 socialauth
 solana
