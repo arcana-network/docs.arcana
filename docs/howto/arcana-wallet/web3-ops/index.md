@@ -8,6 +8,8 @@ arcana:
 
 # Web3 Wallet Operations
 
-[[index-evm-web3-wallet-ops| EVM: Web3 Wallet Ops :chains:]]{ .md-button }
+[[index-evm-web3-wallet-ops| EVM: Web3 Wallet Ops :material-wallet-outline:]]{ .md-button }
 
-[[solana-wallet-ops| Solana: Web3 Wallet Ops :chains:]]{ .md-button }
+[[solana-wallet-ops| Solana: Web3 Wallet Ops :material-wallet-outline:]]{ .md-button }
+
+[[mvx-web3-wallet-ops| MultiversX: Web3 Wallet Ops :material-wallet-outline:]]{ .md-button }

@@ -42,6 +42,8 @@ These are the building blocks to help you learn about various terms and usage in
 
 [[concept-mfa|MFA :material-two-factor-authentication:]]{ .md-button }
 
+[[concept-non-evm-chains|Non-EVM Chains :material-list-box:]]{ .md-button }
+
 [[concept-plug-and-play-auth|Plug-and-Play Auth :material-lock: :fontawesome-solid-plug:]]{ .md-button }
 
 [[concept-private-key|Private Key :material-key:]]{ .md-button }
