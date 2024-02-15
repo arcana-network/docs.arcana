@@ -17,3 +17,5 @@ arcana:
 [[faq-gasless| Gasless Transactions]]{ .md-button }
 
 [[faq-solana| Solana]]{ .md-button }
+
+[[faq-mvx| MultiversX]]{ .md-button }

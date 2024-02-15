@@ -15,3 +15,5 @@ arcana:
 [[gasless-quick-start|Gasless Apps :material-gas-station-off:]]{ .md-button }
 
 [[solana-quick-start|Solana Apps :material-atom-variant:]]{ .md-button }
+
+[[mvx-quick-start|MultiversX Apps :simple-xrp:]]{ .md-button }

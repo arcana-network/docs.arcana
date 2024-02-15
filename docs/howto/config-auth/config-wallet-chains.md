@@ -48,11 +48,28 @@ The out-of-the-box list can be updated by the app developer. It governs the list
 
 ### Non-EVM Chains
 
-If you select [[concept-non-evm-chains|non-EVM chain type]] when registering the app, Solana is the only option displayed in the pre-configured list and app users can only sign using Solana blockchain networks.
+The following [[concept-non-evm-chains|non-EVM chains]] are supported and displayed in the list of pre-configured chains in the {{config.extra.arcana.dashboard_name}}.
+
+* Solana
+* MultiversX
+
+The selection of non-EVM or EVM chain types for an app is made at the time of app registration. Only the chains belonging to the selected non-EVM chain type are available in the pre-configured list of chains displayed in the dashboard. 
+
+The Testnet is selected as the default chain. Developer can change the default chain to say Devnet or Mainnet. 
+
+If EVM chain type is selected during the app registration, then it is possible to switch the default app chain from one EVM chain to another at a later point in time. However, the same is not possible across EVM and non-EVM chains or between two non-EVM chain types. Once an app is registered for a non-EVM chain, the default can be switched only within that chain type. For example, from Solana to Solana Testnet, or from MultiversX Testnet to MultiversX Devnet.
+
+## Solana
 
 ![Chain Management Solana non EVM](/img/an_db_non_evm_solana_only_preconfigured_list.png){.an-screenshots}
 
 See [[solana-dashboard-user-guide|how to setup Solana]] and [[solana-quick-start|Solana Quick Start Guide]] for more details.
+
+## MultiversX
+
+![Chain Management MultiversX non EVM](/img/an_db_non_evm_mvx_only_preconfigured_list.png){.an-screenshots}
+
+See [[mvx-dashboard-user-guide|how to setup MultiversX]] and [[mvx-quick-start|MultiversX Quick Start Guide]] for more details.
 
 ## Step 3: Edit Default Active Chain
 
@@ -82,7 +99,9 @@ Once you click **Save**, the newly added chain will be displayed in the dashboar
 
 ### Non-EVM Chains
 
-In the current release, only some selected non-EVM chains, [[solana-dashboard-user-guide|Solana blockchains, are supported]]. Support for other non-EVM chains will be added in the upcoming releases. Developers cannot arbitrarily add non-EVM chains to the out-of-the-box list in the dashboard.
+In the current release, only some selected non-EVM chains, such as [[solana-dashboard-user-guide|Solana]], [[mvx-dashboard-user-guide|MultiversX]] are supported and available in the pre-configured chain list. Other non-EVM chains will be supported in the upcoming releases.
+
+**Developers cannot arbitrarily add any other non-EVM chains to this pre-configured list of chains, either through the dashboard or programmatically**.
 
 To learn more about the list of supported chains, see [[state-of-the-arcana-auth#supported-blockchains|supported blockchains]].
 

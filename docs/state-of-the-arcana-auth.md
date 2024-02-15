@@ -21,13 +21,11 @@ Now we also support gasless for third-party browser-based wallets through the st
 
 ## What's New?
 
-### Gasless Transactions
+### MultiversX Support
 
-{{config.extra.arcana.company_name}} SDKs gasless feature is powered by the Biconomy Gasless SDK. Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable [[concept-gasless-transactions|gasless transactions in the app]] for one or more of the {% include "./text-snippets/biconomy/gasless_supported_networks.md" %} in case of apps using the {{config.extra.arcana.wallet_name}}.
+MultiversX blockchain uses a state sharding scheme for practical scalability, eliminating energy and computational waste while ensuring distributed fairness through a Secure Proof of Stake (SPoS) consensus.
 
-For more details, see [[configure-gasless|how to configure gasless transactions]]
-
-In addition to the {{config.extra.arcana.sdk_name}} built-in gasless feature, the {{config.extra.arcana.gasless_sdk_name}} v{{config.extra.arcana.latest_gasless_sdk_version}} enables gasless transactions in third-party wallets. This standalone SDK does not use the {{config.extra.arcana.sdk_name}}. See [[quick-start| here]] to learn more about how to enable [[concept-gasless-transactions|gasless transactions]] in apps.
+Apps using [MultiversX](https://multiversx.com/) can now onboard users via social login by integrating with the {{config.extra.arcana.sdk_name}}. Authenticated users can instantly access the embedded, non-custodial {{config.extra.arcana.wallet_name}} and use the pre-configured MultiversX chain in the wallet to sign blockchain transactions, view NFTs owned on the MultiversX chain, and more.
 
 ## What's Changed?  
 

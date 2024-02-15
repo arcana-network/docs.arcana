@@ -18,4 +18,4 @@ arcana:
 
 [[troubleshooting| Troubleshooting :material-auto-fix:]]{ .md-button }
 
-[[web-auth-error-msg| Error Handling :material-arrow-right-box:]]{ .md-button }
+[[index-err-msg| Error Handling :material-arrow-right-box:]]{ .md-button }
