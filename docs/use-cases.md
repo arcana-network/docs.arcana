@@ -44,7 +44,7 @@ Web3 developers can integrate apps with the {{config.extra.arcana.sdk_name}} to 
     - Switch networks
     - Monitor transaction activity
     - JSON-RPC method support
-    - Buy crypto via fiat/on-ramp providers
+    - Buy/Sell crypto through fiat on-ramp/off-ramp providers
 
 ## Monitor App Usage
 

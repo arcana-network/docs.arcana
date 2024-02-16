@@ -40,8 +40,6 @@ arcana:
 
      Apps using [Radix](https://www.radixdlt.com//) will soon be able to enable social login by integrating with the  {{config.extra.arcana.sdk_name}} and allow authenticated users to sign blockchain transactions using the embedded, non-custodial {{config.extra.arcana.wallet_name}}.
 
--->
-
 -    :simple-hive_blockchain:{.lg .middle } **Wallet Off-Ramp** 
 
      ---
@@ -49,6 +47,7 @@ arcana:
      *Support for off-ramping crypto!* 
      
      
-     The {{config.extra.arcana.wallet_name}} users can already use the [[arcana-wallet-user-guide#fiat-on-ramp|on-ramp feature]] and load the wallet using fiat and supported cryptocurrencies. Soon, users will have the off-ramp feature that allows them to exchange cryptocurrencies for fiat.
+     The {{config.extra.arcana.wallet_name}} users can already use the [[arcana-wallet-user-guide#fiat-on-ramp|on-ramp feature]] and load the wallet using fiat and supported cryptocurrencies. Soon, users will have the off-ramp feature to exchange cryptocurrencies for fiat.
 
+-->
 </div>

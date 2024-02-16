@@ -108,17 +108,21 @@ You will see a list of pre-configured blockchain networks available in the curre
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_switch_ntwk.gif" width="35%"/>
 
-### Fiat On-ramp
+### Buy/Sell Crypto
 
-{{config.extra.arcana.wallet_name}} supports fiat on-ramping that allows wallet users to buy cryptocurrency (native and ERC20 tokens) easily from any of the supported providers:
+{{config.extra.arcana.wallet_name}} allows users to buy and sell crypto by integrating with third-party providers.
+
+#### Fiat On-ramp
+
+Fiat on-ramping allows {{config.extra.arcana.wallet_name}} users to **buy** cryptocurrency using fiat through one of the supported providers: 
 
 {% include "./text-snippets/fiat_on_ramp_providers.md" %}
 
-Users can purchase the specific token required for the app with either fiat or another cryptocurrency. Also, they can purchase the native cryptocurrency with fiat to pay for the transaction or the gas fees. After a successful purchase via a third-party fiat on-ramp provider, the purchased tokens or currency is automatically deposited in the {{config.extra.arcana.wallet_name}} address and displayed in the balance amount.
+Users can buy ERC20, and ERC721 tokens specific to the app or native tokens for a supported blockchain. Purchased tokens are deposited in the {{config.extra.arcana.wallet_name}} address and the balance amount is automatically updated.
 
-To buy cryptocurrency, click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/>  and select the 'Tokens' tab. Choose a chain from the drop-down list of pre-configured blockchain networks. This choice will govern what cryptocurrencies and tokens available for purchase through the wallet UI, subject to local country-specific rules.
+Select the 'Tokens' <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> tab in the {{config.extra.arcana.wallet_name}}. Select one of the chains from the drop-down list of pre-configured blockchain networks. This choice will govern what cryptocurrencies and tokens can be purchased, subject to local country-specific rules.
 
-Click **Buy** to initiate the fiat on-ramp process for your {{config.extra.arcana.wallet_name}} account and the selected chain. 
+Click **Buy** to initiate the fiat on-ramp process through the {{config.extra.arcana.wallet_name}} on the selected blockchain network. 
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_onramp_buy.png" width="35%"/>
 
@@ -126,11 +130,13 @@ You will see the list of available fiat on-ramp providers:
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_onramp_providers.png" width="35%"/>
 
-Pick up one of the providers and click **Proceed**. This will bring up the provider-specific user interface in a new browser tab. You can complete the process on the provider's website. A notification regarding buying transaction initiation will be displayed in the {{config.extra.arcana.wallet_name}}. The user can dismiss it and continue to use the wallet while the buying process is underway.
+Pick up one of the providers and click **Proceed**. 
+
+This will bring up the provider-specific user interface in a new browser tab. Complete the process on the provider's website. The {{config.extra.arcana.wallet_name}} screen will display a notification regarding the initiation of the 'buy' process. You can dismiss it and continue to use the wallet while the buying process is underway in a different browser tab.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_onramp_provider_select.png" width="35%"/>
 
-Each provider may ask the user to follow country-specific procedures for KYC and list available cryptocurrencies for the selected chain. Also, the basic minimum purchase amount for a country or cryptocurrency may vary across countries and providers.
+Fiat on-ramp providers may ask the user to follow country-specific procedures for KYC and list available cryptocurrencies for the selected chain. Note that the basic minimum purchase amount for a country or cryptocurrency may vary across countries and providers.
 
 {% include "./text-snippets/fiat_on_ramp_providers_ui_example.md" %}
 
@@ -140,9 +146,43 @@ Each provider may ask the user to follow country-specific procedures for KYC and
 
 !!! caution "Current Limitations"
 
-    1. Purchased token assets will not be automatically updated in the {{config.extra.arcana.wallet_name}} assets screen. Users will need to manually add custom tokens that are purchased via on-ramp providers as these providers do not provide the contract address of the purchased token.
+    1. Purchased ERC20, ERC721 token assets will not be automatically updated in the {{config.extra.arcana.wallet_name}} assets screen. Users will need to manually add custom tokens purchased via on-ramp providers, as these providers do not provide the contract address of the purchased token.
 
     2. You will not see any activity listed for a successful purchase when you click on the notification tab of the {{config.extra.arcana.wallet_name}} UI. There is no uniform standard whereby on-ramp providers share this information or 'event' regarding purchase. We may add it in future releases.
+
+#### Fiat Off-ramp
+
+Fiat off-ramping allows {{config.extra.arcana.wallet_name}} users to **sell** cryptocurrency using fiat through one of the supported providers: 
+
+{% include "./text-snippets/fiat_off_ramp_providers.md" %}
+
+Users can sell ERC20 and ERC721 tokens specific to the app or native cryptocurrency for a supported blockchain displayed in the wallet. The provider takes care of the actual sale transaction. The user initiates the 'sell' transaction using the {{config.extra.arcana.wallet_name}}. The provider is responsible for depositing the sale proceeds into the specified user bank account. After the provider completes the transaction, the {{config.extra.arcana.wallet_name}} will automatically display the updated balance. 
+
+Click the 'Tokens' <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> tab in the {{config.extra.arcana.wallet_name}}. Select one of the chains from the drop-down list of pre-configured blockchain networks. This choice will govern what cryptocurrencies and tokens can be sold, subject to local country-specific rules.
+
+Click **Sell** to initiate the fiat off-ramp process through the {{config.extra.arcana.wallet_name}} on the selected blockchain network. 
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_offramp_sell.png" width="35%"/>
+
+You will see the list of available fiat off-ramp providers:
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_offramp_providers.png" width="35%"/>
+
+Pick up one of the providers and click **Proceed**.
+
+This will bring up the provider-specific user interface in a new browser tab. Complete the process on the provider's website. The {{config.extra.arcana.wallet_name}} screen will display a notification regarding initiating the 'sell' process. You can dismiss it and continue to use the wallet in a different browser tab while the selling process is underway.
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_offramp_provider_select.png" width="35%"/>
+
+Fiat off-ramp providers may ask the user to follow country-specific procedures for KYC and list available cryptocurrencies for the selected chain. Note that the basic maximum sell amount for a country or cryptocurrency may vary across countries and providers.
+
+{% include "./text-snippets/fiat_off_ramp_providers_ui_example.md" %}
+
+{% include "./text-snippets/fiat_off_ramp_providers_ug.md" %}
+
+{% include "./text-snippets/fiat_off_ramp_providers_coverage.md" %}
+
+The activity tab in the {{config.extra.arcana.wallet_name}} UI will display the details of the 'sell' transaction issued from the wallet.
 
 ### Manage Token Assets
 
@@ -156,7 +196,7 @@ Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width=
 * List native and custom tokens in the wallet
 * Add new custom tokens
 * Send and receive native and custom tokens
-* View token asset activities - which native or custom tokens requests were sent, whether the status is confirmed or pending, etc.
+* View token asset activities - which native or custom token requests were sent, whether the status is confirmed or pending, etc.
 <!---
 * Switch between EoA/SCW accounts (Gasless)
 -->
@@ -165,7 +205,7 @@ For more details, see [[use-wallet-ui-to-manage-tokens|how to view, select, send
 
 ### Manage NFT Assets
 
-Click the 'NFT' tab on the bottom of the {{config.extra.arcana.wallet_name}} UI to view and manage NFTs associated with the wallet address on the selected blockchain network. The following NFT operations can be performed by the authenticated user:
+Click the 'NFT' tab on the bottom of the {{config.extra.arcana.wallet_name}} UI to view and manage NFTs associated with the wallet address on the selected blockchain network. The authenticated user can perform the following NFT operations:
 
 **General Wallet Operations**
 
@@ -183,7 +223,7 @@ Click the 'NFT' tab on the bottom of the {{config.extra.arcana.wallet_name}} UI 
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_asset_thumbnail.gif" width="35%"/>
 
-For details, see [[use-wallet-to-manage-nfts|how Web3 app users can send NFTs, manage NFTs and monitor NFT transactions through the {{config.extra.arcana.wallet_name}}]].
+For details, see [[use-wallet-to-manage-nfts|how Web3 app users can send NFTs, manage NFTs, and monitor NFT transactions through the {{config.extra.arcana.wallet_name}}]].
 
 ### View User Profile Details
 
@@ -210,7 +250,7 @@ The activity tab lists all transactions processed through the wallet for differe
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notify.png" width="35%"/>
 
-<details markdown><summary markdown>Notification Example</summary><p><h4>Pending Contract Deployment Request</h4> When a contract deployment request notification shows up, the user can click on 'Do it later' option. The request will be listed as a pending request in the 'Activity' tab of the wallet. 
+<details markdown><summary markdown>Notification Example</summary><p><h4>Pending Contract Deployment Request</h4> When a contract deployment request notification shows up, the user can click on the 'Do it later' option. The request will be listed as a pending request in the 'Activity' tab of the wallet. 
 
 A red dot on the <img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/>'Activity' tab icon at the bottom right of the {{config.extra.arcana.wallet_name}} indicates a pending blockchain transaction. 
 
@@ -222,7 +262,7 @@ Click on the red dot to see details of the pending transaction and take appropri
 
 ### Export Private Key
 
-Click the <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> tab on the bottom left of the {{config.extra.arcana.wallet_name}} to see the user profile screen. It provides an option to export the user's private key. For details, see [[use-wallet-to-export-keys|how to export a user's private key]] guide.
+Click the<img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> tab on the bottom left of the {{config.extra.arcana.wallet_name}} to see the user profile screen. It provides an option to export the user's private key. For details, see [[use-wallet-to-export-keys|how to export a user's private key]] guide.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_export_key.png" width="35%" />
 
@@ -234,13 +274,15 @@ Right after a user authenticates, the wallet is displayed in its minimized state
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_min_light.png#only-dark" width="15%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_min_dark.png#only-light" width="15%"/>
 
-On clicking, it expands to display the wallet in its maximized state. It can be minimized again by clicking the '∨' icon on the top in the wallet UI. 
+On clicking, it expands to display the wallet in its maximized state. It can be minimized again by clicking the '∨' icon on the top of the wallet UI. 
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_max_light.png#only-dark" width="35%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_max_dark.png#only-light" width="35%"/>
 
 ### View Transaction Summary & Details
 
 If a blockchain transaction is triggered via the app that requires the user's approval, the user will see a transaction notification. If the wallet was in minimized state at the time the request was generated, then the notification will show up with a summary of the transaction along with the buttons to approve or reject. 
+
+The app user will see a transaction notification seeking approval for a blockchain request triggered by the app. If the request is generated when the wallet is displayed in a minimized state within the app context, the notification will only show a summary of the transaction along with approve/reject buttons and an option to view transaction details.  
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_smtx_sign_msg.png" width="35%"/>
 
