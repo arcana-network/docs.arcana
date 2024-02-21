@@ -30,17 +30,11 @@ App users must supply an email ID to receive the OTP for logging into the app. A
 
 ### Login with OTP
 
-!!! tip "Global vs. App Specific Keys"
-
-      Apps using global keys are not required to add custom UI so that users can enter the OTP during log in. A built-in UI is automatically displayed in the UI context. User must enter the OTP received via email in this UI.
-
-      Apps using app-specific keys must add custom UI code that allows users to input the OTP during log in. The `isCompleteRequired` boolean returns `true` for apps using app-specific keys.
-
-!!! note "MFA Enabled / Disabled"
-
-      During passwordless login via OTP, apps that configured for MFA and those using overlays are required to hide it to enable OTP input. Use `isMFARequired` callback in the `loginWithOTPComplete` method to hide the overlay.
-
 {% include "./code-snippets/auth_pwdless_otp.md" %}
+
+{% include "./text-snippets/warn_otp_global_app_keys.md" %}
+
+{% include "./text-snippets/warn_otp_mfa_enabled.md" %}
 
 **That is all!**  :material-party-popper:
 
