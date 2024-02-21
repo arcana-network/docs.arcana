@@ -151,9 +151,13 @@ Social login
 const provider = await auth.loginWithSocial(`${loginType}`)
 ```
 
-Passwordless login via an email verification OTP
+Passwordless login via via an email verification OTP
 
 {% include "./code-snippets/auth_pwdless.md" %}
+
+Passwordless login via OTP
+
+{% include "./code-snippets/auth_pwdless_otp.md" %}
 
 Check if a user is logged in
 

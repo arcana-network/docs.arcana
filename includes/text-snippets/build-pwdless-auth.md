@@ -18,13 +18,21 @@ In this guide, you will learn how to integrate {{page.meta.arcana.app_type}} app
 
 *Enabling passwordless login in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} is simple!*
 
-Make sure that all the prerequisites listed above are met. The app should be successfully registered, configured, and integrated with the {{config.extra.arcana.sdk_name}}, before adding code to onboard users via the passwordless login option.
+After integrating the app, add the code to onboard users in a passwordless manner using the SDK method listed below. 
 
-### Step 1: Onboard Users
+App users must supply an email ID to receive the OTP for logging into the app. An OTP is sent to the specified email ID. When the user provides the same OTP in the app context, authentication is complete and a wallet address is assigned to the user.
 
-After integrating the app, add the code to use `loginWithLink` (deprecated), `loginWithOTPStart` and `loginWithOTPComplete` functions of the {{config.extra.arcana.sdk_name}} and trigger passwordless login to onboard the users. App users are required to supply an email ID as input for passwordless login. An OTP is sent to the specified email ID. When the user provides the same OTP in the app context, authentication is complete and a wallet address is assigned to the user.
+### Login with link
 
 {% include "./code-snippets/auth_pwdless.md" %}
+
+### Login with OTP
+
+{% include "./code-snippets/auth_pwdless_otp.md" %}
+
+{% include "./text-snippets/warn_otp_global_app_keys.md" %}
+
+{% include "./text-snippets/warn_otp_mfa_enabled.md" %}
 
 Check if the user has logged in successfully:
 
