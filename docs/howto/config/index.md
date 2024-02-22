@@ -6,10 +6,10 @@ arcana:
   root_rel_path: ../..
 ---
 
-# Configure Arcana SDKs
+# Configure SDKs
 
 Before installing and integrating with any of the {{config.extra.arcana.company_name}} SDKs, use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to configure the SDK usage as per your app requirements.
 
-[[index-configure-auth| Configure Auth SDK Usage :simple-hive_blockchain:]]{ .md-button }
+[[index-configure-auth| Auth SDK :simple-hive_blockchain:]]{ .md-button }
 
-[[configure-gasless| Configure Gasless SDK Usage :material-gas-station-off:]]{ .md-button }
+[[configure-gasless| Gasless SDK :material-gas-station-off:]]{ .md-button }
