@@ -17,3 +17,7 @@ Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_pat
 [[index-config-iam-providers|Custom IAM Providers :material-identifier:]]{ .md-button }
 
 [[configure-gasless|Gasless :material-gas-station-off:]]{ .md-button }
+
+[[solana-dashboard-user-guide|Solana :simple-bookstack:]]{ .md-button }
+
+[[mvx-dashboard-user-guide|MultiversX :fontawesome-solid-infinity:]]{ .md-button }

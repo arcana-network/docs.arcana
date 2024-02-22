@@ -89,9 +89,10 @@ nav:
             - howto/config-idm/index.md
             - Cognito: howto/config-idm/cognito-oauth.md
             - Firebase: howto/config-idm/firebase-auth.md
+          - Solana: db/config-dApp-with-db-for-Solana.md
+          - MultiversX: db/config-dApp-with-db-for-mvx.md
         - Gasless: howto/configure-gasless.md
-        - Solana: db/config-dApp-with-db-for-Solana.md
-        - MultiversX: db/config-dApp-with-db-for-mvx.md
+
     - Integrate SDKs:
       - howto/sdks/index.md
       - Auth:
