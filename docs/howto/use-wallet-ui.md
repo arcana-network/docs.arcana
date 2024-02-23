@@ -16,6 +16,26 @@ This guide explains the Web3 operations of the {{config.extra.arcana.wallet_name
 
 * Depending on the [[configure-wallet-visibility|type of blockchain signing experience]] set up by the app developer, the {{config.extra.arcana.wallet_name}} may appear only when a blockchain transaction is triggered, or it may be visible at all times once the user logs in.
 
+## Wallet Display
+
+When a user logs into an app integrated with the {{config.extra.arcana.sdk_name}}, they can access the {{config.extra.arcana.wallet_name}} from within the app context itself. Users are not required to install any wallet extension.
+
+The wallet shows up on the left or right side of the app screen based on how the developer specifies the wallet `position` parameter during the SDK integration. At first, the wallet appears in a compact form within the app. 
+
+<img src="/img/an_wallet_min_light_vanilla.gif#only-dark" width="50%"/><img src="/img/an_wallet_min_dark_vanilla.gif#only-light" width="50%"/> 
+
+Users can click on it to maximize the wallet view.
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_home.png" width="30%"/>
+
+## Starter Tips
+
+Upon first logging into the app integrated with the {{config.extra.arcana.sdk_name}}, the wallet starter tips activate automatically for each authenticated user.
+
+The starter tips showcase different wallet screens. It demonstrates various screen elements for accessing wallet features. Users can navigate the tips using the *Next* and *Previous* buttons at the bottom of the wallet screen. Users can access the wallet home screen by using the _Skip_ button at the top right.
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_starter_tips.gif" width="30%"/>
+
 ##  {{config.extra.arcana.wallet_name}} Features
 
 Authenticated users can perform the following Web3 wallet operations through the wallet UI:
@@ -42,14 +62,6 @@ Authenticated users can perform the following Web3 wallet operations through the
 * Switch between EoA/SCW accounts (Gasless)
 -->
 * Logout
-
-When a user logs into the app, {{config.extra.arcana.wallet_name}} appears in a compact form within the app. The app developer decides whether the wallet is on the left or right side of the app's user interface, and this choice is set during app registration and configuration.
-
-<img src="/img/an_wallet_min_light_vanilla.gif#only-dark" width="50%"/><img src="/img/an_wallet_min_dark_vanilla.gif#only-light" width="50%"/> 
-
-Clicking on the wallet icon displays the maximized wallet UI.
-
-<img class="an-screenshots-noeffects" src="/img/an_wallet_home.png" width="30%"/>
 
 Users can access various Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}} using the following tabs located at the bottom of the wallet:
 
