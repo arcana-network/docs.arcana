@@ -1,28 +1,18 @@
-Web3 apps can select and enable user onboarding via GitHub by configuring the **Social Auth** settings in the {{config.extra.arcana.dashboard_name}} before integrating the app with the {{config.extra.arcana.sdk_name}}.
+{% include "./text-snippets/config_common_steps.md" %}
 
-!!! warning
+## App-specific Keys
 
-      1. Some of the authentication provider configuration steps are performed using the [GitHub Developer Settings Dashboard](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app), whereas the others use the {{config.extra.arcana.dashboard_name}}. After configuring GitHub, simply [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and only then add code in the app to trigger user authentication via GitHub.
-
-      2. {% include "./text-snippets/warn_global_keys_no_social_clientid_setup.md" %}
+Follow these steps to configure the **Social Auth** settings and enable user onboarding via GitHub. It requires developers to use the {{config.extra.arcana.dashboard_name}} and the [GitHub Developer Settings Dashboard](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app).
       
-## Step 1: Get Redirect URI
+### Step 1: Get Redirect URI
 
-Go to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
-
-[[configure-auth#step-2-register-application|Register the app]] by creating a new entry using the 'Create New App' wizard. 
-
-!!! tip "Registering App"
-          
-      {% include "./text-snippets/socialauth_add_config.md" %}
-
-Go to the app configuration screen on the {{config.extra.arcana.dashboard_name}} and click **Configure > Social Auth** section in the LHS. Copy the **redirect URI** value displayed on the top RHS. This will be used in the next step to generate GitHub OAuth credentials.
+Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet to configure GitHub in the respective configuration profile Go to **Configure > Social Auth**. Copy the redirect URI shown on the top right.
 
 ![Redirect page](/img/an_dApp_config_redirect_uri.png){.an-screenshots}
 
-Do not close the {{config.extra.arcana.dashboard_name}} browser tab. Open another tab and set up GitHub OAuth. Then come back to the {{config.extra.arcana.dashboard_name}} tab and complete the app configuration settings.
+Do not close the {{config.extra.arcana.dashboard_name}} browser tab. Open another tab and set up GitHub OAuth.
 
-## Step 2: GitHub Developer Settings
+### Step 2: Get GitHub ClientID, Secret
 
 Go to the [GitHub Developer Settings > OAuth Apps](https://github.com/settings/applications/new) and register the app as a new GitHub application.
 
@@ -42,14 +32,14 @@ Save the newly registered application in GitHub Developer Settings. GitHub will 
 
 Copy and save the **Client ID** and the **secret** assigned by GitHub for the newly registered app. It will be required in the next step while completing the {{config.extra.arcana.dashboard_name}} app configuration.
 
-## Step 3: Update the {{config.extra.arcana.dashboard_name}}
+### Step 3: Update GitHub Settings
 
 Revisit the {{config.extra.arcana.dashboard_name}}. View the app configuration screen. Click **Configure > Social Auth** in the LHS navigation bar and refer to the "GitHub" field. Paste the **Client ID** and the **Secret** assigned by GitHub, in the previous step.
 
+In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth**. Refer to the empty fields next to the "GitHub" setting. Paste the **ClientID** and **Secret** obtained in the previous step as the `ClientID` and `secret`, respectively. 
+
 ![howto configure GitHub clientid](/img/an_dApp_github_config.png){.an-screenshots}
 
-Save the settings. {{config.extra.arcana.company_name}} assigns a **{{config.extra.arcana.app_address}}** to every registered app. You need to save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}.
+Save the **Social Auth** settings. 
 
-![App Identifier](/img/an_db_app_address.png){.an-screenshots}
-
-*You are all set with the GitHub configuration. [[index-integrate-app|Integrate the Web3 app]] with the {{config.extra.arcana.sdk_name}}, [[index-onboard-users|onboard users]] and enable the authenticated users to sign blockchain transactions. See [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] for details.*
+*You are all set with the GitHub configuration.*

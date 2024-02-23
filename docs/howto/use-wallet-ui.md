@@ -48,7 +48,7 @@ Authenticated users can perform the following Web3 wallet operations through the
     - List token assets
     - Add custom tokens (ERC-20)
     - Send and receive tokens 
-    - Buy cryptocurrency (native, ERC-20)
+    - Buy/Sell cryptocurrency
 * Manage NFTs
     - List NFT assets
     - View NFT details
@@ -72,7 +72,7 @@ Users can access various Web3 wallet operations supported by the {{config.extra.
 
 ### Sign Transaction
 
-A blockchain sign transaction can be triggered either by the app, programmatically, or in response to a user action in the {{config.extra.arcana.wallet_name}} UI. A blockchain transaction results in a notification as displayed in the figure below. Users can scroll down and see details of the request before selecting one of the options to **Reject** or **Approve** the transaction.
+A blockchain sign transaction can be triggered either by the app, programmatically, or in response to a user action in the {{config.extra.arcana.wallet_name}} UI. A blockchain transaction results in a notification, as displayed in the figure below. Users can scroll down and see details of the request before selecting one of the options to **Reject** or **Approve** the transaction.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_personalsign.png" width="75%"/>
 

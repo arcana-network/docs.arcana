@@ -1,4 +1,4 @@
-Click **Configure** in the LHS navigation of the app configuration screen in the {{config.extra.arcana.dashboard_name}} to bring up app configuration settings:
+Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the following configuration categories:
 
 * Branding
 * Social Auth 
@@ -7,45 +7,43 @@ Click **Configure** in the LHS navigation of the app configuration screen in the
 * Keyspace
 * Gasless
 
-Use the defaults or provide inputs for various settings as per your application use case. These settings control {{config.extra.arcana.sdk_name}} usage, user onboarding, and blockchain transaction signing experience.
-
 <img class="an-screenshots" src="/img/an_db_configure_details.png" alt="config details"/>
 
 **Click** on the tabs below to see the various configuration settings in each category.
 
 === "Branding"
 
-    Use branding settings to manage the look and feel of the embedded {{config.extra.arcana.wallet_name}} that shows up in an application context. By default, the {{config.extra.arcana.wallet_name}} displays <img src="/img/an_wallet_default_branding_logo.png" alt="The default branding logo" width="3%" /> logo and uses the dark theme.
+    The **Branding** settings control the look and feel of the embedded {{config.extra.arcana.wallet_name}} displayed in an app's context.
 
-    * **Upload Logo:** Upload light and dark theme branding/logo images that are displayed in the {{config.extra.arcana.wallet_name}} UI.
-    * **Wallet Theme:** You can change the default 'dark' theme.<br></br><img alt="Branding" class="an-screenshots" src="/img/an_db_configure_branding.png"></img>
+    * Upload Logo
+    * Wallet Theme
+    
+    <img alt="Branding" class="an-screenshots" src="/img/an_db_configure_branding.png"></img>
 
 === "Social Auth"
 
-    Use the social authentication settings to manage the user onboarding experience. Only the social providers that are configured for an application will be made available in the {{config.extra.arcana.sdk_name}} as user onboarding options. Developers can enable multiple providers for an app and allow users to choose anyone to onboard the app. For details on how to configure authentication providers, see [[index-configure-auth|configuring social providers]].
+    The **Social Auth** settings manage the user onboarding experience and control which social login providers are available for app login. 
 
-    ??? example "Enable Google, Discord for Onboarding Users"
-    
-          To enable Google and Discord login options for an app, configure these social providers in the {{config.extra.arcana.dashboard_name}}.  You can leave other social provider entries blank.
+    * Social Auth
+    * Identity Access Managers
 
-    ??? example "Password-less Onboarding"
+    Developers can enable one or more providers for app login. Passwordless login is automatically enabled for all registered apps.
 
-          All apps using {{config.extra.arcana.sdk_name}} automatically have passwordless login. No need to set it up on the dashboard. If an app is registered without an authentication provider, users get only the passwordless login option. They can onboard the app by entering the OTP sent to their email.
-        
-    * **Redirect URI:** Displays the URL auto-generated for each registered app by {{config.extra.arcana.company_name}}. This is required to complete **OAuth** verification via the selected authentication providers.
-    * **Social Auth:** Select and [[index-configure-auth|configure authentication providers]] for onboarding app users. <br></br><img class="an-screenshots" alt="Social OAuth" src="/img/an_db_configure_social.png"></img>
+    For details on how to configure authentication providers, see [[index-configure-auth|configuring social providers]].
 
-    !!! warning "Keyspace Global Keys: No social provider setup needed"
-
-          {% include "./text-snippets/warn_global_keys_no_social_clientid_setup.md" %}
+    !!! note "Redirect URI"
+           
+          The Redirect URI  field in the **Social Auth** section of the dashboard lists an auto-generated URL. This URL value is used as input when configuring the social login providers.
 
 === "Chain Management"
 
-    Use the chain management section to specify the subset of chains from the list of supported blockchains that are configured for the {{config.extra.arcana.wallet_name}} out of the box. This specified subset will be displayed in the {{config.extra.arcana.wallet_name}} UI when a user logs into an app that is integrated with the {{config.extra.arcana.sdk_name}}. Developers can also specify which chain will be the default and show up in the wallet 'Network' dropdown list on the top.
+    The **Chain Management** settings control which chains will be displayed as the default active chain in the wallet from the list of pre-configured chains available out of the box for apps that integrate with the {{config.extra.arcana.sdk_name}}.
 
     <img src="/img/an_db_chain_mngt_options.png" alt="Chain Management Settings" class="an-screenshots"/>
 
-    **Add Chains:** Click **Add Chains** to add a new blockchain to the {{config.extra.arcana.wallet_name}}. Make sure it is one of the [[state-of-the-arcana-auth#supported-blockchains|supported blockchains]] for the {{config.extra.arcana.product_name}} product.
+    * Add Chains
+    * Edit Chains
+    * Set Default Chain
 
     <img src="/img/an_db_chains_default.gif" alt="Set Default Chain" class="an-screenshots"/>
 
@@ -53,30 +51,41 @@ Use the defaults or provide inputs for various settings as per your application 
 
 === "{{config.extra.arcana.wallet_name}}"
 
-    Use the {{config.extra.arcana.wallet_name}} section to specify additional, optional security settings.
+    The **{{config.extra.arcana.wallet_name}}** settings display whether the app is registered using the built-in, default wallet UI or a custom UI. It also allows to restrict the domain where the {{config.extra.arcana.wallet_name}} can be loaded successfully within an app's context.
 
-    * **Wallet:** Website Domain - Set the website domain used by the server, to secure and restrict {{config.extra.arcana.wallet_name}} from loading anywhere else other than the specified domain. {{config.extra.arcana.company_name}} uses the frame-ancestor CSP for restricted domains.<br></br><img class="an-screenshots" alt="Social OAuth" src="/img/an_db_configure_wallet.png"></img>
+    * Wallet Domain
+    * Wallet UI
+    
+    <img class="an-screenshots" alt="Social OAuth" src="/img/an_db_configure_wallet.png"></img>
 
 === "Keyspace"
 
-    Use the **Keyspace** section to select the **App-specific** (default) or **Global Keys** feature. Global keys are less secure as compared to app-specific keys but allow app users to have the same wallet address across different applications in the {{config.extra.arcana.company_name}} ecosystem. Learn more about [[concept-keyspace-type|App-specific and global keys]] and how to use the [[dashboard-user-guide#configure-keyspace|{{config.extra.arcana.dashboard_name}}User Guide]] to configure keyspace.
+    The following **Keyspace** settings control whether the wallet address for the user remains the same across all the apps that are integrated with the {{config.extra.arcana.sdk_name}} or are unique for each app. 
+
+    * App-Specific Keys (default)
+    * Global Keys
+
+    Learn more about [[concept-keyspace-type|App-specific and global keys]] and how to set up [[dashboard-user-guide#configure-keyspace|keyspace]].
 
     ![Keyspace options](/img/an_db_keyspace_options.png){.an-screenshots}
 
 === "Gasless"
 
-    Use the 'Gasless' section to configure [[concept-gasless-transactions|gasless transactions]] for app users.  
-    
-    Developers must explicitly set up gas tanks per blockchain network to enable paymasters to bear gas fees for sponsored transactions for that specific chain. The gas tanks should have sufficient crypto assets deposited to fund the app user's transactions. Also, developers must whitelist one or more app operations for gasless transactions.  Only the gas fees for the whitelisted operations will be paid via the gas tank as long as there is sufficient credit in the gas tank. 
-    
-    For all the non-whitelisted app operations, or in case the gas tank assets run out, the transaction gas fees will have to be paid by the individual user via the user's smart contract wallet associated with the app. 
+    The following **Gasless** settings control the establishment of gas tanks for selected blockchain networks, allocating funds in the gas tanks, whitelisting app operations for enabling [[concept-gasless-transactions|gasless transactions]] through the {{config.extra.arcana.wallet_name}} or third-party wallets.  
 
-    Gasless transactions require enabling **SCW** user accounts or [[concept-gasless-transactions#gasless-user-accounts|'gasless accounts']] that are different from the typical **EOA** user accounts.
+    * Add Gas Tank
+    * Deposit/Withdraw Gas Tank Funds
+    * Enable/Pause Gas Tank
+    * Whitelist app operations
 
-    Developers can pause and resume gas tanks.
+    !!! tip "Account Abstraction: SCW Account"
+
+          Gasless transactions require enabling **SCW** user accounts or [[concept-gasless-transactions#gasless-user-accounts|'gasless accounts']] that are different from the typical **EOA** user accounts.
+    
+    Developers must explicitly set up gas tanks per blockchain network to enable paymasters to bear gas fees for sponsored transactions for that specific chain. The gas tanks should have sufficient crypto assets deposited to fund the app user's transactions. Also, developers must whitelist one or more app operations for gasless transactions.  Only the gas fees for the whitelisted operations will be paid via the gas tank as long as there is sufficient credit in the gas tank. For all the non-whitelisted app operations, or in case the gas tank assets run out, the transaction gas fees will have to be paid by through the user's smart contract wallet. For details, see [[configure-gasless|how to configure gasless transactions]] in apps integrating with the {{config.extra.arcana.sdk_name}}.
 
     <img src="/img/an_gl_db_new_config.png" alt="Set up Gas Tanks" class="an-screenshots"/>
 
-    For details, see [[configure-gasless|how to configure gasless transactions]] in apps integrating with the {{config.extra.arcana.sdk_name}}.
+**Save** the configuration settings to make sure the setting changes take effect.
 
-Make sure you save the configuration settings before leaving the {{config.extra.arcana.dashboard_name}} page in your browser.
+<img src="/img/an_db_save_config_settings.png" alt="Save Config Settings" class="an-screenshots"/>

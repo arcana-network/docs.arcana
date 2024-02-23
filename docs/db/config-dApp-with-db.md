@@ -4,6 +4,7 @@ title: 'Arcana Developer Dashboard User Guide'
 description: 'Web3 app developers can use the Arcana Developer Dashboard to register and configure the apps before integration with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
+  social_provider: "supported social login and custom IAM providers"
 ---
 
 # {{config.extra.arcana.dashboard_name}} Users Guide
@@ -20,52 +21,19 @@ This guide will walk you through the various configuration options available on 
 
 {% include "./text-snippets/db_prerequisites.md" %}
 
-## {{config.extra.arcana.dashboard_name}} Features
-
-### Login
+## Login
 
 {% include "./text-snippets/db_login.md" %}
 
-### Register Application
+## Register Application
 
 {% include "./text-snippets/db_register_dapp.md" %}
 
-### Configure Auth Usage
+## Settings Overview
 
 {% include "./text-snippets/db_settings.md" %}
 
-#### Configure Keyspace 
-
-There are two keyspace options: [[concept-keyspace-type|App-specific and Global Keys]].
-
-You can either use the default, highly secure **App-specific** keyspace option or **Global** keyspace depending upon the desired level of security and user experience required for the application. 
-
-![Mainnet Keyspace options](/img/an_db_keyspace_options.png){.an-screenshots}
-
-Select **Global Keyspace** and click **Verify**. This will bring up a verification form. Fill out the verification form, and click **Submit**. 
-
-<img class="an-screenshots-noeffects" alt="Global Keyspace Verify" src="/img/an_db_global_keys_verify.png" width="25%" />
-
-You can check the status of **Global Keyspace** verification by using the **Keyspace** screen. After submitting the form, you will see the status as **In Review**.
-
-![Mainnet Global keyspace in review](/img/an_db_global_keys_inreview.png){.an-screenshots}
-
-The status will change to **Approved** once verification is complete. You can integrate your application with the {{config.extra.arcana.sdk_name}} but do not deploy it until the verification is complete. Otherwise, users that log in before verification is complete may see different wallet addresses after the process is complete.
-
-![Mainnet Global keyspace approved](/img/an_db_global_keys_approved.png){.an-screenshots}
-
-
-!!! caution "Configuring the {{config.extra.arcana.wallet_name}}"
-
-      {{config.extra.arcana.sdk_name}} allows developers to manage the app user experience for signing blockchain transactions with {{config.extra.arcana.wallet_name}}. 
-      
-      The user experience with the {{config.extra.arcana.wallet_name}} is configured programmatically through the `alwaysVisible` option. Install the {{config.extra.arcana.sdk_name}} and as part of the integration, add code in the app to create a new `AuthProvider` instance. Specify the appropriate wallet visibility mode via the `alwaysVisible` option. See the [[configure-wallet-visibility|{{config.extra.arcana.wallet_name}} configuration guide]] for details.
-
-!!! info "{{config.extra.arcana.app_address}}"
-
-      The {{config.extra.arcana.app_address}} assigned to your application can be found on the top right of the {{config.extra.arcana.dashboard_name}} screen. ![App Client Identifier](/img/an_db_app_address.png){.an-screenshots}
-
-### Manage Configurations
+## Manage Configuration Profiles
 
 Every application that is registered using the {{config.extra.arcana.dashboard_name}} is represented by a single card displayed in the 'Manage Apps' screen, next to the 'Create New App' wizard. Click on the application card to view the application dashboard screen. By default, the application dashboard screen shows application usage details for the 'Testnet' configuration profile and some links to the {{config.extra.arcana.product_name}} documentation. 
 
@@ -75,13 +43,13 @@ Each application can only be associated with two configuration profiles, 'Testne
 
 ![New App config card](/img/an_db_new_app_card.png){.an-screenshots}
 
-#### Testnet
+### Testnet Profile
 
 By default, all newly registered applications are enabled for using the {{config.extra.arcana.company_name}} 'Testnet'. Developers can view or edit the default configuration settings by clicking 'Testnet' on the application card displayed in the 'Manage Apps' dashboard screen. This will bring up the application dashboard screen with various navigation options in the LHS pane.
 
 After validation on the 'Testnet', the application can be configured to use the {{config.extra.arcana.company_name}} 'Mainnet'. To do this, developers must create a corresponding 'Mainnet' configuration profile. 
 
-#### Mainnet
+### Mainnet Profile
 
 To use the {{config.extra.arcana.company_name}} Mainnet, the developers must first create a 'Mainnet' configuration profile using the {{config.extra.arcana.dashboard_name}}. 
 
@@ -115,7 +83,7 @@ After the selection is made and the developer confirms, the 'Mainnet' profile is
 
       ![Update redirect URI](/img/an_db_example_add_mainnet_redirect_uri.png){.an-screenshots}
 
-#### Switch Profiles
+## Switch Profiles
 
 There are multiple ways to switch an application from using Testnet to Mainnet. 
 
@@ -131,7 +99,38 @@ There are multiple ways to switch an application from using Testnet to Mainnet.
 
       Depending upon whether the 'Testnet' **{{config.extra.arcana.app_address}}** value or the 'Mainnet' **{{config.extra.arcana.app_address}}** value is used to integrate an application with the {{config.extra.arcana.sdk_name}}, deployment of the app happens on the respective {{config.extra.arcana.company_name}} Network. "Testnet" usage is not billed but if an application chooses 'Mainnet' while integrating with the {{config.extra.arcana.sdk_name}}, it will be billed in the forthcoming releases.
 
-#### Switch Applications
+## Configure Keyspace 
+
+There are two keyspace options: [[concept-keyspace-type|App-specific and Global Keys]].
+
+You can either use the default, highly secure **App-specific** keyspace option or **Global** keyspace depending upon the desired level of security and user experience required for the application. 
+
+![Mainnet Keyspace options](/img/an_db_keyspace_options.png){.an-screenshots}
+
+Select **Global Keyspace** and click **Verify**. This will bring up a verification form. Fill out the verification form, and click **Submit**. 
+
+<img class="an-screenshots-noeffects" alt="Global Keyspace Verify" src="/img/an_db_global_keys_verify.png" width="25%" />
+
+You can check the status of **Global Keyspace** verification by using the **Keyspace** screen. After submitting the form, you will see the status as **In Review**.
+
+![Mainnet Global keyspace in review](/img/an_db_global_keys_inreview.png){.an-screenshots}
+
+The status will change to **Approved** once verification is complete. You can integrate your application with the {{config.extra.arcana.sdk_name}} but do not deploy it until the verification is complete. Otherwise, users that log in before verification is complete may see different wallet addresses after the process is complete.
+
+![Mainnet Global keyspace approved](/img/an_db_global_keys_approved.png){.an-screenshots}
+
+
+!!! caution "Configuring the {{config.extra.arcana.wallet_name}}"
+
+      {{config.extra.arcana.sdk_name}} allows developers to manage the app user experience for signing blockchain transactions with {{config.extra.arcana.wallet_name}}. 
+      
+      The user experience with the {{config.extra.arcana.wallet_name}} is configured programmatically through the `alwaysVisible` option. Install the {{config.extra.arcana.sdk_name}} and as part of the integration, add code in the app to create a new `AuthProvider` instance. Specify the appropriate wallet visibility mode via the `alwaysVisible` option. See the [[configure-wallet-visibility|{{config.extra.arcana.wallet_name}} configuration guide]] for details.
+
+!!! info "{{config.extra.arcana.app_address}}"
+
+      The {{config.extra.arcana.app_address}} assigned to your application can be found on the top right of the {{config.extra.arcana.dashboard_name}} screen. ![App Client Identifier](/img/an_db_app_address.png){.an-screenshots}
+
+## Switch Applications
 
 Developers can switch from one application configuration profile screen to another application by using the 'Manage Apps' screen and clicking on the requisite application card. 
 
@@ -139,11 +138,11 @@ Alternatively, you can use the LHS navigation pane in the configuration screen a
 
 ![Switch Application](/img/an_db_switch_application_anim.gif){.an-screenshots}
 
-### Monitor Usage
+## Monitor Usage
 
 Developers can monitor their registered application usage statistics via the {{config.extra.arcana.dashboard_name}}. The *Manage Apps* screen displays the account-level usage metrics. Application-specific usage details are available on the application dashboard screen. 
 
-#### Account Usage Metrics
+### Account Usage Metrics
 
 The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer account. This is an aggregate score across all the applications that are registered for a developer account and configured to use the {{config.extra.arcana.company_name}} Mainnet. Any application using the 'Testnet' are not billed and not included in this overall account usage statistic.
 
@@ -153,7 +152,7 @@ The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer a
 
       The billing data is only applicable for Mainnet usage and will be made available in the forthcoming releases.
 
-#### Usage per Application
+### Usage per Application
 
 {{config.extra.arcana.company_name}} Network maintains per-application usage statistics separately for both the 'Testnet' and 'Mainnet' configuration profiles. 
 
@@ -169,13 +168,13 @@ You can use the dropdown in the top right of the application dashboard screen to
 
 ![Application Usage Stats Mainnet](/img/an_db_app_usage_metrics_mainnet_anim.gif){.an-screenshots}
 
-### Billing
+## Billing
 
 {{config.extra.arcana.company_name}} tracks the Mainnet app usage for every developer account in terms of MAU. Invoices are generated at the end of each month and the chargeable amount is auto-deducted using the payment method configured by the developer in their profile section. See [billing and pricing]({{page.meta.arcana.root_rel_path}}/concepts/billing.md) for details.
 
 To begin using the {{config.extra.arcana.sdk_name}}, the app developers don't need to update the profile details including the billing information. Once the apps consume the free tier of {{config.extra.arcana.company_name}} Mainnet usage, the developer must provide the billing details via the profile section of the {{config.extra.arcana.dashboard_name}}. Otherwise, the registered apps will be suspended and users will not be allowed to log in to any app that is registered using the developer account.
 
-#### Set up Payment Method
+### Set up Payment Method
 
 Click on the user icon on the top right of the {{config.extra.arcana.dashboard_name}} screen. Select **Profile** in the dropdown. 
 
@@ -197,7 +196,7 @@ Developers are required to update the following profile details and then click *
        
        Enter the billing address details and click **Save**. The payment method section is enabled for input only after the billing address details are provided.
 
-#### View Invoices
+### View Invoices
 
 Click on the user icon on the top right of the {{config.extra.arcana.dashboard_name}} screen. Select **Invoices** in the dropdown.
 
@@ -207,7 +206,7 @@ On the **Invoices** page, you will see the details of the current pending dues f
 
 ![Application Usage Stats Mainnet](/img/an_db_invoices_details.png){.an-screenshots}
 
-#### View Billing Notifications
+### View Billing Notifications
 
 Click the bell icon to view all notifications for the developer account. Check the [billing notifications]({{page.meta.arcana.root_rel_path}}/concepts/billing.md#notifications) list for details.
 
@@ -231,14 +230,14 @@ To pay the Arcana Network dues, developers can refer to the 'Estimated Charges' 
 
 -->
 
-### Non-EVM Chains
+## Configure Non-EVM Chains
 
 Use the dashboard to enable [[concept-non-evm-chains|non-EVM chains]] in your Web3 apps. 
 
 * [[solana-dashboard-user-guide|Solana]]
 * Other non-EVM chains *(Coming Soon!)*
 
-### Delete Application
+## Delete Application
 
 To de-register an application the developers must delete the entry using the {{config.extra.arcana.dashboard_name}}. Go to the 'Manage Apps' dashboard page which lists all the registered applications.  
 

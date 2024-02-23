@@ -1,30 +1,20 @@
-Web3 apps can select and enable user onboarding via Twitter by configuring the **Social Auth** settings in the {{config.extra.arcana.dashboard_name}} before integrating the app with the {{config.extra.arcana.sdk_name}}.
+{% include "./text-snippets/config_common_steps.md" %}
 
-!!! warning
+## App-specific Keys
 
-      1. Some of the authentication provider configuration steps are performed using the [Twitter Developer Portal](https://developer.twitter.com/en/apps), whereas the others use the {{config.extra.arcana.dashboard_name}}. After configuring Twitter, simply [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and only then add code in the app to trigger user authentication via Twitter.
+Follow these steps to configure the **Social Auth** settings and enable user onboarding via Twitter. It requires developers to use the {{config.extra.arcana.dashboard_name}} and the [Twitter Developer Account](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api).
 
-      2. {% include "./text-snippets/warn_global_keys_no_social_clientid_setup.md" %}
-      
-## Step 1: Get Redirect URI
+### Step 1: Get Redirect URI  
 
-Go to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
-
-[[configure-auth#step-2-register-application|Register the app]] by creating a new entry using the 'Create New App' wizard. 
-
-!!! tip "Registering App"
-    
-      {% include "./text-snippets/socialauth_add_config.md" %}
-
-Go to the app configuration screen on the {{config.extra.arcana.dashboard_name}} and click **Configure > Social Auth** section in the LHS. Copy the **redirect URI** value displayed on the top RHS. This will be used in the next step to generate Twitter authentication credentials.
+Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet to configure Twitter in the respective configuration profile. Go to **Configure > Social Auth**. Copy the redirect URI shown on the top right.
 
 ![redirect_page](/img/an_dApp_config_redirect_uri.png){.an-screenshots}
 
-Do not close the {{config.extra.arcana.dashboard_name}} browser tab. Open another tab and set up Twitter OAuth. Then come back to the {{config.extra.arcana.dashboard_name}} tab and complete the app configuration.
+Do not close the **Social Auth** browser tab in the {{config.extra.arcana.dashboard_name}}. Open another tab and set up Twitter OAuth.
 
 ## Step 2: Use the Twitter Developer Console
 
-!!! caution
+!!! caution "Twitter Elevated Access Required"
 
       The app developer is required to have a [Twitter Developer Account](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api). To configure and use the Twitter Developer Portal to generate Twitter OAuth credentials, you need to have [Twitter Elevated Access](https://developer.twitter.com/en/docs/twitter-api/getting-started/about-twitter-api#v2-access-level). 
 
@@ -71,14 +61,12 @@ Make sure you save all the settings.
 
       These details will be required in the next step while completing the app configuration using the {{config.extra.arcana.dashboard_name}}.
 
-## Step 3: Update the {{config.extra.arcana.dashboard_name}}
+## Step 3: Update Twitter Social Auth Settings
 
-Revisit the {{config.extra.arcana.dashboard_name}}. View the app configuration screen. Click **Configure > Social Auth** in the LHS navigation bar. Refer to the "Twitter" settings and paste the **API Key** assigned by Twitter, in the previous step. 
+In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth**. Refer to the empty fields next to the "Twitter" setting. Paste the **API Key** assigned by Twitter, in the previous step. 
 
 ![Copy Client ID](/img/an_dApp_twitter_config.png){.an-screenshots}
 
-Save the settings. {{config.extra.arcana.company_name}} assigns an **{{config.extra.arcana.app_address}}** to every registered app. You need to save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}. 
+Save the **Social Auth** settings. 
 
-![App Identifier](/img/an_db_app_address.png){.an-screenshots}
-
-*You are all set with the Twitter configuration. [[index-integrate-app|Integrate the Web3 app]] with the {{config.extra.arcana.sdk_name}}, [[index-onboard-users|onboard users]] and enable the authenticated users to sign blockchain transactions. See [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] for details.*
+*You are all set with the Twitter configuration!*

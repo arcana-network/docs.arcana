@@ -57,12 +57,14 @@ After providing all the required inputs, click **Create** to register the app.
 
 ![Register dApp](/img/an_db_create_newapp_anim.gif){.an-screenshots}
 
-After registration, the app dashboard shows Testnet usage stats for the newly registered app. By default, the app is set for Testnet use, and a unique {{config.extra.arcana.app_address}} is assigned for the Testnet profile. This Testnet {{config.extra.arcana.app_address}} restricts the app deployment to the{{config.extra.arcana.company_name}} Testnet. 
-
-Click **Configure** in the  LHS menu to view and edit {{config.extra.arcana.product_name}} usage configuration settings.
+A newly registered app dashboard displays Testnet configuration settings. A unique {{config.extra.arcana.app_address}} is assigned for the Testnet profile. Developer can deploy the app on the {{config.extra.arcana.company_name}} once SDK usage is configured in the dashboard and app is integrated with the SDK.
 
 ![New app dashboard](/img/an_db_new_app_screen.png){.an-screenshots}
 
 !!! tip "Mainnet Deployment"
 
-      To deploy the app on Arcana Mainnet, the developers must create the Mainnet configuration profile, and obtain the {{config.extra.arcana.app_address}} associated with the Mainnet profile. Use this new {{config.extra.arcana.app_address}} to integrate the app with the {{config.extra.arcana.product_name}}. Only then the app can be deployed on the Arcana Mainnet. For details, see [[migrate-app-testnet-mainnet|Testnet > Mainnet Migration Guide]] 
+      To deploy the app on the {{config.extra.arcana.company_name}} Mainnet, developers need to create a Mainnet configuration profile and obtain a different {{config.extra.arcana.app_address}}. Update the integration code with this Mainnet {{config.extra.arcana.app_address}}. This step is necessary to deploying the app on the {{config.extra.arcana.company_name}} Mainnet. 
+      
+      For more information, refer to the [[migrate-app-testnet-mainnet|Testnet > Mainnet Migration Guide]].
+
+Click **Configure** in the  LHS menu to view and edit the configuration settings.
