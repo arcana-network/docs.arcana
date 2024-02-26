@@ -130,7 +130,7 @@ Fiat on-ramping allows {{config.extra.arcana.wallet_name}} users to **buy** cryp
 
 {% include "./text-snippets/fiat_on_ramp_providers.md" %}
 
-Users can buy ERC20, and ERC721 tokens specific to the app or native tokens for a supported blockchain. Purchased tokens are deposited in the {{config.extra.arcana.wallet_name}} address and the balance amount is automatically updated.
+Users can purchase ERC20 or native tokens for supported blockchains from the chosen on-ramp provider. The {{config.extra.arcana.wallet_name}} balance updates automatically after the transaction completes.
 
 Select the 'Tokens' <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> tab in the {{config.extra.arcana.wallet_name}}. Select one of the chains from the drop-down list of pre-configured blockchain networks. This choice will govern what cryptocurrencies and tokens can be purchased, subject to local country-specific rules.
 
@@ -142,9 +142,7 @@ You will see the list of available fiat on-ramp providers:
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_onramp_providers.png" width="35%"/>
 
-Pick up one of the providers and click **Proceed**. 
-
-This will bring up the provider-specific user interface in a new browser tab. Complete the process on the provider's website. The {{config.extra.arcana.wallet_name}} screen will display a notification regarding the initiation of the 'buy' process. You can dismiss it and continue to use the wallet while the buying process is underway in a different browser tab.
+Pick up one of the providers and click **Proceed**. Clicking will open the provider-specific interface in a new tab. {{config.extra.arcana.wallet_name}} will notify you of the 'buy' process. Dismiss it and continue to use the wallet while the crypto purchase happens in parallel on another tab on the provider's site.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_onramp_provider_select.png" width="35%"/>
 
@@ -168,7 +166,7 @@ Fiat off-ramping allows {{config.extra.arcana.wallet_name}} users to **sell** cr
 
 {% include "./text-snippets/fiat_off_ramp_providers.md" %}
 
-Users can sell ERC20 and ERC721 tokens specific to the app or native cryptocurrency for a supported blockchain displayed in the wallet. The provider takes care of the actual sale transaction. The user initiates the 'sell' transaction using the {{config.extra.arcana.wallet_name}}. The provider is responsible for depositing the sale proceeds into the specified user bank account. After the provider completes the transaction, the {{config.extra.arcana.wallet_name}} will automatically display the updated balance. 
+Users can initiate ERC20 tokens or native cryptocurrency sell transactions for supported blockchains via {{config.extra.arcana.wallet_name}}. The chosen off-ramp provider executes the 'sell' and deposits proceeds into the configured bank account. The {{config.extra.arcana.wallet_name}} updates the balance automatically when the transaction completes.
 
 Click the 'Tokens' <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> tab in the {{config.extra.arcana.wallet_name}}. Select one of the chains from the drop-down list of pre-configured blockchain networks. This choice will govern what cryptocurrencies and tokens can be sold, subject to local country-specific rules.
 
@@ -176,13 +174,13 @@ Click **Sell** to initiate the fiat off-ramp process through the {{config.extra.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_offramp_sell.png" width="35%"/>
 
-You will see the list of available fiat off-ramp providers:
+The list of available fiat off-ramp providers is displayed:
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_offramp_providers.png" width="35%"/>
 
 Pick up one of the providers and click **Proceed**.
 
-This will bring up the provider-specific user interface in a new browser tab. Complete the process on the provider's website. The {{config.extra.arcana.wallet_name}} screen will display a notification regarding initiating the 'sell' process. You can dismiss it and continue to use the wallet in a different browser tab while the selling process is underway.
+Clicking opens the provider-specific interface in a new tab. Proceed on the provider site to sell. {{config.extra.arcana.wallet_name}} notifies you of the 'sell' initiation. Dismiss it and resume wallet use in another tab; selling happens in parallel at the provider site.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_offramp_provider_select.png" width="35%"/>
 
