@@ -550,8 +550,6 @@ authplugnplay
 authsdk
 authsdkref
 autoRedirect
-backend
-backends
 blockchain
 blockchain-powered
 blockchains
@@ -672,6 +670,7 @@ dataclass
 dataprivacy
 datasovereignty
 datatypes
+db-error-msg
 db_chlog
 de-register
 decrypt
@@ -750,6 +749,7 @@ fontawesome-solid-desktop
 fontawesome-solid-file-contract
 fontawesome-solid-file-signature
 fontawesome-solid-gears
+fontawesome-solid-infinity
 fontawesome-solid-magnifying-glass-dollar
 fontawesome-solid-mobile
 fontawesome-solid-mobile-screen
@@ -767,6 +767,7 @@ format_signmsg
 frictionless
 gRPC
 gasless
+gasless-architecture
 gasless-enabled
 gasless-overview
 gasless-quick-start
@@ -1021,6 +1022,7 @@ index-custom-ui-onboard-users
 index-dev-guides
 index-dev-resources
 index-dkg
+index-err-msg
 index-evm-web3-wallet-ops
 index-faq
 index-howto-guides
