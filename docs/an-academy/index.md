@@ -12,7 +12,7 @@ arcana:
 
 [[index-about-auth| About {{config.extra.arcana.product_name}} :material-bookshelf:]]{ .md-button }
 
-[[auth-architecture| Architecture :fontawesome-solid-users-gear:]]{ .md-button }
+[[index-architecture| Architecture :fontawesome-solid-users-gear:]]{ .md-button }
 
 [[index-user-flows|Usage Flows :material-clipboard-flow-outline:]]{ .md-button }
 

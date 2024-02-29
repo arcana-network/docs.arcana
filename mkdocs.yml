@@ -333,7 +333,10 @@ nav:
       - Why Arcana Auth?: why-arcana-auth.md
       - How to Use Auth?: how-to-use-auth.md
       - Web3 Auth Use Cases: use-cases.md
-    - Architecture: auth-architecture.md
+    - Architecture: 
+      - architecture/index.md
+      - Auth: auth-architecture.md
+      - Gasless: gasless-architecture.md
     - Usage Flows: 
       - user-flows/index.md
       - User Auth and DKG: user-flows/user-auth-and-dkg.md

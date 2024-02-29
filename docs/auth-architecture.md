@@ -6,44 +6,45 @@ arcana:
   root_rel_path: .
 ---
 
-# Architecture
+# Architecture: Auth
 
 [{{config.extra.arcana.company_name}} Technical White Paper Ref]: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
 
-The {{config.extra.arcana.sdk_name}} integrates with the Web3 apps and allows the developers to quickly build user onboarding and Web3 wallet functionality in their apps. In this guide, we'll explain how it does this by looking at its inner workings of the {{config.extra.arcana.product_name}} product.
+{{config.extra.arcana.sdk_name}} allows Web3 app developers to onboard app users at scale using social and passwordless login. Authenticated users can instantly access the embedded, non-custodial {{config.extra.arcana.wallet_name}} from within the app's context. Developers can whitelist app operations and enable gasless transactions through the {{config.extra.arcana.wallet_name}} or third-party wallets.
 
-## Overview
+Here is a high-level overview of the technical architecture and components that power the {{config.extra.arcana.sdk_name}}.
 
-The {{config.extra.arcana.product_name}} components work on the principles of privacy by design and are built using distributed state-of-the-art cryptographic algorithms. 
+## Auth Components
 
-The figure below gives a high-level overview of how the developer registers and integrates an app with the {{config.extra.arcana.sdk_name}} to enable user onboarding and signing of blockchain transactions by authenticated users.
+* [[concept-arcana-dashboard|{{config.extra.arcana.dashboard_name}}]]
+* [[concept-gateway-node|{{config.extra.arcana.company_name}} Gateway]]
+* [[concept-authsdk|{{config.extra.arcana.sdk_name}}]]
+* [[concept-adkg|Asynchronous Distributed Key Generation (ADKG)]]
+* {{config.extra.arcana.company_name}} Auth protocol (Back-end Subsystem)
 
-![How {{config.extra.arcana.company_name}} Works (Top level)](/img/how-an-works-top-light.svg#only-light)
-![How {{config.extra.arcana.company_name}} Works (Top level)](/img/how-an-works-top-dark.svg#only-dark)
+![Auth Components](/img/an-auth-components-light.png#only-light)
+![Auth Components](/img/an-auth-components-dark.png#only-dark)
 
-## Architectural Components
+### {{config.extra.arcana.dashboard_name}}
 
-{{config.extra.arcana.product_name}} offers two key components, the {{config.extra.arcana.dashboard_name}} and the {{config.extra.arcana.sdk_name}}. 
+{{config.extra.arcana.dashboard_name}} is the user interface offered to Web3 app developers for registering an app and configuring the social providers and gasless transaction usage settings as per the app requirements. 
 
-Web3 app developer can use the {{config.extra.arcana.dashboard_name}} to register and configure the {{config.extra.arcana.sdk_name}} usage before integrating it with the app. Once integrated, and deployed, the app users can easily onboard the app using one of the configured authentication providers. Authenticated users can instantly access the embedded, non-custodial {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
+### {{config.extra.arcana.company_name}} Gateway
 
-![Architectural Components](/img/an-arch-components-light.svg#only-light)
-![Architectural Components](/img/an-arch-components-dark.svg#only-dark)
+The Gateway is one of the key back-end components that works with the {{config.extra.arcana.dashboard_name}} as well as the SDK integrated with the app. It is responsible for storing and managing SDK usage configuration details for various apps and manages developer accounts, app usage and billing, etc. 
 
-| Component   | Purpose           | Functions                                  |
-| :---        | :---              | :---                                       |
-| [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md)   | Configure the {{config.extra.arcana.sdk_name}} usage  | Register Web3 app with {{config.extra.arcana.company_name}}, configure user onboarding options, configure the {{config.extra.arcana.wallet_name}} user experience    |
-| [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md)      | Simplify user onboarding and signing blockchain transactions  | Social authentication, passwordless login, standard Ethereum provider interface via the embedded, non-custodial {{config.extra.arcana.wallet_name}} |
+All transactions initiated by the {{config.extra.arcana.wallet_name}} are processed via the Gateway. It also handles gasless transactions for the {{config.extra.arcana.wallet_name}}.
 
-You can also check out various [[index-user-flows|control flows]] for user authentication and key management functions.
+### {{config.extra.arcana.sdk_name}}
 
-Besides these components, the {{config.extra.arcana.product_name}} has an internal component called [[concept-gateway-node|Gateway Node]] that is utilized for managing application configuration settings and communicating with the [{{config.extra.arcana.company_name}} smart contracts]({{page.meta.arcana.root_rel_path}}/concepts/ansmartc/index.md).
+The {{config.extra.arcana.sdk_name}} integrates with the app and enables user onboarding through social providers, passwordless login. It also enables Web3 operations through the embedded {{config.extra.arcana.wallet_name}}. 
 
-Another internal component that is critical to user onboarding and signing blockchain transactions is the  [Asynchronous DKG]({{page.meta.arcana.root_rel_path}}/concepts/dkg/index.md) module. It is a decentralized component and there are trusted partners that act as DKG validators by owning and running some of the DKG [[concept-validator-nodes|Validator Nodes]] that help in distributed key generation.
+### Asynchronous Distributed Key Generation (ADKG)
 
-The figure below shows how the internal components interact with each other.
+A core back-end component that generates and manages key shares securely. It works with the SDK integrated with the app to securely dispense key shares. Some of the nodes running ADKG logic are owned by trusted third-party validators. In the future, we plan to make this component fully decentralized.
 
-![Component Interactions](/img/an-component-interactions-light.svg#only-light)
-![Component Interactions](/img/an-component-interactions-dark.svg#only-dark)
+### {{config.extra.arcana.company_name}} Auth protocol (Back-end Subsystem)
 
-For more technical details about the {{config.extra.arcana.product_name}}, see [{{config.extra.arcana.company_name}} Technical White paper][{{config.extra.arcana.company_name}} Technical White Paper Ref].
+This refers to a bunch of entities in the back-end that implement the core system logic and algorithms on blockchain using [{{config.extra.arcana.company_name}} smart contracts]({{page.meta.arcana.root_rel_path}}/concepts/ansmartc/index.md).
+
+See [{{config.extra.arcana.company_name}} Technical White paper][{{config.extra.arcana.company_name}} Technical White Paper Ref] for details.
