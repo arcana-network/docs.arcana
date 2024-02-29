@@ -57,7 +57,7 @@ After providing all the required inputs, click **Create** to register the app.
 
 ![Register dApp](/img/an_db_create_newapp_anim.gif){.an-screenshots}
 
-A newly registered app dashboard displays Testnet configuration settings. A unique {{config.extra.arcana.app_address}} is assigned for the Testnet profile. Developer can deploy the app on the {{config.extra.arcana.company_name}} once SDK usage is configured in the dashboard and app is integrated with the SDK.
+A newly registered app is assigned a default Testnet configuration profile, displaying these Testnet settings in the dashboard. A unique {{config.extra.arcana.app_address}} is assigned for the Testnet profile. The developer can deploy the app on the {{config.extra.arcana.company_name}} Testnet once SDK usage is configured in the dashboard and the app is integrated with the SDK.
 
 ![New app dashboard](/img/an_db_new_app_screen.png){.an-screenshots}
 
