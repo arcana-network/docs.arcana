@@ -58,6 +58,7 @@ nav:
         - audit/index.md
         - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
         - Arcana ADKG: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20230228T054948Z.pdf
+        - Arcana Paymaster Contract: https://github.com/arcana-network/audit-reports/blob/main/Arcana_PayMaster_Final_Report.pdf
       - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
       - Privacy: legal/PRIVACY.pdf
       - Terms of Use: legal/TERMS.pdf
@@ -333,7 +334,10 @@ nav:
       - Why Arcana Auth?: why-arcana-auth.md
       - How to Use Auth?: how-to-use-auth.md
       - Web3 Auth Use Cases: use-cases.md
-    - Architecture: auth-architecture.md
+    - Architecture: 
+      - architecture/index.md
+      - Auth: auth-architecture.md
+      - Gasless: gasless-architecture.md
     - Usage Flows: 
       - user-flows/index.md
       - User Auth and DKG: user-flows/user-auth-and-dkg.md
@@ -592,6 +596,22 @@ plugins:
       enable_checks: false
       min_length: 50
       max_length: 160
+  - git-authors:
+      show_email_address: false
+  - git-revision-date-localized
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: fade
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - an-screenshots-noeffects
+      auto_caption: true
+      caption_position: bottom
   - redirects:
       redirect_maps:
         'introduction.md': 'intro/index.md'
@@ -689,19 +709,3 @@ plugins:
         'docs/conceptnftviewer/index.md': 'support.md'
         'docs/category/using-arcana-wallet/index.md': 'support.md'
         'docs/quick-start/web-apps-quick-start.md': 'quick-start/web/index.md'
-  - git-authors:
-      show_email_address: false
-  - git-revision-date-localized
-  - glightbox:
-      touchNavigation: true
-      loop: false
-      effect: zoom
-      slide_effect: fade
-      width: 100%
-      height: auto
-      zoomable: true
-      draggable: true
-      skip_classes:
-        - an-screenshots-noeffects
-      auto_caption: true
-      caption_position: bottom

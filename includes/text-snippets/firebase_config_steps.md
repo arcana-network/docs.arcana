@@ -1,34 +1,10 @@
-Web3 apps that use Firebase for user authentication can enable authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}. This requires configuring Firebase before integrating the app with the {{config.extra.arcana.sdk_name}}.
+{% include "./text-snippets/config_common_steps.md" %}
 
-!!! warning
+## App-specific Keys
 
-      1. Some of the authentication provider configuration steps are performed using the [Firebase Console](https://console.firebase.google.com/), whereas the others use the {{config.extra.arcana.dashboard_name}}. After configuring Firebase, simply [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and only then add code in the app to use the {{config.extra.arcana.sdk_name}} functions for enabling authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}.
+Follow these steps to configure the **Social Auth** settings and enable user onboarding via Firebase. It requires developers to use the {{config.extra.arcana.dashboard_name}} and the [Firebase Console](https://console.firebase.google.com/).
 
-      2. {% include "./text-snippets/warn_global_keys_no_social_clientid_setup.md" %}
-
-## Step 1: Register the App
-
-Go to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
-
-[[configure-auth#step-2-register-application|Register the app]] by creating a new entry using the 'Create New App' wizard. 
-
-!!! tip "Registering App"
-          
-      {% include "./text-snippets/socialauth_add_config.md" %}
-
-Use defaults for configuration settings or edit them as per the app requirements. See the [[configure-auth|How to configure an app]] guide for details.
-
-<!---
-Go to the app configuration screen on the {{config.extra.arcana.dashboard_name}} and click **Configure > Social Auth** section in the LHS. Copy the **redirect URI** value displayed on the top RHS. This will be used in the next step to configure Firebase.
-
-
-![redirect_page](/img/an_dApp_config_redirect_uri.png){.an-screenshots}
-
--->
-
-Do not close the {{config.extra.arcana.dashboard_name}} browser tab. Open another tab and access the Firebase console. Later, come back to the {{config.extra.arcana.dashboard_name}} tab and complete the app configuration settings.
-
-## Step 2: Firebase Console
+### Step 1: Get Firebase Project ID
 
 Go to the [Firebase Console](https://console.firebase.google.com), and create a new project for the app that requires enabling Firebase login.
 
@@ -46,17 +22,15 @@ Follow the on-screen instructions to add and initialize the Firebase SDK in your
 
 You will be required to access the Firebase services such as authentication in your app. That requires you to install and configure the Firebase SDK before integrating the app with the {{config.extra.arcana.sdk_name}}.
 
-## Step 3: Update {{config.extra.arcana.dashboard_name}}
+### Step 2: Update Firebase Social Auth Settings
 
-Revisit the {{config.extra.arcana.dashboard_name}}. Click on the app entry and visit the application dashboard. Click **Configure > Social Auth** section in the LHS navigation bar. Paste the **Project ID** assigned by Firebase Console in the 'Firebase' field. 
+Go to the {{config.extra.arcana.dashboard_name}}. Click **Configure > Social Auth** and refer to the IAM section. Click **Firebase**. Paste the **Project ID** assigned by Firebase Console in the 'Project ID' field. 
 
 ![howto_config_firebase](/img/an_firebase_console_config.png){.an-screenshots}
 
-Save the settings. {{config.extra.arcana.company_name}} assigns a unique **{{config.extra.arcana.app_address}}** to every registered app. Save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}.
+Save the **Social Auth** settings. 
 
-![Client ID](/img/an_db_app_address.png){.an-screenshots}
-
-*You are all set with the Firebase configuration. Next, [[index-integrate-app|integrate the Web3 app]] with the {{config.extra.arcana.sdk_name}} and enable the authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}. See [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] for details.*
+*You are all set with the Firebase configuration!*
 
 !!! warning "Plug-and-play login feature not supported for Firebase"
 

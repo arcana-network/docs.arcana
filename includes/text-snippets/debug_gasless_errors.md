@@ -21,7 +21,7 @@
       0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789
     ==}
   
-    This is the address of the EntryPoint for the Biconomy bundler used by the Arcana Auth backend subsystem that supports the gasless feature.
+    This is the address of the EntryPoint for the Biconomy bundler used by the Arcana Auth back-end subsystem that supports the gasless feature.
 
     ![Gasless Errors 4](/img/an_debug_tenderly_entrypoint_address.png){.an-screenshots}
 

@@ -1,1 +1,13 @@
-When utilizing [[concept-keyspace-type|global keys]] in the Mainnet configuration profile, developers do not need to configure the social login section in the {{config.extra.arcana.dashboard_name}} or set up provider-specific OAuth settings to obtain a clientID. If you are using a copy of the Testnet configuration profile as the Mainnet configuration profile, remove the Social Auth section settings altogether. *Simply use the {{config.extra.arcana.company_name}} assigned {{config.extra.arcana.app_address}} for integrating the app with the {{config.extra.arcana.sdk_name}}.*
+Apps that require [[concept-keyspace-type|global keys]] feature **do not need to configure the Social Auth settings** in the {{config.extra.arcana.dashboard_name}}.
+
+User onboarding via {{page.meta.arcana.social_provider}} is automatically turned on for the app when global keys are enabled.
+
+![Global Keys Setting](/img/an_config_global_key_setting.png){ .width_50pc }
+
+!!! caution
+
+      In the earlier versions of the {{config.extra.arcana.sdk_name}}, apps using **global keys** were required to configure **Social Auth** settings for the providers. This behavior has changed in the latest release of the {{config.extra.arcana.sdk_name}}. 
+
+      If an app was configured for any social login providers and switches over from app-specific to global keyspace later, the **Social Auth** settings will be disabled altogether.
+
+      ![Global Keys, Social Auth Settings Disabled](/img/an_config_global_key_social_auth_disabled.png){ .width_50pc }

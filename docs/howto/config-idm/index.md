@@ -21,6 +21,4 @@ arcana:
 
 -->
 
-!!! warning "Apps using Custom IAM Providers"
-
-      {% include "./text-snippets/warn_cognito_social_provider_setup.md" %}   
+{% include "./text-snippets/warn_cognito_social_provider_setup.md" %}   

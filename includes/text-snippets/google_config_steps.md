@@ -1,28 +1,18 @@
-Web3 apps can select and enable user onboarding via Google by configuring the **Social Auth** settings in the {{config.extra.arcana.dashboard_name}} before integrating the app with the {{config.extra.arcana.sdk_name}}.
+{% include "./text-snippets/config_common_steps.md" %}
 
-!!! warning
+## App-specific Keys
 
-      1. Some of the authentication provider configuration steps are performed using the Google Console, whereas the others use the {{config.extra.arcana.dashboard_name}}. After configuring Google, simply [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and only then add code in the app to trigger user authentication via Google.
+Follow these steps to configure the **Social Auth** settings and enable user onboarding via Google. It requires developers to use the {{config.extra.arcana.dashboard_name}} and the [Google Cloud Console](http://console.cloud.google.com/apis/credentials).
 
-      2. {% include "./text-snippets/warn_global_keys_no_social_clientid_setup.md" %}
-      
-## Step 1: Get Redirect URI
+### Step 1: Get Redirect URI 
 
-Go to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
-
-[[configure-auth#step-2-register-application|Register the app]] by creating a new entry using the 'Create New App' wizard. 
-
-!!! tip "Registering App"
-
-      {% include "./text-snippets/socialauth_add_config.md" %}
-
-Go to the app configuration screen on the {{config.extra.arcana.dashboard_name}} and click **Configure > Social Auth** section in the LHS. Copy the **redirect URI** value displayed on the top RHS. This will be used in the next step to generate Google Client ID.
+Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet to configure Google in the respective configuration profile.  Go to **Configure > Social Auth**. Copy the redirect URI shown on the top right.
 
 ![redirect_page](/img/an_dApp_config_redirect_uri.png){.an-screenshots}
 
-Do not close the {{config.extra.arcana.dashboard_name}} browser tab. Open another tab and continue with the next step. Then come back to the {{config.extra.arcana.dashboard_name}} tab and complete Google Client ID settings.
+Do not close the **Social Auth** browser tab in the {{config.extra.arcana.dashboard_name}}. Open another tab to access the Google Cloud Console and configure Google OAuth. 
 
-## Step 2: Google Developer Console
+### Step 2: Get Google ClientID
 
 Go to the [Google Cloud Console](http://console.cloud.google.com/apis/credentials). Create a new OAuth 2.0 credential for your dApp.
 
@@ -44,14 +34,12 @@ Complete the steps in Google Cloud Console for creating a new OAuth 2.0 credenti
 
 Save the **Client ID** assigned by Google. It will be required in the next step.
 
-## Step 3: Update the {{config.extra.arcana.dashboard_name}}
+### Step 3: Update Google Social Auth Settings
 
-Revisit the {{config.extra.arcana.dashboard_name}}. Click on the app entry and visit the application configuration screen. Click **Configure > Social Auth** in the LHS navigation bar. Refer to the "Google" settings and paste the **Client ID** assigned by Google Cloud Console in the previous step. 
+In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth**. Refer to the empty fields next to the "Google" setting. Paste the Google **Client ID** copied in the previous step. 
 
 ![howto_google_auth_type](/img/an_dApp_google_config.png){.an-screenshots}
 
-Save the settings. {{config.extra.arcana.company_name}} assigns a **{{config.extra.arcana.app_address}}** to every registered app. You need to save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}.
+Save the **Social Auth** settings. 
 
-![App Identifier](/img/an_db_app_address.png){.an-screenshots}
-
-*You are all set with the Google configuration. [[index-integrate-app|Integrate the Web3 app]] with the {{config.extra.arcana.sdk_name}}, [[index-onboard-users|onboard users]] and enable the authenticated users to sign blockchain transactions. See [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] for details.*
+*You are all set with the Google configuration!*

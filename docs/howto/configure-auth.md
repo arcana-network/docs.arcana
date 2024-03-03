@@ -4,6 +4,7 @@ title: 'Register & Configure App for using Auth SDK'
 description: 'Register and obtain a unique clientId. This clientId value is used to integrate the app with the Auth SDK. Use the dashboard to configure auth settings.'
 arcana:
   root_rel_path: ..
+  social_provider: "supported social login and custom IAM providers"
 ---
 
 # Register & Configure App
