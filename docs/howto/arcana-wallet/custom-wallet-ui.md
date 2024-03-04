@@ -87,24 +87,22 @@ const provider = new ethers.providers.Web3Provider(arcanaProvider)
 // Call ethers provider APIs see https://docs.ethers.org/v5/api/providers/provider/ for details
 await provider.getBlockNumber()
 
-// Use the Arcana provider to sign transactions using JSON RPC calls
+// Use the Arcana provider to sign a message using JSON RPC calls
 
-async function signTransaction() {
+async function signMessage() {
 
-  // Display a notification in custom wallet UI  showing the transaction details and seeking user's approval
+  // Display a notification in custom wallet UI  showing the message details and seeking user's approval
 
   ...
 
   // Once user approves, issue the request via the Arcana Auth SDK to sign transaction
 
   const { sig } = await arcanaProvider.request({
-    method: 'eth_signTransaction',
+    method: 'eth_sign',
     params: [
       {
         from, // sender account address
-        gasPrice: 0,
-        to: '0xE28F01Cf69f27Ee17e552bFDFB7ff301ca07e780', // receiver account address
-        value: '0x0de0b6b3a7640000',
+        data: 'Some message data',
       },
     ],
   })

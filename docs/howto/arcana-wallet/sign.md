@@ -26,11 +26,11 @@ Make sure you have addressed the prerequisites before adding code to invoke any 
 
 {% include "./code-snippets/auth_json_rpc_setup.md" %}
 
-## Sign Transaction
+## Sign Message
 
-{% include "./code-snippets/auth_sign_transaction.md" %}
+{% include "./code-snippets/auth_sign.md" %}
 
-The following figure shows how the {{config.extra.arcana.wallet_name}} displays the details of a blockchain sign transaction request and asks the user to approve or reject it:
+The following figure shows how the {{config.extra.arcana.wallet_name}} displays the details of a message sign request and asks the user to approve or reject it:
 
 <img src="/img/an_wallet_sign.png" width="300"/>
 
@@ -40,7 +40,7 @@ The following figure shows how the {{config.extra.arcana.wallet_name}} displays 
 
 ## What's Next?
 
-After registering the app, configuring authentication providers, integrating the {{config.extra.arcana.sdk_name}} with the app and onboarding users, developers can further add code in the app to sign blockchain transactions, send and receive native, ERC20, or custom tokens, and other [[index-web3-wallet-ops|Web3 wallet operations]].
+After registering the app, configuring authentication providers, integrating the {{config.extra.arcana.sdk_name}} with the app, and onboarding users, developers can further add code in the app to sign blockchain transactions, send and receive native ERC20, or custom tokens, and other [[index-web3-wallet-ops|Web3 wallet operations]].
 
 For a complete list of other JSON RPC calls supported by the {{config.extra.arcana.wallet_name}}, see [JSON-RPC Specifications](https://ethereum.github.io/execution-apis/api-documentation/).
 
