@@ -17,3 +17,6 @@ arcana:
 [[integrate-gasless-app|Gasless App :material-gas-station-off:]]{ .md-button }
 
 [[integrate-solana-app|Solana App :simple-bookstack:]]{ .md-button }
+
+[[integrate-unity-app|Unity App :simple-unity:]]{ .md-button }
+

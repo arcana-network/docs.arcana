@@ -126,7 +126,7 @@ Make sure that you specify the unique client ID assigned to the app during regis
     // For getting logged in user info
     const getUserInfo = async () => {
       if(authRef !== null){
-        return authRef.current.getUser();
+        return authRef.current.getUserInfo();
       }
     };
 
@@ -224,7 +224,7 @@ By default, when an app is registered, a 'Testnet' configuration profile is asso
 
 !!! tip "Testnet > Mainnet"
 
-      If you have deployed your Unity app on Arcana Testnet and are looking to migrate it on the Mainnet, see [[migrate-app-testnet-mainnet|Testnet > Mainnet Migration Guide]].
+      If you have deployed your React-Native app on Arcana Testnet and are looking to migrate it on the Mainnet, see [[migrate-app-testnet-mainnet|Testnet > Mainnet Migration Guide]].
 
 That is all! :material-party-popper:
 

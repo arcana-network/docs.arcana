@@ -12,5 +12,5 @@
       | Auth React Native SDK | Mobile apps built using React Native | `{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}` | None |
       | Auth-Core SDK | Auth SDK for custom wallet UI and access to private keys | `{{config.extra.arcana.auth_core_sdk_pkg_name}}` | None |
      | Gasless SDK | Enables gasless transactions in third-party browser-based wallets. Operates independently of Auth SDK. | `{{config.extra.arcana.gasless_sdk_pkg_name}}` | None |
-      | Auth Unity SDK | Gaming apps built using Unity | [[arcana-coming-soon|*Coming soon!*]] | None |
+      | Auth Unity SDK | Gaming apps built using Unity |   `{{config.extra.arcana.gaming_sdk_pkg_name}}`| None |
 

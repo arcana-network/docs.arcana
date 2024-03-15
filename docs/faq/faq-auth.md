@@ -68,11 +68,11 @@ toc_depth: 2
 
       Yes. See [[concept-index-auth-type|Arcana JWT Token]] for details.
 
-??? an-faq "For Twitter, the `getUserInfo()` function of the `AuthProvider` does not always return user's email?"
+??? an-faq "For Twitter, the `getUser()` function of the `AuthProvider` does not always return user's email?"
 
-      You can create a Twitter account using your phone number without needing to provide an email address. If you do this, the getUserInfo() function won't give you the user's email address.
+      You can create a Twitter account using your phone number without needing to provide an email address. If you do this, the getUser() function won't give you the user's email address.
 
-      However, web3 app developers have the [option to configure settings on the Twitter developer dashboard](https://developer.twitter.com/en/docs/twitter-api/v1/accounts-and-users/manage-account-settings/api-reference/get-account-verify_credentials#:~:text=Request%20a%20User's%20Email%20Address,email%20address%20access%20to%20function) to request users' email addresses. If they do this, {{config.extra.arcana.sdk_name}} can access and retrieve the user's email through Twitter, and it will be included in the result when you use the getUserInfo() function.
+      However, web3 app developers have the [option to configure settings on the Twitter developer dashboard](https://developer.twitter.com/en/docs/twitter-api/v1/accounts-and-users/manage-account-settings/api-reference/get-account-verify_credentials#:~:text=Request%20a%20User's%20Email%20Address,email%20address%20access%20to%20function) to request users' email addresses. If they do this, {{config.extra.arcana.sdk_name}} can access and retrieve the user's email through Twitter, and it will be included in the result when you use the getUser() function.
 
 ## {{config.extra.arcana.wallet_name}}
 

@@ -22,7 +22,7 @@ arcana:
       
       There is **no enhanced wallet security  (MFA)** or key recovery when the user switches devices.
 
-## Overview
+Follow these steps to begin using the {{config.extra.arcana.product_name}} product:
 
 The {{config.extra.arcana.auth_core_sdk_name}} is meant for implementing Web3 app solutions where developers need to securely assign blockchain access keys, the **private keys** to every authenticated user, and build a custom wallet UI instead of using the one built-in the {{config.extra.arcana.sdk_name}}.
 

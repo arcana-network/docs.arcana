@@ -21,6 +21,8 @@ After integration, the Web3 apps can add code to onboard users via the configure
 
 [[solana-user-onboarding|Solana App :simple-bookstack:]]{ .md-button }
 
+[[unity-user-onboarding|Unity App :simple-unity:]]{ .md-button }
+
 !!! tip  "Auto-Reconnect Enhancement"
 
      Earlier, the {{config.extra.arcana.dashboard_name}} SDK did not allow apps to use third-party cookies to facilitate easy user re-login. Now developers can use `canReconnect` and `reconnect` functions of the `AuthProvider` within a 30-min window of the user-logout action. This will allow users to automatically reconnect without re-authentication. See [`canReconnect`](https://authsdk-ref-guide.netlify.app/classes/authprovider#canReconnect) and [`reconnect`](https://authsdk-ref-guide.netlify.app/classes/authprovider#reconnect) for details.

@@ -1,0 +1,1 @@
+Download the [{{config.extra.arcana.gaming_sdk_name}}](https://github.com/NalikeTalha/arcana_unity_sdk/releases/tag/ArcanaSDKv1.0.0). Unzip the contents and copy them to the **Assets** folder of the Unity Project.

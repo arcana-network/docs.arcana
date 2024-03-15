@@ -20,7 +20,7 @@ Developers must install the appropriate {{config.extra.arcana.sdk_name}} package
 
 {% include "./code-snippets/auth_install.md" %}
 
-#### React/NextJS Apps
+#### React/Next.js Apps
 
 {% include "./code-snippets/auth_react_install.md" %}
 
@@ -41,6 +41,12 @@ Developers must install the appropriate {{config.extra.arcana.sdk_name}} package
 #### React-Native Apps
 
 {% include "./code-snippets/auth_react_native_install.md" %}
+
+### Gaming Apps
+
+#### Unity Framework
+
+{% include "./code-snippets/auth_unity_install.md" %}
 
 ## {{config.extra.arcana.gasless_sdk_name}}
 

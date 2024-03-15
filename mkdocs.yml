@@ -1,4 +1,4 @@
-site_name: Documentation
+site_name: Docs
 
 # For dev
 #site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
@@ -47,6 +47,7 @@ nav:
           - React-Native Apps: quick-start/react-native-quick-start.md
         - Gasless Apps: quick-start/gasless-quick-start.md
         - Solana Apps: quick-start/solana-quick-start.md
+        - Unity Apps: quick-start/unity-quick-start.md
         - MultiversX Apps: quick-start/mvx-quick-start.md
       - Auth-Core SDK: quick-start/auth-core-quick-start.md
       - Gasless SDK: quick-start/gasless-standalone-quick-start.md
@@ -95,7 +96,6 @@ nav:
           - Solana: db/config-dApp-with-db-for-Solana.md
           - MultiversX: db/config-dApp-with-db-for-mvx.md
         - Gasless: howto/configure-gasless.md
-
     - Integrate SDKs:
       - howto/sdks/index.md
       - Auth:
@@ -115,6 +115,7 @@ nav:
             - Gasless App: howto/integrate-app/gasless.md
             - Solana App: howto/integrate-app/solana.md
             - MultiversX App: howto/integrate-app/mvx.md
+            - Unity App: howto/integrate-app/unity.md
           - Onboard Users: 
             - howto/onboard-users/index.md
             - Vanilla JS App:
@@ -188,6 +189,7 @@ nav:
             - Gasless App: howto/onboard-users/gasless.md
             - Solana App: howto/onboard-users/solana.md
             - MultiversX App: howto/onboard-users/mvx.md
+            - Unity App: howto/onboard-users/unity.md
           - Handle Events: howto/handle-provider-events.md
           - Wallet Ops:
             - wallet-ops/index.md
@@ -209,6 +211,7 @@ nav:
                   - JSON-RPC Ops: howto/arcana-wallet/solana-json-rpc-ops.md
                   - Web3 Wallet Ops: howto/arcana-wallet/solana-wallet-ops.md
                 - MultiversX: howto/arcana-wallet/web3-ops/mvx/index.md
+                - Unity: howto/arcana-wallet/unity-wallet-ops.md
             - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
         - Mobile App:
           - howto/mobile/index.md
@@ -310,6 +313,8 @@ nav:
         - tutorials/code-samples/mobile/index.md
         - Flutter App: tutorials/code-samples/mobile/flutter-sample.md
         - React-Native App: tutorials/code-samples/mobile/react-native-sample.md
+      - Gaming:
+        - Unity App: tutorials/code-samples/gaming/unity-sample.md
     - Examples (GitHub): https://github.com/arcana-network/auth-examples
     - Videos: 
       - tutorials/videos/index.md
@@ -426,7 +431,7 @@ extra:
     latest_auth_wagmi_sdk_version: !ENV [AUTH_WAGMI_SDK_VERSION, '2.0.0']
     latest_auth_flutter_sdk_version: !ENV [AUTH_FLUTTER_SDK_VERSION, '0.0.6']
     latest_auth_react_native_sdk_version: !ENV [AUTH_REACT_NATIVE_SDK_VERSION, '0.0.4']
-    latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_SDK_VERSION, 'Beta-0.3']
+    latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_SDK_VERSION, '1.0.0']
     latest_auth_core_sdk_version: !ENV [AUTH_CORE_SDK_VERSION,'2.0.0-alpha.3']
     latest_gasless_sdk_version: !ENV [GASLESS_SDK_VERSION, '0.0.25']
     auth_sdk_pkg_name: auth
@@ -437,7 +442,7 @@ extra:
     web3_react_sdk_pkg_name: auth-web3-react
     mobile_flutter_sdk_pkg_name: arcana_auth_flutter
     mobile_react_native_sdk_pkg_name: auth-react-native
-    gaming_sdk_pkg_name: ArcanaSDK Unity Assets
+    gaming_sdk_pkg_name: Arcana Unity SDK (ArcanaSDKv1.0.0)
     exclude_content_tag: exclude
   homepage: https://arcana.network
   social:

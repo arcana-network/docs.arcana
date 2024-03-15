@@ -37,9 +37,11 @@ After installing the SDK, follow the detailed step-by-step integration instructi
 
 [[integrate-gasless-app|Gasless App :material-gas-station-off:]]{ .md-button }
 
-[[integrate-solana-app|Solana App :simple-bookstack:]]{ .md-button }
+[[integrate-solana-app|Solana App :simple-solid:]]{ .md-button }
 
-[[integrate-mvx-app|MultiversX App :simple-bookstack:]]{ .md-button }
+[[integrate-mvx-app|MultiversX App :material-infinity:]]{ .md-button }
+
+[[integrate-unity-app|Unity App :simple-unity:]]{ .md-button }
 
 ## Onboard Users
 
@@ -53,9 +55,11 @@ After integration, the Web3 apps can add code to onboard users via the configure
 
 [[gasless-user-onboarding|Gasless App :material-gas-station-off:]]{ .md-button }
 
-[[solana-user-onboarding|Solana App :simple-bookstack:]]{ .md-button }
+[[solana-user-onboarding|Solana App :simple-solid:]]{ .md-button }
 
-[[mvx-user-onboarding|MultiversX App :simple-bookstack:]]{ .md-button }
+[[mvx-user-onboarding|MultiversX App :material-infinity:]]{ .md-button }
+
+[[unity-user-onboarding|Unity App :simple-unity:]]{ .md-button }
 
 ## Handle Events
 
