@@ -1,12 +1,14 @@
 site_name: Documentation
+
 # For dev
-site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
+#site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
 
 # For main
-#site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
+site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
 
-use_directory_urls: false
-# up to here
+# The offline plugin overrides this, disable offline (built-in 9.x, enabled by default)
+
+use_directory_urls: true
 
 site_description: >-
   Web3 app chains - onboarding made easy with Arcana SDKs: Auth, Gasless. Provide instant, non-custodial wallets in your app.
@@ -573,6 +575,8 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   
 plugins:
+  - offline:
+      enabled: !ENV [OFFLINE, false] #should be false for production
   - social:
       enabled: !ENV [SOCIAL_CARDS_META, true]
       cards: !ENV [SOCIAL_CARDS_META, true]
