@@ -19,7 +19,7 @@ arcana:
      *Increase user conversion in Web3 gaming apps with the Arcana Auth Gaming SDK!*
 
      
-     Soon, Web3 gaming apps can onboard users effortlessly through social, custom IAM providers, or passwordless login. Authenticated users can instantly access a fully functional, embedded, non-custodial Web3 wallet within the app context.
+     Soon, Web3 gaming apps can onboard users effortlessly through social, third-party IAM providers, or passwordless login. Authenticated users can instantly access a fully functional, embedded, non-custodial Web3 wallet within the app context.
 
 --->
 

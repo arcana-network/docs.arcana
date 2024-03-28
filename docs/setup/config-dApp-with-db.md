@@ -4,7 +4,7 @@ title: 'Arcana Developer Dashboard User Guide'
 description: 'Web3 app developers can use the Arcana Developer Dashboard to register and configure the apps before integration with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
-  social_provider: "supported social login and custom IAM providers"
+  social_provider: "supported social login and IAM providers"
 ---
 
 # {{config.extra.arcana.dashboard_name}} Users Guide
