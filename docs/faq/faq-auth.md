@@ -29,7 +29,7 @@ toc_depth: 2
       
       *For this feature to work, the user* **must** *have the same email ID registered with the different authentication providers.*
       
-      {{config.extra.arcana.sdk_name}} uses the email ID to uniquely identify the user even if the user uses different social providers or the passwordless email option to log in to a Web3 app. It associates a single key for such a user which results in the user seeing the same wallet address. If the user has different email IDs associated with different social providers then each login is treated as a unique, different user and the same user will see a different wallet address when logging into the same Web3 app.
+      {{config.extra.arcana.sdk_name}} uses the email ID to uniquely identify the user even if the user uses different social OAuth providers or the passwordless email option to log in to a Web3 app. It associates a single key for such a user which results in the user seeing the same wallet address. If the user has different email IDs associated with different social OAuth providers then each login is treated as a unique, different user and the same user will see a different wallet address when logging into the same Web3 app.
 
 ??? an-faq "Does the authenticated user see the same wallet address across multiple Web3 applications that integrate with the {{config.extra.arcana.sdk_name}}?"
 
@@ -110,7 +110,7 @@ toc_depth: 2
 
 ??? an-faq "How does the {{config.extra.arcana.sdk_name}} ensure that the key shares are fetched by the correct user only?"
 
-      A user can log in only after the social provider authenticates or if the user provides the OTP shared via email during passwordless onboarding. Providers share JWT/other-identifiers with {{config.extra.arcana.product_name}} once the user authenticates. So unless the user themselves share their social ID / OTP, only an authenticated user will be allowed to access their key shares. The token (idToken) is verified with the DKG nodes before the key shares are sent back to the user. The token can be used only once per user login session.
+      A user can log in only after the social OAuth provider authenticates or if the user provides the OTP shared via email during passwordless onboarding. Providers share JWT/other-identifiers with {{config.extra.arcana.product_name}} once the user authenticates. So unless the user themselves share their social ID / OTP, only an authenticated user will be allowed to access their key shares. The token (idToken) is verified with the DKG nodes before the key shares are sent back to the user. The token can be used only once per user login session.
 
 ??? an-faq "Can a malicious entity reconstruct the user's private key if they get all the requisite key shares?"
 
@@ -118,6 +118,11 @@ toc_depth: 2
       
       One if the methods is MFA. When MFA feature is enabled, it further strengthen the security by using multiple factors used to generate private key besides the key shares. A local share is created for the user at the first login that lives on the user's device. This local key component stored on user's device is required to get the actual private key. If a user changes the device, they are validated via PIN setup during MFA or security answers before the local share is re-created on the new device.
       
-      Irrespective of whether MFA is enabled or not, the reconstruction of private key happens only once a user is authenticated by the configured social provider and the user is verified by DKG before sharing the key shares. The verification token ID changes for every user session so a malicious entity cannot reuse it. Also note that the same set of key shares is not returned for every user session by the DKG nodes. Only a random subset of shares are needed to construct the private key. 
+      Irrespective of whether MFA is enabled or not, the reconstruction of private key happens only after ensuring that:
+
+      * user is authenticated through one of the configured social OAuth providers,
+      * user is verified by DKG before sharing the key shares. 
+      
+      The verification token ID changes for every user session so a malicious entity cannot reuse it. Also note that the same set of key shares is not returned for every user session by the DKG nodes. Only a random subset of shares are needed to construct the private key. 
 
       In a future version of ADKG protocol, the key shares will be periodically refreshed to safeguard against an eventuality if some of them are somehow stolen by a malicious user.

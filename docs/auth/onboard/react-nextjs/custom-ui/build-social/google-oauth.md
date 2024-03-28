@@ -1,7 +1,7 @@
 ---
 alias: react-nextjs-google-social-auth
 title: 'User Login with Google'
-description: 'Learn how to add user onboarding in React/Next.js Web3 apps using custom login UI and Google as the social provider.'
+description: 'Learn how to add user onboarding in React/Next.js Web3 apps using custom login UI and Google as the social OAuth provider.'
 arcana:
   root_rel_path: ../../../../..
   social_provider: "'google'"

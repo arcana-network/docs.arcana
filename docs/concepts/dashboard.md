@@ -31,7 +31,7 @@ Use the dashboard to customize {{config.extra.arcana.sdk_name}} usage:
 
 - **Wallet UI**: select built-in {{config.extra.arcana.sdk_name}} UI or custom wallet UI
 - **Branding**: customize the look and feel of the {{config.extra.arcana.sdk_name}} UI
-- **Authentication**: enable social providers for onboarding users
+- **Authentication**: enable authentication providers for onboarding users
 - **Chain Management**: add more chains to the default pre-configured list of supported chains
 - **Global/App-Specific Keys**: select if app users see same wallet address across all apps deployed on {{config.extra.arcana.company_name}} ecosystem or app-specific unique addresses
 - **Gasless**: enable gasless transactions for app users

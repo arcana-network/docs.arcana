@@ -1,7 +1,7 @@
 ---
 alias: concept-arcana-jwt-token
 title: 'Arcana JWT Token?'
-description: 'Arcana Auth SDK verifies the token returned by the social provider and then returns an Arcana JWT Token to the app. Learn more.'
+description: 'Arcana Auth SDK verifies the token returned by the social OAuth provider and then returns an Arcana JWT Token to the app. Learn more.'
 arcana:
   root_rel_path: ..
 ---
@@ -33,4 +33,4 @@ try {
 
 !!! note "User validation"
 
-      Note that the {{config.extra.arcana.sdk_name}} uses the JWT token returned by the social provider, after user authentication, to verify the user internally before creating its own Arcana JWT token and returning it to the app.
+      Note that the {{config.extra.arcana.sdk_name}} uses the JWT token returned by the social OAuth provider, after user authentication, to verify the user internally before creating its own Arcana JWT token and returning it to the app.

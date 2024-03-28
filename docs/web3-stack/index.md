@@ -1,7 +1,7 @@
 ---
 alias: index-web3-stack
 title: 'Web3 Stack'
-description: 'Everything you need to know about the Web3 infrastucture that is supported by the Arcana SDKs. For e.g., supported blockchain networks, app flavors, social providers, gasless networks, third-party wallets, wallet connectors etc.'
+description: 'Everything you need to know about the Web3 infrastructure that is supported by the Arcana SDKs. For e.g., supported blockchain networks, app flavors, authentication providers, gasless networks, third-party wallets, wallet connectors etc.'
 arcana:
   root_rel_path: ..
 ---

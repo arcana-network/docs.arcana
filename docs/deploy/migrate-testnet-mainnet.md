@@ -32,7 +32,7 @@ Copy the newly assigned {{config.extra.arcana.app_address}} in the Mainnet setti
 
 !!! caution "Copying Testnet Profile"
 
-      If the developer chooses to create the 'Mainnet' profile by copying the 'Testnet' profile, there is an additional setup required to update the configuration of the social provider settings. Once the 'Mainnet' profile is created, click the application configuration social login section in the LHS navigation of the {{config.extra.arcana.dashboard_name}} and copy the `Redirect URI' displayed for the 'Mainnet' profile. You need to update this `Redirect URI` value from the Testnet ones to the Mainnet ones for the respective social provider. To do this, use the social provider-specific developer console or dashboard.
+      {% include "./text-snippets/warn_copy_testnet_profile.md" %}
 
 ### Step 2: Update Integration Code
 

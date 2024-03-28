@@ -12,11 +12,11 @@ You can enable [[concept-social-login|social login]] and onboard users in Web3 a
 
 App users can simply pick one of the login options configured by the app developers to authenticate. After authentication, app users can instantly access the {{config.extra.arcana.wallet_name}} from within the app context and sign blockchain transactions.
 
-## Social Providers
+## Social OAuth Providers
 
 {% include "./text-snippets/socialauth_supported.md" %}
 
-## Custom IAM Providers
+## IAM Providers
 
 {% include "./text-snippets/custom_idm_supported.md" %}
 
@@ -35,6 +35,6 @@ App users can simply pick one of the login options configured by the app develop
 
 ## Dashboard Login Options
 
-The Web3 app developers can log into the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) via one of these social providers or use passwordless login option:
+The Web3 app developers can log into the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) via one of these social OAuth providers or use passwordless login option:
 
 {% include "./text-snippets/db_supported_oauth.md" %}

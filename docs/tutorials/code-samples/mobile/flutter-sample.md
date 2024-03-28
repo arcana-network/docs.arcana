@@ -80,7 +80,7 @@ Make sure to call the `init` method of the `AuthProvider` first before calling a
 
 ### Onboard Users
 
-Next, add code to onboard users. In this example, we use the custom login UI option and use `loginWithSocial` method of the `AuthProvider` to onboard users via 'Google' as the social provider.
+Next, add code to onboard users. In this example, we use the custom login UI option and use `loginWithSocial` method of the `AuthProvider` to onboard users via 'Google' as the social OAuth provider.
 
 ```js title="sample-auth-flutter/lib/main.dart" hl_lines="7-10"
 ...

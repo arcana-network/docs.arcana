@@ -32,7 +32,7 @@ In the following sections, we will try to answer these questions one by one.
 
 Web3 apps integrate with the {{config.extra.arcana.sdk_name}} to enable user onboarding and enabling authenticated users to sign blockchain transactions. This involves  both securing user onboarding as well as ensuring that the keys used to sign blockchain transactions are access controlled. Refer to the next section for key share security.
 
-{{config.extra.arcana.company_name}} uses standard OAuth 2.0 protocol to liaison with various social providers to ensure user credentials are never stored in the {{config.extra.arcana.company_name}} ecosystem.
+{{config.extra.arcana.company_name}} uses standard OAuth 2.0 protocol and works with several social OAuth providers to ensure user credentials are never stored in the {{config.extra.arcana.company_name}} ecosystem.
 
 Also, after a user logs in successfully, the {{config.extra.arcana.sdk_name}} generates a **time bound JWT token** and associates with the user account. The Web3 app can use this JWT token, verify it and ensure user onboarding is secured. They can generate their own JWT token for the user session. The time-bound JWT token ensures that any credentials stolen through phishing attacks have a limited shelf life.
 

@@ -8,6 +8,6 @@ arcana:
 
 # IAM Providers
 
-Third-party IAM providers allow various user authentication mechanisms including authentication via social providers and authentication standards such as OpenID. The {{config.extra.arcana.sdk_name}} supports the following IAM providers for user authentication:
+Third-party IAM providers allow various user authentication mechanisms including authentication via social OAuth providers and authentication standards such as OpenID. The {{config.extra.arcana.sdk_name}} supports the following IAM providers for user authentication:
 
 {% include "./text-snippets/custom_idm_supported.md" %}
