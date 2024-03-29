@@ -100,7 +100,7 @@ extra:
     latest_auth_react_native_sdk_version: !ENV [AUTH_REACT_NATIVE_SDK_VERSION, '0.0.4']
     latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_SDK_VERSION, '1.1.0']
     latest_auth_core_sdk_version: !ENV [AUTH_CORE_SDK_VERSION,'2.0.0-alpha.3']
-    latest_gasless_sdk_version: !ENV [GASLESS_SDK_VERSION, '0.0.30']
+    latest_gasless_sdk_version: !ENV [GASLESS_SDK_VERSION, '0.0.35']
     auth_sdk_pkg_name: auth
     auth_core_sdk_pkg_name: auth-core
     gasless_sdk_pkg_name: scw
@@ -269,7 +269,7 @@ plugins:
           'concepts/ansmartc/an_smartc_details.md': 'concepts/ansmartc/an-smartc-deployed.md'
           'concepts/ansmartc/an_smartc_flows.md': 'concepts/ansmartc/an-smartc-deployed.md'
           'concepts/ansmartc/an_smartc_upgrades.md': 'concepts/ansmartc/an-smart-contracts.md'
-          'relnotes/latest.md': 'relnotes/rn-main-scw-v0.0.30.md'
+          'relnotes/latest.md': 'relnotes/rn-main-scw-v0.0.35.md'
           #website deprecated links go to contacts page
           'docs/accesscontrol/index.md': 'support/index.md'
           'docs/category/data-access-control/index.md': 'support/index.md'
@@ -559,7 +559,7 @@ nav:
       - Release Note Archives: 
         - relnotes/archives/index.md
         - Auth 1.0.10 : relnotes/rn-main-auth-v1.0.10.md
-        - Gasless 0.0.30: relnotes/rn-main-scw-v0.0.30.md
+        - Gasless 0.0.35: relnotes/rn-main-scw-v0.0.35.md
         - Auth 1.0.9 : relnotes/rn-main-auth-v1.0.9.md
         - Gasless SDK: relnotes/rn-main-scw-v0.0.25.md
         - Auth Oc12-2023: relnotes/rn-main-auth-vOct12-23-gasless.md
@@ -577,8 +577,8 @@ nav:
       - Migration Archives: 
         - migration/archives/index.md
         - v1.0.9 -> v1.0.10: migration/main-auth-v1.0.10-migration.md
-        - Gasless SDK -> v0.0.30: migration/main-scw-v0.0.30-migration.md
-        - v0.0.25 -> v0.0.30: migration/main-scw-v0.0.30-migration.md
+        - Gasless SDK -> v0.0.35: migration/main-scw-v0.0.35-migration.md
+        - v0.0.25 -> v0.0.35: migration/main-scw-v0.0.35-migration.md
         - Gasless SDK -> v0.0.25: migration/main-scw-v0.0.25-migration.md
         - vOct12-23-gasless -> v1.0.9: migration/main-auth-v1.0.9-migration.md
         - v1.0.8 -> vOct12-23-gasless: migration/main-auth-vOct12-23-gasless-migration.md

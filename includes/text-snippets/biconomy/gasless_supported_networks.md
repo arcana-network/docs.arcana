@@ -1,1 +1,1 @@
-<span><a href="https://docs-gasless.biconomy.io/products/enable-gasless-transactions/networks-supported" target="_blank">supported networks</a></span>
+<span><a href="https://docs.biconomy.io/supportednetworks" target="_blank">supported networks</a></span>
