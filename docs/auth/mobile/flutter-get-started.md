@@ -5,6 +5,7 @@ description: 'Get Started quickly with mobile apps built with Flutter by followi
 arcana:
   root_rel_path: ../..
   app_type: "'Flutter'"
+  app_example_submodule: "`sample-auth-flutter`"
 ---
 
 # Get Started: Flutter Apps

@@ -4,6 +4,8 @@ title: 'Integrate Gasless SDK'
 description: 'How to integrate gasless SDK with the app and enable gasless transactions for third-party wallets.'
 arcana:
   root_rel_path: ..
+  app_type: "'Gasless'"
+  app_example_submodule: "`sample-gasless-metamask-only`"
 ---
 
 # Integrate Gasless SDK

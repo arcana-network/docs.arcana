@@ -5,6 +5,7 @@ description: 'Learn how to onboard users in a vanilla HTML/CSS/JS app that integ
 arcana:
   root_rel_path: ../..
   app_type: "'Vanilla HTML/CSS/JS'"
+  firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
 
 # MultiversX App: Onboard Users

@@ -4,6 +4,8 @@ title: 'Quick Start: Gasless Apps (Third-party wallets)'
 description: 'Get Started quickly with Arcana Gasless Standalone SDK for apps by using these step-by-step instructions. Use the Arcana Developer Dashboard to register the app, get a client ID, configure gasless operations and then use the client ID to integrate the app with the Arcana Gasless SDK.'
 arcana:
   root_rel_path: ..
+  app_type: "'Gasless'"
+  app_example_submodule: "`sample-gasless-metamask-only`"
 ---
 
 # Quick Start: Gasless Apps (Third-party Wallets)
