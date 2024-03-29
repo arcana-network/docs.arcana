@@ -158,13 +158,13 @@ plugins:
       min_length: 50
       max_length: 160
   - social:
-      enabled: !ENV [SOCIAL_CARDS_META, true]
-      cards: !ENV [SOCIAL_CARDS_META, true]
-      cards_layout_options:
-        font_family: Inter
-        background_color: "#0D0D0E"
-#sponsors only        background_image: img/social_card_image.png
-        color: "#FFFFFF"
+      #enabled: !ENV [SOCIAL_CARDS_META, true]
+      cards: !ENV [SOCIAL_CARDS_META, false]
+      #cards_layout_options:
+        #font_family: Inter
+        #background_color: "#0D0D0E"
+      #sponsors only        background_image: img/social_card_image.png
+        #color: "#FFFFFF"
   - git-authors:
       show_email_address: false
   - git-revision-date-localized
