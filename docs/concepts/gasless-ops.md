@@ -29,7 +29,7 @@ The gasless transaction feature offered by the {{config.extra.arcana.company_nam
 
 ### Gas Tank Owner
 
-A developer who adds the gas tank for an app is **the owner** of that gas tank. To set up gas tanks, developers are required to have a MetaMask wallet account or any other browser-enabled wallet account that sets the `windows.enabled` browser variable. This wallet account is referred to as the **owner account**.
+A developer who adds the gas tank for an app is **the owner** of that gas tank. As a pre-requisite, the developers must use a MetaMask wallet account or any other browser-enabled wallet account that sets the `windows.enabled` browser variable to set up gas tanks. The wallet account that sets up the gas tank is called **owner account**.
 
 ### Gas Tank Deposit
 
@@ -37,7 +37,7 @@ After setting up the gas tank, developers can fuel it by depositing crypto asset
 
 ### Withdraw Gas Tank Deposit
 
-Gas tanks, once provisioned, can receive the necessary crypto assets from any depositor, whether it's the gas tank owner (app developer) or a third-party sponsor. However, it's important to note that funds can only be **withdrawn from a gas tank** into the **owner's account**.
+Gas tanks, once provisioned, can receive the necessary crypto assets from any depositor, whether it's the gas tank owner (app developer) or a third-party sponsor. However, it's important to note that funds can only be **withdrawn** into the **owner** account, the one that was used to set up gas tanks.
 
 ### Whitelisting App Operations
 
@@ -60,11 +60,11 @@ Developers set up gas tanks and deposit crypto assets specific to the blockchain
 
 Waiving gas fees for app operations does not happen when:
 
-* App developer does not set up any gas tanks for any blockchain network
+* The app developer does not set up any gas tanks for any blockchain network
 * Gas tanks are set up and funded but disabled by the developer
-* Gas tanks are set up but no funds are deposited to pay for the gas fees
-* Gas tanks are depleted and all the funds spent, are not refueled
-* Gas tank owner withdraws the deposited funds depleting the tanks
+* Gas tanks are set up, but no funds are deposited to pay for the gas fees
+* Gas tanks are depleted, and all the funds spent are not refueled
+* The gas tank owner withdraws the deposited funds, depleting the tanks
 
 In such situations, even if the app functions are whitelisted, gas tanks are not effective or available, so users have to bear the gas fees.
 

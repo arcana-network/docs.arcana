@@ -1,1 +1,1 @@
-<span><a href="https://docs.biconomy.io/3.0/paymaster/supportedNetworks" target="_blank">supported networks</a></span>
+<span><a href="https://docs.biconomy.io/supportedNetworks" target="_blank">supported networks</a></span>
