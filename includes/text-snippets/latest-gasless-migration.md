@@ -4,4 +4,4 @@ Apps that are required to enable gasless transactions in third-party, browser-ba
 
 ## Release Details
 
-Refer to the  [[rn-main-scw-v0.0.35|{{config.extra.arcana.gasless_sdk_name}} v0.0.35 release notes]] for details.
+Refer to the  [[rn-main-scw-v0.0.30|{{config.extra.arcana.gasless_sdk_name}} v0.0.30 release notes]] for details.

@@ -40,4 +40,4 @@ We recommend that you use the most recent {{config.extra.arcana.company_name}} S
 
 === "Gasless SDK"
 
-    [[migration-guide-v0.0.35|Gasless SDK v0.0.35]]{ .md-button }
+    [[migration-guide-v0.0.30|Gasless SDK v0.0.30]]{ .md-button }
