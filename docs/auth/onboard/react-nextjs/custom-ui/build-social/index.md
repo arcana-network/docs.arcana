@@ -1,6 +1,6 @@
 ---
 alias: index-react-nextjs-build-social-providers
-title: 'Social OAuth Provider: Custom Login UI'
+title: 'Social Login Provider: Custom Login UI'
 description: 'List of Social OAuth Providers supported by Arcana Auth. Learn how developers can onboard app users with a custom login UI and enable social authentication in apps integrated with the Arcana SDK.'
 arcana:
   root_rel_path: ../../../../..
