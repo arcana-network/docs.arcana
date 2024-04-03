@@ -51,16 +51,26 @@ theme:
     - content.tabs.link
     - header.autohide 
   palette:
-    # Light Mode
-    - scheme: default
+    # Auto Mode
+    - media: "(prefers-color-scheme)"
+      scheme: auto
       toggle: 
-        icon: material/brightness-4
+        icon: material/brightness-auto
+        name: Switch to Light Mode
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle: 
+        icon: material/brightness-7
         name: Switch to Dark Mode
     # Dark Mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/brightness-7
-        name: Switch to Light Mode
+        icon: material/brightness-4
+        name: Switch to System Mode
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -111,7 +121,8 @@ extra:
     mobile_react_native_sdk_pkg_name: auth-react-native
     gaming_sdk_pkg_name: arcana-auth-sdk
     exclude_content_tag: exclude
-  homepage: https://arcana.network
+  # Allow top left logo to browse website
+  #homepage: https://arcana.network
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/arcananetwork
@@ -127,7 +138,7 @@ extra:
     provider: google
     property: !ENV [GOOGLE_ANALYTICS_ID, default='XXXXXXXXXX']
     feedback:
-      title: <hr>Is this information useful?
+      title: <i>Did you find what you were looking for today?</i>
       ratings:
         - icon: material/thumb-up-outline
           name: Yes, it was useful.

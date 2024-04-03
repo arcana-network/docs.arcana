@@ -7,8 +7,9 @@
     Content-Security-Policy = '''
       font-src 'self' fonts.gstatic.com gstatic.com *.gstatic.com *.jsdelivr.net;
       img-src 'self' data: *.arcana.network *.chatbase.co;
-      script-src 'self' 'unsafe-inline' *.google-analytics.com *.googletagmanager.com *.marker.io *.chatbase.co polyfill.io *.jsdelivr.net *.netlify.app unpkg.com;
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com *.googletagmanager.com *.marker.io *.chatbase.co polyfill.io *.jsdelivr.net *.netlify.app unpkg.com *.arcana.network esm.sh;
+      script-src-elem 'self' 'unsafe-inline' *.google-analytics.com *.googletagmanager.com *.marker.io *.chatbase.co polyfill.io *.jsdelivr.net *.netlify.app unpkg.com *.arcana.network esm.sh;
       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-      frame-src *.arcana.network *.chatbase.co youtube.com https://www.youtube.com *.netlify.com;
+      frame-src *.arcana.network *.chatbase.co youtube.com https://www.youtube.com esm.sh *.codesandbox.io *.netlify.com;
       frame-ancestors 'self';
     '''
