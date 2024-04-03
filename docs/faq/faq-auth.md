@@ -29,7 +29,7 @@ toc_depth: 2
       
       *For this feature to work, the user* **must** *have the same email ID registered with the different authentication providers.*
       
-      {{config.extra.arcana.sdk_name}} uses the email ID to uniquely identify the user even if the user uses different social OAuth providers or the passwordless email option to log in to a Web3 app. It associates a single key for such a user which results in the user seeing the same wallet address. If the user has different email IDs associated with different social OAuth providers then each login is treated as a unique, different user and the same user will see a different wallet address when logging into the same Web3 app.
+      {{config.extra.arcana.sdk_name}} uses the email ID to uniquely identify the user even if the user uses different social login providers or the passwordless email option to log in to a Web3 app. It associates a single key for such a user which results in the user seeing the same wallet address. If the user has different email IDs associated with different social login providers then each login is treated as a unique, different user and the same user will see a different wallet address when logging into the same Web3 app.
 
 ??? an-faq "Does the authenticated user see the same wallet address across multiple Web3 applications that integrate with the {{config.extra.arcana.sdk_name}}?"
 
@@ -50,7 +50,7 @@ toc_depth: 2
       
       However, an authenticated user will see **different wallet addresses across two chains configured in a single Web3 app if one of them is EVM-compatible whereas the other is not. Also, in the case of two Web3 apps, one of which uses an EVM-compatible chain and the other that uses chains that are not EVM-compatible, the authenticated user's wallet address will be different for each app.
 
-??? an-faq "Why is the Global Keyspace option is not enabled if I select 'Custom Wallet UI' option during app registration in the {{config.extra.arcana.dashboard_name}}?"
+??? an-faq "Why is the Global Keyspace option not enabled if I select the 'Custom Wallet UI' option during app registration in the {{config.extra.arcana.dashboard_name}}?"
 
       If a Web3 app developer chooses the 'Custom Wallet UI' instead of the built-in {{config.extra.arcana.wallet_name}} UI, during app registration via {{config.extra.arcana.dashboard_name}}, only 'app-specific keys' are allowed. This is for [[concept-keyspace-type#security|keyspace security]].
       
@@ -60,7 +60,7 @@ toc_depth: 2
 
       Yes.
 
-      The {{config.extra.arcana.wallet_name}} supports Chrome browser `Incognito Window` as well as `Private Window` in case of Safari browsers. Earlier, if third-party cookies were disabled, the built-in, plug-and-play login pop-up modal did not show up in some cases.  These use cases are now addressed by the SDK.
+      The {{config.extra.arcana.wallet_name}} supports Chrome browser `Incognito Window` as well as `Private Window` in the case of Safari browsers. Earlier, if third-party cookies were disabled, the built-in, plug-and-play login pop-up modal did not show up in some cases.  These use cases are now addressed by the SDK.
 
       Developers can use the `canReconnect` and `reconnect` [functions of the `AuthProvider`](https://authsdk-ref-guide.netlify.app/classes/authprovider) to check before allowing users to reconnect whereby users do not need to re-login if they refresh the page or close the tab and re-open it again within a 30-minute window.
 
@@ -68,7 +68,7 @@ toc_depth: 2
 
       Yes. See [[concept-index-auth-type|Arcana JWT Token]] for details.
 
-??? an-faq "For Twitter, the `getUser()` function of the `AuthProvider` does not always return user's email?"
+??? an-faq "For Twitter, the `getUser()` function of the `AuthProvider` does not always return the user's email?"
 
       You can create a Twitter account using your phone number without needing to provide an email address. If you do this, the getUser() function won't give you the user's email address.
 
@@ -98,31 +98,31 @@ toc_depth: 2
       | :--- | :--- |
       | Users need to be responsible for and remember their passphrases.| Users are not required to remember any passphrase.|
       | Users need to manage keys themselves in case of self-custody wallets. | {{config.extra.arcana.wallet_name}} offers a sweet spot, users don't have to manage keys as in the self-custody wallet and yet their keys can be generated in a distributed manner via the {{config.extra.arcana.wallet_name}}, a non-custodial wallet.|
-      | Users that are new to Web3 typically find self-custodial wallets very challenging to use. | {{config.extra.arcana.wallet_name}} offers a really simple Web2-like onboarding experience for new Web3 users without sacrificing security and ownership.
+      | Users who are new to Web3 typically find self-custodial wallets very challenging to use. | {{config.extra.arcana.wallet_name}} offers a really simple Web2-like onboarding experience for new Web3 users without sacrificing security and ownership.
 
 ## User Key Privacy
 
 ---
 
-??? an-faq "If {{config.extra.arcana.company_name}} is storing nothing related to user's private keys, how does Arcana provide the same wallet to a user when the user signs in for the second time?"
+??? an-faq "If {{config.extra.arcana.company_name}} is storing nothing related to the user's private keys, how does Arcana provide the same wallet to a user when the user signs in for the second time?"
 
       The {{config.extra.arcana.sdk_name}} maintains a UserID -> Public Key mapping, that is how the user is identified across successive login sessions and the correct wallet is assigned for the authenticated user. This mapping is stored in the DKG nodes.
 
 ??? an-faq "How does the {{config.extra.arcana.sdk_name}} ensure that the key shares are fetched by the correct user only?"
 
-      A user can log in only after the social OAuth provider authenticates or if the user provides the OTP shared via email during passwordless onboarding. Providers share JWT/other-identifiers with {{config.extra.arcana.product_name}} once the user authenticates. So unless the user themselves share their social ID / OTP, only an authenticated user will be allowed to access their key shares. The token (idToken) is verified with the DKG nodes before the key shares are sent back to the user. The token can be used only once per user login session.
+      A user can log in only after the social login provider authenticates or if the user provides the OTP shared via email during passwordless onboarding. Providers share JWT/other identifiers with {{config.extra.arcana.product_name}} once the user authenticates. So unless the user themselves share their social ID / OTP, only an authenticated user will be allowed to access their key shares. The token (idToken) is verified with the DKG nodes before the key shares are sent back to the user. The token can be used only once per user login session.
 
 ??? an-faq "Can a malicious entity reconstruct the user's private key if they get all the requisite key shares?"
 
       There are several safeguards against this and we are continuously evolving the ADKG protocol to make it more robust and fast. 
       
-      One if the methods is MFA. When MFA feature is enabled, it further strengthen the security by using multiple factors used to generate private key besides the key shares. A local share is created for the user at the first login that lives on the user's device. This local key component stored on user's device is required to get the actual private key. If a user changes the device, they are validated via PIN setup during MFA or security answers before the local share is re-created on the new device.
+      One of the methods is MFA. When the MFA feature is enabled, it further strengthens the security by using multiple factors to generate the private key besides the key shares. A local share is created for the user at the first login that lives on the user's device. This local key component stored on the user's device is required to get the actual private key. If a user changes the device, they are validated via PIN setup during MFA or security answers before the local share is re-created on the new device.
       
-      Irrespective of whether MFA is enabled or not, the reconstruction of private key happens only after ensuring that:
+      Irrespective of whether MFA is enabled or not, the reconstruction of the private key happens only after ensuring that the user is:
 
-      * user is authenticated through one of the configured social OAuth providers,
-      * user is verified by DKG before sharing the key shares. 
+      * authenticated through one of the configured social login providers,
+      * verified by DKG before sharing the key shares. 
       
-      The verification token ID changes for every user session so a malicious entity cannot reuse it. Also note that the same set of key shares is not returned for every user session by the DKG nodes. Only a random subset of shares are needed to construct the private key. 
+      The verification token ID changes for every user session so a malicious entity cannot reuse it. Also, note that the same set of key shares is not returned for every user session by the DKG nodes. Only a random subset of shares is needed to construct the private key. 
 
-      In a future version of ADKG protocol, the key shares will be periodically refreshed to safeguard against an eventuality if some of them are somehow stolen by a malicious user.
+      In a future version of the ADKG protocol, the key shares will be periodically refreshed to safeguard against an eventuality if some of them are somehow stolen by a malicious user.

@@ -56,7 +56,7 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
     * Wallet Domain
     * Wallet UI
     
-    <img class="an-screenshots" alt="Social OAuth" src="/img/an_db_configure_wallet.png"></img>
+    <img class="an-screenshots" alt="Social Login" src="/img/an_db_configure_wallet.png"></img>
 
 === "Keyspace"
 

@@ -11,6 +11,6 @@ arcana:
 
 [[vue-build-password-less-auth|Passwordless Auth :material-email-open-outline:]]{ .md-button }
 
-[[index-vue-build-social-providers|Social OAuth Provider :fontawesome-solid-users:]]{ .md-button } 
+[[index-vue-build-social-providers|Social Login Provider :fontawesome-solid-users:]]{ .md-button } 
 
 [[index-vue-build-iam-providers|IAM Provider :fontawesome-brands-aws:]]{ .md-button }

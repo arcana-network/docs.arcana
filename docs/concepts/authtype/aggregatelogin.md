@@ -17,9 +17,9 @@ For example, if a user logs in with Google and Twitter, both linked to the same 
 
 ```mermaid
 graph LR
-  A\[[User]] -.-> B(Social OAuth Provider A) -.-> E{Email ID Same?} ==Yes==> F>User ID 1];
+  A\[[User]] -.-> B(Social Login Provider A) -.-> E{Email ID Same?} ==Yes==> F>User ID 1];
   E{Email ID Same?} ==No==> G>New unique User ID];
-  A\[[User]] -.-> M(Social OAuth Provider B) -.-> E{Email ID Same?};
+  A\[[User]] -.-> M(Social Login Provider B) -.-> E{Email ID Same?};
   A\[[User]] -.-> C(Passwordless Login) -.-> E{Email ID Same?};
 ```
 
@@ -34,4 +34,4 @@ Aggregate login in {{config.extra.arcana.dashboard_name}} groups developer accou
       * Steam
       * Twitter
 
-      If a user has the same email ID registered with these providers, logging into an app using either of them will create a new unique user account even if the user uses the same email as the one used with other social OAuth provider or via the passwordless option.
+      If a user has the same email ID registered with these providers, logging into an app using either of them will create a new unique user account even if the user uses the same email as the one used with other social login provider or via the passwordless option.

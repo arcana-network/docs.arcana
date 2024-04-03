@@ -8,7 +8,7 @@ arcana:
 
 #  Arcana Auth Use Cases
 
-The {{config.extra.arcana.sdk_name}} allows developers to supercharge their Web3 apps with plug-and-play user authentication. Also, authenticated app users can instantly access the embedded, non-custodial {{config.extra.arcana.wallet_name}} to securely sign blockchain transactions, without having to install any browser extension or manage keys.
+The {{config.extra.arcana.sdk_name}} allows developers to supercharge their Web3 apps with plug-and-play user authentication. Also, authenticated app users can instantly access the embedded, non-custodial {{config.extra.arcana.wallet_name}} to securely sign blockchain transactions without having to install any browser extension or manage keys.
 
 Web3 developers can integrate apps with the {{config.extra.arcana.sdk_name}} to address the following use cases:
 
@@ -21,7 +21,7 @@ Web3 developers can integrate apps with the {{config.extra.arcana.sdk_name}} to 
 
 * **Plug-and-Play Auth**: Onboard users with a single line of code. Call `connect` method to bring up plug-and-play login UI that displays the configured Web2 social login providers, IAM providers and passwordless login options.
 
-* **Build-your-own-Auth-UI**: Create your own login UX and call `loginWithSocial` method to enable authentication via popular Web2 social OAuth providers, `loginWithBearer` for IAM providers. Use `loginWithLink` (deprecated), `loginWithOTPStart` and `loginWithOTPComplete` methods for onboarding users via the passwordless option.
+* **Build-your-own-Auth-UI**: Create your own login UX and call `loginWithSocial` method to enable authentication via popular Web2 social login providers, `loginWithBearer` for IAM providers. Use `loginWithLink` (deprecated), `loginWithOTPStart`, and `loginWithOTPComplete` methods for onboarding users via the passwordless option.
 
 * **Customize Onboarding**: Choose which providers/login options are visible to the user at the time of logging into the Web3 application.
 

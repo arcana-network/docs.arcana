@@ -11,6 +11,6 @@ arcana:
 
 [[react-nextjs-build-password-less-auth|Enable Passwordless Auth :material-email-open-outline:]]{ .md-button }
 
-[[index-react-nextjs-build-social-providers|Social OAuth Providers :fontawesome-solid-users:]]{ .md-button } 
+[[index-react-nextjs-build-social-providers|Social Login Providers :fontawesome-solid-users:]]{ .md-button } 
 
 [[index-react-nextjs-build-iam-providers|IAM Providers :fontawesome-brands-aws:]]{ .md-button }
