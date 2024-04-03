@@ -37,7 +37,7 @@ All transactions initiated by the {{config.extra.arcana.wallet_name}} are proces
 
 ### {{config.extra.arcana.sdk_name}}
 
-The {{config.extra.arcana.sdk_name}} integrates with the app and enables user onboarding through social OAuth providers, IAM providers, and passwordless login. It also enables Web3 operations through the embedded {{config.extra.arcana.wallet_name}}. 
+The {{config.extra.arcana.sdk_name}} integrates with the app and enables user onboarding through social login providers, IAM providers, and passwordless login. It also enables Web3 operations through the embedded {{config.extra.arcana.wallet_name}}.
 
 ### Asynchronous Distributed Key Generation (ADKG)
 
