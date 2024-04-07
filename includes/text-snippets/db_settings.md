@@ -29,7 +29,7 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
 
     Developers can enable one or more providers for app login. Passwordless login is automatically enabled for all registered apps.
 
-    For details on how to configure authentication providers, see [[index-configure-auth|configuring social providers]].
+   See [[index-configure-auth|how to configure authentication providers]], for details.
 
     !!! note "Redirect URI"
            
@@ -56,7 +56,7 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
     * Wallet Domain
     * Wallet UI
     
-    <img class="an-screenshots" alt="Social OAuth" src="/img/an_db_configure_wallet.png"></img>
+    <img class="an-screenshots" alt="Social Login" src="/img/an_db_configure_wallet.png"></img>
 
 === "Keyspace"
 

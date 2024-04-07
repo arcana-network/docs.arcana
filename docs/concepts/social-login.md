@@ -16,7 +16,7 @@ Arcana's non-custodial wallet is user-friendly, offering simplicity to new users
 
 ## {{config.extra.arcana.product_name}}
 
-The Arcana Auth SDK offers social login via email, Web2 authentication providers such as Google, GitHub, Discord, and Twitter, and custom IAM providers such as Firebase and Cognito.
+The Arcana Auth SDK offers social login via email, Web2 authentication providers such as Google, GitHub, Discord, and Twitter, and third-party IAM providers such as Firebase and Cognito.
 
 <img src="/img/diagram_custodial_self_custodial_wallets_comparison_light.png#only-light" alt="Compare Custodial non-custodial wallets" class="an-screenshots-noeffects"/>
 <img src="/img/diagram_custodial_self_custodial_wallets_comparison_dark.png#only-dark" alt="Compare Custodial non-custodial wallets" class="an-screenshots-noeffects"/>

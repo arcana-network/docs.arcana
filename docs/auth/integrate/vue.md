@@ -4,6 +4,7 @@ title: 'Integrate Vue App'
 description: 'Integrate Web3 apps built using the Vue framework with the Arcana Auth SDK using the instructions listed here.'
 arcana:
   root_rel_path: ../..
+  app_example_submodule: "`sample-auth-vue`"
 ---
 
 # Integrate Vue App

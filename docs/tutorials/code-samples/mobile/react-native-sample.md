@@ -66,7 +66,7 @@ import Auth from "@arcana/auth-react-native";
 
 ### Onboard Users
 
-Next, add code to onboard users. In this example, we use the custom login UI option and use `loginWithSocial` method of the `Auth` to onboard users via 'Google' as the social provider.
+Next, add code to onboard users. In this example, we use the custom login UI option and use `loginWithSocial` method of the `Auth` to onboard users via 'Google' as the social login provider.
 
 ```js title="sample-auth-react-native/App.js" hl_lines="3"
 ...

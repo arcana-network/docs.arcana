@@ -5,6 +5,7 @@ description: 'Detailed instructions on how Web3 app developers can configure Fir
 arcana:
   root_rel_path: ../..
   social_provider: "Firebase"
+  firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
 
 # Setup Firebase

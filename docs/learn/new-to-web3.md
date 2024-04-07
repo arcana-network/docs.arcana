@@ -40,7 +40,7 @@ Get a firm grip on the topics listed under the prerequisites section. These will
 
 * User onboarding and authentication methods:
 
-    - Using popular Web2 [Social OAuth](https://auth0.com/learn/social-login/) and [passwordless login](https://auth0.com/passwordless)
+    - Using popular Web2 [Social Login](https://auth0.com/learn/social-login/) and [passwordless login](https://auth0.com/passwordless) options
     - Difference between Web2 and [Web3 authentication](https://blog.mycrypto.com/sign-in-with-ethereum-an-alternative-to-centralized-identity-providers)
 
 * Blockchain basic topics:

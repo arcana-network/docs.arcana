@@ -11,7 +11,7 @@ arcana:
 <img src="/img/icons/i_an_socialauth_light.png#only-light" width="50"/>
 <img src="/img/icons/i_an_socialauth_dark.png#only-dark" width="50"/>
 
-Social authentication providers are popular Web2 user identity providers that allow apps to onboard users and validate the user identity. Following social providers are supported by the {{config.extra.arcana.sdk_name}}:
+Social authentication providers are popular Web2 user identity providers that allow apps to onboard users and validate the user identity. Following social login providers are supported by the {{config.extra.arcana.sdk_name}}:
 
 {% include "./text-snippets/socialauth_supported.md" %}
 

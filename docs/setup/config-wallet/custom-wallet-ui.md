@@ -79,7 +79,7 @@ await auth.init()
 
 const arcanaProvider = await auth.connect()
 
-// alternatively, onboard users by calling loginWithLink(deprecated), `loginWithOTPStart`, `loginWithOTPComplete`, loginWithSocial, loginWithBearer for passwordless, social or custom IAM providers.
+// alternatively, onboard users by calling loginWithLink(deprecated), `loginWithOTPStart`, `loginWithOTPComplete`, loginWithSocial, loginWithBearer for passwordless, social or IAM providers.
 ...
 
 const provider = new ethers.providers.Web3Provider(arcanaProvider)

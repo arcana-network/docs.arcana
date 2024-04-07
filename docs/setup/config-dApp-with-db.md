@@ -4,7 +4,7 @@ title: 'Arcana Developer Dashboard User Guide'
 description: 'Web3 app developers can use the Arcana Developer Dashboard to register and configure the apps before integration with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
-  social_provider: "supported social login and custom IAM providers"
+  social_provider: "supported social login and IAM providers"
 ---
 
 # {{config.extra.arcana.dashboard_name}} Users Guide
@@ -71,13 +71,13 @@ After the selection is made and the developer confirms, the 'Mainnet' profile is
 
 !!! caution "Copying Testnet Profile"
 
-      If the developer chooses to create the 'Mainnet' profile by copying the 'Testnet' profile, there is an additional setup required to update the configuration of the social provider settings. Once the 'Mainnet' profile is created, click the application configuration social login section in the LHS navigation of the {{config.extra.arcana.dashboard_name}} and copy the `Redirect URI' displayed for the 'Mainnet' profile. You need to update this `Redirect URI` value from the Testnet ones to the Mainnet ones for the respective social provider. To do this, use the social provider-specific developer console or dashboard.
+      {% include "./text-snippets/warn_copy_testnet_profile.md" %}
 
 ??? example "Example: Copying Google Profile"
       
-      If Google is enabled in your app's 'Testnet' profile, then during the configuration of the social provider with the Google Developer console, the Testnet redirect URI was added.  Copy the 'Mainnet' profile redirect URI value from the {{config.extra.arcana.dashboard_name}} and update them in the Google Console OAuth settings. 
+      If Google is enabled in your app's 'Testnet' profile, then during the configuration of the social login provider through the Google Developer console, the Testnet redirect URI was added.  Copy the 'Mainnet' profile redirect URI value from the {{config.extra.arcana.dashboard_name}} and update them in the Google Console OAuth settings. 
 
-      Make sure that you add the 'Mainnet' redirect URI value for the other social providers that are enabled in the 'Testnet' profile. This is required for enabling your app to use the {{config.extra.arcana.company_name}} Mainnet. 
+      Make sure that you add the 'Mainnet' redirect URI value for the other social login providers that are enabled in the 'Testnet' profile. This is required for enabling your app to use the {{config.extra.arcana.company_name}} Mainnet. 
       
       The figure below shows how the 'redirect URI' is updated in a scenario where Google and Twitch were configured for the 'Testnet' configuration profile and that profile was copied to create a 'Mainnet' profile.
 

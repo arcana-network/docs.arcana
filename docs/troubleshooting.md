@@ -35,7 +35,7 @@ Storage Region can be configured for any application using the dashboard just on
 
       After logging into the {{config.extra.arcana.dashboard_name}}, the developer can view all the apps that were registered earlier displayed as cards in the 'Manage Apps' screen.  There is one card per registered application.
 
-      If you do not see your registered application card, check if you used a different social provider or email ID to log into the {{config.extra.arcana.dashboard_name}}. {{config.extra.arcana.product_name}} supports [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature whereby if a developer uses different social providers to log into the {{config.extra.arcana.dashboard_name}} in subsequent logins, both logins will be recognized as a single developer. This feature works if the **same** email ID is used by the developer across social providers.
+      If you do not see your registered application card, check if you used a different social login provider or email ID to log into the {{config.extra.arcana.dashboard_name}}. {{config.extra.arcana.product_name}} supports [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature whereby if a developer uses different social login providers to log into the {{config.extra.arcana.dashboard_name}} in subsequent logins, both logins will be recognized as a single developer. This feature works if the **same** email ID is used by the developer across social login providers.
 
       **Note:** If you are migrating to the latest {{config.extra.arcana.sdk_name}} release from versions older than v1.0.0, you will not see your pre-registered apps in the {{config.extra.arcana.dashboard_name}} due to some breaking changes. You need to re-register your apps again.
 
@@ -43,9 +43,9 @@ Storage Region can be configured for any application using the dashboard just on
 
       **Issue Details**
 
-      A developer logs into the {{config.extra.arcana.dashboard_name}} for the very first time, using social authentication provider, say P1. The {{config.extra.arcana.dashboard_name}} displays the 'Manage Apps' screen with the 'Create New App' wizard and zero registered app configuration profile cards. The developer can register a new application and obtain a unique **{{config.extra.arcana.app_address}}** say Addr1. This will create a new app configuration profile card on the 'Manage Apps' screen for the newly registered app. Now if the developer logs out and logs back in using a different social authentication provider, say P2, {{config.extra.arcana.product_name}} can recognize that the login is by the same developer. This results in the 'Manage Apps' screen displaying the previously registered application configuration profile card. This behavior is supported only if the developer has the same email ID associated with both the social providers P1 and P2.
+      A developer logs into the {{config.extra.arcana.dashboard_name}} for the very first time, using social authentication provider, say P1. The {{config.extra.arcana.dashboard_name}} displays the 'Manage Apps' screen with the 'Create New App' wizard and zero registered app configuration profile cards. The developer can register a new application and obtain a unique **{{config.extra.arcana.app_address}}** say Addr1. This will create a new app configuration profile card on the 'Manage Apps' screen for the newly registered app. Now if the developer logs out and logs back in using a different social authentication provider, say P2, {{config.extra.arcana.product_name}} can recognize that the login is by the same developer. This results in the 'Manage Apps' screen displaying the previously registered application configuration profile card. This behavior is supported only if the developer has the same email ID associated with both the social login providers P1 and P2.
 
-      If the user has a different email ID associated with providers P1 and P2 then during the second login with a different provider, the same developer cannot be recognized and associated with the apps registered earlier using the different social provider. The {{config.extra.arcana.dashboard_name}} considers login with a new provider (different email ID) as a new identity and assumes this is a fresh login by a new developer. It brings up the 'Manage Apps' screen where the same user will not be able to see the application configuration card that was present earlier while logging in with a different social provider.
+      If the user has a different email ID associated P1 and P2 then during the second login with a different provider, the same developer cannot be recognized and associated with the apps registered earlier using the different social login provider. The {{config.extra.arcana.dashboard_name}} considers login with a new provider (different email ID) as a new identity and assumes this is a fresh login by a new developer. It brings up the 'Manage Apps' screen where the same user will not be able to see the application configuration card that was present earlier while logging in with a different social login provider.
 
       If one of the providers is GitHub, then even if the same email ID is associated with all providers, {{config.extra.arcana.product_name}} may fail to associate the GitHub identity of the same developer with other providers.  
 
@@ -67,11 +67,11 @@ Storage Region can be configured for any application using the dashboard just on
 
 ??? an-trbs "Why do users experience a 'Redirect URI Mismatch' error during authentication?"
 
-      This error shows up if the developer has not properly set up the social provider during app registration and configuration with {{config.extra.arcana.company_name}}.
+      This error shows up if the developer has not properly set up the social login provider during app registration and configuration using the {{config.extra.arcana.dashboard_name}}.
 
-      * Go to the {{config.extra.arcana.dashboard_name}} and check the app settings in the *Social Auth* section. Note that the Redirect URI displayed for the app is exactly the same as the one you have specified in the social provider OAuth settings.  For example, in the case of social provider 'Google', use Google Developer Console and check OAuth settings. Check the spelling of the Redirect URI specified against the entry for your app.
+      * Go to the {{config.extra.arcana.dashboard_name}} and check the app settings in the *Social Auth* section. Note that the Redirect URI displayed for the app is exactly the same as the one you have specified in the social login provider OAuth settings.  For example, in the case of social login provider 'Google', use Google Developer Console and check OAuth settings. Check the spelling of the Redirect URI specified against the entry for your app.
 
-      * If you are deploying the app on the Mainnet, then make sure the Redirect URI displayed in the Mainnet configuration profile of the app in the {{config.extra.arcana.dashboard_name}} is used in the social provider OAuth settings.
+      * If you are deploying the app on the Mainnet, then make sure the Redirect URI displayed in the Mainnet configuration profile of the app in the {{config.extra.arcana.dashboard_name}} is used in the social login provider settings.
 
 <!--
 ---
@@ -258,13 +258,13 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 
 ---
 
-??? an-trbs "Configured social providers do not show up in the {{config.extra.arcana.wallet_name}} UI with v1.0.0."
+??? an-trbs "Configured social login providers do not show up in the {{config.extra.arcana.wallet_name}} UI with v1.0.0."
 
-      If you are using an older version of the {{config.extra.arcana.sdk_name}} before v1.0.0, simply upgrading the package to v1.0.0 or beyond is not sufficient. Your older app configuration settings will no longer work. If you allow users to log in, their auth plug-and-play pop-up UI will not show any of the configured social providers. 
+      If you are using an older version of the {{config.extra.arcana.sdk_name}} before v1.0.0, simply upgrading the package to v1.0.0 or beyond is not sufficient. Your older app configuration settings will no longer work. If you allow users to log in, their auth plug-and-play pop-up UI will not show any of the configured social login providers. 
 
       Please follow the instructions in the [[migration-guide-v1.0.1|Migration to v1.0.0 Guide]] before integrating with the {{config.extra.arcana.sdk_name}} v1.0.0. We highly recommend that you use the latest {{config.extra.arcana.sdk_name}}.
 
-      If your app users continue to see the same issue of social providers not showing after migrating properly, please double-check the **{{config.extra.arcana.app_address}}** that is specified at the time of instantiating the `AuthProvider`.  If you are using v1.0.0, and do not explicitly specify any `network` value while instantiating the `AuthProvider`, then by default 'Mainnet' is selected. In this case, make sure you provide the **{{config.extra.arcana.app_address}}** assigned to your app's 'Mainnet' configuration profile. If you specify the wrong **{{config.extra.arcana.app_address}}** then you will not see the social providers when the {{config.extra.arcana.wallet_name}} UI comes up after login.
+      If your app users continue to see the same issue of social login providers not showing after migrating properly, please double-check the **{{config.extra.arcana.app_address}}** that is specified at the time of instantiating the `AuthProvider`.  If you are using v1.0.0, and do not explicitly specify any `network` value while instantiating the `AuthProvider`, then by default 'Mainnet' is selected. In this case, make sure you provide the **{{config.extra.arcana.app_address}}** assigned to your app's 'Mainnet' configuration profile. If you specify a different **{{config.extra.arcana.app_address}}** during app integration with the SDK then you will only see the social login providers in the login UI that are associated with the specified {{config.extra.arcana.app_address}}.
 
       If you choose to specify the optional `network` parameter as 'testnet' while instantiating the `AuthProvider`, then make sure you specify the **{{config.extra.arcana.app_address}}** corresponding to the 'Testnet' configuration profile of the app as displayed in the {{config.extra.arcana.dashboard_name}}.
 

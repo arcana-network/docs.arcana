@@ -1,7 +1,7 @@
 ---
 alias: concept-jwt-token-validation
 title: 'How to validate Arcana JWT Token?'
-description: 'Arcana Auth SDK verifies the token returned by the social provider and then returns an Arcana JWT Token to the app. Use instructions here to verify the token in the app.'
+description: 'Arcana Auth SDK verifies the token returned by the social login provider and then returns an Arcana JWT Token to the app. Use instructions here to verify the token in the app.'
 arcana:
   root_rel_path: ..
 ---

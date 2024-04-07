@@ -4,6 +4,7 @@ title: 'Integrate React/Next.js App'
 description: 'Integrate Web3 apps built using the React/Next.js frameworks with the Arcana Auth SDK using the instructions listed here.'
 arcana:
   root_rel_path: ../..
+  app_example_submodule: "`sample-auth-react-native`"
 ---
 
 # Integrate React/Next.js App
