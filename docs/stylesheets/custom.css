@@ -1,6 +1,13 @@
+/*
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@100;200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400&display=block");
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Onest:wght@100..900&display=swap');
 
 :root > * {
+     --md-an-pink-color: #FF4E9F;
+     --md-an-blue-color: #2730FE;
+     --md-an-green-color: #0FB600;
      --md-primary-fg-color: #242424;
      --md-primary-fg-color--dark: #9a9a9a;
      --md-primary-fg-color--lighter: #5e5e5e;
@@ -13,7 +20,7 @@
      --md-accent-fg-color--transparent:   hsla(190, 5%, 49%, 0.1);
      --md-accent-bg-color:                hsla(0, 0%, 100%, 1);
      --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
-     --md-text-font: "Inter";
+     --md-text-font: "Onest";
      --md-admonition-icon--an-faq: url('/img/icons/icons8-question-mark-48.png');
      --md-admonition-icon--an-trbs: url('/img/icons/exclamation.png');
      --md-primary-an-heading-color:   var(--md-primary-fg-color--lighter);
@@ -28,7 +35,8 @@
      --md-an-header-color-purple: rgb(24,21,59); 
      --md-an-color-light-purple: rgb(192, 188, 223);
      --md-an-blink-me-link-color: blue;
-     --md-an-banner-bg: #23A26D
+     /*--md-an-banner-bg: #23A26D; Green*/
+     --md-an-banner-bg: var(--md-an-pink-color);
     }
 
 [data-md-color-scheme="black"] {
@@ -44,6 +52,14 @@
   --md-an-banner-color-purple: rgb(59, 52, 150);
   --md-an-header-color-purple: rgb(16,14,36); 
   --md-an-color-light-purple: rgb(26, 24, 38);
+}
+
+.icon-color {
+  color: var(--md-an-pink-color);
+}
+
+.md-nav--secondary .md-nav__title{
+  color: var(--md-an-pink-color);
 }
 
 .critic .block {
@@ -84,8 +100,14 @@
 
 /* Highlight LHS Nav sections */
 
+/*
 .md-nav__link{
   border-bottom: 0.0125rem ridge var(--md-primary-fg-color--light);
+}
+*/
+
+.md-nav__link--active{
+  color: var(--md-an-blue-color);
 }
 
 .md-button {
@@ -120,7 +142,7 @@
       var(--md-accent-bg-color--light) 4%,
       var(--md-banner-color-2) 2%) !important;
     */
-    font-family: "Inter", sans-serif;
+    font-family: "Onest", sans-serif;
     font-weight: bold;
     color: var(--md-primary-an-banner-text-color);
     overflow: hidden;
@@ -134,9 +156,12 @@
 }
 
 .md-nav__item--section {
-    padding: 0.5rem;
+    padding: 0.75rem;
 }
 
+.md-nav__item {
+    padding:0.5rem;
+}
 .cards {
     max-width: "80%";
     margin: 0 auto;

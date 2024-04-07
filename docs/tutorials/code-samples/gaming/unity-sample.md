@@ -55,7 +55,7 @@ The app is ready to be deployed on the Testnet. Once a user authenticates, the b
 
 <img class="an-screenshots" alt="AuthProvider Unity app Login" src="/img/auth_ex_html_css_js_app2.png" width="50%"/>
 
-That's all! :tada:
+That's all! :material-party-popper:{.icon-color}
 
 ## See Also
 
