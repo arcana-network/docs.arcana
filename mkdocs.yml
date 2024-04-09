@@ -16,7 +16,7 @@ use_directory_urls: true
 
 copyright: Copyright &copy; 2024 Arcana Network
 repo_url: https://github.com/arcana-network/
-repo_name: arcana-network/
+repo_name: arcana-network
 edit_uri: https://github.com/arcana-network/auth-mkdocs/blob/main/docs
 
 # theme customizations
@@ -25,12 +25,12 @@ theme:
   name: material
   language: en
   #logo: img/arcana-logo-white.svg
-  logo: img/arcana-logo-pink.png
+  logo: /img/arcana-logo-pink.png
   icon:
     repo: fontawesome/brands/git-alt
     edit: material/pencil
     view: material/eye
-  favicon: img/favicon-pink.png
+  favicon: /img/favicon-pink.png
   custom_dir: docs/overrides
   features:
     - navigation.instant
@@ -76,6 +76,7 @@ theme:
 
 extra_javascript:
   - javascripts/mathjax.js
+  - javascripts/common.js
   # - javascripts/andropdown.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -85,7 +86,7 @@ extra_css:
 
 extra:
   # Home page default is the landing
-  homepage: https://arcana.network
+  # homepage: https://arcana.network
   arcana:
     company_name: Arcana
     product_name: Arcana Auth
@@ -533,6 +534,7 @@ nav:
       - MultiversX: auth/web3-ops/mvx/index.md
       - Unity: auth/web3-ops/unity-wallet-ops.md
     - Event Handling: auth/handle-provider-events.md
+    - Try Now!: auth/auth-try-now.md
   - Gasless SDK: 
     - gasless/index.md
     - Register App: setup/config-gasless/register-app.md
@@ -540,6 +542,7 @@ nav:
     - Install: gasless/gasless-install.md
     - Integrate App: gasless/gasless-integrate.md
     - Transact: gasless/gasless-transact.md
+    - Try Now!: gasless/gl-try-now.md
   - Deploy App: 
     - deploy/index.md
     - Testnet/Mainnet: deploy/deploy-app.md
@@ -630,10 +633,6 @@ nav:
     - learn/index.md
     - Tutorials:
       - tutorials/index.md
-      - Try Now:
-        - tutorials/try-now/index.md
-        - Auth: tutorials/try-now/auth-try-now.md
-        - Gasless: tutorials/try-now/gl-try-now.md
       - Integration Examples:
         - tutorials/code-samples/index.md
         - Web:

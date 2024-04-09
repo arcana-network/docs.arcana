@@ -128,9 +128,8 @@
         margin: 1rem;
     }
 
-    .tx-hero-card, .tx-hero-card-auth, .tx-hero-card-gl{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+    .tx-hero-card, .tx-hero-card-auth, .tx-hero-card-gl {
+        margin: 1rem;
         box-shadow: 0 0 9px 0px rgba(0,0,0,0.2);
         border-radius: 0.6rem;
         display: flex;
@@ -140,12 +139,12 @@
         font-size: 1.25rem;
     }
 
-    .tx-hero-card-auth:hover{
+    .tx-hero-content-auth:hover{
         background-color: var(--md-an-blue-color);
         opacity: 0.25;
     }
 
-    .tx-hero-card-gl:hover{
+    .tx-hero-content-gl:hover{
         background-color: var(--md-an-green-color);
         opacity: 0.25;
     }
@@ -160,9 +159,10 @@
         justify-content: center;
     }
 
-    .tx-hero-content {
+    .tx-hero-content, .tx-hero-content-auth, .tx-hero-content-gl {
         text-align: left;
-        margin: 1rem;
+        margin: 1.5rem;
+        padding: 1.5rem;
         color: var(--md-primary-fg-color);
         border-radius: 0.6rem;
     }
@@ -649,14 +649,15 @@
     <div class="tx-hero-card tx-hero-card-auth">
         <a href="{{ config.site_url }}/quick-start/wagmi-quick-start/">
             <div class="tx-hero-header tx-hero-header-auth">
-                <img style="padding: 1rem" src="./img/auth_logo.png" width="35%" height: auto/>
+                <img style="padding: 1rem" src="./img/auth_logo.png" width="28%" height: auto/>
                 <p style="font-family: system-ui; color: var(--md-an-blue-color); font-size: 2.5rem; font-weight:300">auth</p>
             </div>
-            <div class="tx-hero-content">
-                <p style="text-align: center;font-size: 1.5rem;">Seamless Wallet Integration</p>
-                <p style="text-align: center;padding: 1rem;">Onboard users with social login (Google, Twitter, Twitch, Discord, Github, Steam or Email), IAM providers (Firebase, Cognito) or custom OAuth. Enable authenticated users to instantly access the embedded, non-custodial, in-app Arcana wallet and sign transactions on any EVM chain.</p>
-            </div>
         </a>
+            <div class="tx-hero-conten tx-hero-content-auth">
+                <p style="text-align: center;font-size: 2rem; font-weight: 500;">Seamless</p>
+                <p style="text-align: center;font-size: 1.5rem;">Wallet Integration</p>
+                <p style="text-align: center; font-size: 1rem;">Onboard users with social login (Google, Twitter, Twitch, Discord, Github, Steam or Email), IAM providers (Firebase, Cognito) or custom OAuth. Enable instant access to a non-custodial, in-app Arcana wallet, and sign transactions on any EVM chain.</p>
+            </div>
     </div>
     <div class="tx-hero-card tx-hero-card-gl">
         <a href="{{ config.site_url }}/quick-start/gasless-standalone-quick-start/">
@@ -664,17 +665,18 @@
                 <img style="padding: 1rem" src="./img/gasless_logo.svg" width="35%" height: auto/>
                 <p style="font-family: system-ui; color: var(--md-an-green-color); font-size: 2.5rem;font-weight:300">gasless</p>
             </div>
-            <div class="tx-hero-content">
-                <p style="text-align: center; font-size: 1.5rem;">Frictionless Web3 Transactions</p>
-                <p style="text-align: center;padding: 1rem;">Extend Arcana wallet gasless feature for third-party wallets. Simply set up gas tanks, deposit funds to sponsor gas fees for app users, whitelist app operations and you are ready to go! Increase conversion and lower the user barrier to Web3 entry.</p>
-            </div>
         </a>
+            <div class="tx-hero-content tx-hero-content-gl">
+                <p style="text-align: center; font-size: 2rem; font-weight: 500;">Frictionless</p>
+                <p style="text-align: center; font-size: 1.5rem;">Web3 Transactions</p>
+                <p style="text-align: center; font-size: 1rem;">Extend Arcana wallet gasless feature for third-party wallets. Simply set up gas tanks, deposit funds to sponsor gas fees for app users, whitelist app operations and you are ready to go! Increase conversion and lower the user barrier to Web3 entry.</p>
+            </div>
     </div>
 </div>
 
-<div class="tx-try-now-container">
-    <a href="{{ config.site_url }}/tutorials/try-now/auth-try-now/"><div class="tx-try-now-button-blue a-link-items"><h3 style="color: var(--md-an-gray-light-color)">Try Auth</h3></div></a>
-    <a href="{{ config.site_url }}/tutorials/try-now/gl-try-now/"><div class="tx-try-now-button-green a-link-items"><h3 style="color: var(--md-an-gray-light-color)">Try Gasless</h3></div></a>
+<div class="tx-hero-container">
+    <div class="tx-hero-content"><a href="{{ config.site_url }}/auth/auth-try-now/"><div class="tx-try-now-button-blue a-link-items"><h3 style="color: var(--md-an-gray-light-color)">Try Auth</h3></div></a></div>
+    <div class="tx-hero-content"><a href="{{ config.site_url }}/gasless/gl-try-now/"><div class="tx-try-now-button-green a-link-items"><h3 style="color: var(--md-an-gray-light-color)">Try Gasless</h3></div></a></div>
 </div>
 
 </section>
@@ -808,75 +810,6 @@
 
 </div>
 
-<!----
-<div class="top-hr">
-    <div class="hr">
-        <h2 style="text-align: left">Customize</h2>
-    </div>
-</div>
-
-<div class="top-hr">
-
-    <div class="feature-item-2">
-        <a href="{{ config.site_url }}/auth/onboard/">
-            <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_plug_and_play_dark.png#only-dark" width="10%" /><img src="./img/icons/i_plug_and_play_light.png#only-light" width="10%" /> Onboard Users</h3>
-                <ul>
-                    <li>Built-in Plug & Play login UI / Custom login UI</li>
-                    <li>Onboard via social login, passwordless</li>
-                    <li>Customizable pre-configured wallet chains</li>
-                    <li>Built-in wallet UI / Custom wallet UI</li>
-                  </ul>              
-            </div>
-        </a>
-    </div>
-
-    <div class="feature-item-2">
-        <a href="{{ config.site_url }}/auth/web3-ops/">
-            <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_an_wallet_dark.png#only-dark" width="10%" /><img src="./img/icons/i_an_wallet_light.png#only-light" width="10%" />  Web3 Wallet Ops</h3>
-                <ul>
-                    <li>Built-in, non-custodial, in-app Arcana Wallet for authenticated users</li>
-                    <li>No browser extension required to access Arcana Wallet</li>
-                    <li>Make JSON/RPC calls, Web3 wallet operations</li>
-                    <li>Check balance, send/receive tokens, NFTs and more</li>
-                </ul>  
-            </div>
-        </a>
-    </div>
-
-    <div class="feature-item-2">
-        <a href="{{ config.site_url }}/quick-start/gasless-quick-start/">
-            <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_an_gastank_dark.png#only-dark" width="10%" /><img src="./img/icons/i_an_gastank_light.png#only-light" width="10%" /> Go Gasless!</h3>
-                <ul>
-                    <li>Boost user engagement and adoption</li>
-                    <li>Configure Arcana Auth SDK built-in gasless feature for Arcana Wallet</li>
-                    <li>Use standalone Gasless SDK for third-party wallets</li>
-                </ul>
-            </div>
-        </a>
-    </div>
-
-</div>
-
-<div class="top-hr">
-    <div class="hr">
-        <h2 style="text-align: left">Try Auth!</h2>
-    </div>
-</div>
-
-<div style="margin-top: 1rem; margin-bottom: 1rem"id="authsandpack"></div>
-
-<div class="top-hr">
-    <div class="hr">
-        <h2 style="text-align: left">Try Gasless!</h2>
-    </div>
-</div>
-
-<div style="margin-top: 1rem; margin-bottom: 1rem" id="gaslesssandpack"></div>
---->
-
 <div class="top-hr">
     <div class="hr">
         <h2 style="text-align: left">Popular Guides</h2>
@@ -982,191 +915,6 @@
   !function(e,r,a){if(!e.__Marker){e.__Marker={};var t=[],n={__cs:t};["show","hide","isVisible","capture","cancelCapture","unload","reload","isExtensionInstalled","setReporter","setCustomData","on","off"].forEach(function(e){n[e]=function(){var r=Array.prototype.slice.call(arguments);r.unshift(e),t.push(r)}}),e.Marker=n;var s=r.createElement("script");s.async=1,s.src="https://edge.marker.io/latest/shim.js";var i=r.getElementsByTagName("script")[0];i.parentNode.insertBefore(s,i)}}(window,document);
   </script>
   --->
-
-  <!--
-  Sandpack PoC
-  -->
-  <!---
-  <script type="importmap">
-    {
-      "imports": {
-        "react": "https://esm.sh/react@18.2.0",
-        "react-dom": "https://esm.sh/react-dom@18.2.0",
-        "react-dom/": "https://esm.sh/react-dom@18.2.0/",
-        "@codesandbox/sandpack-react": "https://esm.sh/@codesandbox/sandpack-react@2.8.0"
-      }
-    }
-  </script>
-
-  <script type="module">
-    import React from "react";
-    import { createRoot } from "react-dom/client";
-    import { Sandpack } from "@codesandbox/sandpack-react";
-
-    const authsandpack = createRoot(document.getElementById("authsandpack"));
-    const gaslesssandpack = createRoot(document.getElementById("gaslesssandpack"));
-
-    let themeType;
-    let currentTheme;
-    let updateSP;
-
-    // Current Theme check
-    const startCurrentTheme = document.body.getAttribute("data-md-color-scheme");
-
-    if (startCurrentTheme === "slate") {
-        themeType = "dark";
-    }
-    //const {sPtheme, setsPTheme} = useState('light'); 
-    /*
-    const watchMedia = window.matchMedia("(data-md-color-scheme: "slate")");
-    let themetype;
-
-    function getTheme(e) {
-        if (e.matches)
-            themetype = "dark";
-        else
-            themetype = "default";
-    }
-    watchMedia.addEventListener("change", getTheme);
-    */
-
-    /*
-    const prefersDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const themetype = prefersDarkMode ? "dark" : "light";
-    */
-
-    //Try Observer method
-
-    // Select the node that will be observed for mutations
-    const targetNode = document.body;
-
-    // Options for the observer (which mutations to observe)
-    const config = { attributes: true, childList: false, subtree: false };
-
-    // Callback function to execute when mutations are observed
-    const callback = (mutationList, observer) => {
-    for (const mutation of mutationList) {
-        if (mutation.type === "attributes" && mutation.attributeName === "data-md-color-scheme") {
-            console.log(`The ${mutation.attributeName} attribute was modified.`);
-            console.log("Mutation:", mutation);
-            
-            const currentTheme = document.body.getAttribute("data-md-color-scheme");
-            console.log("Current theme:", currentTheme);
-            
-            // Determine theme type based on current theme
-            if (currentTheme === "slate") {
-                themeType = "dark";
-            } else if (currentTheme === "default") {
-                themeType = "light";
-            }
-            console.log("Theme type:", themeType);
-        }
-    }
-};
-
-    // Create an observer instance linked to the callback function
-    const observer = new MutationObserver(callback);
-
-    // Start observing the target node for configured mutations
-    observer.observe(targetNode, config);
-
-    /*
-    window.onbeforeunload = function(){
-        // Later, you can stop observing
-        observer.disconnect();
-        return 'The observer is now disconnected!';
-    };
-    */
-
-    function fetchAndStoreFiles(fileUrls, targetObject) {
-        const filePromises = fileUrls.map(url => {
-            return fetch(url)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`Failed to fetch ${url}`);
-                    }
-                    return response.text();
-                })
-                .then(data => {
-                    const fileName = url.substring(url.lastIndexOf('/') + 1);
-                    targetObject[`/${fileName}`] = data;
-                });
-        });
-
-        return Promise.all(filePromises);
-    }
-
-    function renderSandpack(template, theme, files, sandpackInstance) {
-        const sandpackComponent = React.createElement(
-            Sandpack,
-            {
-                template,
-                customSetup: {
-                    dependencies: { 
-                        "dotenv": "^16.3.1",
-                        "parcel": "^2.9.3"
-                    }
-                },
-                theme,
-                options: {
-                    showNavigator: true,
-                    showTabs: true,
-                    showConsole: true,
-                    showConsoleButton: true,
-                    externalResources: [
-                        "https://cdn.jsdelivr.net/npm/@arcana/auth",
-                        "https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js",
-                        "https://unpkg.com/@arcana/scw@0.0.30/dist/standalone/scw.umd.js",
-                        //"https://cdn.jsdelivr.net/npm/@arcana/scw",
-                    ],
-                    editorHeight: '95vh',
-                    autoReload: true,
-                    initMode: "user-visible",
-                    resizablePanels: true,
-                },
-                files,
-            },
-            null
-        );
-        sandpackInstance.render(sandpackComponent);
-    }
-
-    const fileUrls = [
-        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/index.html',
-        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/index.js',
-        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/styles.css',
-    //    'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/package.json',
-    ];
-//../sandpack/auth/index.html
-    const files = {};
-    fetchAndStoreFiles(fileUrls, files)
-        .then(() => {
-            console.log('Sandpack files:', files);
-            renderSandpack('vanilla', themeType, files, authsandpack);
-        })
-        .catch(error => {
-            console.error('Error loading sample files:', error);
-        });
-
-    const gaslessFileUrls = [
-        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/index.html',
-        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/index.js',
-        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/styles.css',
-        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/myerc20.js',
-    ];
-
-    const glFiles = {};
-    fetchAndStoreFiles(gaslessFileUrls, glFiles)
-        .then(() => {
-            console.log('Gasless Sandpack files:', glFiles);
-            renderSandpack('vanilla', themeType, glFiles, gaslesssandpack);
-        })
-        .catch(error => {
-            console.error('Error loading gasless sample files:', error);
-        });  
-
-  </script>
---->
 
   <!-- Chatbase bot script -->
   <script>
