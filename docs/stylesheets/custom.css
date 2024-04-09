@@ -159,9 +159,12 @@
     padding: 0.75rem;
 }
 
+/*
 .md-nav__item {
     padding:0.5rem;
 }
+*/
+
 .cards {
     max-width: "80%";
     margin: 0 auto;
