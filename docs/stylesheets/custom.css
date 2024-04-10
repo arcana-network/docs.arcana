@@ -54,6 +54,16 @@
   --md-an-color-light-purple: rgb(26, 24, 38);
 }
 
+button.sp-tab-button {
+  border-right: 2px solid var(--md-an-pink-color);
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
+
+button.sp-icon-standalone, button.sp-icon{
+  color:  var(--md-an-pink-color);
+}
+
 .icon-color {
   color: var(--md-an-pink-color);
 }
