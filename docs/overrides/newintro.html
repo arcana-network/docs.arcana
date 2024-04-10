@@ -3,8 +3,11 @@
 
 {{ super() }}
 
+<!---
+    Note: Mkdocs returns {{ config.site_url }} with a terminating '/' 
+-->
 {% block announce %}
-<p> 🎉🎉🎉 <span class="blink_me">Live on Mainnet! </span><a style="color: var(--md-primary-bg-color); font-size: 0.50rem;" href="{{ config.site_url }}/relnotes/latest-auth-release-note/">{{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }},</a><a style="color: var(--md-primary-bg-color);font-size: 0.50rem;" href="{{ config.site_url }}/relnotes/latest-gasless-release-note/">{{ config.extra.arcana.gasless_sdk_name }} v{{ config.extra.arcana.latest_gasless_sdk_version }}</a> ⚡⚡⚡</p>
+<p> 🎉🎉🎉 <span class="blink_me">Live on Mainnet! </span><a style="color: var(--md-primary-bg-color); font-size: 0.50rem;" href="{{ config.site_url }}relnotes/latest-auth-release-note/">{{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }},</a><a style="color: var(--md-primary-bg-color);font-size: 0.50rem;" href="{{ config.site_url }}relnotes/latest-gasless-release-note/">{{ config.extra.arcana.gasless_sdk_name }} v{{ config.extra.arcana.latest_gasless_sdk_version }}</a> ⚡⚡⚡</p>
 <!---
     <i><a style="color: rgb(46, 45, 45);" href="https://docs.dev.arcana.network/">Try beta SDKs on Testnet.</a></i>
 -->
@@ -645,7 +648,7 @@
 </div>
 <div class="tx-hero-container">
     <div class="tx-hero-card tx-hero-card-auth">
-        <a href="{{ config.site_url }}/quick-start/wagmi-quick-start/">
+        <a href="{{ config.site_url }}quick-start/wagmi-quick-start/">
             <div class="tx-hero-header tx-hero-header-auth">
                 <img style="padding: 1rem" src="./img/auth_logo.png" width="28%" height: auto/>
                 <p style="font-family: system-ui; color: var(--md-an-blue-color); font-size: 2.5rem; font-weight:300">auth</p>
@@ -657,7 +660,7 @@
             </div>
     </div>
     <div class="tx-hero-card tx-hero-card-gl">
-        <a href="{{ config.site_url }}/quick-start/gasless-standalone-quick-start/">
+        <a href="{{ config.site_url }}quick-start/gasless-standalone-quick-start/">
             <div class="tx-hero-header tx-hero-header-gl">
                 <img style="padding: 1rem" src="./img/gasless_logo.png" width="27%" height: auto/>
                 <p style="font-family: system-ui; color: var(--md-an-green-color); font-size: 2.5rem;font-weight:300">gasless</p>
@@ -671,8 +674,8 @@
 </div>
 
 <div class="tx-hero-container">
-    <div class="tx-hero-content"><a href="{{ config.site_url }}/auth/auth-try-now/"><div class="tx-try-now-button-blue a-link-items"><h3 style="color: var(--md-an-gray-light-color)">Try Auth</h3></div></a></div>
-    <div class="tx-hero-content"><a href="{{ config.site_url }}/gasless/gl-try-now/"><div class="tx-try-now-button-green a-link-items"><h3 style="color: var(--md-an-gray-light-color)">Try Gasless</h3></div></a></div>
+    <div class="tx-hero-content"><a href="{{ config.site_url }}auth/auth-try-now/"><div class="tx-try-now-button-blue a-link-items"><h3 style="color: var(--md-an-gray-light-color)">Try Auth</h3></div></a></div>
+    <div class="tx-hero-content"><a href="{{ config.site_url }}gasless/gl-try-now/"><div class="tx-try-now-button-green a-link-items"><h3 style="color: var(--md-an-gray-light-color)">Try Gasless</h3></div></a></div>
 </div>
 
 </section>
@@ -685,7 +688,7 @@
 
 <div class="tx-hero-container">
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/quick-start/wagmi-quick-start/">
+        <a href="{{ config.site_url }}quick-start/wagmi-quick-start/">
             <div class="a-link-color a-link-container">
                 <div class="a-link-items"><img class="logo-styling" src="/img/logos/wagmi.png" width="40px"/></div>
                 <div class="a-link-items"><h3 class="h3-color"> Wagmi App</h3></div>
@@ -694,7 +697,7 @@
     </div>
 
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/quick-start/rainbowkit-quick-start/">
+        <a href="{{ config.site_url }}quick-start/rainbowkit-quick-start/">
             <div class="a-link-color a-link-container">
                 <div class="a-link-items"><img class="logo-styling" src="/img/logos/rainbow.svg" width="30px"/></div>
                 <div class="a-link-items"><h3 class="h3-color">RainbowKit</h3></div>
@@ -703,7 +706,7 @@
     </div>
 
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/quick-start/web3-react-quick-start/">
+        <a href="{{ config.site_url }}quick-start/web3-react-quick-start/">
             <div class="a-link-color a-link-container">
                 <div class="a-link-items"><img class="logo-styling" src="/img/logos/web3-react.png" width="30px"/></div>
                 <div class="a-link-items"><h3 class="h3-color">Web3-React</h3></div>
@@ -715,7 +718,7 @@
 <div class="tx-hero-container">
 
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/quick-start/vanilla-web-apps-quick-start/">
+        <a href="{{ config.site_url }}quick-start/vanilla-web-apps-quick-start/">
             <div class="a-link-color a-link-container">
                 <div class="a-link-items"><i class="fa fa-code fa-icon-styling"></i></div>
                 <div class="a-link-items"><h3 class="h3-color">HTML/CSS/JS</h3></div>
@@ -724,7 +727,7 @@
     </div>
 
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/quick-start/vue-quick-start/">
+        <a href="{{ config.site_url }}quick-start/vue-quick-start/">
             <div class="a-link-color a-link-container">
                 <div class="a-link-items"><img class="logo-styling" src="/img/logos/vue.png" width="30px"/></div>
                 <div class="a-link-items"><h3 class="h3-color"></i>Vue</h3></div>
@@ -733,7 +736,7 @@
     </div>
 
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/quick-start/react-nextjs-quick-start/">
+        <a href="{{ config.site_url }}quick-start/react-nextjs-quick-start/">
             <div class="a-link-color a-link-container">
                 <!----
                 <div class="a-link-items"><img class="logo-styling" src="/img/logos/react.png" width="30px"/></div>
@@ -748,7 +751,7 @@
 <div class="tx-hero-container">
 
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/quick-start/mobile/">
+        <a href="{{ config.site_url }}quick-start/mobile/">
                 <div class="a-link-color a-link-container">
                     <div class="a-link-items"><i class="fa fa-mobile fa-icon-styling"></i></div>
                     <div class="a-link-items"><h3 class="h3-color">Mobile</h3></div>
@@ -757,7 +760,7 @@
     </div>
 
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/quick-start/gasless-quick-start/">
+        <a href="{{ config.site_url }}quick-start/gasless-quick-start/">
             <div class="a-link-color a-link-container">
                 <div class="a-link-items"><i class="fa fa-tint fa-icon-styling"></i></div>
                 <div class="a-link-items"><h3 class="h3-color">Gasless (Arcana Wallet)</h3></div> 
@@ -766,7 +769,7 @@
     </div>
 
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/quick-start/gasless-standalone-quick-start/">
+        <a href="{{ config.site_url }}quick-start/gasless-standalone-quick-start/">
             <div class="a-link-color a-link-container">
                 <div class="a-link-items"><i class="fa fa-tint fa-icon-styling"></i></div>
                 <div class="a-link-items"><h3 class="h3-color">Gasless (Other Wallets)</h3></div>
@@ -778,7 +781,7 @@
 <div class="tx-hero-container">
 
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/quick-start/solana-quick-start/">
+        <a href="{{ config.site_url }}quick-start/solana-quick-start/">
             <div class="a-link-color a-link-container">
                 <div class="a-link-items"><img class="logo-styling" src="/img/logos/solana.png" width="30px"/></div>
                 <div class="a-link-items"> <h3 class="h3-color">Solana</h3></div>
@@ -787,7 +790,7 @@
     </div>
 
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/quick-start/mvx-quick-start/">
+        <a href="{{ config.site_url }}quick-start/mvx-quick-start/">
             <div class="a-link-color a-link-container">
                 <div class="a-link-items"><img class="logo-styling" src="/img/logos/multiversx.png" width="30px"/></div>
                 <div class="a-link-items"><h3 class="h3-color">MultiversX</h3></div>
@@ -796,7 +799,7 @@
     </div>
 
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/quick-start/unity-quick-start/">
+        <a href="{{ config.site_url }}quick-start/unity-quick-start/">
             <div class="a-link-color a-link-container">
                 <div class="a-link-items"><img class="logo-styling" src="/img/logos/unity.png" width="30px"/></div>
                 <div class="a-link-items"><h3 class="h3-color">Unity</h3></div>
@@ -815,7 +818,7 @@
 <div class="tx-hero-container">
 
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/setup/config-auth/">
+        <a href="{{ config.site_url }}setup/config-auth/">
             <div class="a-link-color a-link-container">
                 <div class="a-link-items"><i class="fa fa-gear fa-icon-styling"></i></div>
                 <div class="a-link-items"><h3>Configure Auth</h3></div>
@@ -824,7 +827,7 @@
     </div>
 
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/setup/configure-standalone-gasless/">
+        <a href="{{ config.site_url }}setup/configure-standalone-gasless/">
             <div class="a-link-color a-link-container">
                 <div class="a-link-items"><i class="fa fa-solid fa-tint fa-icon-styling"></i></div>
                 <div class="a-link-items"><h3>Configure Gasless</h3></div>
@@ -833,7 +836,7 @@
     </div>
 
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/tutorials/">
+        <a href="{{ config.site_url }}tutorials/">
             <div class="a-link-color a-link-container">
                 <div class="a-link-items"><i class="fa fa-list-alt fa-icon-styling"></i></div>
                 <div class="a-link-items"><h3>Tutorials</h3></div>
@@ -844,7 +847,7 @@
 
 <div class="tx-hero-container">
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/guides/dev/sdk-ref/">
+        <a href="{{ config.site_url }}guides/dev/sdk-ref/">
             <div class="a-link-color a-link-container">
                 <div class="a-link-items"><i class="fa fa-indent fa-icon-styling"></i></div>
                 <div class="a-link-items"><h3>SDK Reference Guides</h3></div>
@@ -853,7 +856,7 @@
     </div>
 
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/guides/user/">
+        <a href="{{ config.site_url }}guides/user/">
             <div class="a-link-color a-link-container">
                 <div class="a-link-items"><i class="fa fa-leanpub fa-icon-styling"></i></div>
                 <div class="a-link-items"><h3>Wallet User Guides</h3></div>
@@ -861,7 +864,7 @@
         </a>
     </div>
     <div class="feature-item-3">
-        <a href="{{ config.site_url }}/concepts/">
+        <a href="{{ config.site_url }}concepts/">
             <div class="a-link-color a-link-container">
                 <div class="a-link-items"><i class="fa fa-language fa-icon-styling"></i></div>
                 <div class="a-link-items"><h3>Concepts</h3></div>
@@ -884,7 +887,7 @@
 <div class="top-hr">
     <div class="hr">
         <i>How was your experience with Arcana Auth and/or Gasless SDKs?</i>
-        <b><a href="{{ config.site_url }}/support/">Let us know...</a></b>
+        <b><a href="{{ config.site_url }}support/">Let us know...</a></b>
     </div>
 </div>
 
