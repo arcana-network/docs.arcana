@@ -8,8 +8,8 @@ arcana:
 
 # Error Handling
 
-[[web-auth-error-msg| Handling Auth Errors :fontawesome-solid-bug-slash:]]{ .md-button }
+[[web-auth-error-msg| :fontawesome-solid-bug-slash:{ .icon-color } Handling Auth Errors]]{ .md-button }
 
-[[web-gasless-error-msg| Handling Gasless Errors :fontawesome-solid-bug-slash:]]{ .md-button }
+[[web-gasless-error-msg| :fontawesome-solid-bug-slash:{ .icon-color } Handling Gasless Errors]]{ .md-button }
 
-[[db-error-msg| Dashboard Usage Errors :fontawesome-solid-bug-slash:]]{ .md-button }
+[[db-error-msg| :fontawesome-solid-bug-slash:{ .icon-color } Dashboard Usage Errors]]{ .md-button }

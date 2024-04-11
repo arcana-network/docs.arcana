@@ -10,16 +10,10 @@ arcana:
 
 Web3 stack refers to the types of apps, chains, wallets, wallet connectors, browsers and authentication options that are supported by the {{config.extra.arcana.company_name}} SDKs; the underlying {{config.extra.arcana.company_name}} protocol and the infrastructure that goes into building and running it.
 
-[[web3-stack-apps| App Types :material-application-brackets:]]{ .md-button }
-
-[[web3-stack-auth| Auth Providers :material-login:]]{ .md-button }
-
-[[web3-stack-browsers| Supported Browsers :octicons-browser-16:]]{ .md-button }
-
-[[web3-stack-chains| Supported Chains :chains:]]{ .md-button }
-
-[[web3-stack-protocol| {{config.extra.arcana.company_name}} Protocol :material-protocol:]]{ .md-button }
-
-[[web3-stack-validators| Validators :octicons-people-16:]]{ .md-button }
-
-[[web3-stack-wallets| Wallets :material-wallet-plus:]]{ .md-button }
+[[web3-stack-apps| :material-application-brackets:{ .icon-color } App Types]]{ .md-button }
+[[web3-stack-auth| :material-login:{ .icon-color } Auth Providers]]{ .md-button }
+[[web3-stack-browsers| :octicons-browser-16:{ .icon-color }Supported Browsers]]{ .md-button }
+[[web3-stack-chains| :octicons-link-16:{ .icon-color } Supported Chains]]{ .md-button }
+[[web3-stack-protocol| :material-protocol:{ .icon-color } {{config.extra.arcana.company_name}} Protocol]]{ .md-button }
+[[web3-stack-validators| :octicons-people-16:{ .icon-color } Validators]]{ .md-button }
+[[web3-stack-wallets| :material-wallet-plus:{ .icon-color } Wallets]]{ .md-button }

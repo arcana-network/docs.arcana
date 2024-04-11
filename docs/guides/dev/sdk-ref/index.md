@@ -8,12 +8,12 @@ arcana:
 
 # SDK Reference Guides
 
-[[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide :material-function-variant:]]{ .md-button }
+[[web-auth-usage-guide| :material-function-variant:{ .icon-color }  {{config.extra.arcana.sdk_name}} Usage Guide ]]{ .md-button }
 
-[{{config.extra.arcana.sdk_name}} Reference Guide :octicons-cross-reference-16:](https://authsdk-ref-guide.netlify.app/){ .md-button }
+[:octicons-cross-reference-16:{ .icon-color }  {{config.extra.arcana.sdk_name}} Reference Guide ](https://authsdk-ref-guide.netlify.app/){ .md-button }
 
-[[auth-core-usage-guide|{{config.extra.arcana.auth_core_sdk_name}} Usage Guide :material-function-variant:]]{ .md-button }
+[[auth-core-usage-guide| :material-function-variant:{ .icon-color }  {{config.extra.arcana.auth_core_sdk_name}} Usage Guide ]]{ .md-button }
 
-[{{config.extra.arcana.auth_core_sdk_name}} Reference Guide :octicons-cross-reference-16:](https://auth-core-sdk-ref-guide.netlify.app/){.md-button}
+[:octicons-cross-reference-16:{ .icon-color }  {{config.extra.arcana.auth_core_sdk_name}} Reference Guide ](https://auth-core-sdk-ref-guide.netlify.app/){.md-button}
 
-[[gasless-sdk-usage-guide|{{config.extra.arcana.gasless_sdk_name}} Usage Guide :material-function-variant:]]{ .md-button }
+[[gasless-sdk-usage-guide| :material-function-variant:{ .icon-color } {{config.extra.arcana.gasless_sdk_name}} Usage Guide ]]{ .md-button }

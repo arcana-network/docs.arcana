@@ -12,28 +12,18 @@ arcana:
 
 ## Web Apps
 
-[[integrate-vanilla-app|Vanilla JS App :material-language-javascript:]]{ .md-button }
-
-[[integrate-react-nextjs-app|React/Next.js App :fontawesome-brands-react: :simple-nextdotjs:]]{ .md-button } 
-
-[[integrate-wagmi-app|Wagmi Connector App:material-card-account-mail:]]{ .md-button } 
-
-[[integrate-rainbow-app|RainbowKit Connector App :material-card-account-mail:]]{ .md-button }
-
-[[integrate-web3-react-app|Web3-React Connector App :material-card-account-mail:]]{ .md-button }
-
-[[integrate-vue-app|Vue App :material-vuejs:]]{ .md-button }
-
-[[integrate-gasless-app|Gasless App :material-gas-station-off:]]{ .md-button }
-
-[[integrate-solana-app|Solana App :simple-bookstack:]]{ .md-button }
-
-[[integrate-mvx-app|MultiversX App :simple-bookstack:]]{ .md-button }
-
-[[integrate-unity-app|Unity App :simple-unity:]]{ .md-button }
+[[integrate-vanilla-app| :material-language-javascript:{ .icon-color } HTML/CSS/JS App]]{ .md-button }
+[[integrate-react-nextjs-app| :fontawesome-brands-react:{ .icon-color } :simple-nextdotjs:{ .icon-color } React/Next.js App]]{ .md-button } 
+[[integrate-wagmi-app| :material-card-account-mail:{ .icon-color } Wagmi Connector App]]{ .md-button } 
+[[integrate-rainbow-app| :material-card-account-mail:{ .icon-color } RainbowKit Connector App ]]{ .md-button }
+[[integrate-web3-react-app| :material-card-account-mail:{ .icon-color } Web3-React Connector App]]{ .md-button }
+[[integrate-vue-app| :material-vuejs:{ .icon-color } Vue App]]{ .md-button }
+[[integrate-gasless-app| :material-gas-station-off:{ .icon-color } Gasless App]]{ .md-button }
+[[integrate-solana-app| :simple-bookstack:{ .icon-color } Solana App]]{ .md-button }
+[[integrate-mvx-app| :simple-bookstack:{ .icon-color } MultiversX App]]{ .md-button }
+[[integrate-unity-app| :simple-unity:{ .icon-color } Unity App]]{ .md-button }
 
 ## Mobile Apps
 
-[[flutter-get-started|Flutter Apps :simple-flutter:]]{ .md-button }
-
-[[react-native-get-started|React-Native Apps :simple-react:]]{ .md-button }
+[[flutter-get-started| :simple-flutter:{ .icon-color } Flutter Apps]]{ .md-button }
+[[react-native-get-started| :simple-react:{ .icon-color } React-Native Apps]]{ .md-button }

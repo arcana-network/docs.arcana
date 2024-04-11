@@ -12,25 +12,16 @@ User onboarding requires developers to first register their applications and con
 
 After integration, the Web3 apps can add code to onboard users via the configured authentication providers and passwordless by using built-in plug-and-play auth UI or custom login UI.
 
-[[wagmi-quick-start|Wagmi Apps :material-wallet-plus:]]{ .md-button }
-
-[[rainbowkit-quick-start|RainbowKit Apps :material-wallet-outline:]]{ .md-button }
-
-[[web3-react-quick-start|Web3-React Apps :material-transit-connection-variant:]]{ .md-button }
-
-[[react-nextjs-quick-start|React/Next.js Apps :material-react::fontawesome-brands-js:]]{ .md-button }
-
-[[index-vanilla-onboard-users|Vanilla HTML/CSS/JS App :fontawesome-solid-plug:]]{ .md-button }
-
-[[index-vue-onboard-users|Vue App :material-card-account-mail:]]{ .md-button }
-
-[[gasless-user-onboarding|Gasless App :material-gas-station-off:]]{ .md-button }
-
-[[solana-user-onboarding|Solana App :simple-solid:]]{ .md-button }
-
-[[mvx-user-onboarding|MultiversX App :simple-infinity:]]{ .md-button }
-
-[[unity-user-onboarding|Unity App :simple-unity:]]{ .md-button }
+[[wagmi-quick-start| :material-wallet-plus:{ .icon-color} Wagmi Apps]]{ .md-button }
+[[rainbowkit-quick-start| :material-wallet-outline:{ .icon-color} RainbowKit Apps ]]{ .md-button }
+[[web3-react-quick-start| :material-transit-connection-variant:{ .icon-color} Web3-React Apps]]{ .md-button }
+[[react-nextjs-quick-start| :material-react:{ .icon-color} :fontawesome-brands-js:{ .icon-color} React/Next.js Apps]]{ .md-button }
+[[index-vanilla-onboard-users| :fontawesome-solid-plug:{ .icon-color} Vanilla HTML/CSS/JS App]]{ .md-button }
+[[index-vue-onboard-users| :material-card-account-mail:{ .icon-color} Vue App]]{ .md-button }
+[[gasless-user-onboarding| :material-gas-station-off:{ .icon-color} Gasless App]]{ .md-button }
+[[solana-user-onboarding| :simple-solid:{ .icon-color} Solana App]]{ .md-button }
+[[mvx-user-onboarding| :simple-infinity:{ .icon-color} MultiversX App ]]{ .md-button }
+[[unity-user-onboarding| :simple-unity:{ .icon-color} Unity App ]]{ .md-button }
 
 !!! tip  "Auto-Reconnect Enhancement"
 

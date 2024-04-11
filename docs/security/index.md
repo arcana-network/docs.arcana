@@ -8,8 +8,8 @@ arcana:
 
 # Security
 
-[[security-overview| Overview :material-comment-processing:]]{ .md-button }
+[[security-overview| :material-comment-processing:{ .icon-color } Overview ]]{ .md-button }
 
-[[security-adkg| ADKG :simple-sharex:]]{ .md-button }
+[[security-adkg| :simple-sharex:{ .icon-color } Privacy & Security in ADKG]]{ .md-button }
 
-[[security-mfa| MFA :material-two-factor-authentication:]]{ .md-button }
+[[security-mfa| :material-two-factor-authentication:{ .icon-color } MFA for Enhanced Security]]{ .md-button }

@@ -10,6 +10,5 @@ arcana:
 
 # Integrate Mobile Apps
 
-[[flutter-get-started|Flutter Apps :simple-flutter:]]{ .md-button }
-
-[[react-native-get-started|React-Native Apps :simple-react:]]{ .md-button }
+[[flutter-get-started| :simple-flutter:{ .icon-color} Flutter Apps]]{ .md-button }
+[[react-native-get-started| :simple-react:{ .icon-color} React-Native Apps]]{ .md-button }

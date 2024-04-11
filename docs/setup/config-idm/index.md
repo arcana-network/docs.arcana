@@ -8,8 +8,7 @@ arcana:
 
 # IAM Providers
 
-[[config-auth-cognito|Cognito :fontawesome-brands-aws:]]{ .md-button }
-
-[[config-auth-firebase|Firebase :material-firebase:]]{ .md-button }
+[[config-auth-cognito|:fontawesome-brands-aws:{ .icon-color } Cognito ]]{ .md-button }
+[[config-auth-firebase|:material-firebase:{ .icon-color } Firebase ]]{ .md-button }
 
 {% include "./text-snippets/warn_cognito_social_provider_setup.md" %}   

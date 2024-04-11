@@ -12,14 +12,17 @@ When Web3 wallets enable gasless transactions, users don't need to pay transacti
 
 {{config.extra.arcana.gasless_sdk_name}} enables gasless transactions for third-party, browser-based wallets. Before installing and integrating with the SDK, developers must configure gasless usage through the {{config.extra.arcana.dashboard_name}}. 
 
-[[gasless-standalone-quick-start|Gasless Quick Start :fontawesome-solid-paper-plane:]]{.md-button}
+[[gasless-standalone-quick-start| :fontawesome-solid-paper-plane:{ .icon-color } Gasless Quick Start]]{.md-button}
 
+<!--- Embed Gasless sandbox - this was done prior to Sandpack upgrade --->
+<!---
 <iframe src="https://codesandbox.io/p/github/shaloo/sample-gasless-metamask-only/main?embed=1&file=%2Findex.js"
      style="width:100%; height: 500px; border: 1px; border-radius: 5px; overflow:hidden;"
      title="shaloo/sample-gasless-metamask-only/main"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
+-->
 
 ## Enabling Gasless
 
@@ -58,23 +61,23 @@ Registering the app with {{config.extra.arcana.company_name}} associates a uniqu
 
   Gasless transactions can help incentivize users and boost user onboarding.
 
-=== "**Developers**"
+=== ":fontawesome-regular-user:{ .icon-color } **Developers**"
 
     1. Register & Configure App for gasless transactions via third-party wallets
     2. Install SDK & Integrate App
     3. Add custom code to onboard users and integrate third-party wallets
     4. Deploy App on Testnet/Mainnet
 
-=== "**Users**"
+=== ":fontawesome-solid-users:{ .icon-color } **Users**"
 
     1. Log into the app, access the third-party wallets, sign blockchain transactions, and pay zero gas fees for the whitelisted app operations automatically.
 
 ## Key Features
 
 <div class="grid card_container" markdown>
-  <div class="card" markdown><h4><b>:fontawesome-solid-users-line: No Auth</b></h4><hr><p ><ul><li>There is no user authentication feature in the {{config.extra.arcana.gasless_sdk_name}} .</li><li>It can work without the {{config.extra.arcana.sdk_name}}.</li><li>In multi-wallet apps that use both {{config.extra.arcana.wallet_name}} and third-party wallets, both {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.gasless_sdk_name}} are required.</li></ul></p></div>
-  <div class="card" markdown><h4><b>:fontawesome-brands-ethereum: Powered by Biconomy</b></h4><hr><p><ul><li>The gasless transactions leverage the account abstraction and gasless features offered by Biconomy.</li><</ul></p></div>
-  <div class="card" markdown><h4><b>:material-gas-station: Gasless Transactions</b></h4><hr><p><ul><li>Developers can specify which app operations are gasless.</li><li>Easy to set up gas tanks and deposit gas fees.</li><li>Users don't pay gas fees for gasless transactions; third-party sponsors or app developers pay gas fees.</li></ul></p></div>
+  <div class="card" markdown><h4><b>:fontawesome-solid-users-line:{ .icon-color } No Auth</b></h4><hr><p ><ul><li>There is no user authentication feature in the {{config.extra.arcana.gasless_sdk_name}} .</li><li>It can work without the {{config.extra.arcana.sdk_name}}.</li><li>In multi-wallet apps that use both {{config.extra.arcana.wallet_name}} and third-party wallets, both {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.gasless_sdk_name}} are required.</li></ul></p></div>
+  <div class="card" markdown><h4><b>:fontawesome-brands-ethereum:{ .icon-color } Powered by Biconomy</b></h4><hr><p><ul><li>The gasless transactions leverage the account abstraction and gasless features offered by Biconomy.</li><li>Arcana uses its own custom Paymaster.</li></ul></p></div>
+  <div class="card" markdown><h4><b>:material-gas-station:{ .icon-color } Gasless Transactions</b></h4><hr><p><ul><li>Developers can specify which app operations are gasless.</li><li>Easy to set up gas tanks and deposit gas fees.</li><li>Users don't pay gas fees for gasless transactions; third-party sponsors or app developers pay gas fees.</li></ul></p></div>
 </div>
 
 <!--

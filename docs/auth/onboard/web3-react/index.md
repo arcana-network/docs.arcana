@@ -8,7 +8,7 @@ arcana:
 
 # Onboard Users: Web3-React Apps
 
-[[onboard-web3-react-app-pnp-ui| Plug-and-Play Login UI  :material-card-account-mail:]]{ .md-button }
+[[onboard-web3-react-app-pnp-ui| :material-card-account-mail:{ .icon-color } Plug-and-Play Login UI]]{ .md-button }
 
-[[onboard-web3-react-app-custom-ui| Custom UI  :material-card-account-mail:]]{ .md-button }
+[[onboard-web3-react-app-custom-ui| :material-card-account-mail:{ .icon-color } Custom UI]]{ .md-button }
 

@@ -8,6 +8,6 @@ arcana:
 
 # Architecture
 
-[[auth-architecture| Auth Architecture :material-new-box:]]{ .md-button }
+[[auth-architecture| :material-new-box:{ .icon-color } Auth Architecture]]{ .md-button }
 
-[[gasless-architecture| Gasless Architecture :material-bookshelf:]]{ .md-button }
+[[gasless-architecture| :material-bookshelf:{ .icon-color } Gasless Architecture]]{ .md-button }

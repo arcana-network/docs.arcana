@@ -8,8 +8,8 @@ arcana:
 
 # App Integration
 
-[[index-code-samples-web|Web App Integration :octicons-file-code-16:]]{ .md-button }
+[[index-code-samples-web| :octicons-file-code-16:{ .icon-color } Web App Integration]]{ .md-button }
 
-[[index-code-samples-mobile|Mobile App Integration :fontawesome-solid-mobile:]]{ .md-button }
+[[index-code-samples-mobile| { :fontawesome-solid-mobile:.icon-color } Mobile App Integration]]{ .md-button }
 
-[[unity-code-sample|Unity App Integration :fontawesome-solid-mobile:]]{ .md-button }
+[[unity-code-sample| :fontawesome-solid-mobile:{ .icon-color } Unity App Integration]]{ .md-button }

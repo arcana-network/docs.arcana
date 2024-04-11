@@ -13,8 +13,8 @@ arcana:
 *We are happy to help!*
 
 
-[[support| Arcana Support :material-help:]]{ .md-button }
+[[support| :material-help:{ .icon-color } Arcana Support]]{ .md-button }
 
-[[community| Community :material-hexagon-multiple:]]{ .md-button }
+[[community| :material-hexagon-multiple:{ .icon-color } Community]]{ .md-button }
 
-[[report-bugs| Report Issues :material-bug:]]{ .md-button }
+[[report-bugs| :material-bug:{ .icon-color } Report Issues ]]{ .md-button }

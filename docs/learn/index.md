@@ -8,10 +8,10 @@ arcana:
 
 # Learn
 
-[[index-tutorials| Tutorials :material-badge-account-horizontal:]]{ .md-button }
+[[index-tutorials| :material-badge-account-horizontal:{ .icon-color } Tutorials]]{ .md-button }
 
-[Concepts :fontawesome-solid-puzzle-piece:](../concepts/index.md){ .md-button }
+[:fontawesome-solid-puzzle-piece:{ .icon-color } Concepts](../concepts/index.md){ .md-button }
 
-[[new-to-web3| New to Web3 :material-new-box:]]{ .md-button }
+[[new-to-web3| :material-new-box:{ .icon-color } New to Web3]]{ .md-button }
 
-[[index-about-auth| About {{config.extra.arcana.product_name}} :material-bookshelf:]]{ .md-button }
+[[index-about-auth| :material-bookshelf:{ .icon-color } About {{config.extra.arcana.product_name}}]]{ .md-button }

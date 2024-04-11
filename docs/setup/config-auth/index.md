@@ -12,13 +12,13 @@ arcana:
 Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) and configure the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) usage as per your app requirements.
 --->
 
-[[index-config-social-providers|Social Providers :material-web:]]{ .md-button }
+[[index-config-social-providers|:material-web:{ .icon-color } Social Providers]]{ .md-button }
 
-[[index-config-iam-providers|IAM Providers :material-identifier:]]{ .md-button }
+[[index-config-iam-providers|:material-identifier:{ .icon-color } IAM Providers]]{ .md-button }
 
-[[configure-wallet-chains| Manage Chains :simple-hive_blockchain:]]{ .md-button }
+[[configure-wallet-chains| :simple-hive_blockchain:{ .icon-color } Manage Chains]]{ .md-button }
 
-[[index-setup-wallet| Manage Wallet UX :simple-hive_blockchain:]]{ .md-button }
+[[index-setup-wallet| :simple-hive_blockchain:{ .icon-color } Manage Wallet UX ]]{ .md-button }
 
-[[configure-gasless| Gasless Transactions :material-gas-station-off:]]{ .md-button }
+[[configure-gasless| :material-gas-station-off:{ .icon-color } Gasless Transactions]]{ .md-button }
 

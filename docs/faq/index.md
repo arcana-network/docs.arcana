@@ -8,14 +8,14 @@ arcana:
 
 # FAQ
 
-[[faq-gen|General]]{ .md-button }
+[[faq-gen| :fontawesome-solid-gear:{ .icon-color } General]]{ .md-button }
 
-[[faq-db| {{config.extra.arcana.dashboard_name}}]]{ .md-button }
+[[faq-db| :material-monitor-dashboard:{ .icon-color } {{config.extra.arcana.dashboard_name}}]]{ .md-button }
 
-[[faq-auth| {{config.extra.arcana.sdk_name}}]]{ .md-button }
+[[faq-auth| :material-account-lock:{ .icon-color } {{config.extra.arcana.sdk_name}}]]{ .md-button }
 
-[[faq-gasless| Gasless Transactions]]{ .md-button }
+[[faq-gasless| :material-gas-station-off:{ .icon-color } Gasless Transactions]]{ .md-button }
 
-[[faq-solana| Solana]]{ .md-button }
+[[faq-solana| :octicons-link-16:{ .icon-color } Solana]]{ .md-button }
 
-[[faq-mvx| MultiversX]]{ .md-button }
+[[faq-mvx| :material-infinity:{ .icon-color } MultiversX]]{ .md-button }

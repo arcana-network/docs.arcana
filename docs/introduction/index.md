@@ -30,7 +30,7 @@ This documentation contains everything you need to get started using {{config.ex
 
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
-[[auth-quick-start|Auth Quick Start :fontawesome-solid-paper-plane:]]{.md-button}
+[[auth-quick-start|:fontawesome-solid-paper-plane:{ .icon-color } Auth Quick Start]]{.md-button}
 
 ## {{config.extra.arcana.gasless_sdk_name}}
 
@@ -40,4 +40,4 @@ The {{config.extra.arcana.gasless_sdk_name}} extends the gasless feature for thi
 
       {% include "./text-snippets/warn_latest_gasless_sdk_version.md" %}
 
-[[gasless-standalone-quick-start|Gasless Quick Start :fontawesome-solid-paper-plane:]]{.md-button}
+[[gasless-standalone-quick-start|:fontawesome-solid-paper-plane:{ .icon-color } Gasless Quick Start]]{.md-button}

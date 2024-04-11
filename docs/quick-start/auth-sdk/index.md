@@ -8,14 +8,14 @@ arcana:
 
 # Auth Quick Start
 
-[[wagmi-quick-start|Wagmi Apps :material-wallet-plus:]]{ .md-button }
-[[rainbowkit-quick-start|RainbowKit Apps :material-wallet-outline:]]{ .md-button }
-[[web3-react-quick-start|Web3-React Apps :material-transit-connection-variant:]]{ .md-button }
-[[react-nextjs-quick-start|React/Next.js Apps :material-react::fontawesome-brands-js:]]{ .md-button }
-[[vanilla-web-apps-quick-start|HTML/CSS/JS Apps :fontawesome-brands-js:]]{ .md-button }
-[[vue-quick-start|Vue Apps :fontawesome-brands-vuejs:]]{ .md-button }
-[[gasless-quick-start|Gasless (Arcana wallet) :material-gas-station-off:]]{ .md-button }
-[[solana-quick-start|Solana Apps :material-atom-variant:]]{ .md-button }
-[[mvx-quick-start|MultiversX Apps :simple-xrp:]]{ .md-button }
-[[unity-quick-start|Unity Apps :simple-unity:]]{ .md-button }
-[[mobile-quick-start|Mobile Apps :fontawesome-solid-mobile-screen:]]{ .md-button }
+[[wagmi-quick-start|:material-wallet-plus:{ .icon-color } Wagmi Apps]]{ .md-button }
+[[rainbowkit-quick-start|:material-wallet-outline:{ .icon-color } RainbowKit Apps]]{ .md-button }
+[[web3-react-quick-start|:material-transit-connection-variant:{ .icon-color } Web3-React Apps]]{ .md-button }
+[[react-nextjs-quick-start|:material-react:{ .icon-color }:fontawesome-brands-js:{ .icon-color } React/Next.js Apps]]{ .md-button }
+[[vanilla-web-apps-quick-start|:fontawesome-brands-js:{ .icon-color } HTML/CSS/JS Apps]]{ .md-button }
+[[vue-quick-start|:fontawesome-brands-vuejs:{ .icon-color } Vue Apps]]{ .md-button }
+[[gasless-quick-start|:material-gas-station-off:{ .icon-color}  Gasless (Arcana wallet)]]{ .md-button }
+[[solana-quick-start|:material-atom-variant:{ .icon-color } Solana Apps]]{ .md-button }
+[[mvx-quick-start|:simple-xrp:{ .icon-color } MultiversX Apps ]]{ .md-button }
+[[unity-quick-start|:simple-unity:{ .icon-color } Unity Apps]]{ .md-button }
+[[mobile-quick-start|:fontawesome-solid-mobile-screen:{ .icon-color } Mobile Apps:]]{ .md-button }

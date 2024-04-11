@@ -8,6 +8,6 @@ arcana:
 
 # Onboard Users: Wagmi Apps
 
-[[onboard-wagmi-app-pnp-ui| Plug-and-Play Login UI  :material-card-account-mail:]]{ .md-button }
+[[onboard-wagmi-app-pnp-ui| :material-card-account-mail:{ .icon-color } Plug-and-Play Login UI]]{ .md-button }
 
-[[onboard-wagmi-app-custom-ui| Custom Login UI :material-card-account-mail:]]{ .md-button }
+[[onboard-wagmi-app-custom-ui| :material-card-account-mail:{ .icon-color } Custom Login UI]]{ .md-button }

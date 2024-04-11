@@ -18,10 +18,10 @@ Developers can add code that invokes blockchain functions in response to user ac
 
       Web3 operations supported EVM-compatible blockchains may not be the same as the ones supported by non-EVM chains such as Solana.
 
-[[index-web3-wallet-ops|EVM: Web3 Wallet Ops :material-wallet:]]{ .md-button }
-[[index-solana-web3-wallet-ops| Solana: Web3 Wallet Ops :material-wallet:]]{ .md-button }
-[[mvx-web3-wallet-ops| MultiversX: Web3 Wallet Ops :material-wallet:]]{ .md-button }
-[[unity-web3-wallet-ops| Unity: Web3 Wallet Ops :material-wallet-outline:]]{ .md-button }
+[[index-web3-wallet-ops|:material-wallet:{ .icon-color} EVM: Web3 Wallet Ops]]{ .md-button }
+[[index-solana-web3-wallet-ops| :material-wallet:{ .icon-color}  Solana: Web3 Wallet Ops]]{ .md-button }
+[[mvx-web3-wallet-ops| :material-wallet:{ .icon-color}  MultiversX: Web3 Wallet Ops]]{ .md-button }
+[[unity-web3-wallet-ops| :material-wallet-outline:{ .icon-color} Unity: Web3 Wallet Ops]]{ .md-button }
 
 !!! tip "Built-in Gasless Transactions"
 
@@ -29,4 +29,4 @@ Developers can add code that invokes blockchain functions in response to user ac
 
       To enable gasless transactions in third-party, browser-based wallets, you need to install and integrate with the {{config.extra.arcana.gasless_sdk_name}}.
 
-[[web3-ops-gasless| Gasless Transactions :material-wallet:]]{ .md-button }
+[[web3-ops-gasless| :material-wallet:{ .icon-color} Gasless Transactions]]{ .md-button }

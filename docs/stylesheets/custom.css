@@ -64,6 +64,16 @@ button.sp-icon-standalone, button.sp-icon{
   color:  var(--md-an-pink-color);
 }
 
+.fa-icon-styling {
+  font-size: 1rem;
+  color: var(--md-an-pink-color); 
+  padding: 0.25rem;
+  margin-right: 0.75rem;
+  margin-left: 1rem;
+  border-radius: 0.6rem;
+  background-color: var(--md-an-gray-dark-color);
+}
+
 .icon-color {
   color: var(--md-an-pink-color);
 }
@@ -128,8 +138,9 @@ button.sp-icon-standalone, button.sp-icon{
 }
 
 .md-typeset .md-button {
-  border: 0.0025rem solid var(--md-default-fg-color--light);
-  border-radius: 0.3rem !important;
+  /*border: 0.0025rem solid var(--md-default-fg-color--light);*/
+  border: 0.0025rem solid var(--md-an-pink-color);
+  border-radius: 0.6rem !important;
   color: var(--md-default-fg-color--light);
   margin: 0.5rem;
 }

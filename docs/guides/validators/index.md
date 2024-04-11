@@ -12,6 +12,6 @@ arcana:
 
       Currently, only trusted partners can participate in the ADKG protocol as third-party [[concept-validator-nodes|DKG validator nodes]]. We are planning to onboard other third-party validators in the future.
 
-[[onboard-validators|Onboarding Guide :octicons-checkbox-16:]]{ .md-button }
+[[onboard-validators| :octicons-checkbox-16:{ .icon-color } Onboarding Guide]]{ .md-button }
 
-[[faq-validator|FAQ :octicons-question-16:]]{ .md-button }
+[[faq-validator| :octicons-question-16:{ .icon-color } FAQ ]]{ .md-button }

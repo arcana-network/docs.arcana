@@ -10,6 +10,6 @@ arcana:
 
 The {{config.extra.arcana.wallet_name}} supports [standard Ethereum JSON-RPC specification APIs](https://docs.solana.com/api/http) and Web3 wallet operations.
 
-[[solana-json-rpc-ops|JSON-RPC Operations :fontawesome-solid-coins:]]{ .md-button }
+[[solana-json-rpc-ops| :fontawesome-solid-coins:{ .icon-color } JSON-RPC Operations]]{ .md-button }
 
-[[solana-wallet-ops|Web3 Wallet Operations :fontawesome-solid-coins:]]{ .md-button }
+[[solana-wallet-ops|:fontawesome-solid-coins:{ .icon-color } Web3 Wallet Operations]]{ .md-button }

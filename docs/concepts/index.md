@@ -10,28 +10,28 @@ arcana:
 
 These are the building blocks to help you learn about various terms and usage in the context of {{config.extra.arcana.company_name}} SDKs.
 
-[[concept-aggregate-login|Aggregate Login :material-login:]]{ .md-button }
-[[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}} :material-wallet:]]{ .md-button }
-[[concept-authsdk|{{config.extra.arcana.sdk_name}} :material-lock: :fontawesome-solid-file-signature:]]{ .md-button }
-[[concept-arcana-auth|Authentication :material-lock-check:]]{ .md-button }
-[[concept-index-auth-type|Auth Types :material-clipboard-text-search-outline:]]{ .md-button }
-[[concept-usage-billing|Billing :fontawesome-solid-money-check-dollar:]]{ .md-button }
-[[concept-custom-login-ui|Custom Login UI :material-login:]]{ .md-button }
-[[concept-custom-wallet-ui|Custom Wallet UI :material-wallet-bifold:]]{ .md-button }
-[[concept-arcana-dashboard|Dashboard :material-monitor-dashboard:]]{ .md-button }
-[[index-dkg|Distributed Key Generation :material-key-plus:]]{ .md-button }
-[[concept-gasless-transactions| Gasless Transactions :material-gas-station-off:]]{ .md-button }
-[[concept-gateway-node|Gateway :fontawesome-solid-torii-gate:]]{ .md-button }
-[[concept-arcana-jwt-token|Arcana JWT Token :material-key:]]{ .md-button}
-[[concept-keyspace-type|Keyspace Type: App-specific vs. Global Keys :material-key:]]{ .md-button }
-[[concept-manage-chains|Manage Chains :material-list-box:]]{ .md-button}
-[[concept-mfa|MFA :material-two-factor-authentication:]]{ .md-button }
-[[concept-non-evm-chains|Non-EVM Chains :material-list-box:]]{ .md-button }
-[[concept-plug-and-play-auth|Plug-and-Play Auth :material-lock: :fontawesome-solid-plug:]]{ .md-button }
-[[concept-private-key|Private Key :material-key:]]{ .md-button }
-[[concept-index-ansc| Smart Contracts :material-list-box:]]{ .md-button }
-[[concept-social-login| Social Login :fontawesome-solid-users:]]{ .md-button }
-[[concept-usage-metrics|Usage Metrics :material-monitor-eye:]]{ .md-button }
-[[concept-validator-nodes|Validator Nodes :material-checkbox-multiple-marked-circle-outline:]]{ .md-button }
-[[concept-jwt-token-validation|Verify Arcana JWT Token :material-key:]]{ .md-button}
-[[concept-white-labeled-auth|White-labeled Auth :flag_white:]]{ .md-button }
+[[concept-aggregate-login| :material-login:{ .icon-color } Aggregate Login]]{ .md-button }
+[[concept-index-arcana-wallet| :material-wallet:{ .icon-color } {{config.extra.arcana.wallet_name}}]]{ .md-button }
+[[concept-authsdk| :material-lock:{ .icon-color } :fontawesome-solid-file-signature:{ .icon-color } {{config.extra.arcana.sdk_name}}]]{ .md-button }
+[[concept-arcana-auth| :material-lock-check:{ .icon-color }Authentication]]{ .md-button }
+[[concept-index-auth-type| :material-clipboard-text-search-outline:{ .icon-color } Auth Types]]{ .md-button }
+[[concept-usage-billing| :fontawesome-solid-money-check-dollar:{ .icon-color } Billing]]{ .md-button }
+[[concept-custom-login-ui| :material-login:{ .icon-color } Custom Login UI]]{ .md-button }
+[[concept-custom-wallet-ui| :material-wallet-bifold:{ .icon-color } Custom Wallet UI]]{ .md-button }
+[[concept-arcana-dashboard| :material-monitor-dashboard:{ .icon-color } Dashboard]]{ .md-button }
+[[index-dkg| :material-key-plus:{ .icon-color } Distributed Key Generation]]{ .md-button }
+[[concept-gasless-transactions| :material-gas-station-off:{ .icon-color } Gasless Transactions]]{ .md-button }
+[[concept-gateway-node| :fontawesome-solid-torii-gate:{ .icon-color } Gateway]]{ .md-button }
+[[concept-arcana-jwt-token| :simple-jsonwebtokens:{ .icon-color } Arcana JWT Token]]{ .md-button}
+[[concept-keyspace-type| :material-key:{ .icon-color } Keyspace Type: App-specific vs. Global Keys :material-key:{ .icon-color }]]{ .md-button }
+[[concept-manage-chains| :material-list-box:{ .icon-color } Manage Chains]]{ .md-button}
+[[concept-mfa| :material-two-factor-authentication:{ .icon-color } MFA]]{ .md-button }
+[[concept-non-evm-chains| :material-list-box:{ .icon-color } Non-EVM Chains]]{ .md-button }
+[[concept-plug-and-play-auth| :material-lock:{ .icon-color } :fontawesome-solid-plug:{ .icon-color } Plug-and-Play Auth]]{ .md-button }
+[[concept-private-key| :material-key:{ .icon-color } Private Key]]{ .md-button }
+[[concept-index-ansc|  :material-list-box:{ .icon-color } Smart Contracts]]{ .md-button }
+[[concept-social-login|  :fontawesome-solid-users:{ .icon-color } Social Login]]{ .md-button }
+[[concept-usage-metrics| :material-monitor-eye:{ .icon-color } Usage Metrics]]{ .md-button }
+[[concept-validator-nodes| :material-checkbox-multiple-marked-circle-outline:{ .icon-color } Validator Nodes]]{ .md-button }
+[[concept-jwt-token-validation| :material-key:{ .icon-color } Verify Arcana JWT Token]]{ .md-button}
+[[concept-white-labeled-auth| :material-flag-variant-plus-outline:{ .icon-color } White-labeled Auth]]{ .md-button }

@@ -8,6 +8,6 @@ arcana:
 
 # Tutorials
 
-[[index-code-samples|App Integration :octicons-file-code-16:]]{ .md-button }
+[[index-code-samples| :octicons-file-code-16:{ .icon-color } App Integration]]{ .md-button }
 
-[Videos :material-message-video:](./videos/index.md){ .md-button }
+[:material-message-video:{ .icon-color } Videos](./videos/index.md){ .md-button }

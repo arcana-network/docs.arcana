@@ -29,6 +29,6 @@ In this guide you will learn how to manage the wallet user experience when using
 
 The {{config.extra.arcana.wallet_name}} UI supports the standard JSON/RPC blockchain calls as well as the Web3 wallet operations. You can add appropriate code to plug in blockchain based app operations that use the {{config.extra.arcana.wallet_name}}.
 
-[[configure-wallet-visibility|Configure built-in {{config.extra.arcana.wallet_name}} UI Visibility :material-tools:]]{ .md-button }
+[[configure-wallet-visibility| :material-tools:{ .icon-color } Configure built-in {{config.extra.arcana.wallet_name}} UI Visibility]]{ .md-button }
 
-[[index-web3-wallet-ops|Enabling Web3 Wallet Ops :material-wallet:]]{ .md-button }
+[[index-web3-wallet-ops| :material-wallet:{ .icon-color } Enabling Web3 Wallet Ops]]{ .md-button }

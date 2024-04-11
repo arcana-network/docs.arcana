@@ -10,14 +10,14 @@ arcana:
 
 Learn about what the {{config.extra.arcana.product_name}} offers, why it is required and what are some of its use cases.
 
-[[what-is-arcana-auth|What is {{config.extra.arcana.product_name}}? :material-account-details-outline:]]{ .md-button }
+[[what-is-arcana-auth|:material-account-details-outline:{ .icon-color  What is {{config.extra.arcana.product_name}}? }]]{ .md-button }
 
-[[why-arcana-auth|Why {{config.extra.arcana.product_name}}? :octicons-question-16:]]{ .md-button }
+[[why-arcana-auth| :octicons-question-16:{ .icon-color } Why {{config.extra.arcana.product_name}}?]]{ .md-button }
 
-[[index-architecture| Architecture :fontawesome-solid-users-gear:]]{ .md-button }
+[[index-architecture| :fontawesome-solid-users-gear:{ .icon-color } Architecture]]{ .md-button }
 
-[[index-user-flows|Usage Flows :material-clipboard-flow-outline:]]{ .md-button }
+[[index-user-flows| :material-clipboard-flow-outline:{ .icon-color } Usage Flows]]{ .md-button }
 
-[[how-to-use-auth|How to use {{config.extra.arcana.product_name}}?]]{ .md-button }
+[[how-to-use-auth| :octicons-book-16:{ .icon-color } How to use {{config.extra.arcana.product_name}}?]]{ .md-button }
 
-[[use-cases|{{config.extra.arcana.product_name}} Use Cases]]{ .md-button }
+[[use-cases| :material-newspaper-variant-multiple-outline:{ .icon-color } {{config.extra.arcana.product_name}} Use Cases]]{ .md-button }

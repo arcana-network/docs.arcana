@@ -10,33 +10,25 @@ arcana:
 
 ## For Developers 
 
-[[rn-latest-auth|Auth Release Notes :fontawesome-solid-note-sticky:]]{ .md-button }
-[[rn-latest-gasless|Gasless Release Notes :fontawesome-solid-note-sticky:]]{ .md-button }
-[[dashboard-user-guide| Dashboard User Guide :material-monitor-dashboard:]]{ .md-button }
-[[latest-auth-migration-guide| Auth Migration Guide :material-arrow-up:]]{ .md-button }
-[[latest-gasless-migration-guide| Gasless Migration Guide :material-arrow-up:]]{ .md-button }
-[[index-sdk-ref| SDK Reference Guides :material-bookshelf:]]{ .md-button }
-[[index-err-msg| Handling Errors :fontawesome-solid-bug-slash:]]{ .md-button }
-[[handle-provider-events| Handle Auth Provider Events :material-elevation-rise:]]{ .md-button }
-[[index-faq| FAQ :material-head-question:]]{ .md-button }
-[[troubleshooting| Troubleshooting :material-auto-fix:]]{ .md-button }
-[[index-changelog| Changelog :material-vector-difference:]]{ .md-button }
+[[rn-latest-auth| :fontawesome-solid-note-sticky:{ .icon-color } Auth Release Notes]]{ .md-button }
+[[rn-latest-gasless| :fontawesome-solid-note-sticky:{ .icon-color } Gasless Release Notes]]{ .md-button }
+[[dashboard-user-guide| :material-monitor-dashboard:{ .icon-color } Dashboard User Guide]]{ .md-button }
+[[sdk-installation| :material-elevation-rise:{ .icon-color } Installation Guide]]{ .md-button }
+[[latest-auth-migration-guide| :material-arrow-up:{ .icon-color } Auth Migration Guide]]{ .md-button }
+[[latest-gasless-migration-guide| :material-arrow-up:{ .icon-color } Gasless Migration Guide]]{ .md-button }
+[[index-sdk-ref| :material-bookshelf:{ .icon-color } SDK Reference Guides]]{ .md-button }
+[[index-err-msg| :fontawesome-solid-bug-slash:{ .icon-color } Handling Errors]]{ .md-button }
+[[handle-provider-events| :material-elevation-rise:{ .icon-color } Handle Auth Provider Events]]{ .md-button }
+[[index-faq| :material-head-question:{ .icon-color } FAQ]]{ .md-button }
+[[troubleshooting| :material-auto-fix:{ .icon-color } Troubleshooting ]]{ .md-button }
+[[index-changelog| :material-vector-difference:{ .icon-color } Changelog ]]{ .md-button }
 
 ## For Users
 
-[[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide :material-wallet-outline:]]{ .md-button }
-[[mfa-user-guide|MFA Setup User Guide :material-two-factor-authentication:]]{ .md-button }
+[[index-wallet-user-guide| :material-wallet-outline:{ .icon-color } {{config.extra.arcana.wallet_name}} User Guide]]{ .md-button }
+[[mfa-user-guide| :material-two-factor-authentication:{ .icon-color } MFA Setup User Guide]]{ .md-button }
 
 ## For Validators
 
-[[onboard-validators|Onboarding Guide :octicons-checkbox-16:]]{ .md-button }
-[[faq-validator|FAQ :octicons-question-16:]]{ .md-button }
-
-
-<!--- 
-[[index-dev-guides| Developer Guides]]{ .md-button }
-
-[[index-user-guides| User Guides]]{ .md-button }
-
-[[index-validators| Validator Guides]]{ .md-button }
---->
+[[onboard-validators| :octicons-checkbox-16:{ .icon-color } Onboarding Guide]]{ .md-button }
+[[faq-validator| :octicons-question-16:{ .icon-color } FAQ ]]{ .md-button }

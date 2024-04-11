@@ -8,10 +8,10 @@ arcana:
 
 # Configure Wallet UX
 
-[[configure-wallet-branding| Wallet Branding :material-format-color-fill:]]{ .md-button }
+[[configure-wallet-branding|:material-format-color-fill:{ .icon-color} Rebrand Wallet]]{ .md-button }
 
-[[configure-wallet-keyspace| Manage Keyspace :fontawesome-solid-address-card:]]{ .md-button }
+[[configure-wallet-keyspace|:fontawesome-solid-address-card:{ .icon-color} Manage Keyspace ]]{ .md-button }
 
-[[configure-wallet-settings| Wallet Security :material-security:]]{ .md-button }
+[[configure-wallet-settings|:material-security:{ .icon-color} Wallet Mode ]]{ .md-button }
 
-[[custom-wallet-ui| Custom Wallet UI :material-wallet-plus:]]{ .md-button }
+[[custom-wallet-ui|:material-wallet-plus:{ .icon-color} Customize Wallet UI ]]{ .md-button }

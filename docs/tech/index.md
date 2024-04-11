@@ -9,8 +9,8 @@ arcana:
 # Tech
 
 
-[[index-web3-stack| Web3 Stack :octicons-stack-16:]]{ .md-button }
+[[index-web3-stack| :octicons-stack-16:{ .icon-color } Web3 Stack ]]{ .md-button }
 
-[[index-security| Security :material-security-network:]]{ .md-button }
+[[index-security| :material-security-network:{ .icon-color } Security ]]{ .md-button }
 
-[[arcana-coming-soon| Coming Soon :material-exit-run:]]{ .md-button }
+[[arcana-coming-soon| :material-exit-run:{ .icon-color }Coming Soon ]]{ .md-button }

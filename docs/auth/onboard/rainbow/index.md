@@ -8,6 +8,6 @@ arcana:
 
 # Onboard Users: RainbowKit Apps
 
-[[onboard-rainbow-app-pnp-ui| Plug-and-Play UI  :material-card-account-mail:]]{ .md-button }
+[[onboard-rainbow-app-pnp-ui| :material-card-account-mail:{ .icon-color} Plug-and-Play UI ]]{ .md-button }
 
-[[onboard-rainbow-app-custom-ui| Custom Login UI :material-card-account-mail:]]{ .md-button }
+[[onboard-rainbow-app-custom-ui| :material-card-account-mail:{ .icon-color} Custom Login UI]]{ .md-button }

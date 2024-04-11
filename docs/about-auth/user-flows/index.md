@@ -10,4 +10,4 @@ arcana:
 
 Check out control flows for various {{config.extra.arcana.sdk_name}} features.
 
-[[user-auth-dkg-flow|User Authentication and DKG Access]]{ .md-button }
+[[user-auth-dkg-flow| :material-lock-pattern:{ .icon-color }  User Authentication and DKG Access]]{ .md-button }

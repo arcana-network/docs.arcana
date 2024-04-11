@@ -8,16 +8,16 @@ arcana:
 
 # Web App Integration
 
-[Wagmi App :material-wallet-plus-outline:](https://github.com/arcana-network/auth-wagmi-example){ .md-button }
+[:material-wallet-plus-outline:{ .icon-color } Wagmi App](https://github.com/arcana-network/auth-wagmi-example){ .md-button }
 
-[RainbowKit App :material-wallet-plus-outline:](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration){ .md-button }
+[:material-wallet-plus-outline:{ .icon-color } RainbowKit App](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration){ .md-button }
 
-[Web3-React App :material-wallet-plus-outline:](https://github.com/arcana-network/auth-web3-react/tree/main/example){ .md-button }
+[:material-wallet-plus-outline:{ .icon-color } Web3-React App](https://github.com/arcana-network/auth-web3-react/tree/main/example){ .md-button }
 
-[[react-code-sample|React App :fontawesome-brands-react:]]{ .md-button }
+[[react-code-sample| :fontawesome-brands-react:{ .icon-color } React App]]{ .md-button }
 
-[[nextjs-code-sample|Next.js App :simple-nextdotjs:]]{ .md-button }
+[[nextjs-code-sample| :simple-nextdotjs:{ .icon-color } Next.js App]]{ .md-button }
 
-[[html-js-code-sample|HTML/CSS/JS :material-language-typescript:]]{ .md-button }
+[[html-js-code-sample| :material-language-typescript:{ .icon-color }HTML/CSS/JS]]{ .md-button }
 
-[Vue App :fontawesome-brands-vuejs:](https://github.com/arcana-network/auth-sample-integration-new){ .md-button }
+[:fontawesome-brands-vuejs:{ .icon-color } Vue App](https://github.com/arcana-network/auth-sample-integration-new){ .md-button }

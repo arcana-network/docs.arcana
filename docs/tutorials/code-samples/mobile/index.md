@@ -8,6 +8,6 @@ arcana:
 
 # Mobile App Integration
 
-[[flutter-code-sample|Flutter :simple-flutter:]]{ .md-button }
+[[flutter-code-sample| :simple-flutter:{ .icon-color } Flutter]]{ .md-button }
 
-[[react-native-code-sample|React-Native :fontawesome-brands-react:]]{ .md-button }
+[[react-native-code-sample| :fontawesome-brands-react:{ .icon-color } React-Native ]]{ .md-button }

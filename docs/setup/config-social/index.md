@@ -8,17 +8,12 @@ arcana:
 
 # Social Login Providers      
 
-[[config-auth-discord|Discord :fontawesome-brands-discord:]]{ .md-button }
-
-[[config-auth-github|GitHub :fontawesome-brands-github:]]{ .md-button }
-
-[[config-auth-google|Google :fontawesome-brands-google:]]{ .md-button }
-
-[[config-auth-steam|Steam :material-steam:]]{ .md-button }
-
-[[config-auth-twitch|Twitch :fontawesome-brands-twitch:]]{ .md-button }
-
-[[config-auth-twitter|Twitter :fontawesome-brands-twitter:]]{ .md-button }
+[[config-auth-discord|:fontawesome-brands-discord:{ .icon-color} Discord]]{ .md-button }
+[[config-auth-github|:fontawesome-brands-github:{ .icon-color} GitHub]]{ .md-button }
+[[config-auth-google|:fontawesome-brands-google:{ .icon-color} Google]]{ .md-button }
+[[config-auth-steam|:material-steam:{ .icon-color} Steam]]{ .md-button }
+[[config-auth-twitch|:fontawesome-brands-twitch:{ .icon-color} Twitch ]]{ .md-button }
+[[config-auth-twitter|:fontawesome-brands-twitter:{ .icon-color} Twitter]]{ .md-button }
 
 !!! info "Passwordless Login"
 

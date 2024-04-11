@@ -8,6 +8,6 @@ arcana:
 
 # Quick Start: Mobile Apps
 
-[[flutter-quick-start|Flutter Apps :simple-flutter:]]{ .md-button }
+[[flutter-quick-start| :simple-flutter:{ .icon-color }Flutter Apps]]{ .md-button }
 
-[[react-native-quick-start|React-Native Apps :simple-react:]]{ .md-button }
+[[react-native-quick-start| :simple-react:{ .icon-color }React-Native Apps]]{ .md-button }
