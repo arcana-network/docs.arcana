@@ -8,7 +8,7 @@ arcana:
 
 # DKG Validators
 
-!!! note "Trusted Partners Only"
+!!! an-note "Trusted Partners Only"
 
       Currently, only trusted partners can participate in the ADKG protocol as third-party [[concept-validator-nodes|DKG validator nodes]]. We are planning to onboard other third-party validators in the future.
 

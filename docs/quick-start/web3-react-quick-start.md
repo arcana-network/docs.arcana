@@ -40,7 +40,7 @@ For {{page.meta.arcana.app_type}} app, install the following packages:
 
 {% include "./code-snippets/auth_web3_react_install.md" %}
 
-!!! note "Use latest SDKs"
+!!! an-note "Use latest SDKs"
   
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
@@ -74,7 +74,7 @@ The app is now integrated with the {{config.extra.arcana.sdk_name}} and the {{co
 
 {% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
 
-!!! tip "Arcana JWT Token"
+!!! an-tip "Arcana JWT Token"
 
       {% include "./text-snippets/jwt_token.md" %}
 

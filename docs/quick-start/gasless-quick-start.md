@@ -12,7 +12,7 @@ arcana:
 
 Web3 apps can easily onboard users via social login and enable gasless transactions through {{config.extra.arcana.wallet_name}} by integrating with the {{config.extra.arcana.sdk_name}}! 
 
-!!! tip "Third-party wallets"
+!!! an-tip "Third-party wallets"
 
       Developers can enable gasless transactions in third-party wallets by integrating the app with the {{config.extra.arcana.gasless_sdk_name}}. See [[gasless-standalone-quick-start|Gasless (Third-Party wallets) Quick Start Guide]] for details.
 
@@ -49,7 +49,7 @@ Install the {{config.extra.arcana.sdk_name}} and use the built-in gasless featur
 
 {% include "./code-snippets/auth_install.md" %}
 
-!!! note "Use latest SDKs"
+!!! an-note "Use latest SDKs"
 
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 

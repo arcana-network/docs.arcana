@@ -119,7 +119,7 @@ module.exports = defineConfig({
 
 CRA by default doesn’t allow customizing Webpack configuration. The recommended way to address polyfill issues is to use “react-app-rewired”  with a configuration like this.
 
-!!! note
+!!! an-note
 
       You need to exclude “console” otherwise it’ll fail.
 
@@ -216,7 +216,7 @@ export default defineConfig({
 })
 ```
 
-!!! caution
+!!! an-caution
 
     The vite configuration example above demonstrates a generic configuration that covers all libraries. You need to specify only the ones that are referred to by your application.
 

@@ -15,6 +15,6 @@ arcana:
 [[config-auth-twitch|:fontawesome-brands-twitch:{ .icon-color} Twitch ]]{ .md-button }
 [[config-auth-twitter|:fontawesome-brands-twitter:{ .icon-color} Twitter]]{ .md-button }
 
-!!! info "Passwordless Login"
+!!! an-info "Passwordless Login"
 
       By default, passwordless login is always available for any application that integrates with the {{config.extra.arcana.sdk_name}}.  Unlike social login providers, the passwordless option is enabled by default and requires no configuration. 

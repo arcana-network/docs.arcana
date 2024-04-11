@@ -15,7 +15,7 @@ Access the {{config.extra.arcana.dashboard_name}} at: {% include "./text-snippet
 
 The {{config.extra.arcana.dashboard_name}} lets you register apps with {{config.extra.arcana.company_name}} and tailor them to your use cases and user onboarding preferences. It works alongside the {{config.extra.arcana.company_name}} Gateway for app configuration and usage tracking. The dashboard provides insights, such as monthly and daily active users (MAU) per app.
 
-!!! important
+!!! an-caution
 
     Before integrating any application with the {{config.extra.arcana.sdk_name}}, it must be [[register-app-auth|registered]] and [[index-configure-auth|configured for user onboarding]] through the {{config.extra.arcana.dashboard_name}}.
 

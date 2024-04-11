@@ -14,7 +14,7 @@ Do not close the **Social Auth** browser tab in the {{config.extra.arcana.dashbo
 
 ## Step 2: Get Steam API Key
 
-!!! note "Steam API Key"
+!!! an-note "Steam API Key"
 
       **Developers must have a Steam account and have at least $5 worth of purchased games in the account before they can obtain the Steam API Key.**  
 
@@ -22,7 +22,7 @@ Go to the [Steam Community Site](https://steamcommunity.com/login/home/?goto=%2F
 
 ![Steam Community Site](/img/an_steam_login.png){.an-screenshots .width_50pc}
 
-!!! caution "Access Steam API Key"
+!!! an-caution "Access Steam API Key"
 
       Make sure you do not have a Steam limited account otherwise you cannot access the API Key. Refer to [Steam FAQ]( https://help.steampowered.com/en/faqs/view/71D3-35C2-AD96-AA3A) for more details. 
 

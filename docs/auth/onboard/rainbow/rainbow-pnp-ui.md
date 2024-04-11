@@ -18,7 +18,7 @@ In this guide, you will learn how to onboard users via the built-in plug-and-pla
 
 * **Set up Authentication Providers**: Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more [[web3-stack-auth|supported authentication providers]] for onboarding the app users.
 
-    !!! tip "Configure Authentication Providers"
+    !!! an-tip "Configure Authentication Providers"
 
           You may be required to configure additional provider details for different authentication providers. In the case of Google, the developer must use Google Developer Console to set up the app and generate a Google assigned [[config-auth-google|client ID for Google OAuth]]. This Google ClientID will be configured in the {{config.extra.arcana.dashboard_name}} **Social Auth** settings before integrating the app.
 
@@ -44,7 +44,7 @@ Set up `ArcanaRainbowConnector` using the newly created `ArcanaConnector`. Initi
 
 {% include "./code-snippets/auth_wagmi_configure_pnp.md" %}
 
-!!! note "Compact Mode"
+!!! an-note "Compact Mode"
 
       While creating the `AuthProvider`, you can choose the [[concept-plug-and-play-auth#compact-plug-play-ui|compact mode (optional)]] for the plug-and-play login UI.
 
@@ -52,7 +52,7 @@ Use the `connectors` configured with `ArcanaRainbowConnector` in the `_app.js` f
 
 {% include "./code-snippets/auth_rainbow_create_client.md" %}
 
-!!! tip "Wagmi `createClient` and `configClient`"
+!!! an-tip "Wagmi `createClient` and `configClient`"
 
       For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}. Also, refer to [RainbowKit documentation](https://www.rainbowkit.com/docs/introduction).
 
@@ -66,7 +66,7 @@ That is all! :material-party-popper:
 
 The Web3 app using RainbowKit is successfully integrated with the {{config.extra.arcana.sdk_name}}.
 
-!!! tip "Example: Sample RainbowKit App"
+!!! an-tip "Example: Sample RainbowKit App"
 
       See [sample RainbowKit app](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration) for details.
 

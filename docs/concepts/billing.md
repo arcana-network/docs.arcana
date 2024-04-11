@@ -30,7 +30,7 @@ Each developer account enjoys a promotional free usage tier. Beyond this free ti
 
     ![Per Application Usage Stats Testnet](/img/an_db_billing_perapp_MAU.png){.an-screenshots}
 
-!!! note "Testnet Usage is Free"
+!!! an-note "Testnet Usage is Free"
 
       Billing applies only to {{config.extra.arcana.company_name}} Mainnet usage.
 
@@ -42,13 +42,13 @@ Using the {{config.extra.arcana.dashboard_name}}, developers can configure their
 * Billing Address Details
 * Payment Method
 
-!!! caution "Adding Payment Method"
+!!! an-caution "Adding Payment Method"
 
       It is a mandatory requirement to enter and save a valid address in your developer account prior to providing payment method details through the {{config.extra.arcana.dashboard_name}}. 
 
 Once generated, developers can access their billing history and view the current outstanding invoice.
 
-!!! tip "Testnet and Free Tier (Mainnet) Usage"
+!!! an-tip "Testnet and Free Tier (Mainnet) Usage"
 
      Payment setup isn't needed for Testnet usage or for using the Mainnet's free tier. Web3 apps can integrate with {{config.extra.arcana.sdk_name}} for Testnet without it. However, after exhausting the free tier, setting up payment is essential for uninterrupted user onboarding on {{config.extra.arcana.company_name}} Mainnet.
 

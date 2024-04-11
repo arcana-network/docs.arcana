@@ -154,7 +154,7 @@ Fiat on-ramp providers may ask the user to follow country-specific procedures fo
 
 {% include "./text-snippets/fiat_on_ramp_providers_coverage.md" %}
 
-!!! caution "Current Limitations"
+!!! an-caution "Current Limitations"
 
     1. Purchased ERC20, ERC721 token assets will not be automatically updated in the {{config.extra.arcana.wallet_name}} assets screen. Users will need to manually add custom tokens purchased via on-ramp providers, as these providers do not provide the contract address of the purchased token.
 

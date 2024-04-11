@@ -26,7 +26,7 @@ In this tutorial, you will learn how to register a Web3 app and get a unique cli
 
 That is all! 🎉
 
-!!! info "Save {{config.extra.arcana.app_address}}"
+!!! an-info "Save {{config.extra.arcana.app_address}}"
 
     A unique **{{config.extra.arcana.app_address}}** assigned to the registered apps is displayed on the top right of the dashboard screen. 
     

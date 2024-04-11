@@ -1,4 +1,4 @@
-!!! tip "Global vs. App Specific Keys"
+!!! an-tip "Global vs. App Specific Keys"
 
       Apps using app-specific keys must add custom UI code that allows users to input the OTP at login. In this case, the `isCompleteRequired` boolean returns `true` after initiating login with OTP.
 

@@ -71,7 +71,7 @@ See the [[arcana-wallet-user-guide#view-transaction-summary-details|notification
 
   - The logout issue related to the passwordless authentication has been fixed
 
-!!! tip
+!!! an-tip
 
       If you were using the {{config.extra.arcana.sdk_name}} v0.2.2 release or earlier, we highly recommend that you refer to the [[migration-guide-v0.3.0|{{config.extra.arcana.product_name}} 0.3.0 Migration Guide]].
 

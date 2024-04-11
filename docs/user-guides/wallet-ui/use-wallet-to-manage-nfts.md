@@ -32,7 +32,7 @@ Scroll down to browse through the NFTs. You can see a list of NFT thumbnails for
       
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_asset_thumbnail.gif" width="35%"/><br></br><br></br>
 
-!!! tip "Auto-fetching of NFTs"
+!!! an-tip "Auto-fetching of NFTs"
 
       The {{config.extra.arcana.wallet_name}} automatically fetches the NFTs associated with the wallet address and displays them as thumbnails in the **NFT Assets** tab. This feature is supported via [Ankr APIs](https://www.ankr.com/docs/advanced-api/overview/) and works only for the NFTs minted on the blockchains supported by Ankr. {% include "./text-snippets/supported_nft_autofetch_chains.md" %}
 

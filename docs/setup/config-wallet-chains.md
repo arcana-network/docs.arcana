@@ -77,7 +77,7 @@ To switch the default active chain simply select the new chain in the {{config.e
 
 ![Change default chain](/img/an_db_set_default_chain.gif){.an-screenshots}
 
-!!! caution "Non-EVM Chains"
+!!! an-caution "Non-EVM Chains"
 
       If the chain type selected during app registration is Solana / non-EVM chain, then you will not see any EVM-compatible chains displayed in the dashboard. Developers can edit and choose a different chain as the default active chain, only from the list of displayed Solana chain options.
 

@@ -31,6 +31,6 @@ try {
 }
 ```
 
-!!! note "User validation"
+!!! an-note "User validation"
 
       Note that the {{config.extra.arcana.sdk_name}} uses the JWT token returned by the social login provider, after user authentication, to verify the user internally before creating its own Arcana JWT token and returning it to the app.

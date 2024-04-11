@@ -98,7 +98,7 @@ To see details of a send transaction, click on the arrow to expand the view.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notification_details_send_token.png" width="35%" /><br></br><br></br>
 
-!!! tip
+!!! an-tip
 
       The app user must [add the custom tokens](#add-custom-tokens) manually to the {{config.extra.arcana.wallet_name}} UI before the activity related to tokens can be viewed in the **Activity** tab.
 

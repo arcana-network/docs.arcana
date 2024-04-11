@@ -20,7 +20,7 @@ App users can simply pick one of the log in options configured by the app develo
 
 {% include "./text-snippets/custom_idm_supported.md" %}
 
-!!! abstract "Coming soon!" 
+!!! an-abstract "Coming soon!" 
 
       We are working on supporting additional authentication providers in the upcoming {{config.extra.arcana.sdk_name}} releases:
 
@@ -29,7 +29,7 @@ App users can simply pick one of the log in options configured by the app develo
       - Wechat
       - Kakaotalk
 
-!!! info "Passwordless Login"
+!!! an-info "Passwordless Login"
 
     Besides these providers, a [[concept-pwdless-auth|passwordless login option]] is always available as a login option for app users. It does not require any configuration or enabling.
 

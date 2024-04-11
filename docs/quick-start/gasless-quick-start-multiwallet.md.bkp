@@ -55,7 +55,7 @@ Install the {{config.extra.arcana.sdk_name}} and use the built-in gasless featur
 
 Apps that require to support gasless transactions in the {{config.extra.arcana.wallet_name}} as well as third-party wallets must install **both the SDKS**.
 
-!!! note "Use latest SDKs"
+!!! an-note "Use latest SDKs"
 
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 

@@ -17,7 +17,7 @@ Developers must configure the following gasless settings via the {{config.extra.
 * Whitelist app operations 
 * Enable gas tanks
 
-!!! tip "Zero Gas Fee" 
+!!! an-tip "Zero Gas Fee" 
 
       Developers can sponsor gas fees for blockchain transactions. But the users need to ensure that they have sufficient funds in their wallets for the blockchain transaction itself. 
       

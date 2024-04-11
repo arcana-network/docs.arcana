@@ -26,7 +26,7 @@ This documentation contains everything you need to get started using {{config.ex
 
 {{config.extra.arcana.sdk_name}} helps Web3 apps to onboard users quickly, at scale, via popular social login providers. Authenticated users get access to the in-app, non-custodial {{config.extra.arcana.wallet_name}} instantly. The built-in gasless feature enables **zero gas fees** for whitelisted app operations. The SDK is easy to customize and integrate with various [[sdk-installation|Web3 app types]].
 
-!!! note "Already using {{config.extra.arcana.sdk_name}}?"
+!!! an-note "Already using {{config.extra.arcana.sdk_name}}?"
 
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
@@ -36,7 +36,7 @@ This documentation contains everything you need to get started using {{config.ex
 
 The {{config.extra.arcana.gasless_sdk_name}} extends the gasless feature for third-party, browser-based wallets. The SDK works independently of the {{config.extra.arcana.sdk_name}}. 
 
-!!! note "Already using {{config.extra.arcana.gasless_sdk_name}}?"
+!!! an-note "Already using {{config.extra.arcana.gasless_sdk_name}}?"
 
       {% include "./text-snippets/warn_latest_gasless_sdk_version.md" %}
 

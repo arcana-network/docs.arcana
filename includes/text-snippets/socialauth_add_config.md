@@ -1,4 +1,4 @@
-!!! tip "Register & Configure"
+!!! an-tip "Register & Configure"
 
       Each app is assigned a unique **{{config.extra.arcana.app_address}}** upon registration. A default Testnet configuration is linked with the registered app. No social authentication providers are enabled for the app. Passwordless login is enabled for all registered apps automatically.
 

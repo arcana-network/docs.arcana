@@ -117,7 +117,7 @@ After registering, configuring, integrating the app with the {{config.extra.arca
 
 On clicking connect, the Next.js sample app user will see the plug-and-play login screen with options to use Google and Twitch and log into the app. Passwordless authentication is enabled by default. 
 
-!!! note
+!!! an-note
 
       In the Next.js sample app, the login options displayed in the "plug-and-play pop-up UI" will only be the ones that have been set up by the developer through the {{config.extra.arcana.dashboard_name}}.
 
@@ -129,7 +129,7 @@ After successful authentication, an app user will see the wallet in its minimize
 
 See [[arcana-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]], [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]], and the [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User Guide]] for more details.
 
-!!! caution "Use the latest {{config.extra.arcana.sdk_name}}"
+!!! an-caution "Use the latest {{config.extra.arcana.sdk_name}}"
 
       Check the package.json file in the sample Next.js sources and ensure that you are using the latest {{config.extra.arcana.sdk_name}} npm release.
 

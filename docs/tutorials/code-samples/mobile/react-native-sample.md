@@ -26,7 +26,7 @@ Install the latest version of the [`{{config.extra.arcana.mobile_react_native_sd
 
 {% include "./code-snippets/auth_react_native_install.md" %}
 
-!!! Note
+!!! an-note
 
       For a complete React-Native integration example, see [Auth Examples GitHub Repository](https://github.com/shaloo/sample-auth-react-native/).
 
@@ -84,7 +84,7 @@ Once a user authenticates, the built-in {{config.extra.arcana.wallet_name}} is d
 
 Developers can add code as required to programmatically call Web3 wallet operations for authenticated users. See [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] and the [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User Guide]] for details on wallet configuration.
 
-That's all!!! :material-party-popper:
+That's all! :material-party-popper:
 
 The React-Native app is successfully integrated and ready to onboard Web3 users via social login, email using the configured providers. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
 

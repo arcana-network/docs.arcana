@@ -24,7 +24,7 @@ It is possible to totally replace the {{config.extra.arcana.wallet_name}} UI wit
 
 In advanced use cases, if the app requires to **only** use the user onboarding feature of the {{config.extra.arcana.sdk_name}} and **no {{config.extra.arcana.wallet_name}}**, but a third-party wallet, then the app must be registered with 'Custom Wallet' setting and {{config.extra.arcana.auth_core_sdk_name}} must be used instead of the {{config.extra.arcana.sdk_name}}.
 
-!!! caution "Gasless Transactions"
+!!! an-caution "Gasless Transactions"
 
       In case of the apps integrated with the {{config.extra.arcana.sdk_name}}, the gasless transactions are enabled **only** for the {{config.extra.arcana.wallet_name}}.
 

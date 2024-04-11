@@ -30,7 +30,7 @@ Install the [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/
 
 {% include "./code-snippets/auth_install.md" %}
 
-!!! note "Use latest SDK"
+!!! an-note "Use latest SDK"
   
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
@@ -44,7 +44,7 @@ Install the [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/
 
 Instead of the built-in login UI offered by the {{config.extra.arcana.sdk_name}}, developers can also [[mvx-user-onboarding|onboard users via a custom login UI]] in a {{page.meta.arcana.app_type}} app.
 
-!!! tip "Arcana JWT Token"
+!!! an-tip "Arcana JWT Token"
 
       {% include "./text-snippets/jwt_token.md" %}
 

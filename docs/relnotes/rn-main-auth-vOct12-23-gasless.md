@@ -40,7 +40,7 @@ The {{config.extra.arcana.product_name}} product consists of the following compo
 
 Developers can make it easier for Web3 app users to get started and encourage more people to use their apps by removing the Web3 gas fee obstacle with the {{config.extra.arcana.product_name}} gasless feature. Discover how [[concept-gasless-transactions|gasless transactions]] work, [[configure-gasless|how to configure gasless and set up gas tanks for an app]]. If you have any other queries regarding the gasless feature, refer to the [[faq-gasless|gasless FAQ]].
 
-!!! caution "Debugging gasless issues"
+!!! an-caution "Debugging gasless issues"
 
       Apps that enable the gasless feature may sometimes find cryptic errors returned in case of the transaction failure. Refer to the error handling section on [[web-gasless-error-msg#debugging-gasless-errors|how to debug gasless issues]] and pinpoint the exact cause and fix it using Tenderly.
 

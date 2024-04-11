@@ -40,7 +40,7 @@ If the {{config.extra.arcana.wallet_name}} is not already displayed in the conte
 
 *The Web3 app is all set to display the built-in {{config.extra.arcana.wallet_name}} to authenticated users.*
 
-!!! note
+!!! an-note
 
       If the `AuthProvider` is configured with the default `alwaysVisible=true` setting, the built-in {{config.extra.arcana.wallet_name}} will be automatically displayed in the minimized form when the user logs in. If `showWallet()` is called or if the user clicks the minimized wallet UI, then the maximized wallet UI is displayed.
 

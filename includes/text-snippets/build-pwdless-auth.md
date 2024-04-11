@@ -8,7 +8,7 @@ In this guide, you will learn how to integrate {{page.meta.arcana.app_type}} app
 * The app must be [[register-app-auth|registered using the {{config.extra.arcana.dashboard_name}}]]. A unique {{config.extra.arcana.app_address}} is assigned after app registration. It is required for integrating the app with the {{config.extra.arcana.sdk_name}}
 * Follow the instructions as per the app type and [[index-integrate|integrate the app]] with the {{config.extra.arcana.sdk_name}}.
 
-!!! info "Configuring App"
+!!! an-nfo "Configuring App"
 
       Unlike other user onboarding options that require enabling authentication providers, passwordless login can be enabled without any configuration setup using the {{config.extra.arcana.dashboard_name}}.
 

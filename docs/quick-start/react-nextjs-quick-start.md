@@ -43,7 +43,7 @@ For {{page.meta.arcana.app_type}} app, install the following packages:
 
 {% include "./code-snippets/auth_react_install.md" %}
 
-!!! note "Use latest SDKs"
+!!! an-note "Use latest SDKs"
   
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
@@ -67,7 +67,7 @@ Create a new `AuthProvider` instance. Specify the unique **{{config.extra.arcana
 
 {% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
 
-!!! tip "Arcana JWT Token"
+!!! an-tip "Arcana JWT Token"
 
       {% include "./text-snippets/jwt_token.md" %}
 

@@ -32,6 +32,6 @@ Save the **Social Auth** settings.
 
 *You are all set with the Firebase configuration!*
 
-!!! warning "Plug-and-play login feature not supported for Firebase"
+!!! an-warning "Plug-and-play login feature not supported for Firebase"
 
       {% include "./text-snippets/warn_firebase_no_pnp.md" %}

@@ -35,7 +35,7 @@ The following section lists changes between {{config.extra.arcana.sdk_name}} v1.
 
 Simply upgrade the {{config.extra.arcana.sdk_name}} to the latest package v1.0.2. No other change is required. You **do not** need to re-register your apps via the dashboard. Developers can continue to use the old **App Address** obtained for using v1.0.0/v1.0.1 with the latest {{config.extra.arcana.sdk_name}}.  However, if you re-register your app and get a new **{{config.extra.arcana.app_address}}**, you cannot use older versions of the {{config.extra.arcana.sdk_name}}  and are required to migrate to the latest {{config.extra.arcana.sdk_name}} v1.0.2 or higher.
 
-!!! note "{{config.extra.arcana.app_address}}"
+!!! an-note "{{config.extra.arcana.app_address}}"
 
       Earlier, the documentation may have referred to the unique {{config.extra.arcana.company_name}} identifier assigned to each app after registration as **App Address**.  In the latest release, we refer to it as **{{config.extra.arcana.app_address}}**. 
 

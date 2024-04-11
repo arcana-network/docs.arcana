@@ -22,7 +22,7 @@ In this guide, you will learn how to integrate a vanilla HTML/CSS/JS app with th
 
 * Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more [[web3-stack-auth|supported authentication providers]] for onboarding the app users.
 
-    !!! tip "Configure Authentication Providers"
+    !!! an-tip "Configure Authentication Providers"
 
           You may be required to configure additional provider details for different authentication providers. In the case of Google, the developer must use Google Developer Console to set up the app and generate a Google assigned [[config-auth-google|client ID for Google OAuth]]. This Google ClientID will be configured in the {{config.extra.arcana.dashboard_name}} **Social Auth** settings before integrating the app.
 
@@ -32,7 +32,7 @@ In this guide, you will learn how to integrate a vanilla HTML/CSS/JS app with th
 
 * **Make sure you configure gasless operations through the dashboard.** See [[configure-gasless|how to set up gas tanks and deposit funds]] to enable gasless transactions in apps that are integrated with the {{config.extra.arcana.sdk_name}}.
 
-!!! caution "Gasless Transactions"
+!!! an-caution "Gasless Transactions"
 
       The {{config.extra.arcana.sdk_name}} has a built-in gasless feature that can be used to enable gasless transactions in the {{config.extra.arcana.wallet_name}} for apps that integrate with the SDK.
 
@@ -60,7 +60,7 @@ Initialize the newly instantiated `AuthProvider`.
 
 {% include "./code-snippets/init_auth.md" %}
 
-!!! caution "Initialize First!"
+!!! an-caution "Initialize First!"
 
       The app must wait until the `init` call is complete before invoking any of the other {{config.extra.arcana.sdk_name}} functions such as onboarding users by triggering user login, obtaining the standard Ethereum provider, adding/switching networks in the wallet, etc.
 
@@ -70,7 +70,7 @@ That is all! :material-party-popper:
 
 The vanilla HTML/CSS/JS app is now successfully integrated with the {{config.extra.arcana.sdk_name}}.
 
-!!! tip "Zero Gas Fees"
+!!! an-tip "Zero Gas Fees"
 
       All authenticated users have instant access to the {{config.extra.arcana.wallet_name}} within the app context. 
       

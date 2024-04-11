@@ -166,7 +166,7 @@ dkg secret init --secret-config=<path>
 
 The `path` specified in the previous step where the secret manager configuration will be written. Defaults to `secretConfig.json` file in the current directory.
 
-!!! caution "Follow Start Ceremony"
+!!! an-caution "Follow Start Ceremony"
 
       Start the node **only** when you have set up the validator secret and shared the Node Address with the {{config.extra.arcana.company_name}} Team.
 
@@ -180,7 +180,7 @@ The key generation begins only when **all** the nodes in the DKG subsystem, {{co
 
 Before you start the validator node, make sure you have completed all the prerequisites and followed the steps defined in the **DKG Start Ceremony**.
 
-!!! note "Node Start Command"
+!!! an-note "Node Start Command"
 
       You can run the `dkg start` command and specify validator node configuration details using **one** of ways listed below:
       
@@ -189,7 +189,7 @@ Before you start the validator node, make sure you have completed all the prereq
 
       Registration of validator node happens automatically using the information that is provided in the configuration file or via the command line.
 
-!!! caution "Restart"
+!!! an-caution "Restart"
 
       If this is not the first time you are starting the node, please make sure that you perform a clean re-start. Refer to the section [Re-starting the Node](#re-starting-the-node) to see how to perform a clean restart.
 
@@ -225,7 +225,7 @@ The path to secret configuration. See ['Initiate Validator Secrets section'](#in
 
 The data directory where all the node specific and shared data will be stored, this data will have to be backed up regularly by the nodes to maintain some redundancy.
 
-!!! caution "Keep your data directory strictly private!"
+!!! an-caution "Keep your data directory strictly private!"
 
       The data directory specified above is used for storing multiple items that are secret. Besides initializing the directories for holding the [Tendermint](https://tendermint.com/) state and key share data, it also stores private keys on a file. 
 
@@ -243,7 +243,7 @@ The IP Address of the validator node that is used by DKG nodes for communicating
 
 The port number at which the **http server** is listening for requests.
 
-!!! caution "SSL Termination"
+!!! an-caution "SSL Termination"
 
       The SSL termination can happen on an **Nginx** server which can then map the port 443 to the `--server-port` specified in the `dkg start` command above.
 
@@ -283,7 +283,7 @@ We are working on providing a cleaner way to stop and restart the node.  Until t
 
 If you want to migrate the validator node to another server (for backup or temporary purposes) there are a couple of options available. Make sure you have addressed the prerequisites first before migrating the validator setup to another node.
 
-!!! caution "Migration Prerequisites"
+!!! an-caution "Migration Prerequisites"
 
       Before migrating a validator node to another physical or virtual server, make sure that the following are addressed:
 
@@ -302,7 +302,7 @@ You need to notify the Arcana team as this may require coordinating with other v
 
 We **do not support** migrating the validator node to a different one that has a different domain and a different IP address. In future releases too, the new node with a different domain and IP address will not be treated as a reincarnate of the previous node but as a brand 'new' replacement node. Adding such a node will follow {{config.extra.arcana.company_name}} ADKG recovery and repair protocol enhancements. In that case, there is no use backing up the validator node data.  Our protocol will re-generate and repair key shares where applicable, in case one node goes down and a different one joins in the ADKG subsystem.
 
-!!! caution  "Backup Data Directory of the Validator Node"
+!!! an-caution  "Backup Data Directory of the Validator Node"
 
       ADKG protocol is under active development for robustness and key repair, regeneration mechanisms. We highly recommend that you back up the 'data' directory of the validator node in any case.
 

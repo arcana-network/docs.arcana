@@ -14,7 +14,7 @@ arcana:
 
 Developers can use this SDK to assign keys to authenticated users to sign blockchain transactions securely. 
 
-!!! warning "Limited Auth Capabilities"
+!!! an-warning "Limited Auth Capabilities"
 
       * **No** built-in [[concept-plug-and-play-auth|plug-and-play login UI]] feature 
       * **No** built-in {{config.extra.arcana.wallet_name}} UI
@@ -31,13 +31,13 @@ Start by registering the app and configuring usage settings through {{config.ext
 <img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
 <img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
 
-!!! warning "Key security"
+!!! an-warning "Key security"
  
       When using the {{config.extra.arcana.auth_core_sdk_name}} based auth solution developers must secure authenticated user's cryptographic assets including keys.
 -->
 ## Prerequisites
 
-!!! note "Use latest SDKs"
+!!! an-note "Use latest SDKs"
   
       {% include "./text-snippets/warn_latest_auth_core_sdk_version.md" %}
 
@@ -134,7 +134,7 @@ await auth.handleRedirect();
 
 --->
 
-!!! warning "Onboarding via Cognito, Firebase"
+!!! an-warning "Onboarding via Cognito, Firebase"
 
       Web3 apps that use Cognito or Firebase for onboarding users and require {{config.extra.arcana.auth_core_sdk_name}} to only assign cryptographic keys to the authenticated users are **not supported** in the current release.
 

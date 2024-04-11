@@ -1,4 +1,4 @@
-!!! info "No Aggregate Login with Twitter OAuth "
+!!! an-info "No Aggregate Login with Twitter OAuth "
 
       The [[concept-aggregate-login|aggregate login feature]] does not work for the Steam OAuth login mechanism.
 

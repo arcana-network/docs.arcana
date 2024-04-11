@@ -18,7 +18,7 @@ Log in to the app integrated with the {{config.extra.arcana.sdk_name}} using one
 
 Click **Proceed** to set up MFA.
 
-!!! note "Cannot disable MFA later"
+!!! an-note "Cannot disable MFA later"
 
       Once configured, MFA cannot be disabled for a user wallet account.
 
@@ -42,7 +42,7 @@ Users can easily configure MFA to enable enhanced wallet security.
 
 <img src="/img/an_mfa_complete.png" alt="MFA PIN" class="an-screenshots-noeffects" width="30%"/>
 
-!!! note "Save your Security Answers"
+!!! an-note "Save your Security Answers"
 
       When logging in from a new device, MFA will require you to either answer three security questions correctly or provide the PIN. Make sure you save the responses to the security questions and the PIN carefully.
 

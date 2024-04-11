@@ -59,7 +59,7 @@ The React/Next.js apps that use [Wagmi](https://wagmi.sh/) <img alt="wagmi logo"
 
 Similarly, for React apps using the [RainbowKit framework](https://www.rainbowkit.com/), <img alt="rainbowkit logo" src="/img/rainbowkit_logo.png" width="2%" /> see [[integrate-rainbow-app|how to integrate a React app that uses RainbowKit]] guide.
 
-!!! tip "Using `auth-wagmi`"
+!!! an-tip "Using `auth-wagmi`"
 
       {% include "./text-snippets/warn_wagmi_noauth.md" %}
 

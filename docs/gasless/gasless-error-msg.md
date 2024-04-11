@@ -39,7 +39,7 @@ Sometimes, the error mentioned above occurs even if the developer has properly s
 
 When encountering cryptic errors in Arcana Auth gasless transactions, developers should follow these steps to capture error data. Use Tenderly for simulating transactions to pinpoint the actual cause of failure.
 
-!!! caution "Reporting Gasless Transaction Issues"
+!!! an-caution "Reporting Gasless Transaction Issues"
 
       When reporting gasless transaction errors in the app, developers should follow these steps to capture and share the error data using a browser inspector tool. You can use Tenderly for debugging or share the basic error data with us, which is crucial for resolving gasless transaction issues caused by Biconomy error handling limitations.
 

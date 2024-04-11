@@ -1,4 +1,4 @@
-??? Example "Chain Configuration Example"
+??? an-example "Chain Configuration Example"
 
       **Example I**
       

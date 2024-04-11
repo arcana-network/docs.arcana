@@ -14,7 +14,7 @@ Do not close the **Social Auth** browser tab in the {{config.extra.arcana.dashbo
 
 ## Step 2: Use the Twitter Developer Console
 
-!!! caution "Twitter Elevated Access Required"
+!!! an-caution "Twitter Elevated Access Required"
 
       The app developer is required to have a [Twitter Developer Account](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api). To configure and use the Twitter Developer Portal to generate Twitter OAuth credentials, you need to have [Twitter Elevated Access](https://developer.twitter.com/en/docs/twitter-api/getting-started/about-twitter-api#v2-access-level). 
 
@@ -49,13 +49,13 @@ Specify all the fields appropriately. Do not leave the optional fields empty.
 - Terms of Service
 - Privacy Policy
 
-!!! caution
+!!! an-caution
 
       {{config.extra.arcana.sdk_name}} requires the Twitter user's email ID to verify the logged-in user's credentials. To enable this, Twitter makes it necessary that the Privacy Policy and Terms of Service are appropriately provided while creating a new app entry. For details, see [here](https://developer.twitter.com/en/docs/twitter-api/v1/accounts-and-users/manage-account-settings/api-reference/get-account-verify_credentials).
 
 Make sure you save all the settings.
 
-!!! tip 
+!!! an-tip 
 
       If you miss copying the **API Key** and the **API Key Secret** earlier, you can go **App Settings** section in the Twitter Developer Dashboard. Refer to the *Keys and Tokens* tab. You will see under the **Consumer Keys** section, there is an option to regenerate the API key and secret. Make sure you copy both of these details.
 

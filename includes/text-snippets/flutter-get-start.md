@@ -31,7 +31,7 @@ Add the following line to the dependencies section in your app's `pubspec.yaml` 
 
 {% include "./code-snippets/auth_flutter_install.md" %}
 
-!!! note "Use latest {{config.extra.arcana.flutter_sdk_name}}"
+!!! an-note "Use latest {{config.extra.arcana.flutter_sdk_name}}"
   
       {% include "./text-snippets/warn_latest_flutter_sdk_version.md" %}
 
@@ -52,7 +52,7 @@ Next, add code to onboard users and allow authenticated users to sign blockchain
 
 Add code to onboard users through one of the configured social login providers or via OTP login option. 
 
-!!! tip "Arcana JWT Token"
+!!! an-tip "Arcana JWT Token"
 
       {% include "./text-snippets/jwt_token.md" %}
 

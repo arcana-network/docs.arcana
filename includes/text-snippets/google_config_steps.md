@@ -24,7 +24,7 @@ In the Google Cloud Console, select the option to set up credentials for a web a
 
 Specify the **redirect URI** value to the one that you saved in the previous step from the `Auth` tab of the {{config.extra.arcana.dashboard_name}}. 
 
-!!! info "Redirect URI"
+!!! an-info "Redirect URI"
 
       The redirect URI refers to the endpoint to which the Google OAuth 2.0 server can send authentication responses. These endpoints must adhere to [Google’s validation rules](https://developers.google.com/identity/protocols/oauth2/web-server#uri-validation).
 

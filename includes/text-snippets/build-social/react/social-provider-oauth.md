@@ -24,7 +24,7 @@ In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated
 
 The {{page.meta.arcana.app_type}} app is all set for onboarding users via {{page.meta.arcana.social_provider_name}}.
 
-!!! tip "Arcana JWT Token"
+!!! an-tip "Arcana JWT Token"
 
      {% include "./text-snippets/jwt_token.md" %}
 

@@ -4,7 +4,7 @@ When enabling [[concept-gasless-transactions|gasless transactions]] in the {{con
 
 In this guide, you will learn how to configure gasless transactions irrespective of whether you wish to use only the standalone {{config.extra.arcana.gasless_sdk_name}} or use the built-in gasless feature in the {{config.extra.arcana.sdk_name}}.
 
-!!! danger "Disabling Gasless" 
+!!! an-danger "Disabling Gasless" 
 
       When you create a gas tank for a blockchain, it turns on the gasless feature. At the same time, the user account changes into a dual address [[concept-gasless-transactions#gasless-user-accounts|gasless account]], which links to both an Externally Owned Account (EOA) and a Smart Contract Wallet (SCW) address.
 
@@ -39,7 +39,7 @@ Note that you can only set up one gas tank per blockchain network. Once configur
 
 To add crypto assets to a new gas tank, the developer needs to use a browser-based wallet like MetaMask and choose an account with sufficient funds. This account is referred to as the [[concept-gasless-transactions#gas-tank-owner|owner's account]]. Anyone, including the developer or third-party sponsors, can contribute credits to the gas tank. However, credits can only be withdrawn into the owner's account.
 
-!!! info "Browser-based wallet"
+!!! an-info "Browser-based wallet"
 
        You can use MetaMask or any other browser-based wallet to deposit credits in a gas tank. Make sure the browser-based wallet sets the `windows.ethereum` variable.
 

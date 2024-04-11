@@ -20,7 +20,7 @@ In this guide, you will learn how to onboard users via a custom login UI in Rain
 
 * **Set up Authentication Providers**: Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more [[web3-stack-auth|supported authentication providers]] for onboarding the app users.
 
-    !!! tip "Configure Authentication Providers"
+    !!! an-tip "Configure Authentication Providers"
 
           You may be required to configure additional provider details for different authentication providers. In the case of Google, the developer must use Google Developer Console to set up the app and generate a Google assigned [[config-auth-google|client ID for Google OAuth]]. This Google ClientID will be configured in the {{config.extra.arcana.dashboard_name}} **Social Auth** settings before integrating the app.
 
@@ -48,7 +48,7 @@ Web3 app developers can choose to either use the built-in plug-and-play login UI
 
 If the custom login UI is configured such that it allow a single authentication provider to onboard users, developers can specify the provider as an additional parameter while creating the `ArcanaConnector`. Otherwise, if the custom login UI offers multiple authentication provider options then developers can create a single `ArcanaConnector` without specifying the provider and later call the `setLogin` function for the selected provider, in response to the user's selection.
 
-!!! note "Configure Authentication Providers before `ArcanaConnector` creation"
+!!! an-note "Configure Authentication Providers before `ArcanaConnector` creation"
 
       To build a custom login UI, developers can choose from the list of [[web3-stack-auth|supported authentication providers]] or use passwordless. Wire the UI buttons for onboarding via different options to the `setLogin` function of the `ArcanaConnector`.
 
@@ -64,7 +64,7 @@ Initialize the `connectorsForWallets` in the RainbowKit with the `ArcanaRainbowC
 
 {% include "./code-snippets/auth_rainbow_create_client.md" %}
 
-!!! tip "Wagmi `createClient` and `configClient`"
+!!! an-tip "Wagmi `createClient` and `configClient`"
 
       For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}. Also, refer to [RainbowKit documentation](https://www.rainbowkit.com/docs/introduction).
 
@@ -78,7 +78,7 @@ That is all! :material-party-popper:
 
 The Web3 Wagmi app can now onboard users using the custom login UI. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
 
-!!! tip "RainbowKit Integration Example"
+!!! an-tip "RainbowKit Integration Example"
 
       Here is the [RainbowKit integration example source code](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration) for your reference.
 

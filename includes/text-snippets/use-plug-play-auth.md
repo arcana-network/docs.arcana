@@ -28,7 +28,7 @@ The figure below shows the built-in, plug-and-play login UI screen for a test ap
 
 ![Plug-and-Play Login UI](/img/an_plug_n_play_auth.png){.an-screenshots-noeffects width="30%"}
 
-!!! tip "Arcana JWT Token"
+!!! an-tip "Arcana JWT Token"
 
      {% include "./text-snippets/jwt_token.md" %}
 
@@ -36,7 +36,7 @@ That is all! :material-party-popper:
 
 The plug-and-play user onboarding feature is successfully enabled in an app integrated with the {{config.extra.arcana.sdk_name}}.
 
-!!! warning "No plug-and-play support for Firebase authentication."
+!!! an-warning "No plug-and-play support for Firebase authentication."
 
       {% include "./text-snippets/warn_firebase_no_pnp.md" %}
 

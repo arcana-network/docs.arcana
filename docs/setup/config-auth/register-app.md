@@ -26,7 +26,7 @@ In this tutorial, you will learn how to register a Web3 app and get a unique cli
 
 That is all! 🎉
 
-!!! info "Save {{config.extra.arcana.app_address}}"
+!!! an-info "Save {{config.extra.arcana.app_address}}"
 
     A unique **{{config.extra.arcana.app_address}}** is assigned to every registered app. It is displayed on the top right of the dashboard screen. Copy and use it to integrate the app with the {{config.extra.arcana.company_name}} SDKs.
 
@@ -36,7 +36,7 @@ That is all! 🎉
 
 After registering the app, [[index-configure-auth| configure the user onboarding settings]] first. Optionally, you can also [[configure-gasless|configure gasless settings]]. After configurations, install the SDK and [[index-integrate|integrate the app]].
 
-!!! note "Enabling gasless transactions in third-party wallets"
+!!! an-note "Enabling gasless transactions in third-party wallets"
 
       The {{config.extra.arcana.sdk_name}} has a built-in gasless feature for the in-app {{config.extra.arcana.wallet_name}}. Developers must install and [[web-gasless-integrate|integrate with the {{config.extra.arcana.gasless_sdk_name}}]] to enable gasless transactions in third-party wallets.
 

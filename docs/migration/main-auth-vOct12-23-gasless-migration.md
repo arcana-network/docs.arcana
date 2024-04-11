@@ -44,7 +44,7 @@ To enable gasless transactions, use the {{config.extra.arcana.dashboard_name}} t
 * Add sufficient funds to the gas tank.
 * Whitelist contract functions - only whitelisted operations are gasless, others need to pay gas fees.
 
-!!! note
+!!! an-note
 
       1. There is no need to change any integration code or {{config.extra.arcana.app_address}} in the app. 
       

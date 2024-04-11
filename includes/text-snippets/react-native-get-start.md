@@ -30,7 +30,7 @@ For {{page.meta.arcana.app_type}} Web3 apps, install the [`{{config.extra.arcana
 
 **Note:** You are **not required** to manually link this module, as it supports React Native auto-linking.
 
-!!! note "Use latest SDKs"
+!!! an-note "Use latest SDKs"
   
       {% include "./text-snippets/warn_latest_react_native_sdk_version.md" %}
 
@@ -63,7 +63,7 @@ export default function App() {
 
 Call `Auth` functions and onboard users through the configured authentication providers.
 
-!!! tip "Arcana JWT Token"
+!!! an-tip "Arcana JWT Token"
 
       {% include "./text-snippets/jwt_token.md" %}
 

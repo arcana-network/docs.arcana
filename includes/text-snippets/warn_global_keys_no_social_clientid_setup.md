@@ -4,7 +4,7 @@ User onboarding via {{page.meta.arcana.social_provider}} is automatically turned
 
 ![Global Keys Setting](/img/an_config_global_key_setting.png){ .width_50pc }
 
-!!! caution
+!!! an-caution "Global Keys Configuration Change"
 
       In the earlier versions of the {{config.extra.arcana.sdk_name}}, apps using **global keys** were required to configure **Social Auth** settings for the providers. This behavior has changed in the latest release of the {{config.extra.arcana.sdk_name}}. 
 

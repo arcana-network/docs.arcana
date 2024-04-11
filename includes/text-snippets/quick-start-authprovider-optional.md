@@ -1,4 +1,4 @@
-??? example "`AuthProvider` Optional Parameters"
+??? an-example "`AuthProvider` Optional Parameters"
 
       You can optionally customize the following settings in the `AuthProvider` constructor:
 

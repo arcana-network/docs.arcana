@@ -87,7 +87,7 @@ By default, gasless apps will have the SCW address active in the {{config.extra.
 
 If the gas tank is depleted, empty or paused then by default the EoA wallet address becomes active for the user and is displayed in the wallet. If the user switches it to the SCW address then that is used for any blockchain transactions. In this case, since the gas tank is not available, the user will have to bear the gas fees via the SCW wallet address. So the user needs to make sure that the SCW account has sufficient funds.
 
-!!! caution "Disabling Gasless Capability"
+!!! an-caution "Disabling Gasless Capability"
 
       Once a developer provisions a gas tank for any supported blockchain, the gasless feature becomes permanently active within {{config.extra.arcana.sdk_name}} for that blockchain. While the gas tank can be paused and resumed, the two-address gasless user accounts system, comprising EoA and SCW addresses, remains in effect.
       

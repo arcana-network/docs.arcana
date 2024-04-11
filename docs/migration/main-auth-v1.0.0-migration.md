@@ -18,7 +18,7 @@ When you migrate from using the {{config.extra.arcana.sdk_name}}  v0.3.0 to the 
 
 The following section lists changes between {{config.extra.arcana.sdk_name}} v0.3.0 and v1.0.0. 
 
-!!! caution 
+!!! an-caution 
 
       If you are using {{config.extra.arcana.sdk_name}} v0.2.2 or older, please see [[migration-guide-v0.3.0|How to migrate to {{config.extra.arcana.sdk_name}} v0.3.0]].
 
@@ -69,7 +69,7 @@ If you wish to deploy your app on {{config.extra.arcana.company_name}} Testnet, 
 
 2. **Mainnet Configuration**: To deploy your app on the {{config.extra.arcana.company_name}}  Mainnet, you must first create a 'Mainnet' configuration profile using the {{config.extra.arcana.dashboard_name}}. See instructions [[dashboard-user-guide#example-new-mainnet-authprovider| here]]. Once you have the 'Mainnet' configuration profile ready, copy the new **{{config.extra.arcana.app_address}}** assigned to the 'Mainnet' configuration profile. This will be required during {{config.extra.arcana.sdk_name}}  integration later. At the time of 'Mainnet' profile creation, you need to specify whether you would like to use the **App-specific Keys** (default) or use the **Global Keys** feature for your app. To enable the global keys feature, developers must submit a verification form and get approval. Wait to onboard users until you receive a response to your verification request. Otherwise, the wallet address assigned to your app users may change after the **Global Keys** feature takes effect. If you do not choose **Global Keys**, your 'Mainnet' profile is configured to use **App-specific** keys by default.  What this means is that your app users will see different wallet addresses across different apps in the Arcana ecosystem. For details, see [[concept-keyspace-type|Global Keys]].
 
-    !!! danger "Update Redirect URI for Mainnet"
+    !!! an-danger "Update Redirect URI for Mainnet"
   
           You must update the OAuth redirect URI values for all the social providers configured for your 'Mainnet' profile. Use the respective social provider console to update callback URL values for Mainnet. Simply copy the new **redirect URI** value from the application's 'Mainnet' configuration settings dashboard page and add it to the list of redirect URIs setup in the OAuth configuration settings for your provider.  You would have earlier added the redirect URI for the 'Testnet' configuration profile, now simply update the 'Mainnet' URI too. That's all.
 

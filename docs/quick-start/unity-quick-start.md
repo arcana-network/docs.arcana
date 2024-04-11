@@ -37,7 +37,7 @@ Initialize the {{config.extra.arcana.gaming_sdk_name}} by specifying the unique 
 
 {% include "./code-snippets/auth_unity_init.md" %}
 
-!!! note "Use latest SDKs"
+!!! an-note "Use latest SDKs"
   
       {% include "./text-snippets/warn_latest_unity_sdk_version.md" %}
 

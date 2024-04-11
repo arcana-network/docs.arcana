@@ -55,7 +55,7 @@ Note, at a time, developers can only enable either EVM-compatible chains or the 
 
 ![Solana Switch Chain](/img/an_db_new_solana_switch_evm.gif){.an-screenshots}
 
-!!! warning "Dynamic Switching"
+!!! an-warning "Dynamic Switching"
 
       Switching between EVM and non-EVM chains is allowed only during app development. Once the app is deployed and users log in, if a user logs in and the wallet displays the Solana chain as the default one selected by the app developer, switching chains from the wallet UI may not work. If a user logs out and then re-logs into the app, they will see a different type of chain (EVM, non-EVM) and the keys will be different.
 

@@ -47,7 +47,7 @@ An under-development application can be deployed on the {{config.extra.arcana.co
     - Each profile can be edited and managed independently
 - A new unique **{{config.extra.arcana.app_address}}** is associated with the 'Mainnet' configuration profile
 
-    !!! note
+    !!! an-note
           Do remember to use the correct {{config.extra.arcana.app_address}} for integrating with the {{config.extra.arcana.sdk_name}}when you deploy your application on the Mainnet.
 
 See [[dashboard-user-guide#manage-testnet-and-mainnet-configurations|how to manage application profiles]] for details. 

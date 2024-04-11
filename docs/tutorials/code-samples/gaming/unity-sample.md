@@ -22,7 +22,7 @@ Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippet
 
 By default, a Testnet configuration profile is associated with every registered app. The Testnet profile for the app has a unique **{{config.extra.arcana.app_address}}** that is used later during app integration.
 
-!!! note "Mainnet Deployment"
+!!! an-note "Mainnet Deployment"
    
      A newly registered app is associated with a Testnet configuration profile. After integration with the SDK, it can be deployed on the Testnet only. 
      

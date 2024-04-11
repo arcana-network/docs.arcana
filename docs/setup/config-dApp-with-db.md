@@ -65,15 +65,15 @@ When 'Mainnet' is selected from the dropdown, a new 'Mainnet' profile creation w
 
 After the selection is made and the developer confirms, the 'Mainnet' profile is created and automatically registered with {{config.extra.arcana.company_name}}. 
 
-!!! note "Mainnet {{config.extra.arcana.app_address}}"
+!!! an-note "Mainnet {{config.extra.arcana.app_address}}"
 
       The newly created 'Mainnet' configuration profile is associated with a brand new unique **{{config.extra.arcana.app_address}}**. Developers must specify this new {{config.extra.arcana.app_address}} while integrating the application with the {{config.extra.arcana.sdk_name}} and deploying it on {{config.extra.arcana.company_name}} 'Mainnet'.
 
-!!! caution "Copying Testnet Profile"
+!!! an-caution "Copying Testnet Profile"
 
       {% include "./text-snippets/warn_copy_testnet_profile.md" %}
 
-??? example "Example: Copying Google Profile"
+??? an-example "Example: Copying Google Profile"
       
       If Google is enabled in your app's 'Testnet' profile, then during the configuration of the social login provider through the Google Developer console, the Testnet redirect URI was added.  Copy the 'Mainnet' profile redirect URI value from the {{config.extra.arcana.dashboard_name}} and update them in the Google Console OAuth settings. 
 
@@ -95,7 +95,7 @@ There are multiple ways to switch an application from using Testnet to Mainnet.
 
     ![Switch to Testnet](/img/an_db_all_app_card.png){.an-screenshots}
 
-!!! caution
+!!! an-caution
 
       Depending upon whether the 'Testnet' **{{config.extra.arcana.app_address}}** value or the 'Mainnet' **{{config.extra.arcana.app_address}}** value is used to integrate an application with the {{config.extra.arcana.sdk_name}}, deployment of the app happens on the respective {{config.extra.arcana.company_name}} Network. "Testnet" usage is not billed but if an application chooses 'Mainnet' while integrating with the {{config.extra.arcana.sdk_name}}, it will be billed in the forthcoming releases.
 
@@ -103,13 +103,13 @@ There are multiple ways to switch an application from using Testnet to Mainnet.
 
 {% include "./text-snippets/db_keyspace.md" %}
 
-!!! caution "Configuring the {{config.extra.arcana.wallet_name}}"
+!!! an-caution "Configuring the {{config.extra.arcana.wallet_name}}"
 
       {{config.extra.arcana.sdk_name}} allows developers to manage the app user experience for signing blockchain transactions with {{config.extra.arcana.wallet_name}}. 
       
       The user experience with the {{config.extra.arcana.wallet_name}} is configured programmatically through the `alwaysVisible` option. Install the {{config.extra.arcana.sdk_name}} and as part of the integration, add code in the app to create a new `AuthProvider` instance. Specify the appropriate wallet visibility mode via the `alwaysVisible` option. See the [[configure-wallet-visibility|{{config.extra.arcana.wallet_name}} configuration guide]] for details.
 
-!!! info "{{config.extra.arcana.app_address}}"
+!!! an-info "{{config.extra.arcana.app_address}}"
 
       The {{config.extra.arcana.app_address}} assigned to your application can be found on the top right of the {{config.extra.arcana.dashboard_name}} screen. ![App Client Identifier](/img/an_db_app_address.png){.an-screenshots}
 
@@ -131,7 +131,7 @@ The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer a
 
 ![App usage metrics](/img/an_db_metrics.png){.an-screenshots}
 
-!!! caution
+!!! an-caution
 
       The billing data is only applicable for Mainnet usage and will be made available in the forthcoming releases.
 
@@ -173,7 +173,7 @@ Developers are required to update the following profile details and then click *
 
 ![Application Usage Stats Mainnet Billing Profile](/img/an_db_billing_profile.gif){.an-screenshots}
 
-!!! note "Payment Method"
+!!! an-note "Payment Method"
 
        By default, the 'Payment Method' section is disabled. 
        

@@ -16,6 +16,6 @@ The {{config.extra.arcana.wallet_name}} allows application users to securely sig
 
 It uses a state-of-the-art asynchronous, distributed key generation algorithm, ([DKG]({{page.meta.arcana.root_rel_path}}/concepts/dkg/index.md)), to generate and manage the private keys associated with each application user. The DKG subsystem of {{config.extra.arcana.product_name}} cannot access the user's keys on its own. It does not store any local copy of the user keys and no single node in the subsystem has access to the keys. The {{config.extra.arcana.wallet_name}} never exposes the private key associated with any app user unless the user asks to export their key.
 
-!!! info "Security Guidance"
+!!! an-info "Security Guidance"
 
       The {{config.extra.arcana.wallet_name}} uses distributed keys generated and managed using robust cryptographic primitives. Each application user is associated with a key pair. This key is never exposed to the app developer or any entity within the {{config.extra.arcana.product_name}} ecosystem. Working with user keys directly in an application is not recommended as they are visible to the application and could pose a security risk. {{config.extra.arcana.wallet_name}} uses the standard EIP-1193 Ethereum provider interface for signing blockchain transactions. This wallet provider is used by applications for performing JSON RPC interactions with the blockchain network. 

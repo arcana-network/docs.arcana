@@ -18,7 +18,7 @@ In this guide, you will learn how to onboard users in Web3-React apps. It shows 
 
 * **Set up Authentication Providers**: Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more [[web3-stack-auth|supported authentication providers]] for onboarding the app users.
 
-    !!! tip "Configure Authentication Providers"
+    !!! an-tip "Configure Authentication Providers"
 
           You may be required to configure additional provider details for different authentication providers. In the case of Google, the developer must use Google Developer Console to set up the app and generate a Google assigned [[config-auth-google|client ID for Google OAuth]]. This Google ClientID will be configured in the {{config.extra.arcana.dashboard_name}} **Social Auth** settings before integrating the app.
 
@@ -44,7 +44,7 @@ Next, call `initializeConnector` from the `web3-react/core` library and instanti
 
 If the custom login UI is configured such that it allows a single authentication provider to onboard users, developers can specify the provider as an additional parameter while creating the `ArcanaConnector`. Otherwise, if the custom login UI offers multiple authentication provider options then developers can create a single `ArcanaConnector` without specifying the authentication provider as input and later call the `setLogin` function for the selected provider, in response to the user's onboarding choice.
 
-!!! note "Configure Authentication Providers before `ArcanaConnector` creation"
+!!! an-note "Configure Authentication Providers before `ArcanaConnector` creation"
 
       To build a custom login UI, developers can choose from the list of [[web3-stack-auth|supported authentication providers]] or use passwordless. Wire the UI buttons for onboarding via different options to the `setLogin` function of the `ArcanaConnector`.
 
@@ -72,7 +72,7 @@ That is all! :material-party-popper:
 
 The Web3-React app can now onboard users using the custom login UI. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
 
-!!! tip "Example: Sample Web3-React App"
+!!! an-tip "Example: Sample Web3-React App"
 
       See [sample Web3-React app](https://github.com/arcana-network/auth-web3-react/tree/main/example) for details.
       

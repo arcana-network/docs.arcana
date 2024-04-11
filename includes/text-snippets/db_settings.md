@@ -31,7 +31,7 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
 
    See [[index-configure-auth|how to configure authentication providers]], for details.
 
-    !!! note "Redirect URI"
+    !!! an-note "Redirect URI"
            
           The Redirect URI  field in the **Social Auth** section of the dashboard lists an auto-generated URL. This URL value is used as input when configuring the social login providers.
 
@@ -78,7 +78,7 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
     * Enable/Pause Gas Tank
     * Whitelist app operations
 
-    !!! tip "Account Abstraction: SCW Account"
+    !!! an-tip "Account Abstraction: SCW Account"
 
           Gasless transactions require enabling **SCW** user accounts or [[concept-gasless-transactions#gasless-user-accounts|'gasless accounts']] that are different from the typical **EOA** user accounts.
     

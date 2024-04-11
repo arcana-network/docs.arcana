@@ -40,7 +40,7 @@ Your app is all set for authenticating users via Steam OAuth. Authenticated user
 
 {% include "./text-snippets/aggrlogin-nosteam-support.md" %}
 
-!!! tip "Arcana JWT Token"
+!!! an-tip "Arcana JWT Token"
 
      {% include "./text-snippets/jwt_token.md" %}
      

@@ -27,6 +27,6 @@ The aggregate usage metrics are displayed in the *Manage Apps Screen*. The per-a
 
 <img alt="Per App Usage Metrics" src="/img/an_db_per_app_metrics.png" width="75%" />
 
-!!! note "Mainnet Usage"
+!!! an-note "Mainnet Usage"
 
       The number of logged-in users is tracked separately for the 'Testnet' and 'Mainnet' application profiles. {{config.extra.arcana.company_name}} Testnet usage is not billed.

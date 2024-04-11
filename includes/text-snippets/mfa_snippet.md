@@ -31,7 +31,7 @@ Users have two options:
 
 Web3 app developers cannot control MFA activation for an app integrated with {{config.extra.arcana.sdk_name}}. Users decide to enable or disable it at their first login. If they skip configuration initially, they will be prompted every third login to set up MFA. Users can also enable MFA later using the {{config.extra.arcana.wallet_name}} UI. Selecting 'Don't Ask Again' will disable future prompts on that device
 
-!!! caution "Cannot disable MFA once enabled"
+!!! an-caution "Cannot disable MFA once enabled"
 
       Once enabled, MFA cannot be disabled for security reasons.
 

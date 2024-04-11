@@ -24,7 +24,7 @@ Developers can choose to onboard users by either using the built-in plug-and-pla
 
 * **Make sure you configure gasless operations through the dashboard.** See [[configure-gasless|how to set up gas tanks and deposit funds]] to enable gasless transactions in apps that are integrated with the {{config.extra.arcana.sdk_name}}.
 
-!!! caution "Gasless Transactions"
+!!! an-caution "Gasless Transactions"
 
       The {{config.extra.arcana.sdk_name}} has a built-in gasless feature that can be used to enable gasless transactions in the {{config.extra.arcana.wallet_name}} for apps that integrate with the SDK.
 
@@ -48,11 +48,11 @@ The figure below shows the plug-and-play login UI screen for a test app. All the
 
 ![Plug-and-Play Login UI](/img/an_plug_n_play_auth.png){.an-screenshots-noeffects width="30%"}
 
-!!! tip "Arcana JWT Token"
+!!! an-tip "Arcana JWT Token"
 
      {% include "./text-snippets/jwt_token.md" %}
 
-!!! warning "No plug-and-play support for Firebase authentication."
+!!! an-warning "No plug-and-play support for Firebase authentication."
 
       {% include "./text-snippets/warn_firebase_no_pnp.md" %}
 
@@ -68,7 +68,7 @@ That is all! :material-party-popper:
 
 When a user logs into the app with established gas tanks, whitelisted app operations, and deposited funds from the developer or sponsor, all allowed actions using {{config.extra.arcana.wallet_name}} don't incur gas fees.
 
-!!! warning "No plug-and-play support for Firebase authentication."
+!!! an-warning "No plug-and-play support for Firebase authentication."
 
       {% include "./text-snippets/warn_firebase_no_pnp.md" %}
 

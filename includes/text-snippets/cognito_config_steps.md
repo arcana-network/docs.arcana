@@ -16,7 +16,7 @@ Do not close the **Social Auth** browser tab in the {{config.extra.arcana.dashbo
 
 Go to the [AWS Management Console](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-idp-settings.html) and register your app as a new Cognito client application. Log in to the console, search for 'Cognito' and you will see the Cognito setup dashboard. Use the Cognito setup dashboard to add the app as a Cognito client in the context of a Cognito 'User Pool'. If a Cognito 'User Pool' is not already set up, create a new User Pool first as highlighted in the figure below. 
 
-!!! caution "Cognito Sign-in Options"
+!!! an-caution "Cognito Sign-in Options"
 
       **Email ID** must be selected as one of the Cognito sign-in options. 
       

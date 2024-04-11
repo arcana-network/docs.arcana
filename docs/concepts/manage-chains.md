@@ -22,7 +22,7 @@ There are multiple ways to add and automatically switch to newer chains:
 
 2. **`chainConfig` parameter**: During app integration, use the `chainConfig` input parameter of the `AuthProvider` constructor to specify the active chain and a different RPC url (optional). 
 
-    !!! note "`chainConfig` setting"
+    !!! an-note "`chainConfig` setting"
     
           The `chainConfig` value overrides the active chain configuration setting specified in the dashboard if the chain corresponding to the value is present in the pre-configured list. If not, the dashboard setting is used to show the 'active' chain in the user's wallet.
 
@@ -36,7 +36,7 @@ There are multiple ways to add and automatically switch to newer chains:
 
 2. Use the {{config.extra.arcana.wallet_name}} UI dropdown to select a different chain as the 'active' network.
 
-!!! caution "User Settings: Not Persistent"
+!!! an-caution "User Settings: Not Persistent"
 
       Note that any chain addition or changes to the 'active' chain selection made by the app users does not persist across user login sessions.  Only the chain management configurations specified by the developers persist across user logins.
 
@@ -47,7 +47,7 @@ Once configured and the app is deployed, developers can reconfigure the list of 
 
 {% include "./text-snippets/specify_default_chain_example.md" %}
 
-!!! caution "Switching Chains"
+!!! an-caution "Switching Chains"
 
       **EVM-compatible Chains**: 
       

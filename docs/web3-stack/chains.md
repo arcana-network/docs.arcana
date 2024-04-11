@@ -18,7 +18,7 @@ By default, a *pre-configured list* of chains is enabled for the {{config.extra.
 
 {% include "./text-snippets/wallet_supported_networks.md" %}
 
-!!! tip "Updating default pre-configured list"
+!!! an-tip "Updating default pre-configured list"
 
      To include a new EVM-compatible chain in {{config.extra.arcana.product_name}}'s default pre-configured list, {{config.extra.arcana.company_name}} collaborates strategically with the chain's team/community. While we can add any such chain, our approach aims to increase the {{config.extra.arcana.product_name}} adoption and maximize our reach and engagement within the chain's development community.
 
@@ -26,6 +26,6 @@ By default, a *pre-configured list* of chains is enabled for the {{config.extra.
 
 The {{config.extra.arcana.gasless_sdk_name}} is powered by Biconomy's gasless infrastructure. It supports the same blockchain networks as Biconomy. Refer to the {% include "./text-snippets/biconomy/gasless_supported_networks.md" %} for gasless transactions. 
  
-!!! caution "Gasless Transactions"
+!!! an-caution "Gasless Transactions"
  
       Note that the supported gasless networks may not be the same as the list of chains supported by the {{config.extra.arcana.wallet_name}} and the {{config.extra.arcana.sdk_name}}.

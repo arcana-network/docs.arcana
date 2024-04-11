@@ -28,7 +28,7 @@ When Web3 wallets enable gasless transactions, users don't need to pay transacti
 
 Developers must use the {{config.extra.arcana.dashboard_name}} to first configure gasless usage. After that, install the {{config.extra.arcana.gasless_sdk_name}} and integrate the Web3 app to enable gasless transactions in third-party wallets.
 
-!!! note "Gasless Transactions via {{config.extra.arcana.wallet_name}}"
+!!! an-note "Gasless Transactions via {{config.extra.arcana.wallet_name}}"
 
       To enable gasless transactions via {{config.extra.arcana.wallet_name}}, developers must install and use the built-in gasless feature of the {{config.extra.arcana.sdk_name}}. The {{config.extra.arcana.gasless_sdk_name}} is only needed for enabling gasless in third-party wallets.
 
@@ -43,7 +43,7 @@ Developers must use the {{config.extra.arcana.dashboard_name}} to first configur
 
 [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/gasless-ops.md)
 
-!!! note "Built-in Gasless vs Standalone Gasless Feature"
+!!! an-note "Built-in Gasless vs Standalone Gasless Feature"
 
       Apps that do not require user onboarding and only use third-party wallets can directly integrate with the {{config.extra.arcana.gasless_sdk_name}}. Multi-wallet apps that require to support third-party wallets as well as the {{config.extra.arcana.wallet_name}} and enable gasless transactions must integrate with both the {{config.extra.arcana.sdk_name}} and the {{config.extra.arcana.gasless_sdk_name}}.
 

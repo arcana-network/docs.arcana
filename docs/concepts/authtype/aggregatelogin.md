@@ -25,7 +25,7 @@ graph LR
 
 Aggregate login in {{config.extra.arcana.dashboard_name}} groups developer accounts based on email. If different emails are used with multiple login options, they're treated as separate developer accounts, leading to different app configurations for each login. For instance, if a developer logs in with Google and Twitter, both using the same email, it's considered one developer account. However, if they use different emails, it creates separate developer accounts, affecting app configurations.
 
-!!! caution "Not supported for all Auth Providers"
+!!! an-caution "Not supported for all Auth Providers"
 
       Aggregate login feature does not work for the following providers:
 

@@ -16,11 +16,11 @@
 * Export private key and use it to import {{config.extra.arcana.wallet_name}} account to a third-party Web3 provider
 * Enable MFA for enhanced security
 
-!!! note
+!!! an-note "User Profile Data"
 
     In the future, the {{config.extra.arcana.wallet_name}} may also allow application users to permit application developers and see their profile data such as email ID, profile picture, and user name.
 
-!!! caution "**Not Supported**"
+!!! an-caution "**Not Supported**"
 
     The {{config.extra.arcana.wallet_name}} does not allow an app user to import any blockchain account created using a third-party wallet provider. 
 

@@ -30,7 +30,7 @@ In both cases, the Mainnet configuration profile is created and has a **new** {{
 
 Copy the newly assigned {{config.extra.arcana.app_address}} in the Mainnet settings. It will be of the format `xar_live_nnnnnnnnnnn...nnn`.
 
-!!! caution "Copying Testnet Profile"
+!!! an-caution "Copying Testnet Profile"
 
       {% include "./text-snippets/warn_copy_testnet_profile.md" %}
 
@@ -58,7 +58,7 @@ Bring up the app. When a user authenticates, they will be assigned a new wallet 
 
 If there is no Testnet warning displayed on the {{config.extra.arcana.wallet_name}}, then the app is successfully deployed on Arcana Mainnet.
 
-That is all!!! :material-party-popper:
+That is all! :material-party-popper:
 
 ## See Also
 

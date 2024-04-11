@@ -1,4 +1,4 @@
-!!! info "No Aggregate Login with Firebase "
+!!! an-info "No Aggregate Login with Firebase "
 
       The [[concept-aggregate-login|aggregate login feature]] does not work for third-party IAM providers such as Firebase.
 

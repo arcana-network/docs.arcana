@@ -24,6 +24,6 @@ When using the built-in plug-and-play login UI, developers can choose to use the
 
 <img src="/img/relnote_1.0.8_compact_login.png" alt="Compact UI login mode" class="an-screenshots-noeffects" width="85%"/>
 
-!!! tip "Arcana JWT Token"
+!!! an-tip "Arcana JWT Token"
 
      {% include "./text-snippets/jwt_token.md" %}

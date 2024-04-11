@@ -34,7 +34,7 @@ The latest release of the {{config.extra.arcana.product_name}} product consists 
 
 Previously, the {{config.extra.arcana.wallet_name}} did not automatically display the NFTs owned by the wallet address. The user was required to manually add the NFT information (the contract address, token ID) to display the NFT assets in the Arcana wallet.  In this release, the {{config.extra.arcana.wallet_name}} automatically fetches the NFTs belonging to the wallet address for the selected blockchain network.
 
-!!! note "Auto-fetching NFTs"
+!!! an-note "Auto-fetching NFTs"
 
       This feature works only for the NFTs that are minted using the supported blockchains. {% include "./text-snippets/supported_nft_autofetch_chains.md" %}
       

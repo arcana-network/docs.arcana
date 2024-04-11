@@ -11,7 +11,7 @@ arcana:
 
 In this tutorial, you will learn how to register and configure a Web3 app before integrating it with the {{config.extra.arcana.sdk_name}}.
 
-!!! info "{{config.extra.arcana.app_address}}"
+!!! an-info "{{config.extra.arcana.app_address}}"
     
     Each registered app is assigned a unique identifier, **{{config.extra.arcana.app_address}}**, required to [[index-integrate|integrate an app]] with the {{config.extra.arcana.sdk_name}}.
 
@@ -37,7 +37,7 @@ You can reconfigure Web3 app settings for {{config.extra.arcana.sdk_name}} usage
 
 ### 4. Configure Gasless (Optional)
 
-!!! tip "Gasless Disabled (default)"
+!!! an-tip "Gasless Disabled (default)"
 
       By default, [[concept-gasless-transactions|gasless transactions]] are **not enabled** for any supported blockchain networks. Developers must explicitly set up gas tanks and fund them to enable this feature in apps integrated with the SDK. [[configure-gasless|Learn more...]]
 
@@ -47,7 +47,7 @@ That is all! 🎉
 
 Once you set up the app, [[sdk-installation|install appropriate {{config.extra.arcana.sdk_name}} package]] as per the app type, and [[index-integrate|integrate the app]]. The integration method varies with the app type. As part of the integration, initialize the SDK and call appropriate functions for onboarding and allowing authenticated users to sign blockchain transactions.
 
-!!! info "Save {{config.extra.arcana.app_address}}"
+!!! an-info "Save {{config.extra.arcana.app_address}}"
 
     A unique **{{config.extra.arcana.app_address}}** is assigned to every registered app. It is displayed on the top right of the dashboard screen. Copy and use it to integrate the app with the {{config.extra.arcana.sdk_name}}.
 

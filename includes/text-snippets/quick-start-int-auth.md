@@ -10,7 +10,7 @@ After creating, make sure you initialize the newly instantiated `AuthProvider`.
 
 {% include "./code-snippets/init_auth.md" %}
 
-!!! caution "Initialize First!"
+!!! an-caution "Initialize First!"
 
     The app must use `await` until the `init()` call is complete, before invoking any of the other {{config.extra.arcana.sdk_name}} functions.
 

@@ -40,7 +40,7 @@ For {{page.meta.arcana.app_type}} app, install the following packages:
 
 {% include "./code-snippets/auth_wagmi_install.md" %}
 
-!!! note "Use latest SDKs"
+!!! an-note "Use latest SDKs"
   
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
@@ -64,7 +64,7 @@ Next, import the `ArcanaConnector` from the `{{config.extra.arcana.wagmi_sdk_pkg
 
 {% include "./code-snippets/auth_wagmi_create_client_pnp.md" %}
 
-!!! tip "`createClient` vs. `creatConfig` usage"
+!!! an-tip "`createClient` vs. `creatConfig` usage"
 
       See [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
 
@@ -86,7 +86,7 @@ Use `WagmiConfig` and `RainbowKitProvider` components to bring up the built-in l
 
 {% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
 
-!!! tip "Arcana JWT Token"
+!!! an-tip "Arcana JWT Token"
 
       {% include "./text-snippets/jwt_token.md" %}
 
@@ -104,7 +104,7 @@ Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.s
 
 ==}
 
-!!! tip "Wagmi `createClient` and `configClient`"
+!!! an-tip "Wagmi `createClient` and `configClient`"
 
       For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
 

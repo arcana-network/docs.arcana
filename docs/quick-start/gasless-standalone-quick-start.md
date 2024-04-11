@@ -12,7 +12,7 @@ arcana:
 
 Web3 apps can easily enable gasless transactions through third-party wallets by integrating with the {{config.extra.arcana.gasless_sdk_name}}! 
 
-!!! tip "{{config.extra.arcana.wallet_name}}"
+!!! an-tip "{{config.extra.arcana.wallet_name}}"
 
       Developers can enable gasless transactions in {{config.extra.arcana.wallet_name}} by integrating the app with the {{config.extra.arcana.sdk_name}} and using the built-in gasless feature. See [[gasless-quick-start|Gasless Quick Start Guide]] for details.
   
@@ -50,7 +50,7 @@ In this guide, we will cover only the **last use case**. For details on the firs
 
 {% include "./code-snippets/gasless_integrate_use.md" %}
 
-!!! note "Use latest SDKs"
+!!! an-note "Use latest SDKs"
   
       {% include "./text-snippets/warn_latest_gasless_sdk_version.md" %}
 

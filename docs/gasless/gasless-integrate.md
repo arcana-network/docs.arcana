@@ -10,7 +10,7 @@ arcana:
 
 # Integrate Gasless SDK
 
-!!! caution "Only for Third-party wallets"
+!!! an-caution "Only for Third-party wallets"
 
       The {{config.extra.arcana.gasless_sdk_name}} is meant for use only in case where an app requires to enable gasless transactions in third-party browser based wallets. To enable gasless transactions in the {{config.extra.arcana.wallet_name}}, you must [[gasless-quick-start|install and integrate with the {{config.extra.arcana.sdk_name}}]] and use its built-in gasless feature.
 

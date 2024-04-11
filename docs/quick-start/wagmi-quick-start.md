@@ -29,7 +29,7 @@ To implement {{config.extra.arcana.product_name}} in a {{page.meta.arcana.app_ty
 * Wagmi [v1.4.5](https://www.npmjs.com/package/wagmi/v/1.4.5) or higher
 * Wagmi [v2.5.0](https://www.npmjs.com/package/wagmi/v/2.5.0) or higher
 
-!!! note "Use latest SDKs"
+!!! an-note "Use latest SDKs"
   
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
@@ -56,7 +56,7 @@ Install the following SDKs:
 
 {% include "./code-snippets/auth_wagmi_install.md" %}
 
-!!! note "Viem, Wagmi v2.0 or above"
+!!! an-note "Viem, Wagmi v2.0 or above"
 
       Apps using Viem, Wagmi v2.0 or higher must use the latest {{config.extra.arcana.wagmi_sdk_name}} v2.x.
 
@@ -86,7 +86,7 @@ Use `WagmiConfig` component to bring up the built-in login UI with configured pr
 
 {% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
 
-!!! tip "Arcana JWT Token"
+!!! an-tip "Arcana JWT Token"
 
       {% include "./text-snippets/jwt_token.md" %}
 
@@ -104,7 +104,7 @@ Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.s
 
 ==}
 
-!!! tip "`createClient` vs. `creatConfig` usage"
+!!! an-tip "`createClient` vs. `creatConfig` usage"
 
       See [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
 

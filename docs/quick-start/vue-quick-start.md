@@ -33,7 +33,7 @@ Install the [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/
 
 {% include "./code-snippets/auth_install.md" %}
 
-!!! note "Use latest SDKs"
+!!! an-note "Use latest SDKs"
   
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
@@ -45,7 +45,7 @@ Install the [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/
 
 {% include "./text-snippets/quick-start-auth-onboard.md" %}
 
-!!! tip "Arcana JWT Token"
+!!! an-tip "Arcana JWT Token"
 
       {% include "./text-snippets/jwt_token.md" %}
 

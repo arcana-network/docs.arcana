@@ -90,7 +90,7 @@ await auth.init()
 auth.provider.on('accountsChanged', handler: (accounts: Array<string>) => void);
 ```
 
-!!! note "Remove Listener"
+!!! an-note "Remove Listener"
 
       Make sure that you remove event listeners once you're done listening to an event in the app.  For example:
 

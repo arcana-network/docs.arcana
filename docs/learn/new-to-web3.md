@@ -22,7 +22,7 @@ arcana:
 
 {{config.extra.arcana.sdk_name}} allows Web3 apps to onboard users seamlessly through supported authentication providers. Authenticated users instantly access the embedded Arcana wallet, enabling them to sign blockchain transactions. Developers can programmatically perform Web3 wallet operations, such as token transfers and checking balances, and standard Ethereum JSON-RPC calls for blockchain transactions, in the user's context.
 
-!!! tip
+!!! an-tip
 
       If you're experienced with Web3, including user onboarding, passwordless login, and Web3 wallet operations, feel free to skip the beginner's section and dive into the [[new-to-web3#step-1-understanding-arcana-auth|'Understanding {{config.extra.arcana.product_name}}']] section below.
 
@@ -103,9 +103,9 @@ Now that you are familiar with the basics, let us take a look at what {{config.e
 
     [[react-code-sample|React Example :material-react:]]{ .md-button }
 
-!!! note "Milestone Achieved!"
+!!! an-note "Milestone Achieved!"
 
-      Congratulations!!! :material-party-popper:
+      Congratulations! :material-party-popper:
 
       **You have now graduated to the next level - Web3 developer.**
 

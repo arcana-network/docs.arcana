@@ -1,4 +1,4 @@
-!!! tip "Arcana Auth SDK Flavors"
+!!! an-tip "Arcana Auth SDK Flavors"
 
       The Arcana Auth SDK comes in multiple flavors to support different Web3 app types. For some app types, developers may need to install and integrate the app with the `{{config.extra.arcana.auth_sdk_pkg_name}}` package in addition to the app-specific package listed below. 
 

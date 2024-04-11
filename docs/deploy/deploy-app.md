@@ -10,7 +10,7 @@ arcana:
 
 In this guide, you will learn how developers can deploy apps integrated with the {{config.extra.arcana.sdk_name}} and deploy it on the Arcana Testnet/Mainnet. 
 
-!!! caution "Already using {{config.extra.arcana.sdk_name}}?"
+!!! an-caution "Already using {{config.extra.arcana.sdk_name}}?"
 
       Before deploying on the Mainnet, make sure that the app is integrated with the latest version of the SDK, v{{config.extra.arcana.latest_version}}, and tested on Arcana Testnet. If not,  use the appropriate [[index-migration-guides|Migration Guide]] to upgrade. 
 
@@ -24,7 +24,7 @@ Developers can choose to configure and deploy one instance of the app under acti
 
 * Integrating an app with the {{config.extra.arcana.sdk_name}} may vary slightly depending on the app type, whether it is a vanilla HTML/CSS/JS app, a React app, or a React app using wallet connectors such as Wagmi, RainbowKit or Web3-React wallet connector frameworks. Follow the instructions in the respective [[index-integrate|integration guides]] and choose carefully depending on the app type. 
 
-    !!! caution "Before Installing the SDK"
+    !!! an-caution "Before Installing the SDK"
 
           Integrating an app may require installing the {{config.extra.arcana.sdk_name}} via say only the Arcana `{{config.extra.arcana.auth_sdk_pkg_name}}` package, both `{{config.extra.arcana.auth_sdk_pkg_name}}` and app type package such as `{{config.extra.arcana.react_sdk_pkg_name}}`, `{{config.extra.arcana.wagmi_sdk_pkg_name}}` or `{{config.extra.arcana.web3_react_sdk_pkg_name}}`. After installing, the developer must instantiate the appropriate `AuthProvider`, the React component `ProvideAuth`, or the Wagmi/Web3-React `ArcanaConnector`, as the case may be.
 
@@ -62,7 +62,7 @@ Visit the app dashboard screen in the {{config.extra.arcana.dashboard_name}} to 
 
 Before deploying the app on the Arcana Mainnet, make sure that there exists a 'Mainnet' configuration profile for the app. By default, when you register an app, only the 'Testnet' configuration profile is created. See [[dashboard-user-guide#manage-configurations|how to create the 'Mainnet' configuration profile]] section in the {{config.extra.arcana.dashboard_name}} User Guide.
 
-!!! tip "Check Mainnet Configuration Profile"
+!!! an-tip "Check Mainnet Configuration Profile"
 
       You can check if a 'Mainnet' configuration profile is already created for your app by visiting the **Manage Apps** screen on the {{config.extra.arcana.dashboard_name}}. Refer to the app card. Each card displays Testnet and Mainnet buttons. If the Mainnet button is disabled it means you have not created a 'Mainnet' profile for your app yet.
 
@@ -92,7 +92,7 @@ Visit the app dashboard screen to view the 'Mainnet' configuration profile and m
 
 <img alt="Mainnet App Usage" src="/img/an_deploy_mainnet_usage.png" width="70%"/>
 
-!!! caution "Different Wallet Address"
+!!! an-caution "Different Wallet Address"
 
       Note that the assigned keys/wallet addresses change across Testnet/Mainnet deployments. 
       

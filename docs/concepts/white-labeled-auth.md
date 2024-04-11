@@ -14,6 +14,6 @@ To use a custom wallet UI, the developers must enable the white-labeled auth fea
 
 Developers using the custom wallet UI have the onus to create wallet UI and also build the logic for displaying the notification screens to seek the user's approval before issuing a blockchain transaction via the custom wallet UI. In this configuration, no built-in {{config.extra.arcana.wallet_name}} UI or transaction notification screen is displayed via the {{config.extra.arcana.sdk_name}}.
 
-!!! warning "Global Keys Not supported"
+!!! an-warning "Global Keys Not supported"
 
       For security, apps that select custom wallet UI option must stick to app-specific keys only. Global Keys option is **not** allowed. See [[faq-auth| Auth FAQ]] for details.
