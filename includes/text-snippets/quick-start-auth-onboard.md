@@ -6,13 +6,13 @@ This will bring up the login modal displaying the onboarding options configured 
 
 ![Plug-and-Play Login UI](/img/an_plug_n_play_auth.png){.an-screenshots .width_35pc}
 
-!!! tip "Compact Login UI"
+!!! an-tip "Compact Login UI"
 
       You can choose to [[concept-plug-and-play-auth#compact-plug-play-ui|use a **compact** form of the built-in login UI modal]] instead of the regular one.
 
       <img src="/img/relnote_1.0.8_compact_login.png" alt="Standard vs. Compact UI login modal" class="an-screenshots"/>
 
-!!! warning "No plug-and-play support for Firebase authentication."
+!!! an-warning "No plug-and-play support for Firebase authentication."
 
       {% include "./text-snippets/warn_firebase_no_pnp.md" %}
 
