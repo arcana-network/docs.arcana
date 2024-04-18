@@ -1,10 +1,8 @@
 {% extends "base.html" %}
 
 {% block announce %}
-<p> 🎉🎉🎉 <span class="blink_me">Live on Mainnet! </span><a style="color: var(--md-primary-bg-color); font-size: 0.50rem;" href="{{ config.site_url }}/relnotes/latest-auth-release-note/">{{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }},</a><a style="color: var(--md-primary-bg-color);font-size: 0.50rem;" href="{{ config.site_url }}/relnotes/latest-gasless-release-note/">{{ config.extra.arcana.gasless_sdk_name }} v{{ config.extra.arcana.latest_gasless_sdk_version }}</a> ⚡⚡⚡</p>
-<!---
-<i><a style="color: rgb(46, 45, 45);" href="https://docs.dev.arcana.network/">Try beta SDKs on Testnet.</a></i>
--->
+<p><span class="blink_me">Live on Mainnet! </span><a style="color: var(--md-primary-bg-color); font-size: 0.6rem;" href="/relnotes/latest-auth-release-note/">{{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }},</a><a style="color: var(--md-primary-bg-color);font-size: 0.6rem;" href="/relnotes/latest-gasless-release-note/">{{ config.extra.arcana.gasless_sdk_name }} v{{ config.extra.arcana.latest_gasless_sdk_version }}</a></p>
+
   <!---
   <div class="watermark">{{config.extra.arcana.site_status}}</div>
   -->
@@ -12,8 +10,9 @@
 
 {% block extrahead %}
   {{ super() }}
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 {% endblock %}
 
 {% block scripts %}

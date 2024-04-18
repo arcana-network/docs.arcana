@@ -26,8 +26,8 @@ In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{confi
 
 ==}
 
+
 ## What is New?
-<img src="/img/icon_new_light.png#only-light" alt="New icon" width="3%" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="3%" />
 
 ---
 
@@ -56,7 +56,7 @@ There are **no usage changes** in this release. To migrate to the latest release
 Check out:
 
 * [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guides]]
-* {% include "./text-snippets/unity_sample_url.md" %}. 
+* {% include "./text-snippets/unity_sample_url.md" %} 
 * [Integration examples](https://github.com/arcana-network/auth-examples)
 
 ## Previous Releases

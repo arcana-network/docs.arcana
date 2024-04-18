@@ -22,7 +22,10 @@ toc_depth: 2
       * Click the trash icon on the top right and delete the app entry.
       * The application registration will be canceled and the **{{config.extra.arcana.app_address}}** assigned to your application will no longer work.
 
-      ![Delete App Entry](/img/an_db_delete_app_anim.gif){.an-screenshots}
+      <figure markdown="span">
+        ![Delete App Entry]({{config.extra.arcana.img_dir}}/an_db_delete_app_anim.gif){ .an-screenshots .width_85pc }
+        <figcaption>De-register & Delete App</figcaption>
+      </figure>
 
 ??? an-faq "How do I migrate an application from using {{config.extra.arcana.company_name}} Testnet to Mainnet?"
 
@@ -34,7 +37,7 @@ toc_depth: 2
 
       3. Use the 'Mainnet' profile **{{config.extra.arcana.app_address}}** and update it in the app integration code instead of the earlier value which corresponds to 'Testnet'. You will need to restart your application after this change. This is important to ensure that the app uses the 'Mainnet' configuration settings.
 
-    !!! caution
+    !!! an-caution
 
           To migrate an app from using Testnet to Mainnet, the developers must ensure that the new **{{config.extra.arcana.app_address}}** corresponding to the application's 'Mainnet' profile is used to initialize the `AuthProvider` while integrating the app with the {{config.extra.arcana.sdk_name}}. After that, the app must be restarted to switch over from using {{config.extra.arcana.company_name}} Testnet to the Mainnet. 
 

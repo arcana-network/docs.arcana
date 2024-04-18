@@ -4,7 +4,7 @@ site_name: '📖 Documentation'
 #site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
 
 # For main
-site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
+site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
 
 # Check for broken links, etc.
 strict: true 
@@ -23,19 +23,19 @@ theme:
   name: material
   language: en
   #logo: img/arcana-logo-white.svg
-  logo: /img/arcana-logo-pink.png
+  logo: imgnew/arcana-logo-pink.png
   icon:
     repo: fontawesome/brands/git-alt
     edit: material/pencil
     view: material/eye
     admonition:
       note: fontawesome/solid/note-sticky
-  favicon: /img/favicon-pink.png
+  favicon: /imgnew/favicon-pink.webp
   custom_dir: docs/overrides
   features:
     - navigation.instant
     - navigation.tracking
-    #- navigation.tabs
+    - navigation.tabs
     - navigation.tabs.sticky
     - navigation.prune
     - navigation.sections
@@ -126,6 +126,10 @@ extra:
     mobile_react_native_sdk_pkg_name: auth-react-native
     gaming_sdk_pkg_name: arcana-auth-sdk
     exclude_content_tag: exclude
+    img_dir: /imgnew
+    img_png: webp
+    img_svg: webp
+    img_gif: gif
     dashboard_sections:
       social_auth: Social Auth
       iam_providers: Identity Access Managers
@@ -420,6 +424,7 @@ nav:
       - Manage Gasless: setup/configure-gasless.md
       - Solana Setup: setup/config-dApp-with-db-for-Solana.md
       - MultiversX Setup: setup/config-dApp-with-db-for-mvx.md
+      - Unity Setup: setup/config-dApp-with-db-for-Unity.md
     - Install: auth/sdk-installation.md
     - Integrate App:
       - auth/integrate/index.md

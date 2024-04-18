@@ -22,7 +22,10 @@ When using the built-in plug-and-play login UI, developers can choose to use the
 
 {% include "./code-snippets/auth_plugnplay_compact.md" %}
 
-<img src="/img/relnote_1.0.8_compact_login.png" alt="Compact UI login mode" class="an-screenshots-noeffects" width="85%"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/relnote_1.0.8_compact_login.{{config.extra.arcana.img_png}}" alt="Login UI Types" class="an-screenshots-noeffects width_85pc"/>
+  <figcaption>Login UI Types</figcaption>
+</figure>
 
 !!! an-tip "Arcana JWT Token"
 

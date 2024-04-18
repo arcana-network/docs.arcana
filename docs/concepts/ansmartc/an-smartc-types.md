@@ -19,19 +19,25 @@ There are multiple [upgradable proxy contract](https://docs.openzeppelin.com/con
 - UUPS proxy
 - Beacon proxy
 
-![Proxy Contract Patterns](/img/diagrams/d_an_proxy_pattern_light.png#only-light)
-![Proxy Contract Patterns](/img/diagrams/d_an_proxy_pattern_dark.png#only-dark)
+<figure markdown="span">
+  ![Proxy Contract Patterns]({{config.extra.arcana.img_dir}}/diagrams/d_an_proxy_pattern_light.{{config.extra.arcana.img_png}}#only-light){ .an-screenshots .width_50pc }
+  ![Proxy Contract Patterns]({{config.extra.arcana.img_dir}}/diagrams/d_an_proxy_pattern_dark.{{config.extra.arcana.img_png}}#only-dark){ .an-screenshots .width_50pc }
+  <figcaption>Proxy Contract Patterns</figcaption>
+</figure>
 
 ## {{config.extra.arcana.company_name}} Contract Types
 
-The smart contracts deployed as part of the {{config.extra.arcana.product_name}} product implementation belong to two categories based on whether their primary function context is an app or the {{config.extra.arcana.product_name}} protocol in general:
+The smart contracts deployed as part of the {{config.extra.arcana.product_name}} product implementation belongs to two categories based on whether their primary function context is an app or the {{config.extra.arcana.product_name}} protocol in general:
 
 1. **Core System Contracts:** These contracts are used to implement the core {{config.extra.arcana.product_name}}  protocol, and are singleton in nature. All of the system contracts implement the protocol logic but not all of them store data (program state).
 
 2. **dApp Contracts:** These contracts are deployed per app. The deployment happens after an app is registered with the {{config.extra.arcana.dashboard_name}}. Only registered apps can integrate with the {{config.extra.arcana.sdk_name}}. 
 
-![Proxy Contract Patterns](/img/diagrams/d_an_contract_types_light.png#only-light)
-![Proxy Contract Patterns](/img/diagrams/d_an_contract_types_dark.png#only-dark)
+<figure markdown="span">
+  ![Arcana Contract Types]({{config.extra.arcana.img_dir}}/diagrams/d_an_contract_types_light.{{config.extra.arcana.img_png}}#only-light){ .an-screenshots .width_50pc }
+  ![Arcana Contract Types]({{config.extra.arcana.img_dir}}/diagrams/d_an_contract_types_dark.{{config.extra.arcana.img_png}}#only-dark){ .an-screenshots .width_50pc }
+  <figcaption>Arcana Contract Types</figcaption>
+</figure>
 
 <!---
 

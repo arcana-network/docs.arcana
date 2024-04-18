@@ -1,4 +1,4 @@
-* **Domain URL:** Set the website domain used by the server, to secure and restrict {{config.extra.arcana.wallet_name}} from loading anywhere else other than the specified domain. {{config.extra.arcana.company_name}} uses the frame-ancestor CSP for restricted domains.<br></br><img class="an-screenshots" alt="Social Login" src="/img/an_db_configure_wallet.png"></img>
+* **Domain URL:** Set the website domain used by the server, to secure and restrict {{config.extra.arcana.wallet_name}} from loading anywhere else other than the specified domain. {{config.extra.arcana.company_name}} uses the frame-ancestor CSP for restricted domains.<br><figure markdown="span"></br><img class="an-screenshots width_85pc" alt="Wallet Security" src="{{config.extra.arcana.img_dir}}/an_db_configure_wallet.{{config.extra.arcana.img_png}}"/><figcaption>Wallet Security</figcaption></figure>
 
 !!! an-note  "Wallet UI Mode"
 

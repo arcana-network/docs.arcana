@@ -8,8 +8,8 @@ arcana:
 
 # How does DKG work?
 
-<img src="/img/icons/i_dkg_light.png#only-light" width="50"/>
-<img src="/img/icons/i_dkg_dark.png#only-dark" width="50"/>
+<img src="{{config.extra.arcana.img_dir}}/icons/i_dkg_light.{{config.extra.arcana.img_png}}#only-light" width="50"/>
+<img src="{{config.extra.arcana.img_dir}}/icons/i_dkg_dark.{{config.extra.arcana.img_png}}#only-dark" width="50"/>
 
 Web3 blockchain transactions need user signing or approval before they can be processed. To sign transactions, users need secrets or keys. Arcana's DKG uses Shamir's secret sharing scheme[^1] to create and manage a distributed, secure key infrastructure for users.
 

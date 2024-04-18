@@ -21,7 +21,10 @@ By default, `alwaysVisible` is set to `true` and the wallet is displayed immedia
 
 As the wallet is always visible in the context of the app, an authenticated user has full access to all the Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}}. For example, checking the wallet account balance, adding or switching blockchain networks, and sending/receiving native/custom tokens. Users can choose to minimize/maximize the {{config.extra.arcana.wallet_name}} UI displayed on the application screen.
 
-<img alt="wallet alwaysVisible true mode" src="/img/an_wallet_full_ui_mode.png" width="85%"></img>
+<figure markdown="span">
+  <img alt="Wallet In-app Visibility: Enabled" src="{{config.extra.arcana.img_dir}}/an_wallet_full_ui_mode.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
+  <figcaption>Wallet In-app Visibility: Enabled</figcaption>
+</figure>
 
 ## `alwaysVisible=false`
 
@@ -29,7 +32,10 @@ If `alwaysVisible` is set to `false`, then the {{config.extra.arcana.wallet_name
 
 Once the user takes action, the request disappears and the user cannot access the {{config.extra.arcana.wallet_name}} UI until another blockchain transaction is triggered.  Unlike the always visible mode, authenticated app users **cannot** access the {{config.extra.arcana.wallet_name}} UI on demand and add or switch networks, view the account balance or initiate send/receive of native/custom tokens, or maximize/minimize the {{config.extra.arcana.wallet_name}}.
 
-<img alt="wallet widget mode" src="/img/an_wallet_widget_mode.png" width="85%"></img>
+<figure markdown="span">
+  <img alt="Wallet In-app Visibility: Disabled" src="{{config.extra.arcana.img_dir}}/an_wallet_widget_mode.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
+  <figcaption>Wallet In-app Visibility: Disabled</figcaption>
+</figure>
 
 ## Summary
 

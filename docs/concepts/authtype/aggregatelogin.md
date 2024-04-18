@@ -8,8 +8,8 @@ arcana:
 
 # Aggregate login
 
-<img src="/img/icons/i_data_xfer_owner_light.png#only-light" width="50"/>
-<img src="/img/icons/i_data_xfer_owner_dark.png#only-dark" width="50"/>
+<img src="{{config.extra.arcana.img_dir}}/icons/i_data_xfer_owner_light.{{config.extra.arcana.img_png}}#only-light" width="50"/>
+<img src="{{config.extra.arcana.img_dir}}/icons/i_data_xfer_owner_dark.{{config.extra.arcana.img_png}}#only-dark" width="50"/>
 
 Aggregate Login in [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] identifies app users with the same email across social logins. If multiple logins share an email, they're seen as one user. Different emails mean different developer accounts.
 

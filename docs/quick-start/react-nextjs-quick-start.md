@@ -15,16 +15,6 @@ arcana:
 
 {{config.extra.arcana.sdk_name}} lets you onboard users to {{page.meta.arcana.app_type}} Web3 App quickly!
 
-<!---
-## Overview
-
-To implement {{config.extra.arcana.product_name}} in a {{page.meta.arcana.app_type}} app, start by registering your app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.react_sdk_name}}, integrate the app, initialize the `AuthProvider`. You'll need to add code to facilitate user onboarding via `ProvideAuth` app wrapper and `useAuth` React hooks. Then call {{config.extra.arcana.sdk_name}} functions and allow users to sign blockchain transactions. Finally, deploy your app on the Testnet or Mainnet.
-
-<img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
-<img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
-
---->
-
 ## Prerequisites
 
 * React Version [18.00](https://github.com/facebook/react/blob/main/CHANGELOG.md#1800-march-29-2022) or higher

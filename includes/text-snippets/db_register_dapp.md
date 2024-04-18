@@ -4,11 +4,19 @@ After logging in, the *Manage Apps* dashboard screen is displayed.
 
 Each app registered for a developer account is represented by a card in the *Manage Apps* screen of the {{config.extra.arcana.dashboard_name}}.
 
-![Manage Apps Screen](/img/an_db_mulitiple_apps.png){.an-screenshots}
+<figure markdown="span">
+  ![Manage Apps]({{config.extra.arcana.img_dir}}/an_db_mulitiple_apps.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc}
+  <figcaption>Manage Apps</figcaption>
+</figure>
 
 **Initiate App Registration**
 
-In the 'Manage Apps' dashboard, click *Create New App* wizard to register a new app. <img class="an-screenshots" src="/img/dashboard_newappwizard.png" alt="Wizard: Register App" width="10%"/> 
+In the 'Manage Apps' dashboard, click *Create New App* wizard to register a new app.
+
+<figure markdown="span">
+  <img class="an-screenshots width_85pc" src="{{config.extra.arcana.img_dir}}/dashboard_newappwizard.{{config.extra.arcana.img_png}}" alt="Register by Creating New App"/> 
+  <figcaption>Register by Creating New App</figcaption>
+</figure>
 
 **Registration Settings**
 
@@ -55,11 +63,17 @@ By default, {{config.extra.arcana.wallet_name}} UI is enabled for all registered
 
 After providing all the required inputs, click **Create** to register the app.
 
-![Register dApp](/img/an_db_create_newapp_anim.gif){.an-screenshots}
+<figure markdown="span">
+  ![Register dApp]({{config.extra.arcana.img_dir}}/an_db_create_newapp_anim.gif){ .an-screenshots .width_85pc }
+  <figcaption>Register dApp</figcaption>
+</figure>
 
-A newly registered app dashboard displays Testnet configuration settings. A unique {{config.extra.arcana.app_address}} is assigned for the Testnet profile. Developer can deploy the app on the {{config.extra.arcana.company_name}} once SDK usage is configured in the dashboard and app is integrated with the SDK.
+A newly registered app dashboard displays Testnet configuration settings. A unique {{config.extra.arcana.app_address}} is assigned for the Testnet profile. Developers can deploy the app on the {{config.extra.arcana.company_name}} once SDK usage is configured in the dashboard and the app is integrated with the SDK.
 
-![New app dashboard](/img/an_db_new_app_screen.png){.an-screenshots}
+<figure markdown="span">
+  ![New app dashboard]({{config.extra.arcana.img_dir}}/an_db_new_app_screen.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  <figcaption>New App Dashboard</figcaption>
+</figure>
 
 !!! an-tip "Mainnet Deployment" 
 

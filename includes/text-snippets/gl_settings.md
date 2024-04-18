@@ -26,13 +26,19 @@ Visit the 'Manage Apps' page of the {{config.extra.arcana.dashboard_name}}. Choo
 
 Click *Configure* dropdown, and choose **Gasless** in the LHS navigation. A registered app has no gas tanks set up by default.  Select **Gas Tanks** to add or edit the gas tanks.
 
-<img src="/img/an_gl_db_new_config.png" alt="Set up Gas Tanks" class="an-screenshots"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_gl_db_new_config.{{config.extra.arcana.img_png}}" alt="Set up Gas Tanks" class="an-screenshots width_85pc"/>
+  <figcaption>Set up Gas Tanks</figcaption>
+</figure>
 
 Choose the **Add Gas Tank** control; provide a name for the gas tank and select a chain that will be serviced by this gas tank. Refer to the list of [[concept-gasless-transactions#supported-chains|supported chains]] that allow setting up the gas tanks.
 
 Note that you can only set up one gas tank per blockchain network. Once configured, the newly added gas tank is displayed the {{config.extra.arcana.dashboard_name}}.
 
-<img src="/img/an_gl_db_add_gas_tank.gif" alt="Add Gas Tank" class="an-screenshots"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_gl_db_add_gas_tank.gif" alt="Add Gas Tank" class="an-screenshots width_85pc"/>
+  <figcaption>Add Gas Tank</figcaption>
+</figure>
 
 
 ### Step 2. Deposit/Withdraw Gas Tank Credits
@@ -49,17 +55,26 @@ Go to the dashboard page listing all the configured gas tanks. Click 'ellipsis' 
 * Withdraw
 * Manage Whitelist
 
-<img src="/img/an_gl_gas_tank_action.png" alt="Gas Tank Actions" class="an-screenshots"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_gl_gas_tank_action.{{config.extra.arcana.img_png}}" alt="Gas Tank Actions" class="an-screenshots width_85pc"/>
+  <figcaption>Deposit Funds</figcaption>
+</figure>
 
 Add the amount you want to deposit, and confirm the transaction. Once it's done, you'll see your **Total Deposit** go up by that amount in the gas tank.
 
-<img src="/img/an_gl_db_deposit.gif" alt="Add Gas Tank" class="an-screenshots"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_gl_db_deposit.gif" alt="Gas Tank deposit update" class="an-screenshots width_85pc"/>
+  <figcaption>View Gas Tank Funds</figcaption>
+</figure>
 
 To withdraw funds, click 'ellipsis' and choose **Withdraw** from the menu list. Enter the amount you wish to withdraw. After successful withdrawal, the **Total Amount** in the gas tank goes down by the withdrawal amount and the owner's wallet address will see the withdrawn amount added.
 
 To take out money, click the 'ellipsis' and pick *Withdraw* from the menu. Enter the amount you want to withdraw. When it's done, the gas tank's Total Amount drops by what you withdrew, and the owner's wallet gets the money.
 
-<img src="/img/an_gl_db_withdraw.gif" alt="withdraw from Gas Tank" class="an-screenshots"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_gl_db_withdraw.gif" alt="withdraw from Gas Tank" class="an-screenshots width_85pc"/>
+  <figcaption>Add Gas Tank</figcaption>
+</figure>
 
 ### Step 3. Whitelist Gasless Operations
 
@@ -70,7 +85,10 @@ To whitelist one or more app functions, choose **Manage Whitelist** and specify 
 
 On the right-hand side, you'll find a list of functions. Use the radio buttons to select the ones that are eligible for gasless transactions. Only these functions will enable gasless operations when users perform blockchain transactions related to them.
 
-<img src="/img/an_gl_db_whitelist.gif" alt="withdraw from Gas Tank" class="an-screenshots"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_gl_db_whitelist.gif" alt="Withdraw from Gas Tank" class="an-screenshots width_85pc"/>
+  <figcaption>Withdraw from Gas Tank</figcaption>
+</figure>
 
 ### Optional: Pause/Resume Gas Tank
 
@@ -78,7 +96,10 @@ Developers can choose to pause and resume gas tank operations in the app config 
 
 Use the **Enable Smart Account** toggle to pause and resume a configured gas tank.
 
-<img src="/img/an_gl_gas_tank_pause.png" alt="Gas Tank Actions" class="an-screenshots"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_gl_gas_tank_pause.{{config.extra.arcana.img_png}}" alt="Pause/Resume Gas Tanks" class="an-screenshots width_85pc"/>
+  <figcaption>Pause/Resume Gas Tanks</figcaption>
+</figure>
 
 That is all! 🎉
 

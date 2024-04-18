@@ -14,4 +14,4 @@ arcana:
 
 ---
 
-![Community](/img/community.png)
+![Community]({{config.extra.arcana.img_dir}}/community.{{config.extra.arcana.img_png}})

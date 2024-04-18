@@ -14,11 +14,17 @@ Before integrating a Flutter Web3 app with the {{config.extra.arcana.sdk_name}},
 
 * Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. Then[[register-app-auth|register and configure the required user onboarding options]]. For details, see [[index-configure-auth|how to configure authentication providers]].
 
-<img class="an-screenshots-noeffects" alt="Dashboard Screenshot App Config Google, Twitch" src="/img/nextjs_app_db_setup_google_twitch.png"/>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_85pc" alt="Configure Social Login(Google, Twitch)" src="{{config.extra.arcana.img_dir}}/nextjs_app_db_setup_google_twitch.{{config.extra.arcana.img_png}}"/>
+  <figcaption>Configure Social Login(Google, Twitch)</figcaption>
+</figure>
 
 * By default, a Testnet configuration profile is created after the app is registered. A unique **{{config.extra.arcana.app_address}}** is assigned to the Flutter app. Note this value, it will be required later during app integration.
 
-<img class="an-screenshots-noeffects"  alt="Client ID for the app" src="/img/an_db_app_address.png"/>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_85pc"  alt="Get Arcana Client ID" src="{{config.extra.arcana.img_dir}}/an_db_app_address.{{config.extra.arcana.img_png}}"/>
+  <figcaption>Get Arcana Client ID</figcaption>
+</figure>
 
 ## Install SDK
 
@@ -107,7 +113,10 @@ Row(
 
 Once a user authenticates, the built-in {{config.extra.arcana.wallet_name}} is displayed in the app's context and can be used for signing blockchain transactions. See [[arcana-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]] for more Web3 wallet operation details.
 
-<img alt="AuthProvider Flutter app Login" src="/img/auth_ex_flutter_ios.gif" width="25%"/>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects" alt="Login and access in-app Arcana Wallet" src="{{config.extra.arcana.img_dir}}/auth_ex_flutter_ios.gif" width="25%"/>
+  <figcaption>Login and access in-app Arcana Wallet</figcaption>
+</figure>
 
 ### Use Web3 Wallet Operations
 
@@ -115,7 +124,7 @@ Developers can add code as required to programmatically call Web3 wallet operati
 
 That's all! :material-party-popper:
 
-The Flutter app is successfully integrated and ready to onboard Web3 users via social login, email using the configured providers. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
+The Flutter app is successfully integrated and ready to onboard Web3 users via social login, or email as configured via the dashboard. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
 
 ## See Also
 

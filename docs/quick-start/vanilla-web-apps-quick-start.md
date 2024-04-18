@@ -14,12 +14,6 @@ arcana:
 
 Web3 apps built using {{page.meta.arcana.app_type}} can easily onboard users via social login by integrating with the {{config.extra.arcana.sdk_name}}!
 
-<!---
-## Overview
-
-{% include "./text-snippets/quick-start-overview.md" %}
--->
-
 ## 1. Register & Configure
 
 {% include "./text-snippets/quick-start-reg-config-auth.md" %}

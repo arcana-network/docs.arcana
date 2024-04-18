@@ -12,8 +12,11 @@ Asynchronous Distributed Key Generation (ADKG) is a cryptographic protocol that 
 
 In ADKG, each party generates a partial private key and broadcasts it to the other parties, who use these partial private keys to collaboratively derive the final private key. The final private key is then used to generate a public key, which can be used for secure communication.
 
-<img alt="ADKG concept" src="/img/diagrams/d_concept_adkg_light.png#only-light" width="65%" class="an-screenshots-noeffects"/>
-<img alt="ADKG concept" src="/img/diagrams/d_concept_adkg_dark.png#only-dark" width="65%" class="an-screenshots-noeffects"/>
+<figure markdown="span">
+  <img alt="ADKG concept" src="{{config.extra.arcana.img_dir}}/diagrams/d_concept_adkg_light.{{config.extra.arcana.img_png}}#only-light" class="an-screenshots-noeffects width_50pc"/>
+  <img alt="ADKG concept" src="{{config.extra.arcana.img_dir}}/diagrams/d_concept_adkg_dark.{{config.extra.arcana.img_png}}#only-dark" class="an-screenshots-noeffects width_50pc"/>
+  <figcaption>Asynchronous Distributed Key Generation (ADKG)</figcaption>
+</figure>
 
 *[Reference: ADKG Paper](https://eprint.iacr.org/2022/1389.pdf)*
 

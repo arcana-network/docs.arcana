@@ -28,8 +28,8 @@ When you migrate from an older version of the {{config.extra.arcana.sdk_name}} t
 
 ### {{config.extra.arcana.sdk_name}} 
 
-<img src="/img/icons/i_an_authsdk_light.png#only-light" alt="Auth SDK icon" width="50" />
-<img src="/img/icons/i_an_authsdk_dark.png#only-dark" alt="Auth SDK icon" width="50" />
+<img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_light.{{config.extra.arcana.img_png}}#only-light" alt="Auth SDK icon" width="50" />
+<img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_dark.{{config.extra.arcana.img_png}}#only-dark" alt="Auth SDK icon" width="50" />
 
 * There is no usage change in the {{config.extra.arcana.sdk_name}} in this release. 
 * After re-registering your app, the dashboard will assign a new **{{config.extra.arcana.app_address}}**. You need to use the new {{config.extra.arcana.app_address}} during integration with the {{config.extra.arcana.sdk_name}}.
@@ -48,6 +48,6 @@ When you migrate from an older version of the {{config.extra.arcana.sdk_name}} t
 
 ## What's New?
 
-<img src="/img/icon_new_light.png#only-light" alt="New icon" width="50" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="50" />
+<img src="{{config.extra.arcana.img_dir}}/icon_new_light.{{config.extra.arcana.img_png}}#only-light" alt="New icon" width="50" /><img src="{{config.extra.arcana.img_dir}}/icon_new_dark.{{config.extra.arcana.img_png}}#only-dark" alt="New icon" width="50" />
 
 The new improved {{config.extra.arcana.product_name}} now supports NFT preview, NFT transactions, and management of NFT collections. A new combined notification screen displays blockchain transactions related to smart contracts, tokens as well as NFTs. For details, see [[rn-beta-auth-v0.3.0|{{config.extra.arcana.product_name}} release notes]].

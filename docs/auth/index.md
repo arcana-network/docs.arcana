@@ -21,14 +21,21 @@ arcana:
     3. Call SDK methods to onboard users via the configured social login providers, call JSON/RPC Web3 wallet operations via the {{config.extra.arcana.wallet_name}}, enable gasless transactions through the {{config.extra.arcana.wallet_name}}.
     4. [[deploy-app|Deploy Apps]] on Testnet/Mainnet.
 
-    ![Dashboard lots of apps](/img/an_db_all_app_card.png){ .width_85pc .an-screenshots}
+    <figure markdown="span">
+      ![Dashboard lots of apps]({{config.extra.arcana.img_dir}}/an_db_all_app_card.{{config.extra.arcana.img_png}}){ .width_85pc .an-screenshots }
+      <figcaption>Developer Dashboard</figcaption>
+    </figure>
+
 
 === ":fontawesome-solid-users:{ .icon-color } **Users**"
 
     1. Log into the app, access in-app {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
     2. Web3 wallet operations: Use wallet UI to check wallet balance, send and receive tokens/NFTs, add/switch blockchain networks, etc.
 
-    ![Arcana wallet Token Tab](/img/an_wallet_home.png){ .width_35pc .an-screenshots}
+    <figure markdown="span">
+      ![Arcana wallet Token Tab]({{config.extra.arcana.img_dir}}/an_wallet_home.{{config.extra.arcana.img_png}}){ .width_35pc .an-screenshots }
+      <figcaption>Arcana Wallet</figcaption>
+    </figure>
 
 ## Key Features
 

@@ -19,8 +19,11 @@ Here is a high-level overview of the technical architecture and components that 
 * [[concept-gasless-transactions|Gasless SDK]]
 * {{config.extra.arcana.company_name}} Gasless protocol
 
-![Component Interactions](/img/an-gasless-components-light.png#only-light)
-![Component Interactions](/img/an-gasless-components-dark.png#only-dark)
+<figure markdown="span">
+  ![Component Interactions]({{config.extra.arcana.img_dir}}/an-gasless-components-light.{{config.extra.arcana.img_png}}#only-light){ .an-screenshots-noeffects .an-img-border-small-75pc  }
+  ![Component Interactions]({{config.extra.arcana.img_dir}}/an-gasless-components-dark.{{config.extra.arcana.img_png}}#only-dark){ .an-screenshots-noeffects .an-img-border-small-75pc  }
+<figcaption>Component Interactions</figcaption>
+</figure>
 
 ### {{config.extra.arcana.dashboard_name}}
 

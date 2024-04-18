@@ -14,13 +14,6 @@ arcana:
 
 Web3 {{page.meta.arcana.app_type}} gaming apps can integrate with the {{config.extra.arcana.gaming_sdk_name}} and onboard users via social login. The authenticated users can access the {{config.extra.arcana.wallet_name}} instantly within the app context and sign blockchain transactions.
 
-<!--
-
-<img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="Auth Usage Overview"/>
-<img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
-
---->
-
 ## 1. Register & Configure
 
 Begin by [[register-app-auth|registering the app]] and [[index-configure-auth|configuring auth settings]] the {{config.extra.arcana.gaming_sdk_name}} usage via the {{config.extra.arcana.dashboard_name}}. Note the unique value, **{{config.extra.arcana.app_address}}**, assigned to the app. It is used later for app integration.

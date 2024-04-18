@@ -1,4 +1,4 @@
-For details on what assets and cryptocurrency, countries these providers support, refer to provider documentation:
+For details on what assets and cryptocurrencies, countries these providers support, refer to provider documentation:
 
 * [Transak coverage](https://docs.transak.com/docs/fiat-currency-country-payment-method-coverage-plus-fees-and-limits)
 <!---

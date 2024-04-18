@@ -4,13 +4,19 @@ The built-in, [[concept-plug-and-play-auth|plug-and-play login UI]] is enabled b
 
 This will bring up the login modal displaying the onboarding options configured for the app in addition to the passwordless option.
 
-![Plug-and-Play Login UI](/img/an_plug_n_play_auth.png){.an-screenshots .width_35pc}
+<figure markdown="span">
+  ![Plug-and-Play Login UI]({{config.extra.arcana.img_dir}}/an_plug_n_play_auth.{{config.extra.arcana.img_png}}){.an-screenshots .width_35pc}
+  <figcaption>Plug-and-Play Login UI</figcaption>
+</figure>
 
 !!! an-tip "Compact Login UI"
 
       You can choose to [[concept-plug-and-play-auth#compact-plug-play-ui|use a **compact** form of the built-in login UI modal]] instead of the regular one.
 
-      <img src="/img/relnote_1.0.8_compact_login.png" alt="Standard vs. Compact UI login modal" class="an-screenshots"/>
+      <figure markdown="span">
+        <img src="{{config.extra.arcana.img_dir}}/relnote_1.0.8_compact_login.{{config.extra.arcana.img_png}}" alt="Login UI Options" class="an-screenshots"/>
+        <figcaption>Login UI Options</figcaption>
+      </figure>
 
 !!! an-warning "No plug-and-play support for Firebase authentication."
 

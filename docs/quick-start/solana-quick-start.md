@@ -14,14 +14,6 @@ arcana:
 
 {{page.meta.arcana.app_type}} Web3 apps can easily onboard users via social login by integrating with the {{config.extra.arcana.sdk_name}}!
 
-<!--
-
-## Overview
-
-{% include "./text-snippets/quick-start-overview.md" %}
-
---->
-
 ## 1. Register & Configure
 
 Register the app as instructed in the [[solana-dashboard-user-guide|Solana Configuration Guide]] and obtain a unique {{config.extra.arcana.app_address}}. Configure social login provider to onboard users and customize the user experience for blockchain signing via the wallet settings. Solana chains are pre-configured and instantly accessible to authenticated users via the {{config.extra.arcana.wallet_name}}.

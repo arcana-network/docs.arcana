@@ -16,6 +16,7 @@
      --md-an-black-color: #1D2A31;
      --md-an-gray-color-light: #ECECEC;
      --md-an-gray-color-lighter: #F7F7F7;
+     --md-an-img-bg: var(--md-an-gray-color-lighter);
      --md-primary-fg-color: #242424;
      --md-primary-fg-color--dark: #9a9a9a;
      --md-primary-fg-color--lighter: #5e5e5e;
@@ -60,6 +61,9 @@
   --md-an-banner-color-purple: rgb(59, 52, 150);
   --md-an-header-color-purple: rgb(16,14,36); 
   --md-an-color-light-purple: rgb(26, 24, 38);
+  --md-accent-bg-color: var(--md-default-bg-color);
+  /*--md-an-img-bg: var(--md-accent-bg-color);*/
+  --md-an-img-bg: rgba(36, 37, 46, 0.85);
 }
 
 button.sp-tab-button {
@@ -105,10 +109,16 @@ button.sp-icon-standalone, button.sp-icon{
   border-radius: 5px 5px 0 0;
 } 
 
-.md-tabs__item:hover{
+.md-tabs__item--active {
   background-color: var(--md-accent-bg-color);
-  /*color: var(--md-accent-fg-color);*/
-  color: var(--md-an-header-color-purple);
+  color: var(--md-accent-fg-color);
+  font-weight: 800;
+  /*color: var(--md-an-header-color-purple);*/
+} 
+
+.md-tabs__item:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--md-accent-fg-color);
 } 
 
 .md-tabs__link--active, .md-tabs__link:focus, .md-tabs__link:hover {
@@ -176,7 +186,7 @@ button.sp-icon-standalone, button.sp-icon{
     color: var(--md-primary-an-banner-text-color);
     overflow: hidden;
     text-align: center;
-    height: 1.7rem;
+    height: 2rem;
     margin-top: -0.75rem;
   }
 
@@ -236,6 +246,12 @@ button.sp-icon-standalone, button.sp-icon{
   --md-admonition-icon--an-abstract: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M364.2 83.8c-24.4-24.4-64-24.4-88.4 0l-184 184c-42.1 42.1-42.1 110.3 0 152.4s110.3 42.1 152.4 0l152-152c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-152 152c-64 64-167.6 64-231.6 0s-64-167.6 0-231.6l184-184c46.3-46.3 121.3-46.3 167.6 0s46.3 121.3 0 167.6l-176 176c-28.6 28.6-75 28.6-103.6 0s-28.6-75 0-103.6l144-144c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-144 144c-6.7 6.7-6.7 17.7 0 24.4s17.7 6.7 24.4 0l176-176c24.4-24.4 24.4-64 0-88.4z"/></svg>');
   --md-admonition-icon--an-caution: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384v38.6C310.1 219.5 256 287.4 256 368c0 59.1 29.1 111.3 73.7 143.3c-3.2 .5-6.4 .7-9.7 .7H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zm48 96a144 144 0 1 1 0 288 144 144 0 1 1 0-288zm0 240a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm0-192c-8.8 0-16 7.2-16 16v80c0 8.8 7.2 16 16 16s16-7.2 16-16V288c0-8.8-7.2-16-16-16z"/></svg>');
   --md-admonition-icon--an-danger: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M368 128c0 44.4-25.4 83.5-64 106.4V256c0 17.7-14.3 32-32 32H176c-17.7 0-32-14.3-32-32V234.4c-38.6-23-64-62.1-64-106.4C80 57.3 144.5 0 224 0s144 57.3 144 128zM168 176a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm144-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM3.4 273.7c7.9-15.8 27.1-22.2 42.9-14.3L224 348.2l177.7-88.8c15.8-7.9 35-1.5 42.9 14.3s1.5 35-14.3 42.9L295.6 384l134.8 67.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3L224 419.8 46.3 508.6c-15.8 7.9-35 1.5-42.9-14.3s-1.5-35 14.3-42.9L152.4 384 17.7 316.6C1.9 308.7-4.5 289.5 3.4 273.7z"/></svg>');
+}
+
+/* Hide site_url display in Sidebar */
+.md-nav__title {
+  border: 2px solid blue;
+  display: none;
 }
 
 /* Admonition: Common styling */
@@ -436,20 +452,46 @@ button.sp-icon-standalone, button.sp-icon{
   border-radius: 0.5rem;
 }
 
+.md-typeset figure  {
+  margin-top: 3rem;
+  margin-bottom: 3fr;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: var(--md-an-img-bg);
+  border-radius: 0.6rem;
+}
+
+.md-typeset figcaption {
+  border-top: 2px solid var(--md-an-pink-color);
+}
+
+.an-img-border-small-75pc {
+  border-radius: 0.6rem; 
+  width: 75%;
+}
+
 .an-screenshots {
-  border-radius: 5px;
+  border-radius: 0.6rem;
   display: block;
-  width: 80%;
-  /* Use these to centre all screenshots (if required )
+  /* Use these to centre all screenshots (if required )*/
+
   margin-left: auto;
   margin-right: auto;
-  */
+
+  /* Use these to left align all screenshots */
+  /*
   margin-top: 3rem;
   margin-bottom: 3rem;
+  */
 }
 
 .an-screenshots-noeffects {
-  border-radius: 5px;
+  border-radius: 0.6rem;
+  /* Use these to centre all screenshots (if required )*/
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .blink_me {
@@ -476,6 +518,7 @@ button.sp-icon-standalone, button.sp-icon{
 
 .width_35pc {
   width: 35%;
+  align-items: center;
 }
 
 .width_50pc {

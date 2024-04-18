@@ -10,14 +10,20 @@ You can also use the `useAuth` hook and refer to the `Auth` component states.
 
 The figure below shows the built-in login UI plug-and-play pop-up authentication screen for a test app.
 
-![Plug-and-Play Login UI](/img/an_plug_n_play_auth.png){.an-screenshots .width_35pc}
+<figure markdown="span">
+  ![Plug-and-Play Login UI]({{config.extra.arcana.img_dir}}/an_plug_n_play_auth.{{config.extra.arcana.img_png}}){.an-screenshots .width_35pc}
+  <figcaption>Plug-and-play Login UI</figcaption>
+</figure>
 
-!!! tip "Compact Login UI"
+!!! an-tip "Compact Login UI"
 
       You can choose to [[concept-plug-and-play-auth#compact-plug-play-ui|use a **compact** form of the built-in login UI modal]] instead of the regular one.
 
-      <img src="/img/relnote_1.0.8_compact_login.png" alt="Compact UI login mode" class="an-screenshots"/>
+      <figure markdown="span">
+        <img src="{{config.extra.arcana.img_dir}}/relnote_1.0.8_compact_login.{{config.extra.arcana.img_png}}" alt="Login UI Options" class="an-screenshots"/>
+        <figcaption>Login UI Options</figcaption>
+      </figure>
 
-!!! warning "No plug-and-play support for Firebase authentication."
+!!! an-warning "No plug-and-play support for Firebase authentication."
 
       {% include "./text-snippets/warn_firebase_no_pnp.md" %}

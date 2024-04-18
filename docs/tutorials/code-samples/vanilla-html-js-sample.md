@@ -18,11 +18,17 @@ Check out the code sandbox for the [sample vanilla HTML/CSS/JS app](https://code
 
 The following {{config.extra.arcana.dashboard_name}} screen shows the app 'Testnet' configuration set up to onboard users via multiple authentication providers: Google, Twitch, and passwordless login. For details, see [[index-configure-auth|how to configure authentication providers]].
 
-<img class="an-screenshots" alt="Dashboard App Config Google Twitch" src="/img/nextjs_app_db_setup_google_twitch.png"/>
+<figure markdown="span">
+  <img class="an-screenshots width_85pc" alt="Configure Social Login" src="{{config.extra.arcana.img_dir}}/nextjs_app_db_setup_google_twitch.{{config.extra.arcana.img_png}}"/>
+  <figcaption>Configure Social Login</figcaption>
+</figure>
 
 After configuring the app, copy the **{{config.extra.arcana.app_address}}** assigned to the app and displayed in the dashboard on the top right of the screen. It will be required during app integration with the {{config.extra.arcana.sdk_name}}.
 
-<img class="an-screenshots-noeffects"  alt="Client ID for the app" src="/img/an_db_app_address.png" width="50%" />
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_85pc"  alt="Get Arcana Client ID" src="{{config.extra.arcana.img_dir}}/an_db_app_address.{{config.extra.arcana.img_png}}" width="50%" />
+  <figcaption>Get Arcana Client ID</figcaption>
+</figure>
 
 ## Integrate App
 
@@ -56,7 +62,10 @@ try {
 }
 ```
 
-<img class="an-screenshots-noeffects"  alt="AuthProvider HTML/CSS/JS app Init" src="/img/auth_ex_html_css_js_app1.png" width="50%"/>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_50pc"  alt="Initialize and use SDK methods" src="{{config.extra.arcana.img_dir}}/auth_ex_html_css_js_app1.{{config.extra.arcana.img_png}}"/>
+  <figcaption>Initialize and use SDK methods</figcaption>
+</figure>
 
 ### Onboard Users
 
@@ -72,7 +81,11 @@ try {
 
 Once a user logs in to the HTML/CSS/JS app and authenticates, the {{config.extra.arcana.wallet_name}} will be accessible and can be used for signing blockchain transactions.
 
-<img class="an-screenshots" alt="AuthProvider HTML/CSS/JS app Connect" src="/img/auth_ex_html_css_js_app2.png" width="50%"/>
+<figure markdown="span">
+  <img class="an-screenshots width_85pc" alt="Login to access Arcana Wallet" src="{{config.extra.arcana.img_dir}}/auth_ex_html_css_js_app2.{{config.extra.arcana.img_png}}"/>
+  <figcaption>Login to access Arcana Wallet</figcaption>
+</figure>
+
 
 An authenticated app user can access the {{config.extra.arcana.wallet_name}} UI to perform various Web3 blockchain operations such as adding tokens, checking the wallet balance, switching networks, etc. See [[arcana-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]] for more details.
 

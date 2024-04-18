@@ -8,8 +8,8 @@ arcana:
 
 # How does ADKG work?
 
-<img src="/img/icons/i_dkg_light.png#only-light" width="50"/>
-<img src="/img/icons/i_dkg_dark.png#only-dark" width="50"/>
+<img src="{{config.extra.arcana.img_dir}}/icons/i_dkg_light.{{config.extra.arcana.img_png}}#only-light" width="50"/>
+<img src="{{config.extra.arcana.img_dir}}/icons/i_dkg_dark.{{config.extra.arcana.img_png}}#only-dark" width="50"/>
 
 {{config.extra.arcana.company_name}} employs ADKG algorithms to securely generate key shares, allowing authenticated users to easily sign Web3 blockchain transactions. Our implementation follows the [Practical Asynchronous Distributed Key Generation](https://eprint.iacr.org/2021/1591.pdf) protocol, providing non-custodial key pairs for SDK users to sign transactions. This approach guarantees security and robustness by preventing any single node from accessing a user's key.
 
@@ -29,8 +29,11 @@ ADKG requires a set of at least 4 connected nodes at a minimum for accommodating
 
 At a very high level, the protocol requires each node to **independently generate secrets** and then share a part of that secret with the other nodes. Each node then **shares a proposed set of key shares** with other nodes. Asynchronous Binary Agreement (ABA) **voting** is done by the nodes for each proposed set. Only the accepted and agreed-upon set is used to derive the key shares and then those key shares are combined to **arrive at the final key pair**. None of the nodes have full access to the secret key.
 
-<img alt="How ADKG works" src="/img/diagrams/d_concept_how_adkg_works_light.png#only-light"/>
-<img alt="How ADKG works" src="/img/diagrams/d_concept_how_adkg_works_dark.png#only-dark"/>
+<figure markdown="span">
+  <img alt="How does ADKG work?" src="{{config.extra.arcana.img_dir}}/diagrams/d_concept_how_adkg_works_light.{{config.extra.arcana.img_png}}#only-light" class="an-screenshots with_50pc"/>
+  <img alt="How does ADKG work?" src="{{config.extra.arcana.img_dir}}/diagrams/d_concept_how_adkg_works_dark.{{config.extra.arcana.img_png}}#only-dark" class="an-screenshots with_50pc"/>
+  <figcaption>How does ADKG work?</figcaption>
+</figure>
 
 There are four key phases in the ADKG protocol:
 

@@ -87,8 +87,10 @@ export const ArcanaRainbowConnector = ({ chains }) => {
 };
 
 ```
-
-![Sample App RainbowKit](/img/rainbow-sample-app-text-logo.gif)
+<figure markdown="span">
+  ![Sample App: RainbowKit]({{config.extra.arcana.img_dir}}/rainbow-sample-app-text-logo.gif){ .an-screenshots .width_85pc}
+  <figcaption>Sample App: RainbowKit</figcaption>
+</figure>
 
 For more details, see [sample RainbowKit app integration with Auth](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration).
 

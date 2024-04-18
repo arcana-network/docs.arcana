@@ -18,7 +18,10 @@ Before installing the `{{config.extra.arcana.gaming_sdk_pkg_name}}` package and 
 
 Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. [[register-app-auth|Register]] and [[index-configure-auth|configure user onboarding options]] for the app. Configure [[configure-gasless|gasless transactions]] if required.
 
-<img class="an-screenshots-noeffects" alt="Dashboard Screenshot App Config Google, Twitch" src="/img/nextjs_app_db_setup_google_twitch.png"/>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_85pc" alt="Use Dashboard to configure Google, Twitch social login" src="{{config.extra.arcana.img_dir}}/nextjs_app_db_setup_google_twitch.{{config.extra.arcana.img_png}}"/>
+  <figcaption>Dashboard: Configure Social Login (Twitch, Google)</figcaption>
+</figure>
 
 By default, a Testnet configuration profile is associated with every registered app. The Testnet profile for the app has a unique **{{config.extra.arcana.app_address}}** that is used later during app integration.
 
@@ -28,8 +31,10 @@ By default, a Testnet configuration profile is associated with every registered 
      
      To deploy on Mainnet, developers must create the Mainnet profile and use the **{{config.extra.arcana.app_address}}** assigned to the Mainnet profile to integrate the app. See [deploy-app| app deployment for details.]
     
-
-<img class="an-screenshots-noeffects"  alt="Client ID for the app" src="/img/an_db_app_address.png"/>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects"  alt="Copy Arcana Client ID" src="{{config.extra.arcana.img_dir}}/an_db_app_address.{{config.extra.arcana.img_png}}"/>
+  <figcaption>Copy Arcana Client ID</figcaption>
+</figure>
 
 ### Step 2: Setup Unity, Install Auth SDK
 
@@ -53,7 +58,10 @@ Next, call `Request` to make Web3 Wallet operation requests from within the app 
 
 The app is ready to be deployed on the Testnet. Once a user authenticates, the built-in {{config.extra.arcana.wallet_name}} is displayed in the app's context. Authenticated users can sign blockchain transactions.
 
-<img class="an-screenshots" alt="AuthProvider Unity app Login" src="/img/auth_ex_html_css_js_app2.png" width="50%"/>
+<figure markdown="span">
+  <img class="an-screenshots width_85pc" alt="Enable Web3 Wallet Operations" src="{{config.extra.arcana.img_dir}}/auth_ex_html_css_js_app2.{{config.extra.arcana.img_png}}"/>
+  <figcaption>Login to access in-app Arcana Wallet</figcaption>
+</figure>
 
 That's all! :material-party-popper:{.icon-color}
 

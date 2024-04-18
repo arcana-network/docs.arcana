@@ -1,19 +1,5 @@
 {{page.meta.arcana.app_type}} Web3 apps can easily onboard users via social login by integrating with the {{config.extra.arcana.react_native_sdk_name}}!
 
-<!---
-## Overview
-
-These are the high-level steps to get started with {{config.extra.arcana.product_name}} product:
-
-1. Register your app using the {{config.extra.arcana.dashboard_name}} and get a unique {{config.extra.arcana.app_address}} assigned to it. This {{config.extra.arcana.app_address}} will be required later during app integration. Configure [authentication providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms) for [[concept-index-auth-type|authenticating users]], select the built-in {{config.extra.arcana.wallet_name}} UI or build a custom wallet UI.
-2. Install and integrate the {{config.extra.arcana.sdk_name}}. Create a new `AuthProvider` using {{config.extra.arcana.app_address}} and choose either the built-in login UI or custom login UI for onboarding users.
-3. Implement programmatic access to [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} operations]] in your app as per the business logic. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} UI or a custom wallet UI as configured by the developer during app registration.
-4. Deploy your app on the Testnet for validation. Next, migrate app deployment from Testnet to the Mainnet by replicating the Testnet configuration profile or choosing a different configuration for the Mainnet deployment.
-
-<img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
-<img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
--->
-
 ## Prerequisites
 
 * React-Native [v0.71.8](https://reactnative.dev/versions) or higher

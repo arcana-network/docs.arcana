@@ -4,6 +4,9 @@
 
       A registered app can be deployed only at the {{config.extra.arcana.company_name}} Testnet. Developers must create a Mainnet profile using the {{config.extra.arcana.dashboard_name}} to deploy a registered app on the Mainnet. Each profile can use identical or different **{{config.extra.arcana.dashboard_sections.social_auth}}** settings.
       
-      ![App Identifier](/img/an_db_app_address.png){.an-screenshots}
+      <figure markdown="span">
+        ![App Identifier]({{config.extra.arcana.img_dir}}/an_db_app_address.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+        <figcaption>Unique App Identifier: ClientID</figcaption>
+      </figure>
       
                   

@@ -1,6 +1,9 @@
- Go to {% include "./text-snippets/db_portal_url.md" %} and login using one of the available options.
+ Go to {% include "./text-snippets/db_portal_url.md" %} and log in using one of the available options.
 
-![Welcome screen](/img/an_db_welcome.png){.an-screenshots}
+<figure markdown="span">
+  ![Welcome screen]({{config.extra.arcana.img_dir}}/an_db_welcome.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  <figcaption>Developer Dashboard Login Page</figcaption>
+</figure>
 
 !!! an-tip "Aggregate Login"
     

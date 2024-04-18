@@ -24,8 +24,8 @@ The following section lists changes between {{config.extra.arcana.sdk_name}} v1.
 
 ### {{config.extra.arcana.sdk_name}} 
 
-<img src="/img/icons/i_an_authsdk_light.png#only-light" alt="Auth SDK icon" width="50" />
-<img src="/img/icons/i_an_authsdk_dark.png#only-dark" alt="Auth SDK icon" width="50" />
+<img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_light.{{config.extra.arcana.img_png}}#only-light" alt="Auth SDK icon" width="50" />
+<img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_dark.{{config.extra.arcana.img_png}}#only-dark" alt="Auth SDK icon" width="50" />
 
 * {{config.extra.arcana.wallet_name}}  now supports fiat/on-ramp feature that allows users to buy cryptocurrency and tokens.
 * The wallet UI has a new minimized widget.
@@ -41,6 +41,6 @@ Simply upgrade the {{config.extra.arcana.sdk_name}} to the latest package v1.0.2
 
 ## What's New?
 
-<img src="/img/icon_new_light.png#only-light" alt="New icon" width="50" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="50" />
+<img src="{{config.extra.arcana.img_dir}}/icon_new_light.{{config.extra.arcana.img_png}}#only-light" alt="New icon" width="50" /><img src="{{config.extra.arcana.img_dir}}/icon_new_dark.{{config.extra.arcana.img_png}}#only-dark" alt="New icon" width="50" />
 
 See [[rn-main-auth-v1.0.2|{{config.extra.arcana.product_name}} v1.0.2 release notes]] for details.

@@ -37,4 +37,7 @@
     * Solana Testnet
     * Solana Dev
 
-<img src="/img/an_wallet_default_chain_list.png" alt="Supported Blockchains Pre-configured list" width="50%" class="an-screenshots"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_wallet_default_chain_list.{{config.extra.arcana.img_png}}" alt="Pre-configured Blockchains" width="50%" class="an-screenshots"/>
+  <figcaption>Pre-configured Blockchains</figcaption>
+</figure>

@@ -31,7 +31,10 @@ Initially, {{config.extra.arcana.company_name}} partners exclusively with truste
    vault secrets enable -path=secret kv
    ```
 
-   ![kvsetup image](/img/validator_kv_engine_setup.png)
+<figure markdown="span">
+  ![HashiCorp KV Setup]({{config.extra.arcana.img_dir}}/validator_kv_engine_setup.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  <figcaption>HashiCorp KV Setup</figcaption>
+</figure>
 
 **HW Configuration**
 

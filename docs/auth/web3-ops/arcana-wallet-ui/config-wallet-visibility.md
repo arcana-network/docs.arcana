@@ -49,7 +49,10 @@ Here is some sample code that shows how an app can integrate with the {{config.e
 
 This is how the wallet shows up when configured with the specified settings above in the context of an app:
 
-![Light Theme left-aligned wallet UI](/img/an_wallet_left_light_theme.png){.an-screenshots}
+<figure markdown="span">
+  ![Light Theme left-aligned Arcana Wallet UI]({{config.extra.arcana.img_dir}}/an_wallet_left_light_theme.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  <figcaption>Light Theme left-aligned Arcana Wallet UI</figcaption>
+</figure>
 
 The Web3 app is successfully integrated with the {{config.extra.arcana.sdk_name}} with the requisite the {{config.extra.arcana.wallet_name}} visibility setting to manage the user blockchain signing experience.
 

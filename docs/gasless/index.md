@@ -53,7 +53,10 @@ Developers must use the {{config.extra.arcana.dashboard_name}} to first configur
 
 Registering the app with {{config.extra.arcana.company_name}} associates a unique {{config.extra.arcana.app_address}} for each app. Developers **must** use this {{config.extra.arcana.app_address}} to integrate the app with the {{config.extra.arcana.gasless_sdk_name}}. 
 
-![Dashboard lots of apps](/img/an_db_all_app_card.png){ .width_85pc .an-screenshots}
+<figure markdown="span">
+  ![Dashboard lots of apps]({{config.extra.arcana.img_dir}}/an_db_all_app_card.{{config.extra.arcana.img_png}}){ .width_85pc .an-screenshots }
+  <figcaption>Developer Dashboard</figcaption>
+</figure>
 
 [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md)
 

@@ -53,12 +53,15 @@ After provisioning gas tanks, developers can use the **Gasless** configuration s
 
 Developers set up gas tanks and deposit crypto assets specific to the blockchain for which the tank is set up. One or more app functions can be marked for gasless transactions by whitelisting. These app functions can be related to one or more smart contracts that are part of the app. When users call app functions that are whitelisted, they do not need to pay any gas fees.
 
-<img src="/img/an_gasless_howitworks_light.png#only-light" alt="Set up Gas Tanks Light Theme" class="an-screenshots"/>
-<img src="/img/an_gasless_howitworks_dark.png#only-dark" alt="Set up Gas Tanks" class="an-screenshots"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_gasless_howitworks_light.{{config.extra.arcana.img_png}}#only-light" alt="Gas Tanks Enabled" class="an-screenshots width_85pc"/>
+  <img src="{{config.extra.arcana.img_dir}}/an_gasless_howitworks_dark.{{config.extra.arcana.img_png}}#only-dark" alt="Gas Tanks Enabled" class="an-screenshots width_85pc"/>
+  <figcaption>Gas Tanks Enabled</figcaption>
+</figure>
 
 ### Gas Not Available
 
-Waiving gas fees for app operations does not happen when:
+Waiving gas fees for app operations does not happen for a transaction in the following cases:
 
 * The app developer does not set up any gas tanks for any blockchain network
 * Gas tanks are set up and funded but disabled by the developer
@@ -68,8 +71,11 @@ Waiving gas fees for app operations does not happen when:
 
 In such situations, even if the app functions are whitelisted, gas tanks are not effective or available, so users have to bear the gas fees.
 
-<img src="/img/an_gasless_howitworks_empty_light.png#only-light" alt="Set up Gas Tanks Light Theme" class="an-screenshots"/>
-<img src="/img/an_gasless_howitworks_empty_dark.png#only-dark" alt="Set up Gas Tanks Light Theme" class="an-screenshots"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_gasless_howitworks_empty_light.{{config.extra.arcana.img_png}}#only-light" alt="Gas Tanks Empty" class="an-screenshots"/>
+  <img src="{{config.extra.arcana.img_dir}}/an_gasless_howitworks_empty_dark.{{config.extra.arcana.img_png}}#only-dark" alt="Gas Tanks Empty" class="an-screenshots"/>
+  <figcaption>Gas Tanks Empty</figcaption>
+</figure>
 
 ## User Experience
 

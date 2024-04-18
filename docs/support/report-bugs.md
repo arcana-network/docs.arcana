@@ -14,4 +14,6 @@ arcana:
 
 ---
 
-![Report Issues](/img/report_issues.png)
+<!--- No caption for the following visual--->
+
+![Report Issues]({{config.extra.arcana.img_dir}}/report_issues.{{config.extra.arcana.img_png}})

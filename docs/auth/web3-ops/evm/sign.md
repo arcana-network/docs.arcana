@@ -32,9 +32,12 @@ Make sure you have addressed the prerequisites before adding code to invoke any 
 
 The following figure shows how the {{config.extra.arcana.wallet_name}} displays the details of a sign message request and asks the user to approve or reject it:
 
-<img src="/img/an_wallet_sign.png" width="300"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_wallet_sign.{{config.extra.arcana.img_png}}" class="an-screenshots-noeffects width_35pc" alt="Sign Message Details"/>
+  <figcaption>Sign Message Details</figcaption>
+</figure>
 
-**That is all!**  :material-party-popper:
+**That is all!**  :material-party-popper:{ .icon-color }
 
 *The Web3 app is all set to programmatically allow the authenticated app users to sign blockchain transactions.*
 

@@ -58,7 +58,10 @@ Now, you are all set to onboard users in the Web3-React app using the plug-and-p
 
 {% include "./code-snippets/auth_web3_react_homepage.md" %}
 
-![Web3-React App integrated with the Arcana Auth](/img/web3_react_example_an_wallet.png){.an-screenshot-noeffects}
+<figure markdown="span">
+  ![Web3-React App integrated with the Arcana Auth]({{config.extra.arcana.img_dir}}/web3_react_example_an_wallet.{{config.extra.arcana.img_png}}){ .an-screenshot-noeffects .width_50pc }
+  <figcaption>Web3-React App integrated with the Arcana Auth</figcaption>
+</figure>
 
 That is all! :material-party-popper:
 

@@ -21,20 +21,6 @@ Developers can use this SDK to assign keys to authenticated users to sign blockc
       * **No** support for [[concept-keyspace-type|Global keys, only app-specific keys]] (default) allowed. 
       * **No** [[concept-mfa|enhanced wallet security via MFA]] or key recovery is supported when the user switches devices.
 
-<!---
-## Overview
-
-The {{config.extra.arcana.auth_core_sdk_name}} is meant for implementing Web3 app solutions where developers need to securely assign blockchain access keys, the **private keys** to every authenticated user, and build a custom wallet UI instead of using the one built-in the {{config.extra.arcana.sdk_name}}.
-
-Start by registering the app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.auth_core_sdk_name}}, integrate it with your app, and initialize the `AuthProvider`. Add code to facilitate user onboarding by handling the redirect flow after user authentication. Also, add custom code for wallet UI to enable Web3 wallet and blockchain operations. Finally, deploy your app on the Testnet or Mainnet.
-
-<img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
-<img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
-
-!!! an-warning "Key security"
- 
-      When using the {{config.extra.arcana.auth_core_sdk_name}} based auth solution developers must secure authenticated user's cryptographic assets including keys.
--->
 ## Prerequisites
 
 !!! an-note "Use latest SDKs"
@@ -51,7 +37,10 @@ Start by registering the app and configuring usage settings through {{config.ext
       
       To use the {{config.extra.arcana.auth_core_sdk_name}}, developers must implement a custom wallet UI.
 
-      <img class="an-screenshots" src="/img/an_wallet_ui_mode_ignored.gif" alt="Wallet UI Mode Ignored"/>
+      <figure markdown="span">
+        <img alt="Wallet UI Mode" class="an-screenshots width_85pc" src="{{config.extra.arcana.img_dir}}/an_wallet_ui_mode_ignored.gif" alt="Wallet UI Mode Ignored"/>
+        <figcaption>Wallet UI Mode</figcaption>
+      </figure>
 
 ## 2. Install SDK
 

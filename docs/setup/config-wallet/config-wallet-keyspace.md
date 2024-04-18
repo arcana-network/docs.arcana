@@ -20,17 +20,23 @@ In this guide you will learn how to specify the keyspace settings in the {{confi
 
 ## Step 1: Dashboard Log-in
 
-Log in to the {{config.extra.arcana.dashboard_name}} and click your registered app entry from the 'Manage Apps' screen. Click **Configure** in the LHS navigation area. Select **Chain Management** to configure the default subset of supported chains.
+Log in to the {{config.extra.arcana.dashboard_name}} and click your registered app entry from the 'Manage Apps' screen. Click **Configure** in the LHS navigation area. Select **Keyspace** to choose the keyspace type.
 
-![Chain Management Nav](/img/an_db_chains_mngt_nav.png){.an-screenshots}
+<figure markdown="span">
+  ![Dashboard: Select Keyspace]({{config.extra.arcana.img_dir}}/an_db_keyspace_nav.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  <figcaption>Dashboard: Select keyspace</figcaption>
+</figure>
 
-The chain configuration UI is displayed:
+The Keyspace Configuration settings are displayed:
 
-![Chain Management Settings](/img/an_db_chain_mngt_options.png){.an-screenshots}
+<figure markdown="span">
+  ![Keyspace Settings]({{config.extra.arcana.img_dir}}/an_db_keyspace_settings.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  <figcaption>Keyspace Settings</figcaption>
+</figure>
 
 ## Step 2: Configure Keyspace
 
-Select the registered app from the *Manage Apps** dashboard screen for which you wish to choose the [[concept-keyspace-type| appropriate keyspace type]]. Double click the app and you will see the app dashboard. Click *Configure* in the LHS navigation menu.
+Select the registered app from the *Manage Apps** dashboard screen for which you wish to choose the [[concept-keyspace-type| appropriate keyspace type]]. Double-click the app and you will see the app dashboard. Click *Configure* in the LHS navigation menu.
 
 Use the **Keyspace** section to select the **App-specific** (default) or **Global Keys** feature. Global keys are less secure (only as compared to app-specific ones) but allow app users to have the same wallet address across different applications in the {{config.extra.arcana.company_name}} ecosystem.
 

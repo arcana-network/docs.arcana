@@ -71,7 +71,10 @@ const auth = new AuthProvider(`${clientId}`, {
 await auth.init()
 ```
 
-<img src="/img/relnote_1.0.8_compact_login.png" alt="Compact UI login mode" class="an-screenshots-noeffects" width="85%"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/relnote_1.0.8_compact_login.{{config.extra.arcana.img_png}}" alt="Compact Login UI" class="an-screenshots-noeffects width_85pc"/>
+  <figcaption>Compact Login UI</figcaption>
+</figure>
 
 For more details, see [`AuthProvider` constructor parameters](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams).
 

@@ -77,6 +77,6 @@ Apps using the `chainConfig` setting to set the default chain in the {{config.ex
 
 ## What's New?
 
-<img src="/img/icon_new_light.png#only-light" alt="New icon" width="3%" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="3%" />
+<img src="{{config.extra.arcana.img_dir}}/icon_new_light.{{config.extra.arcana.img_png}}#only-light" alt="New icon" width="3%" /><img src="{{config.extra.arcana.img_dir}}/icon_new_dark.{{config.extra.arcana.img_png}}#only-dark" alt="New icon" width="3%" />
 
 See [[rn-main-auth-v1.0.4|{{config.extra.arcana.product_name}} v1.0.4 release notes]] for details.

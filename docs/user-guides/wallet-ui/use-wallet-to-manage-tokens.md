@@ -27,82 +27,116 @@ In this guide, Web3 app users can learn how to manage token assets through the {
 
 ## Check Balance
 
-Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> 'Tokens' tab at the bottom left of the {{config.extra.arcana.wallet_name}} UI. The account balance is displayed for the native tokens of the current active blockchain network. It also shows a list of custom token assets associated with the wallet account for the active blockchain network and their amounts.
+Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> 'Tokens' tab at the bottom left of the {{config.extra.arcana.wallet_name}} UI. The account balance is displayed for the native tokens of the current active blockchain network. It also shows a list of custom token assets associated with the wallet account for the active blockchain network and their amounts.
 
 Click **Refresh** to fetch the latest account balance. If you use the {{config.extra.arcana.wallet_name}} UI to send native or custom tokens, the account balance gets automatically updated once the transfer is processed.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_home.png" width="35%"/><br></br><br></br>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_home.{{config.extra.arcana.img_png}}" alt="Account Balance"/>
+  <figcaption>Account Balance</figcaption>
+</figure>
 
 ## Add Custom Tokens
 
-Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> 'Tokens' tab to view the list of tokens associated with the wallet account.  
+Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> 'Tokens' tab to view the list of tokens associated with the wallet account.  
 
-If you do not see your custom token already listed in the token asset list, click the <img src="/img/icons/an_wallet_addtoken_icon.png" width="50"/> icon to add your custom token.
+If you do not see your custom token already listed in the token asset list, click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_addtoken_icon.{{config.extra.arcana.img_png}}" width="50"/> icon to add your custom token.
 
 Add the **Token Contract Address** in the pop-up UI.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_add_custom_token.png" width="35%"/><br></br><br></br>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_add_custom_token.{{config.extra.arcana.img_png}}" alt="Add Token Contract Address"/>
+  <figcaption>Add Token Contract Address</figcaption>
+</figure>
 
 Once you add the address, the {{config.extra.arcana.wallet_name}} validates whether it is an ERC-20 standard custom token. After the contract is verified, the wallet automatically fetches the **Token Symbol** and the **Token Decimal** values as configured in the custom contract.
 
 Click **Save** to add the custom token. The newly added custom token will show up under the account balance section on the wallet.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_custom_tokens.png" width="35%"/><br></br><br></br>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_custom_tokens.{{config.extra.arcana.img_png}}" alt="View Tokens"/>
+  <figcaption>Add Token Contract Address</figcaption>
+</figure>
+  
 
 ## Select Native/Custom Token
 
 Before sending tokens, users can specify whether they intend to transfer native or custom tokens.  To select a custom token, it should already be [added to the {{config.extra.arcana.wallet_name}}](#add-custom-tokens).
 
-Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> 'Tokens' tab to view native and custom tokens screen.
+Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> 'Tokens' tab to view the native and custom tokens screen.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_choose_custom.png" width="35%"/><br></br><br></br>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_choose_custom.{{config.extra.arcana.img_png}}" alt="Add Token Contract Address"/>
+  <figcaption>Add Token Contract Address</figcaption>
+</figure>
 
 Use the drop-down list by clicking on the arrow next to the native token symbol and choose one of the custom tokens that are already added to the {{config.extra.arcana.wallet_name}}. 
  
 ## Send Tokens
 
-Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="35"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> 'Tokens' tab in the wallet to view the tokens associated with the wallet account.
+Click <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_light.{{config.extra.arcana.img_png}}#only-light" width="35"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> the 'Tokens' tab in the wallet to view the tokens associated with the wallet account.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_home.png" width="35%"/><br></br><br></br>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_home.{{config.extra.arcana.img_png}}" alt="Send Tokens"/>
+  <figcaption>Send Tokens</figcaption>
+</figure>
 
 Click **Send** to initiate the send tokens workflow in the {{config.extra.arcana.wallet_name}} by bringing up the following screen:
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_send_inputs.png" width="35%"/><br></br><br></br>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_send_inputs.{{config.extra.arcana.img_png}}" alt="Send Tokens"/>
+  <figcaption>Send Tokens</figcaption>
+</figure>
 
 Choose the appropriate token that you wish to send from the dropdown list, enter the transfer amount, and gas fees, and click **Proceed**. A preview screen shows the details of the send transaction. Click **Send** to confirm or click **Back** if you wish to change any transaction details. 
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_send.png" width="35%"/><br></br><br></br>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_send.{{config.extra.arcana.img_png}}" alt="Confirm Send"/>
+  <figcaption>Confirm Send</figcaption>
+</figure>
 
 ## Receive Tokens
 
-Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> 'Tokens' tab at the bottom left of the wallet to receive tokens from another wallet address. Click the QR icon <img src="/img/icons/an_wallet_qr_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_qr_dark.png#only-dark" width="20"/> on the top right of the wallet and copy the QR code or the wallet address. Share it with the sender for receiving tokens in your account.  
+Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> 'Tokens' tab at the bottom left of the wallet to receive tokens from another wallet address. Click the QR icon <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_qr_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_qr_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> on the top right of the wallet and copy the QR code or the wallet address. Share it with the sender to receive tokens in your account.  
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_receive_qr.png" width="35%"/><br></br><br></br>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_receive_qr.{{config.extra.arcana.img_png}}" alt="Receive Tokens"/><
+  <figcaption>Receive Tokens</figcaption>
+</figure>
 
 Click **Refresh** to see the updated account balance after the sender transaction is complete.
 
-<img src="/img/an_wallet_receive_balance.png" width="35%"/><br></br><br></br>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_receive_balance.{{config.extra.arcana.img_png}}" alt="View Tokens"/>
+  <figcaption>View Tokens</figcaption>
+</figure>
 
 ## Monitor Token Activity
 
-Click the <img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/> 'Activity' tab on the bottom right of the {{config.extra.arcana.wallet_name}} to see wallet transaction activity and pending request notifications.
+Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_notification_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_notification_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> 'Activity' tab on the bottom right of the {{config.extra.arcana.wallet_name}} to see wallet transaction activity and pending request notifications.
 
 The wallet notification screen displays a list of various blockchain transactions initiated by the app or the user for the current user login session.
 
 - Send transactions for native or custom tokens
 - Contract Deployment transactions
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notify.png" width="35%"/><br></br><br></br>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_combined_notify.{{config.extra.arcana.img_png}}" alt="Monitor Token Send Activity"/>
+  <figcaption>Monitor Token Send Activity</figcaption>
+</figure>
 
 To see details of a send transaction, click on the arrow to expand the view.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notification_details_send_token.png" width="35%" /><br></br><br></br>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_combined_notification_details_send_token.{{config.extra.arcana.img_png}}" alt="Send Transaction Details" />
+  <figcaption>Send Transaction Details</figcaption>
+</figure>
 
-!!! an-tip
+!!! an-tip "Custom Tokens"
 
       The app user must [add the custom tokens](#add-custom-tokens) manually to the {{config.extra.arcana.wallet_name}} UI before the activity related to tokens can be viewed in the **Activity** tab.
 
-**That is all!**  :material-party-popper:
+**That is all!**  :material-party-popper:{ .icon-color }
 
 *You are all set to send and receive tokens using the {{config.extra.arcana.wallet_name}}.*
 

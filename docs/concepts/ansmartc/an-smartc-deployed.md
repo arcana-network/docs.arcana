@@ -60,8 +60,8 @@ The interactions between various {{config.extra.arcana.company_name}} smart cont
 
 ### Data Access Flow 
 
-![Arcana Data Access Flow](/img/diagrams/d_an_sc_stg_flow_light.svg#only-light)
-![Arcana Data Access Flow](/img/diagrams/d_an_sc_stg_flow_dark.svg#only-dark)
+![Arcana Data Access Flow]({{config.extra.arcana.img_dir}}/diagrams/d_an_sc_stg_flow_light.{{config.extra.arcana.img_svg}}#only-light)
+![Arcana Data Access Flow]({{config.extra.arcana.img_dir}}/diagrams/d_an_sc_stg_flow_dark.{{config.extra.arcana.img_svg}}#only-dark)
 
 * All app user operation-related calls made via the client-side {{config.extra.arcana.sdk_name}} are intercepted by the {{config.extra.arcana.company_name}} Gateway.
 
@@ -77,8 +77,8 @@ The interactions between various {{config.extra.arcana.company_name}} smart cont
 
 ### New App Registration Flow
 
-![New app Registration Flow](/img/diagrams/d_an_sc_newdapp_flow_light.png#only-light)
-![New app Registration Flow](/img/diagrams/d_an_sc_newdapp_flow_dark.png#only-dark)
+![New app Registration Flow]({{config.extra.arcana.img_dir}}/diagrams/d_an_sc_newdapp_flow_light.{{config.extra.arcana.img_png}}#only-light)
+![New app Registration Flow]({{config.extra.arcana.img_dir}}/diagrams/d_an_sc_newdapp_flow_dark.{{config.extra.arcana.img_png}}#only-dark)
 
 * When a new app is registered at the {{config.extra.arcana.dashboard_name}}, it interacts with the {{config.extra.arcana.company_name}} Gateway to initialize the program state of the app.
 * The `Factory.sol` smart contract is invoked to create a new `BeaconProxy.sol` contract that is solely associated with this newly registered app. Each app has its own BeaconProxy contract deployed.

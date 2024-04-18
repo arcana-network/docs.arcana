@@ -47,8 +47,8 @@ Earlier, by default, each registered application was associated with a 'Testnet'
 
 ### {{config.extra.arcana.sdk_name}} 
 
-<img src="/img/icons/i_an_authsdk_light.png#only-light" alt="Auth SDK icon" width="50" />
-<img src="/img/icons/i_an_authsdk_dark.png#only-dark" alt="Auth SDK icon" width="50" />
+<img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_light.{{config.extra.arcana.img_png}}#only-light" alt="Auth SDK icon" width="50" />
+<img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_dark.{{config.extra.arcana.img_png}}#only-dark" alt="Auth SDK icon" width="50" />
 
 The {{config.extra.arcana.sdk_name}} v1.0.0 supports deploying apps on the {{config.extra.arcana.company_name}}  Mainnet. As there are breaking changes in the App database schema, you need to re-register your apps using the {{config.extra.arcana.dashboard_name}} and obtain a new **{{config.extra.arcana.app_address}}** before you can integrate the app with the {{config.extra.arcana.sdk_name}} .  This is required irrespective of whether you chose to deploy your app on the {{config.extra.arcana.company_name}}  Testnet or the Mainnet.
 
@@ -83,9 +83,12 @@ Register your app using the {{config.extra.arcana.dashboard_name}}. By default, 
    
 {% include "./code-snippets/init_auth_testnet.md" %}
    
-Once a user authenticates, the following wallet UI is displayed when the app is deployed on the {{config.extra.arcana.company_name}}  Testnet.
-      
-<img alt="Testnet Wallet" src="/img/an_migration_testnet_wallet.png" width="40%"/>
+Once a user authenticates, the following wallet UI is displayed when the app is deployed on the {{config.extra.arcana.company_name}} Testnet.
+
+<figure markdown="span">
+  <img alt="Testnet Wallet" src="{{config.extra.arcana.img_dir}}/an_migration_testnet_wallet.{{config.extra.arcana.img_png}}" class="an-screenshots-noeffects width_35pc"/>
+  <figcaption>Testnet Wallet</figcaption>
+</figure>
   
 ### Example: Deploy on Mainnet
 
@@ -97,11 +100,14 @@ To bring up your app on {{config.extra.arcana.company_name}}  Mainnet, in your i
    
 Once a user authenticates, the following wallet UI is displayed when the app is deployed on the Arcana Mainnet.
    
-<img alt="Mainnet Wallet" src="/img/an_migration_mainnet_wallet.png" width="40%"/>
+<figure markdown="span">
+  <img alt="Mainnet Wallet" src="{{config.extra.arcana.img_dir}}/an_migration_mainnet_wallet.{{config.extra.arcana.img_png}}" class="an-screenshots-noeffects width_35pc"/>
+  <figcaption>Mainnet Wallet</figcaption>
+</figure>
 
 ## What's New?
 
-<img src="/img/icon_new_light.png#only-light" alt="New icon" width="50" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="50" />
+<img src="{{config.extra.arcana.img_dir}}/icon_new_light.{{config.extra.arcana.img_png}}#only-light" alt="New icon" width="50" /><img src="{{config.extra.arcana.img_dir}}/icon_new_dark.{{config.extra.arcana.img_png}}#only-dark" alt="New icon" width="50" />
 
 Besides Testnet/Mainnet and Global Keyspace features, the {{config.extra.arcana.sdk_name}} v1.0.0 uses a new, improved asynchronous distributed key generation (ADKG) subsystem. In addition to the DKG nodes operated by Arcana, two nodes are run and managed by Comdex and LugaNodes. 
 

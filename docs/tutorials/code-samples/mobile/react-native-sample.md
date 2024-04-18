@@ -14,11 +14,17 @@ Before integrating a React-Native Web3 app with the {{config.extra.arcana.sdk_na
 
 * Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. Then [[register-app-auth|register and configure the required user onboarding options]]. For details, see [[index-configure-auth|how to configure authentication providers]].
 
-<img class="an-screenshots-noeffects" alt="Dashboard Screenshot App Config Google, Twitch" src="/img/nextjs_app_db_setup_google_twitch.png"/>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_85pc" alt="Configure Social Login" src="{{config.extra.arcana.img_dir}}/nextjs_app_db_setup_google_twitch.{{config.extra.arcana.img_png}}"/>
+  <figcaption>Configure Social Login</figcaption>
+</figure>
 
 * By default, a Testnet configuration profile is created after the app is registered. A unique **{{config.extra.arcana.app_address}}** is assigned to the React-Native app. Note this value, it will be required later during app integration.
 
-<img class="an-screenshots-noeffects"  alt="Client ID for the app" src="/img/an_db_app_address.png"/>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_85pc"  alt="Get ArcanaClient ID" src="{{config.extra.arcana.img_dir}}/an_db_app_address.{{config.extra.arcana.img_png}}"/>
+  <figcaption>Get Arcana Client ID</figcaption>
+</figure>
 
 ## Install SDK
 
@@ -78,13 +84,16 @@ Next, add code to onboard users. In this example, we use the custom login UI opt
 
 Once a user authenticates, the built-in {{config.extra.arcana.wallet_name}} is displayed in the app's context and can be used for signing blockchain transactions. See [[arcana-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]] for more Web3 wallet operation details.
 
-<img alt="AuthProvider React-Native app Login" src="/img/react_native_app_login.png" width="30%"/>
+<figure markdown="span">
+  <img class="an-screenshots" alt="Login and access in-app Arcana Wallet" src="{{config.extra.arcana.img_dir}}/react_native_app_login.{{config.extra.arcana.img_png}}" width="30%"/>
+  <figcaption>Login and access in-app Arcana Wallet</figcaption>
+</figure>
 
 ### Use Web3 Wallet Operations
 
 Developers can add code as required to programmatically call Web3 wallet operations for authenticated users. See [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] and the [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User Guide]] for details on wallet configuration.
 
-That's all! :material-party-popper:
+That's all! :material-party-popper:{ .icon-color }
 
 The React-Native app is successfully integrated and ready to onboard Web3 users via social login, email using the configured providers. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
 

@@ -62,8 +62,15 @@ Storage Region can be configured for any application using the dashboard just on
 
       Refer to the figure below for details:
 
-      <img alt="GitHub Profile email visible" src="/img/an_trbs_gh_issue_visible_email.png" width="50%"/>
-      <img alt="GitHub Email Settings not private" src="/img/an_trbs_gh_issue_email_not_private.png" width="50%"/>
+      <figure markdown="span">
+        <img class="an-screenshots-noeffects width_50pc" alt="GitHub Profile: Email Visible" src="{{config.extra.arcana.img_dir}}/an_trbs_gh_issue_visible_email.{{config.extra.arcana.img_png}}"/>
+        <figcaption>GitHub Profile: Email Visible</figcaption>
+      </figure>
+
+      <figure markdown="span">
+        <img class="an-screenshots-noeffects width_50pc"  alt="GitHub Email Settings: Not Private" src="{{config.extra.arcana.img_dir}}/an_trbs_gh_issue_email_not_private.{{config.extra.arcana.img_png}}" width="50%"/>
+        <figcaption>GitHub Email Settings: Not Private</figcaption>
+      </figure>
 
 ??? an-trbs "Why do users experience a 'Redirect URI Mismatch' error during authentication?"
 
@@ -272,7 +279,10 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 
       **Issue**
 
-      <img alt="Wallet Not Initialized Error in a Web3 app." src="/img/trbs_wallet_not_init.png" width="35%"/>
+       <figure markdown="span">
+         <img class="an-screenshots-noeffects width_35pc" alt="Wallet Not Initialized Error in a Web3 app." src="{{config.extra.arcana.img_dir}}/trbs_wallet_not_init.{{config.extra.arcana.img_png}}" width="35%"/>
+         <figcaption>Wallet Not Initialized</figcaption>
+      </figure>
 
       **Solution**
 

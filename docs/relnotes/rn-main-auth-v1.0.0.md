@@ -26,7 +26,7 @@ This release of the {{config.extra.arcana.product_name}} product consists of the
 
 ---
 
-<img src="/img/icon_new_light.png#only-light" alt="New icon" width="3%" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="3%" /><img src="/img/icons/i_an_authsdk_light.png#only-light" alt="Auth SDK icon" width="3%0"/><img src="/img/icons/i_an_authsdk_dark.png#only-dark" alt="Auth SDK icon" width="3%" />
+<img src="{{config.extra.arcana.img_dir}}/icon_new_light.{{config.extra.arcana.img_png}}#only-light" alt="New icon" width="3%" /><img src="{{config.extra.arcana.img_dir}}/icon_new_dark.{{config.extra.arcana.img_png}}#only-dark" alt="New icon" width="3%" /><img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_light.{{config.extra.arcana.img_png}}#only-light" alt="Auth SDK icon" width="3%0"/><img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_dark.{{config.extra.arcana.img_png}}#only-dark" alt="Auth SDK icon" width="3%" />
 
 ### Brand new look: {{config.extra.arcana.dashboard_name}} 
 
@@ -38,7 +38,10 @@ Developers can now choose to deploy applications on the {{config.extra.arcana.co
 
 An under-development application can be deployed on the {{config.extra.arcana.company_name}} Testnet. At the same time, a tested and stable version can be deployed on the {{config.extra.arcana.company_name}} Mainnet where the app users can log in and utilize the app.
 
-![Dashboard with multiple Apps](/img/an_db_mulitiple_apps.png){.an-screenshots-noeffects  width="75%"}
+<figure markdown="span">
+  ![Developer Dashboard]({{config.extra.arcana.img_dir}}/an_db_mulitiple_apps.{{config.extra.arcana.img_png}}){.an-screenshots-noeffects  .width_85pc }
+  <figcaption>Developer Dashboard</figcaption>
+</figure>
 
 - Easily register and configure Web3 applications
 - Create, delete, and manage application configurations for 'Testnet' and 'Mainnet'
@@ -67,7 +70,10 @@ See [[dashboard-user-guide#manage-testnet-and-mainnet-configurations|how to mana
   
 See [[dashboard-user-guide#monitor-usage|{{config.extra.arcana.dashboard_name}} User Guide]] for details.
 
-![Dashboard Usage Metrics](/img/an_db_usage_metrics.png){.an-screenshots-noeffects width="75%"}
+<figure markdown="span">
+  ![Dashboard Usage Metrics]({{config.extra.arcana.img_dir}}/an_db_usage_metrics.{{config.extra.arcana.img_png}}){.an-screenshots-noeffects.width_85pc }
+  <figcaption>Usage Metrics</figcaption>
+</figure>
 
 ### Wallet Enhancements 
 

@@ -8,8 +8,11 @@ arcana:
 
 # New to Web3?
 
-![New to Web3 Diagram](/img/diagrams/d_new_2_web3_light.png#only-light)
-![New to Web3 Diagram](/img/diagrams/d_new_2_web3_dark.png#only-dark)
+<figure markdown="span">
+  ![New to Web3 Diagram]({{config.extra.arcana.img_dir}}/diagrams/d_new_2_web3_light.{{config.extra.arcana.img_png}}#only-light){ .an-screenshots-noeffects }
+  ![New to Web3 Diagram]({{config.extra.arcana.img_dir}}/diagrams/d_new_2_web3_dark.{{config.extra.arcana.img_png}}#only-dark){ .an-screenshots-noeffects }
+  <figcaption>The Web3 Universe & {{config.extra.arcana.company_name}}</figcaption>
+</figure>
 
 {==
 
@@ -22,13 +25,13 @@ arcana:
 
 {{config.extra.arcana.sdk_name}} allows Web3 apps to onboard users seamlessly through supported authentication providers. Authenticated users instantly access the embedded Arcana wallet, enabling them to sign blockchain transactions. Developers can programmatically perform Web3 wallet operations, such as token transfers and checking balances, and standard Ethereum JSON-RPC calls for blockchain transactions, in the user's context.
 
-!!! an-tip
+!!! an-tip "Skip to {{config.extra.arcana.company_name}} SDKs"
 
-      If you're experienced with Web3, including user onboarding, passwordless login, and Web3 wallet operations, feel free to skip the beginner's section and dive into the [[new-to-web3#step-1-understanding-arcana-auth|'Understanding {{config.extra.arcana.product_name}}']] section below.
+      If you're experienced with Web3, including user onboarding, passwordless login, and Web3 wallet operations, feel free to skip the beginner's section and dive into the [[new-to-web3#step-1-understanding-arcana-auth| 'Understanding {{config.extra.arcana.product_name}}']] section below.
 
 ## Beginners Journey
 
-Get a firm grip on the topics listed under the prerequisites section. These will help you later while building your privacy-preserving Web3 apps by integrating with the {{config.extra.arcana.sdk_name}}.
+Get a firm grip on the topics listed under the prerequisites section. These will help you later while building your privacy-preserving Web3 apps by integrating with the {{config.extra.arcana.company_name}} SDKs.
 
 ## Prerequisites
 
@@ -65,7 +68,7 @@ Get a firm grip on the topics listed under the prerequisites section. These will
     - Decentralized [consensus mechanisms](https://ethereum.org/en/developers/docs/consensus-mechanisms/)
     - Sharding and reconstructing cryptography keys - [Shamir's secret sharing](https://medium.com/@keylesstech/a-beginners-guide-to-shamir-s-secret-sharing-e864efbf3648)
 
-## Step 1: Understanding {{config.extra.arcana.product_name}}
+## Step 1: Understanding {{config.extra.arcana.company_name}}
 
 Now that you are familiar with the basics, let us take a look at what {{config.extra.arcana.product_name}} is and what it can do for Web3 app developers.
 
@@ -79,11 +82,11 @@ Now that you are familiar with the basics, let us take a look at what {{config.e
 
 ## Step 2: Getting Started with the {{config.extra.arcana.sdk_name}}
 
-**Register App**: First [[register-app-auth|register the app]] using the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md). Then [[index-configure-auth|configure user onboarding settings]] before [[index-integrate|integrating the app]] and calling any {{config.extra.arcana.sdk_name}} functions for Web3 wallet operations.
+**Register App**: First [[register-app-auth|register the app]] using the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md). Then [[index-configure-auth|configure user onboarding settings]] before [[index-integrate|integrating the app]] and calling any {{config.extra.arcana.sdk_name}} functions for Web3 wallet operations. Optionally, [[configure-gasless|configure gasless transaction settings]].
 
 **Install & Integrate App**: Install the {{config.extra.arcana.sdk_name}} and [[index-integrate|integrate]] the app. Once integrated, use the `AuthProvider` interface to call SDK functions to onboard users via the configured social login providers.
 
-**Onboard Users: Use the built-in plug-and-play login UI or build a custom login UI to onboard users. Onboarding users with [[concept-plug-and-play-auth|{{config.extra.arcana.sdk_name}} plug-and-play feature]] requires a single line of code! For details, see [[index-onboard-users|how to onboard users]]. 
+**Onboard Users**: Use the built-in plug-and-play login UI or build a custom login UI to onboard users. Onboarding users with [[concept-plug-and-play-auth|{{config.extra.arcana.sdk_name}} plug-and-play feature]] requires a single line of code! For details, see [[index-onboard-users|how to onboard users]]. 
 
 **Wallet Ops**: Use the built-in {{config.extra.arcana.wallet_name}} UI or build a custom wallet UI. The embedded, non-custodial {{config.extra.arcana.wallet_name}} is instantly available to authenticated users to sign blockchain transactions. For details, see [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] and [[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]].
 
@@ -112,6 +115,8 @@ Now that you are familiar with the basics, let us take a look at what {{config.e
 ## Step 4: Advanced Usage
 
 For advanced options related to user onboarding and the {{config.extra.arcana.sdk_name}} usage, you can check out [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} usage]] and {% include "./text-snippets/authsdkref_url.md" %}. Refer to [Auth Examples on GitHub](https://github.com/arcana-network/auth-examples) to see how to integrate different types of apps with the {{config.extra.arcana.sdk_name}}.
+
+To extend the {{config.extra.arcana.wallet_name}} gasless feature to other third-party wallets, [[configure-standalone-gasless| configure]] and integrate the app with the {{config.extra.arcana.gasless_sdk_name}}. See [[gasless-standalone-quick-start| Gasless Quick Start Guide]] for details.
 
 ## Troubleshooting
 

@@ -14,7 +14,11 @@ This key pair is used to bootstrap cryptosystems without a trusted third party.
 
 Arcana Network ADKG implementation is used for non-custodial key pair generation and onboard the SDK users to sign blockchain transactions. It is a simple and effective mechanism that ensures no single node has access to the user’s key ensuring security and robustness. 
 
-![ADKG implementation note](/img/adkg_note.png){ .an-screenshots-noeffects }
+<figure markdown="span">
+  ![Asynchronous Distributed Key Generation (ADKG)]({{config.extra.arcana.img_dir}}/adkg_note.{{config.extra.arcana.img_png}}){ .an-screenshots-noeffects .width_85pc }
+  <figcaption>Asynchronous Distributed Key Generation (ADKG)</figcaption>
+</figure>
+
 
 At {{config.extra.arcana.company_name}}, have come a long way since the {{config.extra.arcana.sdk_name}} alpha release that offered a distributed key generation feature (DKG). 
 
@@ -60,7 +64,10 @@ The first phase is where each of the participating nodes generates its secret ke
 
 At the end of the ACSS phase, each node has a set **T** of share index from all other participating honest nodes.
 
-![ADKG Phase1](/img/adkg_ph1.png){ .an-screenshots-noeffects width="75%"}
+<figure markdown="span">
+  ![ADKG Phase 1]({{config.extra.arcana.img_dir}}/adkg_ph1.{{config.extra.arcana.img_png}}){ .an-screenshots-noeffects .width_85pc }
+  <figcaption>ADKG Phase 1</figcaption>
+</figure>
 
 ### 2. Keyset Proposal Broadcast
 
@@ -68,18 +75,24 @@ After the first phase, once each node has generated and shared key shares, each 
 
 At the end of this phase, each node has *n* **T** sets containing share index from all the other participating nodes.
 
-![ADKG Phase1](/img/adkg_ph2.png){ .an-screenshots-noeffects width="75%"}
+<figure markdown="span">
+  ![ADKG Phase 2]({{config.extra.arcana.img_dir}}/adkg_ph2.{{config.extra.arcana.img_png}}){ .an-screenshots-noeffects .width_85pc }
+  <figcaption>ADKG Phase 2</figcaption>
+</figure>
 
 ### 3. Asynchronous Binary Agreement
 
-In this phase each node has the **T sets** or the **proposed share set** from the other nodes and is required to vote.
+In this phase, each node has the **T sets** or the **proposed share set** from the other nodes and is required to vote.
 
 - During the agreement phase, nodes try to agree on a subset of valid key set proposals.
 - Every node looks at its own and other nodes’ **T set** received in the previous phase and if the T set is a subset of its own **T set** or equal set then it votes a 1 for it to the ABA.
 
 At the end of this phase, votes from all nodes are generated for every proposal set **T** submitted by each participating node.
 
-![ADKG Phase1](/img/adkg_ph3.png){ .an-screenshots-noeffects width="75%"}
+<figure markdown="span">
+  ![ADKG Phase 3]({{config.extra.arcana.img_dir}}/adkg_ph3.{{config.extra.arcana.img_png}}){ .an-screenshots-noeffects .width_85pc }
+  <figcaption>ADKG Phase 3</figcaption>
+</figure>
 
 ### 4. Key Derivation
 
@@ -94,6 +107,9 @@ At the end of this phase, h$^z$ is derived from $h^{z_1}$,...,$h^{z_4}$ at all n
 
 The secret key is not accessible to any single node. Each node only has its share of secret key information.
 
-![ADKG Phase1](/img/adkg_ph4.png){ .an-screenshots-noeffects width="75%"}
+<figure markdown="span">
+  ![ADKG Phase1]({{config.extra.arcana.img_dir}}/adkg_ph4.{{config.extra.arcana.img_png}}){ .an-screenshots-noeffects .width_85pc }
+  <figcaption>ADKG Phase 4</figcaption>
+</figure>
 
 For more information, refer to the [{{config.extra.arcana.company_name}} Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08). 

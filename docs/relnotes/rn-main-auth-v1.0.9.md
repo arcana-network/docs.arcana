@@ -12,7 +12,7 @@ arcana:
 
 **Release Date: Feb 5, 2024**  
 
-Version: **{{config.extra.arcana.latest_version}}**
+Version: **v1.0.9**
 
 * {{config.extra.arcana.sdk_name}} 
       - Web Apps 
@@ -35,7 +35,7 @@ In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{confi
 ==}
 
 ## What is New?
-<img src="/img/icon_new_light.png#only-light" alt="New icon" width="3%" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="3%" />
+<img src="{{config.extra.arcana.img_dir}}/icon_new_light.{{config.extra.arcana.img_png}}#only-light" alt="New icon" width="3%" /><img src="{{config.extra.arcana.img_dir}}/icon_new_dark.{{config.extra.arcana.img_png}}#only-dark" alt="New icon" width="3%" />
 
 ---
 
@@ -65,7 +65,10 @@ Apps can choose to enable global keys on the Testnet as well as the Mainnet.
 
 Earlier, when a user logged into the Web3 app integrated with the {{config.extra.arcana.sdk_name}}, the new user would instantly see the {{config.extra.arcana.wallet_name}} in the app context. Now, a new orientation wizard pops up for the very first user login. Newcomers to Web3 or those unfamiliar with wallets can find value in the orientation wizard. Upon logging into the app, users can opt to skip it or swiftly get familiar with the layout of {{config.extra.arcana.wallet_name}}, understanding where specific information is located.
 
-![Wallet Orientation](/img/an_wallet_orientation.gif){.an_screenshots .width_35pc}
+<figure markdown="span">
+  ![Wallet Starter Tips]({{config.extra.arcana.img_dir}}/an_wallet_orientation.gif){ .an-screenshots-noeffects .width_35pc }
+  <figcaption>Wallet Starter Tips</figcaption>
+</figure>
 
 ## Get Started
 

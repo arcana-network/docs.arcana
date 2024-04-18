@@ -38,17 +38,24 @@ Once the app is registered, configured, and integrated with the {{config.extra.a
 
 The {{config.extra.arcana.wallet_name}} displays a transaction notification for user approval in response to the 'send token' transaction triggered by the app programmatically. The user must approve the send token transaction before the tokens can be successfully sent to the recipient.
 
-<img src="/img/an_wallet_send_tx.png" width="300"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_wallet_send_tx.{{config.extra.arcana.img_png}}" alt="Send Transaction" class="an-screenshots-noeffects width_35pc"/>
+  <figcaption>Send Transaction</figcaption>
+</figure>
 
 The wallet displays a 'Preview' button to allow for user confirmation before the send token transaction is executed on the configured blockchain network. 
 
-<img src="/img/an_wallet_send.png" width="300"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_wallet_send.{{config.extra.arcana.img_png}}" alt="Approve/Reject Send Transaction" class="an-screenshots-noeffects width_35pc"/>
+  <figcaption>Approve/Reject Send Transaction</figcaption>
+</figure>
 
 ## Receive Tokens
 
 To receive tokens, the app does not need to call any JSON RPC calls. Simply share the user's wallet address or QR code with the sender.
 
-**That is all!**  :material-party-popper:
+**That is all!**  :material-party-popper:{ .icon-color }
+
 *The app is all set to programmatically send tokens using the {{config.extra.arcana.wallet_name}}.*
 
 ## What's Next?

@@ -30,8 +30,8 @@ We are actively working towards adding newer features and capabilities. For deta
 
 ## Infrastructure Providers
 
-![AWS light](/img/icons/icon_aws_light.png#only-light)
-![AWS Dark](/img/icons/icon_aws_dark.png#only-dark)
+![AWS light]({{config.extra.arcana.img_dir}}/icons/icon_aws_light.{{config.extra.arcana.img_png}}#only-light)
+![AWS Dark]({{config.extra.arcana.img_dir}}/icons/icon_aws_dark.{{config.extra.arcana.img_png}}#only-dark)
 
 ## Protocol Audit
 

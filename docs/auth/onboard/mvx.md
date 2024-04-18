@@ -42,7 +42,10 @@ The `connect()` function will bring up the plug-and-play pop-up modal in the app
 
 The figure below shows the plug-and-play login UI screen for a test app. All the authentication providers configured by the developer are available as the onboarding options. The passwordless login option is enabled by default.
 
-![Plug-and-Play Login UI](/img/an_plug_n_play_auth.png){.an-screenshots-noeffects width="30%"}
+<figure markdown="span">
+  ![Plug-and-Play Login UI]({{config.extra.arcana.img_dir}}/an_plug_n_play_auth.{{config.extra.arcana.img_png}}){.an-screenshots-noeffects .width_35pc }
+  <figcaption>Plug-and-Play Login UI</figcaption>
+</figure>
 
 !!! an-tip "Arcana JWT Token"
 

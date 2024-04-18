@@ -22,11 +22,17 @@ Browse the 'Manage Apps' page on the {{config.extra.arcana.dashboard_name}}. Sel
 
 In the app configuration dashboard, refer to the 'Testnet' dropdown on the top right. Click and choose the 'Mainnet' option. You can either copy the Testnet profile as Mainnet or create a fresh one. 
 
-<img alt="Testnet client Id" src="/img/an_testnet_mainnet_config_create.gif" width="85%"/>
+<figure markdown="span">
+  <img alt="Create Mainnet Configuration Profile" src="{{config.extra.arcana.img_dir}}/an_testnet_mainnet_config_create.gif" class="an-screenshots width_85pc"/>
+  <figcaption>Create Mainnet Configuration Profile</figcaption>
+</figure>
 
 In both cases, the Mainnet configuration profile is created and has a **new** {{config.extra.arcana.app_address}} assigned to it. After the Mainnet profile is created successfully, you will see 'Mainnet' selected in the top RHS dropdown.
 
-<img alt="Testnet client Id" src="/img/an_deploy_mainnet_dashboard.png" width="85%"/>
+ <figure markdown="span">
+   <img alt="Select Mainnet Profile" src="{{config.extra.arcana.img_dir}}/an_deploy_mainnet_dashboard.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
+   <figcaption>Select Mainnet Profile</figcaption>
+</figure>
 
 Copy the newly assigned {{config.extra.arcana.app_address}} in the Mainnet settings. It will be of the format `xar_live_nnnnnnnnnnn...nnn`.
 
@@ -54,11 +60,14 @@ Bring up the app. When a user authenticates, they will be assigned a new wallet 
 
       If you miss updating the {{config.extra.arcana.app_address}} in the integration code for Mainnet deployment, the app will get deployed on Arcana Testnet. The authenticated users will see a warning informing them that the app is deployed on Testnet.
 
-      <img alt="Testnet Wallet" src="/img/an_deploy_testnet_wallet.png" width="35%"/> 
+      <figure markdown="span">
+        <img alt="Testnet Wallet Address" src="{{config.extra.arcana.img_dir}}/an_deploy_testnet_wallet.{{config.extra.arcana.img_png}}" class="an-screenshots-noeffects width_35pc"/> 
+        <figcaption>Testnet Wallet Address</figcaption>
+      </figure>
 
 If there is no Testnet warning displayed on the {{config.extra.arcana.wallet_name}}, then the app is successfully deployed on Arcana Mainnet.
 
-That is all! :material-party-popper:
+That is all! :material-party-popper:{ .icon-color }
 
 ## See Also
 

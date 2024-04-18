@@ -22,8 +22,8 @@ No changes
 
 ### {{config.extra.arcana.sdk_name}} 
 
-<img src="/img/icons/i_an_authsdk_light.png#only-light" alt="Auth SDK icon" width="3%" />
-<img src="/img/icons/i_an_authsdk_dark.png#only-dark" alt="Auth SDK icon" width="3%" />
+<img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_light.{{config.extra.arcana.img_png}}#only-light" alt="Auth SDK icon" width="3%" />
+<img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_dark.{{config.extra.arcana.img_png}}#only-dark" alt="Auth SDK icon" width="3%" />
 
 When you migrate from using the {{config.extra.arcana.sdk_name}} v1.0.0 to the v1.0.1 release, there is no breaking change or reconfiguration required. There is just one change in the default setting of the `network` parameter in the `AuthProvider` constructor. Earlier it was set to 'mainnet' but now it is set to 'testnet' by default.
 
@@ -42,8 +42,11 @@ If you have not already registered, only then register your app using the Arcana
 {% include "./code-snippets/init_auth_testnet.md" %}
    
 Once a user authenticates, the following wallet UI is displayed when the app is deployed on the Arcana Testnet.
-      
-<img class="an-screenshots-noeffects" alt="Testnet Wallet" src="/img/an_migration_testnet_wallet.png" width="20%"/>
+
+<figure markdown="span">     
+  <img class="an-screenshots-noeffects width_35pc" alt="Testnet Wallet" src="{{config.extra.arcana.img_dir}}/an_migration_testnet_wallet.{{config.extra.arcana.img_png}}"/>
+  <figcaption>Testnet Wallet</figcaption>
+</figure>
   
 ### Example: Deploy on Mainnet
 
@@ -55,11 +58,15 @@ In the app integration code, use the `Mainnet` **{{config.extra.arcana.app_addre
    
 Once a user authenticates, the following wallet UI is displayed when the app is deployed on the Arcana Mainnet.
    
-<img class="an-screenshots-noeffects" alt="Mainnet Wallet" src="/img/an_migration_mainnet_wallet.png" width="20%"/>
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" alt="Mainnet Wallet" src="{{config.extra.arcana.img_dir}}/an_migration_mainnet_wallet.{{config.extra.arcana.img_png}}">
+  <figcaption>Mainnet Wallet</figcaption>
+</figure>
+  
 
 ## What's New?
 
-<img src="/img/icon_new_light.png#only-light" alt="New icon" width="3%" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="3%" />
+<img src="{{config.extra.arcana.img_dir}}/icon_new_light.{{config.extra.arcana.img_png}}#only-light" alt="New icon" width="3%" /><img src="{{config.extra.arcana.img_dir}}/icon_new_dark.{{config.extra.arcana.img_png}}#only-dark" alt="New icon" width="3%" />
 
 There are no other new features in this release.
 

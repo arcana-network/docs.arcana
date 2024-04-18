@@ -24,11 +24,14 @@ To register an app that uses the Solana network, create a new app and select the
 
 {% include "./text-snippets/non-evm-warning.md" %}
 
-![Solana App config card](/img/an_db_new_solana_app_card.gif){.an-screenshots}
+<figure markdown="span">
+  ![Register Solana App]({{config.extra.arcana.img_dir}}/an_db_new_solana_app_card.gif){ .an-screenshots .width_85pc }
+  <figcaption>Register Solana App</figcaption>
+</figure>
 
 ## Configure App
 
-Refer to the [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User's Guide]] for details on how to configure the branding, social authentication providers and other settings. In this section, you will learn how to configure Solana network for the app via the **Chain Management** configuration section.
+Refer to the [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User's Guide]] for details on how to configure the branding, social authentication providers and other settings. In this section, you will learn how to configure the Solana network for the app via the **Chain Management** configuration section.
 
 ### Manage Solana chains
 
@@ -44,22 +47,10 @@ You can select one of the Solana networks and set it as the default chain. The d
 
 To edit a Solana chain's RPC URL or the blockchain explorer URL, select the chain, click **edit** and update the required fields.
 
-![Solana Edit Chain](/img/an_db_new_solana_edit_chain.gif){.an-screenshots}
-
-<!--
-## Switch Chain Type
-
-If you create an app entry with Solana, you can later switch the chain types to EVM-compatible chains or other supported non-EVM chains. Switching to EVM chains will result in the wallet displaying only the EVM chains once the user logs in.  
-
-Note, at a time, developers can only enable either EVM-compatible chains or the Solana chains. In the future, there may be other chains besides Solana that may show up in the **Chain Type** dropdown list.
-
-![Solana Switch Chain](/img/an_db_new_solana_switch_evm.gif){.an-screenshots}
-
-!!! an-warning "Dynamic Switching"
-
-      Switching between EVM and non-EVM chains is allowed only during app development. Once the app is deployed and users log in, if a user logs in and the wallet displays the Solana chain as the default one selected by the app developer, switching chains from the wallet UI may not work. If a user logs out and then re-logs into the app, they will see a different type of chain (EVM, non-EVM) and the keys will be different.
-
--->
+<figure markdown="span">
+  ![Edit Solana Chain Settings]({{config.extra.arcana.img_dir}}/an_db_new_solana_edit_chain.gif){ .an-screenshots .width_85pc }
+  <figcaption>Edit Solana Chain Settings</figcaption>
+</figure>
 
 For more details on using the dashboard to delete an app, switch between different applications, change configuration profile, monitor usage, etc., see [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User's Guide]]. 
 

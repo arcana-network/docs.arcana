@@ -30,7 +30,10 @@ That is all! 🎉
 
     A unique **{{config.extra.arcana.app_address}}** is assigned to every registered app. It is displayed on the top right of the dashboard screen. Copy and use it to integrate the app with the {{config.extra.arcana.company_name}} SDKs.
 
-    ![App unique identifier](/img/an_db_app_address.png){.an-screenshots} 
+    <figure markdown="span">
+      ![Arcana Client ID for Registered App]({{config.extra.arcana.img_dir}}/an_db_app_address.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc}
+      <figcaption>Arcana Client ID for Registered App</figcaption>
+    </figure>
 
 ## What's next?
 

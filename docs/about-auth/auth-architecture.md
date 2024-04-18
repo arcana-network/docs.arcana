@@ -22,8 +22,11 @@ Here is a high-level overview of the technical architecture and components that 
 * [[concept-adkg|Asynchronous Distributed Key Generation (ADKG)]]
 * {{config.extra.arcana.company_name}} Auth protocol (Back-end Subsystem)
 
-![Auth Components](/img/an-auth-components-light.png#only-light)
-![Auth Components](/img/an-auth-components-dark.png#only-dark)
+<figure markdown="span">
+  ![Auth Components]({{config.extra.arcana.img_dir}}/an-auth-components-light.{{config.extra.arcana.img_png}}#only-light){ .an-screenshots-noeffects .an-img-border-small-75pc }
+  ![Auth Components]({{config.extra.arcana.img_dir}}/an-auth-components-dark.{{config.extra.arcana.img_png}}#only-dark){ .an-screenshots-noeffects .an-img-border-small-75pc }
+  <figcaption>Auth Components</figcaption>
+</figure>
 
 ### {{config.extra.arcana.dashboard_name}}
 

@@ -8,8 +8,8 @@ arcana:
 
 # Passwordless Authentication
 
-<img src="/img/icons/i_an_pwdless_light.png#only-light" width="50"/>
-<img src="/img/icons/i_an_pwdless_dark.png#only-dark" width="50"/>
+<img src="{{config.extra.arcana.img_dir}}/icons/i_an_pwdless_light.{{config.extra.arcana.img_png}}#only-light" width="50"/>
+<img src="{{config.extra.arcana.img_dir}}/icons/i_an_pwdless_dark.{{config.extra.arcana.img_png}}#only-dark" width="50"/>
 
 
 The  {{config.extra.arcana.sdk_name}} offers a passwordless onboarding option for Web3 apps. Users provide their email ID and and receive an OTP via email, simplifying the login process. This eliminates the need for password management and social account sharing, streamlining onboarding.

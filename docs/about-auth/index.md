@@ -10,7 +10,7 @@ arcana:
 
 Learn about what the {{config.extra.arcana.product_name}} offers, why it is required and what are some of its use cases.
 
-[[what-is-arcana-auth|:material-account-details-outline:{ .icon-color  What is {{config.extra.arcana.product_name}}? }]]{ .md-button }
+[[what-is-arcana-auth|:material-account-details-outline:{ .icon-color}  What is {{config.extra.arcana.product_name}}? ]]{ .md-button }
 
 [[why-arcana-auth| :octicons-question-16:{ .icon-color } Why {{config.extra.arcana.product_name}}?]]{ .md-button }
 

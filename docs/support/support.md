@@ -25,4 +25,6 @@ arcana:
 
 ---
 
-![Support](/img/support.png)
+<!--- No caption for the following visual--->
+
+![Support]({{config.extra.arcana.img_dir}}/support.{{config.extra.arcana.img_png}})

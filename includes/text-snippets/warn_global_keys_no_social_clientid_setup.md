@@ -2,7 +2,10 @@ Apps that require [[concept-keyspace-type|global keys]] feature **do not need to
 
 User onboarding via {{page.meta.arcana.social_provider}} is automatically turned on for the app when global keys are enabled.
 
-![Global Keys Setting](/img/an_config_global_key_setting.png){ .width_50pc }
+<figure markdown="span">
+  ![Global Keys Setting]({{config.extra.arcana.img_dir}}/an_config_global_key_setting.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  <figcaption>Global Keys Setting</figcaption>
+</figure>
 
 !!! an-caution "Global Keys Configuration Change"
 
@@ -10,4 +13,7 @@ User onboarding via {{page.meta.arcana.social_provider}} is automatically turned
 
       If an app was configured for any social login providers and switches over from app-specific to global keyspace later, the **Social Auth** settings will be disabled altogether.
 
-      ![Global Keys, Social Auth Settings Disabled](/img/an_config_global_key_social_auth_disabled.png){ .width_50pc }
+      <figure markdown="span">
+        ![Global Keys, Social Auth Settings Disabled]({{config.extra.arcana.img_dir}}/an_config_global_key_social_auth_disabled.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+        <figcaption>Global Keys: Social Auth Settings Disabled</figcaption>
+      </figure>

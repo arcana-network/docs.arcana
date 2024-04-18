@@ -8,8 +8,11 @@ arcana:
 
 # User Authentication and DKG Access
 
-![User Auth](/img/user_auth_dkg-light.svg#only-light)
-![User Auth](/img/user_auth_dkg-dark.svg#only-dark)
+<figure markdown="span">
+  ![User Auth: Arcana Components Interactions]({{config.extra.arcana.img_dir}}/user_auth_dkg-light.{{config.extra.arcana.img_svg}}#only-light){ .an-screenshots-noeffects .width_50pc }
+  ![User Auth: Arcana Components Interactions]({{config.extra.arcana.img_dir}}/user_auth_dkg-dark.{{config.extra.arcana.img_svg}}#only-dark){ .an-screenshots-noeffects .width_50pc }
+  <figcaption>User Auth: Arcana Components Interactions</figcaption>
+</figure>
 
 ## Control Flow
 
