@@ -9,6 +9,7 @@
      --md-an-blue-color: #2730FE;
      --md-an-green-color: #0FB600;
      --md-an-orange-color: #FF6D19;
+     /*--md-typeset-mark-color: rgba(255, 109, 25, 0.125);*/
      --md-an-red-color: #EC1B42;
      --md-an-purple-color: #AB64B2;
      --md-an-yellow-color: #FBA82E;
@@ -38,7 +39,7 @@
      --md-banner-color-2: var(--md-an-hero-slate-gradient-dark);
      --md-an-card-color-hover: rgba(247, 246, 245, 0.9);
      --md-an-hero-slate-gradient-dark: rgba(34, 36, 47, 0.99);
-     --md-typeset-mark-color: rgba(247, 247, 163, 0.25);
+     /*--md-typeset-mark-color: rgba(247, 247, 163, 0.25);*/
      --md-banner-color-yellow: var(--md-typeset-mark-color);
      --md-an-banner-color-purple: rgb(85, 65, 190);
      --md-an-header-color-purple: rgb(24,21,59); 
@@ -46,6 +47,8 @@
      --md-an-blink-me-link-color: blue;
      /*--md-an-banner-bg: #23A26D; Green*/
      --md-an-banner-bg: var(--md-an-pink-color);
+     --md-text-font-family: "Inter";
+     --md-mermaid-node-bg-color: var(--md-default-bg-color);
     }
 
 [data-md-color-scheme="black"] {

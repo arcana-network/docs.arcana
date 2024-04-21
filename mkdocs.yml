@@ -4,7 +4,7 @@ site_name: '📖 Documentation'
 #site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
 
 # For main
-site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
+site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
 
 # Check for broken links, etc.
 strict: true 
