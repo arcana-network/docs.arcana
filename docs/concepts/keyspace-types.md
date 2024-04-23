@@ -12,6 +12,44 @@ In Web2 applications, users often employ the same password for multiple applicat
 
 Global keys offer a streamlined user experience akin to Web2 applications by providing the same user keys/wallet address across Web3 apps. However, global keys also introduce a security risk, especially if there are financial implications in the app. If a malicious actor breaches one such app and gains access to a user's global keys, they could potentially access the user's digital assets across all other applications using global keys.
 
+```mermaid
+flowchart LR 
+    subgraph D [ ]
+        A1(((Developer))) 
+    end
+    subgraph KT [Keyspace Configuration]
+    direction LR
+        A1--> B1(Dashboard Login) --> C1[App A Settings] -- Configure Keyspace --> D1[Global Keys]
+        B1 -->C2[App B Settings] -- Configure Keyspace --> D2[App-Specific Keys]
+        B1 -->Cz[App Z Settings] -- Configure Keyspace --> Dz[Global Keys]
+    end
+
+classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
+class D1,Dz an-pink
+```
+
+```mermaid
+flowchart LR 
+    subgraph U [ ]
+        A3(((User 1)))
+    end
+    subgraph ULZ [User 1 Logs in - App Z]
+        direction LR
+        A3 --> BZ(App Z Login) -- Authenticated --> CZ(Arcana Wallet in App Z) --> DZ[Wallet Address UA1]
+    end
+    subgraph ULB [User 1 Logs in - App B]
+    direction LR
+        A3 --> B33(App B Login) -- Authenticated --> C33(Arcana Wallet in App B) --> D33[Wallet Address UB1]
+    end
+    subgraph ULA [User 1 Logs in - App A]
+    direction LR
+        A3 --> B3(App A Login) -- Authenticated --> C3(Arcana Wallet in App A) --> D3[Wallet Address UA1]
+    end
+
+classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem;
+class D3,DZ an-pink
+```
+
 Based on the app-specific requirements for privacy, security, and ease of use, developers can change the default keyspace setting from app-specific to the global keys using the {{config.extra.arcana.dashboard_name}}. 
 
 |**App-specific Keys**|**Global Keys**|

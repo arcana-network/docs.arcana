@@ -686,7 +686,7 @@ nav:
       - Dashboard: concepts/dashboard.md
       - DKG:
         - concepts/dkg/index.md
-        - What is DKG?: concepts/dkg.md
+        - What is DKG?: concepts/what-is-dkg.md
         - How does DKG work?: concepts/how-dkg-works.md
         - What is ADKG?: concepts/adkg.md
         - How does ADKG work?: concepts/how-adkg-works.md

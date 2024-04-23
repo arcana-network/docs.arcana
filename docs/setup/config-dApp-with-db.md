@@ -183,9 +183,15 @@ You can use the dropdown in the top right of the application dashboard screen to
 
 ## Billing
 
-{{config.extra.arcana.company_name}} tracks the Mainnet app usage in terms of MAU for every developer account. At the end of every month, an invoice is generated. The chargeable amount against the invoice is auto-deducted using the payment method configured by the developer in their profile section. See [billing and pricing]({{page.meta.arcana.root_rel_path}}/concepts/billing.md) for details.
+{{config.extra.arcana.company_name}} tracks the Mainnet app usage in terms of MAU for every developer account. At the end of every month, an invoice is generated. The chargeable amount against the invoice is auto-deducted using the payment method configured by the developer in their profile section. 
+
+<!---
+See [billing and pricing]({{page.meta.arcana.root_rel_path}}/concepts/billing.md) for details.
+-->
 
 To begin using the {{config.extra.arcana.sdk_name}}, the app developers don't need to update the profile details including the billing information. Once the apps consume the free tier of {{config.extra.arcana.company_name}} Mainnet usage, the developer must provide the billing details via the profile section of the {{config.extra.arcana.dashboard_name}}. Otherwise, the registered apps will be suspended and users will not be allowed to log in to any app that is registered using the developer account.
+
+For details on current pricing and free tier limits, contact our [[support|support team]].
 
 ### Payment Method Setup
 

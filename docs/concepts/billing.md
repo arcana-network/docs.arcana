@@ -16,7 +16,12 @@ Testnet usage is free!
 
 ### Mainnet
 
-Each developer account enjoys a promotional free usage tier. Beyond this free tier, usage costs apply to all apps registered with {{config.extra.arcana.company_name}} under a developer account and are invoiced together. Refer to [{{config.extra.arcana.company_name}} Pricing](https://www.arcana.network/pricing) for current billing rates and free tier limits.
+Each developer account enjoys a promotional free usage tier. Beyond this free tier, usage costs apply to all apps registered with {{config.extra.arcana.company_name}} under a developer account and are invoiced together. 
+
+<!---Refer to [{{config.extra.arcana.company_name}} Pricing](https://www.arcana.network/pricing) 
+--->
+
+For more details on the current billing rates and free tier limits contact our [[support|support team]].
 
 ## Billing Metrics
 
