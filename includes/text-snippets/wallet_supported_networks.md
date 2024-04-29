@@ -13,6 +13,8 @@
     * Berachain Artio
     * BNB Smart Chain (BSC)
     * BSC Testnet 
+    * B<sup>2</sup> Network Testnet
+    * B<sup>2</sup> Network Mainnet
     * Caduceus
     * Ethereum 
     * IoTeX
