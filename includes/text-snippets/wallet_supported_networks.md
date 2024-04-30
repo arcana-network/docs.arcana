@@ -11,8 +11,12 @@
     * Base Testnet (Goerli)
     * Base Testnet (Sepolia)
     * Berachain Artio
+    * BitLayer Testnet
+    * BitLayer Mainnet
     * BNB Smart Chain (BSC)
     * BSC Testnet 
+    * B<sup>2</sup> Network Testnet
+    * B<sup>2</sup> Network Mainnet
     * Caduceus
     * Ethereum 
     * IoTeX
