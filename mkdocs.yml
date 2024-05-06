@@ -206,6 +206,12 @@ plugins:
       caption_position: bottom
   - redirects:
         redirect_maps:
+          # Linea docs links
+          'howto/index.md': 'quick-start/index.md'
+          'sdk-installation.md': 'auth/sdk-installation.md'
+          'web-sdk/auth-usage-guide.md': 'auth/auth-usage-guide.md'
+          'state-of-the-arcana-auth.md': 'web3-stack/index.md'
+          'dev-resources/sdk-ref/index.md': 'guides/dev/sdk-ref/index.md'
           'introducing-arcana-auth.md': 'introduction/index.md'
           'walletsdk/wallet_qs.md': 'quick-start/index.md'
           'auth-quick-start.md': 'quick-start/auth-sdk/index.md'
