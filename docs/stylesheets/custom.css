@@ -31,8 +31,8 @@
      --md-accent-bg-color:                hsla(0, 0%, 100%, 1);
      --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
      --md-text-font: "Onest";
-     --md-admonition-icon--an-faq: url('/img/icons/icons8-question-mark-48.png');
-     --md-admonition-icon--an-trbs: url('/img/icons/exclamation.png');
+     --md-admonition-icon--an-faq: url('/imgnew/icons/icons8-question-mark-48.webp');
+     --md-admonition-icon--an-trbs: url('/imgnew/icons/exclamation.webp');
      --md-primary-an-heading-color:   var(--md-primary-fg-color--lighter);
      --md-primary-an-banner-text-color: var(--md-an-blink-me-link-color);
      --md-banner-color-1: var(--md-primary-bg-color);
