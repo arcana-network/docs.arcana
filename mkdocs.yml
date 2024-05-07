@@ -400,6 +400,11 @@ nav:
         - ADKG: security/adkg.md
         - MFA: security/mfa.md
       - Coming Soon!: arcana-coming-soon.md
+    - Arcana on Partner Chains:
+      - partner-docs/index.md
+      - Caduceus Auth: https://docs.caduceus.foundation/auth
+      - Linea Social Login: https://docs.linea.build/build-on-linea/tooling/social-login/arcana
+      - Linea Account Abstraction: https://docs.linea.build/build-on-linea/tooling/account-abstraction/arcana
     - Privacy: legal/PRIVACY.pdf
     - Terms of Use: legal/TERMS.pdf
   - Auth SDK: 
