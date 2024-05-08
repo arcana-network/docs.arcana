@@ -8,13 +8,13 @@ arcana:
 
 # Integrate Web3-React App
 
-With [Web3-React](https://www.npmjs.com/package/web3-react?activeTab=readmet) wallet connector framework, developers can allow app users to easily switch between multiple wallets within a single application. The [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] offers a custom Web3-React connector that enables the {{config.extra.arcana.wallet_name}} in apps using Web3-React.
+DApps using [Web3-React](https://www.npmjs.com/package/web3-react?activeTab=readmet) framework can enable user onboarding via social login and gasless transactions via {{config.extra.arcana.wallet_name}} by integrating with the {{config.extra.arcana.web3_react_sdk_name}}.
 
-In this guide, you will learn how to integrate the {{config.extra.arcana.sdk_name}} with apps that use Web3-React wallet connectors.
+In this guide, you will learn how to integrate the app and access the custom Web3-React connector.
 
 ## Prerequisites
 
-* **Register Web3 Application**: Log into the {{config.extra.arcana.dashboard_name}} {% include "./text-snippets/db_portal_url.md" %} to register and configure the app before they can use the {{config.extra.arcana.sdk_name}} and enable the {{config.extra.arcana.wallet_name}} for authenticated app users.
+* **Register Web3 Application**: Log into the {{config.extra.arcana.dashboard_name}} {% include "./text-snippets/db_portal_url.md" %} to register and configure the app before they can use the {{config.extra.arcana.web3_react_sdk_name}} and enable the {{config.extra.arcana.wallet_name}} for authenticated app users.
 
 * **Set up Authentication Providers**: Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more [[web3-stack-auth|supported authentication providers]] for onboarding the app users.
 
@@ -28,7 +28,7 @@ In this guide, you will learn how to integrate the {{config.extra.arcana.sdk_nam
 
 ## Steps
 
-*Integrating Web3-React apps with the {{config.extra.arcana.sdk_name}} is simple!*
+*Integrating Web3-React apps with the {{config.extra.arcana.web3_react_sdk_name}} is simple!*
 
 Follow these three steps:
 
@@ -69,8 +69,9 @@ After integrating with a Web3-React app with the {{config.extra.arcana.sdk_name}
 
 ## See also
 
+* [`{{config.extra.arcana.web3_react_sdk_pkg_name}}` README](https://github.com/arcana-network/auth-web3-react/blob/main/readme.md)
+* [Web3-React app Integration Example](https://github.com/arcana-network/auth-web3-react/tree/main/example)
+* [`sample-auth-web3-react` example](https://github.com/arcana-network/auth-examples)
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}
-* [`{{config.extra.arcana.web3_react_sdk_pkg_name}}` README](https://github.com/arcana-network/auth-web3-react/blob/main/readme.md)
-* [Sample Web3-React app](https://github.com/arcana-network/auth-web3-react/tree/main/example)

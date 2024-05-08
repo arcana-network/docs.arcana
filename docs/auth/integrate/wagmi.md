@@ -8,9 +8,13 @@ arcana:
 
 # Integrate Wagmi App
 
-With Wagmi, Web3 developers can allow app users to easily switch between multiple wallets within a single application. Wagmi apps can use the custom Wagmi connector offered by the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] to enable the {{config.extra.arcana.wallet_name}}.
+Web3 apps using Wagmi can allow user onboarding via social login and gasless transactions via the {{config.extra.arcana.wallet_name}} by integrating with the {{config.extra.arcana.wagmi_sdk_name}} and using he custom Wagmi connector.
 
-In this guide, you will learn how to integrate the {{config.extra.arcana.sdk_name}} with Web3 apps that use [Wagmi](https://wagmi.sh) wallet connectors.
+In this guide, you will learn how Web3 apps using [Wagmi](https://wagmi.sh) wallet connectors can integrate with the {{config.extra.arcana.wagmi_sdk_name}}.
+
+!!! an-tip "WalletConnect"
+
+      Apps using [WalletConnect](https://docs.walletconnect.com/) can access {{config.extra.arcana.company_name}} Web3 Provider `AuthProvider` by integrating with the {{config.extra.arcana.wagmi_sdk_name}} and using the `ArcanaConnector`.
 
 ## Prerequisites
 
@@ -80,9 +84,10 @@ See [[index-wagmi-onboard-users|for details.]]
 ## See also
 
 * [Sample Wagmi app integration](https://github.com/arcana-network/auth-wagmi-example)
+* {% include "./text-snippets/wagmi_authsdkref_url.md" %}
+* [`sample-auth-wagmi` example](https://github.com/arcana-network/auth-examples)
+* [`{{config.extra.arcana.wagmi_sdk_pkg_name}}` README](https://github.com/arcana-network/auth-react/blob/main/README.md)
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}
-* {% include "./text-snippets/wagmi_authsdkref_url.md" %}
-* [`{{config.extra.arcana.wagmi_sdk_pkg_name}}` README](https://github.com/arcana-network/auth-react/blob/main/README.md)
 
