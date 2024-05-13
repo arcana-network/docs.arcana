@@ -21,6 +21,7 @@ arcana:
 [[integrate-gasless-app| :material-gas-station-off:{ .icon-color } Gasless App]]{ .md-button }
 [[integrate-solana-app| :simple-bookstack:{ .icon-color } Solana App]]{ .md-button }
 [[integrate-mvx-app| :simple-bookstack:{ .icon-color } MultiversX App]]{ .md-button }
+[[integrate-near-app| :simple-bookstack:{ .icon-color } Near App]]{ .md-button }
 [[integrate-unity-app| :simple-unity:{ .icon-color } Unity App]]{ .md-button }
 
 ## Mobile Apps

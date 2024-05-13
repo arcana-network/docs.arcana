@@ -278,7 +278,8 @@ To pay the Arcana Network dues, developers can refer to the 'Estimated Charges' 
 Use the dashboard to enable [[concept-non-evm-chains|non-EVM chains]] in your Web3 apps. 
 
 * [[solana-dashboard-user-guide|Solana]]
-* [[mvx-dashboard-user-guide|MultiversX ]]
+* [[mvx-dashboard-user-guide|MultiversX]]
+* [[near-dashboard-user-guide|Near]]
 * Other non-EVM chains (*Coming soon!*)
 
 ## Delete Application

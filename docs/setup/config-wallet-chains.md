@@ -10,9 +10,11 @@ arcana:
 
 This guide will show you how to handle the list of chains that your app users can use to sign blockchain transactions.
 
-{{config.extra.arcana.product_name}} works with all EVM-compatible blockchain networks and Solana, a [[concept-non-evm-chains|non-EVM chain]]. A subset of these supported chains, including Solana, is available as the default [[web3-stack-chains|pre-configured list]]. It is visible in the {{config.extra.arcana.dashboard_name}} and governs what chains are available in the {{config.extra.arcana.wallet_name}} UI. Ethereum is selected as the active chain in the list by default.
+{{config.extra.arcana.sdk_name}} works with all EVM-compatible blockchain networks and selected [[concept-non-evm-chains|non-EVM chains]]. 
 
-Developers can update this pre-configured list via the {{config.extra.arcana.dashboard_name}} or programmatically. Authenticated users can add other supported blockchain networks displayed in the {{config.extra.arcana.wallet_name}} UI. User-made changes to the blockchain list only last for the current session; they don't persist after logout. However, any extra chains added by the app developer remain across user logins. 
+Only a subset of all the supported chains is available as the [[web3-stack-chains|pre-configured list]] displayed in the {{config.extra.arcana.dashboard_name}}. Developers can use and tweak this pre-configured list and control which chains are available out of the box in the {{config.extra.arcana.wallet_name}} UI once a user logs into the app integrated with the {{config.extra.arcana.sdk_name}}. Ethereum is selected as the active chain in the list by default. Developers can change the active chain that shows up as the **selected chain** in the wallet UI.
+
+Developers can programmatically add supported chains and issue blockchain transactions in the app seeking the user's approval. Authenticated users can also add any supported blockchain network that is not already displayed in the {{config.extra.arcana.wallet_name}} UI. User-made changes to the wallet chain list are effective only for the current session. However, any additional supported chains added to this pre-configured list by the app developer are always available to the wallet users. 
 
 ## Prerequisites
 
@@ -64,12 +66,13 @@ The following [[concept-non-evm-chains|non-EVM chains]] are supported and displa
 
 * Solana
 * MultiversX
+* Near
 
 The selection of non-EVM or EVM chain types for an app is made at the time of app registration. Only the chains belonging to the selected non-EVM chain type are available in the pre-configured list of chains displayed in the dashboard.
 
-The Testnet is selected as the default chain. Developers can change the default chain to say the 'Dev' network or the Mainnet. 
+The Testnet is selected as the default chain. Developers can change the default chain to say the 'Dev' network or the Mainnet. If the 'EVM' chain type is selected during the app registration, then the developer or wallet user can switch the active app chain from one EVM chain to another at a later point in time. However, the same is not possible across EVM and non-EVM chains or between two non-EVM chain types. 
 
-If the chain type 'EVM' is selected during the app registration, then it is possible to switch the active app chain from one EVM chain to another at a later point in time. However, the same is not possible across EVM and non-EVM chains or between two non-EVM chain types. Once an app is registered for a non-EVM chain, the default active chain can be switched only within that chain type. For example, from Solana to Solana Testnet, or from MultiversX Testnet to MultiversX Devnet.
+Once an app is registered for a non-EVM chain, the default active chain can be switched to one of the networks available for that particular chain type. For example, if Solana is selected as the chain type, then only the following network options are available:  Solana, Solana Testnet, Solana Dev.
 
 ## Solana
 
@@ -89,6 +92,15 @@ See [[solana-dashboard-user-guide|how to set up Solana]] and [[solana-quick-star
 
 See [[mvx-dashboard-user-guide|how to set up MultiversX]] and [[mvx-quick-start|MultiversX Quick Start Guide]] for more details.
 
+## Near
+
+<figure markdown="span">
+  ![Near Pre-configured Chains]({{config.extra.arcana.img_dir}}/an_db_non_evm_near_only_preconfigured_list.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc}
+  <figcaption>Near Pre-configured Chains</figcaption>
+</figure>
+
+See [[near-dashboard-user-guide|how to set up Near]] and [[near-quick-start|Near Quick Start Guide]] for more details.
+
 ## Step 3: Edit Default Active Chain
 
 To switch the default active chain simply select the new chain in the {{config.extra.arcana.dashboard_name}}, click "..." ellipses and select the 'set as default' option. The figure below illustrates Polygon as the default active chain instead of Ethereum.
@@ -100,7 +112,9 @@ To switch the default active chain simply select the new chain in the {{config.e
 
 !!! an-caution "Non-EVM Chains"
 
-      If the chain type selected during app registration is Solana / non-EVM chain, then you will not see any EVM-compatible chains displayed in the dashboard. Developers can edit and choose a different chain as the default active chain, only from the list of displayed Solana chain options.
+      If the chain type selected during app registration is a non-EVM chain type, then you will not see any EVM-compatible chains displayed in the dashboard. 
+      
+      Once a non-EVM chain type is selected, developers can further choose one as the default active chain from amongst the network options displayed in the dashboard for that chain type.
 
 ## Step 4: Add Chain
 
@@ -129,7 +143,7 @@ Once you click **Save**, the newly added chain will be displayed in the dashboar
 
 ### Non-EVM Chains
 
-In the current release, only some selected non-EVM chains, such as [[solana-dashboard-user-guide|Solana]], [[mvx-dashboard-user-guide|MultiversX]] are supported and available in the pre-configured chain list. Other non-EVM chains will be supported in the upcoming releases.
+In the current release, only some selected non-EVM chains, such as [[solana-dashboard-user-guide|Solana]], [[mvx-dashboard-user-guide|MultiversX]], and [[near-dashboard-user-guide|Near]] are supported and available in the pre-configured chain list. Other non-EVM chains will be supported in the upcoming releases.
 
 **Developers cannot arbitrarily add any other non-EVM chains to this pre-configured list of chains, either through the dashboard or programmatically**.
 
@@ -148,4 +162,6 @@ For details refer to the [[web-auth-usage-guide#wallet_addethereumchain|{{config
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * [[solana-dashboard-user-guide| Configure Solana Chains]]
+* [[mvx-dashboard-user-guide| Configure MultiverX Chains]]
+* [[near-dashboard-user-guide| Configure Near Chains]]
 * {% include "./text-snippets/authsdkref_url.md" %}

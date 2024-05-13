@@ -23,7 +23,7 @@ In the 'Manage Apps' dashboard, click *Create New App* wizard to register a new 
 To register a new app, the developer needs to provide the following settings: 
 
 * App name
-* Chain Type: EVM, Solana, MultiversX
+* Chain Type: EVM, Solana, MultiversX, Near
 * Default Blockchain
 * Wallet UI Mode
 

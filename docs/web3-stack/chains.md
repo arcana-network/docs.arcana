@@ -8,13 +8,13 @@ arcana:
   
 # Chains
 
-The {{config.extra.arcana.company_name}} SDKs support EVM as well as non-EVM compatible chains such as Solana. Note that the chains supported for gasless transactions may be limited to a fewer chains to begin with.
+The {{config.extra.arcana.company_name}} SDKs support EVM as well as non-EVM compatible chains. Note that the chains supported for gasless transactions may be limited to a different, smaller set of chains.
 
 ### {{config.extra.arcana.sdk_name}}
 
-The {{config.extra.arcana.sdk_name}} offer a built-in, embedded, non-custodial [{{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) to authenticated app users for signing blockchain transactions. The {{config.extra.arcana.wallet_name}} **supports all EVM-compatible blockchain networks** as well as Solana chains.
+The {{config.extra.arcana.sdk_name}} offer a built-in, embedded, non-custodial [{{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) to authenticated app users for signing blockchain transactions. The {{config.extra.arcana.wallet_name}} **supports all EVM-compatible blockchain networks** as well as select **non-EVM** chains.
 
-By default, a *pre-configured list* of chains is enabled for the {{config.extra.arcana.wallet_name}}. App developers can add additional supported chains to this pre-configured list. Once the user authenticates, only the chains in the pre-configured list are displayed in the {{config.extra.arcana.wallet_name}} UI dropdown. Users can add other supported chains through the wallet UI and switch networks, if required.
+By default, a *pre-configured list* of chains is enabled for the {{config.extra.arcana.wallet_name}}. App developers can add additional supported chains to this pre-configured list. Once the user authenticates, only the chains in the pre-configured list are displayed in the {{config.extra.arcana.wallet_name}} UI dropdown. Users can add other supported chains through the wallet UI and switch networks if required.
 
 {% include "./text-snippets/wallet_supported_networks.md" %}
 

@@ -19,3 +19,5 @@ arcana:
 [[faq-solana| :octicons-link-16:{ .icon-color } Solana]]{ .md-button }
 
 [[faq-mvx| :material-infinity:{ .icon-color } MultiversX]]{ .md-button }
+
+[[faq-near| :simple-near:{ .icon-color } Near]]{ .md-button }

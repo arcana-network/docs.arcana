@@ -16,11 +16,12 @@ Developers can add code that invokes blockchain functions in response to user ac
 
 !!! an-caution 
 
-      Web3 operations supported EVM-compatible blockchains may not be the same as the ones supported by non-EVM chains such as Solana.
+      Web3 operations supported by the EVM-compatible blockchains may not be the same as the ones supported by non-EVM chains such as Solana.
 
 [[index-web3-wallet-ops|:material-wallet:{ .icon-color} EVM: Web3 Wallet Ops]]{ .md-button }
 [[index-solana-web3-wallet-ops| :material-wallet:{ .icon-color}  Solana: Web3 Wallet Ops]]{ .md-button }
 [[mvx-web3-wallet-ops| :material-wallet:{ .icon-color}  MultiversX: Web3 Wallet Ops]]{ .md-button }
+[[near-web3-wallet-ops| :material-wallet:{ .icon-color}  Near: Web3 Wallet Ops]]{ .md-button }
 [[unity-web3-wallet-ops| :material-wallet-outline:{ .icon-color} Unity: Web3 Wallet Ops]]{ .md-button }
 
 !!! an-tip "Built-in Gasless Transactions"
