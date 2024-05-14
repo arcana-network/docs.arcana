@@ -18,6 +18,11 @@ This guide shows how apps using [[concept-custom-oauth|custom OAuth]] for signin
 
 * Make sure you have [[config-custom-oauth|configured the custom OAuth settings]] using the {{config.extra.arcana.dashboard_name}}.
 
+* You will require the following to integrate the app with the SDK:
+
+  - Unique *{{config.extra.arcana.app_address}}* assigned to the app after registration.
+  - *Provider identifier* value displayed in the registered app settings in the dashboard **after configuring and saving** the custom OAuth settings.
+
 ### Step 1: Install `{{config.extra.arcana.auth_sdk_pkg_name}}` package
 
 {% include "./code-snippets/auth_install.md" %}
@@ -51,7 +56,7 @@ After the user logs in successfully via custom OAuth, get the JWT and provide it
            await auth.loginWithCustomProvider({
               token: params.token, //JWT Token
               userID: params.userID,  // Email or ID as configured in the Dashboard settings
-              provider: "provider-id-name", //Custom OAuth Provider identifier
+              provider: "provider-id-name", //Custom OAuth Provider identifier displayed in the Dashboard
             });
 
 ```

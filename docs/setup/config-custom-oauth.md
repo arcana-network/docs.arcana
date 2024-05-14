@@ -14,7 +14,7 @@ This guide shows how to configure {{config.extra.arcana.sdk_name}} for apps usin
 
 * Make sure you can access the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
-* The [[register-app-auth| app must be registered]] using the [[concept-arcana-dashboard| {{config.extra.arcana.dashboard_name}}]].
+* The [[register-app-auth| app must be registered]] using the [[concept-arcana-dashboard| {{config.extra.arcana.dashboard_name}}]]. Make a note of the unique {{config.extra.arcana.app_address}} after registration. It will be required during SDK integration.
 
 ## Step 1: Dashboard Log-in
 
@@ -32,11 +32,21 @@ Log in to the {{config.extra.arcana.dashboard_name}} and click your registered a
 
 See [[concept-custom-oauth|custom OAuth settings]] for details.
 
+## Step3: Get ProviderID
+
+Click **Save** after specifying the custom OAuth settings in the dashboard. Each application intending to utilize custom OAuth is allocated a distinct **provider identifier**, visible within the dashboard interface once the custom OAuth settings are updated. Make a note of the provider identifier.
+
+Both, the {{config.extra.arcana.app_address}} assigned to the app after registration and the provider identifier is required later for [[integrate-custom-oauth|integrating the app using custom OAuth with the {{config.extra.arcana.sdk_name}}]].
+
 **That's all!** :material-party-popper:
 
 ## What's Next?
 
-After configuring the custom OAuth settings via the dashboard, you can install the {{config.extra.arcana.sdk_name}} and integrate your app. Make sure you have already added code for custom OAuth and enabled user login via the custom authentication server. Get a JWT for the authenticated user. During app integration with the {{config.extra.arcana.sdk_name}}, initialize the SDK first and then call `loginWithCustomProvider` with the JWT token as the parameter to fetch user key shares securely. See [[integrate-custom-oauth|how to integrate apps using custom OAuth]] for details.
+After configuring the custom OAuth settings via the dashboard, you can install the {{config.extra.arcana.sdk_name}} and integrate your app.
+
+ Make sure you have already added code for custom OAuth and enabled user login via the custom authentication server. Get a JWT for the authenticated user. 
+ 
+ During app integration with the {{config.extra.arcana.sdk_name}}, initialize the SDK first and then call `loginWithCustomProvider` with the JWT token and the provider identifier as input parameters along with user identifier string. This function will fetch the authenticated user key shares securely. See [[integrate-custom-oauth|how to integrate apps using custom OAuth]] for details.
 
 ## See Also
 
