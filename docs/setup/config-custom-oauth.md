@@ -25,7 +25,7 @@ Log in to the {{config.extra.arcana.dashboard_name}} and click your registered a
 ## Step 2: Configure JWK Settings
 
 * **JWKS Endpoint**: This is a read-only URL exposed by the custom OAuth server or any other server that manages the cryptographic keys or JSON Web Keys (JWK) as per the [IETF RFC7517](https://datatracker.ietf.org/doc/html/rfc7517) standard.
-* **User Identifier String**: Select the type of user identifier that the developer will share while integrating the app with the {{config.extra.arcana.sdk_name}}, as part of input parameters `CustomProviderParams` in the `loginWithCustomProvider()` function call. Choose one of the `sub`, `email` or specify a `custom` string.
+* **User Identifier String**: Select the type of user identifier that the developer will share while integrating the app with the {{config.extra.arcana.sdk_name}}, as part of input parameters `CustomProviderParams` in the `loginWithCustomProvider()` function call. Choose one of the `sub`, `email` or a `custom` string.
 * **JWT Validation (Optional)**: Specify one or more key, value pairs of attributes/claims that can be used to verify the JWT provided as the input parameter `CustomProviderParams` in the `loginWithCustomProvider()` function call. 
 * **Issuer**: A string identifier representing the principal who issued the JWT.
 * **Audience**: A string identifier representing the recipient that the JWT is intended for.
