@@ -42,4 +42,8 @@ We recommend that you use the most recent {{config.extra.arcana.company_name}} S
 
 === "Gasless SDK"
 
+    [[migration-guide-v0.0.36| :material-update:{ .icon-color } Gasless SDK v0.0.36]]{ .md-button }
+
+    [[migration-guide-v0.0.35| :material-update:{ .icon-color } Gasless SDK v0.0.35]]{ .md-button }
+
     [[migration-guide-v0.0.30| :material-update:{ .icon-color } Gasless SDK v0.0.30]]{ .md-button }
