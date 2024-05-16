@@ -64,7 +64,7 @@ With the [[concept-gasless-transactions|gasless transactions]] feature, Web3 app
 
 * Support for newer chains, for example, Near
 * Custom OAuth
-* Rebranding of {{config.extra.arcana.dashboard_name}} UI
+* Re-branding of {{config.extra.arcana.dashboard_name}} UI
 * Other enhancements and bug fixes in {{config.extra.arcana.wallet_name}} UI, DKG, etc.
 
 See [[arcana-coming-soon|coming soon]] section for details.

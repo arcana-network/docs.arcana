@@ -46,7 +46,7 @@ Developers can enable either EVM chains or non-EVM chains in the context of a We
 
 ### EVM Chains
 
-Browse the EVM chains displayed in the pre-configured list of chains in the dashboard. Select the active chain. The chain marked active is displayed as the pre-selected chain in the wallet UI once the user logs in. 
+Browse the EVM chains displayed in the pre-configured list of chains in the dashboard. Select the active chain. The chain marked active is displayed as the preselected chain in the wallet UI once the user logs in. 
 
 <figure markdown="span">
   ![Pre-configured EVM chains]({{config.extra.arcana.img_dir}}/an_db_evm_only_preconfigured_list.gif){ .an-screenshots .width_85pc }

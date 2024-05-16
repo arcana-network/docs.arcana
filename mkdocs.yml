@@ -206,7 +206,7 @@ plugins:
       caption_position: bottom
   - redirects:
         redirect_maps:
-          # Linea docs links
+          # Linea docs backlinks
           'howto/index.md': 'quick-start/index.md'
           'sdk-installation.md': 'auth/sdk-installation.md'
           'web-sdk/auth-usage-guide.md': 'auth/auth-usage-guide.md'
@@ -406,8 +406,8 @@ nav:
       - Alchemy Account Kit: https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html
       - Alchemy Auth Signer: https://accountkit.alchemy.com/signers/guides/arcana-auth.html
       - Caduceus Auth: https://docs.caduceus.foundation/auth
-      - Linea Social Login: https://docs.linea.build/build-on-linea/tooling/social-login/arcana
-      - Linea Account Abstraction: https://docs.linea.build/build-on-linea/tooling/account-abstraction/arcana
+      - Linea Social Login: https://docs.linea.build/developers/tooling/social-login/arcana
+      - Linea Account Abstraction: https://docs.linea.build/developers/tooling/account-abstraction/arcana
       - MultiversX Auth: https://multiversx.com/ecosystem/project/arcana
     - Privacy: legal/PRIVACY.pdf
     - Terms of Use: legal/TERMS.pdf

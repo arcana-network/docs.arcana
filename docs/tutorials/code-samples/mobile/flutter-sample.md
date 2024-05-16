@@ -8,7 +8,7 @@ arcana:
 
 # Flutter Code Sample
 
-Before integrating a Flutter Web3 app with the {{config.extra.arcana.sdk_name}}, address the pre-requisites first. Then install the `{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}` package and integrate the SDK.
+Before integrating a Flutter Web3 app with the {{config.extra.arcana.sdk_name}}, address the prerequisites first. Then install the `{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}` package and integrate the SDK.
 
 ## Prerequisites
 

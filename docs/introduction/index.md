@@ -24,7 +24,7 @@ This documentation contains everything you need to get started using {{config.ex
 
 Our client-side SDKs empower Web3 apps with social login and gasless transaction capabilities.
 
-* **Auth SDK:**  Enables social login and gasless transactions through the in-app, embedded, non-custodia {{config.extra.arcana.wallet_name}}.
+* **Auth SDK:**  Enables social login and gasless transactions through the in-app, embedded, non-custodial {{config.extra.arcana.wallet_name}}.
 * **Gasless SDK:**  Extends the gasless transaction feature to third-party browser-based wallets.
 
 ## Use Model

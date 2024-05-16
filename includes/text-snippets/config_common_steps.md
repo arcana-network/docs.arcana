@@ -1,6 +1,6 @@
 Configuring {{page.meta.arcana.social_provider}} for apps using **global keys** differs from apps using **app-specific keys**.
 
-### Pre-requisites
+### Prerequisites
 
 * Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %} 
 

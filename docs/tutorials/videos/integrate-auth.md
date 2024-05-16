@@ -8,7 +8,7 @@ arcana:
 
 # Integrating App
 
-Web3 developers can [[index-integrate|integrate app with the {{config.extra.arcana.sdk_name}}]] only after the following pre-requisites are met:
+Web3 developers can [[index-integrate|integrate app with the {{config.extra.arcana.sdk_name}}]] only after the following prerequisites are met:
 
 * The app is registered using the {{config.extra.arcana.dashboard_name}} and is assigned a unique {{config.extra.arcana.app_address}}.
 * Developer has configured the user onboarding options via the {{config.extra.arcana.dashboard_name}}. 

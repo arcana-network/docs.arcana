@@ -21,6 +21,7 @@ ABI
 ABIs
 ACL
 ACLs
+ACSS
 ADKG
 ALLOW_REFRESH_TOKEN_AUTH
 ANBlockChainURL
@@ -101,6 +102,7 @@ BSC
 BYOK
 BeaconProxy
 Biconomy
+Biconomy's
 Binance
 Blockchain
 Blockchains
@@ -125,6 +127,7 @@ Config
 ConfigIssuesText
 CoreQuick
 CreateReactApp
+Credshields
 Crypto
 Cryptosystems
 DAO's
@@ -182,6 +185,7 @@ EIP-3326
 EIP-712
 EIP-747
 EIP1559
+EOA
 ERC-1155
 ERC-20
 ERC-2771
@@ -227,6 +231,7 @@ HighwayHash
 IAM
 IBFT
 ID1
+IETF
 IPFS
 ImportAuthSDKText
 InitParams
@@ -235,6 +240,8 @@ IoTeX
 JS
 JSON
 JSON-RPC
+JWK
+JWKS
 JWT
 JavaScriptOriginText
 Jira
@@ -252,6 +259,7 @@ LatestAuthReleaseText
 LatestReleaseText
 LatestReleaseText.avi
 LatestStorageReleaseText
+Linea
 ListenDisconnEventText
 LugaNodes
 MAU
@@ -315,6 +323,8 @@ Pwdless
 PwdlessAuthConfigText
 QoS
 README
+RFC7517
+RFC7519
 RFP
 RHS
 RPC
@@ -341,6 +351,7 @@ SMS
 SSD
 SSL
 SampleIntAppSrcGitHubText
+Sandpack
 Sepolia
 Shamir
 Shamir's
@@ -487,6 +498,7 @@ Web2-like
 Web3
 Web3-React
 Web3-like
+Web3-react
 WebView
 Webpack
 Webview
@@ -496,6 +508,7 @@ Whitepaper
 XAR
 XARs
 ZK-SNARK
+about-auth
 accesscontrol
 accountsChanged
 addselect-a-network
@@ -521,6 +534,7 @@ app_example_submodule
 arcana
 arcana-auth-usage
 arcana-coming-soon
+arcana-gasless-standalone-sdk
 arcana-wallet
 arcana-wallet-user-guide
 arcanaauth
@@ -593,6 +607,7 @@ concept-arcana-smart-contract
 concept-arcana-wallet-overview
 concept-authsdk
 concept-custom-login-ui
+concept-custom-oauth
 concept-custom-wallet-ui
 concept-dkg
 concept-gasless-transactions
@@ -632,6 +647,7 @@ config-auth-google
 config-auth-steam
 config-auth-twitch
 config-auth-twitter
+config-custom-oauth
 config.extra.arcana.date_release_tag
 config3pwallet
 config_cognito
@@ -649,6 +665,7 @@ configs
 configure-auth
 configure-gasless
 configure-keyspace
+configure-standalone-gasless
 configwalletconnect
 configwalletmodes
 crypto
@@ -672,6 +689,7 @@ dataclass
 dataprivacy
 datasovereignty
 datatypes
+db-error-msg
 db_chlog
 de-register
 decrypt
@@ -749,11 +767,13 @@ fontawesome-solid-coins
 fontawesome-solid-desktop
 fontawesome-solid-file-contract
 fontawesome-solid-file-signature
+fontawesome-solid-gear
 fontawesome-solid-gears
 fontawesome-solid-magnifying-glass-dollar
 fontawesome-solid-mobile
 fontawesome-solid-mobile-screen
 fontawesome-solid-money-check-dollar
+fontawesome-solid-note-sticky
 fontawesome-solid-paper-plane
 fontawesome-solid-plug
 fontawesome-solid-puzzle-piece
@@ -767,6 +787,7 @@ format_signmsg
 frictionless
 gRPC
 gasless
+gasless-architecture
 gasless-enabled
 gasless-overview
 gasless-quick-start
@@ -1021,6 +1042,8 @@ index-custom-ui-onboard-users
 index-dev-guides
 index-dev-resources
 index-dkg
+index-err-ms
+index-err-msg
 index-evm-web3-wallet-ops
 index-faq
 index-howto-guides
@@ -1040,8 +1063,10 @@ index-vue-build-social-providers
 index-vue-custom-ui-onboard-users
 index-vue-onboard-users
 index-wagmi-onboard-users
+index-wallet-ux
 index-web-sdk-err
 index-web3-react-onboard-users
+index-web3-stack
 index-web3-wallet-ops
 index_config_auth
 indexintegrate
@@ -1051,6 +1076,7 @@ indexwalletdev
 indexweb3walletops
 init
 instantiation
+integrate-custom-oauth
 integrate-gasless-app
 integrate-mvx-app
 integrate-react-nextjs-app
@@ -1069,6 +1095,8 @@ keccak256
 keyspace
 keystore
 kvsetup
+latest-auth-migration-guide
+latest-gasless-migration-guide
 libp2p
 linkNFT
 localhost
@@ -1119,11 +1147,16 @@ non-Arcana
 non-EVM
 non-evm-chains
 npm
+octicons-book-16
+octicons-browser-16
 octicons-checkbox-16
 octicons-cross-reference-16
 octicons-file-code-16
 octicons-key-24
+octicons-link-16
+octicons-people-16
 octicons-question-16
+octicons-stack-16
 onboard-rainbow-app-custom-ui
 onboard-rainbow-app-pnp-ui
 onboard-validators
@@ -1182,9 +1215,13 @@ reddit
 redirectUri
 redressal
 refetched
+register-app-auth
+register-app-gasless
 registerd
 repo
 revokefile
+rn-latest-auth
+rn-latest-gasless
 rn-main-auth-vOct12-23-gasless
 rn_alpha
 rn_beta
@@ -1211,6 +1248,8 @@ sdk-installation
 sdk_demo
 secp256k1
 secp256r1
+security-adkg
+security-mfa
 sellable
 setupauthsdk
 setuprainbow
@@ -1228,7 +1267,9 @@ signingtx
 signup
 simple-bookstack
 simple-hive_blockchain
+simple-jsonwebtokens
 simple-nextdotjs
+simple-sharex
 simple-xrp
 site-url
 socialauth
@@ -1258,6 +1299,8 @@ tokenID
 toolchains
 trbs
 trustless
+try-now-auth
+try-now-gl
 tus
 twitch-social-auth
 twitchoauth
@@ -1269,6 +1312,8 @@ uitemplates
 ulimit
 un-delegate
 understandingan
+unity-user-onboarding
+unity-web3-wallet-ops
 unstake
 unstaking
 upgradable
@@ -1290,6 +1335,9 @@ userInfo
 usingminter
 usingreactconn
 v0.0.25
+v0.0.30
+v0.0.35
+v0.0.36
 v0.2.x
 v0.3.0
 v1.0
@@ -1303,8 +1351,13 @@ v1.0.6
 v1.0.7
 v1.0.8
 v1.0.9
+v1.x
 v2
 v2.0
+v2.x
+v3
+v3.3
+v4
 vOct12-23-gasless
 validator
 validator_nodes
@@ -1348,12 +1401,23 @@ walletshow
 walletsign
 walletsigntx
 walletui
+walletui-error-msg
 walletuimodes
 walletwatchasset
 web-auth-error-msg
 web-auth-usage-guide
 web-gasless-error-msg
+web-gasless-install
+web-gasless-integrate
+web-gasless-transact
 web3-react-quick-start
+web3-stack-apps
+web3-stack-auth
+web3-stack-browsers
+web3-stack-chains
+web3-stack-protocol
+web3-stack-validators
+web3-stack-wallets
 what-is-arcana-auth
 whatisan
 why-arcana-auth

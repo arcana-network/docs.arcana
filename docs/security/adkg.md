@@ -10,7 +10,7 @@ arcana:
 
 Asynchronous Distributed Key Generation (ADKG) is a building block for any decentralized protocol that allows a set of mutually non-trusting nodes to jointly generate a public/private key pair.
 
-This key pair is used to bootstrap cryptosystems without a trusted third party.
+This key pair is used to bootstrap the cryptography subsystems without a trusted third party.
 
 Arcana Network ADKG implementation is used for non-custodial key pair generation and onboard the SDK users to sign blockchain transactions. It is a simple and effective mechanism that ensures no single node has access to the user’s key ensuring security and robustness. 
 

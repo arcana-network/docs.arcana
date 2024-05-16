@@ -29,7 +29,7 @@ The gasless transaction feature offered by the {{config.extra.arcana.company_nam
 
 ### Gas Tank Owner
 
-A developer who adds the gas tank for an app is **the owner** of that gas tank. As a pre-requisite, the developers must use a MetaMask wallet account or any other browser-enabled wallet account that sets the `windows.enabled` browser variable to set up gas tanks. The wallet account that sets up the gas tank is called **owner account**.
+A developer who adds the gas tank for an app is **the owner** of that gas tank. As a prerequisite, the developers must use a MetaMask wallet account or any other browser-enabled wallet account that sets the `windows.enabled` browser variable to set up gas tanks. The wallet account that sets up the gas tank is called **owner account**.
 
 ### Gas Tank Deposit
 
