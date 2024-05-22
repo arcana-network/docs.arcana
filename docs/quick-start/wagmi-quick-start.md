@@ -5,72 +5,56 @@ description: 'Get Started quickly using these step-by-step instructions for usin
 arcana:
   root_rel_path: ..
   app_type: "'Wagmi'"
-  app_example_submodule: "`sample-auth-wagmi, sample-auth-wagmi-viem`"
+  app_example_submodule: "`sample-auth-wagmi-2`, `sample-auth-wagmi-viem`, `sample-auth-wagmi`"
   social_provider: "'google'"
   custom_login_ui_tag: "onboard-wagmi-app-custom-ui"
 ---
 
 # Quick Start: Wagmi Apps
 
-Web3 apps using the {{page.meta.arcana.app_type}} framework can easily onboard users via social login by integrating with the {{config.extra.arcana.wagmi_sdk_name}}!
+Follow this guide to onboard users in a {{page.meta.arcana.app_type}} app and enable them to quickly sign blockchain transactions using the in-app {{config.extra.arcana.wallet_name}}.
 
 ## Prerequisites
 
-* Wagmi [v1.4.5](https://www.npmjs.com/package/wagmi/v/1.4.5) or higher
-* Wagmi [v2.5.0](https://www.npmjs.com/package/wagmi/v/2.5.0) or higher
-
-!!! an-note "Use latest SDKs"
-  
-      {% include "./text-snippets/warn_latest_sdk_version.md" %}
-
-      {% include "./text-snippets/warn_latest_wagmi_sdk_version.md" %}
-
-<!---
-
-{% include "./text-snippets/watch_auth_github_repo.md" %}
-
-{% include "./text-snippets/watch_wagmi_github_repo.md" %}
-
--->
-
-## 1. Register & Configure
-
 {% include "./text-snippets/quick-start-reg-config-auth.md" %}
 
-## 2. Install SDKs
-
-Install the following SDKs:
-
-* [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth)
-* [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi)
+## 1. Install SDKs
 
 {% include "./code-snippets/auth_wagmi_install.md" %}
 
-!!! an-note "Viem, Wagmi v2.0 or above"
+!!! an-caution "Wagmi Compatibility"
 
-      Apps using Viem, Wagmi v2.0 or higher must use the latest {{config.extra.arcana.wagmi_sdk_name}} v2.x.
+      You need to install both `{{config.extra.arcana.auth_sdk_pkg_name}}` and `{{config.extra.arcana.wagmi_sdk_pkg_name}}` packages. Note the version compatibility:
 
-## 3. Integrate
+      * For wagmi < 1.0.0 use @arcana/auth-wagmi@1.y.z
+      * For wagmi >= 1.0.0, use @arcana/auth-wagmi@2.y.z
+      * For wagmi >= 2.0.0, use @arcana/auth-wagmi@3.y.z
+
+## 2. Integrate
 
 {% include "./code-snippets/import_auth.md" %}
 
-Create a new `AuthProvider` instance. Specify the unique **{{config.extra.arcana.app_address}}** assigned to the app after registration.
+Copy **{{config.extra.arcana.app_address}}** of the format `xar_abc_alphanumeric` from the app dashboard settings and create a new `AuthProvider`.
 
 {% include "./code-snippets/auth_wagmi_configure_pnp.md" %}
 
 {% include "./text-snippets/quick-start-authprovider-optional.md" %}
 
-Next, import the `ArcanaConnector` from the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package. Create a new instance of [`ArcanaConnector`](https://wagmi-authsdk-ref-guide.netlify.app/classes/arcanaconnector#constructor) and specify the `AuthProvider` instantiated earlier.
+Next, use the `AuthProvider` to create a new `ArcanaConnector` instance from the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package.
 
 {% include "./code-snippets/auth_wagmi_create_client_pnp.md" %}
 
 ### Onboard Users
 
-To use the built-in [onboard-wagmi-app-pnp-ui|plug-and-play login UI], for onboarding users quickly, set up the Wagmi connector through the `ArcanaConnector`. Use `createClient` or `createConfig`, depending upon whether you are using Wagmi version v1.x or v2.x. Refer to the appropriate sample code in the tabs below.
+To [[onboard-wagmi-app-pnp-ui|onboard users]] via the built-in plug-and-play login UI, use the `ArcanaConnector` to set up the Wagmi. Choose one of the `createClient` or `createConfig` Wagmi methods, depending upon whether you are using the Wagmi version prior to v1.0.0 or post v2.x.y. 
+
+!!! an-tip "`createClient` vs. `createConfig` usage"
+
+      See [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
 
 {% include "./code-snippets/auth_wagmi_create_client_pnp.md" %}
 
-Use `WagmiConfig` component to bring up the built-in login UI with configured providers for social login.
+Initialize `WagmiConfig` component to bring up the built-in login UI with configured providers for social login.
 
 {% include "./code-snippets/auth_wagmi_use_app.md" %}
 
@@ -84,8 +68,6 @@ Use `WagmiConfig` component to bring up the built-in login UI with configured pr
 
 {% include "./text-snippets/quick-start-sign-transactions.md" %}
 
-## 4. Deploy
-
 {% include "./text-snippets/quick-start-deploy.md" %}
 
 {==
@@ -94,13 +76,8 @@ Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.s
 
 ==}
 
-!!! an-tip "`createClient` vs. `creatConfig` usage"
-
-      See [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
-
 ## See Also
 
 {% include "./text-snippets/quick-start-see-also.md" %}
-
 {% include "./text-snippets/auth_sdk_quicklinks.md" %}
 {% include "./text-snippets/auth_wagmi_sdk_quicklinks.md" %}
