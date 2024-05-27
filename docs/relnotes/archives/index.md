@@ -10,7 +10,7 @@ arcana:
 
 === "Auth SDK"
 
-    [[rn-main-auth-v{{config.extra.arcana.product_release_tag}}| :material-note-text:{ .icon-color } {{config.extra.arcana.product_name}}  v{{config.extra.arcana.product_release_tag}} Release]]{ .md-button }
+    [[rn-main-auth-May27-24| :material-note-text:{ .icon-color } Release May 27th, 2024]]{ .md-button }
 
     [[rn-main-auth-v1.0.10| :material-note-text:{ .icon-color } Auth v1.0.10]]{ .md-button }
 

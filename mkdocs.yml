@@ -102,20 +102,20 @@ extra:
     dashboard_name: Arcana Developer Dashboard
     wallet_name: Arcana wallet
     app_address: Client ID
-    product_release_tag: !ENV [PRODUCT_RELEASE_TAG,'1.0.11']
-    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.10']
+    product_release_tag: !ENV [PRODUCT_RELEASE_TAG,'1.0.10']
+    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.9']
     previous_version_dashboard: !ENV [PREVIOUS_DASHBOARD_VERSION, '1.0.6']
-    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.11']
+    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.10']
     latest_version_dashboard: !ENV [DASHBOARD_VERSION, '1.0.9']
     latest_version_wallet_ui: !ENV [WALLET_UI_VERSION, '1.0.9']
     latest_auth_react_sdk_version: !ENV [AUTH_REACT_SDK_VERSION, '0.0.3']
     latest_auth_web3_react_sdk_version: !ENV [AUTH_WEB3_REACT_SDK_VERSION, '0.0.1']
-    latest_auth_wagmi_sdk_version: !ENV [AUTH_WAGMI_SDK_VERSION, '2.0.0']
+    latest_auth_wagmi_sdk_version: !ENV [AUTH_WAGMI_SDK_VERSION, '3.0.0']
     latest_auth_flutter_sdk_version: !ENV [AUTH_FLUTTER_SDK_VERSION, '0.0.6']
     latest_auth_react_native_sdk_version: !ENV [AUTH_REACT_NATIVE_SDK_VERSION, '0.0.4']
     latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_SDK_VERSION, '1.1.0']
     latest_auth_core_sdk_version: !ENV [AUTH_CORE_SDK_VERSION,'2.0.0-alpha.3']
-    latest_gasless_sdk_version: !ENV [GASLESS_SDK_VERSION, '0.0.36']
+    latest_gasless_sdk_version: !ENV [GASLESS_SDK_VERSION, '0.0.35']
     auth_sdk_pkg_name: auth
     auth_core_sdk_pkg_name: auth-core
     gasless_sdk_pkg_name: scw
@@ -353,6 +353,12 @@ validation:
     absolute_links: ignore
     unrecognized_links: info
 
+not_in_nav: |
+   migration/main-auth-v1.0.11-migration.md 
+   migration/main-scw-v0.0.36-migration.md
+   relnotes/rn-main-auth-v1.0.11.md
+   relnotes/rn-main-scw-v0.0.36.md
+
 nav:
   - Products:
     - index.md
@@ -577,6 +583,7 @@ nav:
     - guides/index.md
     - Developers:
       - guides/dev/index.md
+      - Latest Updates: relnotes/rn-main-auth-May27-24.md 
       - Auth Release Notes: relnotes/latest-auth-release-note.md
       - Gasless Release Notes: relnotes/latest-gasless-release-note.md
       - Dashboard User Guide: setup/config-dApp-with-db.md
@@ -607,8 +614,8 @@ nav:
       - Troubleshooting: troubleshooting.md
       - Release Note Archives: 
         - relnotes/archives/index.md
-        - Gasless 0.0.36: relnotes/rn-main-scw-v0.0.36.md
-        - Auth 1.0.11 : relnotes/rn-main-auth-v1.0.11.md
+        #- Gasless 0.0.36: relnotes/rn-main-scw-v0.0.36.md
+        #- Auth 1.0.11 : relnotes/rn-main-auth-v1.0.11.md
         - Gasless 0.0.35: relnotes/rn-main-scw-v0.0.35.md
         - Auth 1.0.10 : relnotes/rn-main-auth-v1.0.10.md
         - Gasless 0.0.30: relnotes/rn-main-scw-v0.0.30.md
@@ -628,8 +635,8 @@ nav:
         - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
       - Migration Archives: 
         - migration/archives/index.md
-        - Gasless v0.0.35 -> v0.0.36: migration/main-scw-v0.0.36-migration.md
-        - Auth v1.0.10 -> v1.0.11: migration/main-auth-v1.0.11-migration.md
+        #- Gasless v0.0.35 -> v0.0.36: migration/main-scw-v0.0.36-migration.md
+        #- Auth v1.0.10 -> v1.0.11: migration/main-auth-v1.0.11-migration.md
         - v0.0.30 -> v0.0.35: migration/main-scw-v0.0.35-migration.md
         - Auth v1.0.9 -> v1.0.10: migration/main-auth-v1.0.10-migration.md
         - v0.0.25 -> v0.0.30: migration/main-scw-v0.0.30-migration.md

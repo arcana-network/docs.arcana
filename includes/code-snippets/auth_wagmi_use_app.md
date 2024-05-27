@@ -1,4 +1,4 @@
-=== "`auth-wagmi` v3.0.0"
+=== "`auth-wagmi` >= v3.0.0"
 
     ```js title="auth-examples/sample-auth-wagmi-2/src/main.tsx" hl_lines="21-25"
     //
@@ -30,7 +30,7 @@
     )
     ```
 
-=== "`auth-wagmi` v2.0.0"
+=== "`auth-wagmi` >= v2.0.0"
 
     ```js title="auth-examples/sample-auth-wagmi-viem/app.js" hl_lines="6 8"
     //
@@ -45,7 +45,7 @@
     }
     ```
     
-=== "`auth-wagmi` v 1.0.0"
+=== "`auth-wagmi` >= v1.0.0"
 
     ```js title="auth-examples/sample-auth-wagmi/pages/_app.tsx" hl_lines="6 8"
     //

@@ -62,11 +62,13 @@ Next, provide the newly instantiated and configured `ArcanaConnector` to set up 
 
 {% include "./code-snippets/auth_wagmi_create_client.md" %}
 
-!!! an-tip "Wagmi `createClient` and `configClient`"
+!!! an-tip "`WagmiProvider`/`WagmiConfig`, `createClient`/`configClient`"
 
-      For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
+      `createClient`, `configClient`, `WagmiConfig` were part of older Wagmi libraries. 
+      
+      For details, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
 
-Use the `WagmiConfig` component in the `_app.js` file.
+Now you can use the `WagmiProvider`/`WagmiConfig` component in the `_app.js` file as per the Wagmi library version used.
 
 {% include "./code-snippets/auth_wagmi_use_app.md" %}
 

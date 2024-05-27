@@ -8,8 +8,10 @@ arcana:
 
 # Changelog
 
-[ :material-plus-minus-box:{ .icon-color }  Auth SDK Changelog](https://github.com/arcana-network/auth/releases/tag/v{{config.extra.arcana.latest_version}}){ .md-button }
+[ :material-plus-minus-box:{ .icon-color } `{{config.extra.arcana.auth_sdk_pkg_name}}`](https://github.com/arcana-network/auth/releases/tag/v{{config.extra.arcana.latest_version}}){ .md-button }
 
-[ :material-monitor-shimmer:{ .icon-color }  Dashboard Changelog](https://github.com/arcana-network/developer-dashboard/releases/tag/v{{config.extra.arcana.latest_version_dashboard}}){ .md-button }
+[ :material-plus-minus-box:{ .icon-color } `{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://github.com/arcana-network/auth-wagmi/releases/tag/v{{config.extra.arcana.latest_auth_wagmi_sdk_version}}){ .md-button }
 
-[ :material-wallet-plus-outline:{ .icon-color }  Wallet UI Changelog](https://github.com/arcana-network/wallet-ui/releases/tag/{{config.extra.arcana.latest_version_wallet_ui}}){ .md-button }
+[ :material-monitor-shimmer:{ .icon-color } Dashboard](https://github.com/arcana-network/developer-dashboard/releases/tag/v{{config.extra.arcana.latest_version_dashboard}}){ .md-button }
+
+[ :material-wallet-plus-outline:{ .icon-color } Wallet UI](https://github.com/arcana-network/wallet-ui/releases/tag/{{config.extra.arcana.latest_version_wallet_ui}}){ .md-button }

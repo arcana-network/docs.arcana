@@ -1,6 +1,6 @@
 {==
 
-**Release Date: May 16, 2024**  
+**Release Date: May 27, 2024**  
 
 Version: **{{config.extra.arcana.latest_version}}**
 
@@ -31,17 +31,21 @@ In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{confi
 
 ---
  
-* Support for [[concept-custom-oauth|custom OAuth]]. See [[config-custom-oauth|how to configure custom OAuth settings in the {{config.extra.arcana.dashboard_name}}]] and [[integrate-custom-oauth|how to integrate an app that uses a custom authentication server]] but requires assigning keys to authenticated users for signing blockchain transactions.
+* No change to the {{config.extra.arcana.sdk_name}}. See [[rn-main-auth-v1.0.10| previous Release notes]] for details.
 
-* New **off-ramping** feature in the {{config.extra.arcana.wallet_name}} allows users to sell crypto or convert blockchain assets to Fiat via selected supported off-ramping providers. See [[dashboard-user-guide#buysell-crypto|how to buy/sell crypto through Fiat]] for details.
+* New updated [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) now supports the latest Wagmi 2.x.y SDK.
 
-* Minor enhancements and bug fixes in {{config.extra.arcana.gasless_sdk_name}}. See [[index-changelog|changelog]].
+* New **off-ramping** feature in the {{config.extra.arcana.wallet_name}} allows users to sell crypto or convert blockchain assets to Fiat via selected supported off-ramping providers. See [[arcana-wallet-user-guide#buysell-crypto|how to buy/sell crypto through Fiat]] for details.
 
 ## What has changed?
 
 ---
 
-There are **no usage changes** in this release. To migrate to the latest release, re-install and upgrade to the latest SDKs.
+There are **no usage changes** in this release for the {{config.extra.arcana.sdk_name}}. 
+
+To use the latest {{config.extra.arcana.wallet_name}} off-ramp feature, users can simply refresh the wallet or re-login to the app. 
+
+Apps using the Wagmi SDK need to migrate to the latest {{config.extra.arcana.wagmi_sdk_name}} release. Simply re-install and upgrade the [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) package and update the integration code to use the new config settings for the `WagmiProvider`. See [[wagmi-quick-start|Wagmi Quick Start Guide]] for details.
 
 ## Get Started
 
@@ -55,9 +59,10 @@ There are **no usage changes** in this release. To migrate to the latest release
 
 Check out:
 
-* [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guides]]
+* [[wagmi-quick-start|{{config.extra.arcana.product_name}} Quick Start Guides]]
 * {% include "./text-snippets/unity_sample_url.md" %} 
-* [Integration examples](https://github.com/arcana-network/auth-examples)
+* [`sample-auth-wagmi-2` integration example](https://github.com/arcana-network/auth-examples)
+* [Other integration examples](https://github.com/arcana-network/auth-examples)
 
 ## Previous Releases
 
@@ -69,4 +74,4 @@ Refer to the [[index-release-notes| release notes archive]] and [[index-migratio
 
 ---
 
-Refer to the [[faq-gen| Arcana Auth FAQ]], [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources, or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support/index.md).
+See [[faq-gen| Arcana Auth FAQ]], [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources, or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support/index.md).

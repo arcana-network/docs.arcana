@@ -48,9 +48,11 @@ Next, use the `AuthProvider` to create a new `ArcanaConnector` instance from the
 
 To [[onboard-wagmi-app-pnp-ui|onboard users]] via the built-in plug-and-play login UI, use the `ArcanaConnector` to set up the Wagmi. Choose one of the `createClient` or `createConfig` Wagmi methods, depending upon whether you are using the Wagmi version prior to v1.0.0 or post v2.x.y. 
 
-!!! an-tip "`createClient` vs. `createConfig` usage"
+!!! an-tip "`WagmiProvider`/`WagmiConfig`, `createClient`/`configClient`"
 
-      See [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
+      `createClient`, `configClient`, `WagmiConfig` were part of older Wagmi libraries. 
+      
+      For details, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
 
 {% include "./code-snippets/auth_wagmi_create_client_pnp.md" %}
 

@@ -12,8 +12,6 @@ We recommend that you use the most recent {{config.extra.arcana.company_name}} S
 
 === "Auth SDK"
 
-    [[migration-guide-v1.0.11| :material-update:{ .icon-color } Auth SDK v1.0.10 -> v1.0.11]]{ .md-button }
-
     [[migration-guide-v1.0.10| :material-update:{ .icon-color } Auth SDK v1.0.9 -> v1.0.10]]{ .md-button }
 
     [[migration-guide-v1.0.9| :material-update:{ .icon-color } Auth SDK vOct12-23-gasless -> v1.0.9]]{ .md-button }

@@ -10,7 +10,7 @@ arcana:
 
 {==
 
-**Release Date: March 28, 2024**  
+**Release Date: May 16, 2024**  
 
 Gasless SDK Version: **v0.0.36**
 
@@ -24,7 +24,7 @@ Use the [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.networ
 
 ---
 
-This release of {{config.extra.arcana.gasless_sdk_name}} uses the latest version of third-party gasless provider ([Biconomy v4](https://docs.biconomy.io)).  
+This release of {{config.extra.arcana.gasless_sdk_name}} has some minor enhancements and bug fixes related to capping overall gas fee sponsorship per user. It uses the latest version of third-party gasless provider ([Biconomy v4](https://docs.biconomy.io)).  
 
 ## What has changed?
 

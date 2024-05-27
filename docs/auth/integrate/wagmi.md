@@ -54,21 +54,23 @@ Next, provide the newly instantiated and configured `ArcanaConnector` to set up 
 
 {% include "./code-snippets/auth_wagmi_create_client.md" %}
 
-!!! an-tip "Wagmi `createClient` and `configClient`"
+!!! an-tip "`WagmiProvider`/`WagmiConfig`, `createClient`/`configClient`"
 
-      For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
+      `createClient`, `configClient`, `WagmiConfig` were part of older Wagmi libraries. 
+      
+      For details, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
 
-Now specify the requisite Wagmi constituents to `WagmiConfig` component:
+Now specify the requisite Wagmi constituents to `WagmiProvider`/`WagmiConfig` component as per the Wagmi library version used:
 
 {% include "./code-snippets/auth_wagmi_use_app.md" %}
 
 That is all! :material-party-popper:
 
-The Web3 app is successfully integrated with the {{config.extra.arcana.sdk_name}}. Refer to the [Auth Examples](https://github.com/arcana-network/auth-examples) for working integration examples.
+The Web3 app is successfully integrated with the {{config.extra.arcana.sdk_name}}. 
 
 !!! an-tip "Example: Sample Wagmi App"
 
-      See [sample Wagmi app](https://github.com/arcana-network/auth-wagmi-example) for details.
+      See latest auth example code: [`sample-auth-wagmi-2`](https://github.com/arcana-network/auth-examples) for details.
 
 ## What's Next?
 

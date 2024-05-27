@@ -14,9 +14,9 @@ arcana:
 
 [:material-file-document-check:{ .icon-color } Caduceus Auth](https://docs.caduceus.foundation/auth){ .md-button }
 
-[:material-file-document-check:{ .icon-color } Linea Social Login]( https://docs.linea.build/build-on-linea/tooling/social-login/arcana){ .md-button }
+[:material-file-document-check:{ .icon-color } Linea Social Login](https://docs.linea.build/developers/tooling/social-login/arcana){ .md-button }
 
-[:material-file-document-check:{ .icon-color } Linea Account Abstraction](https://docs.linea.build/build-on-linea/tooling/account-abstraction/arcana){ .md-button }
+[:material-file-document-check:{ .icon-color } Linea Account Abstraction](https://docs.linea.build/developers/tooling/account-abstraction/arcana){ .md-button }
 
 [:fontawesome-solid-infinity:{ .icon-color } MultiversX Auth](hhttps://multiversx.com/ecosystem/project/arcana){ .md-button }
 
