@@ -73,7 +73,7 @@ To take out money, click the 'ellipsis' and pick *Withdraw* from the menu. Enter
 
 <figure markdown="span">
   <img src="{{config.extra.arcana.img_dir}}/an_gl_db_withdraw.gif" alt="withdraw from Gas Tank" class="an-screenshots width_85pc"/>
-  <figcaption>Add Gas Tank</figcaption>
+  <figcaption>Withdraw Funds</figcaption>
 </figure>
 
 ### Step 3. Whitelist Gasless Operations
@@ -86,19 +86,19 @@ To whitelist one or more app functions, choose **Manage Whitelist** and specify 
 On the right-hand side, you'll find a list of functions. Use the radio buttons to select the ones that are eligible for gasless transactions. Only these functions will enable gasless operations when users perform blockchain transactions related to them.
 
 <figure markdown="span">
-  <img src="{{config.extra.arcana.img_dir}}/an_gl_db_whitelist.gif" alt="Withdraw from Gas Tank" class="an-screenshots width_85pc"/>
-  <figcaption>Withdraw from Gas Tank</figcaption>
+  <img src="{{config.extra.arcana.img_dir}}/an_gl_db_whitelist.gif" alt="Whitelist Operations" class="an-screenshots width_85pc"/>
+  <figcaption>Whitelist Operations</figcaption>
 </figure>
 
-### Optional: Pause/Resume Gas Tank
+### Optional: Enable/Disable Smart Accounts
 
-Developers can choose to pause and resume gas tank operations in the app config settings. When paused, users pay gas fees for whitelisted app operations.
+Developers can choose to enable/disable smart accounts. When the smart accounts are disabled, all transactions happen via the EoA account. What this means is that the gas tank is paused when smart accounts are disabled. 
 
-Use the **Enable Smart Account** toggle to pause and resume a configured gas tank.
-
+When smart accounts are disabled, users pay gas fees for whitelisted app operations. They can access both EoA as well as the smart account.
+ 
 <figure markdown="span">
-  <img src="{{config.extra.arcana.img_dir}}/an_gl_gas_tank_pause.{{config.extra.arcana.img_png}}" alt="Pause/Resume Gas Tanks" class="an-screenshots width_85pc"/>
-  <figcaption>Pause/Resume Gas Tanks</figcaption>
+  <img src="{{config.extra.arcana.img_dir}}/an_gl_gas_tank_pause.{{config.extra.arcana.img_gif}}" alt="Pause/Resume Gas Tanks" class="an-screenshots width_85pc"/>
+  <figcaption>Enable/Disable Smart Accounts</figcaption>
 </figure>
 
 That is all! 🎉
