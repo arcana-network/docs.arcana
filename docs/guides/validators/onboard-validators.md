@@ -194,7 +194,7 @@ Before you start the validator node, make sure you have completed all the prereq
 
 !!! an-caution "Restart"
 
-      If this is not the first time you are starting the node, please make sure that you perform a clean re-start. Refer to the section [Re-starting the Node](#re-starting-the-node) to see how to perform a clean restart.
+      If this is not the first time you are starting the node, please make sure that you perform a clean re-start. Refer to the 'Stop/Restart' section below to see how to perform a clean restart.
 
 **Option1: Use Configuration File**
 
@@ -222,11 +222,11 @@ dkg start --secret-config=/path/to/secret/config --data-dir=/path/to/data --doma
 
 `--secret-config`
 
-The path to secret configuration. See ['Initiate Validator Secrets section'](#initiate-validator-secrets) for details.
+The path to secret configuration. See 'Validator Secrets section' for details.
 
 `--data-dir`
 
-The data directory where all the node specific and shared data will be stored, this data will have to be backed up regularly by the nodes to maintain some redundancy.
+The data directory where all the node-specific and shared data will be stored, this data will have to be backed up regularly by the nodes to maintain some redundancy.
 
 !!! an-caution "Keep your data directory strictly private!"
 
@@ -295,11 +295,11 @@ If you want to migrate the validator node to another server (for backup or tempo
 
 **Case 1: Migrating to a Node with same Domain and IP Address**
 
-Follow the steps listed under [starting a validator node](#validator-node-setup) section except the instructions in step 2b to bring up a new validator node. The new node can simply be started and join in the ADKG protocol, other nodes are not required to be restarted.
+Follow the steps listed under [starting a validator node](#node-setup) section except the instructions in step 2b to bring up a new validator node. The new node can simply be started and join in the ADKG protocol, other nodes are not required to be restarted.
 
 **Case 2: Migrating to a Node with same Domain and different IP Address**
 
-You need to notify the Arcana team as this may require coordinating with other validator node operators.  Follow the steps listed under [starting a validator node](#validator-node-setup) section except the instructions in step 2b to bring up a new validator node. Before starting up the node, wait for all the other nodes in the ADKG subsystem to restart in a synchronized manner. In this case, all validator nodes have to restart together.
+You need to notify the Arcana team as this may require coordinating with other validator node operators.  Follow the steps listed under [starting a validator node](#node-setup) section except the instructions in step 2b to bring up a new validator node. Before starting up the node, wait for all the other nodes in the ADKG subsystem to restart in a synchronized manner. In this case, all validator nodes have to restart together.
 
 **Case 3: Migrating to a Node with different IP Address and Domain**
 

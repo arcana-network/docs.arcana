@@ -23,7 +23,7 @@ of the file in the `auth` repo: https://github.com/arcana-network/auth/blob/main
 4. [Usage](#usage)
     - [AuthProvider](#authprovider)
     - [Auth APIs](#auth-apis)
-    - [Web3 Wallet Operations](#web3-wallet-operations)
+    - [Web3 Wallet Operations](#arcana-wallet-operations)
 
 ---
 
