@@ -18,5 +18,5 @@ arcana:
 
 [:material-file-document-check:{ .icon-color } Linea Account Abstraction](https://docs.linea.build/developers/tooling/account-abstraction/arcana){ .md-button }
 
-[:fontawesome-solid-infinity:{ .icon-color } MultiversX Auth](hhttps://multiversx.com/ecosystem/project/arcana){ .md-button }
+[:fontawesome-solid-infinity:{ .icon-color } MultiversX Auth](https://multiversx.com/ecosystem/project/arcana){ .md-button }
 

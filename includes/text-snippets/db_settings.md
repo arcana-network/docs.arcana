@@ -42,6 +42,11 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
            
           The Redirect URI  field in the **Social Auth** section of the dashboard lists an auto-generated URL. This URL value is used as input when configuring the social login providers.
 
+    <figure markdown="span">
+      <img alt="Social Auth" class="an-screenshots width_85pc" src="{{config.extra.arcana.img_dir}}/an_db_configure_social.{{config.extra.arcana.img_png}}"/>
+      <figcaption>Social Auth Settings</figcaption>
+    </figure>         
+
 === "Chain Management"
 
     The **Chain Management** settings control which chains will be displayed as the default active chain in the wallet from the list of pre-configured chains available out of the box for apps that integrate with the {{config.extra.arcana.sdk_name}}.

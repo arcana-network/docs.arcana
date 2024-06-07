@@ -20,7 +20,7 @@ The figure below shows the built-in login UI plug-and-play pop-up authentication
       You can choose to [[concept-plug-and-play-auth#compact-plug-play-ui|use a **compact** form of the built-in login UI modal]] instead of the regular one.
 
       <figure markdown="span">
-        <img src="{{config.extra.arcana.img_dir}}/relnote_1.0.8_compact_login.{{config.extra.arcana.img_png}}" alt="Login UI Options" class="an-screenshots"/>
+        <img src="{{config.extra.arcana.img_dir}}/relnote_1.0.8_compact_login.{{config.extra.arcana.img_png}}" alt="Login UI Options" class="an-screenshots width_50pc"/>
         <figcaption>Login UI Options</figcaption>
       </figure>
 

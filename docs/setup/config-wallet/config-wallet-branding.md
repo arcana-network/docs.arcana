@@ -25,7 +25,7 @@ By default, the {{config.extra.arcana.wallet_name}} displays this logo <img src=
 Log in to the {{config.extra.arcana.dashboard_name}} and click your registered app entry from the 'Manage Apps' screen. Click **Configure** in the LHS navigation area. Select **Chain Management** to configure the default subset of supported chains.
 
 <figure markdown="span">
-  ![Dashboard: Manage Chains]({{config.extra.arcana.img_dir}}/an_db_chains_mngt_nav.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![Dashboard: Manage Chains]({{config.extra.arcana.img_dir}}/an_db_chains_mngt_nav.{{config.extra.arcana.img_gif}}){ .an-screenshots .width_85pc }
   <figcaption>Dashboard: Manage Chains</figcaption>
 </figure>
 

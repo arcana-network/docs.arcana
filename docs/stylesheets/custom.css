@@ -16,7 +16,7 @@
      --md-an-cyan-color: #25BAEF;
      --md-an-black-color: #1D2A31;
      --md-an-gray-color-light: #ECECEC;
-     --md-an-gray-color-lighter: #F7F7F7;
+     --md-an-gray-color-lighter: #ece6e81c;
      --md-an-img-bg: var(--md-an-gray-color-lighter);
      --md-primary-fg-color: #242424;
      --md-primary-fg-color--dark: #9a9a9a;
@@ -257,7 +257,40 @@ button.sp-icon-standalone, button.sp-icon{
   display: none;
 }
 
-/* Admonition: Common styling */
+/* Admonition Summary: Common styling */
+.md-typeset .an-note > .admonition-title {
+  border-bottom: 2px solid var(--md-an-blue-color);
+}
+
+.md-typeset .an-info > .admonition-title {
+  border-bottom: 2px solid var(--md-an-cyan-color);
+}
+
+.md-typeset .an-tip > .admonition-title {
+  border-bottom: 2px solid var(--md-an-green-color);
+}
+
+.md-typeset .an-caution > .admonition-title {
+  border-bottom: 2px solid var(--md-an-yellow-color);
+}
+
+.md-typeset .an-warning > .admonition-title {
+  border-bottom: 2px solid var(--md-an-orange-color);
+}
+
+.md-typeset .an-danger > .admonition-title {
+  border-bottom: 2px solid var(--md-an-red-color);
+}
+
+.md-typeset .an-example > .admonition-title {
+  border-bottom: 2px solid var(--md-an-purple-color);
+}
+
+.md-typeset .an-abstract > .admonition-title {
+  border-bottom: 2px solid var(--md-an-black-color);
+}
+
+/* Admonition Details: Common styling */
 
 .md-typeset .admonition.an-note,
 .md-typeset details.an-note,
@@ -275,10 +308,21 @@ button.sp-icon-standalone, button.sp-icon{
 .md-typeset details.an-caution,
 .md-typeset .admonition.an-danger,
 .md-typeset details.an-danger {
-  border-color: var(--md-an-pink-color);
+  /*border-color: var(--md-an-pink-color);*/
+  border-color: var(--md-default-bg-color);
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
+
+.md-typeset .admonition,
+.md-typeset details  {
+    border-radius: 5px;
+    border-width: 0rem;
+    border-left-width: 0.2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 3rem;
+} 
 
 /* Admonition: Note */
 
@@ -399,15 +443,6 @@ button.sp-icon-standalone, button.sp-icon{
   -webkit-mask-image: var(--md-admonition-icon--an-abstract);
           mask-image: var(--md-admonition-icon--an-abstract);
 }
-
-.md-typeset .admonition,
-.md-typeset details  {
-    border-radius: 5px;
-    border-width: 0rem;
-    border-left-width: 0.2rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-} 
 
 .md-typeset .admonition.an-faq,
   .md-typeset details.an-faq {

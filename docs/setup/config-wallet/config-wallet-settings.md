@@ -20,31 +20,27 @@ In this guide, you will learn how to specify the {{config.extra.arcana.wallet_na
 
 ## Step 1: Dashboard Log-in
 
-Log in to the {{config.extra.arcana.dashboard_name}} and click your registered app entry from the 'Manage Apps' screen. Click **Configure** in the LHS navigation area. Select **Arcana Wallet** to configure the wallet settings.
+Log in to the {{config.extra.arcana.dashboard_name}} and click your registered app entry from the 'Manage Apps' screen. 
 
 <figure markdown="span">
   ![Dashboard: Select Wallet UI]({{config.extra.arcana.img_dir}}/an_db_wallet_mngt_nav.gif){ .an-screenshots .width_85pc }
   <figcaption>Dashboard: Select Wallet UI</figcaption>
 </figure>
 
-The chain configuration UI is displayed:
+## Step 2: Configure Wallet
+
+Click **Configure** in the LHS navigation area. Select **Arcana Wallet** to configure the wallet settings.
+
+!!! an-note "Wallet Settings are Optional"
+
+      You can choose to use the default, built-in {{config.extra.arcana.wallet_name}} settings and continue to integrate your app with the {{config.extra.arcana.sdk_name}}.
 
 <figure markdown="span">
   ![Wallet UI Settings]({{config.extra.arcana.img_dir}}/an_db_wallet_mngt_options.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
   <figcaption>Wallet UI Settings</figcaption>
 </figure>
 
-## Step 2: Configure Wallet
-
-Select the registered app from the *Manage Apps** dashboard screen for which you wish to tweak the branding. Double-click the app and you will see the app dashboard. Click *Configure* in the LHS navigation menu.
-
-You will see **Arcana Wallet** as one of the configuration options. Click the same and you will see the following settings:
-
 {% include "./text-snippets/db_wallet_settings.md" %}
-
-!!! an-note "Wallet Settings are Optional"
-
-      You can choose to use the default, built-in {{config.extra.arcana.wallet_name}} settings and continue to integrate your app with the {{config.extra.arcana.sdk_name}}.
 
 **That's all!** :material-party-popper:
 

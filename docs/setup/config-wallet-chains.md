@@ -29,7 +29,7 @@ Developers can programmatically add supported chains and issue blockchain transa
 Log in to the {{config.extra.arcana.dashboard_name}} and click your registered app entry from the 'Manage Apps' screen. Click **Configure** in the LHS navigation area. Select **Chain Management** to configure the default subset of supported chains.
 
 <figure markdown="span">
-  ![Dashboard: Chain Management]({{config.extra.arcana.img_dir}}/an_db_chains_mngt_nav.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![Dashboard: Chain Management]({{config.extra.arcana.img_dir}}/an_db_chains_mngt_nav.{{config.extra.arcana.img_gif}}){ .an-screenshots .width_85pc }
   <figcaption>Dashboard: Chain Management</figcaption>
 </figure>
 
@@ -126,19 +126,19 @@ Click the **Add Chain** button on the top right of the 'Chain Management' dashbo
 
 <figure markdown="span">
   ![Configure new chain]({{config.extra.arcana.img_dir}}/an_db_configure_new_chain.gif){ .an-screenshots .width_85pc }
-  <figcaption>Set Polygon as the Active Chain</figcaption>
+  <figcaption>Add New Chain</figcaption>
 </figure>
 
 Once you click **Save**, the newly added chain will be displayed in the dashboard and also shown in the wallet UI once a user logs into the app.
 
 <figure markdown="span">
-  ![Updated chain list]({{config.extra.arcana.img_dir}}/an_db_view_updated_chain_list_polygon.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc}
-  <figcaption>Set Polygon as the Active Chain</figcaption>
+  ![Updated chain list]({{config.extra.arcana.img_dir}}/an_db_view_updated_chain_list_fantom.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc}
+  <figcaption>Dashboard: Newly Added Chain</figcaption>
 </figure>
 
 <figure markdown="span">
   ![Display newly added chain in the wallet]({{config.extra.arcana.img_dir}}/an_db_config_new_chain_show_wallet.gif){ .an-screenshots .width_35pc}
-  <figcaption>Display Newly added Chain in the Wallet</figcaption>
+  <figcaption>Wallet: Newly added Chain</figcaption>
 </figure>
 
 ### Non-EVM Chains
