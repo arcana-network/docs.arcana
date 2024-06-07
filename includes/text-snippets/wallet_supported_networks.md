@@ -17,6 +17,8 @@
     * BSC Testnet 
     * B<sup>2</sup> Network Testnet
     * B<sup>2</sup> Network Mainnet
+    * BOB
+    * BOB Testnet
     * Caduceus
     * Ethereum 
     * IoTeX
