@@ -1,4 +1,4 @@
-site_name: '📖 Documentation'
+site_name: '📖 Docs'
 
 # For dev
 #site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
@@ -17,12 +17,9 @@ copyright: Copyright &copy; 2024 Arcana Network
 #repo_name: arcana-network
 #edit_uri: https://github.com/arcana-network/auth-mkdocs/blob/main/docs
 
-# theme customizations
-
 theme:
   name: material
   language: en
-  #logo: img/arcana-logo-white.svg
   logo: img/arcana-logo-pink.png
   icon:
     repo: fontawesome/brands/git-alt
@@ -73,13 +70,6 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to System Mode
-
-extra_javascript:
-  - javascripts/mathjax.js
-  - javascripts/common.js
-  # - javascripts/andropdown.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
   - stylesheets/custom.css
@@ -188,9 +178,9 @@ plugins:
         background_color: "#0D0D0E"
         #sponsors only        background_image: img/social_card_image.png
         color: "#FFFFFF"
-  - git-authors:
-      show_email_address: false
-  - git-revision-date-localized
+  # git-authors:
+      #show_email_address: false
+  #- git-revision-date-localized
   - glightbox:
       touchNavigation: true
       loop: false
@@ -204,109 +194,6 @@ plugins:
         - an-screenshots-noeffects
       auto_caption: true
       caption_position: bottom
-  - redirects:
-        redirect_maps:
-          # Linea docs backlinks
-          'howto/index.md': 'quick-start/index.md'
-          'sdk-installation.md': 'auth/sdk-installation.md'
-          'web-sdk/auth-usage-guide.md': 'auth/auth-usage-guide.md'
-          'state-of-the-arcana-auth.md': 'web3-stack/index.md'
-          'dev-resources/sdk-ref/index.md': 'guides/dev/sdk-ref/index.md'
-          'introducing-arcana-auth.md': 'introduction/index.md'
-          'walletsdk/wallet_qs.md': 'quick-start/index.md'
-          'auth-quick-start.md': 'quick-start/auth-sdk/index.md'
-          'walletsdk/wallet_err.md': 'auth/auth-error-msg.md'
-          'walletsdk/wallet_usage.md': 'auth/auth-usage-guide.md'
-          'an_academy/new_web3_dev.md': 'learn/new-to-web3.md'
-          'state_of_the_ntwk.md': 'web3-stack/index.md'
-          'howdoiuse.md': 'about-auth/how-to-use-auth.md'
-          'howitworks.md': 'about-auth/auth-architecture.md'
-          'use_cases.md': 'about-auth/use-cases.md'
-          'validator_intro.md': 'guides/validators/index.md'
-          'whatisan.md': 'about-auth/what-is-arcana-auth.md'
-          'whyan.md': 'about-auth/why-arcana-auth.md'
-          'understanding_an/index.md': 'about-auth/index.md'
-          'migration/index.md': 'migration/archives/index.md'
-          'relnotes/rn_main_auth_v1.0.3.md': 'relnotes/rn-main-auth-v1.0.3.md'
-          'migration/main_auth_v1.0.3_migration.md': 'migration/main-auth-v1.0.3-migration.md'
-          'user_flows/index.md': 'about-auth/user-flows/index.md'
-          'user_flows/user_auth_and_dkg.md': 'about-auth/user-flows/user-auth-and-dkg.md'
-          'user_guides/index.md': 'guides/user/index.md'
-          'user_guides/wallet_ui/index.md': 'user-guides/wallet-ui/index.md'
-          'user_guides/mfa/mfa_ug.md': 'user-guides/mfa/mfa-ug.md'
-          'db/config_dApp_with_db.md': 'setup/config-dApp-with-db.md'
-          #'integrations/shardeum/integrate_shardeum.md': 'integrations/shardeum/integrate-shardeum.md'
-          #'integrations/shardeum/wallet_config_shardeum.md': 'integrations/shardeum/wallet-config-shardeum.md'
-          'tutorials/code_samples/index.md': 'tutorials/code-samples/index.md'
-          'tutorials/code_samples/vanilla_html_js_sample.md': 'tutorials/code-samples/vanilla-html-js-sample.md'
-          'tutorials/code_samples/react_code_sample.md': tutorials/code-samples/react-code-sample.md
-          'tutorials/code_samples/nextjs_code_sample.md': tutorials/code-samples/nextjs-code-sample.md
-          'tutorials/videos/an_academy.md': 'tutorials/videos/get-started.md'
-          'howto/wallet_ui.md': 'user-guides/wallet-ui/use-wallet-ui.md'
-          'howto/wallet_manage_tokens.md': 'user-guides/wallet-ui/use-wallet-to-manage-tokens.md'
-          'howto/wallet_exkey.md': 'user-guides/wallet-ui/use-wallet-to-export-keys.md'
-          'howto/wallet_manage_nft.md': 'user-guides/wallet-ui/use-wallet-to-manage-nfts.md'
-          'howto/deploy_app.md': 'deploy/deploy-app.md'
-          'howto/config_dapp.md': 'setup/config-auth/index.md'
-          'howto/config_auth/index.md': 'setup/config-auth/index.md'
-          'howto/config_idm/index.md': 'setup/config-idm/index.md'
-          'howto/config_idm/cognito_oauth.md': 'setup/config-idm/cognito-oauth.md'
-          'howto/plug_idm/index.md': 'auth/onboard/vanilla/custom-ui/build-idm/index.md'
-          'howto/plug_idm/wallet_cognito_oauth.md': 'auth/onboard/vanilla/custom-ui/build-idm/cognito-oauth.md'
-          'howto/onboard_users/build_social/index.md': 'auth/onboard/vanilla/custom-ui/build-social/index.md'
-          'howto/onboard_users/build_social/wallet_discord_oauth.md': 'auth/onboard/vanilla/custom-ui/build-social/discord-oauth.md'
-          'howto/onboard_users/build_social/wallet_github_oauth.md': 'auth/onboard/vanilla/custom-ui/build-social/github-oauth.md'
-          'howto/onboard_users/build_social/wallet_google_oauth.md': 'auth/onboard/vanilla/custom-ui/build-social/google-oauth.md'
-          'howto/onboard_users/build_social/wallet_twitch_oauth.md': 'auth/onboard/vanilla/custom-ui/build-social/twitch-oauth.md'
-          'howto/onboard_users/build_social/wallet_twitter_oauth.md': 'auth/onboard/vanilla/custom-ui/build-social/twitter-oauth.md'
-          'howto/onboard_users/wallet_plugnplay.md': 'auth/onboard/index.md'
-          'howto/onboard-users/use-plug-play-auth.md': 'auth/onboard/index.md'
-          'howto/onboard_users/wallet_pwdless_login.md': 'auth/onboard/vanilla/custom-ui/build-pwdless-auth.md'
-          'howto/integrate_auth/index.md': 'auth/integrate/index.md'
-          'howto/integrate_auth/integrate_wallet.md': 'auth/integrate/vanilla-html-css-js.md'
-          'howto/integrate_auth/react/index.md': 'auth/integrate/index.md'
-          'howto/integrate_auth/integrate_wallet_react.md': 'auth/integrate/react-nextjs.md'
-          'howto/integrate_auth/integrate_wagmi.md': 'auth/integrate/wagmi.md'
-          'howto/integrate_auth/integrate_rainbow.md': 'auth/integrate/rainbow.md'
-          'howto/integrate_auth/integrate_wallet_vue.md': 'auth/integrate/vue.md'
-          'howto/arcana_wallet/index.md': 'auth/web3-ops/index.md'
-          'howto/arcana_wallet/config_walletvisibility.md': 'auth/web3-ops/arcana-wallet-ui/config-wallet-visibility.md'
-          'howto/arcana_wallet/web3ops/index.md': 'auth/web3-ops/index.md'
-          'howto/arcana_wallet/wallet_add_switch_ntwk.md': 'auth/web3-ops/evm/add-switch-ntwk.md'
-          'howto/arcana_wallet/wallet_balance.md': 'auth/web3-ops/evm/balance.md'
-          'howto/arcana_wallet/wallet_send.md': 'auth/web3-ops/evm/send.md'
-          'howto/arcana_wallet/wallet_sign.md': 'auth/web3-ops/evm/sign.md'
-          'howto/arcana_wallet/wallet_show.md': 'auth/web3-ops/evm/show.md'
-          'howto/arcana_wallet/wallet_watchasset.md': 'auth/web3-ops/evm/watchasset.md'
-          'howto/config_social/index.md': 'setup/config-social/index.md'
-          'howto/config_social/discord_oauth.md': 'setup/config-social/discord-oauth.md'
-          'howto/config_social/github_oauth.md': 'setup/config-social/github-oauth.md'
-          'howto/config_social/google_oauth.md': 'setup/config-social/google-oauth.md'
-          'howto/config_social/twitch_oauth.md': 'setup/config-social/twitch-oauth.md'
-          'howto/config_social/twitter_oauth.md': 'setup/config-social/twitter-oauth.md'
-          'concepts/validator_nodes.md': 'concepts/validator-nodes.md'
-          'concepts/usage_metrics.md': 'concepts/usage-metrics.md'
-          'concepts/sharedkeys.md': 'concepts/keyspace-types.md'
-          'concepts/privatekey.md': 'concepts/private-key.md'
-          'concepts/plugnplayauth.md': 'concepts/plug-and-play-auth.md'
-          'concepts/how_dkg_works.md': 'concepts/how-dkg-works.md'
-          'concepts/gateway_nodes.md': 'concepts/gateway-node.md'
-          'concepts/anwallet/arcanawallet_oview.md': 'concepts/anwallet/wallet-overview.md'
-          'concepts/ansmartc/an_smart_contracts.md': 'concepts/ansmartc/an-smart-contracts.md'
-          'concepts/ansmartc/an_smartc_types.md': 'concepts/ansmartc/an-smartc-types.md'
-          'concepts/ansmartc/an_smartc_deployed.md': 'concepts/ansmartc/an-smartc-deployed.md'
-          'concepts/ansmartc/an_smartc_details.md': 'concepts/ansmartc/an-smartc-deployed.md'
-          'concepts/ansmartc/an_smartc_flows.md': 'concepts/ansmartc/an-smartc-deployed.md'
-          'concepts/ansmartc/an_smartc_upgrades.md': 'concepts/ansmartc/an-smart-contracts.md'
-          'relnotes/latest.md': 'relnotes/archives/index.md'
-          #website deprecated links go to contacts page
-          'docs/accesscontrol/index.md': 'support/index.md'
-          'docs/category/data-access-control/index.md': 'support/index.md'
-          'docs/category/store-data/index.md': 'support/index.md'
-          'docs/conceptnftviewer/index.md': 'support/index.md'
-          'docs/category/using-arcana-wallet/index.md': 'support/index.md'
-          'docs/quick-start/web-apps-quick-start.md': 'quick-start/index.md'
-          'db/config-dApp-with-db-for-Solana.md': 'setup/config-dApp-with-db-for-Solana.md'
 
 markdown_extensions:
   - abbr
@@ -763,4 +650,5 @@ nav:
     - Support: support/support.md
     - Community: support/community.md
     - Report Issues: support/report-bugs.md
+
 

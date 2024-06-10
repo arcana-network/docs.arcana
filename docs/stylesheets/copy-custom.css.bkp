@@ -1,62 +1,58 @@
+/*
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@100;200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400&display=block");
+*/
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=block");
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Onest:wght@100..900&display=swap');
 
 :root > * {
-  --md-an-pink-color: #FF4E9F;
-  --md-an-blue-color: #2730FE;
-  --md-an-green-color: #0FB600;
-  --md-an-orange-color: #FF6D19;
-  /*--md-typeset-mark-color: rgba(255, 109, 25, 0.125);*/
-  --md-an-red-color: #EC1B42;
-  --md-an-purple-color: #AB64B2;
-  --md-an-yellow-color: #FBA82E;
-  --md-an-cyan-color: #25BAEF;
-  --md-an-black-color: #1D2A31;
-  --md-an-gray-color-light: #ECECEC;
-  --md-an-gray-color-lighter: #ece6e81c;
-  --md-an-img-bg: var(--md-an-gray-color-lighter);
-  --md-primary-fg-color: #242424;
-  --md-primary-fg-color--dark: #9a9a9a;
-  --md-primary-fg-color--lighter: #5e5e5e;
-  --md-primary-fg-color--light: #c2c2c2;
-  --md-default-bg-color--light: #aaaaaa;
-  --md-default-bg-color--lighter: #e7f6ff;
-  --md-primary-bg-color: #ffffff;
-  /*--md-typeset-a-color: #057eff;*/
-  --md-typeset-a-color: var(--md-an-pink-color);
-  --md-accent-fg-color:  rgb(132, 144, 149);
-  --md-accent-fg-color--transparent:   hsla(190, 5%, 49%, 0.1);
-  --md-accent-bg-color:                hsla(0, 0%, 100%, 1);
-  --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
-  --md-text-font: "Inter";
-  --md-admonition-icon--an-faq: url('/imgnew/icons/icons8-question-mark-48.webp');
-  --md-admonition-icon--an-trbs: url('/imgnew/icons/exclamation.webp');
-  --md-primary-an-heading-color:   var(--md-primary-fg-color--lighter);
-  --md-primary-an-banner-text-color: var(--md-an-blink-me-link-color);
-  --md-banner-color-1: var(--md-primary-bg-color);
-  --md-banner-color-2: var(--md-an-hero-slate-gradient-dark);
-  --md-an-card-color-hover: rgba(247, 246, 245, 0.9);
-  --md-an-hero-slate-gradient-dark: rgba(34, 36, 47, 0.99);
-  --md-banner-color-yellow: var(--md-typeset-mark-color);
-  --md-an-banner-color-purple: rgb(85, 65, 190);
-  --md-an-header-color-purple: rgb(24,21,59); 
-  --md-an-color-light-purple: rgb(192, 188, 223);
-  --md-an-blink-me-link-color: blue;
-  /*--md-an-banner-bg: #23A26D; Green*/
-  --md-an-banner-bg: var(--md-an-pink-color);
-  --md-text-font-family: "Inter";
-  --md-mermaid-node-bg-color: var(--md-default-bg-color);
-  --md-nav-bg-active-color: #ffecf4;
-  --md-nav-bg-hover-color: #eaeaea;
-  /*Admonition colors*/
-  --md-an-admonition-note: #ebecfc58;
-  --md-an-admonition-info: #ddf0f66a;
-  --md-an-admonition-tip: #e1f6df66;
-  --md-an-admonition-caution: #f9eede67;
-  --md-an-admonition-warning: #f9e5da6a;
-  --md-an-admonition-danger: #fadbe156;
-  --md-an-admonition-example: #f6e3f865;
-  --md-an-admonition-abstract: #e9f2f663;
+     --md-an-pink-color: #FF4E9F;
+     --md-an-blue-color: #2730FE;
+     --md-an-green-color: #0FB600;
+     --md-an-orange-color: #FF6D19;
+     /*--md-typeset-mark-color: rgba(255, 109, 25, 0.125);*/
+     --md-an-red-color: #EC1B42;
+     --md-an-purple-color: #AB64B2;
+     --md-an-yellow-color: #FBA82E;
+     --md-an-cyan-color: #25BAEF;
+     --md-an-black-color: #1D2A31;
+     --md-an-gray-color-light: #ECECEC;
+     --md-an-gray-color-lighter: #ece6e81c;
+     --md-an-img-bg: var(--md-an-gray-color-lighter);
+     --md-primary-fg-color: #242424;
+     --md-primary-fg-color--dark: #9a9a9a;
+     --md-primary-fg-color--lighter: #5e5e5e;
+     --md-primary-fg-color--light: #c2c2c2;
+     --md-default-bg-color--light: #aaaaaa;
+     --md-default-bg-color--lighter: #e7f6ff;
+     --md-primary-bg-color: #ffffff;
+     --md-typeset-a-color: #057eff;
+     --md-accent-fg-color:  rgb(132, 144, 149);
+     --md-accent-fg-color--transparent:   hsla(190, 5%, 49%, 0.1);
+     --md-accent-bg-color:                hsla(0, 0%, 100%, 1);
+     --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
+     --md-text-font: "Onest";
+     --md-admonition-icon--an-faq: url('/imgnew/icons/icons8-question-mark-48.webp');
+     --md-admonition-icon--an-trbs: url('/imgnew/icons/exclamation.webp');
+     --md-primary-an-heading-color:   var(--md-primary-fg-color--lighter);
+     --md-primary-an-banner-text-color: var(--md-an-blink-me-link-color);
+     --md-banner-color-1: var(--md-primary-bg-color);
+     --md-banner-color-2: var(--md-an-hero-slate-gradient-dark);
+     --md-an-card-color-hover: rgba(247, 246, 245, 0.9);
+     --md-an-hero-slate-gradient-dark: rgba(34, 36, 47, 0.99);
+     /*--md-typeset-mark-color: rgba(247, 247, 163, 0.25);*/
+     --md-banner-color-yellow: var(--md-typeset-mark-color);
+     --md-an-banner-color-purple: rgb(85, 65, 190);
+     --md-an-header-color-purple: rgb(24,21,59); 
+     --md-an-color-light-purple: rgb(192, 188, 223);
+     --md-an-blink-me-link-color: blue;
+     /*--md-an-banner-bg: #23A26D; Green*/
+     --md-an-banner-bg: var(--md-an-pink-color);
+     --md-text-font-family: "Onest";
+     --md-mermaid-node-bg-color: var(--md-default-bg-color);
+    }
+
+[data-md-color-scheme="black"] {
+    --md-hue: 360; 
 }
 
 :root > [data-md-color-scheme="slate"]{
@@ -64,7 +60,6 @@
   --md-primary-fg-color--light: #5e5e5e;
   --md-an-card-color-hover: var(--md-primary-fg-color--dark);
   --md-typeset-mark-color: rgba(56, 59, 82, 0.95);
-  --md-typeset-a-color: var(--md-an-pink-color);
   --md-banner-color-yellow: rgba(247, 247, 163, 0.25);
   --md-an-banner-color-purple: rgb(59, 52, 150);
   --md-an-header-color-purple: rgb(16,14,36); 
@@ -72,44 +67,35 @@
   --md-accent-bg-color: var(--md-default-bg-color);
   /*--md-an-img-bg: var(--md-accent-bg-color);*/
   --md-an-img-bg: rgba(36, 37, 46, 0.85);
-  --md-nav-bg-active-color:  #311d30;
-  --md-nav-bg-hover-color: rgb(#321724);
-  --md-an-admonition-note: #202331;
-  --md-an-admonition-info: #27373b;
-  --md-an-admonition-tip: #1b2a1a;
-  --md-an-admonition-caution: #372e21;
-  --md-an-admonition-warning: #462d20;
-  --md-an-admonition-danger: #3f141c;
-  --md-an-admonition-example: #2e1431;
-  --md-an-admonition-abstract: #0e232b;
 }
 
-/* Top Tabs: Arcana Styling */
+/* Not Sure what these are for START */
 
-.md-tabs__item {
-  border: 1px 1px 1px 0 solid gray;
-  border-radius: 5px 5px 0 0;
-} 
+button.sp-tab-button {
+  border-right: 2px solid var(--md-an-pink-color);
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
 
-.md-tabs__item--active {
-  /*background-color: var(--md-accent-bg-color);*/
-  font-weight: 800;
-} 
+button.sp-icon-standalone, button.sp-icon{
+  color:  var(--md-an-pink-color);
+}
 
-.md-tabs__item:hover {
-  /*text-decoration: underline;*/
-  text-decoration-color: var(--md-accent-fg-color);
-} 
-
-.md-tabs__link--active, .md-tabs__link:focus, .md-tabs__item--active, .md-tabs__link:hover  {
-  text-decoration: underline;
-  /*text-decoration-color: var(--md-accent-bg-color);*/
-  text-decoration-color: var(--md-an-pink-color);
-  text-underline-offset: 0.7rem;
+.md-nav--secondary .md-nav__title{
   color: var(--md-an-pink-color);
 }
 
-/* Fontawesome icon: Arcana Styling */
+.critic .block {
+  background-color: var(--md-typeset-mark-color);
+}
+
+.md-tabs {
+  background-color: #0d0d0e;
+}
+
+/* Not Sure what these are for END */
+
+/* Icon Styling */
 
 .fa-icon-styling {
   font-size: 1rem;
@@ -125,13 +111,41 @@
   color: var(--md-an-pink-color);
 }
 
-/* Adjust Chatbase icon overlap on footer social icons */
+/* Highlight tabs when active */
+
+.md-tabs__item {
+  border: 1px 1px 1px 0 solid gray;
+  border-radius: 5px 5px 0 0;
+} 
+
+.md-tabs__item--active {
+  background-color: var(--md-accent-bg-color);
+  color: var(--md-accent-fg-color);
+  font-weight: 800;
+  /*color: var(--md-an-header-color-purple);*/
+} 
+
+.md-tabs__item:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--md-accent-fg-color);
+} 
+
+.md-tabs__link--active, .md-tabs__link:focus, .md-tabs__link:hover {
+  text-decoration: underline; 
+  text-decoration-color: var(--md-accent-bg-color);
+  text-underline-offset: 0.25rem;
+}
+
+.md-header {
+  /*background: linear-gradient(to bottom, var(--md-primary-bg-color), var(--md-primary-fg-color) 19%,#aaa 69%);*/
+  background-color: var(--md-an-header-color-purple);
+}
 
 .md-social {
   margin-right: 6%; /*To accommodate chatbase bot icon */
 }
 
-/* LHS Nav section highlight: Arcana Styling */
+/* Highlight LHS Nav sections */
 
 /*
 .md-nav__link{
@@ -140,41 +154,14 @@
 */
 
 .md-nav__link--active{
-  /*background-color: #f4c3d9e6;*/
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  border-radius: 5px;
-  background-color: var(--md-nav-bg-active-color);  /*background-color: #f4c3d9e6;*/
-  color: var(--md-an-pink-color); !important
+  color: var(--md-an-blue-color);
 }
-
-.md-nav__item--section {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.25rem;
-}
-
-li.md-nav__item, a.md-nav__link {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.25rem;
-}
-
-.md-nav__link:hover {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.25rem;
-  background-color: var(--md-nav-bg-hover-color);  /*background-color: #f4c3d9e6;*/
-  border-radius: 5px;
-}
-
-/* Button: Arcana Styling */
 
 .md-button {
-  border-radius: 0.9rem !important;
-  box-shadow: 0 0 9px 0px rgba(0,0,0,0.2);
-  box-sizing: border-box;
-  border: 1px solid #F6F6F6;
+    border-radius: 0.9rem !important;
+    box-shadow: 0 0 9px 0px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    border: 1px solid #F6F6F6;
 }
 
 .md-typeset .md-button {
@@ -185,24 +172,79 @@ li.md-nav__item, a.md-nav__link {
   margin: 0.5rem;
 }
 
-/* Code: Arcana Styling */
-
-/*.md-typeset .tabbed-block>.highlight:first-child {*/
-  .md-typeset .tabbed-set>input:target {
-   font-size: 0.5rem;
-   color: var(--md-an-pink-color);
+.md-grid {
+  max-width: 100vw; 
 }
 
-.md-typeset pre>code {
-  border-radius: 9px;
-  margin-bottom: 1rem;
+.md-content {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.highlight .hll {
-  box-shadow: 1rem 0 0 0 var(--md-an-pink-color);
+.md-banner {
+    background: var(--md-an-banner-bg);
+    /*
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--md-banner-color-1) 2%,
+      var(--md-accent-bg-color--light) 4%,
+      var(--md-banner-color-2) 2%) !important;
+    */
+    font-family: "Inter";
+    font-weight: bold;
+    color: var(--md-primary-an-banner-text-color);
+    overflow: hidden;
+    text-align: center;
+    height: 2rem;
+    margin-top: -0.75rem;
+  }
+
+.md-banner__inner {
+  font-size: 0.7rem;
 }
 
-/* Admonition: Arcana Styling */
+.md-nav__item--section {
+    padding: 0.75rem;
+}
+
+/*
+.md-nav__item {
+    padding:0.5rem;
+}
+*/
+
+.cards {
+    max-width: "80%";
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr, 2fr;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(247, 246, 245, 0.2);
+    transition: 0.3s;
+    padding: 1rem;
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+}
+
+.card:hover {
+    /* On mouse-over, add a deeper shadow */
+    box-shadow: 0 8px 16px 0 rgba(247, 246, 245, 0.2);
+}
+
+.card_container {
+    /* Add some padding inside the card container */
+    padding: 0.2rem;
+}
+
+.md-typeset .md-admonition {
+  margin: 3rem;
+}
+
+/* Arcana custom admonitions */
 
 :root {
   --md-admonition-icon--an-note: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/></svg>');
@@ -215,15 +257,13 @@ li.md-nav__item, a.md-nav__link {
   --md-admonition-icon--an-danger: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M368 128c0 44.4-25.4 83.5-64 106.4V256c0 17.7-14.3 32-32 32H176c-17.7 0-32-14.3-32-32V234.4c-38.6-23-64-62.1-64-106.4C80 57.3 144.5 0 224 0s144 57.3 144 128zM168 176a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm144-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM3.4 273.7c7.9-15.8 27.1-22.2 42.9-14.3L224 348.2l177.7-88.8c15.8-7.9 35-1.5 42.9 14.3s1.5 35-14.3 42.9L295.6 384l134.8 67.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3L224 419.8 46.3 508.6c-15.8 7.9-35 1.5-42.9-14.3s-1.5-35 14.3-42.9L152.4 384 17.7 316.6C1.9 308.7-4.5 289.5 3.4 273.7z"/></svg>');
 }
 
-.md-typeset .md-admonition {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+/* Hide site_url display in Sidebar */
+.md-nav__title {
+  border: 2px solid blue;
+  display: none;
 }
 
 /* Admonition Summary: Common styling */
-
-/* Underline admonition title*/
-/*
 .md-typeset .an-note > .admonition-title {
   border-bottom: 2px solid var(--md-an-blue-color);
 }
@@ -255,45 +295,47 @@ li.md-nav__item, a.md-nav__link {
 .md-typeset .an-abstract > .admonition-title {
   border-bottom: 2px solid var(--md-an-black-color);
 }
-*/
 
 /* Admonition Details: Common styling */
 
+.md-typeset .admonition.an-note,
+.md-typeset details.an-note,
+.md-typeset .admonition.an-info,
+.md-typeset details.an-info,
+.md-typeset .admonition.an-tip,
+.md-typeset details.an-tip,
+.md-typeset .admonition.an-warning,
+.md-typeset details.an-warning,
+.md-typeset .admonition.an-example,
+.md-typeset details.an-example,
+.md-typeset .admonition.an-abstract,
+.md-typeset details.an-abstract,
+.md-typeset .admonition.an-caution,
+.md-typeset details.an-caution,
+.md-typeset .admonition.an-danger,
+.md-typeset details.an-danger {
+  /*border-color: var(--md-an-pink-color);*/
+  border-color: var(--md-default-bg-color);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .md-typeset .admonition,
 .md-typeset details  {
-    border-radius: 9px;
-    /*padding-top: 1rem;
-    padding-bottom: 1rem;*/
-    border: 0.5rem solid var(--md-default-bg-color);
+    border-radius: 5px;
+    border-width: 0rem;
+    border-left-width: 0.2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 3rem;
 } 
-
-.md-typeset .admonition:focus-within, .md-typeset details:focus-within {
-  box-shadow: 0 0 0 0 var(--md-default-bg-color);
-}
-
-.admonition.quote {
-  border: 1px solid var(--md-default-bg-color);
-}
 
 /* Admonition: Note */
 
-/* Summary color for note */
-/*
 .md-typeset .an-note > .admonition-title,
 .md-typeset .an-note > summary {
   color: var(--md-an-blue-color);
   background-color: var(--md-default-bg-color);
-}
-*/
-
-.admonition.an-note {
-  background-color: var(--md-an-admonition-note);
-  border-radius: 9px;
-  border: 1px solid var(--md-default-bg-color);
-}
-
-.md-typeset .an-note > .admonition-title {
-  background-color: var(--md-an-admonition-note);
 }
 
 .md-typeset .an-note > .admonition-title::before,
@@ -305,14 +347,10 @@ li.md-nav__item, a.md-nav__link {
 
 /* Admonition: Info */
 
-.admonition.an-info {
-  background-color: var(--md-an-admonition-info);
-  border-radius: 9px;
-  border: 1px solid var(--md-default-bg-color);
-}
-
-.md-typeset .an-info > .admonition-title {
-  background-color:var(--md-an-admonition-info);
+.md-typeset .an-info > .admonition-title,
+.md-typeset .an-info > summary {
+  color: var(--md-an-cyan-color);
+  background-color: var(--md-default-bg-color);
 }
 
 .md-typeset .an-info > .admonition-title::before,
@@ -324,14 +362,10 @@ li.md-nav__item, a.md-nav__link {
 
 /* Admonition: Tip */
 
-.admonition.an-tip {
-  background-color: var(--md-an-admonition-tip);
-  border-radius: 9px;
-  border: 1px solid var(--md-default-bg-color);
-}
-
-.md-typeset .an-tip > .admonition-title {
-  background-color: var(--md-an-admonition-tip);
+.md-typeset .an-tip > .admonition-title,
+.md-typeset .an-tip > summary {
+  color: var(--md-an-green-color);
+  background-color: var(--md-default-bg-color);
 }
 
 .md-typeset .an-tip > .admonition-title::before,
@@ -343,14 +377,10 @@ li.md-nav__item, a.md-nav__link {
 
 /* Admonition: Caution */
 
-.admonition.an-caution {
-  background-color: var(--md-an-admonition-caution);
-  border-radius: 9px;
-  border: 1px solid var(--md-default-bg-color);
-}
-
-.md-typeset .an-caution > .admonition-title {
-  background-color: var(--md-an-admonition-caution);
+.md-typeset .an-caution > .admonition-title,
+.md-typeset .an-caution > summary {
+  color: var(--md-an-yellow-color);
+  background-color: var(--md-default-bg-color);
 }
 
 .md-typeset .an-caution > .admonition-title::before,
@@ -362,14 +392,10 @@ li.md-nav__item, a.md-nav__link {
 
 /* Admonition: Warning */
 
-.admonition.an-warning {
-  background-color: var(--md-an-admonition-warning);
-  border-radius: 9px;
-  border: 1px solid var(--md-default-bg-color);
-}
-
-.md-typeset .an-warning > .admonition-title {
-  background-color: var(--md-an-admonition-warning);
+.md-typeset .an-warning > .admonition-title,
+.md-typeset .an-warning > summary {
+  color: var(--md-an-orange-color);
+  background-color: var(--md-default-bg-color);
 }
 
 .md-typeset .an-warning > .admonition-title::before,
@@ -381,14 +407,10 @@ li.md-nav__item, a.md-nav__link {
 
 /* Admonition: Danger */
 
-.admonition.an-danger {
-  background-color: var(--md-an-admonition-danger);
-  border-radius: 9px;
-  border: 1px solid var(--md-default-bg-color);
-}
-
-.md-typeset .an-danger > .admonition-title {
-  background-color: var(--md-an-admonition-danger);
+.md-typeset .an-danger > .admonition-title,
+.md-typeset .an-danger > summary {
+  color: var(--md-an-red-color);
+  background-color: var(--md-default-bg-color);
 }
 
 .md-typeset .an-danger > .admonition-title::before,
@@ -400,14 +422,10 @@ li.md-nav__item, a.md-nav__link {
 
 /* Admonition: Example */
 
-.admonition.an-example {
-  background-color: var(--md-an-admonition-example);
-  border-radius: 9px;
-  border: 1px solid var(--md-default-bg-color);
-}
-
-.md-typeset .an-example > .admonition-title {
-  background-color: var(--md-an-admonition-example);
+.md-typeset .an-example > .admonition-title,
+.md-typeset .an-example > summary {
+  color: var(--md-an-purple-color);
+  background-color: var(--md-default-bg-color);
 }
 
 .md-typeset .an-example > .admonition-title::before,
@@ -419,14 +437,10 @@ li.md-nav__item, a.md-nav__link {
 
 /* Admonition: Abstract */
 
-.admonition.an-abstract {
-  background-color: var(--md-an-admonition-abstract);
-  border-radius: 9px;
-  border: 1px solid var(--md-default-bg-color);
-}
-
-.md-typeset .an-abstract > .admonition-title {
-  background-color: var(--md-an-admonition-abstract);
+.md-typeset .an-abstract > .admonition-title,
+.md-typeset .an-abstract > summary {
+  color: var(--md-an-black-color);
+  background-color: var(--md-default-bg-color);
 }
 
 .md-typeset .an-abstract > .admonition-title::before,
@@ -435,8 +449,6 @@ li.md-nav__item, a.md-nav__link {
   -webkit-mask-image: var(--md-admonition-icon--an-abstract);
           mask-image: var(--md-admonition-icon--an-abstract);
 }
-
-/* Custom Admonitions: Arcana Styling */
 
 .md-typeset .admonition.an-faq,
   .md-typeset details.an-faq {
@@ -472,7 +484,17 @@ li.md-nav__item, a.md-nav__link {
             mask-image: var(--md-admonition-icon--an-trbs);
 }
 
-/* Figure and Image Component: Arcana Styling */
+.md-typeset table:not([class]) {
+  border-radius: 0.5rem;
+}
+
+.md-typeset pre>code {
+  border-radius: 0.5rem;
+}
+
+.md-typeset .grid > .card {
+  border-radius: 0.5rem;
+}
 
 .md-typeset figure  {
   margin-top: 3rem;
@@ -516,6 +538,28 @@ li.md-nav__item, a.md-nav__link {
   margin-right: auto;
 }
 
+.blink_me {
+  animation: blinker 2s linear infinite;
+  /*color: var(--md-primary-an-banner-text-color);*/
+  color: var(--md-primary-bg-color);
+  font-size: 0.50rem;
+  margin: auto;
+}
+
+.blink_me_small {
+  animation: blinker 2s linear infinite;
+  background-color: yellow;
+  font-size: 0.60rem;
+  font-weight: 800;
+  border-radius: 0.5px;
+  vertical-align: super;
+  color: black;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
 .width_35pc {
   width: 35%;
   align-items: center;
@@ -529,7 +573,9 @@ li.md-nav__item, a.md-nav__link {
   width: 85%;
 }
 
-/* Video component: Arcana Styling */
+.an-marker-text-highlight {
+  background-color: yellow;
+}
 
 .video_container {
   display: flexbox;
@@ -543,9 +589,3 @@ li.md-nav__item, a.md-nav__link {
   border: solid 0.2em transparent;
 }
 
-/* Text Marker Highlight: Arcana Styling */
-
-.an-marker-text-highlight {
-  /*background-color: yellow;*/
-  background-color: rgb(249, 249, 247);
-}

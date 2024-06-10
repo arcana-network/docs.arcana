@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block announce %}
+<p><span class="blink_me">Live on Mainnet! </span><a style="color: var(--md-primary-bg-color); font-size: 0.6rem;" href="/relnotes/latest-auth-release-note/">{{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }},</a><a style="color: var(--md-primary-bg-color);font-size: 0.6rem;" href="/relnotes/latest-gasless-release-note/">{{ config.extra.arcana.gasless_sdk_name }} v{{ config.extra.arcana.latest_gasless_sdk_version }}</a></p>
+
+<!---
+  <div class="watermark">{{config.extra.arcana.site_status}}</div>
+--->
+
+{% endblock %}
+
+{% block extrahead %}
+  {{ super() }}
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+{% endblock %}
+
+
+{% block scripts %}
+  <!-- Add scripts that need to run before here -->
+  {{ super() }}
+  <!-- Add scripts that need to run afterwards here -->
+
+  <!-- Marker.io feedback tool for Arcana Documentation -->
+  <!--- September 7, 2023 Marker.io subscription has expired, disabling for now.-->
+  <!---
+  <script>
+    window.markerConfig = {
+      project: '62f387c6d3d3e6c6c720fc40', 
+      source: 'snippet'
+    };
+  </script>
+  
+  <script>
+  !function(e,r,a){if(!e.__Marker){e.__Marker={};var t=[],n={__cs:t};["show","hide","isVisible","capture","cancelCapture","unload","reload","isExtensionInstalled","setReporter","setCustomData","on","off"].forEach(function(e){n[e]=function(){var r=Array.prototype.slice.call(arguments);r.unshift(e),t.push(r)}}),e.Marker=n;var s=r.createElement("script");s.async=1,s.src="https://edge.marker.io/latest/shim.js";var i=r.getElementsByTagName("script")[0];i.parentNode.insertBefore(s,i)}}(window,document);
+  </script>
+  --->
+
+   <!-- Chatbase bot script -->
+   <script>
+    window.chatbaseConfig = {
+      chatbotId: "Fbi0FsddfX1zz_DWM5jwJ",
+    }
+  </script>
+  <script
+    src="https://www.chatbase.co/embed.min.js"
+    id="Fbi0FsddfX1zz_DWM5jwJ"
+    defer>
+  </script>
+{% endblock %}
