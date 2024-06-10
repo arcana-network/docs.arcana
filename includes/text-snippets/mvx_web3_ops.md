@@ -1,5 +1,5 @@
 * `mvx_signMessage`
 * `mvx_signTransaction`
-* `mvx_signTransactions`
+* `mvx_sendTransactions`
 * `getAccounts`
 * `getPublicKey`

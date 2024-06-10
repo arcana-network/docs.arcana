@@ -42,47 +42,6 @@ Before issuing the Web3 wallet operations, make sure you have installed the {{co
   //Initialize AuthProvider
   await auth.init()
 
-  // Get Accounts
-
-  try {
-    const accounts = await provider.request({ method: 'getAccounts' })
-    from = accounts[0]
-  } catch (e) {
-    console.log({ e })
-  }
-
-  // Returns an array of public keys
-  // ["pub-key-1"]
-```
-
-### `getPublicKey`
-
-```js
-
-// Integrate App with the Auth SDK
-
-  const { AuthProvider } = window.arcana.auth
-
-  let provider
-  let from = ''
-  const auth = new AuthProvider('xar_dev_34-arcana-registered-client-id-xxxxx')
-  provider = auth.provider
-
-  ...
-
-  //Initialize AuthProvider
-  await auth.init()
-
-  //Get Public Key
-     
-  await provider.request({
-    method: "getPublicKey",
-    params: [from],
-  });
-
-  // Returns public key
-  // {pk: "some-pub-key"}
-
 ```
 
 ### `SignMessage`
@@ -102,15 +61,6 @@ Before issuing the Web3 wallet operations, make sure you have installed the {{co
   //Initialize AuthProvider
   await auth.init()
 
-  // Get Accounts
-
-  try {
-    const accounts = await provider.request({ method: 'getAccounts' })
-    from = accounts[0]
-  } catch (e) {
-    console.log({ e })
-  }
-
   // Onboard users via plug-n-play login or custom login UI
 
   // auth.connect() or auth.loginWithSocial
@@ -121,24 +71,34 @@ Before issuing the Web3 wallet operations, make sure you have installed the {{co
     console.log({ error })
   }
 
-  ...
+  // Get User Account address 
+
+  try {
+    const accounts = await provider.request({ method: 'getAccounts' })
+    from = accounts[0]
+  } catch (e) {
+    console.log({ e })
+  }
 
   // For authenticated users, add code for signing message
 
-  const personalSign = await provider.request({
-    method: 'near_signMessage',
-    params: {
-      message: 'SignMessage to test NearX signmessage',
-      address: from,
-    },
-  })
+  import base58 from "bs58";
+    
+  const message = base58.encode("This is a test message for trying 'SignMessage'.");
+
+  const signedMessage = await auth.provider.request({
+    method: "near_signMessage",
+    params: { message },
+  });
+
+  console.log(signedMessage);
 
   // Returns signature object
   // {signature: "some-sig"}
 
 ```
 
-### `SignTransaction`
+### `SignAndSendTransaction`
 
 ```js
   // Integrate App with the Auth SDK
@@ -155,15 +115,6 @@ Before issuing the Web3 wallet operations, make sure you have installed the {{co
   //Initialize AuthProvider
   await auth.init()
 
-  // Get Accounts
-
-  try {
-    const accounts = await provider.request({ method: 'getAccounts' })
-    from = accounts[0]
-  } catch (e) {
-    console.log({ e })
-  }
-
   // Onboard users via plug-n-play login or custom login UI
 
   // auth.connect() or auth.loginWithSocial
@@ -176,100 +127,49 @@ Before issuing the Web3 wallet operations, make sure you have installed the {{co
 
   ...
 
+  // Get Accounts
+
+  try {
+    const accounts = await provider.request({ method: 'getAccounts' })
+    from = accounts[0]
+  } catch (e) {
+    console.log({ e })
+  }
+
+
+  // Get Receiver Account address
+  // Read from app user interface
+  // receiver = Buffer.to()
+
+  ...
+
   // For authenticated users, add code for signing transaction
 
-  const params = {
-    transaction: {
-      gasLimit: 100000,
-      sender: from,
-      receiver:
-        'erdXXXXXXXX-some-address-YYYYYYYYYY',
-      value: '0.01',
-      chainID: 'T',
-      data: 'helloWorld-from NearX',
-      version: 1,
+ const transaction = {
+  receiverId: receiver,
+  actions: [
+    {
+      transfer: {
+        deposit: BigInt(1000),
+      },
     },
-  }
+    {
+      transfer: {
+        deposit: BigInt(1000),
+      },
+    },
+    {
+      transfer: {
+        deposit: BigInt(1000),
+      },
+    },
+  ],
+}
 
-  const data = await provider.request({
-    method: 'near_signTransaction',
-    params,
-  })
+const signedTransaction = await auth.provider.request({
+  method: "near_signAndSendTransaction",
+  params: { transaction },
+});
 
-  // Returns signature object
-  // {signature: "some-sig", options: 0, version: 1}
-
-```
-
-### `SignTransactions`
-
-```js
-  // Integrate App with the Auth SDK
-
-  const { AuthProvider } = window.arcana.auth
-
-  let provider
-  let from = ''
-  const auth = new AuthProvider('xar_dev_34-arcana-registered-client-id-xxxxx')
-  provider = auth.provider
-
-  ...
-
-  //Initialize AuthProvider
-  await auth.init()
-
-  // Get Accounts
-
-  try {
-    const accounts = await provider.request({ method: 'getAccounts' })
-    from = accounts[0]
-  } catch (e) {
-    console.log({ e })
-  }
-
-  // Onboard users via plug-n-play login or custom login UI
-
-  // auth.connect() or auth.loginWithSocial
-  try {
-    const provider = await auth.connect()
-    console.log({ provider })
-  } catch (error) {
-    console.log({ error })
-  }
-
-  ...
-
-  // For authenticated users, add code for signing transaction
-
-  const transaction = {
-    gasLimit: 100000,
-    sender: from,
-    receiver: "erdXXXXXXXX-some-address-YYYYYYYYYY",
-    value: "0.001",
-    chainID: "T",
-    data: "helloWorld-from NearX",
-    version: 1,
-  };
-
-  const params = {
-    // You can use multiple transactions, this sample just
-    // repeats the same one.
-    transactions: [transaction, transaction, transaction],
-  };
-
-  const data = await provider.request({
-    method: 'near_signTransactions',
-    params,
-  })
-
-  //Returns Signature Object - see format below
-  // 
-  // {
-  //   signatures: [
-  //     {signature: "some-sig-1", options: 0, version: 1}, 
-  //     {signature: "some-sig-2", options: 0, version: 1}, 
-  //     {signature: "some-sig-3", options: 0, version: 1}
-  //   ]
-  // }
-
+console.log(signedTransaction);
 ```

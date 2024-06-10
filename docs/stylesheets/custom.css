@@ -84,7 +84,20 @@
   --md-an-admonition-abstract: #0e232b;
 }
 
+/* Top Header: Arcana Styling */
+
+.md-header--shadow {
+  box-shadow: 0 0.025rem #eaeaea;
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
+
 /* Top Tabs: Arcana Styling */
+
+.md-tabs {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
 
 .md-tabs__item {
   border: 1px 1px 1px 0 solid gray;
