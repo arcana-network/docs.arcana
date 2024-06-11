@@ -30,7 +30,7 @@ The built-in, embedded, non-custodial wallet offered by the {{config.extra.arcan
 
 When a non-EVM chain is selected for an app, developers and users cannot arbitrarily add any other supported chain types (other non-EVM chains, EVM chains) in the {{config.extra.arcana.wallet_name}}. This is because there is **no uniform standard for wallet addresses across non-EVM chains** and switching chain type may cause the wallet address to change.
 
-For details refer to the [[dashboard-user-guide#non-evm-chains|'Non-EVM chains']] section in the {{config.extra.arcana.dashboard_name}} User's Guide.
+For details refer to the [[configure-wallet-chains#non-evm-chains|'Non-EVM chains']] section in the {{config.extra.arcana.dashboard_name}} User's Guide.
 
 ## Keyspace User Experience
 

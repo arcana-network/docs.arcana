@@ -288,13 +288,13 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 
       This error is caused due to incorrect integration of the {{config.extra.arcana.sdk_name}}.  While integrating with the {{config.extra.arcana.sdk_name}}, you need to perform the following key steps in the suggested order:
 
-      1. First, [[sdk-installation#install-arcana-auth-sdk|install the {{config.extra.arcana.sdk_name}}]]
+      1. First, [[sdk-installation|install the {{config.extra.arcana.sdk_name}}]]
 
       2. Next, create an `AuthProvider` instance. 
 
       3. Lastly, initialize the `AuthProvider` by calling the `init()` function. This is important as it initializes the embedded {{config.extra.arcana.wallet_name}}. Only after a successful login, the {{config.extra.arcana.wallet_name}} is visible in the context of an application. 
       
-      See [[html-js-code-sample#integrate-auth-sdk|integration code sample]] for more details.
+      See [[html-js-code-sample|integration code sample]] for more details.
 
 ??? an-trbs "User could log in to the Web3 app but subsequent login fails after a developer enables the 'global keys' feature in the app."
 

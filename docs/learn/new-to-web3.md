@@ -27,7 +27,7 @@ arcana:
 
 !!! an-tip "Skip to {{config.extra.arcana.company_name}} SDKs"
 
-      If you're experienced with Web3, including user onboarding, passwordless login, and Web3 wallet operations, feel free to skip the beginner's section and dive into the [[new-to-web3#step-1-understanding-arcana-auth| 'Understanding {{config.extra.arcana.product_name}}']] section below.
+      If you're experienced with Web3, including user onboarding, passwordless login, and Web3 wallet operations, feel free to skip the beginner's section and dive into the [[new-to-web3#step-1-understanding-arcana-auth-sdk| 'Understanding {{config.extra.arcana.product_name}}']] section below.
 
 ## Beginners Journey
 
@@ -68,7 +68,7 @@ Get a firm grip on the topics listed under the prerequisites section. These will
     - Decentralized [consensus mechanisms](https://ethereum.org/en/developers/docs/consensus-mechanisms/)
     - Sharding and reconstructing cryptography keys - [Shamir's secret sharing](https://medium.com/@keylesstech/a-beginners-guide-to-shamir-s-secret-sharing-e864efbf3648)
 
-## Step 1: Understanding {{config.extra.arcana.company_name}}
+## Step 1: Understanding {{config.extra.arcana.sdk_name}}
 
 Now that you are familiar with the basics, let us take a look at what {{config.extra.arcana.product_name}} is and what it can do for Web3 app developers.
 

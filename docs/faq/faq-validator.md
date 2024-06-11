@@ -36,7 +36,7 @@ Frequently asked questions regarding setting up [[concept-validator-nodes|Arcana
         <figcaption>DKG Node Start Error</figcaption>
       </figure>
 
-      You will see this error if you are not using the latest DKG binary. After the node crash, before restarting, please make sure that there is no `dkg.sock` file and that you are using the [latest DKG release](https://github.com/arcana-network/adkg/releases) before issuing the `dkg start` command. See [[onboard-validators#re-starting-the-node|restarting a node]] section in the Arcana Auth Validator Onboarding Guide.
+      You will see this error if you are not using the latest DKG binary. After the node crash, before restarting, please make sure that there is no `dkg.sock` file and that you are using the [latest DKG release](https://github.com/arcana-network/adkg/releases) before issuing the `dkg start` command. See [[onboard-validators#steps|restarting a node]] section in the Arcana Auth Validator Onboarding Guide.
 
 ??? an-faq "After starting up, I see this. Is this an error?"
 

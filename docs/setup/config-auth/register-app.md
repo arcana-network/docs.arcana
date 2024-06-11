@@ -47,7 +47,7 @@ After registering the app, [[index-configure-auth| configure the user onboarding
 
 * [[configure-wallet-visibility|Configure wallet visibility mode]]
 * [[dashboard-user-guide#delete-application|Deleting Application Entry]]
-* [[dashboard-user-guide#manage-testnet-and-mainnet-configurations|Managing Testnet and Mainnet Configurations]]
+* [[dashboard-user-guide#manage-configuration-profiles|Managing Testnet and Mainnet Configurations]]
 * [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] 
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

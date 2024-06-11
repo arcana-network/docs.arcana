@@ -27,6 +27,6 @@ If you plan on using the custom OAuth or wallet off-ramping feature, check out t
 * What is [[concept-custom-oauth|custom OAuth]]?
 * [[config-custom-oauth|How to configure]] custom OAuth feature usage via the {{config.extra.arcana.dashboard_name}}?
 * [[integrate-custom-oauth|How to integrate an app that uses custom user authentication]] and enable {{config.extra.arcana.sdk_name}} and signing of blockchain transactions for authenticated users?
-* [[dashboard-user-guide#buysell-crypto|How to buy/sell crypto]] when using {{config.extra.arcana.wallet_name}}? 
+* [[arcana-wallet-user-guide#buysell-crypto|How to buy/sell crypto]] when using {{config.extra.arcana.wallet_name}}? 
 
 That's all!

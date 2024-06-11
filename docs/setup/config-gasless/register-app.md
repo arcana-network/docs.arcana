@@ -45,5 +45,5 @@ After registering the app, [[configure-gasless|configure gasless settings]] firs
 ## See Also
 
 * [[dashboard-user-guide#delete-application|Deleting Application Entry]]
-* [[dashboard-user-guide#manage-testnet-and-mainnet-configurations|Managing Testnet and Mainnet Configurations]]
+* [[dashboard-user-guide#manage-configuration-profiles|Managing Testnet and Mainnet Configurations]]
 * [[gasless-sdk-usage-guide|{{config.extra.arcana.gasless_sdk_name}} Usage Guide]]

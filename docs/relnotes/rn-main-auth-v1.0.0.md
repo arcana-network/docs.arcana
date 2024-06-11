@@ -53,7 +53,7 @@ An under-development application can be deployed on the {{config.extra.arcana.co
     !!! an-note
           Do remember to use the correct {{config.extra.arcana.app_address}} for integrating with the {{config.extra.arcana.sdk_name}}when you deploy your application on the Mainnet.
 
-See [[dashboard-user-guide#manage-testnet-and-mainnet-configurations|how to manage application profiles]] for details. 
+See [[configure-wallet-chains|how to pre-configure wallet chains via the dashboard]] for details. 
 
 ### App-specific and Global Keys
 

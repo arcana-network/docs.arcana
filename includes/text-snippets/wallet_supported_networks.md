@@ -31,8 +31,12 @@
     * Polygon 
     * Polygon Mumbai 
     * Polygon zkEVM Testnet
+    * Scroll Mainnet
+    * Scroll Testnet (Sepolia)
     * Sepolia
     * Shardeum Sphinx 1.x
+    * zkSync Era Mainnet
+    * zkSync Era Testnet (ETH)
 
 === "Non-EVM"
 
