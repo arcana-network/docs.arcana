@@ -6,7 +6,7 @@
   --md-an-blue-color: #2730FE;
   --md-an-green-color: #0FB600;
   --md-an-orange-color: #FF6D19;
-  /*--md-typeset-mark-color: rgba(255, 109, 25, 0.125);*/
+  --md-typeset-mark-color: #fafbccdb;
   --md-an-red-color: #EC1B42;
   --md-an-purple-color: #AB64B2;
   --md-an-yellow-color: #FBA82E;
@@ -64,7 +64,7 @@
   --md-primary-fg-color--lighter: #929292;
   --md-primary-fg-color--light: #5e5e5e;
   --md-an-card-color-hover: var(--md-primary-fg-color--dark);
-  --md-typeset-mark-color: rgba(56, 59, 82, 0.95);
+  --md-typeset-mark-color: #fdff9f20;
   --md-typeset-a-color: var(--md-an-pink-color);
   --md-banner-color-yellow: rgba(247, 247, 163, 0.25);
   --md-an-banner-color-purple: rgb(59, 52, 150);
