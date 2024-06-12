@@ -25,6 +25,9 @@ This documentation contains everything you need to get started using {{config.ex
 
 ==}
 
+<br/>
+<br/>
+
 <div class="grid cards" markdown>
 
 -   :material-account-group:{ .lg .middle .icon-color} __Social Login__
@@ -61,20 +64,7 @@ This documentation contains everything you need to get started using {{config.ex
 
 </div>
 
-<h2>Auth Playground</h2>>
-
-<div class="tx-hero-container">
-    <div class="tx-hero-content"><a href="/auth/auth-try-now/">
-            <div class="tx-try-now-button-blue a-link-items">
-                <h3 style="color: var(--md-an-gray-light-color)">Try Auth</h3>
-            </div>
-        </a></div>
-    <div class="tx-hero-content"><a href="/gasless/gl-try-now/">
-            <div class="tx-try-now-button-green a-link-items">
-                <h3 style="color: var(--md-an-gray-light-color)">Try Gasless</h3>
-            </div>
-        </a></div>
-</div>
+<br/>
 
 <h2>Quick Start</h2>
 
@@ -101,3 +91,30 @@ Select your app type and get started with integrating social login and gasless t
 === "Gaming Apps"
 
     [[unity-quick-start| Unity ]]{ .md-button }
+
+<h2>Auth Playground</h2>>
+
+<br/><br/><br/>
+
+<div class="tx-hero-container">
+    <div class="tx-hero-content"><a href="/auth/auth-try-now/">
+            <div class="tx-try-now-button-blue a-link-items">
+                <h3 style="color: var(--md-an-gray-light-color)">Try Auth</h3>
+            </div>
+        </a></div>
+    <div class="tx-hero-content"><a href="/gasless/gl-try-now/">
+            <div class="tx-try-now-button-green a-link-items">
+                <h3 style="color: var(--md-an-gray-light-color)">Try Gasless</h3>
+            </div>
+        </a></div>
+</div>
+
+<br/><br/>
+
+<h2>Need Help?</h2>>
+
+Contact [Arcana Support](mailto:support@arcana.network). 
+
+Join [Arcana communities]({{page.meta.arcana.root_rel_path}}/support/community/) and stay informed!
+
+<br/><br/><br/><br/>

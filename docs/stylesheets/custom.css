@@ -581,6 +581,12 @@ li.md-nav__item, a.md-nav__link {
   border: solid 0.2em transparent;
 }
 
+/* Critic Block: Arcana Styling*/
+
+.md-typeset .critic.block {
+  border-radius: 9px;
+}
+
 /* Text Marker Highlight: Arcana Styling */
 
 .an-marker-text-highlight {
@@ -660,4 +666,10 @@ li.md-nav__item, a.md-nav__link {
 
 .md-feedback__note {
   color: var(--md-an-pink-color);
+}
+
+/* Footer Git Author and commit information: Arcana Styling */
+
+.md-typeset small {
+  font-size: 0.5rem;
 }
