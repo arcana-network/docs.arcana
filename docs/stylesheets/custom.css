@@ -87,6 +87,10 @@
 }
 
 /* Top Header: Arcana Styling */
+.md-header {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
 
 .md-header--shadow {
   box-shadow: 0 0.0125rem var(--md-an-header-shadow-color);

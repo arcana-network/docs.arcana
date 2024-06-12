@@ -4,12 +4,7 @@
 <!---
     Note: Mkdocs returns {{ config.site_url }} with a terminating '/' 
 -->
-{% block announce %}
-<p><span class="blink_me">Live on Mainnet! </span><a style="color: var(--md-primary-bg-color); font-size: 0.6rem;" href="{{ config.site_url }}relnotes/latest-auth-release-note/">{{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }},</a><a style="color: var(--md-primary-bg-color);font-size: 0.6rem;" href="{{ config.site_url }}relnotes/latest-gasless-release-note/">{{ config.extra.arcana.gasless_sdk_name }} v{{ config.extra.arcana.latest_gasless_sdk_version }}</a></p>
-<!---
-    <i><a style="color: rgb(46, 45, 45);" href="https://docs.dev.arcana.network/">Try beta SDKs on Testnet.</a></i>
--->
-{% endblock %}
+
 {% block content %}
 
 <section class="md-grid md-typeset">
