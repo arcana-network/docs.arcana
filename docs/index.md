@@ -115,6 +115,6 @@ Select your app type and get started with integrating social login and gasless t
 
 Contact [Arcana Support](mailto:support@arcana.network). 
 
-Join [Arcana communities]({{page.meta.arcana.root_rel_path}}/support/community/) and stay informed!
+Join [Arcana communities]({{config.site_url}}support/community/) and stay informed!
 
 <br/><br/><br/><br/>
