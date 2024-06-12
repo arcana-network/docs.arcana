@@ -61,6 +61,8 @@ This documentation contains everything you need to get started using {{config.ex
 
 </div>
 
+<h2>Auth Playground</h2>>
+
 <div class="tx-hero-container">
     <div class="tx-hero-content"><a href="/auth/auth-try-now/">
             <div class="tx-try-now-button-blue a-link-items">

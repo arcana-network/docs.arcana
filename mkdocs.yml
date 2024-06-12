@@ -178,9 +178,9 @@ plugins:
         background_color: "#0D0D0E"
         #sponsors only        background_image: img/social_card_image.png
         color: "#FFFFFF"
-  - git-authors:
-      show_email_address: false
-  - git-revision-date-localized
+  #- git-authors:
+      #show_email_address: false
+  #- git-revision-date-localized
   - glightbox:
       touchNavigation: true
       loop: false
