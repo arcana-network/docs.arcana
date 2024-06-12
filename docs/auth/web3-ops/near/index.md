@@ -37,10 +37,21 @@ Before issuing the Web3 wallet operations, make sure you have installed the {{co
   const auth = new AuthProvider('xar_dev_34-arcana-registered-client-id-xxxxx')
   provider = auth.provider
 
-  ...
-
   //Initialize AuthProvider
   await auth.init()
+
+  ... 
+  // User login add code via plug and play `connect` or custom login UI
+  // auth.connect() or auth.loginWithSocial
+
+  // Get User Account address post login
+
+  try {
+    const accounts = await provider.request({ method: 'getAccounts' })
+    from = accounts[0]
+  } catch (e) {
+    console.log({ e })
+  }
 
 ```
 
@@ -55,8 +66,6 @@ Before issuing the Web3 wallet operations, make sure you have installed the {{co
   let from = ''
   const auth = new AuthProvider('xar_dev_34-arcana-registered-client-id-xxxxx')
   provider = auth.provider
-
-  ...
 
   //Initialize AuthProvider
   await auth.init()
@@ -84,7 +93,7 @@ Before issuing the Web3 wallet operations, make sure you have installed the {{co
 
   import base58 from "bs58";
     
-  const message = base58.encode("This is a test message for trying 'SignMessage'.");
+  const message = base58.encode(Buffer.from("This is a test message for trying 'SignMessage'."));
 
   const signedMessage = await auth.provider.request({
     method: "near_signMessage",
@@ -92,9 +101,6 @@ Before issuing the Web3 wallet operations, make sure you have installed the {{co
   });
 
   console.log(signedMessage);
-
-  // Returns signature object
-  // {signature: "some-sig"}
 
 ```
 
@@ -139,7 +145,7 @@ Before issuing the Web3 wallet operations, make sure you have installed the {{co
 
   // Get Receiver Account address
   // Read from app user interface
-  // receiver = Buffer.to()
+  // receiver = Buffer.to('input address')
 
   ...
 

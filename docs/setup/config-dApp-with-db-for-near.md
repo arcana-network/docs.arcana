@@ -23,7 +23,7 @@ Log into the {{config.extra.arcana.dashboard_name}} to register the app. Create 
 {% include "./text-snippets/non-evm-warning.md" %}
 
 <figure markdown="span">
-  ![Register Near App]({{config.extra.arcana.img_dir}}/an_db_new_mvx_app_card.gif){ .an-screenshots .width_85pc }
+  ![Register Near App]({{config.extra.arcana.img_dir}}/an_db_new_near_app_card.gif){ .an-screenshots .width_85pc }
   <figcaption>Register Near App</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ By selecting a chain as the default, developers ensure that the same chain is au
 To edit a Near chain's RPC URL or the blockchain explorer URL, select the chain, click '...' and select **edit** option to update the required fields.
 
 <figure markdown="span">
-  ![Edit Near Chain Settings]({{config.extra.arcana.img_dir}}/an_db_new_mvx_edit_chain.gif){ .an-screenshots .width_85pc }
+  ![Edit Near Chain Settings]({{config.extra.arcana.img_dir}}/an_db_new_near_edit_chain.gif){ .an-screenshots .width_85pc }
   <figcaption>Edit Near Chain Settings</figcaption>
 </figure>
 
