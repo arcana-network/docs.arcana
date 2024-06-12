@@ -583,3 +583,77 @@ li.md-nav__item, a.md-nav__link {
   /*background-color: yellow;*/
   background-color: rgb(249, 249, 247);
 }
+
+/* Grid Cards: Arcana Styling */
+
+/*.md-typeset .grid.cards>ol>li, .md-typeset .grid.cards>ul>li, .md-typeset .grid>.card {*/
+.md-typeset .grid.cards>ul>li{
+  border-radius: 9px;
+}
+.md-typeset .grid.cards>ul>li:hover{
+  border: 0.0125rem solid var(--md-an-pink-color);
+}
+
+.md-typeset .grid {
+  grid-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  margin: 1em 0;
+  padding: 1rem;
+}
+
+/* Pill Button: Arcana Styling */
+
+.tx-hero-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.pill-button {
+  margin: 6rem;
+  border-radius: 1.5rem;
+  height: 2.5rem;
+  padding: 1rem;
+}
+
+.white-text {
+  color: white;
+}
+
+.blue {
+  background-color: var(--md-an-blue-color);
+}
+
+.green {
+  background-color: var(--md-an-green-color);
+}
+
+.tx-try-now-button-blue {
+  border-radius: 1.5rem;
+  height: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: var(--md-an-blue-color);
+}
+
+.tx-try-now-button-green {
+  border-radius: 1.5rem;
+  height: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: var(--md-an-green-color);
+}
+
+/* Feedback section: Arcana Styling */
+
+.md-feedback__title {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.md-feedback__note {
+  color: var(--md-an-pink-color);
+}

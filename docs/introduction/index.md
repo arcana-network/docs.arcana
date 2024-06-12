@@ -8,18 +8,6 @@ arcana:
 
 # Overview
 
-!!! quote "Don't Panic!"
-
-      All you really need to know for the moment is that the universe is a lot more complicated than you might think, even if you start from a position of thinking it’s pretty damn complicated in the first place.
-
-      -- Douglas Adams (The Hitchhiker's Guide to the Galaxy)
-
-{==
-
-This documentation contains everything you need to get started using {{config.extra.arcana.company_name}} SDKs.
-
-==}
-
 **{{config.extra.arcana.company_name}}** SDKs bring higher conversion for Web3 app developers through [[concept-social-login|social login]] and [[concept-gasless-transactions|gasless transactions]].
 
 Our client-side SDKs empower Web3 apps with social login and gasless transaction capabilities.
