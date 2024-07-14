@@ -14,6 +14,7 @@ pipeline {
                         python3 -m venv venv
                         . venv/bin/activate
                         pip install mkdocs
+                        pip install spellchecker  # Install the spellchecker tool
                     '''
                 }
             }
