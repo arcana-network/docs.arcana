@@ -3,22 +3,16 @@ pipeline {
 
     environment {
         REPO_URL = 'https://github.com/arcana-network/auth-mkdocs.git'
-        SERVER_USER = 'deploy'
-        SERVER_IP = 'docs.dev-test.arcana.network'
-        SERVER_PORT = '22'
+        SERVER_ALIAS = 'docs_server'
         SERVER_DIR = '/home/deploy/'
-        PRIVATE_KEY_PATH = '/home/deploy/.ssh/id_rsa'
     }
 
     stages {
         stage('Verify Environment Variables') {
             steps {
                 sh """
-                    echo "SERVER_USER: \$SERVER_USER"
-                    echo "SERVER_IP: \$SERVER_IP"
-                    echo "SERVER_PORT: \$SERVER_PORT"
+                    echo "SERVER_ALIAS: \$SERVER_ALIAS"
                     echo "SERVER_DIR: \$SERVER_DIR"
-                    echo "PRIVATE_KEY_PATH: \$PRIVATE_KEY_PATH"
                 """
             }
         }
@@ -27,7 +21,7 @@ pipeline {
             steps {
                 script {
                     def remoteCommand = "echo 'SSH connection successful'"
-                    def command = "ssh -i ${env.PRIVATE_KEY_PATH} -p ${env.SERVER_PORT} ${env.SERVER_USER}@${env.SERVER_IP} '${remoteCommand}'"
+                    def command = "ssh ${env.SERVER_ALIAS} '${remoteCommand}'"
                     sh script: command
                 }
             }
@@ -42,7 +36,7 @@ pipeline {
         stage('Sync to Server') {
             steps {
                 sh """
-                    rsync -avz -e 'ssh -i \$PRIVATE_KEY_PATH -p \$SERVER_PORT' --delete . \$SERVER_USER@\$SERVER_IP:\$SERVER_DIR
+                    rsync -avz -e 'ssh' --delete . \$SERVER_ALIAS:\$SERVER_DIR
                 """
             }
         }
@@ -50,7 +44,7 @@ pipeline {
         stage('Build on Server') {
             steps {
                 sh """
-                    ssh -i \$PRIVATE_KEY_PATH -p \$SERVER_PORT \$SERVER_USER@\$SERVER_IP '
+                    ssh \$SERVER_ALIAS '
                         cd \$SERVER_DIR &&
                         mkdocs build'
                 """
@@ -61,7 +55,7 @@ pipeline {
             steps {
                 input message: 'Deploy to production?', ok: 'Deploy'
                 sh """
-                    ssh -i \$PRIVATE_KEY_PATH -p \$SERVER_PORT \$SERVER_USER@\$SERVER_IP 'sudo systemctl restart docs.service'
+                    ssh \$SERVER_ALIAS 'sudo systemctl restart docs.service'
                 """
             }
         }
