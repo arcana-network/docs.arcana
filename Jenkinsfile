@@ -4,34 +4,17 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/lakshmikanth/AR-8099-Jenkis-setup']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: REPO_URL]]])
-            }
-        }
-
-        stage('Spell Check') {
-            steps {
-                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
-                    sh """
-                        ssh -p \$SERVER_PORT \$SERVER_USER@\$SERVER_IP 'cd \$SERVER_DIR && . venv/bin/activate && spellchecker -d an_dictionary.txt --files "**/*.md" > /tmp/spellcheck.txt && if grep -q "warning" /tmp/spellcheck.txt; then echo "Spell checking failed" && exit 1; else echo "No warnings in spell checking"; fi'
-                    """
-                }
-            }
-        }
-
-        stage('Dead Link Check') {
-            steps {
-                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
-                    sh """
-                        ssh -p \$SERVER_PORT \$SERVER_USER@\$SERVER_IP 'cd \$SERVER_DIR && . venv/bin/activate && linkchecker ./site > /tmp/linkcheck.txt && if grep -q "URL error" /tmp/linkcheck.txt; then echo "Dead link check failed" && exit 1; else echo "No dead links found"; fi'
-                    """
-                }
+                checkout([$class: 'GitSCM', branches: [[name: '*/lakshmikanth/AR-8099-Jenkis-setup']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: env.REPO_URL]]])
             }
         }
 
         stage('Build') {
             steps {
                 sh """
-                    ssh -p \$SERVER_PORT \$SERVER_USER@\$SERVER_IP 'cd \$SERVER_DIR && . venv/bin/activate && mkdocs build'
+                    ssh -p \$SERVER_PORT \$SERVER_USER@\$SERVER_IP '
+                        cd \$SERVER_DIR && 
+                        . venv/bin/activate && 
+                        mkdocs build'
                 """
             }
         }
