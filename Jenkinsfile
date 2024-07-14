@@ -7,6 +7,7 @@ pipeline {
         SERVER_IP = 'docs.dev-test.arcana.network'
         SERVER_PORT = '22'
         SERVER_DIR = '/home/deploy/'
+        PRIVATE_KEY_PATH = '/home/deploy/.ssh/id_rsa'
     }
 
     stages {
@@ -17,15 +18,18 @@ pipeline {
                     echo "SERVER_IP: \$SERVER_IP"
                     echo "SERVER_PORT: \$SERVER_PORT"
                     echo "SERVER_DIR: \$SERVER_DIR"
+                    echo "PRIVATE_KEY_PATH: \$PRIVATE_KEY_PATH"
                 """
             }
         }
 
         stage('SSH Connectivity Check') {
             steps {
-                sh """
-                    ssh -p \$SERVER_PORT \$SERVER_USER@\$SERVER_IP 'echo "SSH connection successful"'
-                """
+                script {
+                    def remoteCommand = "echo 'SSH connection successful'"
+                    def command = "ssh -i ${env.PRIVATE_KEY_PATH} -p ${env.SERVER_PORT} ${env.SERVER_USER}@${env.SERVER_IP} '${remoteCommand}'"
+                    sh script: command
+                }
             }
         }
 
@@ -38,7 +42,7 @@ pipeline {
         stage('Sync to Server') {
             steps {
                 sh """
-                    rsync -avz -e 'ssh -p \$SERVER_PORT' --delete . \$SERVER_USER@\$SERVER_IP:\$SERVER_DIR
+                    rsync -avz -e 'ssh -i \$PRIVATE_KEY_PATH -p \$SERVER_PORT' --delete . \$SERVER_USER@\$SERVER_IP:\$SERVER_DIR
                 """
             }
         }
@@ -46,7 +50,7 @@ pipeline {
         stage('Build on Server') {
             steps {
                 sh """
-                    ssh -p \$SERVER_PORT \$SERVER_USER@\$SERVER_IP '
+                    ssh -i \$PRIVATE_KEY_PATH -p \$SERVER_PORT \$SERVER_USER@\$SERVER_IP '
                         cd \$SERVER_DIR &&
                         mkdocs build'
                 """
@@ -57,7 +61,7 @@ pipeline {
             steps {
                 input message: 'Deploy to production?', ok: 'Deploy'
                 sh """
-                    ssh -p \$SERVER_PORT \$SERVER_USER@\$SERVER_IP 'sudo systemctl restart docs.service'
+                    ssh -i \$PRIVATE_KEY_PATH -p \$SERVER_PORT \$SERVER_USER@\$SERVER_IP 'sudo systemctl restart docs.service'
                 """
             }
         }
