@@ -21,13 +21,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                script {
-                    withCredentials([string(credentialsId: 'github-token-id', variable: 'GITHUB_TOKEN')]) {
-                        sh 'git config --global credential.helper store'
-                        sh 'echo "https://${GITHUB_TOKEN}:@github.com" > ~/.git-credentials'
-                        checkout([$class: 'GitSCM', branches: [[name: '*/lakshmikanth/AR-8099-Jenkis-setup']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: REPO_URL]]])
-                    }
-                }
+                checkout([$class: 'GitSCM', branches: [[name: '*/lakshmikanth/AR-8099-Jenkis-setup']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: REPO_URL]]])
             }
         }
 
