@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        REPO_URL = 'https://github.com/arcana-network/auth-mkdocs.git'
+    }
+
     stages {
         stage('Checkout') {
             steps {
@@ -12,8 +16,7 @@ pipeline {
             steps {
                 sh """
                     ssh -p \$SERVER_PORT \$SERVER_USER@\$SERVER_IP '
-                        cd \$SERVER_DIR && 
-                        . venv/bin/activate && 
+                        cd \$SERVER_DIR &&
                         mkdocs build'
                 """
             }
