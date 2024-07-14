@@ -21,6 +21,14 @@ pipeline {
             }
         }
 
+        stage('SSH Connectivity Check') {
+            steps {
+                sh """
+                    ssh -p \$SERVER_PORT \$SERVER_USER@\$SERVER_IP 'echo "SSH connection successful"'
+                """
+            }
+        }
+
         stage('Checkout') {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: '*/lakshmikanth/AR-8099-Jenkis-setup']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: env.REPO_URL]]])
