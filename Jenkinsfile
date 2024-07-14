@@ -14,7 +14,8 @@ pipeline {
                         python3 -m venv venv
                         . venv/bin/activate
                         pip install mkdocs
-                        pip install spellchecker  # Install the spellchecker tool
+                        pip install spellchecker
+                        pip install linkchecker
                     '''
                 }
             }
@@ -28,34 +29,38 @@ pipeline {
 
         stage('Spell Check') {
             steps {
-                dir('auth-mkdocs/docs') {
-                    sh '''
-                        . ../../venv/bin/activate
-                        spellchecker -d an_dictionary.txt --files '**/*.md' > /tmp/spellcheck.txt
-                        if grep -q 'warning' /tmp/spellcheck.txt; then
-                            echo "Spell checking failed"
-                            exit 1
-                        else
-                            echo "No warnings in spell checking"
-                        fi
-                    '''
+                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                    dir('auth-mkdocs/docs') {
+                        sh '''
+                            . ../../venv/bin/activate
+                            spellchecker -d an_dictionary.txt --files '**/*.md' > /tmp/spellcheck.txt
+                            if grep -q 'warning' /tmp/spellcheck.txt; then
+                                echo "Spell checking failed"
+                                exit 1
+                            else
+                                echo "No warnings in spell checking"
+                            fi
+                        '''
+                    }
                 }
             }
         }
 
         stage('Dead Link Check') {
             steps {
-                dir('auth-mkdocs/docs') {
-                    sh '''
-                        . ../../venv/bin/activate
-                        linkchecker ./site > /tmp/linkcheck.txt
-                        if grep -q 'URL error' /tmp/linkcheck.txt; then
-                            echo "Dead link check failed"
-                            exit 1
-                        else
-                            echo "No dead links found"
-                        fi
-                    '''
+                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                    dir('auth-mkdocs/docs') {
+                        sh '''
+                            . ../../venv/bin/activate
+                            linkchecker ./site > /tmp/linkcheck.txt
+                            if grep -q 'URL error' /tmp/linkcheck.txt; then
+                                echo "Dead link check failed"
+                                exit 1
+                            else
+                                echo "No dead links found"
+                            fi
+                        '''
+                    }
                 }
             }
         }
