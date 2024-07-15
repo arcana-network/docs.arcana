@@ -57,7 +57,9 @@ pipeline {
                     ssh -i ${PRIVATE_KEY_PATH} -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_IP} '
                         cd ${SERVER_DIR} &&
                         mkdocs build &&
-                        sudo systemctl restart docs.service'
+                        sudo systemctl stop docs.service &&
+                        sleep 5 &&
+                        sudo systemctl start docs.service'
                 """
             }
         }
