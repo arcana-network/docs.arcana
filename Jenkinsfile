@@ -6,7 +6,7 @@ pipeline {
         SERVER_IP = 'docs.dev-test.arcana.network'
         SERVER_PORT = '22'
         PRIVATE_KEY_PATH = '/home/deploy/.ssh/id_rsa'
-        SERVER_DIR = '/home/deploy/your-mkdocs-directory'
+        SERVER_DIR = '/home/deploy/auth-mkdocs'
     }
 
     stages {
@@ -50,16 +50,23 @@ pipeline {
             }
         }
 
-        stage('Build and Deploy') {
+        stage('Build on Server') {
             steps {
-                input message: 'Deploy to production?', ok: 'Deploy'
                 sh """
                     ssh -i ${PRIVATE_KEY_PATH} -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_IP} '
                         cd ${SERVER_DIR} &&
-                        mkdocs build &&
-                        sudo systemctl stop docs.service &&
-                        sleep 5 &&
-                        sudo systemctl start docs.service'
+                        mkdocs build'
+                """
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                input message: 'Deploy to production?', ok: 'Deploy'
+                sh """
+                    ssh -i ${PRIVATE_KEY_PATH} -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_IP} bash -c "
+                        sudo systemctl restart docs.service &&
+                        sudo systemctl status docs.service"
                 """
             }
         }
