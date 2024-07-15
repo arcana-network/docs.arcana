@@ -64,7 +64,7 @@ pipeline {
             steps {
                 input message: 'Deploy to production?', ok: 'Deploy'
                 sh """
-                    ssh -i ${PRIVATE_KEY_PATH} -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_IP} 'sudo systemctl restart docs.service'
+                    ssh -i ${PRIVATE_KEY_PATH} -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_IP} 'sudo systemctl stop docs.service && sudo systemctl start docs.service'
                 """
             }
         }
