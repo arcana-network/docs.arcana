@@ -30,7 +30,7 @@ pipeline {
                     
                     // Test SSH connection
                     def remoteCommand = "echo 'SSH connection successful'"
-                    def command = "ssh -i ${env.PRIVATE_KEY_PATH} -p ${env.SERVER_PORT} ${env.SERVER_USER}@${env.SERVER_IP} '${remoteCommand}'"
+                    def command = "ssh -v -i ${env.PRIVATE_KEY_PATH} -p ${env.SERVER_PORT} ${env.SERVER_USER}@${env.SERVER_IP} '${remoteCommand}'"
                     sh script: command
                 }
             }
@@ -53,7 +53,7 @@ pipeline {
         stage('Build on Server') {
             steps {
                 sh """
-                    ssh -i ${PRIVATE_KEY_PATH} -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_IP} '
+                    ssh -v -i ${PRIVATE_KEY_PATH} -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_IP} '
                         cd ${SERVER_DIR} &&
                         mkdocs build'
                 """
@@ -62,9 +62,8 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                input message: 'Deploy to production?', ok: 'Deploy'
                 sh """
-                    ssh -i ${PRIVATE_KEY_PATH} -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_IP} bash -c "
+                    ssh -v -i ${PRIVATE_KEY_PATH} -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_IP} bash -c "
                         sudo systemctl restart docs.service &&
                         sudo systemctl status docs.service"
                 """
