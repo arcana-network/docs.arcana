@@ -6,7 +6,7 @@ pipeline {
         SERVER_IP = 'docs.dev-test.arcana.network'
         SERVER_PORT = '22'
         PRIVATE_KEY_PATH = '/home/deploy/.ssh/id_rsa'
-        SERVER_DIR = '/home/deploy/'
+        SERVER_DIR = '/home/deploy/auth-mkdocs'
     }
 
     stages {
