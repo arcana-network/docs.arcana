@@ -5,7 +5,7 @@ description: 'Use the Arcana Auth SDK plug-and-play feature to quickly add code 
 arcana:
   root_rel_path: ../../..
   app_type: "'React/Next.js'"
-  app_example_submodule: "'`sample-auth-react`,`sample-auth-nextjs`'"
+  app_example_submodule: "`sample-auth-react`,`sample-auth-nextjs`"
   social_provider: "'google'"
   custom_login_ui_tag: "index-react-nextjs-custom-ui-onboard-users"
   firebase_custom_ui_tag: "react-nextjs-build-iam-firebase-auth"

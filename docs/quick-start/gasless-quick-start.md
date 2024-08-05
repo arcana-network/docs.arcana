@@ -5,6 +5,7 @@ description: 'Integrate Arcana Auth in web apps. Sponsor gas fees for whiteliste
 arcana:
   root_rel_path: ..
   app_type: "'Gasless'"
+  custom_login_ui_tag: "gasless-user-onboarding#onboard-users"
   app_example_submodule: "`sample-gasless-arcana-only`"
 ---
 

@@ -5,7 +5,7 @@ description: 'Use the Arcana Auth SDK plug-and-play feature to quickly add code 
 arcana:
   root_rel_path: ../../..
   app_type: "'Vanilla HTML/CSS/JS'"
-  app_example_submodule: "'`sample-auth-html-css-js`'"
+  app_example_submodule: "`sample-auth-html-css-js`"
   custom_login_ui_tag: "index-custom-ui-onboard-users"
   firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---

@@ -46,7 +46,7 @@ Use the `AuthProvider` EIP-1193 standard Ethereum provider to call JSON/RPC func
 
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 
-* [[web-auth-usage-guide|{{config.extra.arcana.react_sdk_name}} Usage Guide]]
+* [{{config.extra.arcana.react_sdk_name}} SDK Reference](https://auth-react-sdk-ref-guide.netlify.app/)
 
 {% include "./text-snippets/auth_sdk_quicklinks.md" %}
 {% include "./text-snippets/auth_react_sdk_quicklinks.md" %}

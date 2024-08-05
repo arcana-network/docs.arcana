@@ -8,7 +8,7 @@ arcana:
 
 # Unity App: Onboard Users
 
-Learn how to onboard users via [[concept-social-login|social login]] in a Web3 Unity gaming app integrated with the [{{config.extra.arcana.unity_sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) and allow authenticated users to access the {{config.extra.arcana.wallet_name}} within the app context.
+Learn how to onboard users via [[concept-social-login|social login]] in a Web3 Unity gaming app integrated with the [{{config.extra.arcana.gaming_sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) and allow authenticated users to access the {{config.extra.arcana.wallet_name}} within the app context.
 
 <!-- 
 [Try Auth Example :material-rocket-launch:](https://9mt0h4.csb.app/){ .md-button .md-button--primary}

@@ -5,6 +5,7 @@ description: 'Onboard Users via custom login UI in Web3 Wagmi apps integrated wi
 arcana:
   root_rel_path: ../../../..
   app_type: "'Wagmi'"
+  app_example_submodule: "`sample-auth-wagmi-2`, `sample-auth-wagmi-viem`, `sample-auth-wagmi`"
   pnp_login_ui_tag: "onboard-wagmi-app-pnp-ui"
 ---
 

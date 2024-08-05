@@ -5,6 +5,8 @@ description: 'Use the Arcana Auth SDK plug-and-play feature to quickly add code 
 arcana:
   root_rel_path: ../../..
   app_type: "'Vue'"
+  app_example_submodule: "`sample-auth-vue`"
+  custom_login_ui_tag: "index-vue-custom-ui-onboard-users"
   firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
 
