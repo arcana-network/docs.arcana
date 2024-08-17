@@ -7,7 +7,7 @@ site_name: '📖 Docs'
 site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
 
 # Check for broken links, etc.
-strict: true  #For reorg changing it to false
+strict: false  #For reorg changing it to false
 
 # For canonical/URL ending with a '/' make sure this is true and offline plugin is disabled
 use_directory_urls: true
@@ -394,6 +394,7 @@ markdown_extensions:
   - footnotes
   - pymdownx.tasklist:
       custom_checkbox: true
+      clickable_checkbox: true
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
@@ -641,6 +642,7 @@ nav:
       - Troubleshooting: troubleshooting.md
       - Auth-Core SDK: quick-start/auth-core-quick-start.md
       - Changelog: changelog/index.md
+      - Checklists: checklists/index.md
     - Wallet Users: 
       - MFA Setup: user-guides/mfa/mfa-ug.md
       - Wallet User Guide: 
