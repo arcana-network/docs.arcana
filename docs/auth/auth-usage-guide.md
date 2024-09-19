@@ -137,8 +137,10 @@ const provider = await auth.connect()
 Social login
 
 ```js
-// loginType - Google, Discord, Twitter, GitHub, Twitch, Apple
+// loginType - Apple, Cognito, Discord, GitHub, Google, Steam, Twitch, Twitter
 const provider = await auth.loginWithSocial(`${loginType}`)
+
+// Note: Use loginWithBearer method for Telegram, Firebase
 ```
 
 Passwordless login via an email verification OTP 

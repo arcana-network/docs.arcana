@@ -474,6 +474,7 @@ nav:
             - GitHub: setup/config-social/github-oauth.md
             - Google: setup/config-social/google-oauth.md
             - Steam: setup/config-social/steam-oauth.md
+            - Telegram: setup/config-social/telegram-oauth.md
             - Twitch: setup/config-social/twitch-oauth.md
             - Twitter: setup/config-social/twitter-oauth.md
             - IAM Providers: 
@@ -544,6 +545,7 @@ nav:
                 - GitHub: auth/onboard/react-nextjs/custom-ui/build-social/github-oauth.md
                 - Google: auth/onboard/react-nextjs/custom-ui/build-social/google-oauth.md
                 - Steam: auth/onboard/react-nextjs/custom-ui/build-social/steam-oauth.md
+                - Telegram: auth/onboard/react-nextjs/custom-ui/build-social/telegram-oauth.md
                 - Twitch: auth/onboard/react-nextjs/custom-ui/build-social/twitch-oauth.md
                 - Twitter: auth/onboard/react-nextjs/custom-ui/build-social/twitter-oauth.md
               - IAM Providers:
@@ -562,6 +564,7 @@ nav:
                 - GitHub: auth/onboard/vanilla/custom-ui/build-social/github-oauth.md
                 - Google: auth/onboard/vanilla/custom-ui/build-social/google-oauth.md
                 - Steam: auth/onboard/vanilla/custom-ui/build-social/steam-oauth.md
+                - Telegram: auth/onboard/vanilla/custom-ui/build-social/telegram-oauth.md
                 - Twitch: auth/onboard/vanilla/custom-ui/build-social/twitch-oauth.md
                 - Twitter: auth/onboard/vanilla/custom-ui/build-social/twitter-oauth.md
               - IAM Providers:
@@ -580,6 +583,7 @@ nav:
                 - GitHub: auth/onboard/vue/custom-ui/build-social/github-oauth.md
                 - Google: auth/onboard/vue/custom-ui/build-social/google-oauth.md
                 - Steam: auth/onboard/vue/custom-ui/build-social/steam-oauth.md
+                - Telegram: auth/onboard/vue/custom-ui/build-social/telegram-oauth.md
                 - Twitch: auth/onboard/vue/custom-ui/build-social/twitch-oauth.md
                 - Twitter: auth/onboard/vue/custom-ui/build-social/twitter-oauth.md
               - IAM Providers:

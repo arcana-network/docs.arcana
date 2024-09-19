@@ -1,0 +1,1 @@
+The [[concept-plug-and-play-auth|plug and play feature]] of the {{config.extra.arcana.product_name}} product is not supported for Telegram. Developers must build a custom login UI and add code to onboard users. For details, see [[{{page.meta.arcana.telegram_custom_ui_tag}}|onboarding users via Telegram and custom login UI]]

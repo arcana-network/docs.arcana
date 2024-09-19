@@ -17,3 +17,4 @@ User onboarding via {{page.meta.arcana.social_provider}} is automatically turned
         ![Global Keys, Social Auth Settings Disabled]({{config.extra.arcana.img_dir}}/an_config_global_key_social_auth_disabled.{{config.extra.arcana.img_png}}){ .an-screenshots }
         <figcaption>Global Keys: Social Auth Settings Disabled</figcaption>
       </figure>
+

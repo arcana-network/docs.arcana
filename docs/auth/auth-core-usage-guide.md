@@ -133,6 +133,7 @@ enum SocialLoginType {
   twitch = 'twitch',
   github = 'github',
   twitter = 'twitter',
+  telegram = 'telegram',
   passwordless = 'passwordless',
 }
 

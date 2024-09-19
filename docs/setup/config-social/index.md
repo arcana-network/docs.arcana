@@ -15,6 +15,7 @@ arcana:
 [[config-auth-github|:fontawesome-brands-github:{ .icon-color} GitHub]]{ .md-button }
 [[config-auth-google|:fontawesome-brands-google:{ .icon-color} Google]]{ .md-button }
 [[config-auth-steam|:material-steam:{ .icon-color} Steam]]{ .md-button }
+[[config-auth-telegram|:simple-telegram:{ .icon-color} Telegram]]{ .md-button }
 [[config-auth-twitch|:fontawesome-brands-twitch:{ .icon-color} Twitch ]]{ .md-button }
 [[config-auth-twitter|:fontawesome-brands-twitter:{ .icon-color} Twitter]]{ .md-button }
 

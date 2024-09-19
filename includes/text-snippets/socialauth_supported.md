@@ -1,7 +1,10 @@
 * Apple
+* Cognito
 * Discord
+* Firebase
 * GitHub
 * Google
 * Steam
+* Telegram
 * Twitch
 * Twitter
