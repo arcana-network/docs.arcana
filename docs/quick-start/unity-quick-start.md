@@ -20,8 +20,6 @@ Integrate Web3 {{page.meta.arcana.app_type}} gaming apps with {{config.extra.arc
 
 * [[index-configure-auth|Configure social login providers]] to onboard users and customize the user experience for blockchain signing via the wallet settings. 
 
-* Optionally enable gasless transactions [[configure-gasless|Learn more...]].
-
 ## 1. Unity Setup, Auth Install
 
 {% include "./text-snippets/auth_unity_settings.md" %}

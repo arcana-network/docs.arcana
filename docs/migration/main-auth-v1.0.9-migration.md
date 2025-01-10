@@ -1,12 +1,12 @@
 ---
 alias: migration-guide-v1.0.9
-title: 'Arcana Auth SDK vOct12-23-gasless -> v1.0.9 Migration'
+title: 'Arcana Auth SDK v1.0.8 -> v1.0.9 Migration'
 description: 'How to migrate to Arcana Auth Web SDK v1.0.9'
 arcana:
   root_rel_path: ..
 ---
 
-# Arcana Auth SDK v{{config.extra.arcana.previous_version}} -> v1.0.9 Migration
+# Arcana Auth SDK v1.0.8 -> v1.0.9 Migration
 
 New to Arcana Network? see {{config.extra.arcana.product_name}} Quick Start Guides to get started. 
 
@@ -14,7 +14,7 @@ Using an older version and want to migrate? Read on...
 
 ## What has Changed?
 
-This is a major release of the {{config.extra.arcana.product_name}} product since the last release that included support for gasless transactions.  The updates include:
+This is a major release of the {{config.extra.arcana.product_name}} product since the last release.  The updates include:
 
 * {{config.extra.arcana.sdk_name}}
   - Global Keys feature does not require setting up social logins via the social provider's console

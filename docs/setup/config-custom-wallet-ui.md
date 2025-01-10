@@ -31,9 +31,8 @@ Click **Create** after specifying the custom wallet UI option to register the ap
 
 ## What's Next?
 
-[[index-configure-auth|Configure the app]] to enable social login providers, manage chains, set up [[concept-gasless-transactions|gasless transactions]] and wallet user experience for signing blockchain transactions. Integrate the app with the SDK and onboard users. Issue [[evm-web3-wallet-ops|supported JSON/RPC and Web3 wallet operations]] in the authenticated user's context. Allow the users to sign blockchain transactions.
+[[index-configure-auth|Configure the app]] to enable social login providers, manage chains and wallet user experience for signing blockchain transactions. Integrate the app with the SDK and onboard users. Issue [[evm-web3-wallet-ops|supported JSON/RPC and Web3 wallet operations]] in the authenticated user's context. Allow the users to sign blockchain transactions.
 
 ## See Also
 
 * [[dashboard-user-guide| Dashboard User's Guide]]
-* [[configure-gasless| Set up Gasless Transactions]]

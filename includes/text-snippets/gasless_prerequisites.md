@@ -1,1 +1,0 @@
-* To deposit funds in a newly created gas tank, developer must use a browser based wallet such as MetaMask.

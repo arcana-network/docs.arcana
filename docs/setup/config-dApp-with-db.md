@@ -36,7 +36,6 @@ This guide covers how to:
     - Wallet Customization
     - Login Session Management
     - Keyspace Type
-    - Gasless Settings
 
 * Switch application
 * Monitor usage and billing
@@ -214,12 +213,6 @@ To view and edit the keyspace settings for the app, click **Manage Apps > App Ca
 
 {% include "./text-snippets/db_keyspace.md" %}
 
-### Gasless Settings
-
-To view and edit the gasless transaction settings for the app, click **Manage Apps > App Card > Testnet/Mainnet Configuration** and bring up the app usage metrics page in the dashboard. In the LHS menu, click **Configure > Gasless**.
-
-See [[configure-gasless|how to configure gasless]] for details.
-
 ## Switch Application
 
 To switch viewing configuration settings from one application configuration profile screen to another, click on the dropdown next to the application name in the LHS navigation. You will see other registered applications in your account. Select another app name in the dropdown to view its configuration settings.
@@ -381,6 +374,5 @@ Select the application you wish to de-register and click on the delete icon. Con
 * [[index-config-social-providers|Configure Social Login]]
 * [[index-setup-wallet|Configure Wallet Settings]]
 * [[configure-wallet-chains| Manage Chains]]
-* [[configure-gasless|Configure Gasless Settings]]
 * [[config-custom-auth| Configure Custom Auth Settings]]
 

@@ -1,4 +1,0 @@
-* App must be [[setup-ca|registered and configured]] via the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %} 
-<!---
-* Optionally [[index-configure-auth|configure auth settings]] such as [[concept-social-login|social login]], [[concept-gasless-transactions|gasless transactions]], [[concept-index-arcana-wallet|wallet user experience]], etc.
---->

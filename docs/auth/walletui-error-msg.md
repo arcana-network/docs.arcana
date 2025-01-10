@@ -62,7 +62,6 @@ The {{config.extra.arcana.wallet_name}} users may encounter the following run-ti
 | W-132: Please fill all values! | All input values must be specified, they are not optional in this case. |
 | W-133: Failed to initialize one or more on-ramps. | Transak encountered an error while initializing the on-ramp provider, try again. |
 | W-134: Could not get token. | Login failure as the token is not available. |
-| W-135: Failed to initialize SCW. | Failed to initialize smart contract wallet account associated with the current wallet EOA address. |
 | W-136: Failed to add <xyz transaction> to activities list. | Due to some unknown reason, the activity tab was not updated for this current transaction. |
 | W-137: Could not verify credentials. | Passwordless login failed as the OTP/email link credentials could not be verified successfully. |
 | W-138: Could not contact parent page causing login failure. Retry login. | Redirect to the specified URL failed causing a failed login. Check auth settings. |

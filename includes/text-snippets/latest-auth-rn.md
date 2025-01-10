@@ -50,10 +50,6 @@ The product consists of:
 
 There are **no usage changes** in this release. To migrate to the latest release, re-install the SDK.
 
-If you're using the Gasless feature, ensure the gas tank has enough balance to cover ERC-20 token transfer fees. Otherwise, users may incur gas charges for whitelisted operations.
-
-{% include "./text-snippets/gl_limitations.md" %}
-
 [Changelog](https://github.com/arcana-network/auth/releases/latest){ .md-button }
 
 ## Get Started

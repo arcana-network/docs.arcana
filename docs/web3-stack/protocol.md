@@ -22,8 +22,7 @@ The {{config.extra.arcana.product_name}} Mainnet was released in January 2023 wi
 The following services are active on Testnet as well as the Mainnet
 
 * Configuring {{config.extra.arcana.company_name}} SDK usage with {{config.extra.arcana.dashboard_name}}
-* User onboarding, gasless transactions through the {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.latest_version}}
-* Gasless Transactions (Third-party wallets) via the {{config.extra.arcana.gasless_sdk_name}} v{{config.extra.arcana.latest_gasless_sdk_version}}\
+* User onboarding via social login
 * Asynchronous Distributed Key Generation that powers the {{config.extra.arcana.sdk_name}} and helps onboard users to Web3
 
 We are actively working towards adding newer features and capabilities to the SDKs. Watch out for our upcoming Chain Abstraction solution!

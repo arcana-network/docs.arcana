@@ -1,14 +1,14 @@
 ---
 alias: migration-guide-v1.0.10
-title: 'Arcana Auth SDK vOct12-23-gasless -> v1.0.10 Migration'
+title: 'v1.0.9 -> v1.0.10 Migration'
 description: 'How to migrate to Arcana Auth Web SDK v1.0.10'
 arcana:
   root_rel_path: ..
 ---
 
-# Arcana Auth SDK v{{config.extra.arcana.previous_version}} -> v1.0.10 Migration
+# Arcana Auth SDK v1.0.9 -> v1.0.10 Migration
 
-New to Arcana Network? Visit see {{config.extra.arcana.product_name}} Quick Start Guides to get started. 
+New to Arcana Network? Visit see {{config.extra.arcana.sdk_name}} Quick Start Guides to get started. 
 
 Using an older version and want to migrate? Read on...
 

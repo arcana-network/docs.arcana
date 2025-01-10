@@ -88,26 +88,6 @@ Other wallet features can be accessed via specific tabs in the wallet UI:
 
 ## View Wallet Balance
 
-### View/Switch Account Type
-
-By default, a traditional Externally Owned Account (EoA) type account is associated with the user's wallet.
-
-If the app developer has enabled gasless transactions for the current active chain in the wallet, then the user account is associated with two addresses, EoA and Smart Contract Wallet (SCW) address. 
-
-The wallet UI displays the [[concept-wallet-switch-account-type|account type]] next to the wallet address.
-
-<figure markdown="span">
-  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_scw_account_type.{{config.extra.arcana.img_png}}" alt="View Account Type"/>
-  <figcaption>View Account Type</figcaption>
-</figure> 
-
-Click on the arrow next to the wallet address to switch the account type between EoA/SCW. Switching of account type is not possible for chains that do not support gasless transactions. 
-
-<figure markdown="span">
-  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_switch_account_type.{{config.extra.arcana.img_gif}}" alt="Switch Account Type"/>
-  <figcaption>Switch Account Type</figcaption>
-</figure> 
-
 ### Add/Select a Network
 
 By default, the {{config.extra.arcana.wallet_name}} UI displays a pre-configured list of blockchain networks that are configured by the app developer. Users can select a different network from the drop-down list or add newer networks that are [[web3-stack-chains|supported by the app]].

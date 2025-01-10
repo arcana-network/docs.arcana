@@ -1,1 +1,0 @@
-<span><a href="https://docs.biconomy.io/supportedNetworks" target="_blank">supported networks</a></span>

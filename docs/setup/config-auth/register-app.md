@@ -28,9 +28,7 @@ Learn how to register a Web3 app through the [[concept-arcana-dashboard|{{config
 
 ## What's next?
 
-After registering the app, [[index-configure-auth| configure the user onboarding]] settings, [[configure-gasless|configure gasless settings]](optional) and [[integrate-vanilla-app|integrate the app]] to onboard users and allow them to sign blockchain transactions via the {{config.extra.arcana.wallet_name}}.
-
-{% include "./text-snippets/note-gasless-3p-wallets.md" %}
+After registering the app, [[index-configure-auth| configure the user onboarding]] settings and [[integrate-vanilla-app|integrate the app]] to onboard users and allow them to sign blockchain transactions via the {{config.extra.arcana.wallet_name}}.
 
 ## See Also
 

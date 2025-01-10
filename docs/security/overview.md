@@ -24,8 +24,6 @@ There are multiple considerations when it comes to securing the {{config.extra.a
 
 * **User Data Security**:  Is the data shared by the developers or users with the {{config.extra.arcana.company_name}} ecosystem safe and secure?
 
-* **Securing Gasless Usage**: Are the systems funding user's gas fees secured?
-
 In the following sections, we will try to answer these questions one by one.
 
 ## App Onboarding
@@ -71,8 +69,4 @@ Developers can choose to enable the additional domain validation checks for the 
 
 ## User Data Security
 
-Developers interact with the {{config.extra.arcana.dashboard_name}} to register and configure the apps for various SDK usage settings.  All the data provided by the developer in the context of the registered app is encrypted and secured. There is no app user credential data stored in the {{config.extra.arcana.company_name}} subsystem. The app user login and usage details data are secured via data encryption and access control. Only authorized users can access registered app usage data. 
-
-## Securing Gasless Usage
-
-To enable gasless transactions, developers set up gas tanks on one or more of the supported blockchains. The funds deposited in the gas tanks can only be withdrawn by the owner of the gas tanks. Only whitelisted app operations, as configured by the developer are allowed to use funds from the gas tanks to pay gas fees. In the upcoming releases, there will be options for developers to cap the amount of gas fees they'd like to sponsor per app user to limit malicious usage of gas tank funds.
+Developers interact with the {{config.extra.arcana.dashboard_name}} to register and configure the apps for various SDK usage settings.  All the data provided by the developer in the context of the registered app is encrypted and secured. There is no app user credential data stored in the {{config.extra.arcana.company_name}} subsystem. The app user login and usage details data are secured via data encryption and access control. Only authorized users can access registered app usage data.

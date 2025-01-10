@@ -5,7 +5,6 @@
 [[integrate-rainbow-app| :material-card-account-mail:{ .icon-color } RainbowKit App ]]{ .md-button }
 [[integrate-web3-react-app| :material-card-account-mail:{ .icon-color } Web3-React App]]{ .md-button }
 [[integrate-vue-app| :material-vuejs:{ .icon-color } Vue App]]{ .md-button }
-[[integrate-gasless-app| :material-gas-station-off:{ .icon-color } Gasless App]]{ .md-button }
 [[integrate-solana-app| :simple-bookstack:{ .icon-color } Solana App]]{ .md-button }
 [[integrate-mvx-app| :simple-bookstack:{ .icon-color } MultiversX App]]{ .md-button }
 [[integrate-near-app| :simple-bookstack:{ .icon-color } Near App]]{ .md-button }

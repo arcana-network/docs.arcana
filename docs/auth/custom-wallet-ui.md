@@ -29,7 +29,7 @@ Use the dashboard to create a new app entry and [[register-app-auth|register the
 
 ## 3. Configure Social Login
 
-Follow the instructions to [[index-config-social-providers|configure social login]] and [[index-config-iam-providers|custom IAM providers]] if required, before integrating the app with the {{config.extra.arcana.sdk_name}}. Optionally, [[configure-gasless|configure gasless transactions]] through the {{config.extra.arcana.wallet_name}} and [[configure-standalone-gasless|third-party browser-based wallets]].
+Follow the instructions to [[index-config-social-providers|configure social login]] and [[index-config-iam-providers|custom IAM providers]] if required, before integrating the app with the {{config.extra.arcana.sdk_name}}.
 
 ## 4. Integrate App
 

@@ -20,8 +20,6 @@ arcana:
 
     [[rn-main-auth-v1.0.9| :material-note-text:{ .icon-color } Auth v1.0.9]]{ .md-button }
 
-    [[rn-main-auth-vOct12-23-gasless| :material-note-text:{ .icon-color } Auth vOct12-23-gasless Release]]{ .md-button }
-
     [[rn-main-auth-v1.0.8| :material-note-text:{ .icon-color } Auth v1.0.8]]{ .md-button }
 
     [[rn-main-auth-v1.0.7| :material-note-text:{ .icon-color } Auth v1.0.7]]{ .md-button }
@@ -43,14 +41,3 @@ arcana:
     [[rn-main-auth-v1.0.0| :material-note-text:{ .icon-color } Auth v1.0.0]]{ .md-button }
 
     [[rn-beta-auth-v0.3.0| :material-note-text:{ .icon-color } Auth v0.3.0]]{ .md-button }
-
-
-=== "Gasless SDK"
-
-    [[rn-main-scw-v0.0.45| :material-note-text:{ .icon-color }{{config.extra.arcana.gasless_sdk_name}} v0.0.45]]{ .md-button }
-
-    [[rn-main-scw-v0.0.37| :material-note-text:{ .icon-color }{{config.extra.arcana.gasless_sdk_name}} v0.0.37]]{ .md-button }
-
-    [[rn-main-scw-v0.0.35| :material-note-text:{ .icon-color }{{config.extra.arcana.gasless_sdk_name}} v0.0.35]]{ .md-button }
-
-    [[rn-main-scw-v0.0.30| :material-note-text:{ .icon-color }{{config.extra.arcana.gasless_sdk_name}} v0.0.30]]{ .md-button }

@@ -1,1 +1,0 @@
-<span><a href="https://docs.biconomy.io/troubleshooting" target="_blank">Biconomy Troubleshooting</a></span>

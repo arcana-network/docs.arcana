@@ -2,7 +2,7 @@
 alias: index-docs
 template: newintro.html
 title: 'Welcome'
-description: 'Fast, secure social login and gasless transactions in Web3 apps.'
+description: 'Fast, secure social login to enable Web3 app blockchain transactions.'
 arcana:
   root_rel_path: .
 timetoread: False
@@ -53,7 +53,7 @@ This documentation contains everything you need to get started using [[introduct
 
 === "Web3 Developers"
 
-    Integrate Web3 apps with Arcana SDKs to onboard users quickly via [[concept-social-login|social login]] and [[concept-gasless-transactions|gasless transactions]].
+    Integrate Web3 apps with Arcana SDKs to onboard users quickly via [[concept-social-login|social login]].
     
 
     {==
@@ -73,14 +73,6 @@ This documentation contains everything you need to get started using [[introduct
         Enable Web2-like login in Web3 apps with {{config.extra.arcana.sdk_name}} and enable in-app {{config.extra.arcana.wallet_name}}
 
         [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/social-login.md)
-
-    -   :material-gas-station-off:{ .lg .middle .icon-color} __Gasless__
-
-        ---
-
-        Sponsor gas fees and enable gasless transactions via {{config.extra.arcana.wallet_name}} / third-party browser-based wallets
-
-        [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/gasless-ops.md)
 
     -   :material-clock-check-outline:{ .lg .middle .icon-color} __Set up in 2 min!__
 
@@ -112,7 +104,7 @@ This documentation contains everything you need to get started using [[introduct
     ## SDK Playground
 
     <div class="tx-hero-container">
-        <img src="{{config.extra.arcana.img_dir}}/escape_velocity_arcana_ca.{{config.extra.arcana.img_png}}" alt="Auth and Gasless Playground Escape Velocity"></img>
+        <img src="{{config.extra.arcana.img_dir}}/escape_velocity_arcana_ca.{{config.extra.arcana.img_png}}" alt="Web3 Escape Velocity"></img>
     </div>
 
     <div class="tx-hero-container">
@@ -121,13 +113,6 @@ This documentation contains everything you need to get started using [[introduct
             <div class="tx-try-now-button-blue a-link-items">
                 <h3 style="color: var(--md-an-gray-light-color)">Try Auth</h3>
             </div>
-            </a>
-        </div>
-        <div class="tx-hero-content">
-            <a href="/gasless/gl-try-now/">
-                <div class="tx-try-now-button-green a-link-items">
-                    <h3 style="color: var(--md-an-gray-light-color)">Try Gasless</h3>
-                </div>
             </a>
         </div>
     </div>
@@ -141,12 +126,6 @@ This documentation contains everything you need to get started using [[introduct
         <hr>
 
         [[wagmi-quick-start| Wagmi ]]{ .md-button } [[rainbowkit-quick-start| RainbowKit ]]{ .md-button } [[web3-react-quick-start| Web3-React ]]{ .md-button } [[walletconnect-quick-start| WalletConnect ]]{ .md-button } [[vanilla-web-apps-quick-start| HTML/CSS/JS ]]{ .md-button } [[react-nextjs-quick-start| React/NextJS ]]{ .md-button } [[vue-quick-start| Vue ]]{ .md-button }
-        
-        **Gasless**
-    
-        <hr>
-
-        [[gasless-quick-start| Gasless ]]{ .md-button } [[gasless-standalone-quick-start| Gasless(3rd Party Wallets) ]]{ .md-button }
 
     === "Non-EVM Apps"
 

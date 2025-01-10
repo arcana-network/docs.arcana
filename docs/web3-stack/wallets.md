@@ -20,18 +20,10 @@ arcana:
 
     ### Custom Wallet UI
 
-    When using the {{config.extra.arcana.sdk_name}} for user onboarding and gasless transactions, by default the built-in, embedded, non-custodial {{config.extra.arcana.wallet_name}} UI is enabled.
+    When using the {{config.extra.arcana.sdk_name}} for user onboarding, by default the built-in, embedded, non-custodial {{config.extra.arcana.wallet_name}} UI is enabled.
 
     It is possible to totally replace the {{config.extra.arcana.wallet_name}} UI with a [[config-custom-wallet-ui|custom wallet UI]]. 
 
-    !!! an-caution "Gasless Transactions"
-
-          Apps integrated with the {{config.extra.arcana.sdk_name}} can use the built-in, [[concept-gasless-transactions|gasless transaction feature]] for signing blockchain transactions via the {{config.extra.arcana.wallet_name}}.
-
 === "Third-party Wallets"
 
-    Any browser-based wallet can be enabled in an app that is integrated with the {{config.extra.arcana.company_name}} SDKs. For example, MetaMask, Brave, Phantom, etc. Note that the wallet must work with the [[web3-stack-chains|supported chains]].
-
-    !!! an-caution "Gasless Transactions"
-
-          To extend this gasless feature in the supported third-party browser-based wallets, apps must integrate with the {{config.extra.arcana.gasless_sdk_name}}.
+    Any browser-based wallet can be enabled in an app that is integrated with the {{config.extra.arcana.sdk_name}}. For example, MetaMask, Brave, Phantom, etc. Note that the wallet must work with the [[web3-stack-chains|supported chains]].

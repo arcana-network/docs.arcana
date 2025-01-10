@@ -2,7 +2,6 @@
 * Sign (Approve/Reject) blockchain transactions
 * Speed up transactions
 * Add, modify, switch blockchain networks
-* Switch accounts ([[concept-gasless-transactions|Gasless feature]], EOA/SCW accounts)
 * Deploy smart contracts 
 * Manage token assets (native and custom)
     - Check account balance

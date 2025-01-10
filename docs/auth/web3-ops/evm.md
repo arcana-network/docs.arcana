@@ -50,18 +50,6 @@ The {{config.extra.arcana.wallet_name}} supports [standard Ethereum JSON-RPC spe
 
 {% include "./code-snippets/auth_get_account_type.md" %}
 
-### Switch Account Type
-
-{% include "./code-snippets/auth_switch_account_type.md" %}
-
-!!! an-caution "Account Switching"
-
-      * By default, all user accounts are EoA type.
-
-      * Enabling the gasless feature for one or more of the supported blockchains via {{config.extra.arcana.dashboard_name}} adds SCW account types for all user accounts in that app.
-
-      * Accounts can be switched only when the gasless feature is enabled via {{config.extra.arcana.sdk_name}}.
-
 ### Watch Assets
 
 {% include "./code-snippets/auth_watchasset.md" %}

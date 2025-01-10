@@ -2,7 +2,7 @@
 alias: index-partner-docs
 title: 'Docs @Partners'
 template: newintro.html
-description: 'Arcana SDKs - Auth, Gasless feature on partner chains that are pre-configured in Arcana wallet. Check out Arcana documentation on partner chain docs sites.'
+description: 'Arcana SDKs - Auth social login feature is available for partner chains pre-configured to use in Arcana wallet. Check out Arcana documentation on partner chain docs sites for details.'
 arcana:
   root_rel_path: ..
 ---

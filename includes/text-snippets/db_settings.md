@@ -102,26 +102,6 @@ Click **Configure** in the LHS navigation pane of the {{config.extra.arcana.dash
       <figcaption>Keyspace: Global/App-Specific Keys</figcaption>
     </figure>
 
-=== "Gasless"
-
-    Enable [[concept-gasless-transactions|gasless transactions]] through the {{config.extra.arcana.wallet_name}} or third-party wallets through the following gasless configuration settings.  
-
-    * Add Gas Tank
-    * Deposit/Withdraw Gas Tank Funds
-    * Enable/Pause Gas Tank
-    * Whitelist app operations
-
-    !!! an-tip "Account Abstraction: SCW Account"
-
-          Gasless transactions require enabling **SCW** user accounts or [[concept-gasless-transactions#gasless-accounts|'gasless accounts']] that are different from the typical **EOA** user accounts.
-    
-    See [[configure-gasless|how to configure gasless transactions]] for details.
-
-    <figure markdown="span">
-      <img src="{{config.extra.arcana.img_dir}}/an_gl_db_new_config.{{config.extra.arcana.img_png}}" alt="Set up Gas Tanks" class="an-screenshots"/>
-      <figcaption>Gasless Settings</figcaption>
-    </figure>
-
 **Save** the configuration settings to make sure the setting changes take effect.
 
 <figure markdown="span">

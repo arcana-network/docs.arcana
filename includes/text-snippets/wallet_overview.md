@@ -6,7 +6,6 @@
 * Sign blockchain transactions
 * Add, and modify the network configuration
 * Switch to a different network
-* Switch between EOA/SCW accounts (Gasless)
 * Deploy smart contract to a specific network
 * Add, send, and receive custom tokens (ERC-20) and NFTs (ERC-721 and ERC-1155)
 * View account transaction activity such as how many native, custom tokens or NFTs were transacted or contracts deployed 
