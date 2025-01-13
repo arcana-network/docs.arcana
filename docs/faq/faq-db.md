@@ -13,6 +13,14 @@ toc_depth: 2
 
 ---
 
+??? an-faq "Is it mandatory to use the {{config.extra.arcana.dashboard_name}} before integrating with the {{config.extra.arcana.sdk_name}} to enable social login?"
+
+      Yes.
+
+      To integrate any app with the {{config.extra.arcana.sdk_name}}, it is not sufficient to simply download and install the SDK. A unique {{config.extra.arcana.app_address}} is also required. This is available once the app is registered using the {{config.extra.arcana.dashboard_name}}. 
+
+      Note that the {{config.extra.arcana.app_address}} per app is different when using Testnet or Mainnet. When deploying the app on Testnet use the {{config.extra.arcana.app_address}} meant for Testnet and vice-versa.
+
 ??? an-faq "How do I delete the application configuration and start afresh?"
 
       To delete an application from {{config.extra.arcana.company_name}} ecosystem, follow these instructions:

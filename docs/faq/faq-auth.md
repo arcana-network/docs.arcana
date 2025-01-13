@@ -13,15 +13,15 @@ toc_depth: 2
 
 ---
 
-??? an-faq "Can users log in using their existing Web3 wallets?"
+??? an-faq "Can app users onboard app only via social login or do they have the flexibility to use any third-party Web3 wallets to connect to an app integrated with the {{config.extra.arcana.sdk_name}}?"
 
       Yes. 
 
-      Besides social login, {{config.extra.arcana.sdk_name}} allows Web3 app users to log in with third-party Web3 wallets. 
+      Besides social login, {{config.extra.arcana.sdk_name}} allows Web3 app users to log in to a Web3 app via any supported third-party browser-based Web3 wallets. 
       
       Apps using wallet connectors, [[wagmi-quick-start|Wagmi]], and [[rainbowkit-quick-start|RainbowKit]], [[web3-react-quick-start|Web3-React]], and [[walletconnect-quick-start|WalletConnect]] SDKs can enable {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
 
-??? an-faq "Is social login Microsoft account or Hotmail supported?"
+??? an-faq "Is social login via a Microsoft account or Hotmail supported?"
 
       No.
 
@@ -35,7 +35,9 @@ toc_depth: 2
 
 ??? an-faq "Will the Arcana Network's distributed key generation algorithm be affected if a node with a key share becomes temporarily inaccessible?"
 
-      No, Arcana's [ADKG]({{page.meta.arcana.root_rel_path}}/concepts/adkg.md) algorithm can still generate the key using the key shares from the other nodes that are accessible. The algorithm is designed to tolerate a certain number of nodes being inaccessible, depending on the total number of participating nodes. For more details, see [Arcana's Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08).
+      No.
+      
+      Arcana's [ADKG]({{page.meta.arcana.root_rel_path}}/concepts/adkg.md) algorithm can still generate the key using the key shares from the other nodes that are accessible. The algorithm is designed to tolerate a certain number of nodes being inaccessible, depending on the total number of participating nodes. For more details, see [Arcana's Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08).
 
 ??? an-faq "Does the authenticated user see the same wallet address if they use different authentication providers to log into a Web3 app integrated with the {{config.extra.arcana.wallet_name}}?"
 
@@ -108,17 +110,17 @@ toc_depth: 2
 
 ??? an-faq "Can users create accounts with passkeys on {{config.extra.arcana.sdk_name}}?"
 
-      No.
+      Yes.
 
-      Web3 apps using {{config.extra.arcana.sdk_name}} don’t support passkey-based signups yet.
+      Web3 apps using {{config.extra.arcana.sdk_name}} can use passkeys for signups and login or as an alternative login mechanism.
       
-      For the first login, users need to go with legacy authentication. They can then create and link a passkey. After that, they can use the passkey for future logins to the app on the same device.
+      Refer to [[concept-auth-passkeys| Passkey Support]] for details.
 
 ## {{config.extra.arcana.wallet_name}}
 
 ---
 
-??? an-faq "How does the {{config.extra.arcana.wallet_name}} allow app developers to manage user experience for signing blockchain transactions?"
+??? an-faq "How does the in-app {{config.extra.arcana.wallet_name}} allow developers to manage UX for signing blockchain transactions?"
 
       Apps can integrate with the {{config.extra.arcana.sdk_name}} to enable an embedded, non-custodial Web3 {{config.extra.arcana.wallet_name}} for every authenticated app user.
 
@@ -130,7 +132,7 @@ toc_depth: 2
 
       By default, {{config.extra.arcana.wallet_name}} does not set the `window.ethereum` value in the app's context. To explicitly set this value, during the integration of the app with the {{config.extra.arcana.wallet_name}}, when `AuthProvider` is instantiated, developers must specify the `setWindowParameter=true`. For details, see the [[web-auth-usage-guide|{{config.extra.arcana.wallet_name}} Usage Guide]].
 
-??? an-faq "How is the {{config.extra.arcana.wallet_name}} different from self-custodial wallets?"
+??? an-faq "How is the in-app {{config.extra.arcana.wallet_name}} different from self-custodial wallets?"
 
       {{config.extra.arcana.wallet_name}} is a non-custodial wallet. Here is how it differs from the self-custodial wallets:
 

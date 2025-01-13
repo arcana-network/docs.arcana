@@ -9,17 +9,33 @@ toc_depth: 2
 
 # General
 
+??? an-faq "Can any Web3 app user access the in-app {{config.extra.arcana.wallet_name}}?"
+
+      No. The in-app {{config.extra.arcana.wallet_name}} is accessible by the authenticated users only if the app is integrated with the {{config.extra.arcana.sdk_name}}. Web3 users cannot download and install the in-app wallet like other standalone, browser-based third-party wallets.
+
 ## Integrating Web3 Apps
 
 ---
 
-??? an-faq "How can developers enable the {{config.extra.arcana.product_name}} features in their Web3 applications?"
+??? an-faq "How can I enable the [[concept-social-login|social login]] in a Web3 app?"
 
-      Simply integrate the Web3 app with the {{config.extra.arcana.sdk_name}}. It requires developers to configure {{config.extra.arcana.sdk_name}} usage settings using the {{config.extra.arcana.dashboard_name}} before actually integrating the application.
+      Web3 developers can simply download and integrate dApps with the {{config.extra.arcana.sdk_name}}. 
       
-??? an-faq "How can developers enable {{config.extra.arcana.wallet_name}} in the context of their Web3 applications?"
+      Login to the {{config.extra.arcana.dashboard_name}} to configure {{config.extra.arcana.sdk_name}} usage settings before actually integrating the application.
+      
+??? an-faq "How can I access in-app {{config.extra.arcana.wallet_name}} in the context of a Web3 applications?"
 
-      First, [[register-app-auth|register the app]] and [[index-configure-auth|configure the app settings]] using the {{config.extra.arcana.dashboard_name}}. Use the unique {{config.extra.arcana.app_address}} assigned by Arcana Network to [[integrate-vanilla-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}. Add code in the app to use the {{config.extra.arcana.sdk_name}} functions and [[use-plug-play-auth|onboard users]]. The authenticated users can instantly access the {{config.extra.arcana.wallet_name}} in the app context and sign blockchain transactions. Developers can control the user experience for signing blockchain transactions with the appropriate [[concept-wallet-visibility|wallet visibility]] specification. The wallet can be displayed for the authenticated users in the app context always or the app can be configured to display blockchain transaction request notifications for approval by the user only when a transaction is triggered. Developers can display the wallet as per the application logic using the `showWallet()` function.
+      App users can access the in-app {{config.extra.arcana.wallet_name}} in the context of a Web3 application only if the app developer has integrated it with the {{config.extra.arcana.sdk_name}}.
+
+      Web3 app developers can enable the in-app {{config.extra.arcana.wallet_name}} by:
+
+      1. [[register-app-auth|Registering the app]] and [[index-configure-auth|configuring the app settings]] using the {{config.extra.arcana.dashboard_name}}. 
+      2. Download and install the SDK and then use the unique {{config.extra.arcana.app_address}} assigned to the registered app in the dashboard to [[integrate-vanilla-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}. 
+      3. Add code in the app to use the {{config.extra.arcana.sdk_name}} functions and [[use-plug-play-auth|onboard users]]. 
+      
+      The authenticated users can instantly access the {{config.extra.arcana.wallet_name}} in the app context and sign blockchain transactions. Developers can control the user experience for signing blockchain transactions with the appropriate [[concept-wallet-visibility|wallet visibility]] specification. 
+      
+      The in-app wallet can be displayed for the authenticated users in the app context always or the app can be configured to display blockchain transaction request notifications for approval by the user only when a transaction is triggered. Developers can display the wallet as per the application logic using the `showWallet()` function.
 
 ??? an-faq "How can developers access the standard EIP-1193 provider from the `AuthProvider` object once the Auth SDK is integrated with the Web3 app?"
 
@@ -44,7 +60,7 @@ toc_depth: 2
 
 ---
 
-??? an-faq "If an application uses wallet connector frameworks such as Wagmi, RainbowKit, WalletConnect or Web3-React, can the {{config.extra.arcana.wallet_name}} be plugged into those wallet connectors?"
+??? an-faq "If an application uses wallet connector frameworks such as Wagmi, RainbowKit, WalletConnect or Web3-React, can the in-app {{config.extra.arcana.wallet_name}} be plugged into those wallet connectors?"
 
      Yes. 
      
@@ -61,7 +77,11 @@ toc_depth: 2
 
 ??? an-faq "How do I enable the Web2-like social login experience in a Web3 app to onboard users?"
 
-      First, register the app with the Arcana Network. Next, configure one or more authentication providers for onboarding app users by configuring the **Social Auth** settings using the {{config.extra.arcana.dashboard_name}}. Then integrate the app with the {{config.extra.arcana.sdk_name}} and add code to onboard users. For example, see [[google-social-auth|how to onboard users via Google]].
+      1. Register the app with the Arcana Network. 
+      
+      2. Configure one or more authentication providers for onboarding app users by configuring the **Social Auth** settings using the {{config.extra.arcana.dashboard_name}}. 
+      
+      3. Integrate the app with the {{config.extra.arcana.sdk_name}} and add code to onboard users. For example, see [[google-social-auth|how to onboard users via Google]].
 
 ??? an-faq "Is there a passwordless login option to onboard the users?"
 
@@ -75,7 +95,11 @@ toc_depth: 2
 
 ??? an-faq "Does each registered app have a single unique {{config.extra.arcana.app_address}}?"
 
-      No. Each app registered with the {{config.extra.arcana.company_name}} using the {{config.extra.arcana.dashboard_name}} is assigned two unique {{config.extra.arcana.app_address}}. One for the Testnet configuration profile and a different {{config.extra.arcana.app_address}} for the Mainnet configuration profile.
+      No. 
+      
+      Each app registered with the {{config.extra.arcana.company_name}} using the {{config.extra.arcana.dashboard_name}} is assigned not one but two unique {{config.extra.arcana.app_address}}. 
+      
+      One for the Testnet configuration profile and a different {{config.extra.arcana.app_address}} for the Mainnet configuration profile.
 
 ??? an-faq "What is the difference between Testnet and Mainnet?"
 
@@ -93,7 +117,7 @@ toc_depth: 2
 
       * **Billing**: App usage is tracked for both the Arcana Testnet as well as the Mainnet.  However, only Mainnet usage is billed.
 
-??? an-faq "What is the difference in the {{config.extra.arcana.wallet_name}} behavior when an app is deployed on Testnet vs. the Mainnet?"
+??? an-faq "What is the difference in the in-app {{config.extra.arcana.wallet_name}} behavior when an app is deployed on Testnet vs. the Mainnet?"
 
       If a user logs into the app that is integrated with the {{config.extra.arcana.sdk_name}} and deployed on the Arcana Testnet, they will see a warning on the main 'Token Assets' tab of the built-in {{config.extra.arcana.wallet_name}} UI. The warning indicates that the app is deployed on the Testnet.
 
