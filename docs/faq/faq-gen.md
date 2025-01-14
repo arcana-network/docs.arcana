@@ -11,7 +11,7 @@ toc_depth: 2
 
 ??? an-faq "Can any Web3 app user access the in-app {{config.extra.arcana.wallet_name}}?"
 
-      No. The in-app {{config.extra.arcana.wallet_name}} is accessible by the authenticated users only if the app is integrated with the {{config.extra.arcana.sdk_name}}. Web3 users cannot download and install the in-app wallet like other standalone, browser-based third-party wallets.
+      No. The in-app {{config.extra.arcana.wallet_name}} is accessible by the authenticated users only if the app is integrated with the {{config.extra.arcana.sdk_name}}. Web3 users cannot download and install the in-app wallet like other standalone, browser-based third-party wallets. 
 
 ## Integrating Web3 Apps
 

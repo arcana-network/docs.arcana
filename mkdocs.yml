@@ -449,7 +449,6 @@ nav:
       - Usage Guide: ca/ca-usage-guide.md
       - APIs: https://ca-sdk-ref-guide.netlify.app/
       - Examples: ca/examples.md
-#     - Playground: ca/ca-try-now.md
     - FAQ: ca/faq.md
     - Concepts: 
       - ca/introduction/ca.md
@@ -460,21 +459,20 @@ nav:
       - CA Audit Report: https://github.com/arcana-network/audit-reports/blob/main/Arcana%20Wallet%20Final%20Audit%20Report.pdf
       - CA Release Notes: relnotes/latest-ca-release-note.md
       - Demos:
-        - Wallet Demo: ca/ca-demo.md
-        - SDK Demo: https://sdk.arcana.network
+        - CA Wallet Demo: ca/ca-demo.md
+        - CA SDK Demo: https://sdk.arcana.network
+      - Supported Chains: web3-stack/ca_stack.md
   - Auth: 
     - auth-index.md
-    #- Service Status: https://status.arcana.network/
-    - Quick Start:
-      - dApp Type:
-        - Web:
-          - Wagmi: quick-start/wagmi-quick-start.md
-          - RainbowKit: quick-start/rainbowkit-quick-start.md
-          - WalletConnect: quick-start/walletconnect-quick-start.md
-          - Web3-React: quick-start/web3-react-quick-start.md
-          - React/Next.js: quick-start/react-nextjs-quick-start.md
-          - HTML/CSS/JS: quick-start/vanilla-web-apps-quick-start.md
-          - Vue: quick-start/vue-quick-start.md
+    - Developers:
+      - Quick Start:
+        - Wagmi: quick-start/wagmi-quick-start.md
+        - RainbowKit: quick-start/rainbowkit-quick-start.md
+        - WalletConnect: quick-start/walletconnect-quick-start.md
+        - Web3-React: quick-start/web3-react-quick-start.md
+        - React/Next.js: quick-start/react-nextjs-quick-start.md
+        - HTML/CSS/JS: quick-start/vanilla-web-apps-quick-start.md
+        - Vue: quick-start/vue-quick-start.md
         - Mobile: 
           - Flutter: quick-start/flutter-quick-start.md
           - React-Native: quick-start/react-native-quick-start.md
@@ -482,258 +480,256 @@ nav:
         - MultiversX: quick-start/mvx-quick-start.md
         - Near: quick-start/near-quick-start.md
         - Unity: quick-start/unity-quick-start.md
-    - Setup:
-      - Configuration Profiles:
-          - Testnet: deploy/deploy-app.md
-          - Mainnet: deploy/migrate-testnet-mainnet.md
-      - Register App: setup/config-auth/register-app.md
-      - Auth Settings:
-          - setup/config-auth/index.md
-          - Social Auth:
-            - setup/index.md
-            - Social Login: 
-              - Apple: setup/config-social/apple-oauth.md
-              - Discord: setup/config-social/discord-oauth.md
-              - GitHub: setup/config-social/github-oauth.md
-              - Google: setup/config-social/google-oauth.md
-              - Steam: setup/config-social/steam-oauth.md
-              - Telegram: setup/config-social/telegram-oauth.md
-              - Twitch: setup/config-social/twitch-oauth.md
-              - Twitter: setup/config-social/twitter-oauth.md
-            - IAM Providers: 
-              - setup/config-idm/index.md
-              - Cognito: setup/config-idm/cognito-oauth.md
-              - Firebase: setup/config-idm/firebase-auth.md
-            - Passkeys Auth: setup/config-auth-passkeys.md
-            - Custom Auth: setup/config-custom-auth.md
-          - Manage Chains: 
-            - setup/config-wallet-chains.md
-            - Solana Setup: setup/config-dApp-with-db-for-Solana.md
-            - MultiversX Setup: setup/config-dApp-with-db-for-mvx.md
-            - Near Setup: setup/config-dApp-with-db-for-near.md
-          - Wallet UX:
-            - setup/config-wallet/index.md
-            - Branding: setup/config-wallet/config-wallet-branding.md
-            - Keyspace: setup/config-wallet/config-wallet-keyspace.md
-            - Wallet Security: setup/config-wallet/config-wallet-settings.md
-            - Custom Wallet UI: setup/config-custom-wallet-ui.md
-          - Gaming:
-            - Unity Setup: setup/config-dApp-with-db-for-Unity.md 
-    - Usage:
-      - Install SDK: auth/sdk-installation.md
-      - Integrate App:
-        - Wagmi: auth/integrate/wagmi.md
-        - RainbowKit: auth/integrate/rainbow.md
-        - WalletConnect: auth/integrate/walletconnect.md
-        - Web3-React: auth/integrate/web3-react.md
-        - React/Next.js: auth/integrate/react-nextjs.md
-        - HTML/CSS/JS: auth/integrate/vanilla-html-css-js.md
-        - Vue: auth/integrate/vue.md
-        - Solana: auth/integrate/solana.md
-        - MultiversX: auth/integrate/mvx.md
-        - Near: auth/integrate/near.md
-        - Unity: auth/integrate/unity.md
-        - Mobile:
-          - Flutter: auth/mobile/flutter-get-started.md
-          - React-Native: auth/mobile/react-native-get-started.md
-      - Onboard Users: 
-        - Wagmi: 
-          - Plug-and-Play Login: auth/onboard/wagmi/wagmi-pnp-ui.md
-          - Custom Login: auth/onboard/wagmi/wagmi-custom-ui.md
-        - RainbowKit:
-          - Plug-and-Play Login: auth/onboard/rainbow/rainbow-pnp-ui.md
-          - Custom Login: auth/onboard/rainbow/rainbow-custom-ui.md
-        - WalletConnect:
-          - Plug-and-Play Login: auth/onboard/walletconnect/walletconnect-pnp-ui.md
-          - Custom Login: auth/onboard/walletconnect/walletconnect-custom-ui.md
-        - Web3-React: 
-          - Plug-and-Play Login: auth/onboard/web3-react/web3-react-pnp-ui.md
-          - Custom Login: auth/onboard/web3-react/web3-react-custom-ui.md
-        - React/Next.js: 
-          - Plug-and-Play Login: auth/onboard/react-nextjs/use-plug-play-auth.md
-          - Custom Login: 
-            - auth/onboard/react-nextjs/custom-ui/index.md
-            - Passwordless: auth/onboard/react-nextjs/custom-ui/build-pwdless-auth.md
-            - Social Login Providers:
-              - auth/onboard/react-nextjs/custom-ui/build-social/index.md
-              - Apple: auth/onboard/react-nextjs/custom-ui/build-social/apple-oauth.md
-              - Discord: auth/onboard/react-nextjs/custom-ui/build-social/discord-oauth.md
-              - GitHub: auth/onboard/react-nextjs/custom-ui/build-social/github-oauth.md
-              - Google: auth/onboard/react-nextjs/custom-ui/build-social/google-oauth.md
-              - Steam: auth/onboard/react-nextjs/custom-ui/build-social/steam-oauth.md
-              - Telegram: auth/onboard/react-nextjs/custom-ui/build-social/telegram-oauth.md
-              - Twitch: auth/onboard/react-nextjs/custom-ui/build-social/twitch-oauth.md
-              - Twitter: auth/onboard/react-nextjs/custom-ui/build-social/twitter-oauth.md
-            - IAM Providers:
-              - auth/onboard/react-nextjs/custom-ui/build-idm/index.md
-              - Cognito: auth/onboard/react-nextjs/custom-ui/build-idm/cognito-oauth.md
-              - Firebase: auth/onboard/react-nextjs/custom-ui/build-idm/firebase-login.md 
-        - HTML/CSS/JS: 
-          - Plug-and-Play Login: auth/onboard/vanilla/use-plug-play-auth.md
-          - Custom Login: 
-            - auth/onboard/vanilla/custom-ui/index.md
-            - Passwordless: auth/onboard/vanilla/custom-ui/build-pwdless-auth.md
-            - Social Login Providers:
-              - auth/onboard/vanilla/custom-ui/build-social/index.md
-              - Apple: auth/onboard/vanilla/custom-ui/build-social/apple-oauth.md
-              - Discord: auth/onboard/vanilla/custom-ui/build-social/discord-oauth.md
-              - GitHub: auth/onboard/vanilla/custom-ui/build-social/github-oauth.md
-              - Google: auth/onboard/vanilla/custom-ui/build-social/google-oauth.md
-              - Steam: auth/onboard/vanilla/custom-ui/build-social/steam-oauth.md
-              - Telegram: auth/onboard/vanilla/custom-ui/build-social/telegram-oauth.md
-              - Twitch: auth/onboard/vanilla/custom-ui/build-social/twitch-oauth.md
-              - Twitter: auth/onboard/vanilla/custom-ui/build-social/twitter-oauth.md
-            - IAM Providers:
-              - auth/onboard/vanilla/custom-ui/build-idm/index.md
-              - Cognito: auth/onboard/vanilla/custom-ui/build-idm/cognito-oauth.md
-              - Firebase: auth/onboard/vanilla/custom-ui/build-idm/firebase-login.md
-        - Vue:
-          - Plug-and-Play Login: auth/onboard/vue/use-plug-play-auth.md
-          - Custom Login:
-            - auth/onboard/vue/custom-ui/index.md
-            - Passwordless: auth/onboard/vue/custom-ui/build-pwdless-auth.md
-            - Social Login Providers:
-              - auth/onboard/vue/custom-ui/build-social/index.md
-              - Apple: auth/onboard/vue/custom-ui/build-social/apple-oauth.md
-              - Discord: auth/onboard/vue/custom-ui/build-social/discord-oauth.md
-              - GitHub: auth/onboard/vue/custom-ui/build-social/github-oauth.md
-              - Google: auth/onboard/vue/custom-ui/build-social/google-oauth.md
-              - Steam: auth/onboard/vue/custom-ui/build-social/steam-oauth.md
-              - Telegram: auth/onboard/vue/custom-ui/build-social/telegram-oauth.md
-              - Twitch: auth/onboard/vue/custom-ui/build-social/twitch-oauth.md
-              - Twitter: auth/onboard/vue/custom-ui/build-social/twitter-oauth.md
-            - IAM Providers:
-              - auth/onboard/vue/custom-ui/build-idm/index.md
-              - Cognito: auth/onboard/vue/custom-ui/build-idm/cognito-oauth.md
-              - Firebase: auth/onboard/vue/custom-ui/build-idm/firebase-login.md      
-        - Solana: auth/onboard/solana.md
-        - MultiversX: auth/onboard/mvx.md
-        - Near: auth/onboard/near.md
-        - Unity: auth/onboard/unity.md
-        - Mobile:
-          - Flutter: auth/mobile/flutter-get-started.md
-          - React-Native: auth/mobile/react-native-get-started.md
-      - Wallet Ops: 
-        - EVM Chains: auth/web3-ops/evm.md
-        - Solana: auth/web3-ops/solana.md
-        - MultiversX: auth/web3-ops/mvx.md
-        - Near: auth/web3-ops/near.md
-        - Unity: auth/web3-ops/unity-wallet-ops.md
-      - Event Handling: auth/handle-provider-events.md
-      - Advanced:
-          - Custom Wallet UI: auth/custom-wallet-ui.md
-          - Custom Auth: auth/custom-auth.md
-          - Passkey Auth: 
-            - auth/passkeys-auth.md
-            - Sign-Up & Login: auth/onboard/passkey-auth/passkey-signup.md
-            - Login: auth/onboard/passkey-auth/passkey-login.md
-          - Auth-Core SDK: quick-start/auth-core-quick-start.md
-    - Playground:
-      - Try Auth!: auth/auth-try-now.md
-      - Demo App: https://demo.arcana.network
-    - APIs:
-      - Auth: auth/auth-usage-guide.md
-      - Auth-Core: auth/auth-core-usage-guide.md
-    - Guides:
-      - Overview: introduction/index.md
-      - Developers:
-        - Release Notes: relnotes/latest-auth-release-note.md
-        - Migration Guides: migration/latest-auth-migration-guide.md
-        - Dashboard User Guide: setup/config-dApp-with-db.md
-        - Error Handling:
-          - Auth: auth/auth-error-msg.md
-          - Dashboard: setup/db-err-messages.md
-          - Wallet UI: auth/walletui-error-msg.md
-        - FAQ:
-          - General: faq/faq-gen.md
-          - Dashboard: faq/faq-db.md
-          - Auth: faq/faq-auth.md
-          - Solana: faq/faq-solana.md
-          - MultiversX: faq/faq-mvx.md
-          - Near: faq/faq-near.md
-        - Troubleshooting: troubleshooting.md
-        - Changelog: changelog/index.md
-        - Integration Examples: https://github.com/arcana-network/auth-examples
-        - Integration Checklists: checklists/index.md
-      - Wallet Users: 
-        - Wallet User Guide: 
-          - user-guides/wallet-ui/index.md
-          - Wallet Ops: user-guides/wallet-ui/use-wallet-ui.md
-          - Export Key: user-guides/wallet-ui/use-wallet-to-export-keys.md
-          - Manage NFTs: user-guides/wallet-ui/use-wallet-to-manage-nfts.md
-          - Manage Tokens: user-guides/wallet-ui/use-wallet-to-manage-tokens.md
-          - MFA Setup: user-guides/mfa/mfa-ug.md
+      - Setup:
+        - Configuration Profiles:
+            - Testnet: deploy/deploy-app.md
+            - Mainnet: deploy/migrate-testnet-mainnet.md
+        - Register App: setup/config-auth/register-app.md
+        - Auth Settings:
+            - setup/config-auth/index.md
+            - Social Auth:
+              - setup/index.md
+              - Social Login: 
+                - Apple: setup/config-social/apple-oauth.md
+                - Discord: setup/config-social/discord-oauth.md
+                - GitHub: setup/config-social/github-oauth.md
+                - Google: setup/config-social/google-oauth.md
+                - Steam: setup/config-social/steam-oauth.md
+                - Telegram: setup/config-social/telegram-oauth.md
+                - Twitch: setup/config-social/twitch-oauth.md
+                - Twitter: setup/config-social/twitter-oauth.md
+              - IAM Providers: 
+                - setup/config-idm/index.md
+                - Cognito: setup/config-idm/cognito-oauth.md
+                - Firebase: setup/config-idm/firebase-auth.md
+              - Passkeys Auth: setup/config-auth-passkeys.md
+              - Custom Auth: setup/config-custom-auth.md
+            - Manage Chains: 
+              - setup/config-wallet-chains.md
+              - Solana Setup: setup/config-dApp-with-db-for-Solana.md
+              - MultiversX Setup: setup/config-dApp-with-db-for-mvx.md
+              - Near Setup: setup/config-dApp-with-db-for-near.md
+            - Wallet UX:
+              - setup/config-wallet/index.md
+              - Branding: setup/config-wallet/config-wallet-branding.md
+              - Keyspace: setup/config-wallet/config-wallet-keyspace.md
+              - Wallet Security: setup/config-wallet/config-wallet-settings.md
+              - Custom Wallet UI: setup/config-custom-wallet-ui.md
+            - Gaming:
+              - Unity Setup: setup/config-dApp-with-db-for-Unity.md 
+      - Usage:
+        - Overview: introduction/index.md
+        - Install SDK: auth/sdk-installation.md
+        - Integrate App:
+          - Wagmi: auth/integrate/wagmi.md
+          - RainbowKit: auth/integrate/rainbow.md
+          - WalletConnect: auth/integrate/walletconnect.md
+          - Web3-React: auth/integrate/web3-react.md
+          - React/Next.js: auth/integrate/react-nextjs.md
+          - HTML/CSS/JS: auth/integrate/vanilla-html-css-js.md
+          - Vue: auth/integrate/vue.md
+          - Solana: auth/integrate/solana.md
+          - MultiversX: auth/integrate/mvx.md
+          - Near: auth/integrate/near.md
+          - Unity: auth/integrate/unity.md
+          - Mobile:
+            - Flutter: auth/mobile/flutter-get-started.md
+            - React-Native: auth/mobile/react-native-get-started.md
+        - Onboard Users: 
+          - Wagmi: 
+            - Plug-and-Play Login: auth/onboard/wagmi/wagmi-pnp-ui.md
+            - Custom Login: auth/onboard/wagmi/wagmi-custom-ui.md
+          - RainbowKit:
+            - Plug-and-Play Login: auth/onboard/rainbow/rainbow-pnp-ui.md
+            - Custom Login: auth/onboard/rainbow/rainbow-custom-ui.md
+          - WalletConnect:
+            - Plug-and-Play Login: auth/onboard/walletconnect/walletconnect-pnp-ui.md
+            - Custom Login: auth/onboard/walletconnect/walletconnect-custom-ui.md
+          - Web3-React: 
+            - Plug-and-Play Login: auth/onboard/web3-react/web3-react-pnp-ui.md
+            - Custom Login: auth/onboard/web3-react/web3-react-custom-ui.md
+          - React/Next.js: 
+            - Plug-and-Play Login: auth/onboard/react-nextjs/use-plug-play-auth.md
+            - Custom Login: 
+              - auth/onboard/react-nextjs/custom-ui/index.md
+              - Passwordless: auth/onboard/react-nextjs/custom-ui/build-pwdless-auth.md
+              - Social Login Providers:
+                - auth/onboard/react-nextjs/custom-ui/build-social/index.md
+                - Apple: auth/onboard/react-nextjs/custom-ui/build-social/apple-oauth.md
+                - Discord: auth/onboard/react-nextjs/custom-ui/build-social/discord-oauth.md
+                - GitHub: auth/onboard/react-nextjs/custom-ui/build-social/github-oauth.md
+                - Google: auth/onboard/react-nextjs/custom-ui/build-social/google-oauth.md
+                - Steam: auth/onboard/react-nextjs/custom-ui/build-social/steam-oauth.md
+                - Telegram: auth/onboard/react-nextjs/custom-ui/build-social/telegram-oauth.md
+                - Twitch: auth/onboard/react-nextjs/custom-ui/build-social/twitch-oauth.md
+                - Twitter: auth/onboard/react-nextjs/custom-ui/build-social/twitter-oauth.md
+              - IAM Providers:
+                - auth/onboard/react-nextjs/custom-ui/build-idm/index.md
+                - Cognito: auth/onboard/react-nextjs/custom-ui/build-idm/cognito-oauth.md
+                - Firebase: auth/onboard/react-nextjs/custom-ui/build-idm/firebase-login.md 
+          - HTML/CSS/JS: 
+            - Plug-and-Play Login: auth/onboard/vanilla/use-plug-play-auth.md
+            - Custom Login: 
+              - auth/onboard/vanilla/custom-ui/index.md
+              - Passwordless: auth/onboard/vanilla/custom-ui/build-pwdless-auth.md
+              - Social Login Providers:
+                - auth/onboard/vanilla/custom-ui/build-social/index.md
+                - Apple: auth/onboard/vanilla/custom-ui/build-social/apple-oauth.md
+                - Discord: auth/onboard/vanilla/custom-ui/build-social/discord-oauth.md
+                - GitHub: auth/onboard/vanilla/custom-ui/build-social/github-oauth.md
+                - Google: auth/onboard/vanilla/custom-ui/build-social/google-oauth.md
+                - Steam: auth/onboard/vanilla/custom-ui/build-social/steam-oauth.md
+                - Telegram: auth/onboard/vanilla/custom-ui/build-social/telegram-oauth.md
+                - Twitch: auth/onboard/vanilla/custom-ui/build-social/twitch-oauth.md
+                - Twitter: auth/onboard/vanilla/custom-ui/build-social/twitter-oauth.md
+              - IAM Providers:
+                - auth/onboard/vanilla/custom-ui/build-idm/index.md
+                - Cognito: auth/onboard/vanilla/custom-ui/build-idm/cognito-oauth.md
+                - Firebase: auth/onboard/vanilla/custom-ui/build-idm/firebase-login.md
+          - Vue:
+            - Plug-and-Play Login: auth/onboard/vue/use-plug-play-auth.md
+            - Custom Login:
+              - auth/onboard/vue/custom-ui/index.md
+              - Passwordless: auth/onboard/vue/custom-ui/build-pwdless-auth.md
+              - Social Login Providers:
+                - auth/onboard/vue/custom-ui/build-social/index.md
+                - Apple: auth/onboard/vue/custom-ui/build-social/apple-oauth.md
+                - Discord: auth/onboard/vue/custom-ui/build-social/discord-oauth.md
+                - GitHub: auth/onboard/vue/custom-ui/build-social/github-oauth.md
+                - Google: auth/onboard/vue/custom-ui/build-social/google-oauth.md
+                - Steam: auth/onboard/vue/custom-ui/build-social/steam-oauth.md
+                - Telegram: auth/onboard/vue/custom-ui/build-social/telegram-oauth.md
+                - Twitch: auth/onboard/vue/custom-ui/build-social/twitch-oauth.md
+                - Twitter: auth/onboard/vue/custom-ui/build-social/twitter-oauth.md
+              - IAM Providers:
+                - auth/onboard/vue/custom-ui/build-idm/index.md
+                - Cognito: auth/onboard/vue/custom-ui/build-idm/cognito-oauth.md
+                - Firebase: auth/onboard/vue/custom-ui/build-idm/firebase-login.md      
+          - Solana: auth/onboard/solana.md
+          - MultiversX: auth/onboard/mvx.md
+          - Near: auth/onboard/near.md
+          - Unity: auth/onboard/unity.md
+          - Mobile:
+            - Flutter: auth/mobile/flutter-get-started.md
+            - React-Native: auth/mobile/react-native-get-started.md
+        - Wallet Ops: 
+          - EVM Chains: auth/web3-ops/evm.md
+          - Solana: auth/web3-ops/solana.md
+          - MultiversX: auth/web3-ops/mvx.md
+          - Near: auth/web3-ops/near.md
+          - Unity: auth/web3-ops/unity-wallet-ops.md
+        - Event Handling: auth/handle-provider-events.md
+        - Advanced:
+            - Custom Wallet UI: auth/custom-wallet-ui.md
+            - Custom Auth: auth/custom-auth.md
+            - Passkey Auth: 
+              - auth/passkeys-auth.md
+              - Sign-Up & Login: auth/onboard/passkey-auth/passkey-signup.md
+              - Login: auth/onboard/passkey-auth/passkey-login.md
+            - Auth-Core SDK: quick-start/auth-core-quick-start.md
+      - APIs:
+        - Auth: auth/auth-usage-guide.md
+        - Auth-Core: auth/auth-core-usage-guide.md     
+      - Examples: https://github.com/arcana-network/auth-examples
+      - Auth Checklists: checklists/index.md
+      - Error Handling:
+        - Auth: auth/auth-error-msg.md
+        - Dashboard: setup/db-err-messages.md
+        - Wallet UI: auth/walletui-error-msg.md
+      - Dashboard User Guide: setup/config-dApp-with-db.md         
+    - In-app Wallet: 
+      - User Guide: 
+        - user-guides/wallet-ui/index.md
+        - Web3 Wallet Ops: user-guides/wallet-ui/use-wallet-ui.md
+        - Export Key: user-guides/wallet-ui/use-wallet-to-export-keys.md
+        - Manage NFTs: user-guides/wallet-ui/use-wallet-to-manage-nfts.md
+        - Manage Tokens: user-guides/wallet-ui/use-wallet-to-manage-tokens.md
+        - MFA Setup: user-guides/mfa/mfa-ug.md   
+    - FAQ:
+      - General: faq/faq-gen.md
+      - Dashboard: faq/faq-db.md
+      - Auth: faq/faq-auth.md
+      - Solana: faq/faq-solana.md
+      - MultiversX: faq/faq-mvx.md
+      - Near: faq/faq-near.md
+    - Troubleshooting: troubleshooting.md
+    - Concepts: 
+      - ADKG: concepts/adkg.md
+      - Aggregate Login: concepts/aggregatelogin.md
+      - Arcana Wallet: 
+        - concepts/anwallet/index.md
+        - UI Modes: concepts/anwallet/walletuimodes.md
+        - Transaction Types: concepts/anwallet/walletstgsigntx.md
+        - Network Switching: concepts/anwallet/walletntwkswitchmode.md
+        - Wallet Visibility: concepts/anwallet/walletvisibility.md
+        - Custom Wallet UI: concepts/custom-wallet-ui.md
+      - Authentication: 
+        - concepts/authtype/index.md
+        - Auth Providers: concepts/authtype/socialauth.md
+        - Custom Auth: concepts/authtype/custom-auth.md
+      - Configuration Profiles: concepts/config-profiles.md
+      - Dashboard: concepts/dashboard.md
+      - Gateway: concepts/gateway-node.md
+      - Key Space Type: concepts/keyspace-types.md
+      - Login Token:
+        - Arcana JWT Token: concepts/an-jwt-token.md
+        - DID Token: concepts/an-did-token.md
+        - Verify JWT Token: concepts/jwt-token-validation.md
+      - Login UI:
+        - Custom Login UI: concepts/custom-login-ui.md
+        - Plug-and-Play Login UI: concepts/plug-and-play-auth.md
+      - Login Session Type: concepts/session_type.md
+      - MFA: concepts/mfa.md
+      - Non-EVM Chains: concepts/non-evm-chains.md
+      - Passkeys Login: concepts/authtype/auth-passkeys.md
+      - Private Key: concepts/private-key.md
+      - SDKs:
+        - CA SDK: concepts/casdk.md
+        - Auth SDK: concepts/authsdk.md
+        - Auth-Core SDK: concepts/auth-core-sdk.md
+      - Social Login: concepts/social-login.md
+      - Smart Contracts:
+        - Overview: concepts/ansmartc/an-smart-contracts.md
+        - Types of Contracts: concepts/ansmartc/an-smartc-types.md
+        - Deployed Contracts: concepts/ansmartc/an-smartc-deployed.md
+      - Unified Balance: concepts/unified-balance.md
+      - Usage: 
+        - Billing: concepts/billing.md
+        - Metrics: concepts/usage-metrics.md
+      - Validator Nodes: concepts/validator-nodes.md
+    - Resources:
+      - Auth Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
+      - Auth Audit Reports: 
+        - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
+        - Arcana ADKG: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20230228T054948Z.pdf
+      - Release Notes: relnotes/latest-auth-release-note.md
+      - Migration Guides: migration/latest-auth-migration-guide.md 
+      - Changelog: changelog/index.md  
+      - Demos:
+        - Auth Playground!: auth/auth-try-now.md
+        - Auth SDK Demo: https://demo.arcana.network 
       - Validators:
         - Onboarding Guide: validators/onboard-validators.md
         - Validator FAQ: faq/faq-validator.md
       - References:
-        - Learn:
-          - Concepts: 
-            - ADKG: concepts/adkg.md
-            - Aggregate Login: concepts/aggregatelogin.md
-            - Arcana Wallet: 
-              - concepts/anwallet/index.md
-              - UI Modes: concepts/anwallet/walletuimodes.md
-              - Transaction Types: concepts/anwallet/walletstgsigntx.md
-              - Network Switching: concepts/anwallet/walletntwkswitchmode.md
-              - Wallet Visibility: concepts/anwallet/walletvisibility.md
-              - Custom Wallet UI: concepts/custom-wallet-ui.md
-            - Authentication: 
-              - concepts/authtype/index.md
-              - Auth Providers: concepts/authtype/socialauth.md
-              - Custom Auth: concepts/authtype/custom-auth.md
-            - Configuration Profiles: concepts/config-profiles.md
-            - Dashboard: concepts/dashboard.md
-            - Gateway: concepts/gateway-node.md
-            - Key Space Type: concepts/keyspace-types.md
-            - Login Token:
-              - Arcana JWT Token: concepts/an-jwt-token.md
-              - DID Token: concepts/an-did-token.md
-              - Verify JWT Token: concepts/jwt-token-validation.md
-            - Login UI:
-              - Custom Login UI: concepts/custom-login-ui.md
-              - Plug-and-Play Login UI: concepts/plug-and-play-auth.md
-            - Login Session Type: concepts/session_type.md
-            - MFA: concepts/mfa.md
-            - Non-EVM Chains: concepts/non-evm-chains.md
-            - Passkeys Login: concepts/authtype/auth-passkeys.md
-            - Private Key: concepts/private-key.md
-            - SDKs:
-              - CA SDK: concepts/casdk.md
-              - Auth SDK: concepts/authsdk.md
-              - Auth-Core SDK: concepts/auth-core-sdk.md
-            - Social Login: concepts/social-login.md
-            - Smart Contracts:
-              - Overview: concepts/ansmartc/an-smart-contracts.md
-              - Types of Contracts: concepts/ansmartc/an-smartc-types.md
-              - Deployed Contracts: concepts/ansmartc/an-smartc-deployed.md
-            - Unified Balance: concepts/unified-balance.md
-            - Usage: 
-              - Billing: concepts/billing.md
-              - Metrics: concepts/usage-metrics.md
-            - Validator Nodes: concepts/validator-nodes.md
-          - Tech Stack: 
-            - CA Assets: web3-stack/ca_stack.md
-            - App Types: web3-stack/apps.md
-            - Auth Providers: web3-stack/auth.md
-            - Browsers: web3-stack/browsers.md
-            - Chains: web3-stack/chains.md
-            - Protocol: web3-stack/protocol.md
-            - Validators: web3-stack/validators.md
-            - Wallets: web3-stack/wallets.md 
-          - Security:
-            - Overview: security/overview.md
-            - ADKG: security/adkg.md
-            - MFA: security/mfa.md
-        - Audit Reports: 
-          - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
-          - Arcana ADKG: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20230228T054948Z.pdf
-          - Arcana Paymaster Contract: https://github.com/arcana-network/audit-reports/blob/main/Arcana_PayMaster_Final_Report.pdf
+        - Supported Chains:
+          - App Types: web3-stack/apps.md
+          - Auth Providers: web3-stack/auth.md
+          - Browsers: web3-stack/browsers.md
+          - Chains: web3-stack/chains.md
+          - Protocol: web3-stack/protocol.md
+          - Validators: web3-stack/validators.md
+          - Wallets: web3-stack/wallets.md 
+        - Security:
+          - Overview: security/overview.md
+          - ADKG: security/adkg.md
+          - MFA: security/mfa.md
+        #- Audit Reports: 
+          #- Arcana Paymaster Contract: https://github.com/arcana-network/audit-reports/blob/main/Arcana_PayMaster_Final_Report.pdf
         - Announcements: https://github.com/orgs/arcana-network/discussions/categories/announcements
         - Archives:
           - Release Note Archives: 
             - relnotes/archives/index.md
-#            - Auth 1.0.12 : relnotes/rn-main-auth-v1.0.12.md
             - Auth 1.0.11 : relnotes/rn-main-auth-v1.0.11.md
             - Auth May27-2024: relnotes/rn-main-auth-May27-24.md
             - Auth 1.0.10 : relnotes/rn-main-auth-v1.0.10.md
@@ -751,7 +747,6 @@ nav:
             - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
           - Migration Guide Archives: 
             - migration/archives/index.md
-#             - Auth v1.0.11 -> v1.0.12: migration/main-auth-v1.0.12-migration.md
             - v1.0.10 -> v1.0.11: migration/main-auth-v1.0.11-migration.md
             - v1.0.9 -> v1.0.10: migration/main-auth-v1.0.10-migration.md
             - v1.0.8 -> v1.0.9: migration/main-auth-v1.0.9-migration.md
@@ -765,16 +760,16 @@ nav:
             - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
             - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
             - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
-        - Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
-    - Docs @Partners:
-      - partner-docs/index.md
-      - MultiversX:
-        - Auth: https://multiversx.com/ecosystem/project/arcana
-      - Linea:
-        - Social Login: https://docs.linea.build/developers/tooling/social-login/arcana
-        - Account Abstraction: https://docs.linea.build/developers/tooling/account-abstraction/arcana
-      - Caduceus:
-        - Social Login: https://docs.caduceus.foundation/auth
-      - Alchemy:
-        - Auth Signer: https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html
-        - Auth Integration: https://accountkit.alchemy.com/signers/guides/arcana-auth.html
+      - Service Status: https://status.arcana.network/
+      - Docs @Partners:
+        - partner-docs/index.md
+        - MultiversX:
+          - Auth: https://multiversx.com/ecosystem/project/arcana
+        - Linea:
+          - Social Login: https://docs.linea.build/developers/tooling/social-login/arcana
+          - Account Abstraction: https://docs.linea.build/developers/tooling/account-abstraction/arcana
+        - Caduceus:
+          - Social Login: https://docs.caduceus.foundation/auth
+        - Alchemy:
+          - Auth Signer: https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html
+          - Auth Integration: https://accountkit.alchemy.com/signers/guides/arcana-auth.html
