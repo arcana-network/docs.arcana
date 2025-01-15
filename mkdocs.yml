@@ -433,13 +433,8 @@ validation:
     unrecognized_links: info
 
 not_in_nav: |
-  work-in-progress.md
-  audit/index.md
-  ca/ca-setup.md
-  support/index.md
   relnotes/rn-main-auth-v1.0.12.md
   migration/main-auth-v1.0.12-migration.md
-  concepts/ca.md
 
 nav:
   - Chain Abstraction: 
@@ -773,3 +768,4 @@ nav:
         - Alchemy:
           - Auth Signer: https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html
           - Auth Integration: https://accountkit.alchemy.com/signers/guides/arcana-auth.html
+  - Need Help?: support/index.md

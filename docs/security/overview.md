@@ -57,7 +57,7 @@ Depending upon the kind of user experience and security needs of an app, develop
 
 ## Protocol Security
 
-{{config.extra.arcana.company_name}} smart contracts and the authentication protocol have been audited for any vulnerabilities and all known issues addressed. See [[index-audit-reports|audit reports]] for details.
+{{config.extra.arcana.company_name}} smart contracts and the authentication protocol have been audited for any vulnerabilities and all known issues addressed. See {% include "./text-snippets/audit_report_url.md" %} for details.
 
 ## Embedded Wallet Security
 

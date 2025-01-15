@@ -1,13 +1,13 @@
 ---
 alias: index-support
-title: 'Need Help'
+title: 'Support'
 template: newintro.html
 description: 'Need help? Contact Arcana support team for any questions. We are happy to help!'
 arcana:
   root_rel_path: ..
 ---
 
-# Need Help?
+# Support
 
 ???+ an-abstract "Try Arcabot!"
 
@@ -49,16 +49,10 @@ arcana:
 
     </div>
 
-=== "CA Issues"
+=== "Report Issues"
 
-    * [Report CA-SDK Bug](https://github.com/arcana-network/ca-sdk/issues/new)
-
-<!---
-
-=== "Web3 Onboarding Issues"
-
-    * [Report Dashboard Bug](https://github.com/arcana-network/developer-dashboard/issues/new)
-    * [Report Auth SDK Bug](https://github.com/arcana-network/auth/issues/new)
-    * [Report Arcana Wallet Bug](https://github.com/arcana-network/wallet-ui/issues/new)
-
---->
+    * [Report CA-SDK Issues](https://github.com/arcana-network/ca-sdk/issues/new)
+    * [Report Standalone Arcana CA Wallet Issues](https://github.com/arcana-network/ca-sdk/issues/new)
+    * [Report Dashboard Issues](https://github.com/arcana-network/developer-dashboard/issues/new)
+    * [Report Auth SDK Issues](https://github.com/arcana-network/auth/issues/new)
+    * [Report In-app Arcana Wallet Issues](https://github.com/arcana-network/wallet-ui/issues/new)

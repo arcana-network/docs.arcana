@@ -6,15 +6,9 @@ arcana:
   root_rel_path: ..
 ---
 
-# Chain Abstraction Support
+# CA: Supported Chains & Tokens
 
-{{config.extra.arcana.company_name}} Chain Abstraction feature supports unified balance across the following chains for these apps and tokens. Support for more apps, chains, tokens is coming soon!
-
-<!--- 
-## Apps
-
-{% include "./text-snippets/ca_supported_apps.md" %}
---->
+{{config.extra.arcana.ca_sdk_name}} supports unified balance across the following chains and tokens. 
 
 ## Chains
 
@@ -24,3 +18,10 @@ arcana:
 
 {% include "./text-snippets/ca_supported_tokens.md" %}
 
+The Standalone Arcana CA Wallet supports unified balance feature in the context of the following apps:
+
+## Apps
+
+{% include "./text-snippets/ca_supported_apps.md" %}
+
+We are actively working on supporting newer chains, tokens and apps, stay tuned!

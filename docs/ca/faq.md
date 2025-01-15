@@ -44,16 +44,7 @@ arcana:
 
     The standalone Arcana CA wallet is meant for wallet users and offers limited support at the moment. 
     
-    It enables unified balance and solves liquidity fragmentation when using any of the supported [[ca-stack#chains| chains]] and [[ca-stack#tokens|tokens]] in the context of the following apps:
-
-    * Polymarket
-    * Uniswap
-    * Aave
-    * Hyperliquid
-    * Jumper
-    * Renzo
-    * CowSwap
-    * Galaxy Platform
+    It enables unified balance and solves liquidity fragmentation when using any of the supported [[ca-stack#chains| chains]] and [[ca-stack#tokens|tokens]] in the context of the supported [[ca-stack#apps]]. We will be adding support for newer Web3 apps soon.
 
     !!! an-tip "$100 limit"
 

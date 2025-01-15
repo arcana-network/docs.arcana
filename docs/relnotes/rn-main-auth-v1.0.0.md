@@ -86,7 +86,7 @@ Auto-refresh of the account balance amount is now supported.
 
 ### Audits
 
-{{config.extra.arcana.company_name}}  smart contracts and ADKG subsystem have been audited by Certik. See [Audit Reports]({{page.meta.arcana.root_rel_path}}/audit/index.md) for details.
+{{config.extra.arcana.company_name}}  smart contracts and ADKG subsystem have been audited by Certik. See {% include "./text-snippets/audit_report_url.md" %} for details.
 
 ---
 

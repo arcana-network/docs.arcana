@@ -34,7 +34,7 @@ We are actively working towards adding newer features and capabilities to the SD
 
 ## Protocol Audit
 
-At {{config.extra.arcana.company_name}}, we take the security and privacy of applications seriously and believe in transparency. To eliminate any security vulnerabilities in {{config.extra.arcana.company_name}} Smart Contracts and the ADKG module, we put it under the rigorous vetting process and cybersecurity tests conducted by [Certik](https://www.certik.com/). The audit is complete and you can refer to the [reports]({{page.meta.arcana.root_rel_path}}/audit/index.md) for details.
+At {{config.extra.arcana.company_name}}, we take the security and privacy of applications seriously and believe in transparency. To eliminate any security vulnerabilities in {{config.extra.arcana.company_name}} Smart Contracts and the ADKG module, we put it under the rigorous vetting process and cybersecurity tests conducted by [Certik](https://www.certik.com/). The audit is complete and you can refer to the {% include "./text-snippets/audit_report_url.md" %} for details.
 
 ## Network Nodes
 

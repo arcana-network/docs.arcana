@@ -5,11 +5,11 @@ Arcana has two CA offerings, one targeted at the Web3 Users and the other for We
 
 === "Web3 Users"
 
-    **Arcana Wallet (Standalone)**
+    **Arcana CA Wallet (Standalone)**
 
-    Arcana Wallet unifies user balance in the user's wallet account spread across multiple [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]] for supported [[ca-stack#apps|apps]] out of the box.  
+    Users can install and download the standalone Arcana CA Wallet to unify user balance spread across multiple [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]]. At present, the Arcana CA Wallet supports the following apps: {% include "./text-snippets/ca_supported_apps.md" %}.
     
-    Powered by Arcana's [[concept-ca|chain abstraction protocol]], it displays user's [[ca-top#unified-balance|unified balance]] in the wallet account across several blockchains and tokens by combining fragmented liquidity. This allows users to spend on any chain. 
+    Powered by Arcana's [[ca-top#chain-abstraction|chain abstraction protocol]], it displays user's [[ca-top#unified-balance|unified balance]] in the wallet account across several blockchains and tokens by combining fragmented liquidity. This allows users to spend on any chain. 
     
     [Download](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi) the Arcana Wallet browser extension and get started! 
 

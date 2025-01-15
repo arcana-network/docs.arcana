@@ -8,16 +8,22 @@ arcana:
 
 # Futures
 
-We have [[ca-demo|demonstrated]] Chain Abstraction technology through a standalone Arcana Wallet ([download here](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi)). It allows [[ca-top#unified-balance|unified balance]] across the chains and tokens listed below.
+## Arcana CA SDK
 
-## Chains
+Today, developers can enable [[ca-top#unified-balance|unified balance]] in any dApp by integrating it with the Arcana [[concept-casdk|CA SDK]]. It supports unified balance across the following chains and tokens. We are actively working on adding support to enable unified balance across newer chains and tokens.
+
+### Chains
       
 {% include "./text-snippets/ca_supported_chains.md" %}
 
-## Tokens
+### Tokens
 
 {% include "./text-snippets/ca_supported_tokens.md" %}
 
-!!! an-info "Coming soon!"
+## Arcana CA Wallet (Standalone)
 
-    In the near term, we plan to add chain abstraction functionality in the Arcana embedded wallet available through the Auth SDK as well. Newer chains, tokens, apps support is in the works. Stay tuned...
+Besides the SDK, we have also [[ca-demo|demonstrated]] our **Chain Abstraction** technology through a standalone Arcana Wallet implementation ([download here](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi)). It allows [[ca-top#unified-balance|unified balance]] across the following chains and tokens. Only a few Web3 apps are supported at present. We are working on adding support for more apps in the Arcana CA wallet. Stay tuned! 
+
+### Apps
+
+{% include "./text-snippets/ca_supported_apps.md" %}
