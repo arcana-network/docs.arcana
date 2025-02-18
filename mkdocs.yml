@@ -466,6 +466,10 @@ nav:
       - Architecture: ca/introduction/ca.md
       - Use Cases: ca/introduction/use-cases.md
       - CA Futures: ca/introduction/futures.md
+      - Archives: 
+        - relnotes/archives/ca-index.md
+        - v0.0.3: relnotes/rn-ca-v0.0.3.md
+        - v0.0.2: relnotes/rn-ca-v0.0.2.md
   - Auth: 
     - auth-index.md
     - Developers:
@@ -729,24 +733,21 @@ nav:
         - Archives:
           - Release Note Archives:
             - relnotes/archives/index.md
-            - CA:
-              - v0.0.2: relnotes/rn-ca-v0.0.2.md
-            - Auth:
-              - Auth 1.0.11 : relnotes/rn-main-auth-v1.0.11.md
-              - Auth May27-2024: relnotes/rn-main-auth-May27-24.md
-              - Auth 1.0.10 : relnotes/rn-main-auth-v1.0.10.md
-              - Auth 1.0.9 : relnotes/rn-main-auth-v1.0.9.md
-              - Auth 1.0.8 : relnotes/rn-main-auth-v1.0.8.md
-              - Auth 1.0.7 : relnotes/rn-main-auth-v1.0.7.md
-              - Auth 1.0.6 : relnotes/rn-main-auth-v1.0.6.md
-              - Auth 1.0.5 : relnotes/rn-main-auth-v1.0.5.md
-              - Auth 1.0.4 : relnotes/rn-main-auth-v1.0.4.md
-              - Auth May3-2023: relnotes/rn-main-auth-May3-23.md
-              - Auth 1.0.3 : relnotes/rn-main-auth-v1.0.3.md
-              - Auth 1.0.2 : relnotes/rn-main-auth-v1.0.2.md
-              - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
-              - Auth 1.0.0 (Mainnet): relnotes/rn-main-auth-v1.0.0.md
-              - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
+            - Auth 1.0.11 : relnotes/rn-main-auth-v1.0.11.md
+            - Auth May27-2024: relnotes/rn-main-auth-May27-24.md
+            - Auth 1.0.10 : relnotes/rn-main-auth-v1.0.10.md
+            - Auth 1.0.9 : relnotes/rn-main-auth-v1.0.9.md
+            - Auth 1.0.8 : relnotes/rn-main-auth-v1.0.8.md
+            - Auth 1.0.7 : relnotes/rn-main-auth-v1.0.7.md
+            - Auth 1.0.6 : relnotes/rn-main-auth-v1.0.6.md
+            - Auth 1.0.5 : relnotes/rn-main-auth-v1.0.5.md
+            - Auth 1.0.4 : relnotes/rn-main-auth-v1.0.4.md
+            - Auth May3-2023: relnotes/rn-main-auth-May3-23.md
+            - Auth 1.0.3 : relnotes/rn-main-auth-v1.0.3.md
+            - Auth 1.0.2 : relnotes/rn-main-auth-v1.0.2.md
+            - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
+            - Auth 1.0.0 (Mainnet): relnotes/rn-main-auth-v1.0.0.md
+            - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
           - Migration Guide Archives: 
             - migration/archives/index.md
             - v1.0.10 -> v1.0.11: migration/main-auth-v1.0.11-migration.md

@@ -8,11 +8,6 @@ arcana:
 
 # Release Notes Archives
 
-=== "CA SDK"
-
-    [[rn-ca-v0.0.3| :material-note-text:{ .icon-color } CA v0.0.2]]{ .md-button }
-
-
 === "Auth SDK"
 
     [[rn-main-auth-v1.0.12| :material-note-text:{ .icon-color } Auth v1.0.12]]{ .md-button }

@@ -1,22 +1,25 @@
 ---
-alias: rn-ca-v0.0.2
+alias: rn-ca-v0.0.3
 title: 'CA SDK Release Note'
 description: 'Arcana CA SDK Release Note'
 arcana:
   root_rel_path: ..
 ---
 
-**Release Date: Jan 3, 2025**  
+**Release Date: Jan 15, 2025**  
 
-Version: **v0.0.2**
+Version: **v0.0.3**
 
 ## What is New?
 
 ---
  
-**Unified Balance:** Integrate Web3 apps with the CA-SDK to enable unified balance for users. Unified balance lets users view combined balance in the wallet and beat liquidity fragmentation via Arcana's chain abstraction. Users can spend unified balance on any chain. [[concept-unified-balance|Learn more...]]
+Use **Unified Balance:** for chain abstracted transactions across these newly supported chains:
 
-See supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
+* Linea
+* Scroll
+
+Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
 
 [Changelog](https://github.com/arcana-network/ca-sdk/releases/latest){ .md-button } 
 

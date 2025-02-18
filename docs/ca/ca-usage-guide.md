@@ -30,9 +30,13 @@ import { CA } from "@arcana/ca-sdk";
 
 const provider = window.ethereum
 
-const providerWithCA = new CA(provider)
-await providerWithCA.init();
-await providerWithCA.request({
+const ca = new CA();
+
+//Set the EVM provider  
+ca.setEVMProvider(provider);
+
+await ca.init();
+await ca.request({
     method: "eth_sendTransaction",
     params: [{
         to: "0xEa46Fb4b4Dc7755BA29D09Ef2a57C67bab383A2f",
@@ -48,11 +52,13 @@ await providerWithCA.request({
 
 ```js
 import { CA } from "@arcana/ca-sdk";
-const ca = new CA(window.ethereum);
+
+provider = window.ethereum;
+
+const ca = new CA();
+ca.setEVMProvider(provider);
 await ca.init();  // Initialize the CA provider before calling any API function
 ```
-
-`ca` can be used as a drop in replacement for an EIP1193 provider (like window.ethereum)
 
 ## API
 
