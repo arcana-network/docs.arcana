@@ -155,7 +155,7 @@ extra:
       social_auth: Social Auth
       iam_providers: Identity Access Managers
   social:
-    - icon: fontawesome/brands/twitter
+    - icon: fontawesome/brands/x-twitter
       link: https://twitter.com/arcananetwork
     - icon: fontawesome/brands/telegram
       link: https://t.me/ArcanaNetwork
@@ -165,6 +165,8 @@ extra:
       link: https://github.com/orgs/arcana-network/discussions
     - icon: material/book
       link: https://www.webfx.com/tools/read-able/referer.php
+    - icon: material/robot
+      link: /llms.txt
 
   # Removes made with Material notice in the footer   
   generator: false
@@ -226,6 +228,17 @@ plugins:
   - timetoread:
       wpm: 300
       allPages: True
+  - llmstxt: 
+      markdown_description: Arcana Network provides two SDKs, the Chain Abstraction (CA) SDK and the Auth SDK. The CA SDK resolves liquidity fragmentation. It enables developers to let users spend a unified token balance across chains without bridging assets. The Auth SDK addresses account abstraction. It allows users to onboard via social login, skipping wallet creation. Both improve user experience and onboarding. Arcana also offers a standalone CA wallet for spending unified balances on select Web3 apps.
+      full_output: llms.txt
+      sections:
+        Chain Abstraction:
+        - index.md
+        - ca/*/**.md
+        Auth:
+        - auth-index.md
+        - auth/*/**.md
+
   - redirects:
         redirect_maps:
           # Linea docs backlinks
