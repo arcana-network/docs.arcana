@@ -505,7 +505,6 @@ nav:
         - Supported Chains: web3-stack/ca_stack.md
         - Architecture: ca/introduction/ca.md
         - Use Cases: ca/introduction/use-cases.md
-        - CA Futures: ca/introduction/futures.md
         - Archives: 
           - relnotes/archives/ca-index.md
           - CA SDK:
