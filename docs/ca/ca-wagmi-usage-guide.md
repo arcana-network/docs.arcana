@@ -103,7 +103,7 @@ The following hooks allow developers to access unified balance and enable chain 
 
 #### useBalance
 <hr>
-Get the unified balance across all supported chains associated with the EoA for the specified token symbol. 
+Get the unified balance across all supported chains associated with the EOA for the specified token symbol. 
 
 ##### Usage
 
@@ -145,7 +145,7 @@ const balance = useBalance({ symbol: "eth" })
 #### useBalances
 <hr>
 
-Get the unified balances across all supported chains associated with the EoA for every supported token type.  
+Get the unified balances across all supported chains associated with the EOA for every supported token type.  
 
 ##### Usage
 
@@ -193,7 +193,7 @@ const balances = useBalances()
 #### useBalanceModal
 <hr>
 
-Display or hide the popup displaying the unified balance in the context of the user EoA.
+Display or hide the popup displaying the unified balance in the context of the user EOA.
 
 ##### Usage
 
@@ -215,7 +215,7 @@ const { showModal, hideModal } = useBalanceModal()
 #### useCAFn
 <hr>
 
-Initiate a chain abstracted `bridge` or `transfer` function in the context of the user EoA.
+Initiate a chain abstracted `bridge` or `transfer` function in the context of the user EOA.
 
 ##### Usage
 

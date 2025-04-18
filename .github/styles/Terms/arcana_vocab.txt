@@ -176,7 +176,7 @@ EVM-compatible
 EmailID
 EntryPoint
 Enums
-EoA
+Eo
 Ethereum
 Ethereum-compatible
 Ethereum_Goerli

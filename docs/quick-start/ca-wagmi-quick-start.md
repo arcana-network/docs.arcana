@@ -64,7 +64,7 @@ const { writeContract, writeContractAsync } = useWriteContract();
 Use these Arcana hooks to access [[concept-unified-balance|unified balance]] via the plug-and-play widget. Additionally, you can enable chain abstracted bridge and transfer functions through `useCAFns`.
 
 * [`useBalance`](#usebalance) - to get the unified balance value across all supported chains for the specified token string 
-* [`useBalances`](#usebalances) - to get the unified balance values across all supported chains for all supported tokens associated with the EoA
+* [`useBalances`](#usebalances) - to get the unified balance values across all supported chains for all supported tokens associated with the EOA
 * [`useBalanceModal`](#usebalancemodal) - to display or hide the unified balance popup widget
 * [`useCAFn()`](#usecafn)  - for chain abstracted bridging and token transfer functionality
 

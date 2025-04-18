@@ -37,7 +37,7 @@ arcana:
 
 ??? an-faq "What is a CA allowance and why are allowances needed?"
 
-    Allowance or 'Permit' in the blockchain context allows a third party, such as a smart contract, to perform transactions from a user's EoA for a specified amount — without accessing the user's private key. 
+    Allowance or 'Permit' in the blockchain context allows a third party, such as a smart contract, to perform transactions from a user's EOA for a specified amount — without accessing the user's private key. 
     
     In {{config.extra.arcana.company_name}} chain abstraction, [[concept-allowances|allowances]] enable unified balance. This lets users spend on any destination chain when they have enough funds and gas fees on their source chains.
 
