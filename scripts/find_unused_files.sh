@@ -2,84 +2,76 @@
 
 # Function to display usage
 usage() {
-    echo "Usage: $0 -s <source_folder1>[,<source_folder2>,...] -r <ref_folder1>[,<ref_folder2>,...]"
-    echo "Example: $0 -s /src1,/src2 -r /ref1,/src1"
+    echo "Usage: $0 -s <source_folder> -d <destination_folder1>[,<destination_folder2>,...]"
+    echo "  -s: Source folder containing files to process"
+    echo "  -d: One or more destination folders to search for matching strings (comma-separated)"
     exit 1
 }
 
-# Initialize arrays for source and reference folders
-typeset -a source_folders ref_folders
-
-# Parse command-line options
-while getopts "s:r:" opt; do
+# Parse command line options
+while getopts "s:d:" opt; do
     case $opt in
-        s)
-            # Split comma-separated source folders into array
-            IFS=',' read -r -A source_folders <<< "$OPTARG"
-            ;;
-        r)
-            # Split comma-separated reference folders into array
-            IFS=',' read -r -A ref_folders <<< "$OPTARG"
-            ;;
-        \?)
-            usage
-            ;;
+        s) SOURCE_FOLDER="$OPTARG" ;;
+        d) DEST_FOLDERS="$OPTARG" ;;
+        *) usage ;;
     esac
 done
 
-# Check if source and reference folders are provided
-if [[ ${#source_folders[@]} -eq 0 || ${#ref_folders[@]} -eq 0 ]]; then
-    echo "Error: Both -s and -r options must be provided with at least one folder"
+# Check if source and destination folders are provided
+if [[ -z "$SOURCE_FOLDER" || -z "$DEST_FOLDERS" ]]; then
     usage
 fi
 
-# Validate source folders
-for folder in "${source_folders[@]}"; do
+# Check if source folder exists
+if [[ ! -d "$SOURCE_FOLDER" ]]; then
+    echo "Error: Source folder '$SOURCE_FOLDER' does not exist"
+    exit 1
+fi
+
+# Split destination folders into an array
+IFS=',' read -rA DEST_FOLDER_ARRAY <<< "$DEST_FOLDERS"
+
+# Check if each destination folder exists
+for folder in "${DEST_FOLDER_ARRAY[@]}"; do
     if [[ ! -d "$folder" ]]; then
-        echo "Error: Source folder '$folder' does not exist"
+        echo "Error: Destination folder '$folder' does not exist"
         exit 1
     fi
 done
 
-# Validate reference folders
-for folder in "${ref_folders[@]}"; do
-    if [[ ! -d "$folder" ]]; then
-        echo "Error: Reference folder '$folder' does not exist"
-        exit 1
+# Initialize an associative array to track reference status
+typeset -A file_status
+
+# Process each file in the source folder recursively
+find "$SOURCE_FOLDER" -type f | while read -r file; do
+    # Get the basename (filename without path)
+    filename=$(basename "$file")
+    
+    # Extract name without extension
+    if [[ "$filename" =~ ^(.+)\.(.+)$ ]]; then
+        string1="${match[1]}"  # Get the part before the extension
+    else
+        string1="$filename"    # No extension, use whole filename
+    fi
+
+    # Mark file as not found initially
+    file_status["$file"]="not_found"
+
+    # Search for string1 in all destination folders
+    for dest_folder in "${DEST_FOLDER_ARRAY[@]}"; do
+        if find "$dest_folder" -type f -exec grep -l "$string1" {} + 2>/dev/null | grep -q .; then
+            # If found, mark file as found and break
+            file_status["$file"]="found"
+            break
+        fi
+    done
+done
+
+# Print files that were not found (full filepath)
+for file in "${(k)file_status[@]}"; do
+    if [[ "${file_status[$file]}" == "not_found" ]]; then
+        echo "$file"
     fi
 done
 
-# Function to check if a file is referenced
-check_file_referenced() {
-    local source_file="$1"
-    local filename=$(basename "$source_file")
-    local found=0
-
-    # Iterate through all reference folders
-    for ref_folder in "${ref_folders[@]}"; do
-        # Iterate through all files in the current reference folder and subfolders
-        while IFS= read -r ref_file; do
-            # Skip checking the source file against itself
-            if [[ "$ref_file" == "$source_file" ]]; then
-                continue
-            fi
-            # Check if the filename is mentioned in the reference file
-            if grep -q -- "$filename" "$ref_file" 2>/dev/null; then
-                found=1
-                break 2  # Exit both loops if found
-            fi
-        done < <(find "$ref_folder" -type f)
-    done
-
-    # If not found in any reference file, print the source file path
-    if [[ $found -eq 0 ]]; then
-        echo "$source_file"
-    fi
-}
-
-# Process all files in all source folders and their subfolders
-for src_folder in "${source_folders[@]}"; do
-    find "$src_folder" -type f | while read -r file; do
-        check_file_referenced "$file"
-    done
-done
+exit 0
