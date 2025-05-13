@@ -15,6 +15,11 @@
     </figure>
 
     <figure markdown="span">
+        <img src="{{config.extra.arcana.img_dir}}/logos/avalanche.{{config.extra.arcana.img_png}}"/>
+        <figcaption>Avalanche</figcaption>
+    </figure>
+
+    <figure markdown="span">
         <img src="{{config.extra.arcana.img_dir}}/logos/base.{{config.extra.arcana.img_png}}"/>
         <figcaption>Base</figcaption>
     </figure>
