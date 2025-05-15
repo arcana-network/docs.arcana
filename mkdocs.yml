@@ -98,7 +98,8 @@ extra:
     ca_wagmi_sdk_download_url: https://www.npmjs.com/package/@arcana/ca-wagmi
     ca_wagmi_sdk_name: Arcana CA Wagmi SDK
     ca_wagmi_sdk_ref_url: https://ca-wagmi-sdk-ref-guide.netlify.app/
-    ca_wagmi_sdk_codesandbox_url: https://codesandbox.io/p/github/arcana-network/ca-wagmi-example/main    
+    ca_wagmi_sdk_codesandbox_url: https://codesandbox.io/p/github/arcana-network/ca-wagmi-example/main
+    auth_ca_wagmi_sdk_codesandbox_url: https://codesandbox.io/p/github/shaloo/sample-arcana-auth-ca-wagmi-sdks/sample-auth-ca-wagmi-integration    
     auth_sdk_download_url: https://www.npmjs.com/package/@arcana/auth
     sdk_name: Arcana Auth SDK
     react_sdk_name: Arcana Auth React SDK
@@ -174,7 +175,7 @@ extra:
     provider: google
     property: !ENV [GOOGLE_ANALYTICS_ID, default='XXXXXXXXXX']
     feedback:
-      title: Make your opinion matter...... Was this information useful?
+      title: Are you happy with this documentation?
       ratings:
         - icon: material/thumb-up-outline
           name: Yes, it was useful.
@@ -211,7 +212,8 @@ plugins:
         #background_image: img/social_card_image.png #sponsors only
   - git-authors:
       show_email_address: false
-  - git-revision-date-localized
+  - git-revision-date-localized:
+      enable_creation_date: false
   - glightbox:
       touchNavigation: true
       loop: false
@@ -474,9 +476,13 @@ nav:
       - Quick Start: 
         - Web Apps: quick-start/ca-quick-start.md
         - Wagmi Apps: quick-start/ca-wagmi-quick-start.md
+        - Auth & CA Apps: quick-start/auth-ca-wagmi-quick-start.md
       - Usage: 
         - Overview: ca/ca-usage-overview.md
         - Install: ca/ca-sdk-installation.md
+        - Integrate: 
+          - ca/integrate/web.md
+          - ca/integrate/wagmi.md
       - APIs: 
         - Web: ca/ca-usage-guide.md
         - Wagmi: ca/ca-wagmi-usage-guide.md

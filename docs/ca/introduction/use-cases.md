@@ -16,15 +16,18 @@ arcana:
 
 ## Swaps
 
-Allow users to execute token swaps on a single chain DEX while using funds held across multiple chains as a unified balance. For example, a user holding USDTC on Ethereum and Arbitrum can seamlessly swap tokens on Polygon without needing to bridge or consolidate assets manually. This removes friction for users, ensuring smoother transactions and higher conversion rates for swap protocols.
+Allow users to execute token swaps on a single chain DEX while using funds held in multiple assets across several chains as a unified balance. For example, a user holding ETH on Optimism and USDC on Arbitrum can seamlessly swap tokens to be able to spend USDT on Polygon without needing to bridge or consolidate assets manually. This removes friction for users, ensuring smoother transactions and higher conversion rates for swap protocols.
 
 ## Bridges
 
-Bridges enable users to move funds from Chain A to Chain B, but when users hold assets across multiple chains, they face the challenge of tracking and transferring funds chain by chain. With {{config.extra.arcana.company_name}}’s Chain Abstraction, users can bridge their entire multi-chain balance to the desired chain in one step.
+Bridges enable users to move funds from Chain A to Chain B, but when users hold disparate assets across multiple chains, they face the challenge of tracking and transferring funds chain by chain. With {{config.extra.arcana.company_name}}’s Chain Abstraction, users can bridge their entire multi-chain balance to the desired chain in one step.
 
 ??? an-info "Example"
 
-    User holds USDC on Ethereum, Polygon, and Optimism and wants to consolidate their funds on Arbitrum. Instead of manually bridging USDC from each chain one at a time, users can bridge their total USDC balance from all three chains to Arbitrum in a single step.
+    User holds USDC on Arbitrum, USDT on Polygon, some ETH on Optimism and wants to consolidate their funds on Arbitrum. 
+    
+    With chain abstraction, instead of manually bridging disparate tokens held across different chains, one at a time, users can issue a single intent to bridge their asset balance from source chains to a desired supported token on Arbitrum in a single step.
+
 
 ## Decentralized Exchanges (DEXes)
 

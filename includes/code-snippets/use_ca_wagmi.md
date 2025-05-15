@@ -64,7 +64,7 @@
     // useSendTransaction //DO NOT use from the wagmi SDK
     } from "wagmi";
     import {
-        useBalance,
+        useBalanceModal,
         useSendTransaction, //Note: Use from ca-wagmi SDK
         useWriteContract,
         useUnifiedBalance,
@@ -80,7 +80,7 @@
         const { address } = useAccount();
         const { disconnect } = useDisconnect();
         const { data: ensName } = useEnsName({ address });
-        const { showBalance } = useBalance();
+        const { showModal, hideModal } = useBalanceModal();
         const { loading, getAssetBalance } = useUnifiedBalance();
         if (!loading) {
             console.log({ assetBalance: getAssetBalance("ETH") });
@@ -259,7 +259,7 @@
                             </button>
                         </form>
                     </>
-                )}
+                )
             </>
         );
     }      

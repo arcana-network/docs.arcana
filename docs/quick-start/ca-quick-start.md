@@ -4,13 +4,11 @@ title: 'Web Apps'
 description: 'Get Started quickly with Arcana Chain Abstraction and enable unified balance for users. Learn how to integrate the app with the Arcana CA SDK.'
 arcana:
   root_rel_path: ..
-  app_type: "'CA'"
-  app_example_submodule: "'`sample-auth-ca`'"
-  custom_login_ui_tag: "index-custom-ui-onboard-users"
-  firebase_custom_ui_tag: "build-iam-firebase-auth"
+  app_type: "'Web'"
+  app_example_submodule: "'`ca-sdk-example`'"
 ---
 
-Enable [[concept-unified-balance|unified-balance]] in Web3 apps by integrating with the [[concept-casdk|{{config.extra.arcana.ca_sdk_name}}]].
+Enable [[concept-unified-balance|unified-balance]] in {{page.meta.arcana.app_type}} apps by integrating with the [[concept-casdk|{{config.extra.arcana.ca_sdk_name}}]]. Let the app users spend anywhere with chain abstracted transactions.
 
 ## 1. Install
 
@@ -20,11 +18,11 @@ Enable [[concept-unified-balance|unified-balance]] in Web3 apps by integrating w
 
 {% include "./text-snippets/quick-start-int-casdk.md" %}
 
-## 3. Use Chain Abstraction
+## 3. Set up Chain Abstraction
 
-[[concept-allowances|Allowances]] are required to enable unified balance in the wallet.
+Web3 app developers must add code to allow the users to set up [[concept-allowances|allowances]]. These allowances let users spend the unified balance on any chain if there are sufficient funds on the source chains.
 
-Use the following UI Hooks for allowance and intent setup in the dApp:
+Use `setOnAllowanceHook` UI Hook to set up allowance:
 
 ```js
 ca.setOnAllowanceHook(async ({ allow, deny, sources }) => {
@@ -34,6 +32,11 @@ ca.setOnAllowanceHook(async ({ allow, deny, sources }) => {
     // allow(allowances): allowances is an array with allowance for each source (len(sources) == len(allowances))
     // deny(): stop the flow
 })
+```
+
+Use `setOnIntentHook` to let the users specify the intent for a chain abstracted transaction:
+
+```js
 
 ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
     // This is a hook for the dev to show user the intent, the sources and associated fees
@@ -45,43 +48,14 @@ ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
   })
 ```
 
-### Get Allowance
-
-```js
-// Get USDC allowance for Polygon
-await ca.allowance().tokens(["USDC"]).chain(137).get()
-// Get USDC & USDT allowance for all supported chains
-await ca.allowance().tokens(["USDC", "USDT"]).get()
-// Get all supported token allowances for all supported chains
-await ca.allowance().get()
-```
-
-### Set Allowance
-
-```js
-await ca.allowance().tokens(["USDC"]).chain(42161).amount("max").set()
-
-// You can specify custom values for tokens and amount in hex, for example
-// await ca.allowance().tokens(["USDC"]).chain(42161).amount("0x989680").set()
-
-// Alternatively, you can also specify the amount 10,000,000 for USDC tokens as follows:
-// await ca.allowance().tokens(["USDC"]).chain(42161).amount("10000000").set()
-```
-
-### Revoke Allowance
-
-```js
-await ca.allowance().tokens(["USDC"]).chain(42161).revoke()
-```
-
-### Unified Balance
+### 4. Access Unified Balance
 
 ```js
 const balances = await ca.getUnifiedBalances()
 const usdtBalance = await ca.getUnifiedBalance("usdt")
 ```
 
-### Request
+### 5. Issue CA Transaction
 
 ```js
 await ca.request({
@@ -94,57 +68,14 @@ await ca.request({
 })
 ```
 
-## 4. Advanced Usage
+Developers can let users manage allowances in the Web3 app by accessing current allowance configurations associated with their EOA wallet and modify or revoke them.
 
-### Bridge
+ [[ca-integrate-web#advanced|Learn more]] about how to handle chain abstraction user intent processing events and other advanced functionality in the app.
 
-```js
-await ca.bridge().token("pol").amount(10).chain(137).exec();
-```
 
-### Transfer
-
-```js
-await ca.transfer().to("0x...").amount(5).chain(10).token("eth").exec()
-```
-
-### Event Handling
-
-#### Add Listener
-
-```js
-ca.addCAEventListener((data) => {
-    switch(data.type) {
-        case "EXPECTED_STEPS":{
-            // store data.data(an array of steps which will be followed)
-            state.value.steps = data.data.map(s => ({ ...s, done: false }))
-            state.value.inProgress = true
-            break;
-        }
-        case "STEP_DONE": {
-            const v = state.value.steps.find(s => {
-                return s.typeID === data.data.typeID
-            })
-            if (v) {
-                v.done = true
-            }
-            break;
-        }
-    }
-});
-```
-
-#### Remove Listener
-
-```js
-ca.removeCAEventListener((data) => {...})
-```
+{% include "./text-snippets/quick-start-deploy-ca.md" %}
 
 ## See Also
-
-<!---
-{% include "./text-snippets/quick-start-common-examples.md" %}
--->
 
 {% include "./text-snippets/ca_sdk_quicklinks.md" %}
 
