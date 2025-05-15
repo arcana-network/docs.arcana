@@ -45,7 +45,7 @@ hide:
     <div class="tx-hero-container">
       <div class="tx-hero-content">
         <span markdown="span">
-        [[ca-quick-start|Web Apps]]{ .md-button } [[ca-wagmi-quick-start|Wagmi Apps]]{ .md-button } 
+        [[ca-quick-start|Web Apps]]{ .md-button } [[ca-wagmi-quick-start|Wagmi Apps]]{ .md-button }[[auth-ca-wagmi-quick-start|Auth+CA Apps]]{ .md-button }
         </span>
       </div>
     </div>
