@@ -499,7 +499,7 @@ nav:
       - CA Wagmi SDK: concepts/ca/ca_wagmi.md
       - Wagmi Plug & Play: concepts/ca/unified-balance-wagmi-pnp.md
     - Resources:
-      - CA Whitepaper: https://arcananetwork.notion.site/Chain-Abstraction-Technical-Whitepaper-121f11ed0804808da2e5cdd1432b2b61
+      - CA Whitepaper: https://arcananetwork.notion.site/Chain-Abstraction-Technical-Paper-121f11ed0804808da2e5cdd1432b2b61
       - Audit: 
         - audit/ca/index.md
         - Arcana Vault: https://github.com/arcana-network/audit-reports/blob/9b13233ce0fa4915c96c712bb49187864089f3df/Arcana%20Vault%20Final%20Report.pdf
