@@ -500,7 +500,10 @@ nav:
       - Wagmi Plug & Play: concepts/ca/unified-balance-wagmi-pnp.md
     - Resources:
       - CA Whitepaper: https://arcananetwork.notion.site/Chain-Abstraction-Technical-Whitepaper-121f11ed0804808da2e5cdd1432b2b61
-      - CA Audit Report: https://github.com/arcana-network/audit-reports/blob/main/Arcana%20Wallet%20Final%20Audit%20Report.pdf
+      - Audit: 
+        - audit/ca/index.md
+        - Arcana Vault: https://github.com/arcana-network/audit-reports/blob/9b13233ce0fa4915c96c712bb49187864089f3df/Arcana%20Vault%20Final%20Report.pdf
+        - CA Wallet: https://github.com/arcana-network/audit-reports/blob/main/Arcana%20Wallet%20Final%20Audit%20Report.pdf
       - Release Notes: 
         - CA SDK: relnotes/latest-ca-release-note.md
         - CA Wagmi SDK: relnotes/latest-ca-wagmi-release-note.md
@@ -759,9 +762,10 @@ nav:
       - Validator Nodes: concepts/validator-nodes.md
     - Resources:
       - Auth Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
-      - Auth Audit Reports: 
-        - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
-        - Arcana ADKG: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20230228T054948Z.pdf
+      - Audit: 
+        - audit/auth/index.md
+        - Auth Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
+        - ADKG: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20230228T054948Z.pdf
       - Release Notes: relnotes/latest-auth-release-note.md
       - Migration Guides: migration/latest-auth-migration-guide.md 
       - Changelog: changelog/index.md  
