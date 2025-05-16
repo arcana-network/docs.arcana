@@ -487,6 +487,7 @@ nav:
         - Web: ca/ca-usage-guide.md
         - Wagmi: ca/ca-wagmi-usage-guide.md
       - Examples: ca/examples.md
+    - Solvers: solvers/solver-dashboard.md
     - FAQ: faq/ca/faq.md
     - Concepts: 
       - Chain Abstraction: concepts/ca/chain-abstraction.md
