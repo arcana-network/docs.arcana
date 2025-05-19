@@ -9,7 +9,7 @@ For instance, let us take the case where a user intends to spend 18 USDC on Scro
 
 To spend 18 USDC on Scroll (destination chain) with the given liquidity fragmentation, it would typically require multiple clicks and steps for swapping or bridging different assets available on the source chains, so that user can convert the assets to the desired token balance on Scroll. 
 
-Through chain abstraction and ability to swap cross-chain, users have the convenience to view the consolidated token balance across supported tokens and chains. This simplifies the process of sending 18 USDC on Optimism, as users can sign the intent without the need for bridging, swapping, or considering the optimal routes. 
+Through chain abstraction and ability to swap cross-chain, users have the convenience to view the consolidated token balance across supported tokens and chains. This simplifies the process of sending 18 USDC on Scroll, as users can sign the intent without the need for bridging, swapping, or considering the optimal routes. 
 
 The cross-chain swap enables users to:
 
