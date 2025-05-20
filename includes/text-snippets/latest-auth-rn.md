@@ -2,7 +2,9 @@
 
 **Product Update Date: Oct 28, 2024**  
 
-Version: **{{config.extra.arcana.latest_version}}**
+**Version: {{config.extra.arcana.latest_version}}**
+
+**Download and Install [[sdk-installation|Auth SDK]]**
 
 The product consists of:
 

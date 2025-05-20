@@ -2,6 +2,8 @@
 
 **Version: v{{config.extra.arcana.latest_ca_sdk_version}}**
 
+**Download and Install [[ca-sdk-installation|CA SDK]]**
+
 ## What is New?
 
 ---
