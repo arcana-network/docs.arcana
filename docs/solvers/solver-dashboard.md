@@ -19,8 +19,7 @@ funds (RFF). It publishes these requests on a specified channel. Solvers
 watch the channel for new requests. They compete to provide the desired
 liquidity and fulfill each request.
 
-The Solver Dashboard helps solvers manage their service routes and view
-earnings.
+The Solver Dashboard lets the Solver Admin manage their service. They can:
 
 {% include "./text-snippets/solver_actions.md" %}
 
@@ -33,17 +32,14 @@ In addition, solvers must get the solver executable from
 {{config.extra.arcana.company_name}}. They must set up the executable on a 
 server. Once running, they can take part in the protocol. 
 
-Through the dashboard, solvers can view and manage preferences. They can set 
-thresholds and fees for each service route. The dashboard also shows their 
-activity and earnings.
-
 ## Connect Wallet
 
 To access the dashboard, visit https://solver-dashboard.netlify.app/. Connect 
 using the same EOA wallet address that you used to set up the solver executable. 
 [Learn more...](https://arcananetwork.notion.site/Solver-Setup-Guide-15af11ed08048064839ed576751386f3)
 
-Sign the message and confirm wallet connection. You will see the dashboard landing page.
+Sign the message and confirm wallet connection. The dashboard landing page will 
+appear.
 
 <figure markdown="span">
     <img alt="Solver Dashbaord" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_login.{{config.extra.arcana.img_png}}"/>
@@ -77,36 +73,53 @@ The landing page shows the settings and usage data for the selected solver.
 Refer to the left hand navigation panel. The *Wallet Balance* screen shows all 
 routes for the selected solver.
 
-### Service Routes
+### Available Liquidity
 
-The wallet balance screen shows each route. Each route has these fields:
+The wallet balance screen shows each available liquidity in terms of total unified
+balance across all chains and tokens. It also shows liquidity available per chain
+in the wallet.
 
-* Chain
+### Total Balance
+
+You will see the total balance for your connected wallet on the top right of the
+wallet balance screen.
+
+### Chain Thresholds
+
+The Wallet Balances screen shows all chains configured for your solver. For each 
+chain, you can see the current token thresholds.
+
 * Token
 * Balance
 * Threshold
 
-You can filter these routes by selecting a
-specific chain.
+You can filter these details by chain or token type. The dashboard allows you to 
+edit the token threshold for the chains.
 
 <figure markdown="span">
     <img alt="Token Threshold" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_threshold.{{config.extra.arcana.img_png}}"/>
     <figcaption>Token Threshold</figcaption>
 </figure>
 
-### Total Balance
-
-You will see the total balance for your connected wallet on the top right of the
-wallet balance screen. This appears above the service routes.
-
-### Token Threshold
-
-The dashboard allows you to edit the token threshold associated with each route.
 
 ## Fees
 
+Solver setup includes configuring fees for each specified route serviced 
+by the solver for providing the liquidity to {{config.extra.arcana.company_name}}
+protocol users. Each route is comprised of the following fields:
+
+* Source Chain
+* Destination Chain
+* Token
+* Fees
+
 Go to the left side navigation panel. Click on *Fees* to view and edit the fees
 configured for each route and the earnings data per route.
+
+<figure markdown="span">
+    <img alt="Solver Fees" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_fees.{{config.extra.arcana.img_png}}"/>
+    <figcaption>Solver Fees</figcaption>
+</figure>
 
 ### Filters
 
@@ -119,6 +132,11 @@ The *Fees* field on the right is editable and solvers can change them as needed.
 The protocol uses the fees you set in the dashboard. When a user creates an intent, 
 the protocol shows these fees to them when building the request for funds. 
 This ensures transparency in the process.
+
+<figure markdown="span">
+    <img alt="Solver Route Filters" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_filters.{{config.extra.arcana.img_png}}"/>
+    <figcaption>Solver Route Filters</figcaption>
+</figure>
 
 ### Route Earnings
 
