@@ -1,6 +1,8 @@
 **Release Date: {{config.extra.arcana.latest_ca_wagmi_sdk_release_date}}**  
 
-Version: **v{{config.extra.arcana.latest_ca_wagmi_sdk_version}}**
+**Version: v{{config.extra.arcana.latest_ca_wagmi_sdk_version}}**
+
+**Download and Install [[ca-sdk-installation|CA Wagmi SDK]]**
 
 ## What is New?
 
