@@ -9,37 +9,50 @@ arcana:
 # Solver Dashboard
 
 Solvers play a key role in enabling the users to spend any asset on any
-destination chain.
+destination chain. A [[concept-solver| solver]] is a third-party market
+maker that runs the {{config.extra.arcana.company_name}} provided solver
+executable. 
 
-A [[concept-solver| solver]] is a third-party market maker that runs the
-{{config.extra.arcana.company_name}} provided solver executable. Only a permitted
-set of solvers can interact with the {{config.extra.arcana.company_name}} chain
-abstraction (CA) protocol. The protocol converts user intents into requests for
-funds (RFF). It publishes these requests on a specified channel. Solvers
-watch the channel for new requests. They compete to provide the desired
-liquidity and fulfill each request.
+Only a permitted set of solvers can interact with the 
+{{config.extra.arcana.company_name}} chain abstraction (CA) protocol.
 
-The Solver Dashboard lets the Solver Admin manage their service. They can:
+The protocol converts user intents into requests for funds (RFF). It publishes
+these requests on a specified channel. Solvers watch the channel for new
+requests. They compete to provide the desired liquidity and fulfill each
+request.
+
+The Solver Dashboard allows an administrator to manage one or more solvers.
+It allows the admin to perform the following actions:
 
 {% include "./text-snippets/solver_actions.md" %}
 
 ## Prerequisites
 
-To access the Solver Dashboard, third party solvers must register with the
-{{config.extra.arcana.company_name}} protocol and provide an EOA wallet address.
+To access the Solver Dashboard, you need two things:
 
-In addition, solvers must get the solver executable from
-{{config.extra.arcana.company_name}}. They must set up the executable on a 
-server. Once running, they can take part in the protocol. 
+1. An EOA wallet address
+2. Registration with the {{config.extra.arcana.company_name}} protocol
+
+Solver administrators have to set up authorized EOA addresses when
+configuring a solver. The same admin address be authorized to 
+manage more than one solver. The dashboard displays details in the
+context of a single solver at a time.
+
+To run a solver, you need to:
+
+* [[solver-config|Configure the solver]] with the required settings
+* Run the executable on a server
+
+Once running, the solver takes part in the {{config.extra.arcana.company_name}}
+CA protocol.
 
 ## Connect Wallet
 
-To access the dashboard, visit https://solver-dashboard.netlify.app/. Connect 
-using the same EOA wallet address that you used to set up the solver executable. 
-[Learn more...](https://arcananetwork.notion.site/Solver-Setup-Guide-15af11ed08048064839ed576751386f3)
+To access the dashboard, visit [https://solver.arcana.network/](https://solver.arcana.network/).
 
-Sign the message and confirm wallet connection. The dashboard landing page will 
-appear.
+Solver administrators must connect the wallet by using the same EOA address
+that was registered earlier. Sign the message displayed in the wallet UI
+asking for permission to connect to the dashboard and view the landing page.
 
 <figure markdown="span">
     <img alt="Solver Dashbaord" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_login.{{config.extra.arcana.img_png}}"/>
@@ -48,9 +61,10 @@ appear.
 
 ### EOA Addresses
 
-Look at the top right of the landing page. You will see two types of addresses:
-EVM and non-EVM chain addresses. These addresses belong to your solver admin 
-account.
+The landing page shows:
+
+* EVM and non-EVM addresses for your connected wallet
+* A dropdown list of solvers you can manage
 
 <figure markdown="span">
     <img alt="Solver EOA Addresses" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_eoa_addr.{{config.extra.arcana.img_png}}"/>
@@ -59,9 +73,11 @@ account.
 
 ### Select Solver
 
-There can be one or more solvers configured to run using the same wallet account. You can view the solvers associated with the wallet account on the top right. If there are multiple solvers, make sure you select the one you need to view or configure.
+You can manage one or more solvers with your registered EOA account. Select 
+the solver you want to view or configure by clicking on the dropdown on the
+top right next to the address.
 
-The landing page shows the settings and usage data for the selected solver.
+The landing page shows the settings and solver usage data for the selected solver.
 
 <figure markdown="span">
     <img alt="Solver Selection" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_solverinfo.{{config.extra.arcana.img_png}}"/>
@@ -70,51 +86,45 @@ The landing page shows the settings and usage data for the selected solver.
 
 ## Wallet Balances
 
-Refer to the left hand navigation panel. The *Wallet Balance* screen shows all 
-routes for the selected solver.
+Go to the *Wallet Balance* screen in the left navigation panel. Here you can:
 
-### Available Liquidity
-
-The wallet balance screen shows each available liquidity in terms of total unified
-balance across all chains and tokens. It also shows liquidity available per chain
-in the wallet.
+* View chains and tokens configured for the solver
+* Check balances and thresholds
+* Filter by chain or token type
 
 ### Total Balance
 
-You will see the total balance for your connected wallet on the top right of the
-wallet balance screen.
+The top right of the wallet balance screen shows your total balance. This is
+the combined liquidity across all chains and tokens in your solver account.
 
-### Chain Thresholds
+### Chain,Token Balance
 
-The Wallet Balances screen shows all chains configured for your solver. For each 
-chain, you can see the current token thresholds.
+Each row displays the token balance for each configured chain and token type.
 
-* Token
-* Balance
-* Threshold
+### Chain,Token Threshold
 
-You can filter these details by chain or token type. The dashboard allows you to 
-edit the token threshold for the chains.
+For each chain, you can view and edit the token thresholds.
 
 <figure markdown="span">
     <img alt="Token Threshold" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_threshold.{{config.extra.arcana.img_png}}"/>
     <figcaption>Token Threshold</figcaption>
 </figure>
 
-
 ## Fees
 
-Solver setup includes configuring fees for each specified route serviced 
-by the solver for providing the liquidity to {{config.extra.arcana.company_name}}
-protocol users. Each route is comprised of the following fields:
+Go to the left side navigation panel. Click on *Fees* to view and edit the fees
+configured for each route and the earnings data per route.
+
+Configuring fees for each specified route serviced by the solver is part
+of the solver setup. This is the fee charged by solver per route for providing
+liquidity to {{config.extra.arcana.company_name}} protocol users. 
+
+Each solver route shows the following details:
 
 * Source Chain
 * Destination Chain
 * Token
 * Fees
-
-Go to the left side navigation panel. Click on *Fees* to view and edit the fees
-configured for each route and the earnings data per route.
 
 <figure markdown="span">
     <img alt="Solver Fees" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_fees.{{config.extra.arcana.img_png}}"/>
@@ -127,11 +137,16 @@ You can filter the fees using these fields:
 
 * Source chain
 * Destination chain
+* Token
 
 The *Fees* field on the right is editable and solvers can change them as needed.
-The protocol uses the fees you set in the dashboard. When a user creates an intent, 
-the protocol shows these fees to them when building the request for funds. 
-This ensures transparency in the process.
+The protocol uses the fees you set in the dashboard. When a user creates an intent,
+the protocol displays fee details including solver fees, when building the 
+request for funds ensuring fee transparency.
+
+If the admin modifies the fees via the solver dashboard, the UI submits the
+updated fee information to the solver. The solver turns it into a Cosmos transaction
+and submits on chain. The updated fee value becomes effective from the next block.
 
 <figure markdown="span">
     <img alt="Solver Route Filters" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_filters.{{config.extra.arcana.img_png}}"/>
@@ -148,7 +163,7 @@ earnings chart appears next to it.
     <figcaption>Solver Earnings</figcaption>
 </figure>
 
-## Earnings Chart
+### Earnings Chart
 
 Find the chart icon next to the earnings field. Click it to see a historical 
 view of earnings for that route.
