@@ -7,3 +7,7 @@ arcana:
 ---
 
 {% include "./text-snippets/ca/intent.md" %}
+
+## Stages
+
+{% include "./text-snippets/ca/intent_stages.md" %}

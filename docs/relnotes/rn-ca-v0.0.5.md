@@ -8,9 +8,9 @@ arcana:
 
 # CA SDK Release Note
 
-**Release Date: 17 Feb 2025**  
+**Release Date: 17 Feb, 2025**  
 
-Version: **v0.0.5**
+**Version: v0.0.5**
 
 ## What is New?
 
