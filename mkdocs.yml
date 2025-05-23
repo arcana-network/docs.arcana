@@ -470,8 +470,9 @@ not_in_nav: |
   migration/main-auth-v1.0.12-migration.md
 
 nav:
+  - index.md
   - Chain Abstraction: 
-    - index.md
+    - ca-index.md
     - Developers:
       - Quick Start: 
         - Web Apps: quick-start/ca-quick-start.md
