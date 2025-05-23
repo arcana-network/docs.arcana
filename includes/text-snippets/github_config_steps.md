@@ -44,6 +44,24 @@ Save the newly registered application in GitHub Developer Settings. GitHub will 
 
 Copy and save the **Client ID** and the **secret** assigned by GitHub for the newly registered app. It will be required in the next step while completing the {{config.extra.arcana.dashboard_name}} app configuration.
 
+!!! an-caution "GitHub Email Settings"
+
+    Make sure your GitHub developer profile email settings are **NOT private**. If it is marked private then the [[concept-social-login|social login]] and the [[concept-aggregate-login|aggregate login]] features offered by the {{config.extra.arcana.sdk_name}} will not work due to [[troubleshooting#configuration-issues|configuration issues]].
+
+    1. In your GitHub profile setting, allow your email to be visible
+    2. In the GitHub Email Settings preferences, make sure you do not select the checkbox which says 'Keep my email address private'.
+
+    Refer to the figure below for details:
+
+    <figure markdown="span">
+      <img class="an-screenshots width_50pc" alt="GitHub Profile: Email Visible" src="{{config.extra.arcana.img_dir}}/an_trbs_gh_issue_visible_email.{{config.extra.arcana.img_png}}"/>
+      <figcaption>GitHub Profile: Email Visible</figcaption>
+    </figure>
+
+    <figure markdown="span">
+      <img class="an-screenshots width_50pc"  alt="GitHub Email Settings: Not Private" src="{{config.extra.arcana.img_dir}}/an_trbs_gh_issue_email_not_private.{{config.extra.arcana.img_png}}" width="50%"/>
+    <figcaption>GitHub Email Settings: Should Not be Private</figcaption>
+
 ### 3. Update Social Auth
 
 Revisit the {{config.extra.arcana.dashboard_name}}. View the app configuration screen. Click **Configure > Social Auth** in the LHS navigation bar and refer to the "GitHub" field. Paste the **Client ID** and the **Secret** assigned by GitHub, in the previous step.
