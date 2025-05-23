@@ -44,6 +44,6 @@ After verification of the JWT token returned by the {{config.extra.arcana.sdk_na
 
 For example, if the app developer needs to implement *Role Based Access Control (RBAC)* and authorize the authenticated user for some specific actions, they can first [[concept-jwt-token-validation|verify the token returned by {{config.extra.arcana.company_name}}]]. Upon verification, they can issue a new app-specific JWT that enables RBAC and authorization. 
       
-Alternately, for RBAC, developers can use Sign-In with Ethereum ([SIWE](https://www.npmjs.com/package/siwe)) by signing a standard message format parameterized by scope, session details, and security mechanisms (e.g., a nonce).
+Alternately, for RBAC, developers can use Sign-In with Ethereum ([SIWE](https://www.npmjs.com/package/siwe)) by signing a standard message format parameterized by scope, session details, and security mechanisms (for example, a nonce).
       
 SIWE allows users to log in to applications using their Ethereum wallet and ENS (Ethereum Name Service) profile. 
