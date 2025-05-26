@@ -497,19 +497,25 @@ nav:
         - Solver: concepts/ca/solver.md
         - CA SDK: concepts/ca/casdk.md
         - CA Wagmi SDK: concepts/ca/ca_wagmi.md
+        - Wagmi Plug & Play: concepts/ca/unified-balance-wagmi-pnp.md
       - Release Notes: 
         - CA SDK: relnotes/latest-ca-release-note.md
         - CA Wagmi SDK: relnotes/latest-ca-wagmi-release-note.md
-        - Wagmi Plug & Play: concepts/ca/unified-balance-wagmi-pnp.md
       - Examples: ca/examples.md
       - CA SDK Demo: https://sdk.arcana.network
       - CA Wallet Demo: ca/ca-demo.md
+      - Demos:
+        - CA Wallet Demo: ca/ca-demo.md
+        - CA SDK Demo: https://sdk.arcana.network
     - Resources:
       - CA Whitepaper: https://arcananetwork.notion.site/Chain-Abstraction-Technical-Paper-121f11ed0804808da2e5cdd1432b2b61
       - Audit: 
         - audit/ca/index.md
         - Arcana Vault: https://github.com/arcana-network/audit-reports/blob/9b13233ce0fa4915c96c712bb49187864089f3df/Arcana%20Vault%20Final%20Report.pdf
         - CA Wallet: https://github.com/arcana-network/audit-reports/blob/main/Arcana%20Wallet%20Final%20Audit%20Report.pdf
+      - Solvers: 
+        - Setup: solvers/solver-config.md
+        - Dashboard: solvers/solver-dashboard.md
       - References:
         - Supported Chains: web3-stack/ca_stack.md
         - Architecture: ca/introduction/ca.md
