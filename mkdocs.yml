@@ -516,11 +516,13 @@ nav:
       - Solvers: 
         - Setup: solvers/solver-config.md
         - Dashboard: solvers/solver-dashboard.md
+      - Intent Explorer: https://explorer.arcana.network/
       - References:
         - Supported Chains: web3-stack/ca_stack.md
         - Architecture: ca/introduction/ca.md
         - Use Cases: ca/introduction/use-cases.md
-        - Why Arcana SDKs?
+        - Why Arcana SDKs?: ca/why-ca-sdk.md
+        - CA Users: ca/ca-users.md
         - Archives: 
           - relnotes/archives/ca-index.md
           - CA SDK:

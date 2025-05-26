@@ -1,7 +1,7 @@
 ---
 alias: ca-index-docs
 template: ca-style.html
-title: 'Chain Abstraction'
+title: 'Unify Balance'
 description: 'Get Unified balance to spend on any chain in Web3 apps with Arcana Network Chain Abstraction.'
 arcana:
   root_rel_path: .
@@ -22,8 +22,6 @@ No hassle. Seamless transaction experience.
 </figure>
 
 === "Web3 Developers"
-
-    
     
     Integrate Web3 app with the {{config.extra.arcana.company_name}}'s [[concept-ca|Chain Abstraction ]](CA) SDK. Enable app users to access [[concept-unified-balance|unified balance]] from all chains in one place.
 
@@ -60,13 +58,6 @@ No hassle. Seamless transaction experience.
         </a>
       </div>
     </div>
-
-    
-
-=== "Web3 Users"
-
-    <span markdown="span">{% include "./text-snippets/ca/ca_wallet.md" %}</span>
-
 
 ## Need Help?
 
