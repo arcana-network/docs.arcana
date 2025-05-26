@@ -1,710 +1,228 @@
 {% extends "base.html" %}
 
-{{ super() }}
-
-<!---
-    Note: Mkdocs returns {{ config.site_url }} with a terminating '/' 
--->
-
-
 {% block announce %}
-  <!-- Add Chain Abstraction wallet links here to avoid confusion with the built-in in-app wallet in the Auth SDK-->
   <div>
     <p>
-        <i>Web3 Devs: </i>Try the <a href="https://sdk.arcana.network/">CA SDK Demo! </a>
-        <i>Wallet Users: </i> Try spending <a href="https://docs.arcana.network/ca/introduction/ca/#unified-balance">unified balance</a> across chains with CA enabled <a href="https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi?hl=en-GB&authuser=0&pli=1">standalone Arcana Wallet</a>. 
+      <i>Web3 Devs: </i>Try the <a href="https://sdk.arcana.network/">CA SDK Demo! </a>
+      <i>Wallet Users: </i> Try spending <a href="https://docs.arcana.network/ca/introduction/ca/#unified-balance">unified balance</a> across chains with CA enabled <a href="https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi?hl=en-GB&authuser=0&pli=1">standalone Arcana Wallet</a>.
     </p>
   </div>
 {% endblock %}
 
 {% block content %}
-
 <style>
-    :root>* {
-        --md-an-pink-color: #FF4E9F;
-        --md-an-blue-color: #2730FE;
-        --md-an-blue-color-light: rgba(39, 48, 254, 0.25);
-        --md-an-green-color: #0FB600;
-        --md-an-green-color-light: rgba(15, 182, 0, 0.25);
-        --md-an-black-color: #1D2A31;
-        --md-an-gray-light-color: #ECECEC;
-        --md-an-gray-dark-color: #F7F7F7;
-        --md-primary-fg-color: #101010;
-        --md-primary-fg-color--lighter: #929292;
-        --md-primary-fg-color--light: #c2c2c2;
-        --md-primary-fg-color--dark: #070707;
-        --md-default-bg-color--lighter: #acacac;
-        --md-primary-bg-color: #fcfcfc;
-        --md-primary-an-heading-color: var(--md-primary-fg-color);
-        --md-an-card-color: var(--md-primary-bg-color);
-        --md-an-card-color-hover: rgba(247, 246, 245, 0.9);
-        --md-an-hero-content-color: rgba(6, 6, 5, 0.9);
-        --md-an-hero-button-bg-color: #070707;
-        --md-an-secondary-button-bg-color: #2a2a2a;
-        --md-an-color-h2-bottom-rule: var(--md-an-color-light-purple);
-        --md-an-feature-item-2-border: #F6F6F6;
-        --md-feature-item-2-box-shadow: rgba(0, 0, 0, 0.2);
-        /*--md-an-card-hero-header-color: rgba(0,0,0,0.9);*/
-        --md-an-card-hero-header-color: #ffffff;
+  :root {
+    --md-an-blue-color-light: rgba(39, 48, 254, 0.25);
+    --md-an-green-color-light: rgba(15, 182, 0, 0.25);
+    --md-primary-fg-color: #101010;
+    --md-primary-bg-color: #fcfcfc;
+    --md-an-card-color-hover: #FF4E9F;
+    --md-an-hero-content-color: rgba(6, 6, 5, 0.9);
+    --md-an-hero-button-bg-color: transparent;
+    --md-an-hero-button-fg-color: var(--md-primary-fg-color);
+    --md-accent-fg-color: #526cfe;
+  }
+
+  :root[data-md-color-scheme="slate"] {
+    --md-primary-fg-color: #f6f6f6;
+    --md-an-card-color-hover: #212123;
+    --md-an-hero-button-fg-color: var(--md-primary-fg-color);
+  }
+
+  .md-main {
+    flex-grow: 0;
+    margin-top: -2%;
+  }
+
+  .md-main__inner {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
+  .md-sidebar.md-sidebar--primary {
+    display: none;
+  }
+
+  .tx-hero-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .tx-hero-card {
+    margin: 1rem;
+    box-shadow: 0 0 9px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    font-size: 1.25rem;
+  }
+
+  .tx-hero-content-auth:hover {
+    background-color: var(--md-an-blue-color-light);
+  }
+
+  .tx-hero-content-gl:hover {
+    background-color: var(--md-an-green-color-light);
+  }
+
+  .tx-hero-content,
+  .tx-hero-content-auth,
+  .tx-hero-content-gl {
+    text-align: left;
+    padding: 1.5rem;
+    color: var(--md-primary-fg-color);
+    border-radius: 0.6rem;
+  }
+
+  .tx-hero-content h1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  .tx-hero-content p {
+    font-size: 0.75rem;
+  }
+
+  .tx-hero .md-button--primary {
+    background-color: var(--md-an-hero-button-bg-color);
+    color: var(--md-an-hero-button-fg-color);
+    border: 1px solid var(--md-primary-fg-color);
+    border-radius: 0.6rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .tx-hero .md-button--primary:hover,
+  .tx-hero .md-button--primary:focus {
+    background-color: var(--md-an-card-color-hover);
+    border-color: var(--md-accent-fg-color);
+    color: var(--md-an-hero-button-fg-color);
+  }
+
+  .tx-button-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .tx-button-container .md-button {
+    flex: 1;
+    text-align: center;
+  }
+
+  .top-hr {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.1rem;
+    border-radius: 5px;
+  }
+
+  .hr {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 30em) {
+    .tx-hero-container,
+    .tx-hero-card {
+      display: block;
+      max-width: 100%;
     }
 
-    :root>[data-md-color-scheme="slate"] {
-        --md-an-gray-light-color: #333233;
-        --md-an-gray-dark-color: #232323;
-        --md-primary-fg-color: #f6f6f6;
-        --md-primary-fg-color--light: #929292;
-        --md-primary-fg-color--lighter: #c2c2c2;
-        --md-an-card-color: rgba(31, 33, 40, 0.8);
-        --md-an-card-color-hover: #212123;
-        --md-an-hero-button-bg-color: #070707;
-        --md-an-secondary-button-bg-color: #d0d0d0;
-        --md-an-color-h2-bottom-rule: var(--md-an-banner-color-purple);
-        --md-an-feature-item-2-border: #212123;
-        --md-feature-item-2-box-shadow: rgba(0, 0, 0, 0.2);
-        --md-an-card-hero-header-color: #f7f7f7;
-    }
-
-    .md-sidebar--secondary {
-        width: 2%;
-    }
-
-    .md-source-file {
-        display: none;
-    }
-
-    .md-main {
-        flex-grow: 0;
-        margin-top: -2%;
-    }
-
-    .md-main__inner {
-        display: flex;
-        height: 100%;
-        width: 100%;
-    }
-
-    .md-sidebar--secondary {
-        display: none;
-    }
-
-    .tx-container {
-        padding-top: 0.05rem;
-        background: linear-gradient(to top, var(--md-primary-bg-color), var(--md-an-hero-slate-gradient-dark) 70%);
-    }
-
-    .tx-ref {
-        color: var(--md-primary-bg-color);
-        padding: 1rem;
-    }
-
-    .tx-try-now-container {
-        display: flex;
-        padding: 3rem;
-        justify-content: space-around;
-    }
-
-    .tx-try-now-button-blue {
-        border-radius: 1.5rem;
-        height: 2.5rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        background-color: var(--md-an-blue-color);
-    }
-
-    .tx-try-now-button-green {
-        border-radius: 1.5rem;
-        height: 2.5rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        background-color: var(--md-an-green-color);
-    }
-
-    .tx-hero-container {
-        display: flex;
-        justify-content: space-around;
-        gap: 0.75rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .tx-hero {
-        margin: 1rem;
-    }
-
-    .tx-hero-card,
-    .tx-hero-card-auth,
-    .tx-hero-card-gl {
-        margin: 1rem;
-        box-shadow: 0 0 9px 0px rgba(0, 0, 0, 0.2);
-        border-radius: 0.6rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex: 1;
-        font-size: 1.25rem;
-    }
-
-    .tx-hero-content-auth:hover {
-        background-color: var(--md-an-blue-color-light);
-    }
-
-    .tx-hero-content-gl:hover {
-        background-color: var(--md-an-green-color-light);
-    }
-
-    .tx-hero-header {
-        /*background-color: var(--md-an-card-hero-header-color);*/
-        border-top-right-radius: 0.6rem;
-        border-top-left-radius: 0.6rem;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .tx-hero-content,
-    .tx-hero-content-auth,
-    .tx-hero-content-gl {
-        text-align: left;
-        padding: 1.5rem;
-        color: var(--md-primary-fg-color);
-        border-radius: 0.6rem;
+    .tx-button-container {
+      flex-direction: column;
     }
 
     .tx-hero-content h1 {
-        font-size: 1.25rem;
-        font-weight: 500;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--md-an-hero-content-color);
     }
+  }
 
-    .tx-hero-content h2 {
-        font-size: 1.00rem;
-        font-weight: 500;
+  @media screen and (min-width: 60em) {
+    .tx-hero-container,
+    .tx-hero-card {
+      flex: 1;
+      min-width: 0;
     }
+  }
 
-    .tx-hero-content p {
-        font-size: 0.75rem;
-    }
-
-    .tx-hero__content>h1 {
-        padding-bottom: 1rem;
-        color: var(--md-an-hero-content-color);
-    }
-
-    .tx-hero__content {
-        padding-bottom: 1rem;
-        margin: 0 auto;
-        color: var(--md-an-hero-content-color);
-    }
-
-    .tx-hero__image {
-        width: 17rem;
-        height: 17rem;
-        order: 1;
-        padding-right: 2.5rem;
-    }
-
-    .tx-hero .md-button {
-        margin-top: .5rem;
-        color: var(--md-primary-bg-color);
-        background-color: var(--md-primary-bg-color-lighter);
-    }
-
-    .tx-hero .md-button--primary {
-        background-color: var(--md-primary-bg-color--light);
-        color: var(--md-an-hero-button-bg-color);
-        border-color: var(--md-primary-bg-color);
-    }
-
-    .tx-hero .md-button:focus,
-    .tx-hero .md-button:hover {
-        background-color: var(--md-an-card-color-hover);
-        border-color: var(--md-accent-fg-color)
-    }
-
-    .tx-hero .md-button--an-secondary {
-        background-color: var(--md-primary-fg-color);
-        color: var(--md-an-hero-button-fg-color);
-        border-color: var(--md-primary-fg-color-light);
-    }
-
-    .tx-hero .md-button--an-secondary:focus,
-    .tx-hero .md-button--an-secondary:hover {
-        background-color: var(--md-an-secondary-button-bg-color);
-        border-color: var(--md-an-secondary-button-bg-color);
-    }
-
-    .feature-item {
-        font-family: 'Inter', sans-serif;
-        font-weight: 300;
-        box-sizing: border-box;
-        /*padding: 1rem;*/
-        word-break: break-word;
-        margin: 0.2rem;
-        border-top: 2px solid var(--md-an-color-light-purple);
-        border-radius: 5px;
-        /*width: 80%;*/
-        box-shadow: 0px 15px 20px -10px var(--md-an-color-light-purple);
-        flex: 0 1 32%;
-    }
-
-    .feature-item-2 {
-        font-family: 'Inter', sans-serif;
-        font-weight: 300;
-        box-sizing: border-box;
-        border: 1px solid var(--md-an-feature-item-2-border);
-        padding: 0.75rem 1rem;
-        border-radius: 10px;
-        margin: 0.5rem;
-        word-break: break-word;
-        box-shadow: 0 0 9px 0px var(--md-feature-item-2-box-shadow);
-        width: 30%;
-        background-color: var(--md-an-card-color);
-    }
-
-    .feature-item-3 {
-        border-radius: 10px;
-        background-color: var(--md-an-gray-light-color);
-        /*box-shadow: 0 0 9px 0px rgba(0,0,0,0.2);*/
-        text-align: center;
-        width: 25%;
-        gap: 0.5rem;
-        margin: 0.5rem;
-    }
-
-    .fa-icon-styling {
-        font-size: 1rem;
-        color: var(--md-an-pink-color);
-        padding: 0.25rem;
-        margin-right: 0.75rem;
-        margin-left: 1rem;
-        border-radius: 0.6rem;
-        background-color: var(--md-an-gray-dark-color);
-    }
-
-    .logo-styling {
-        padding: 0.25rem;
-        border-radius: 0.6rem;
-        background-color: #eaeaea;
-        margin-right: 0.75rem;
-        margin-left: 1rem;
-        background-color: var(--md-an-gray-dark-color);
-    }
-
-    .md-typeset h3 {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .feature-item-3 h3 {
-        font-weight: 400;
-        font-size: 0.85rem;
-    }
-
-    .feature-item h2,
-    .feature-item-2 h3 {
-        display: flex;
-        align-items: center;
-        gap: 0.2rem;
-        font-weight: 500;
-        font-size: 0.85rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        line-height: normal;
-        font-family: inherit;
-    }
-
-    .feature-item p,
-    .feature-item-2 p,
-    .feature-item ul,
-    .feature-item-2 ul {
-        font-size: 0.6rem;
-        line-height: 1.8em;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        margin: 0 0 10px;
-        display: block;
-        list-style-type: disc;
-    }
-
-    .md-typeset h2 {
-        border-bottom: 1px solid var(--md-an-color-h2-bottom-rule);
+  @media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+      display: block;
     }
 
     .top-hr {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0.1rem;
-        border-radius: 5px;
+      max-width: 61rem;
+      margin: 0 auto;
     }
+  }
 
-    .an-card-container {
-        display: flex;
-        justify-content: space-between;
-        justify-items: start;
-    }
-
-    .card-cell-left {
-        padding: 1rem;
-        /*border-right: 0.5px solid var(--md-an-color-h2-bottom-rule);
-        line-height: 80%;*/
-        word-break: keep-all;
-    }
-
-    .card-cell-right {
-        padding: 1rem;
-        color: var(--md-default-fg-color);
-    }
-
-    .md-an-marquee {
-        padding: 0.1rem;
-        margin-bottom: 0.1rem;
-    }
-
-    @media screen and (max-width:30em) {
-        .tx-hero h1 {
-            font-size: 1.4rem;
-            color: var(--md-an-hero-content-color);
-            font-style: bold;
-        }
-
-        .ribbon {
-            position: relative;
-            width: 30%;
-            left: 5%;
-            top: 5%;
-        }
-
-        .top-hr {
-            display: block;
-        }
-
-        .feature-item {
-            display: block;
-            cursor: pointer;
-        }
-
-        .an-card-container {
-            display: block;
-            cursor: pointer;
-        }
-
-        .card-cell-left,
-        .card-cell-right {
-            max-width: 100%;
-            display: block;
-        }
-
-        .feature-item-2,
-        .feature-item-3 {
-            flex: 1;
-            min-width: 0;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        .feature-item-2:hover,
-        .feature-item-3:hover {
-            background-color: var(--md-an-card-color-hover);
-        }
-
-        .tx-hero-container,
-        .tx-hero-card,
-        .tx-hero-card-auth,
-        .tx-hero-card-gl,
-        .tx-try-now-container {
-            display: block;
-            max-width: 100%;
-        }
-
-        .tx-try-now-button-blue {
-            margin-bottom: 1rem;
-        }
-    }
-
-    @media screen and (min-width:60em) {
-        .md-sidebar--secondary {
-            display: none;
-        }
-
-        .tx-hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .tx-hero__content {
-            max-width: 22rem;
-            margin-top: 3.5rem;
-            margin-bottom: 3.5rem;
-            margin-left: 1.0rem;
-            margin-right: 4.0rem;
-            align-items: center;
-            color: var(--md-an-hero-content-color);
-        }
-
-        .feature-item {
-            display: block;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .an-card-container {
-            flex: 0 1 calc(25% - 1em);
-            cursor: pointer;
-        }
-
-        .feature-item-2,
-        .feature-item-3 {
-            flex: 1;
-            min-width: 0;
-            cursor: pointer;
-        }
-
-        .feature-item-2:hover,
-        .feature-item-3:hover {
-            background-color: var(--md-an-card-color-hover);
-        }
-
-        .tx-hero-container,
-        .tx-hero-card,
-        .tx-hero-card-auth,
-        .tx-hero-card-gl,
-        .tx-try-now-container {
-            flex: 1;
-            min-width: 0;
-            cursor: pointer;
-        }
-
-        .tx-try-now-button-blue {
-            margin-bottom: 1rem;
-        }
-    }
-
-    @media screen and (min-width:76.25em) {
-        .md-sidebar--primary {
-            display: block
-        }
-
-        .md-sidebar--secondary {
-            display: none;
-        }
-
-        .top-hr {
-            width: 100%;
-            display: flex;
-            max-width: 61rem;
-            margin-right: auto;
-            margin-left: auto;
-            padding: 0.1rem;
-            border-radius: 5px;
-        }
-
-        .bottom-hr {
-            margin-top: 10px;
-            width: 100%;
-            display: flex;
-            max-width: 61rem;
-            margin-right: auto;
-            margin-left: auto;
-            padding: 0 .2rem;
-        }
-
-        .feature-item {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            cursor: pointer;
-        }
-
-        .an-card-container {
-            flex: 0 1 calc(25% - 1em);
-            cursor: pointer;
-        }
-
-        .feature-item:hover {
-            background-color: var(--md-an-card-color-hover);
-            border-radius: 3px;
-            color: var(--md-default-fg-color);
-        }
-
-        .feature-item-2,
-        .feature-item-3 {
-            flex: 1;
-            min-width: 0;
-            cursor: pointer;
-        }
-
-        .feature-item-2:hover,
-        .feature-item-3:hover {
-            background-color: var(--md-an-card-color-hover);
-        }
-
-        .an-card-container {
-            flex: 1;
-            min-width: 0;
-            cursor: pointer;
-        }
-
-        .tx-hero-container,
-        .tx-hero-card,
-        .tx-hero-card-auth,
-        .tx-hero-card-gl,
-        .tx-try-now-container {
-            flex: 1;
-            min-width: 0;
-            cursor: pointer;
-        }
-
-        .tx-try-now-button-blue {
-            margin-bottom: 1rem;
-        }
-    }
-
-    .hr {
-        width: 100%;
-    }
-
-    .md-footer-meta__inner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 1.0rem;
-    }
-
-    .tx-container-button {
-        background: var(--md-primary-bg-color);
-    }
-
-    .tx-hero-button {
-        margin: 32px 2.8rem;
-        color: var(--md-primary-bg-color);
-        justify-content: center;
-    }
-
-    .a-link-color {
-        color: var(--md-primary-fg-color);
-    }
-
-    .a-link-color-black {
-        color: var(--md-an-black-color);
-    }
-
-    .a-link-container {
-        display: flex;
-        justify-content: left;
-    }
-
-    .a-link-items {
-        display: grid;
-        align-items: center;
-    }
-
-    .help-bg-color {
-        background-color: var(--md-primary-fg-color--lighter);
-        color: var(--md-primary-fg-color);
-    }
-
-    .help-bg-color:hover {
-        background-color: var(--md-primary-fg-color--light);
-        color: var(--md-primary-fg-color--lighter);
-    }
-
-    .h3-color {
-        /*margin-top: 1rem;*/
-        color: var(--md-primary-fg-color);
-    }
-
-    .h3-center {
-        margin: auto;
-        /*width: 30%;*/
-        padding: 0.5rem;
-        text-align: center;
-    }
-
-    .an-hero-footer {
-        font-size: 0.5rem;
-        color: var(--md-primary-fg-color);
-    }
-
-    .ribbon-container {
-        position: relative;
-        /*background-color: #f0f0f0;*/
-        /* Adjust background color as desired */
-    }
-
-    .ribbon {
-        opacity: 0.5;
-        position: relative;
-        font-size: small;
-        left: 5%;
-        top: 1%;
-        /* Adjust ribbon overhang */
-        width: 85%;
-        /* Adjust ribbon width */
-        background-color: #960018;
-        /* Adjust ribbon color */
-        transform: rotate(-45deg);
-        color: #fff;
-        /* Adjust text color */
-        padding: 0.75rem;
-        /* Adjust text padding */
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
-        /* Optional shadow */
-        /* Postal stamp edge styling */
-        text-align: center;
-        clip-path: polygon(0 0,
-                calc(100% - 2px) 0,
-                calc(100% - 4px) 10%,
-                calc(100% - 6px) 20%,
-                calc(100% - 8px) 30%,
-                calc(100% - 10px) 50%,
-                calc(100% - 8px) 70%,
-                calc(100% - 6px) 80%,
-                calc(100% - 4px) 90%,
-                calc(100% - 2px) 100%,
-                4px 100%,
-                0% 85%);
-    }
+  .an-docs-landing-h1 {
+    text-align: left;
+  }
 </style>
 
-<!---
-<section class="md-grid md-typeset">
+<div class="top-hr">
+  <div class="hr">
+    <h1 class="an-docs-landing-h1">Arcana Documentation</h1>
+  </div>
+  <div>
+    <p><b>Build seamless Web3 user experiences with Arcana's SDKs.</b> 
+  </div>
+  <div>
+    <p>Developers can build Web3 apps that support chain abstraction and social login. Chain abstraction allows users to spend on any chain through unified balance. Social login lets users onboard Web3 apps and access in-app wallet to sign blockchain transactions. 
+    </p>
+  </div>
+</div>
 
-</section>
--->
-
-{% include "partials/content.html" %}
+<div class="tx-hero-container">
+  <div class="tx-hero-card">
+    <div class="tx-hero-content">
+      <h1 class="an-docs-landing-h1">Chain Abstraction (CA)</h1>
+      <p>Beat liquidity fragmentation across chains with unified balance. Users can spend on any chain without bothering about bridging assets to transact on a new chain.</p>
+      <p>Integrate Web3 app with the Arcana Chain Abstraction SDK to enable unified balance.</p>
+      <div class="tx-button-container">
+        <a href="https://docs.arcana.network/quick-start/ca-quick-start/" class="md-button">Quick Start</a>
+      </div>
+    </div>
+  </div>
+  <div class="tx-hero-card">
+    <div class="tx-hero-content">
+      <h1 class="an-docs-landing-h1">Social Login</h1>
+      <p>No need to create or download a wallet to use Web3 apps. Onboard with familiar Web2 authentication. Get instant access to the in-app, self-custodial Arcana wallet and sign blockchain transactions.</p>
+      <p>Integrate Web3 app with the Arcana Auth SDK to enable social login.</p>
+      <div class="tx-button-container">
+        <a href="https://docs.arcana.network/quick-start/wagmi-quick-start/" class="md-button">Quick Start</a>
+      </div> 
+    </div>
+  </div>
+</div>
+<div class="tx-hero-card">
+  <div class="tx-hero-content">
+      <h1 class="an-docs-landing-h1">Give it a go!</h1>
+      <p><b>Experience Chain Abstraction: </b><a href="https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi?hl=en-GB&authuser=0&pli=1"> Download</a> the standalone, CA enabled, Arcana wallet and try it in the context of any <a href="https://docs.arcana.network/web3-stack/ca_stack/#apps">supported</a> app.</p>
+      <p><b>Experience Social Login: </b> Use Web2 authentication to onboard the <a href="https://demo.arcana.network/">demo Web3 app</a> integrated with Arcana's Auth SDK. Get instant access to your self-custodial, in-app Arcana wallet and  sign blockchain transactions.</p>
+    </div>
+  </div>
+</hr>
+  <div class="tx-button-container">
+    <p><a href="https://arcana.network">About Arcana Network</a> | <a href="https://github.com/orgs/arcana-network/discussions/categories/announcements">Announcements</a> | <a href="https://status.arcana.network/">Uptime</a> | <a href="https://docs.arcana.network/support/">Support</a> |</p>
+  </div> 
 
 {% endblock %}
 
 {% block scripts %}
-<!-- Add scripts that need to run before here -->
-{{ super() }}
-<!-- Add scripts that need to run afterwards here -->
-
-<!-- Marker.io feedback tool for Arcana Documentation -->
-<!--- September 7, 2023 Marker.io subscription has expired, disabling for now.-->
-<!---
+  {{ super() }}
   <script>
-    window.markerConfig = {
-      project: '62f387c6d3d3e6c6c720fc40', 
-      source: 'snippet'
-    };
-  </script>
-  
-  <script>
-  !function(e,r,a){if(!e.__Marker){e.__Marker={};var t=[],n={__cs:t};["show","hide","isVisible","capture","cancelCapture","unload","reload","isExtensionInstalled","setReporter","setCustomData","on","off"].forEach(function(e){n[e]=function(){var r=Array.prototype.slice.call(arguments);r.unshift(e),t.push(r)}}),e.Marker=n;var s=r.createElement("script");s.async=1,s.src="https://edge.marker.io/latest/shim.js";var i=r.getElementsByTagName("script")[0];i.parentNode.insertBefore(s,i)}}(window,document);
-  </script>
-  --->
-
-<!-- Chatbase bot script -->
-<script>
     window.chatbaseConfig = {
-        chatbotId: "Fbi0FsddfX1zz_DWM5jwJ",
+      chatbotId: "Fbi0FsddfX1zz_DWM5jwJ",
     }
-</script>
-<script src="https://www.chatbase.co/embed.min.js" id="Fbi0FsddfX1zz_DWM5jwJ" defer>
-</script>
-
+  </script>
+  <script src="https://www.chatbase.co/embed.min.js" id="Fbi0FsddfX1zz_DWM5jwJ" defer></script>
 {% endblock %}

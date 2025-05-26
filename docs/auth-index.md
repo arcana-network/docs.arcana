@@ -1,7 +1,7 @@
 ---
 alias: index-docs
-template: newintro.html
-title: 'Welcome'
+template: ca-style.html
+title: 'Introduction'
 description: 'Fast, secure social login to enable Web3 app blockchain transactions.'
 arcana:
   root_rel_path: .

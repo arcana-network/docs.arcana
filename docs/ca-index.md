@@ -1,7 +1,7 @@
 ---
 alias: ca-index-docs
 template: ca-style.html
-title: 'Welcome'
+title: 'Introduction'
 description: 'Get Unified balance to spend on any chain in Web3 apps with Arcana Network Chain Abstraction.'
 arcana:
   root_rel_path: .

@@ -12,7 +12,7 @@ strict: true  #For reorg changing it to false
 # For canonical/URL ending with a '/' make sure this is true and offline plugin is disabled
 use_directory_urls: true
 
-copyright: Copyright &copy; 2024 Arcana Network
+copyright: Copyright &copy; 2025 Arcana Network
 #repo_url: https://github.com/arcana-network/
 #repo_name: arcana-network
 #edit_uri: https://github.com/arcana-network/auth-mkdocs/blob/main/docs
@@ -487,30 +487,29 @@ nav:
       - APIs: 
         - Web: ca/ca-usage-guide.md
         - Wagmi: ca/ca-wagmi-usage-guide.md
+      - FAQ: faq/ca/faq.md
+      - Concepts: 
+        - Chain Abstraction: concepts/ca/chain-abstraction.md
+        - Unified Balance: concepts/ca/unified-balance.md
+        - Allowances: concepts/ca/allowances.md
+        - Intent: concepts/ca/intent.md
+        - Intent Explorer: concepts/ca/intent-explorer.md
+        - Solver: concepts/ca/solver.md
+        - CA SDK: concepts/ca/casdk.md
+        - CA Wagmi SDK: concepts/ca/ca_wagmi.md
+      - Release Notes: 
+        - CA SDK: relnotes/latest-ca-release-note.md
+        - CA Wagmi SDK: relnotes/latest-ca-wagmi-release-note.md
+        - Wagmi Plug & Play: concepts/ca/unified-balance-wagmi-pnp.md
       - Examples: ca/examples.md
-    - FAQ: faq/ca/faq.md
-    - Concepts: 
-      - Chain Abstraction: concepts/ca/chain-abstraction.md
-      - Unified Balance: concepts/ca/unified-balance.md
-      - Allowances: concepts/ca/allowances.md
-      - Intent: concepts/ca/intent.md
-      - Intent Explorer: concepts/ca/intent-explorer.md
-      - Solver: concepts/ca/solver.md
-      - CA SDK: concepts/ca/casdk.md
-      - CA Wagmi SDK: concepts/ca/ca_wagmi.md
-      - Wagmi Plug & Play: concepts/ca/unified-balance-wagmi-pnp.md
+      - CA SDK Demo: https://sdk.arcana.network
+      - CA Wallet Demo: ca/ca-demo.md
     - Resources:
       - CA Whitepaper: https://arcananetwork.notion.site/Chain-Abstraction-Technical-Paper-121f11ed0804808da2e5cdd1432b2b61
       - Audit: 
         - audit/ca/index.md
         - Arcana Vault: https://github.com/arcana-network/audit-reports/blob/9b13233ce0fa4915c96c712bb49187864089f3df/Arcana%20Vault%20Final%20Report.pdf
         - CA Wallet: https://github.com/arcana-network/audit-reports/blob/main/Arcana%20Wallet%20Final%20Audit%20Report.pdf
-      - Release Notes: 
-        - CA SDK: relnotes/latest-ca-release-note.md
-        - CA Wagmi SDK: relnotes/latest-ca-wagmi-release-note.md
-      - Demos:
-        - CA Wallet Demo: ca/ca-demo.md
-        - CA SDK Demo: https://sdk.arcana.network
       - References:
         - Supported Chains: web3-stack/ca_stack.md
         - Architecture: ca/introduction/ca.md
@@ -523,10 +522,10 @@ nav:
             - v0.0.2: relnotes/rn-ca-v0.0.2.md
           - CA Wagmi SDK:
             - v0.0.5: relnotes/rn-ca-wagmi-sdk-v0.0.5.md
-        - Docs @Partners:
-          - CA SDK: partner-docs/ca.md
-          - Linea:
-            - Cross-Chain: https://docs.linea.build/get-started/tooling/cross-chain/arcana
+      - CA @Partner Docs:
+        - CA SDK: partner-docs/ca.md
+        - Linea:
+          - Cross-Chain: https://docs.linea.build/get-started/tooling/cross-chain/arcana
   - Auth:          
     - auth-index.md
     - Developers:
@@ -697,80 +696,80 @@ nav:
       - Examples: 
         - Auth-Examples: https://github.com/arcana-network/auth-examples
         - Try Auth: https://codesandbox.io/p/github/shaloo/auth-sdk-example-vite-vue/main?import=true
+      - Auth SDK Demo: https://demo.arcana.network 
+      - Dashboard User Guide: setup/config-dApp-with-db.md         
+      - In-app Wallet: 
+        - User Guide: 
+          - user-guides/wallet-ui/index.md
+          - Web3 Wallet Ops: user-guides/wallet-ui/use-wallet-ui.md
+          - Export Key: user-guides/wallet-ui/use-wallet-to-export-keys.md
+          - Manage NFTs: user-guides/wallet-ui/use-wallet-to-manage-nfts.md
+          - Manage Tokens: user-guides/wallet-ui/use-wallet-to-manage-tokens.md
+          - MFA Setup: user-guides/mfa/mfa-ug.md   
+      - FAQ:
+        - General: faq/faq-gen.md
+        - Dashboard: faq/faq-db.md
+        - Auth: faq/faq-auth.md
+        - Solana: faq/faq-solana.md
+        - MultiversX: faq/faq-mvx.md
+        - Near: faq/faq-near.md
+      - Troubleshooting: troubleshooting.md
+      - Concepts: 
+        - ADKG: concepts/adkg.md
+        - Aggregate Login: concepts/aggregatelogin.md
+        - Arcana Wallet: 
+          - concepts/anwallet/index.md
+          - UI Modes: concepts/anwallet/walletuimodes.md
+          - Transaction Types: concepts/anwallet/walletstgsigntx.md
+          - Network Switching: concepts/anwallet/walletntwkswitchmode.md
+          - Wallet Visibility: concepts/anwallet/walletvisibility.md
+          - Custom Wallet UI: concepts/custom-wallet-ui.md
+        - Authentication: 
+          - concepts/authtype/index.md
+          - Auth Providers: concepts/authtype/socialauth.md
+          - Custom Auth: concepts/authtype/custom-auth.md
+        - Configuration Profiles: concepts/config-profiles.md
+        - Dashboard: concepts/dashboard.md
+        - Gateway: concepts/gateway-node.md
+        - Key Space Type: concepts/keyspace-types.md
+        - Login Token:
+          - Arcana JWT Token: concepts/an-jwt-token.md
+          - DID Token: concepts/an-did-token.md
+          - Verify JWT Token: concepts/jwt-token-validation.md
+        - Login UI:
+          - Custom Login UI: concepts/custom-login-ui.md
+          - Plug-and-Play Login UI: concepts/plug-and-play-auth.md
+        - Login Session Type: concepts/session_type.md
+        - MFA: concepts/mfa.md
+        - Non-EVM Chains: concepts/non-evm-chains.md
+        - Passkeys Login: concepts/authtype/auth-passkeys.md
+        - Private Key: concepts/private-key.md
+        - SDKs:
+          - Auth SDK: concepts/authsdk.md
+          - Auth-Core SDK: concepts/auth-core-sdk.md
+        - Social Login: concepts/social-login.md
+        - Smart Contracts:
+          - Overview: concepts/ansmartc/an-smart-contracts.md
+          - Types of Contracts: concepts/ansmartc/an-smartc-types.md
+          - Deployed Contracts: concepts/ansmartc/an-smartc-deployed.md
+        - Usage: 
+          - Billing: concepts/billing.md
+          - Metrics: concepts/usage-metrics.md
+        - Validator Nodes: concepts/validator-nodes.md
       - Auth Checklists: checklists/index.md
       - Error Handling:
         - Auth: auth/auth-error-msg.md
         - Dashboard: setup/db-err-messages.md
         - Wallet UI: auth/walletui-error-msg.md
-      - Dashboard User Guide: setup/config-dApp-with-db.md         
-    - In-app Wallet: 
-      - User Guide: 
-        - user-guides/wallet-ui/index.md
-        - Web3 Wallet Ops: user-guides/wallet-ui/use-wallet-ui.md
-        - Export Key: user-guides/wallet-ui/use-wallet-to-export-keys.md
-        - Manage NFTs: user-guides/wallet-ui/use-wallet-to-manage-nfts.md
-        - Manage Tokens: user-guides/wallet-ui/use-wallet-to-manage-tokens.md
-        - MFA Setup: user-guides/mfa/mfa-ug.md   
-    - FAQ:
-      - General: faq/faq-gen.md
-      - Dashboard: faq/faq-db.md
-      - Auth: faq/faq-auth.md
-      - Solana: faq/faq-solana.md
-      - MultiversX: faq/faq-mvx.md
-      - Near: faq/faq-near.md
-    - Troubleshooting: troubleshooting.md
-    - Concepts: 
-      - ADKG: concepts/adkg.md
-      - Aggregate Login: concepts/aggregatelogin.md
-      - Arcana Wallet: 
-        - concepts/anwallet/index.md
-        - UI Modes: concepts/anwallet/walletuimodes.md
-        - Transaction Types: concepts/anwallet/walletstgsigntx.md
-        - Network Switching: concepts/anwallet/walletntwkswitchmode.md
-        - Wallet Visibility: concepts/anwallet/walletvisibility.md
-        - Custom Wallet UI: concepts/custom-wallet-ui.md
-      - Authentication: 
-        - concepts/authtype/index.md
-        - Auth Providers: concepts/authtype/socialauth.md
-        - Custom Auth: concepts/authtype/custom-auth.md
-      - Configuration Profiles: concepts/config-profiles.md
-      - Dashboard: concepts/dashboard.md
-      - Gateway: concepts/gateway-node.md
-      - Key Space Type: concepts/keyspace-types.md
-      - Login Token:
-        - Arcana JWT Token: concepts/an-jwt-token.md
-        - DID Token: concepts/an-did-token.md
-        - Verify JWT Token: concepts/jwt-token-validation.md
-      - Login UI:
-        - Custom Login UI: concepts/custom-login-ui.md
-        - Plug-and-Play Login UI: concepts/plug-and-play-auth.md
-      - Login Session Type: concepts/session_type.md
-      - MFA: concepts/mfa.md
-      - Non-EVM Chains: concepts/non-evm-chains.md
-      - Passkeys Login: concepts/authtype/auth-passkeys.md
-      - Private Key: concepts/private-key.md
-      - SDKs:
-        - Auth SDK: concepts/authsdk.md
-        - Auth-Core SDK: concepts/auth-core-sdk.md
-      - Social Login: concepts/social-login.md
-      - Smart Contracts:
-        - Overview: concepts/ansmartc/an-smart-contracts.md
-        - Types of Contracts: concepts/ansmartc/an-smartc-types.md
-        - Deployed Contracts: concepts/ansmartc/an-smartc-deployed.md
-      - Usage: 
-        - Billing: concepts/billing.md
-        - Metrics: concepts/usage-metrics.md
-      - Validator Nodes: concepts/validator-nodes.md
+      - Release Notes: relnotes/latest-auth-release-note.md
+      - Migration Guides: migration/latest-auth-migration-guide.md 
+      - Changelog: changelog/index.md  
     - Resources:
       - Auth Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
       - Audit: 
         - audit/auth/index.md
         - Auth Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
         - ADKG: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20230228T054948Z.pdf
-      - Release Notes: relnotes/latest-auth-release-note.md
-      - Migration Guides: migration/latest-auth-migration-guide.md 
-      - Changelog: changelog/index.md  
-      - Demo: https://demo.arcana.network 
       - Validators:
         - Onboarding Guide: validators/onboard-validators.md
         - Validator FAQ: faq/faq-validator.md
@@ -787,7 +786,6 @@ nav:
           - Overview: security/overview.md
           - ADKG: security/adkg.md
           - MFA: security/mfa.md
-        - Announcements: https://github.com/orgs/arcana-network/discussions/categories/announcements
         - Archives:
           - Release Note Archives:
             - relnotes/archives/index.md
@@ -821,8 +819,7 @@ nav:
             - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
             - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
             - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
-      - Service Status: https://status.arcana.network/
-      - Docs @Partners:
+      - Auth @Partner Docs:
         - Auth SDK: partner-docs/auth.md
         - Caduceus:
           - Social Login: https://docs.caduceus.foundation/auth        
@@ -832,4 +829,5 @@ nav:
           - Auth: https://multiversx.com/ecosystem/project/arcana          
         - Peaq:
           - Account Abstraction: https://docs.peaq.network/docs/tooling-&-integrations/account-abstraction/arcana-social-login/
+  - Service Status: https://status.arcana.network/
   - Need Help?: support/index.md
