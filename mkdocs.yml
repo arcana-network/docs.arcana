@@ -1,4 +1,4 @@
-site_name: '📖 Docs'
+site_name: '📖 SDK Docs'
 
 # For dev
 #site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
@@ -520,6 +520,7 @@ nav:
         - Supported Chains: web3-stack/ca_stack.md
         - Architecture: ca/introduction/ca.md
         - Use Cases: ca/introduction/use-cases.md
+        - Why Arcana SDKs?
         - Archives: 
           - relnotes/archives/ca-index.md
           - CA SDK:
