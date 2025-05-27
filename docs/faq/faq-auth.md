@@ -33,11 +33,11 @@ toc_depth: 2
 
       If you need to completely disable the {{config.extra.arcana.wallet_name}} feature in the app, you can request a private build of the {{config.extra.arcana.wallet_name}} by [contacting {{config.extra.arcana.company_name}}]({{page.meta.arcana.root_rel_path}}/support/index.md) with the use case details.
 
-??? an-faq "Will the Arcana Network's distributed key generation algorithm be affected if a node with a key share becomes temporarily inaccessible?"
+??? an-faq "Will the {{config.extra.arcana.company_name}} Network's distributed key generation algorithm be affected if a node with a key share becomes temporarily inaccessible?"
 
       No.
       
-      Arcana's [ADKG]({{page.meta.arcana.root_rel_path}}/concepts/adkg.md) algorithm can still generate the key using the key shares from the other nodes that are accessible. The algorithm is designed to tolerate a certain number of nodes being inaccessible, depending on the total number of participating nodes. For more details, see [Arcana's Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08).
+      {{config.extra.arcana.company_name}}'s [ADKG]({{page.meta.arcana.root_rel_path}}/concepts/adkg.md) algorithm can still generate the key using the key shares from the other nodes that are accessible. The algorithm is designed to tolerate a certain number of nodes being inaccessible, depending on the total number of participating nodes. For more details, see [{{config.extra.arcana.company_name}}'s Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08).
 
 ??? an-faq "Does the authenticated user see the same wallet address if they use different authentication providers to log into a Web3 app integrated with the {{config.extra.arcana.wallet_name}}?"
 
@@ -54,7 +54,7 @@ toc_depth: 2
       * App-Specific Keys
       * Global Keys
 
-      If a developer selects the **Global Keys** option, then the user gets assigned the same key across all applications that integrate with the {{config.extra.arcana.sdk_name}} and chooses the same **Global Keys** option. The same key means the wallet address of the user is the same across different Web3 apps that integrate with the {{config.extra.arcana.sdk_name}}.  This is true across apps that use EVM-compatible chains. If two apps use global keys but one of them is on an EVM-compatible chain and the other is not, then the keys will be different across such apps. The Arcana's ADKG subsystem will assign the user different sets of keys for such apps resulting in different wallet addresses across such apps.
+      If a developer selects the **Global Keys** option, then the user gets assigned the same key across all applications that integrate with the {{config.extra.arcana.sdk_name}} and chooses the same **Global Keys** option. The same key means the wallet address of the user is the same across different Web3 apps that integrate with the {{config.extra.arcana.sdk_name}}.  This is true across apps that use EVM-compatible chains. If two apps use global keys but one of them is on an EVM-compatible chain and the other is not, then the keys will be different across such apps. The {{config.extra.arcana.company_name}}'s ADKG subsystem will assign the user different sets of keys for such apps resulting in different wallet addresses across such apps.
 
       For more details, see [[concept-keyspace-type|app-specific vs. global keys]]
 
@@ -62,7 +62,7 @@ toc_depth: 2
 
       **No**.
 
-      The global keys feature enables an authenticated user to have the same wallet address across different Web3 apps in the Arcana ecosystem.  
+      The global keys feature enables an authenticated user to have the same wallet address across different Web3 apps in the {{config.extra.arcana.company_name}} ecosystem.  
       
       However, an authenticated user will see **different wallet addresses across two chains configured in a single Web3 app if one of them is EVM-compatible whereas the other is not. Also, in the case of two Web3 apps, one of which uses an EVM-compatible chain and the other that uses chains that are not EVM-compatible, the authenticated user's wallet address will be different for each app.
 
@@ -82,11 +82,11 @@ toc_depth: 2
 
 ??? an-faq "Does {{config.extra.arcana.sdk_name}} return a JWT token to verify users post social login?"
 
-      Yes. See [[concept-index-auth-type|Arcana JWT Token]] for details.
+      Yes. See [[concept-index-auth-type|{{config.extra.arcana.company_name}} JWT Token]] for details.
 
 ??? an-faq "How does the app access an authenticated user's information such as name, email, login token, the wallet address?"
 
-      Apps can use the [`getUser()`](https://authsdk-ref-guide.netlify.app/classes/authprovider#getUser) method to obtain the user's name, email, login token ([[concept-arcana-jwt-token|Arcana JWT Token]], [[concept-did-token|DID Token]]), wallet address, etc. See {% include "./text-snippets/authsdkref_url.md" %} for details.
+      Apps can use the [`getUser()`](https://authsdk-ref-guide.netlify.app/classes/authprovider#getUser) method to obtain the user's name, email, login token ([[concept-arcana-jwt-token|{{config.extra.arcana.company_name}} JWT Token]], [[concept-did-token|DID Token]]), wallet address, etc. See {% include "./text-snippets/authsdkref_url.md" %} for details.
 
 ??? an-faq "For Twitter, the `getUser()` function of the `AuthProvider` does not always return the user's email?"
 
@@ -116,6 +116,18 @@ toc_depth: 2
       
       Refer to [[concept-auth-passkeys| Passkey Support]] for details.
 
+??? an-faq "Does the {{config.extra.arcana.sdk_name}} support role based access control (RBAC)?"
+
+      Yes.
+
+      After the user authenticates through the chosen [[concept-social-login|social login]] provider, the {{config.extra.arcana.sdk_name}} receives the JWT token from the provider. It verifies the user with this token, and then creates and returns an {{config.extra.arcana.company_name}} JWT token to the app.
+
+      If the app developer needs to implement *Role Based Access Control (RBAC)* and authorize the authenticated user for some specific actions, they can first [[concept-jwt-token-validation|verify the JWT token returned by {{config.extra.arcana.company_name}}]]. Upon verification they can issue a new app-specific JWT that enables RBAC and authorization. 
+      
+      Alternately, developers can use Sign-In with Ethereum ([SIWE](https://www.npmjs.com/package/siwe)) by signing a standard message format parameterized by scope, session details, and security mechanisms (e.g., a nonce).
+      
+      SIWE allows users to log in to applications using their Ethereum wallet and ENS (Ethereum Name Service) profile.
+      
 ## {{config.extra.arcana.wallet_name}}
 
 ---
@@ -124,7 +136,7 @@ toc_depth: 2
 
       Apps can integrate with the {{config.extra.arcana.sdk_name}} to enable an embedded, non-custodial Web3 {{config.extra.arcana.wallet_name}} for every authenticated app user.
 
-      To integrate an app, developers must register and configure the app with the Arcana network, and then install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and create a new `AuthProvider`. While instantiating the `AuthProvider` developers can manage the user experience for signing blockchain transactions through the input parameter `alwaysVisible`. This parameter controls whether the {{config.extra.arcana.wallet_name}} UI is automatically displayed in the application's context right after a user authenticates or it shows up only when the app triggers a blockchain transaction that requires the user's approval.
+      To integrate an app, developers must register and configure the app with {{config.extra.arcana.company_name}}, and then install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and create a new `AuthProvider`. While instantiating the `AuthProvider` developers can manage the user experience for signing blockchain transactions through the input parameter `alwaysVisible`. This parameter controls whether the {{config.extra.arcana.wallet_name}} UI is automatically displayed in the application's context right after a user authenticates or it shows up only when the app triggers a blockchain transaction that requires the user's approval.
 
       For details, see [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility modes]].
 
@@ -136,7 +148,7 @@ toc_depth: 2
 
       {{config.extra.arcana.wallet_name}} is a non-custodial wallet. Here is how it differs from the self-custodial wallets:
 
-      | Self-custodial wallets | Arcana's non-custodial wallet |
+      | Self-custodial wallets | {{config.extra.arcana.company_name}}'s non-custodial wallet |
       | :--- | :--- |
       | Users need to be responsible for and remember their passphrases.| Users are not required to remember any passphrase.|
       | Users need to manage keys themselves in case of self-custody wallets. | {{config.extra.arcana.wallet_name}} offers a sweet spot, users don't have to manage keys as in the self-custody wallet and yet their keys can be generated in a distributed manner via the {{config.extra.arcana.wallet_name}}, a non-custodial wallet.|
@@ -146,7 +158,7 @@ toc_depth: 2
 
 ---
 
-??? an-faq "If {{config.extra.arcana.company_name}} is storing nothing related to the user's private keys, how does Arcana provide the same wallet to a user when the user signs in for the second time?"
+??? an-faq "If {{config.extra.arcana.company_name}} is storing nothing related to the user's private keys, how does {{config.extra.arcana.company_name}} provide the same wallet to a user when the user signs in for the second time?"
 
       The {{config.extra.arcana.sdk_name}} maintains a UserID -> Public Key mapping, that is how the user is identified across successive login sessions and the correct wallet is assigned for the authenticated user. This mapping is stored in the DKG nodes.
 
