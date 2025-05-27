@@ -23,8 +23,8 @@ Here is a high-level overview of the technical architecture and components that 
 * {{config.extra.arcana.company_name}} Auth protocol (Back-end Subsystem)
 
 <figure markdown="span">
-  ![Auth Components]({{config.extra.arcana.img_dir}}/an-auth-components-light.{{config.extra.arcana.img_png}}#only-light){ .an-screenshots-noeffects .an-img-border-small-75pc }
-  ![Auth Components]({{config.extra.arcana.img_dir}}/an-auth-components-dark.{{config.extra.arcana.img_png}}#only-dark){ .an-screenshots-noeffects .an-img-border-small-75pc }
+  ![Auth Components]({{config.extra.arcana.img_dir}}/an_auth_components_light.{{config.extra.arcana.img_png}}#only-light){ .an-screenshots-noeffects .an-img-border-small-75pc }
+  ![Auth Components]({{config.extra.arcana.img_dir}}/an_auth_components_dark.{{config.extra.arcana.img_png}}#only-dark){ .an-screenshots-noeffects .an-img-border-small-75pc }
   <figcaption>Auth Components</figcaption>
 </figure>
 
@@ -48,6 +48,6 @@ A core back-end component that generates and manages key shares securely. It wor
 
 ### {{config.extra.arcana.company_name}} Auth protocol (Back-end Subsystem)
 
-This refers to a bunch of entities in the back-end that implement the core system logic and algorithms on blockchain using [{{config.extra.arcana.company_name}} smart contracts]({{page.meta.arcana.root_rel_path}}/concepts/ansmartc/index.md).
+This refers to a bunch of entities in the back-end that implement the core system logic and algorithms on blockchain using [{{config.extra.arcana.company_name}} smart contracts]({{page.meta.arcana.root_rel_path}}/concepts/ansmartc/an-smart-contracts.md).
 
 See [{{config.extra.arcana.company_name}} Technical White paper][{{config.extra.arcana.company_name}} Technical White Paper Ref] for details.

@@ -101,6 +101,7 @@ extra:
     ca_wagmi_sdk_codesandbox_url: https://codesandbox.io/p/github/arcana-network/ca-wagmi-example/main
     auth_ca_wagmi_sdk_codesandbox_url: https://codesandbox.io/p/github/shaloo/sample-arcana-auth-ca-wagmi-sdks/sample-auth-ca-wagmi-integration    
     auth_sdk_download_url: https://www.npmjs.com/package/@arcana/auth
+    auth_sdk_demo_url: https://demo.arcana.network
     sdk_name: Arcana Auth SDK
     react_sdk_name: Arcana Auth React SDK
     react_sdk_download_url: https://www.npmjs.com/package/@arcana/auth-react
@@ -790,8 +791,8 @@ nav:
           - Wallets: web3-stack/wallets.md 
         - Architecture: auth/introduction/auth-architecture.md
         - Use Cases: auth/introduction/use-cases.md
-        - Why CA SDK?: auth/why-auth-sdk.md
-        - CA Users: auth/ca-users.md
+        - Why Auth SDK?: auth/introduction/why-auth-sdk.md
+        - CA Users: auth/introduction/use-cases.md
         - Security:
           - Overview: security/overview.md
           - ADKG: security/adkg.md
