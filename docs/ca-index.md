@@ -112,6 +112,8 @@ hide:
 
 </div>
 
+Chain abstraction is a game changer for Web3 app adoption. Integrate Arcana CA SDKs integrate with a few lines of code. [[why-ca-sdk|Learn more...]]
+
 ## Need Help?
 
 {% include "./text-snippets/need_help.md" %}

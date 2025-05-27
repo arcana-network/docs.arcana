@@ -6,74 +6,74 @@ arcana:
   root_rel_path: ..
 ---
 
-# Why {{config.extra.arcana.company_name}} CA SDKs?
+# Why CA SDK?
 
 {{config.extra.arcana.company_name}}’s Chain Abstraction SDK can integrate with any Web3 app and enable unified balance for the app users. Unified balance allows users to spend the consolidated multi-chain balance of source chain [[ca-stack#tokens|tokens]] within the app context on any destination [[ca-stack#chains|chain]]. 
     
 This allows Web3 apps to onboard users from any ecosystem effortlessly. Integration with the SDK requires minimal effort.
 
-=== "Onboard Users on Any Chain"
+## Onboard Users on Any Chain
 
-    <div class="grid cards" markdown>
+<div class="grid cards" markdown>
 
-        - :fontawesome-solid-money-bill-trend-up:{ .icon-color } __Unified Balance__
+- :fontawesome-solid-money-bill-trend-up:{ .icon-color } __Unified Balance__
 
-        ---
+    ---
 
-        Display users' consolidated balance across chains. Use {{config.extra.arcana.company_name}}’s plug-and-play UI or design your own.
+    Display users' consolidated balance across chains. Use {{config.extra.arcana.company_name}}’s plug-and-play UI or design your own.
 
-        - :material-gas-station:{ .icon-color } __Flexible Gas Payments__
+- :material-gas-station:{ .icon-color } __Flexible Gas Payments__
 
-        ---
+    ---
 
-        Users can pay gas fees in USDC or USDT if they do not have native gas tokens.
+    Users can pay gas fees in USDC or USDT if they do not have native gas tokens.
 
-        - :material-vector-union:{ .icon-color }  __Larger Transactions__
+- :material-vector-union:{ .icon-color }  __Larger Transactions__
 
-        ---
+    ---
 
-        Users can seamlessly access and spend their entire multi-chain balance on the desired chain, in a single click.
-        
-        - :material-lock-open:{ .icon-color }  __No Lock-In__
+    Users can seamlessly access and spend their entire multi-chain balance on the desired chain, in a single click.
 
-        ---
+- :material-lock-open:{ .icon-color }  __No Lock-In__
 
-        All assets are in user's custody, no compulsion to rely on {{config.extra.arcana.company_name}} for accessing funds. Users can freely spend their assets on any app.
+    ---
 
-    </div>
+    All assets are in user's custody, no compulsion to rely on {{config.extra.arcana.company_name}} for accessing funds. Users can freely spend their assets on any app.
 
-=== "Quick Integration"
+</div>
 
-    <div class="grid cards" markdown>
+## Quick Integration
 
-        - :material-application-edit:{ .icon-color }  __Frontend Code Updates__
+<div class="grid cards" markdown>
 
-        ---
+- :material-application-edit:{ .icon-color }  __Frontend Code Updates__
 
-        Requires **minimal** changes to the Web3 app's front-end code.
+    ---
 
-        - :material-cancel:{ .icon-color }  __No Smart Contract Changes__
-        
-        ---
-        
-        Requires **zero** migration or updates to Web3 app's smart contracts.
+    Requires **minimal** changes to the Web3 app's front-end code.
 
-        - :material-wallet-plus:{ .icon-color }  __Bring Existing Wallets__
-        
-        ---
-        
-        Users can bring their existing EOA wallets such as MetaMask, Rabby, Rainbow, etc.
+- :material-cancel:{ .icon-color }  __No Smart Contract Changes__
 
-        
-        - :octicons-stop-24:{ .icon-color }  __Assets: Zero Lockups or Transfers__ 
-        
-        ---
-        
-        Users do not need to transfer their funds to a new wallet address or lockup in a smart contract.
+    ---
 
-    </div>
+    Requires **zero** migration or updates to Web3 app's smart contracts.
+
+- :material-wallet-plus:{ .icon-color }  __Bring Existing Wallets__
+
+    ---
+
+    Users can bring their existing EOA wallets such as MetaMask, Rabby, Rainbow, etc.
+
+
+- :octicons-stop-24:{ .icon-color }  __Assets: Zero Lockups or Transfers__ 
+
+    ---
+
+    Users do not need to transfer their funds to a new wallet address or lockup in a smart contract.
+
+</div>
       
-    <span markdown="span"><figure markdown="span"><img alt="{{config.extra.arcana.ca_sdk_name}} Demo App: Unified Balance" src="{{config.extra.arcana.img_dir}}/ca_sdk_demo_unified_balance.{{config.extra.arcana.img_gif}}" class="an_screenshots width_85pc"/><figcaption>{{config.extra.arcana.ca_sdk_name}} Demo App: Unified Balance</figcaption></figure></span>
+<span markdown="span"><figure markdown="span"><img alt="{{config.extra.arcana.ca_sdk_name}} Demo App: Unified Balance" src="{{config.extra.arcana.img_dir}}/ca_sdk_demo_unified_balance.{{config.extra.arcana.img_gif}}" class="an_screenshots width_85pc"/><figcaption>{{config.extra.arcana.ca_sdk_name}} Demo App: Unified Balance</figcaption></figure></span>
 
 ## Why Chain Abstraction?
 

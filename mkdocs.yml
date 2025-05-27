@@ -518,7 +518,7 @@ nav:
         - Supported Chains: web3-stack/ca_stack.md
         - Architecture: ca/introduction/ca.md
         - Use Cases: ca/introduction/use-cases.md
-        - Why Arcana SDKs?: ca/why-ca-sdk.md
+        - Why CA SDK?: ca/why-ca-sdk.md
         - CA Users: ca/ca-users.md
         - Archives: 
           - relnotes/archives/ca-index.md
@@ -788,6 +788,10 @@ nav:
           - Protocol: web3-stack/protocol.md
           - Validators: web3-stack/validators.md
           - Wallets: web3-stack/wallets.md 
+        - Architecture: auth/introduction/auth-architecture.md
+        - Use Cases: auth/introduction/use-cases.md
+        - Why CA SDK?: auth/why-auth-sdk.md
+        - CA Users: auth/ca-users.md
         - Security:
           - Overview: security/overview.md
           - ADKG: security/adkg.md
