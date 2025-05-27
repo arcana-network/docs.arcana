@@ -520,7 +520,7 @@ nav:
         - Architecture: ca/introduction/ca.md
         - Use Cases: ca/introduction/use-cases.md
         - Why CA SDK?: ca/why-ca-sdk.md
-        - CA Users: ca/ca-users.md
+        - CA for Users: ca/ca-users.md
         - Archives: 
           - relnotes/archives/ca-index.md
           - CA SDK:
