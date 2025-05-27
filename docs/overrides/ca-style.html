@@ -10,9 +10,8 @@
 {% block announce %}
   <!-- Add Chain Abstraction wallet links here to avoid confusion with the built-in in-app wallet in the Auth SDK-->
   <div>
-    <p>
-        <i>Web3 Devs: </i>Try the <a href="https://sdk.arcana.network/">CA SDK Demo! </a>
-        <i>Wallet Users: </i> Try spending <a href="https://docs.arcana.network/ca/introduction/ca/#unified-balance">unified balance</a> across chains with CA enabled <a href="https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi?hl=en-GB&authuser=0&pli=1">standalone Arcana Wallet</a>. 
+    <p style="text-align: center;">
+        ⛳ <b> Latest</b><i> CA SDK</i><a href="./relnotes/latest-ca-release-note/"> Release</a> v<a href="https://www.npmjs.com/package/@arcana/ca-sdk">{{config.extra.arcana.latest_ca_sdk_version}}</a>      <i>CA Wagmi SDK</i><a href="./relnotes/latest-ca-wagmi-release-note/"> Release</a> v<a href="https://www.npmjs.com/package/@arcana/ca-sdk">{{config.extra.arcana.latest_ca_wagmi_sdk_version}}</a> ⛳
     </p>
   </div>
 {% endblock %}
@@ -69,7 +68,7 @@
     }
 
     .md-source-file {
-        display: block;  /* Set display to none to not show the author and publish date time on the landing page */
+        display: block;  /* Set display to none to not show the author and */text-align: center; /* publish date time on the landing page */
     }
 
     .md-main {

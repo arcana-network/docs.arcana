@@ -160,12 +160,12 @@ extra:
       link: https://twitter.com/arcananetwork
     - icon: fontawesome/brands/telegram
       link: https://t.me/ArcanaNetwork
+    - icon: material/github
+      link: https://github.com/orgs/arcana-network/discussions
     - icon: fontawesome/brands/discord
       link: https://discord.gg/9vrxze3JRR
-    - icon: material/chat
-      link: https://github.com/orgs/arcana-network/discussions
-    - icon: material/book
-      link: https://www.webfx.com/tools/read-able/referer.php
+    #- icon: material/book
+      #link: https://www.webfx.com/tools/read-able/referer.php
     - icon: material/robot
       link: /llms.txt
 
@@ -504,15 +504,12 @@ nav:
       - Examples: ca/examples.md
       - CA SDK Demo: https://sdk.arcana.network
       - CA Wallet Demo: ca/ca-demo.md
-      - Demos:
-        - CA Wallet Demo: ca/ca-demo.md
-        - CA SDK Demo: https://sdk.arcana.network
     - Resources:
-      - CA Whitepaper: https://arcananetwork.notion.site/Chain-Abstraction-Technical-Paper-121f11ed0804808da2e5cdd1432b2b61
       - Audit: 
         - audit/ca/index.md
         - Arcana Vault: https://github.com/arcana-network/audit-reports/blob/9b13233ce0fa4915c96c712bb49187864089f3df/Arcana%20Vault%20Final%20Report.pdf
         - CA Wallet: https://github.com/arcana-network/audit-reports/blob/main/Arcana%20Wallet%20Final%20Audit%20Report.pdf
+      - CA Whitepaper: https://arcananetwork.notion.site/Chain-Abstraction-Technical-Paper-121f11ed0804808da2e5cdd1432b2b61
       - Solvers: 
         - Setup: solvers/solver-config.md
         - Dashboard: solvers/solver-dashboard.md
@@ -531,7 +528,7 @@ nav:
             - v0.0.2: relnotes/rn-ca-v0.0.2.md
           - CA Wagmi SDK:
             - v0.0.5: relnotes/rn-ca-wagmi-sdk-v0.0.5.md
-      - CA @Partner Docs:
+      - CA Partner Docs:
         - CA SDK: partner-docs/ca.md
         - Linea:
           - Cross-Chain: https://docs.linea.build/get-started/tooling/cross-chain/arcana
@@ -774,11 +771,11 @@ nav:
       - Migration Guides: migration/latest-auth-migration-guide.md 
       - Changelog: changelog/index.md  
     - Resources:
-      - Auth Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
       - Audit: 
         - audit/auth/index.md
         - Auth Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
         - ADKG: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20230228T054948Z.pdf
+      - Auth Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
       - Validators:
         - Onboarding Guide: validators/onboard-validators.md
         - Validator FAQ: faq/faq-validator.md
@@ -828,7 +825,7 @@ nav:
             - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
             - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
             - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
-      - Auth @Partner Docs:
+      - Auth Partner Docs:
         - Auth SDK: partner-docs/auth.md
         - Caduceus:
           - Social Login: https://docs.caduceus.foundation/auth        

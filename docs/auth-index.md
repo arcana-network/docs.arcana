@@ -1,6 +1,6 @@
 ---
 alias: index-docs
-template: ca-style.html
+template: main.html
 title: 'Social Login'
 description: 'Fast, secure social login to enable Web3 app blockchain transactions.'
 arcana:
@@ -49,41 +49,34 @@ This documentation contains everything you need to get started using [[introduct
 
     ==}
 
-    <div class="grid cards" markdown>
+    ## Quick Start
 
-    -   :material-account-group:{ .lg .middle .icon-color} __Social Login__
+    === "Web Apps"
 
-        ---
+        [[wagmi-quick-start| Wagmi ]]{ .md-button } [[rainbowkit-quick-start| RainbowKit ]]{ .md-button } [[web3-react-quick-start| Web3-React ]]{ .md-button } [[walletconnect-quick-start| WalletConnect ]]{ .md-button } [[vanilla-web-apps-quick-start| HTML/CSS/JS ]]{ .md-button } [[react-nextjs-quick-start| React/NextJS ]]{ .md-button } [[vue-quick-start| Vue ]]{ .md-button }
 
-        Enable Web2-like login in Web3 apps with {{config.extra.arcana.sdk_name}} and enable in-app {{config.extra.arcana.wallet_name}}
+    === "Non-EVM Apps"
 
-        [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/social-login.md)
+        [[solana-quick-start| Solana ]]{ .md-button } [[mvx-quick-start| MultiversX ]]{ .md-button } [[near-quick-start| Near ]]{ .md-button }
 
-    -   :material-clock-check-outline:{ .lg .middle .icon-color} __Set up in 2 min!__
+    === "Mobile Apps"
 
-        ---
+        [[react-native-quick-start| React-Native ]]{ .md-button } [[flutter-quick-start| Flutter ]]{ .md-button }
 
-        Use {{config.extra.arcana.dashboard_name}} to register app, configure settings and manage user experience
+    === "Gaming Apps"
 
-        [:octicons-arrow-right-24: Configure]({{page.meta.arcana.root_rel_path}}/setup/config-dApp-with-db.md)
+        [[unity-quick-start| Unity ]]{ .md-button }
 
-    -   :material-run-fast:{ .lg .middle .icon-color} __Integration Examples__
+    ## Demo
 
-        ---
-
-        Get up and running quickly with these integration examples for various supported Web3 apps!
-
-        [:octicons-arrow-right-24: Integration Examples](https://github.com/arcana-network/auth-examples)
-
-    -   :material-run-fast:{ .lg .middle .icon-color} __Resources__
-
-        ---
-
-        Release notes, migration guides, Dashboard Settings Guide, FAQ, integration checklists amd more!
-
-        [:octicons-arrow-right-24: Resources](https://docs.arcana.network/relnotes/latest-auth-release-note/)
-
-
+    <div class="tx-hero-container">
+      <div class="tx-hero-content">
+        <a href="https://demo.arcana.network">
+          <div class="tx-try-now-button-blue a-link-items">
+              <h3 style="color: var(--md-an-gray-light-color)">SDK Integration Demo</h3>
+          </div>
+        </a>
+      </div>
     </div>
 
     ## Auth Playground
@@ -102,23 +95,41 @@ This documentation contains everything you need to get started using [[introduct
         </div>
     </div>
 
-    ## Quick Start
+<div class="grid cards" markdown>
 
-    === "Web Apps"
+-   :material-account-group:{ .lg .middle .icon-color} __Social Login__
 
-        [[wagmi-quick-start| Wagmi ]]{ .md-button } [[rainbowkit-quick-start| RainbowKit ]]{ .md-button } [[web3-react-quick-start| Web3-React ]]{ .md-button } [[walletconnect-quick-start| WalletConnect ]]{ .md-button } [[vanilla-web-apps-quick-start| HTML/CSS/JS ]]{ .md-button } [[react-nextjs-quick-start| React/NextJS ]]{ .md-button } [[vue-quick-start| Vue ]]{ .md-button }
+    ---
 
-    === "Non-EVM Apps"
+    Enable Web2-like login in Web3 apps with {{config.extra.arcana.sdk_name}} and enable in-app {{config.extra.arcana.wallet_name}}
 
-        [[solana-quick-start| Solana ]]{ .md-button } [[mvx-quick-start| MultiversX ]]{ .md-button } [[near-quick-start| Near ]]{ .md-button }
+    [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/social-login.md)
 
-    === "Mobile Apps"
+-   :material-clock-check-outline:{ .lg .middle .icon-color} __Set up in 2 min!__
 
-        [[react-native-quick-start| React-Native ]]{ .md-button } [[flutter-quick-start| Flutter ]]{ .md-button }
+    ---
 
-    === "Gaming Apps"
+    Use {{config.extra.arcana.dashboard_name}} to register app, configure settings and manage user experience
 
-        [[unity-quick-start| Unity ]]{ .md-button }
+    [:octicons-arrow-right-24: Configure]({{page.meta.arcana.root_rel_path}}/setup/config-dApp-with-db.md)
+
+-   :material-run-fast:{ .lg .middle .icon-color} __Integration Examples__
+
+    ---
+
+    Get up and running quickly with these integration examples for various supported Web3 apps!
+
+    [:octicons-arrow-right-24: Integration Examples](https://github.com/arcana-network/auth-examples)
+
+-   :material-run-fast:{ .lg .middle .icon-color} __Resources__
+
+    ---
+
+    Release notes, migration guides, Dashboard Settings Guide, FAQ, integration checklists and more!
+
+    [:octicons-arrow-right-24: Resources](https://docs.arcana.network/relnotes/latest-auth-release-note/)
+
+</div>
 
 ## Need Help?
 

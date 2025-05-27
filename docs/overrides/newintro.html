@@ -2,11 +2,8 @@
 
 {% block announce %}
   <div>
-    <p>
-      <i>Web3 Devs: </i>Try the <a href="https://sdk.arcana.network/">CA SDK Demo! </a>
-      <i>Wallet Users: </i> Try spending <a href="https://docs.arcana.network/ca/introduction/ca/#unified-balance">unified balance</a> across chains with CA enabled <a href="https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi?hl=en-GB&authuser=0&pli=1">standalone Arcana Wallet</a>.
-    </p>
-  </div>
+    <p style="text-align: center;">
+      <b>What's new?</b> Check out 📢 <a href="https://github.com/orgs/arcana-network/discussions">Arcana SDK release announcements</a> 📢
 {% endblock %}
 
 {% block content %}
@@ -20,16 +17,16 @@
     --md-an-hero-content-color: rgba(6, 6, 5, 0.9);
     --md-an-hero-button-bg-color: transparent;
     --md-an-hero-button-fg-color: var(--md-primary-fg-color);
-    --md-an-card-color-hover: rgba(247, 246, 245, 0.9);
+    --md-an-card-color-hover: var(--md-an-pink-color):
     --md-accent-fg-color: #526cfe;
   }
 
   :root[data-md-color-scheme="slate"] {
-    --md-primary-bg-color: slate;
+    --md-primary-bg-color: black;
     --md-primary-fg-color: #fcfcfc;
     --md-an-hero-button-bg-color: transparent;
     --md-an-hero-button-fg-color: var(--md-primary-fg-color);
-    --md-an-card-color-hover: #212123;
+    --md-an-card-color-hover: var(--md-an-pink-color);
     --md-typeset-color: var(--md-primary-fg-color);
   }
 
@@ -53,6 +50,7 @@
     display: none;
     width: 0.1vw;
   }
+
   .tx-hero-container {
     display: flex;
     justify-content: space-around;
@@ -74,19 +72,19 @@
   .tx-hero-content {
     text-align: left;
     padding: 1.5rem;
-    color: var(--md-primary-fg-color);
+    /* color: var(--md-primary-fg-color);*/
     border-radius: 0.6rem;
   }
 
   .tx-hero-content h1 {
     font-size: 1.25rem;
     font-weight: 500;
-    color: var(--md-primary-fg-color);
+    /*color: var(--md-primary-fg-color);*/
   }
 
   .tx-hero-content p {
     font-size: 0.75rem;
-    color: var(--md-primary-fg-color);
+    /*color: var(--md-primary-fg-color);*/
   }
 
   .tx-hero .md-button {
@@ -99,7 +97,7 @@
 
   .tx-hero .md-button:hover,
   .tx-hero .md-button:focus {
-    background-color: var(--md-an-card-color-hover);
+    background-color: var(--md-an-pink-color);
     border-color: var(--md-accent-fg-color);
     color: var(--md-an-hero-button-fg-color);
   }
@@ -129,7 +127,6 @@
 
   .an-docs-landing-left, h1.an-docs-landing-left {
     text-align: left;
-    color: var(--md-primary-fg-color);
   }
 
   .an-docs-landing-center {
@@ -193,7 +190,7 @@
       <p>Beat liquidity fragmentation across chains with unified balance. Users can spend on any chain without bothering about bridging assets to transact on a new chain.</p>
       <p>Integrate Web3 app with the Arcana Chain Abstraction SDK to enable unified balance. <a href="./ca-index/">Learn more...</a></p>
       <div class="tx-button-container">
-        <a href="https://docs.arcana.network/quick-start/ca-quick-start/" class="md-button">Quick Start</a>
+        <a href="./quick-start/ca-quick-start/" class="md-button">Get Started ↗️</a>
       </div>
     </div>
   </div>
@@ -203,7 +200,7 @@
       <p>No need to create or download a wallet to use Web3 apps. Users onboard with Web2 logins, get instant access to the in-app, self-custodial Arcana wallet to sign blockchain transactions.</p>
       <p>Integrate Web3 app with the Arcana Auth SDK to enable social login. <a href="./auth-index/">Learn more...</a></p>
       <div class="tx-button-container">
-        <a href="https://docs.arcana.network/quick-start/wagmi-quick-start/" class="md-button">Quick Start</a>
+        <a href="./quick-start/wagmi-quick-start/" class="md-button">Get Started 🚀</a>
       </div>
     </div>
   </div>
@@ -211,14 +208,19 @@
 <div class="tx-hero-card">
   <div class="tx-hero-content">
     <h1 class="an-docs-landing-left">Give it a go!</h1>
-    <p><b>Experience Chain Abstraction: </b><a href="https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi?hl=en-GB&authuser=0&pli=1"> Download</a> the standalone, CA enabled, Arcana wallet and try it in the context of any <a href="https://docs.arcana.network/web3-stack/ca_stack/#apps">supported</a> app. Want to try chain abstraction with MetaMask or any other third-party browser based wallet? Connect your wallet to the <a href="https://sdk.arcana.network">SDK Demo app</a>.</p><p>Check status of submitted intents for chain abstracted transactions via the <a href="https://explorer.arcana.network/">Arcana Intent Explorer</a>. </p>
+    <p><b>Experience Chain Abstraction: </b><a href="https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi?hl=en-GB&authuser=0&pli=1"> Download</a> the standalone, CA enabled, Arcana wallet and try it in the context of any <a href="./web3-stack/ca_stack/#apps">supported</a> app. Want to try chain abstraction with MetaMask or any other third-party browser based wallet? Connect your wallet to the <a href="https://sdk.arcana.network">SDK Demo app</a>.</p><p>Check status of submitted intents for chain abstracted transactions via the <a href="https://explorer.arcana.network/">Arcana Intent Explorer</a>. </p>
     <p><b>Try Social Login: </b> Use Web2 authentication to onboard the <a href="https://demo.arcana.network/">demo Web3 app</a> integrated with Arcana's Auth SDK. Get instant access to your self-custodial, in-app Arcana wallet and sign blockchain transactions.</p>
+    <p></p>
+    <p><i>Questions?</i></p>
+    <p>Email <a href="mailto:support@arcana.network">support@arcana.network</a>.</p><p><i>We are actively listening on the social channels listed in the footer.</i></p>
   </div>
 </div>
 
 <div class="tx-button-container an-docs-landing-center">
-  <p><a href="https://arcana.network">| About Arcana Network</a> | <a href="https://github.com/orgs/arcana-network/discussions/categories/announcements">Announcements</a> | <a href="https://status.arcana.network/">Uptime</a> | <a href="https://docs.arcana.network/support/">Support</a> |</p>
+  <p>| <a href="https://arcana.network">About Arcana Network</a> | <a href="https://github.com/orgs/arcana-network/discussions/categories/announcements">Announcements</a> | <a href="https://status.arcana.network/">Uptime</a> | <a href="./support/">Support</a> |</p>
 </div>
+
+
 
 {% endblock %}
 
