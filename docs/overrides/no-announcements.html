@@ -2,3 +2,13 @@
 
 {% block announcements %}
 {% endblock %}
+
+{% block content %}
+{{ super() }}
+<style>
+    .md-sidebar.md-sidebar--primary {
+        display: none;
+        width: 0.1vw;
+    }
+</style>
+{% endblock %}

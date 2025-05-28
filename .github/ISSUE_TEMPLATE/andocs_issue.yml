@@ -1,6 +1,6 @@
-name: Arcana Auth SDK Documentation Issue Report
-description: File an bug report for Arcana Networ Documetation
-title: "[Docs Issue]: "
+name: Arcana Documentation Issue Report
+description: File an issue/bug report for Arcana Documetation
+title: "[Docs Issue]: Cannot find how to do xyz with Arcana SDKs."
 labels: ["docs", "bug", "triage"]
 assignees:
   - shaloo
@@ -10,26 +10,26 @@ body:
       value: |
 
         :wave:  **Hey, there!**
-        *Thank you for visiting Arcana Auth SDK Documentation website!*
-        Help us timely address and prioritize your issue by going through this checklist and providing all the requisite issue details.
+        *Thank you for sharing your feedback.*
+        Help us prioritize and attend to your issue right away by providing more details, see below.
   - type: checkboxes
     id: issue-checklist
     attributes:
       label: Issue Checklist
-      description: Before you submit the issue, verify it is indeed a bug and not a question.
+      description: Make sure you are reporting a documentation issue with a screenshot.
       options:
-        - label: Is this something you can **debug and fix**? Send a pull request! Your contributions to Arcana Network documentation are valuable to us.
+        - label: Is this something you can **debug and fix** in the docs? Send a pull request! We will review and merge, if appropriate.
           required: false
-        - label: Have a documentation **usage question**? Ask your question on [StackOverflow](https://stackoverflow.com/search?q=%22arcana+network%22%2B%22XAR%22) or [Discord channel](https://discord.gg/6g7fQvEpdy). We use GitHub solely for bugs and feature enhancement requests.
+        - label: Did you try using the Arcabot on the bottom right to find what you were looking for in the documentation?
           required: false
   - type: markdown
     attributes:
-      value: "## Create GitHub Issue for Arcana Auth SDK Documentation"
+      value: "## Create GitHub Issue for Arcana Documentation"
   - type: markdown
     attributes:
       value: |
 
-        Make sure to add all the information needed to understand the bug or your feature request.
+        List the issue along with the screenshot.
 
         If the info is missing we'll add the 'Needs more information' label and prioritize it only when there is enough information provided.
   - type: textarea

@@ -11,48 +11,50 @@ arcana:
 
 ???+ an-abstract "Try Arcabot!"
 
-       Start a conversation 💬 with `Arcabot` for instant answers to Arcana queries!
-       *(Click on the icon on the bottom right of this page.)*
+       *Get instant answers to your Arcana related queries and tips to explore related topics.*
+       
+       Click on the 'Arcabot' icon at the bottom right of this page* and start a conversation 💬.
+       
 
-=== "Contact Us" 
+## Contact Us
 
-    * Write to us at 📨 [support@arcana.network](mailto:support@arcana.network). 
-    * Schedule 🗓️ Calendly 🤝 meeting/demo 🖥️ with the [Arcana Team](https://calendly.com/arcana-network/arcana-demo-walkthrough).
+* Write to us at 📨 [support@arcana.network](mailto:support@arcana.network). 
+* Schedule 🗓️ Calendly 🤝 meeting/demo 🖥️ with the [Arcana Team](https://calendly.com/arcana-network/arcana-demo-walkthrough).
 
-=== "Arcana Community"
+## Arcana Community
 
-    <div class="grid cards" markdown>
+<div class="grid cards" markdown>
 
-    -   :fontawesome-brands-github:{ .lg .middle .icon-color} __GitHub__
+-   :fontawesome-brands-telegram:{ .lg .middle .icon-color} __Telegram__
 
-        ---
+    ---
 
-        Browse [GitHub](https://github.com/orgs/arcana-network/discussions) discussion topics. 
+    Check out Arcana [Telegram](https://t.me/ArcanaNetwork).
 
-    -   :fontawesome-brands-discord:{ .lg .middle .icon-color} __Discord__
+-   :fontawesome-brands-twitter:{ .lg .middle .icon-color} __Twitter__
 
-        ---
+    ---
 
-        Join the Arcana [Discord](https://discord.gg/6g7fQvEpdy) community.
+    Stay informed via Arcana [Twitter](https://twitter.com/arcananetwork) feed.
 
-    -   :fontawesome-brands-telegram:{ .lg .middle .icon-color} __Telegram__
+-   :fontawesome-brands-github:{ .lg .middle .icon-color} __GitHub__
 
-        ---
+    ---
 
-        Check out Arcana [Telegram](https://t.me/ArcanaNetwork).
+    Browse [GitHub](https://github.com/orgs/arcana-network/discussions) discussion topics. 
 
-    -   :fontawesome-brands-twitter:{ .lg .middle .icon-color} __Twitter__
+-   :fontawesome-brands-discord:{ .lg .middle .icon-color} __Discord__
 
-        ---
+    ---
 
-        Stay informed via Arcana [Twitter](https://twitter.com/arcananetwork) feed.
+    Join the Arcana [Discord](https://discord.gg/6g7fQvEpdy) community.
 
-    </div>
+</div>
+## Report Issues
 
-=== "Report Issues"
-
-    * [Report CA-SDK Issues](https://github.com/arcana-network/ca-sdk/issues/new)
-    * [Report Standalone Arcana CA Wallet Issues](https://github.com/arcana-network/ca-sdk/issues/new)
-    * [Report Dashboard Issues](https://github.com/arcana-network/developer-dashboard/issues/new)
-    * [Report Auth SDK Issues](https://github.com/arcana-network/auth/issues/new)
-    * [Report In-app Arcana Wallet Issues](https://github.com/arcana-network/wallet-ui/issues/new)
+* [Report CA-SDK Issues](https://github.com/arcana-network/ca-sdk/issues/new)
+* [Report Standalone Arcana CA Wallet Issues](https://github.com/arcana-network/ca-sdk/issues/new)
+* [Report Dashboard Issues](https://github.com/arcana-network/developer-dashboard/issues/new)
+* [Report Auth SDK Issues](https://github.com/arcana-network/auth/issues/new)
+* [Report In-app Arcana Wallet Issues](https://github.com/arcana-network/wallet-ui/issues/new)
+* [Report Documentation Issues](https://github.com/arcana-network/docs.arcana/issues/new?template=andocs_issue.yml)

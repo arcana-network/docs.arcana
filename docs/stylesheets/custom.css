@@ -967,18 +967,58 @@ details.an-abstract {
   color: var(--md-an-hero-content-color);
 }
 
+.tx-hero .md-button {
+  background-color: var(--md-an-hero-button-bg-color);
+  color: var(--md-an-hero-button-fg-color);
+  border: 1px solid var(--md-primary-fg-color);
+  border-radius: 0.6rem;
+  padding: 0.5rem 1rem;
+}
+
+.tx-hero .md-button:hover,
+.tx-hero .md-button:focus,
+.tx-try-now-button-blue:hover,
+.tx-try-now-button-purple:hover {
+  background-color: var(--md-an-pink-color);
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-an-hero-button-fg-color);
+}
+
+.tx-button-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tx-button-container .md-button {
+  flex: 1;
+  text-align: center;
+}
+
+.top-hr {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.1rem;
+  border-radius: 5px;
+}
+
+.hr {
+  width: 100%;
+}
+
 /* Feedback section: Arcana Styling */
 
 .md-feedback__title {
   font-style: italic;
   font-weight: 400;
-  font-size: 0.75rem;
+  font-size: 0.5rem;
 }
 
 .md-feedback__note {
   color: var(--md-an-pink-color);
   font-weight: 200;
-  font-size: 0.45rem;
+  font-size: 0.4rem;
 }
 
 /* Footer Git Author and commit information: Arcana Styling */

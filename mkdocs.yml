@@ -176,7 +176,7 @@ extra:
     provider: google
     property: !ENV [GOOGLE_ANALYTICS_ID, default='XXXXXXXXXX']
     feedback:
-      title: Spill it; Did this page deliver?
+      title: "Tell us what you think. Does this documentation fulfill your expectations?"
       ratings:
         - icon: material/thumb-up-outline
           name: Yes, it was useful.
@@ -184,7 +184,7 @@ extra:
           note: >-
             You rock! Thanks for your feedback!
         - icon: material/thumb-down-outline
-          name: No, the information needs to be updated!
+          name: No, not really.
           data: 0
           note: >-
             Oops! Share some details at hello@arcana.network
@@ -529,8 +529,8 @@ nav:
             - v0.0.2: relnotes/rn-ca-v0.0.2.md
           - CA Wagmi SDK:
             - v0.0.5: relnotes/rn-ca-wagmi-sdk-v0.0.5.md
-      - CA Partner Docs:
-        - CA SDK: partner-docs/ca.md
+      - Docs Collab:
+        - Partners: partner-docs/ca.md
         - Linea:
           - Cross-Chain: https://docs.linea.build/get-started/tooling/cross-chain/arcana
   - Auth:          
@@ -830,8 +830,8 @@ nav:
             - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
             - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
             - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
-      - Auth Partner Docs:
-        - Auth SDK: partner-docs/auth.md
+      - Docs Collab:
+        - Partners: partner-docs/auth.md
         - Caduceus:
           - Social Login: https://docs.caduceus.foundation/auth        
         - Linea:
