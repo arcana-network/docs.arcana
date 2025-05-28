@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{ super() }}
+<style>
+
+  .md-source-file {
+        display: none;  /* Set display to none to not show the author and */text-align: center; /* publish date time on the landing page */
+  }
+ 
+</style>
+
+{% endblock %}
+
+{% block scripts %}
+  <!-- Add scripts that need to run before here -->
+  {{ super() }}
+  <!-- Add scripts that need to run afterwards here -->
+
+   <!-- Chatbase bot script -->
+   <script>
+    window.chatbaseConfig = {
+      chatbotId: "Fbi0FsddfX1zz_DWM5jwJ",
+    }
+  </script>
+  <script
+    src="https://www.chatbase.co/embed.min.js"
+    id="Fbi0FsddfX1zz_DWM5jwJ"
+    defer>
+  </script>
+{% endblock %}

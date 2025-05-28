@@ -161,10 +161,10 @@ extra:
       link: https://twitter.com/arcananetwork
     - icon: fontawesome/brands/telegram
       link: https://t.me/ArcanaNetwork
-    - icon: material/github
-      link: https://github.com/orgs/arcana-network/discussions
     - icon: fontawesome/brands/discord
       link: https://discord.gg/9vrxze3JRR
+    - icon: material/github
+      link: https://github.com/orgs/arcana-network/discussions
     #- icon: material/book
       #link: https://www.webfx.com/tools/read-able/referer.php
     - icon: material/robot
@@ -176,18 +176,18 @@ extra:
     provider: google
     property: !ENV [GOOGLE_ANALYTICS_ID, default='XXXXXXXXXX']
     feedback:
-      title: Are you happy with this documentation?
+      title: Spill it; Did this page deliver?
       ratings:
         - icon: material/thumb-up-outline
           name: Yes, it was useful.
           data: 1
           note: >-
-            Thanks for your feedback!
+            You rock! Thanks for your feedback!
         - icon: material/thumb-down-outline
           name: No, the information needs to be updated!
           data: 0
           note: >-
-            Thanks for your feedback!
+            Oops! Share some details at hello@arcana.network
 plugins:
   - offline:
       enabled: !ENV [OFFLINE, false] #should not be true for production build

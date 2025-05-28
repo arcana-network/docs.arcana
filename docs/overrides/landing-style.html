@@ -8,27 +8,6 @@
 
 {% block content %}
 <style>
-  :root {
-    --md-an-blue-color-light: rgba(39, 48, 254, 0.25);
-    --md-an-green-color-light: rgba(15, 182, 0, 0.25);
-    --md-primary-fg-color: #101010;
-    --md-primary-bg-color: #fcfcfc;
-    --md-an-pink-color: #FF4E9F;
-    --md-an-hero-content-color: rgba(6, 6, 5, 0.9);
-    --md-an-hero-button-bg-color: transparent;
-    --md-an-hero-button-fg-color: var(--md-primary-fg-color);
-    --md-an-card-color-hover: var(--md-an-pink-color):
-    --md-accent-fg-color: #526cfe;
-  }
-
-  :root[data-md-color-scheme="slate"] {
-    --md-primary-bg-color: black;
-    --md-primary-fg-color: #fcfcfc;
-    --md-an-hero-button-bg-color: transparent;
-    --md-an-hero-button-fg-color: var(--md-primary-fg-color);
-    --md-an-card-color-hover: var(--md-an-pink-color);
-    --md-typeset-color: var(--md-primary-fg-color);
-  }
 
   .md-main {
     flex-grow: 0;
@@ -51,30 +30,6 @@
     width: 0.1vw;
   }
 
-  .tx-hero-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 0.75rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .tx-hero-card {
-    margin: 1rem;
-    box-shadow: 0 0 9px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 0.6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-    font-size: 1.25rem;
-  }
-
-  .tx-hero-content {
-    text-align: left;
-    padding: 1.5rem;
-    /* color: var(--md-primary-fg-color);*/
-    border-radius: 0.6rem;
-  }
 
   .tx-hero-content h1 {
     font-size: 1.25rem;

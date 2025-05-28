@@ -1,6 +1,6 @@
 ---
 alias: index-docs
-template: main.html
+template: auth-style.html
 title: 'Social Login'
 description: 'Fast, secure social login to enable Web3 app blockchain transactions.'
 arcana:
