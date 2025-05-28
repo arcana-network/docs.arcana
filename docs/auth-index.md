@@ -101,15 +101,15 @@ This documentation contains everything you need to get started using [[introduct
 
     ---
 
-    Enable Web2-like login in Web3 apps with {{config.extra.arcana.sdk_name}} and enable in-app {{config.extra.arcana.wallet_name}}
+    Enable Web2-like login in Web3 apps with {{config.extra.arcana.sdk_name}} and enable in-app {{config.extra.arcana.wallet_name}}.
 
     [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/social-login.md)
 
--   :material-clock-check-outline:{ .lg .middle .icon-color} __Set up in 2 min!__
+-   :material-clock-check-outline:{ .lg .middle .icon-color} __Set up in 2m__
 
     ---
 
-    Use {{config.extra.arcana.dashboard_name}} to register app, configure settings and manage user experience
+    Use {{config.extra.arcana.dashboard_name}} to register app, configure settings and manage user experience.
 
     [:octicons-arrow-right-24: Configure]({{page.meta.arcana.root_rel_path}}/setup/config-dApp-with-db.md)
 
@@ -117,7 +117,7 @@ This documentation contains everything you need to get started using [[introduct
 
     ---
 
-    Get up and running quickly with these integration examples for various supported Web3 apps!
+    Get up and running quickly with these integration examples for various supported Web3 apps.
 
     [:octicons-arrow-right-24: Integration Examples](https://github.com/arcana-network/auth-examples)
 
@@ -125,7 +125,7 @@ This documentation contains everything you need to get started using [[introduct
 
     ---
 
-    Release notes, migration guides, Dashboard Settings Guide, FAQ, integration checklists and more!
+    Release notes, migration guides, Dashboard Settings Guide, FAQ, integration checklists and more.
 
     [:octicons-arrow-right-24: Resources](https://docs.arcana.network/relnotes/latest-auth-release-note/)
 

@@ -26,9 +26,9 @@ As a Web3 app developer, you can focus on core application logic while delegatin
 
 ### 1. Onboard App Users Effortlessly
 
-Developers can easily plug in the popular Web2 sign-up/login mechanisms in the Web3 apps and lower the barrier to entry for Web3 users. 
+Developers can plug in the popular Web2 sign-up/login mechanisms in the Web3 apps and lower the barrier to entry for Web3 users. 
 
-To onboard users in a Web3 app, the {{config.extra.arcana.sdk_name}} allows developers to select and configure user authentication providers for the app. Developers can choose the default, built-in plug-and-play user authentication UI via `connect` function of the {{config.extra.arcana.sdk_name}}. Or, they can customize and build a custom user authentication UI, and simply add code to call `loginWithSocial`, `loginWithLink`(deprecated), `loginWithOTPStart` and `loginWithOTPComplete` functions to easily onboard users.
+To onboard users in a Web3 app, the {{config.extra.arcana.sdk_name}} allows developers to select and configure user authentication providers for the app. Developers can choose the default, built-in plug-and-play user authentication UI via `connect` function of the {{config.extra.arcana.sdk_name}}. Or, they can customize and build a custom user authentication UI, add a few lines of code to call `loginWithSocial`, `loginWithLink`(deprecated), `loginWithOTPStart` and `loginWithOTPComplete` functions to onboard users.
 
 Read more about the [[concept-plug-and-play-auth|plug-and-play feature]], and [[use-plug-play-auth|how to onboard users]] via the built-in, plug-and-play login UI or [[build-password-less-auth|custom login UI]].
 
@@ -36,7 +36,7 @@ Before you can integrate an app with the {{config.extra.arcana.sdk_name}}, devel
 
 ### 2. Sign blockchain transactions securely
 
-Allow authenticated Web3 application users to securely sign blockchain operations without bothering about managing secrets and keys. No centralized authority manages user keys in the {{config.extra.arcana.product_name}} DKG subsystem. Use the embedded, non-custodial {{config.extra.arcana.wallet_name}} provided by the {{config.extra.arcana.sdk_name}} to let the authenticated users easily review and sign blockchain transactions. 
+Allow authenticated Web3 application users to securely sign blockchain operations without bothering about managing secrets and keys. No centralized authority manages user keys in the {{config.extra.arcana.product_name}} DKG subsystem. Use the embedded, non-custodial {{config.extra.arcana.wallet_name}} provided by the {{config.extra.arcana.sdk_name}} to let the authenticated users review and sign blockchain transactions. 
 
 Read more about the [{{config.extra.arcana.wallet_name}} features]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) and [[evm-web3-wallet-ops|how to transact using the {{config.extra.arcana.wallet_name}}]]. Check out the [[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]] to learn more about various Web3 wallet operations that can be accessed by the application users.
 

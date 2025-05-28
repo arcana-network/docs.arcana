@@ -80,7 +80,7 @@ hide:
 
     ---
 
-    Spend on any chain with unified balance of funds on the source chains and sign transactions on any destination chain with a third-party browser-based wallet
+    Spend on any chain with unified balance of funds on the source chains and sign transactions on any destination chain with a third-party browser-based wallet.
 
     [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/ca/unified-balance.md)
 
@@ -88,7 +88,7 @@ hide:
 
     ---
 
-    Use {{config.extra.arcana.company_name}} Intent Explorer to track status of chain abstracted transactions
+    Use {{config.extra.arcana.company_name}} Intent Explorer to track status of chain abstracted transactions.
 
     [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/ca/intent-explorer.md)
 
@@ -96,19 +96,19 @@ hide:
 
     ---
 
-    Get up and running quickly with these integration examples
-
+    Get up and running quickly with integration examples: 
+    
     [:octicons-arrow-right-24: `ca-sdk`](https://github.com/arcana-network/ca-sdk-example)
-
+    
     [:octicons-arrow-right-24: `ca-wagmi`](https://github.com/shaloo/sample-arcana-ca-wagmi-sdk)
 
 -   :material-run-fast:{ .lg .middle .icon-color} __Resources__
 
     ---
 
-    Release notes, FAQ, audit reports, whitepapers and more!
+    Release notes, FAQ, audit reports, whitepaper and more.
 
-    [:octicons-arrow-right-24: Resources](https://docs.arcana.network/relnotes/latest-ca-release-note/)
+    [:octicons-arrow-right-24: Learn more...](https://docs.arcana.network/relnotes/latest-ca-release-note/)
 
 </div>
 
