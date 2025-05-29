@@ -275,6 +275,10 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
   margin-bottom: 0.5rem;
 }
 
+.md-typeset h2 {
+  border-bottom: 1px solid var(--md-an-color-h2-bottom-rule);
+}
+
 /* Fix tabbed overflow of background in mobile view*/
 
 @media screen and (max-width: 44.984375em) {

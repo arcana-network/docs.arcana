@@ -29,7 +29,9 @@ This documentation contains everything you need to get started using [[introduct
 
 === "Web3 Developers"
 
-    Onboard Web3 app users via the familiar Web2 login providers, enable authenticated users to instantly access the in-app, non-custodial {{config.extra.arcana.wallet_name}} for signing blockchain transactions.
+    Seamlessly onboard Web3 app users without friction. Web3 app usage should not necessitate setting up and connecting a Web3 wallet for login and authentication. 
+    
+    Onboard Web3 app users via familiar Web2 login providers. Enable authenticated users to immediately access the in-app, non-custodial {{config.extra.arcana.wallet_name}} for signing blockchain transactions.
 
     Integrate Web3 apps with the {{config.extra.arcana.sdk_name}} to enable [[concept-social-login|social login]].
     
@@ -51,6 +53,10 @@ This documentation contains everything you need to get started using [[introduct
 
     ## Quick Start
 
+    What kind of Web3 app do you have? 
+    
+    Select the appropriate app type and get started with integrating the {{config.extra.arcana.sdk_name}}.
+
     === "Web Apps"
 
         [[wagmi-quick-start| Wagmi ]]{ .md-button } [[rainbowkit-quick-start| RainbowKit ]]{ .md-button } [[web3-react-quick-start| Web3-React ]]{ .md-button } [[walletconnect-quick-start| WalletConnect ]]{ .md-button } [[vanilla-web-apps-quick-start| HTML/CSS/JS ]]{ .md-button } [[react-nextjs-quick-start| React/NextJS ]]{ .md-button } [[vue-quick-start| Vue ]]{ .md-button }
@@ -67,8 +73,14 @@ This documentation contains everything you need to get started using [[introduct
 
         [[unity-quick-start| Unity ]]{ .md-button }
 
+    !!! an-tip "Advanced Usage"
+    
+        {% include "./text-snippets/adv_auth_ca_integration.md" %}
+
     ## Demo
 
+    Would you like to experience how social login works without actually integrating your Web3 app with the {{config.extra.arcana.sdk_name}}? Try the SDK integration demo app.
+    
     <div class="tx-hero-container">
       <div class="tx-hero-content">
         <a href="https://demo.arcana.network">
@@ -94,6 +106,8 @@ This documentation contains everything you need to get started using [[introduct
             </a>
         </div>
     </div>
+
+### Onboard with Zero Friction
 
 <div class="grid cards" markdown>
 

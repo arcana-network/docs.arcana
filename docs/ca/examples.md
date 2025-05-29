@@ -10,16 +10,24 @@ arcana:
 
 === "CA-SDK Integration"
 
-    This is a Vue+TypeScript+Vite template that has been enhanced with the CA SDK integration code.
+    This is a Vue+TypeScript+Vite template that has been enhanced with the {{config.extra.arcana.ca_sdk_name}} integration code.
 
     [:material-github:{ .icon-color} GitHub ](https://github.com/arcana-network/ca-sdk-example/){ .md-button }
     
-    [:simple-codesandbox:{ .icon-color} Try Now!](https://codesandbox.io/p/github/arcana-network/ca-sdk-example){ .md-button }
+    [:simple-codesandbox:{ .icon-color} Try Now!]({{config.extra.arcana.ca_sdk_codesandbox_url}}){ .md-button }
 
 === "CA-Wagmi Integration"
 
-    This Wagmi example app demonstrates how to integrate the CA Wagmi SDK with a Wagmi app.
+    This Wagmi example app demonstrates how to integrate the {{config.extra.arcana.ca_wagmi_sdk_name}} with a Wagmi app.
 
     [:material-github:{ .icon-color} GitHub ](https://github.com/arcana-network/ca-wagmi-example/){ .md-button }
     
-    [:simple-codesandbox:{ .icon-color} Try Now!](https://codesandbox.io/p/github/arcana-network/ca-wagmi-example/){ .md-button }
+    [:simple-codesandbox:{ .icon-color} Try Now!]({{config.extra.arcana.ca_wagmi_sdk_codesandbox_url}}){ .md-button }
+
+=== "CA + Auth Integration"
+
+    This Wagmi example app demonstrates how to onboard users via social login and enable chain abstraction by integrating the {{config.extra.arcana.ca_wagmi_sdk_name}} and the {{config.extra.arcana.sdk_name}} with a Wagmi app.
+
+    [:material-github:{ .icon-color} GitHub ](https://github.com/shaloo/sample-arcana-auth-ca-wagmi-sdks){ .md-button }
+    
+    [:simple-codesandbox:{ .icon-color} Try Now!]({{config.extra.arcana.auth_ca_wagmi_sdk_codesandbox_url}}){ .md-button }

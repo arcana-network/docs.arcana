@@ -37,15 +37,25 @@ hide:
 
     ## Quick Start
 
+    What kind of Web3 app do you have? 
+    
+    Select the appropriate app type and get started with integrating the {{config.extra.arcana.ca_sdk_name}}.
+
     <div class="tx-hero-container">
       <div class="tx-hero-content">
         <span markdown="span">
-        [[ca-quick-start|Web Apps]]{ .md-button } [[ca-wagmi-quick-start|Wagmi Apps]]{ .md-button }[[auth-ca-wagmi-quick-start|Auth+CA Apps]]{ .md-button }
+        [[ca-quick-start|Web Apps]]{ .md-button } [[ca-wagmi-quick-start|Wagmi Apps]]{ .md-button }
         </span>
       </div>
     </div>
 
+    !!! an-tip "Advanced Usage"
+    
+        {% include "./text-snippets/adv_auth_ca_integration.md" %}
+
     ## Demo
+
+    Would you like to experience chain abstraction and how unified balance works before integrating a Web3 app with the {{config.extra.arcana.ca_sdk_name}}? Try the SDK integration demo app.
 
     <div class="tx-hero-container">
       <div class="tx-hero-content">
@@ -72,7 +82,11 @@ hide:
           </div>
         </a>
       </div>
-    </div>
+    </div> 
+
+## Spend on Any Chain
+
+Chain abstracted transactions are a game changer for Web3 app adoption. Integrate with {{config.extra.arcana.ca_sdk_name}} to enable unified balance in Web3 apps.
 
 <div class="grid cards" markdown>
 
@@ -112,7 +126,7 @@ hide:
 
 </div>
 
-Chain abstraction is a game changer for Web3 app adoption. Integrate Arcana CA SDKs integrate with a few lines of code. [[why-ca-sdk|Learn more...]]
+[[why-ca-sdk|Learn more...]]
 
 ## Need Help?
 
