@@ -1,7 +1,7 @@
 ---
 alias: index-docs
-template: newintro.html
-title: 'Welcome'
+template: auth-style.html
+title: 'Social Login'
 description: 'Fast, secure social login to enable Web3 app blockchain transactions.'
 arcana:
   root_rel_path: .
@@ -29,7 +29,9 @@ This documentation contains everything you need to get started using [[introduct
 
 === "Web3 Developers"
 
-    Onboard Web3 app users via the familiar Web2 login providers, enable authenticated users to instantly access the in-app, non-custodial {{config.extra.arcana.wallet_name}} for signing blockchain transactions.
+    Seamlessly onboard Web3 app users without friction. Web3 app usage should not necessitate setting up and connecting a Web3 wallet for login and authentication. 
+    
+    Onboard Web3 app users via familiar Web2 login providers. Enable authenticated users to immediately access the in-app, non-custodial {{config.extra.arcana.wallet_name}} for signing blockchain transactions.
 
     Integrate Web3 apps with the {{config.extra.arcana.sdk_name}} to enable [[concept-social-login|social login]].
     
@@ -49,41 +51,44 @@ This documentation contains everything you need to get started using [[introduct
 
     ==}
 
-    <div class="grid cards" markdown>
+    ## Quick Start
 
-    -   :material-account-group:{ .lg .middle .icon-color} __Social Login__
+    What kind of Web3 app do you have? 
+    
+    Select the appropriate app type and get started with integrating the {{config.extra.arcana.sdk_name}}.
 
-        ---
+    === "Web Apps"
 
-        Enable Web2-like login in Web3 apps with {{config.extra.arcana.sdk_name}} and enable in-app {{config.extra.arcana.wallet_name}}
+        [[wagmi-quick-start| Wagmi ]]{ .md-button } [[rainbowkit-quick-start| RainbowKit ]]{ .md-button } [[web3-react-quick-start| Web3-React ]]{ .md-button } [[walletconnect-quick-start| WalletConnect ]]{ .md-button } [[vanilla-web-apps-quick-start| HTML/CSS/JS ]]{ .md-button } [[react-nextjs-quick-start| React/NextJS ]]{ .md-button } [[vue-quick-start| Vue ]]{ .md-button }
 
-        [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/social-login.md)
+    === "Non-EVM Apps"
 
-    -   :material-clock-check-outline:{ .lg .middle .icon-color} __Set up in 2 min!__
+        [[solana-quick-start| Solana ]]{ .md-button } [[mvx-quick-start| MultiversX ]]{ .md-button } [[near-quick-start| Near ]]{ .md-button }
 
-        ---
+    === "Mobile Apps"
 
-        Use {{config.extra.arcana.dashboard_name}} to register app, configure settings and manage user experience
+        [[react-native-quick-start| React-Native ]]{ .md-button } [[flutter-quick-start| Flutter ]]{ .md-button }
 
-        [:octicons-arrow-right-24: Configure]({{page.meta.arcana.root_rel_path}}/setup/config-dApp-with-db.md)
+    === "Gaming Apps"
 
-    -   :material-run-fast:{ .lg .middle .icon-color} __Integration Examples__
+        [[unity-quick-start| Unity ]]{ .md-button }
 
-        ---
+    !!! an-tip "Advanced Usage"
+    
+        {% include "./text-snippets/adv_auth_ca_integration.md" %}
 
-        Get up and running quickly with these integration examples for various supported Web3 apps!
+    ## Demo
 
-        [:octicons-arrow-right-24: Integration Examples](https://github.com/arcana-network/auth-examples)
-
-    -   :material-run-fast:{ .lg .middle .icon-color} __Resources__
-
-        ---
-
-        Release notes, migration guides, Dashboard Settings Guide, FAQ, integration checklists amd more!
-
-        [:octicons-arrow-right-24: Resources](https://docs.arcana.network/relnotes/latest-auth-release-note/)
-
-
+    Would you like to experience how social login works without actually integrating your Web3 app with the {{config.extra.arcana.sdk_name}}? Try the SDK integration demo app.
+    
+    <div class="tx-hero-container">
+      <div class="tx-hero-content">
+        <a href="https://demo.arcana.network">
+          <div class="tx-try-now-button-blue a-link-items">
+              <h3 style="color: var(--md-an-gray-light-color)">SDK Integration Demo</h3>
+          </div>
+        </a>
+      </div>
     </div>
 
     ## Auth Playground
@@ -102,23 +107,43 @@ This documentation contains everything you need to get started using [[introduct
         </div>
     </div>
 
-    ## Quick Start
+### Onboard with Zero Friction
 
-    === "Web Apps"
+<div class="grid cards" markdown>
 
-        [[wagmi-quick-start| Wagmi ]]{ .md-button } [[rainbowkit-quick-start| RainbowKit ]]{ .md-button } [[web3-react-quick-start| Web3-React ]]{ .md-button } [[walletconnect-quick-start| WalletConnect ]]{ .md-button } [[vanilla-web-apps-quick-start| HTML/CSS/JS ]]{ .md-button } [[react-nextjs-quick-start| React/NextJS ]]{ .md-button } [[vue-quick-start| Vue ]]{ .md-button }
+-   :material-account-group:{ .lg .middle .icon-color} __Social Login__
 
-    === "Non-EVM Apps"
+    ---
 
-        [[solana-quick-start| Solana ]]{ .md-button } [[mvx-quick-start| MultiversX ]]{ .md-button } [[near-quick-start| Near ]]{ .md-button }
+    Enable Web2-like login in Web3 apps with {{config.extra.arcana.sdk_name}} and enable in-app {{config.extra.arcana.wallet_name}}.
 
-    === "Mobile Apps"
+    [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/social-login.md)
 
-        [[react-native-quick-start| React-Native ]]{ .md-button } [[flutter-quick-start| Flutter ]]{ .md-button }
+-   :material-clock-check-outline:{ .lg .middle .icon-color} __Set up in 2m__
 
-    === "Gaming Apps"
+    ---
 
-        [[unity-quick-start| Unity ]]{ .md-button }
+    Use {{config.extra.arcana.dashboard_name}} to register app, configure settings and manage user experience.
+
+    [:octicons-arrow-right-24: Configure]({{page.meta.arcana.root_rel_path}}/setup/config-dApp-with-db.md)
+
+-   :material-run-fast:{ .lg .middle .icon-color} __Integration Examples__
+
+    ---
+
+    Get up and running quickly with these integration examples for various supported Web3 apps.
+
+    [:octicons-arrow-right-24: Integration Examples](https://github.com/arcana-network/auth-examples)
+
+-   :material-run-fast:{ .lg .middle .icon-color} __Resources__
+
+    ---
+
+    Release notes, migration guides, Dashboard Settings Guide, FAQ, integration checklists and more.
+
+    [:octicons-arrow-right-24: Resources](https://docs.arcana.network/relnotes/latest-auth-release-note/)
+
+</div>
 
 ## Need Help?
 
