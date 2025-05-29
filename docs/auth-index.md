@@ -107,7 +107,9 @@ This documentation contains everything you need to get started using [[introduct
         </div>
     </div>
 
-### Onboard with Zero Friction
+## Onboard with Zero Friction
+
+Let users log into your Web3 app securely without having to deal with Web3 specific complexities. Integrate with {{config.extra.arcana.sdk_name}} to enable social login.
 
 <div class="grid cards" markdown>
 
