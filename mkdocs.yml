@@ -503,8 +503,7 @@ nav:
         - CA SDK: relnotes/latest-ca-release-note.md
         - CA Wagmi SDK: relnotes/latest-ca-wagmi-release-note.md
       - Examples: ca/examples.md
-      - CA SDK Demo: https://sdk.arcana.network
-      - CA Wallet Demo: ca/ca-demo.md
+      - CA Demo: ca/ca-demo.md
     - Resources:
       - Audit: 
         - audit/ca/index.md
@@ -703,7 +702,7 @@ nav:
       - Examples: 
         - Auth-Examples: https://github.com/arcana-network/auth-examples
         - Try Auth: https://codesandbox.io/p/github/shaloo/auth-sdk-example-vite-vue/main?import=true
-      - Auth SDK Demo: https://demo.arcana.network 
+      - Auth Demo: auth/auth-demo.md
       - Dashboard User Guide: setup/config-dApp-with-db.md         
       - In-app Wallet: 
         - User Guide: 

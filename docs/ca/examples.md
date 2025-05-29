@@ -14,7 +14,7 @@ arcana:
 
     [:material-github:{ .icon-color} GitHub ](https://github.com/arcana-network/ca-sdk-example/){ .md-button }
     
-    [:simple-codesandbox:{ .icon-color} Try Now!]({{config.extra.arcana.ca_sdk_codesandbox_url}}){ .md-button }
+    [:simple-codesandbox:{ .icon-color} Try Now!]({{config.extra.arcana.ca_sdk_sandbox_url}}){ .md-button }
 
 === "CA-Wagmi Integration"
 
