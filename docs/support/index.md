@@ -19,7 +19,7 @@ arcana:
 ## Contact Us
 
 * Write to us at 📨 [support@arcana.network](mailto:support@arcana.network). 
-* Schedule 🗓️ Calendly 🤝 meeting/demo 🖥️ with the [Arcana Team](https://calendly.com/arcana-network/arcana-demo-walkthrough).
+* 🗓️ Schedule 🤝 meeting/demo 🖥️ with the [Arcana Team](https://calendly.com/arcana-network/arcana-demo-walkthrough).
 
 ## Arcana Community
 

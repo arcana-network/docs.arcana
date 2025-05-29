@@ -26,7 +26,7 @@ Experience the power of social login for onboarding Web3 apps in a frictionless 
 This sample app integrated with the {{config.extra.arcana.sdk_name}}, demonstrates the following features:
 
 * Any user, even those who do not yet have their own keys or a wallet to connect to the app, can onboard Web3 app integrated with the {{config.extra.arcana.sdk_name}}.
-* Use of familiar Web2 authentication mechanisms (for e.g., google, passwordless login, etc.) to onboard Web3 app
+* Use of familiar Web2 authentication mechanisms (for example, Google, passwordless login, etc.) to onboard Web3 app
 * Automatic access to a secure, self-custodial, in-app, embedded, built-in {{config.extra.arcana.wallet_name}} right after user authenticates.
 * No need to download or set up a Web3 wallet - own your in-app wallet and its assets.
 * Upon subsequent log ins, access the same wallet.
