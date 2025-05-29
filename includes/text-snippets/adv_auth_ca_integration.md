@@ -1,0 +1,1 @@
+You can let Web3 app users onboard via [[concept-social-login|social login]] and spend [[concept-unified-balance|unified balance]] on any chain through [[concept-ca|chain abstracted transactions]]. For this, the app must be integrated with both the  {{config.extra.arcana.ca_sdk_name}} as well as the {{config.extra.arcana.sdk_name}}. [[auth-ca-wagmi-quick-start|Learn more...]]
