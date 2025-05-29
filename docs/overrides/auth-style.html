@@ -3,11 +3,22 @@
 {% block announce %}
   <!-- Add Chain Abstraction wallet links here to avoid confusion with the built-in in-app wallet in the Auth SDK-->
   <div>
-    <p>
-      <i>Web3 Devs: </i>Try the <a href="https://sdk.arcana.network/">CA SDK Demo! </a>
-      <i>Wallet Users: </i> Try spending <a href="https://docs.arcana.network/ca/introduction/ca/#unified-balance">unified balance</a> across chains with CA enabled <a href="https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi?hl=en-GB&authuser=0&pli=1">standalone Arcana Wallet</a>. 
+    <p style="text-align: center;">
+      <b>New!   </b>Try the <i>Auth + Chain Abstraction </i> <a href="https://codesandbox.io/p/github/shaloo/sample-arcana-auth-ca-wagmi-sdks/sample-auth-ca-wagmi-integration">Integration Example </a>
   </p>
   </div>
+{% endblock %}
+
+{% block content %}
+{{ super() }}
+<style>
+
+  .md-source-file {
+        display: block;  /* Set display to none to not show the author and */text-align: center; /* publish date time on the landing page */
+  }
+ 
+</style>
+
 {% endblock %}
 
 {% block scripts %}

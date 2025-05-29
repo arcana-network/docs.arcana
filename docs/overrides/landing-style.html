@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block announce %}
+  <div>
+    <p style="text-align: center;">
+      <b>What's new?</b> Check out 📢 <a href="https://github.com/orgs/arcana-network/discussions">Arcana SDK release announcements</a> 📢
+{% endblock %}
+
+{% block content %}
+<style>
+
+  .md-main {
+    flex-grow: 0;
+    margin-top: -2%;
+  }
+
+  .md-main__inner {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
+  .md-sidebar.md-sidebar--primary {
+    display: none;
+    width: 0.1vw;
+  }
+
+  .md-sidebar.md-sidebar--secondary {
+    display: none;
+    width: 0.1vw;
+  }
+
+  .an-docs-landing-left, h1.an-docs-landing-left {
+    text-align: left;
+  }
+
+  .an-docs-landing-center {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 30em) {
+    .tx-hero-container,
+    .tx-hero-card {
+      display: block;
+      max-width: 100%;
+    }
+
+    .tx-button-container {
+      flex-direction: column;
+    }
+
+    .tx-hero-content h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--md-primary-fg-color);
+    }
+  }
+
+  @media screen and (min-width: 60em) {
+    .tx-hero-container,
+    .tx-hero-card {
+      flex: 1;
+      min-width: 0;
+    }
+  }
+
+  @media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+      display: block;
+    }
+
+    .top-hr {
+      max-width: 61rem;
+      margin: 0 auto;
+    }
+  }
+</style>
+
+<div class="top-hr">
+  <div class="hr">
+    <h1 class="an-docs-landing-left">Arcana Documentation</h1>
+  </div>
+  <div>
+    <p><b>Build seamless Web3 user experiences with Arcana's SDKs.</b></p>
+  </div>
+  <div>
+    <p>Developers can build Web3 apps that support chain abstraction and social login. Chain abstraction allows users to spend on any chain through unified balance. Social login lets users onboard Web3 apps and access in-app wallet to sign blockchain transactions.</p>
+  </div>
+</div>
+
+<div class="tx-hero-container">
+  <div class="tx-hero-card">
+    <div class="tx-hero-content">
+      <h1 class="an-docs-landing-left">Chain Abstraction (CA)</h1>
+      <p>Beat liquidity fragmentation across chains with unified balance. Users can spend on any chain without bothering about bridging assets to transact on a new chain.</p>
+      <p>Integrate Web3 app with the Arcana Chain Abstraction SDK to enable unified balance. <a href="./ca-index/">Learn more...</a></p>
+      <div class="tx-button-container">
+        <a href="./quick-start/ca-quick-start/" class="md-button">Get Started ↗️</a>
+      </div>
+    </div>
+  </div>
+  <div class="tx-hero-card">
+    <div class="tx-hero-content">
+      <h1 class="an-docs-landing-left">Social Login</h1>
+      <p>No need to create or download a wallet to use Web3 apps. Users onboard with Web2 logins, get instant access to the in-app, self-custodial Arcana wallet to sign blockchain transactions.</p>
+      <p>Integrate Web3 app with the Arcana Auth SDK to enable social login. <a href="./auth-index/">Learn more...</a></p>
+      <div class="tx-button-container">
+        <a href="./quick-start/wagmi-quick-start/" class="md-button">Get Started 🚀</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tx-hero-card">
+  <div class="tx-hero-content">
+    <h1 class="an-docs-landing-left">Give it a go!</h1>
+    <p><b>Experience Chain Abstraction: </b><a href="https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi?hl=en-GB&authuser=0&pli=1"> Download</a> the standalone, CA enabled, Arcana wallet and try it in the context of any <a href="./web3-stack/ca_stack/#apps">supported</a> app. Want to try chain abstraction with MetaMask or any other third-party browser based wallet? Connect your wallet to the <a href="https://sdk.arcana.network">SDK Demo app</a>.</p><p>Check status of submitted intents for chain abstracted transactions via the <a href="https://explorer.arcana.network/">Arcana Intent Explorer</a>. </p>
+    <p><b>Try Social Login: </b> Use Web2 authentication to onboard the <a href="https://demo.arcana.network/">demo Web3 app</a> integrated with Arcana's Auth SDK. Get instant access to your self-custodial, in-app Arcana wallet and sign blockchain transactions.</p>
+    <p></p>
+    <p><i>Questions?</i></p>
+    <p>Email <a href="mailto:support@arcana.network">support@arcana.network</a>.</p><p><i>We are actively listening on the social channels listed in the footer.</i></p>
+  </div>
+</div>
+
+<div class="tx-button-container an-docs-landing-center">
+  <p>| <a href="https://arcana.network">About Arcana Network</a> | <a href="https://github.com/orgs/arcana-network/discussions/categories/announcements">Announcements</a> | <a href="https://status.arcana.network/">Uptime</a> | <a href="./support/">Support</a> |</p>
+</div>
+
+
+
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+    window.chatbaseConfig = {
+      chatbotId: "Fbi0FsddfX1zz_DWM5jwJ",
+    }
+  </script>
+  <script src="https://www.chatbase.co/embed.min.js" id="Fbi0FsddfX1zz_DWM5jwJ" defer></script>
+{% endblock %}
