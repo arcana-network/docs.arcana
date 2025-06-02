@@ -116,9 +116,9 @@ extra:
     dashboard_name: Arcana Developer Dashboard
     wallet_name: Arcana wallet
     app_address: Client ID
-    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.10']
+    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.11']
     previous_version_dashboard: !ENV [PREVIOUS_DASHBOARD_VERSION, '1.0.6']
-    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.11']
+    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.12']
     latest_sdk_release_date: !ENV [AUTH_SDK_REL_DATE, '02 Jul 2024 13:57:09 UTC']
     latest_version_dashboard: !ENV [DASHBOARD_VERSION, '1.0.9']
     latest_version_wallet_ui: !ENV [WALLET_UI_VERSION, '1.0.9']
@@ -467,8 +467,6 @@ validation:
     unrecognized_links: info
 
 not_in_nav: |
-  relnotes/rn-main-auth-v1.0.12.md
-  migration/main-auth-v1.0.12-migration.md
 
 nav:
   - index.md
@@ -799,6 +797,7 @@ nav:
         - Archives:
           - Release Note Archives:
             - relnotes/archives/index.md
+            - Auth 1.0.12: relnotes/rn-main-auth-v1.0.12.md
             - Auth 1.0.11 : relnotes/rn-main-auth-v1.0.11.md
             - Auth May27-2024: relnotes/rn-main-auth-May27-24.md
             - Auth 1.0.10 : relnotes/rn-main-auth-v1.0.10.md
@@ -816,13 +815,14 @@ nav:
             - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
           - Migration Guide Archives: 
             - migration/archives/index.md
+            - v1.0.11 -> v1.0.12: migration/main-auth-v1.0.12-migration.md
             - v1.0.10 -> v1.0.11: migration/main-auth-v1.0.11-migration.md
             - v1.0.9 -> v1.0.10: migration/main-auth-v1.0.10-migration.md
             - v1.0.8 -> v1.0.9: migration/main-auth-v1.0.9-migration.md
             - v1.0.7 -> v1.0.8: migration/main-auth-v1.0.8-migration.md
             - v1.0.6 -> v1.0.7: migration/main-auth-v1.0.7-migration.md
             - v1.0.5 -> v1.0.6: migration/main-auth-v1.0.6-migration.md
-            - v1.0.4 -> v1.0.5: migration/main-auth-v1.0.5-migration.md                  
+            - v1.0.4 -> v1.0.5: migration/main-auth-v1.0.5-migration.md            
             - v1.0.3 -> v1.0.4: migration/main-auth-v1.0.4-migration.md         
             - v1.0.2 -> v1.0.3: migration/main-auth-v1.0.3-migration.md
             - v1.0.1 -> v1.0.2: migration/main-auth-v1.0.2-migration.md
