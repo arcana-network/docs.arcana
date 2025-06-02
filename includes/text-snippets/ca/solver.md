@@ -1,5 +1,3 @@
-In {{config.extra.arcana.company_name}}'s chain abstraction protocol, a solver facilitate cross-chain transactions by supplying liquidity on the destination chain. 
+In {{config.extra.arcana.company_name}}'s chain abstraction protocol, solvers facilitate cross-chain transactions by supplying liquidity on the destination chain. After a user signs and authorizes an intent, a solver instantly provides the liquidity. In an optimal decentralized setup, multiple solvers compete to fulfill published intents.
 
-After a user signs and authorizes an intent, the protocol ensures that the required funds are collected on the source chains via the user's EOA and publishes the request for funds as per the user's [[concept-intent|intent]]. Solvers listen for the published intent and compete with other solvers to instantly provides the required liquidity on the destination chain. 
-
-In return for the liquidity provisioning services provided by the respective solvers, the CA protocol periodically settles funds periodically. While settling, it aggregates all the successful transactions made by the solver and pays through the funds collected on the source chains from the user's EOA, as agreed to in the intent.
+The protocol periodically settles funds with solvers who have successfully completed user intents, using tokens from the supported source chains.
