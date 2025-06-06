@@ -125,18 +125,38 @@ const balances = await ca.getUnifiedBalances()
 const usdtBalance = await ca.getUnifiedBalance("usdt")
 ```
 
-### Bridge
+### Transfer
+
+Use the `transfer` function to send funds from the unified balance to any wallet (EOA) on any chain using approved source chain funds.
 
 ```js
-await ca.bridge().token("usdt").amount(10).chain(137).exec();
+await ca.transfer().to("0x...").amount(5).chain(10).token("eth").exec()
 ```
 
 `chain()` is optional, it will use the current chain as input if not specified.
 
-### Transfer
+
+### Request
+
+Use EIP-1193 `request` to issue `eth_sendTransaction` operation that deposits unified balance funds to any smart contract.
 
 ```js
-await ca.transfer().to("0x...").amount(5).chain(10).token("eth").exec()
+await ca.request({
+    method: "eth_sendTransaction",
+    params: [{
+        to: "0xEa46Fb4b4Dc7755BA29D09Ef2a57C67bab383A2f", 
+        from: "0x7f521A827Ce5e93f0C6D773525c0282a21466f8d",
+        value: "0x001"
+    }],
+})
+```
+
+{% include "./text-snippets/ca/transfer_note.md" %}
+
+### Bridge
+
+```js
+await ca.bridge().token("usdt").amount(10).chain(137).exec();
 ```
 
 `chain()` is optional, it will use the current chain as input if not specified.

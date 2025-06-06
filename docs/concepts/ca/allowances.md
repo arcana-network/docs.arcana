@@ -9,3 +9,11 @@ arcana:
 # Allowances
 
 {% include "./text-snippets/ca/allowances.md" %}
+
+## How Allowances Work?
+
+{% include "./text-snippets/ca/allowance_flow.md" %}
+
+## Allowance Setup
+
+{% include "./text-snippets/ca/allowance_setup.md" %}
