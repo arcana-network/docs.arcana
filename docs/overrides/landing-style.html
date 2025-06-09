@@ -20,11 +20,6 @@
     width: 100%;
   }
 
-  .md-sidebar.md-sidebar--primary {
-    display: none;
-    width: 0.1vw;
-  }
-
   .md-sidebar.md-sidebar--secondary {
     display: none;
     width: 0.1vw;
@@ -44,6 +39,7 @@
       display: block;
       max-width: 100%;
     }
+
 
     .tx-button-container {
       flex-direction: column;
@@ -65,8 +61,10 @@
   }
 
   @media screen and (min-width: 76.25em) {
-    .md-sidebar--primary {
-      display: block;
+
+    .md-sidebar.md-sidebar--primary {
+      display: none;
+      width: 0.1vw;
     }
 
     .top-hr {
