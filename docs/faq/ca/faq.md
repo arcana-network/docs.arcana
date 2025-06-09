@@ -6,6 +6,22 @@ arcana:
   root_rel_path: ..
 ---
 
+??? an-faq "Is there a refund if a chain abstracted transaction fails after funds have been pulled out of the source chains in the user's EOA?"
+
+    For chain abstracted transaction safety, follow these guidelines:
+    
+    1. **Failed transactions?** *Don't panic* - you'll get your tokens back automatically in the next settlement cycle (usually within 15 minutes but it may take an hour in some cases).
+   
+    2. **Before transacting:** Always check the transaction details including the gas fee requirements, before issuing a transaction. 
+   
+    3. **During transacting:** The status of the chain abstracted transaction is displayed in the app's context. Click on 'View Intent' details link and **save** the unique intent identifier associated with the transaction. You'll need the **intent identifier** if something goes wrong.
+   
+    4. **Track your transaction:** Use the [{{config.extra.arcana.ca_intent_explorer_name}}]({{config.extra.arcana.ca_intent_explorer}}) with your intent ID to monitor status and refund progress in real-time.
+   
+    5. **If no refund after 1 hour:** The protocol will keep retrying refunds automatically. If you do not receive a refund, share your intent ID with the {{config.extra.arcana.company_name}} team via the [[index-support|support]] channels.
+
+    **Bottom line:** Your funds are protected - failed transactions always get refunded, either automatically or with the team's assistance.
+
 ??? an-faq "Why is liquidity fragmentation an issue and how does chain abstraction solve it?"
     
     Liquidity fragmentation is an issue because it makes it difficult for users to spend their assets on any chain. 
