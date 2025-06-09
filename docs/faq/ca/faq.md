@@ -127,4 +127,16 @@ arcana:
         <figcaption>View Intent Details</figcaption>
     </figure>
 
+??? an-faq "Can I use `transfer` function to move chain abstracted unified balance funds to a smart contract?"
 
+    No. Use [[web-ca-usage-guide#request|`request` and issue `sendTransaction`]] operation to deposit funds into a smart contract.
+    
+    {% include "./text-snippets/ca/transfer_note.md" %}
+
+??? an-faq "Sending 0.1 USDC from 0.3 USDC balance uses funds from other chains. Why isn't this a normal transaction since sufficient balance exists locally?"
+
+    The transaction uses chain abstraction because you need both sufficient tokens AND gas fees for a normal transaction.
+    
+    Even though 0.1 USDC < 0.3 USDC balance, the remaining 0.2 USDC may not cover the gas fees. 
+    
+    When local funds can't cover transaction amount + gas fees, the system pulls from other chains' allowances to make up the difference, making it a chain-abstracted transaction instead of normal.
