@@ -22,6 +22,10 @@ arcana:
 
     **Bottom line:** Your funds are protected - failed transactions always get refunded, either automatically or with the team's assistance.
 
+    !!! an-caution "Viewing Refund"
+
+        To view the refund, the user must open or log into the app and access the wallet that was used to sign the intent and confirm the chain abstracted transaction.
+
 ??? an-faq "Why is liquidity fragmentation an issue and how does chain abstraction solve it?"
     
     Liquidity fragmentation is an issue because it makes it difficult for users to spend their assets on any chain. 
