@@ -6,6 +6,26 @@ arcana:
   root_rel_path: ..
 ---
 
+??? an-faq "Is there a refund if a chain abstracted transaction fails after funds have been pulled out of the source chains in the user's EOA?"
+
+    For chain abstracted transaction safety, follow these guidelines:
+    
+    1. **Failed transactions?** *Don't panic* - you'll get your tokens back automatically in the next settlement cycle (usually within 15 minutes but it may take an hour in some cases).
+   
+    2. **Before transacting:** Always check the transaction details including the gas fee requirements, before issuing a transaction. 
+   
+    3. **During transacting:** The status of the chain abstracted transaction is displayed in the app's context. Click on 'View Intent' details link and **save** the unique intent identifier associated with the transaction. You'll need the **intent identifier** if something goes wrong.
+   
+    4. **Track your transaction:** Use the [{{config.extra.arcana.ca_intent_explorer_name}}]({{config.extra.arcana.ca_intent_explorer}}) with your intent ID to monitor status. **Critical:** Keep your app/wallet open and logged in if you encounter a failed transaction—refunds require an active session and typically complete within 15 minutes.
+   
+    5. **No refund after 1 hour:** The protocol auto-retries, but you must stay logged in. If you closed the app/wallet, reopen and log back in to enable refund processing. Did not get a refund? Contact {{config.extra.arcana.company_name}} team via the [[index-support|support]] channels and make sure you mention the **intent identifier** that failed to refund or your wallet address with date / time of the transaction.
+
+    **Bottom line:** Your funds are protected - failed transactions always get refunded, either automatically or with the team's assistance.
+
+    !!! an-caution "Viewing Refund"
+
+        To view the refund, the user must open or log into the app and access the wallet that was used to sign the intent and confirm the chain abstracted transaction.
+
 ??? an-faq "Why is liquidity fragmentation an issue and how does chain abstraction solve it?"
     
     Liquidity fragmentation is an issue because it makes it difficult for users to spend their assets on any chain. 
