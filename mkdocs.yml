@@ -526,6 +526,7 @@ nav:
             - v0.0.3: relnotes/rn-ca-v0.0.3.md
             - v0.0.2: relnotes/rn-ca-v0.0.2.md
           - CA Wagmi SDK:
+            - v0.0.6: relnotes/rn-ca-wagmi-sdk-v0.0.6.md
             - v0.0.5: relnotes/rn-ca-wagmi-sdk-v0.0.5.md
       - Docs Collab:
         - Partners: partner-docs/ca.md
