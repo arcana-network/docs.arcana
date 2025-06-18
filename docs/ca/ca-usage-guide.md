@@ -13,7 +13,7 @@ of the file in the `ca` repo: https://github.com/arcana-network/ca-sdk/blob/main
 
 # {{config.extra.arcana.ca_sdk_name}} Usage
 
-Learn how to leverage {{config.extra.arcana.company_name}}'s Chain Abstraction and enable unified balance for Web3 app users.
+Learn how to integrate {{config.extra.arcana.company_name}}'s Chain Abstraction in a Web3 app to enable unified balance.
 
 [:octicons-cross-reference-16:{ .icon-color } {{config.extra.arcana.ca_sdk_name}} Reference]({{config.extra.arcana.ca_sdk_ref_url}}){ .md-button }
 
@@ -28,22 +28,25 @@ npm install @arcana/ca-sdk
 ```js
 import { CA } from "@arcana/ca-sdk";
 
-const provider = window.ethereum
+const provider = window.ethereum;
 
 const ca = new CA();
-
-//Set the EVM provider  
-ca.setEVMProvider(provider);
+ca.setEVMProvider(provider);  //Specify the standard EVM Provider before initializing CA
 
 await ca.init();
-await ca.request({
-    method: "eth_sendTransaction",
-    params: [{
-        to: "0xEa46Fb4b4Dc7755BA29D09Ef2a57C67bab383A2f",
-        from: "0x7f521A827Ce5e93f0C6D773525c0282a21466f8d",
-        value: "0x001"
-    }],
-})
+
+const providerWithCA = ca.getEVMProviderWithCA();
+
+await providerWithCA.request({
+  method: "eth_sendTransaction",
+  params: [
+    {
+      to: "0xEa46Fb4b4Dc7755BA29D09Ef2a57C67bab383A2f",
+      from: "0x7f521A827Ce5e93f0C6D773525c0282a21466f8d",
+      value: "0x001",
+    },
+  ],
+});
 ```
 
 ## Usage
@@ -64,16 +67,17 @@ await ca.init();  // Initialize the CA provider before calling any API function
 
 ### UI Hooks 
 
-Use these UI hooks for managing allowance setup and intent processing flows.
+The following UI hooks help in managing the [[concept-allowances|allowance]] setup and [[concept-intent|intent]] processing flows.
 
 ```js
 ca.setOnAllowanceHook(async ({ allow, deny, sources }) => {
   // This is a hook for the dev to show user the allowances that need to be setup for the current tx to happen
   // where,
   // sources: an array of objects with minAllowance, chainID, token symbol, etc.
-  // allow(allowances): continues the transaction flow with the specified allowances; `allowances` is an array with the chosen allowance for each of the requirements (allowances.length === sources.length), either 'min', 'max', a bigint or a string
+  // allow(allowances): continues the transaction flow with allowances (allowances.length === sources.length);
   // deny(): stops the flow
-})
+});
+
 
 ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
   // This is a hook for the dev to show user the intent, the sources and associated fees
@@ -82,16 +86,20 @@ ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
   // allow(): accept the current intent and continue the flow
   // deny(): deny the intent and stop the flow
   // refresh(): should be on a timer of 5s to refresh the intent (old intents might fail due to fee changes if not refreshed)
-})
+});
+```
+
+### Get Intents
+
+Get the intents created by the user.
+
+```js
+const intentList = await ca.getMyIntents(1); // 1 - Page number, each page has 100 intents
 ```
 
 ### Allowance
 
-Allowances help activate the Chain Abstraction (CA) feature offered by {{config.extra.arcana.company_name}}. They let Web3 users unlock fragmented liquidity across source chains and spend it on any destination chain, even when they lack sufficient balance there.
-
-With a unified balance on the source chains, users can request funds on the destination chain. By setting up allowances, users permit {{config.extra.arcana.company_name}} Vault contracts on the source chains to collect the funds required to execute the transaction seamlessly on the destination chain.
-
-Allowances can be set up anytime before a multi-chain transaction is initiated by the user.
+[[concept-allowances|Allowances]] help activate the Chain Abstraction (CA) feature offered by {{config.extra.arcana.company_name}}.
 
 #### Get Allowance
 
@@ -127,7 +135,7 @@ const usdtBalance = await ca.getUnifiedBalance("usdt")
 
 ### Transfer
 
-Use the `transfer` function to send funds from the unified balance to any wallet (EOA) on any chain using approved source chain funds.
+Use `transfer` to issue a chain abstracted blockchain transaction and deposit funds to an EOA through the [[concept-unified-balance|unified balance]].
 
 ```js
 await ca.transfer().to("0x...").amount(5).chain(10).token("eth").exec()
@@ -135,13 +143,22 @@ await ca.transfer().to("0x...").amount(5).chain(10).token("eth").exec()
 
 `chain()` is optional, it will use the current chain as input if not specified.
 
+### getEVMProviderWithCA
+
+Use `getEVMProviderWithCA` to obtain an EIP-1193 provider. 
+
+```js
+const providerWithCA = ca.getEVMProviderWithCA();
+```
 
 ### Request
 
-Use EIP-1193 `request` to issue `eth_sendTransaction` operation that deposits unified balance funds to any smart contract.
+Use the `getEVMProviderWithCA` to obtain an EIP-1193 provider and then issue the `request` method `eth_sendTransaction` operation for enabling a chain abstracted transaction. It uses unified balance funds to deposit funds in any smart contract or to transfer ERC20 tokens in a chain abstracted transaction.
 
 ```js
-await ca.request({
+const providerWithCA = ca.getEVMProviderWithCA();
+
+await providerWithCA.request({
     method: "eth_sendTransaction",
     params: [{
         to: "0xEa46Fb4b4Dc7755BA29D09Ef2a57C67bab383A2f", 
@@ -154,6 +171,8 @@ await ca.request({
 {% include "./text-snippets/ca/transfer_note.md" %}
 
 ### Bridge
+
+Use the `bridge` function to bridge chain abstracted funds via the unified balance on any destination chain by utilizing the approved source chain funds.
 
 ```js
 await ca.bridge().token("usdt").amount(10).chain(137).exec();
@@ -211,4 +230,4 @@ ca.removeCAEventListener((data) => {...})
 
 ```
 
-Refer to the [CA SDK Reference Guide](https://ca-sdk-ref-guide.netlify.app/) for details.
+Refer to the [CA SDK Reference](https://ca-sdk-ref-guide.netlify.app/modules) for details.
