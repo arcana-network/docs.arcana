@@ -13,7 +13,7 @@ of the file in the `ca` repo: https://github.com/arcana-network/ca-wagmi/blob/ma
 
 # {{config.extra.arcana.ca_wagmi_sdk_name}} Usage
 
-Learn how to leverage {{config.extra.arcana.company_name}}'s Chain Abstraction and enable unified balance for Web3 app users.
+Learn how to integrate {{config.extra.arcana.company_name}}'s Chain Abstraction in a Wagmi-based Web3 app to enable unified balance.
 
 [:octicons-cross-reference-16:{ .icon-color } {{config.extra.arcana.ca_wagmi_sdk_name}} Reference]({{config.extra.arcana.ca_wagmi_sdk_ref_url}}){ .md-button }
 
