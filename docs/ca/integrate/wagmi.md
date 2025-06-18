@@ -8,31 +8,49 @@ arcana:
   app_example_submodule: "'`ca-wagmi-example`'"
 ---
 
-# Integrate Web App
+# Integrate Wagmi App
 
-Integrate {{page.meta.arcana.app_type}} apps with the [{{config.extra.arcana.ca_wagmi_sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/ca/casdk.md) to enable [[concept-unified-balance|unified balance]]. Let app users spend on any chain through chain abstracted transactions that can be seamlessly enabled in the existing apps built using the [Wagmi](https://wagmi.sh/) library. 
-
-Users benefit from the simplicity and ease of onboarding any new app or chain. No need to switch chains or convert source chain liquidity via bridging or procuring gas on a new chain to be able to transact.
+Build unified balance and chain abstraction in [Wagmi](https://wagmi.sh/) apps
+with the {{config.extra.arcana.company_name}} SDKs. Chain abstraction lets app 
+users spend on any chain.
 
 ## Prerequisites
 
-[Download]({{config.extra.arcana. ca_wagmi_sdk_codesandbox_url}}) and install the SDK:
+Download and install the SDKs:
 
 {% include "./code-snippets/ca_wagmi_sdk_install.md" %}
 
+## `CA Object`
+
+Create a `CA object`. Use it to create the `CAProvider` component.
+
+```ts
+import { CA } from "@arcana/ca-sdk";
+
+const ca = new CA();
+
+```
+
 ## `CA Provider`
 
-The {{config.extra.arcana.ca_wagmi_sdk_name}} provides a chain abstraction component, `CAProvider`. 
+The `CAProvider` component offers hooks with the same name as the Wagmi library.
 
-It offers hooks with the same name as the Wagmi library. Once the developer switches to importing these hooks from the {{config.extra.arcana.ca_wagmi_sdk_name}} SDK instead of the Wagmi library, these hooks enable the CA functionality automatically wherever deployed in the app code. 
+Change the app code and import these hooks from the 
+{{config.extra.arcana.ca_wagmi_sdk_name}} SDK instead of the Wagmi library. This 
+will enable chain abstracted transactions in the app. No transaction code modifications 
+are needed.
 
-The SDK also provides other non-Wagmi chain abstraction hooks that can be added to the app code for accessing unified balance associated with the user's EOA. Any third-party browser based wallet can be used to issue chain abstracted transactions via the `CAProvider`.
+The SDK also provides other non-Wagmi chain abstraction hooks. These hooks can be added 
+to the app code for accessing unified balance associated with the user's EOA. Any 
+third-party browser based wallet can be used. It can issue chain abstracted transactions 
+via the `CAProvider`.
 
 ### Initialize
 
 {% include "./code-snippets/new_ca_provider.md" %}
 
-For `CAProvider` API details, see [{{config.extra.arcana.ca_wagmi_sdk_name}} Reference]({{config.extra.arcana.ca_wagmi_sdk_ref_url}}).
+For `CAProvider` API details, see 
+[{{config.extra.arcana.ca_wagmi_sdk_name}} Reference]({{config.extra.arcana.ca_wagmi_sdk_ref_url}}).
 
 ### Wagmi Hooks
 
@@ -56,6 +74,7 @@ Use these Arcana hooks to access [[concept-unified-balance|unified balance]] via
 * [`useBalances`](#usebalances) - to get the unified balance values across all supported chains for all supported tokens associated with the EOA
 * [`useBalanceModal`](#usebalancemodal) - to display or hide the unified balance popup widget
 * [`useCAFn()`](#usecafn)  - for chain abstracted bridging and token transfer functionality
+* [`useGetMyIntent()`](usegetmyintent) - get the list of intents created by the user
 
 #### useBalance
 
@@ -195,6 +214,54 @@ The `useCAFn()` response contains the following fields:
   <figcaption>`useCAFn`: Chain Abstracted Bridge and Transfer </figcaption>
 </figure>
 
+#### useGetMyIntents
+
+Used to get a list of intents created by the user.
+
+##### Usage
+
+`useGetMyIntents(page)`
+
+```javascript
+import { useGetMyIntents } from "@arcana/ca-wagmi";
+
+const getMyIntentsResponse = useGetMyIntents(1);
+```
+
+##### Response
+
+`UseQueryResult<RFF[] | null>`
+
+**Sample Response**
+
+```js
+{
+  isLoading: false,
+  isFetching: false,
+  isSuccess: true,
+  isError: false,
+  data: [{
+    id: 107,
+    sources: [{
+      universe: "ETHEREUM",
+      tokenAddress: "0x0b2c639c533813f4aa9d7837caf62653d097ff85",
+      value: 18531n,
+      chainID: 10,
+    }],
+    destinations: [{
+      tokenAddress: "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      value: 10000n,
+    }],
+    destinationUniverse: "ETHEREUM",
+    destinationChainID: 42161
+    fulfilled: true,
+    refunded: false,
+    expiry: 1750070223,
+    deposited: true
+  }],
+  error: null
+}
+```
 
 {% include "./text-snippets/quick-start-deploy-ca.md" %}
 

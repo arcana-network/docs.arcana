@@ -83,6 +83,7 @@ The {{config.extra.arcana.ca_wagmi_sdk_name}} also provides the following additi
 * `useBalances` - Unify the token balance across chains - USDC, USDT, ETH for all supported token types
 * `useBalanceModal` - Display a plug and play widget containing the unified balance
 * `useCAFn` - Allow chain abstracted token bridge and transfer functions
+* `useGetMyIntent` - Get a list of intents created for the user
 
 Refer to the following sample integration code and hook usage.
 

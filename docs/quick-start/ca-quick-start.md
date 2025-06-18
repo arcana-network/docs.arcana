@@ -57,21 +57,29 @@ const usdtBalance = await ca.getUnifiedBalance("usdt")
 
 ### 5. Issue CA Transaction
 
+Web3 apps use the standard EIP-1193 provider to issue transactions. These transactions 
+can be chain abstracted.
+
+Use `getEVMProviderWithCA` to get a CA enabled provider. Replace the standard EIP-1193
+provider in the app with the CA enabled one. Issue `request` calls with 
+`eth_sendTransaction` operation. This lets users spend the unified balance.
+
 ```js
-await ca.request({
-    method: "eth_sendTransaction",
-    params: [{
-        to: "0xEa46Fb4b4Dc7755BA29D09Ef2a57C67bab383A2f", 
-        from: "0x7f521A827Ce5e93f0C6D773525c0282a21466f8d",
-        value: "0x001"
-    }],
-})
+const providerWithCA = ca.getEVMProviderWithCA();
+
+await providerWithCA.request({
+  method: "eth_sendTransaction",
+  params: [
+    {
+      to: "0xEa46Fb4b4Dc7755BA29D09Ef2a57C67bab383A2f",
+      from: "0x7f521A827Ce5e93f0C6D773525c0282a21466f8d",
+      value: "0x001",
+    },
+  ],
+});
 ```
 
-Developers can let users manage allowances in the Web3 app by accessing current allowance configurations associated with their EOA wallet and modify or revoke them.
-
- [[ca-integrate-web#advanced|Learn more]] about how to handle chain abstraction user intent processing events and other advanced functionality in the app.
-
+ [[ca-integrate-web#advanced|Learn more...]]
 
 {% include "./text-snippets/quick-start-deploy-ca.md" %}
 

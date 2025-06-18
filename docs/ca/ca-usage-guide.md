@@ -13,9 +13,11 @@ of the file in the `ca` repo: https://github.com/arcana-network/ca-sdk/blob/main
 
 # {{config.extra.arcana.ca_sdk_name}} Usage
 
-Learn how to integrate {{config.extra.arcana.company_name}}'s Chain Abstraction in a Web3 app to enable unified balance.
+Learn how to integrate {{config.extra.arcana.company_name}}'s Chain Abstraction
+in a Web3 app to enable unified balance.
 
-[:octicons-cross-reference-16:{ .icon-color } {{config.extra.arcana.ca_sdk_name}} Reference]({{config.extra.arcana.ca_sdk_ref_url}}){ .md-button }
+[:octicons-cross-reference-16:{ .icon-color } {{config.extra.arcana.ca_sdk_name}}
+Reference]({{config.extra.arcana.ca_sdk_ref_url}}){ .md-button }
 
 ## Installation
 
@@ -25,13 +27,13 @@ npm install @arcana/ca-sdk
 
 ## Quick start
 
-```js
+```ts
 import { CA } from "@arcana/ca-sdk";
 
 const provider = window.ethereum;
 
 const ca = new CA();
-ca.setEVMProvider(provider);  //Specify the standard EVM Provider before initializing CA
+ca.setEVMProvider(provider);
 
 await ca.init();
 
@@ -51,183 +53,165 @@ await providerWithCA.request({
 
 ## Usage
 
-### Import & Initialize
+To integrate, create a `CA` object and initialize it. Get the chain abstraction enabled EVM Provider. Use it as a drop in replacement for an EIP-1193 provider (e.g., window.ethereum) in the Web3 app code.
 
-```js
+### Initialize
+
+```ts
 import { CA } from "@arcana/ca-sdk";
 
-provider = window.ethereum;
-
 const ca = new CA();
-ca.setEVMProvider(provider);
-await ca.init();  // Initialize the CA provider before calling any API function
+ca.setEVMProvider(window.ethereum);
+
+await ca.init();
 ```
 
-## API
+### Hooks
 
-### UI Hooks 
+Manage allowance setup and intent processing flows in the Web3 app UI.
 
-The following UI hooks help in managing the [[concept-allowances|allowance]] setup and [[concept-intent|intent]] processing flows.
+#### `setOnAllowanceHook`
 
-```js
-ca.setOnAllowanceHook(async ({ allow, deny, sources }) => {
-  // This is a hook for the dev to show user the allowances that need to be setup for the current tx to happen
-  // where,
+```ts
+import type { OnAllowanceHook, OnIntentHook } from "@arcana/ca-sdk";
+
+ca.setOnAllowanceHook(async ({ allow, deny, sources }: Parameters<OnAllowanceHook>[0]) => {
+  // This is a hook for the dev to show user the allowances that need to be set up
+  // for the current tx to happen.
+
   // sources: an array of objects with minAllowance, chainID, token symbol, etc.
-  // allow(allowances): continues the transaction flow with allowances (allowances.length === sources.length);
+
+  // allow(allowances): continues the transaction flow with `allowances` array
+  // allowances.length === sources.length;
+  // valid values are "max" | "min" | string | bigint
+
   // deny(): stops the flow
 });
+```
 
+#### `setOnIntentHook`
 
-ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
+```ts
+ca.setOnIntentHook(({ intent, allow, deny, refresh }: Parameters<OnIntentHook>[0]) => {
   // This is a hook for the dev to show user the intent, the sources and associated fees
-  // where,
+
   // intent: Intent data containing sources and fees for display purpose
+
   // allow(): accept the current intent and continue the flow
+
   // deny(): deny the intent and stop the flow
-  // refresh(): should be on a timer of 5s to refresh the intent (old intents might fail due to fee changes if not refreshed)
+
+  // refresh(): should be on a timer of 5s to refresh the intent
+  // (old intents might fail due to fee changes if not refreshed)
+
 });
 ```
 
-### Get Intents
+### Intents
 
-Get the intents created by the user.
+Get the list of intents representing user's request for funds. Chain abstracted transactions service these requests.
 
-```js
-const intentList = await ca.getMyIntents(1); // 1 - Page number, each page has 100 intents
+```ts
+import type { RFF } from "@arcana/ca-sdk"
+
+const page = 1
+const intentList: RFF[] = await ca.getMyIntents(page);
 ```
 
 ### Allowance
 
-[[concept-allowances|Allowances]] help activate the Chain Abstraction (CA) feature offered by {{config.extra.arcana.company_name}}.
+Get allowance values configured for the chain abstracted transactions. Set to unlimited by default for all supported chains and tokens. Developers can update the allowance settings via `setOnAllowanceHook()`.
 
-#### Get Allowance
-
-```js
-// Get USDC allowance for polygon chain
-await ca.allowance().tokens(["USDC"]).chain(137).get()
-
-// Get USDC & USDT allowance for all supported chains
-await ca.allowance().tokens(["USDC", "USDT"]).get()
-
-// Get all supported token allowances for all supported chains
-await ca.allowance().get()
-```
-
-#### Set Allowance
-
-```js
-await ca.allowance().tokens(["USDC"]).chain(42161).amount(BigInt(100000000000)).set()
-```
-
-#### Revoke Allowance
-
-```js
-await ca.allowance().tokens(["USDC"]).chain(42161).revoke()
+```ts
+await ca.allowance().get({
+  tokens: ["USDC"],
+  chainID: 137,
+});
 ```
 
 ### Unified Balance
 
-```js
-const balances = await ca.getUnifiedBalances()
-const usdtBalance = await ca.getUnifiedBalance("usdt")
+Get chain abstracted unified balance in the user's EOA.
+
+#### `getUnifiedBalances`
+
+Get total balance for all supported tokens across all chains.
+
+```ts
+const balances = await ca.getUnifiedBalances();
+```
+
+#### `getUnifiedBalance`
+
+Get total balance for a specific token across all chains.
+
+```ts
+const usdtBalance = await ca.getUnifiedBalance("usdt");
 ```
 
 ### Transfer
 
-Use `transfer` to issue a chain abstracted blockchain transaction and deposit funds to an EOA through the [[concept-unified-balance|unified balance]].
+Use chain abstracted transactions to transfer funds. Transfer to any chain with a specified token amount. Source funds from the unified balance.
 
-```js
-await ca.transfer().to("0x...").amount(5).chain(10).token("eth").exec()
+```ts
+const handler = await ca.transfer({
+  to: "0x...",
+  amount: 5,
+  chainID: 10,
+  token: "eth",
+});
+
+// Execute the transfer
+const hash = await handler.exec();
+
+// Simulate the transfer, returns intent data and token info
+const response = await handler.simulate();
 ```
-
-`chain()` is optional, it will use the current chain as input if not specified.
-
-### getEVMProviderWithCA
-
-Use `getEVMProviderWithCA` to obtain an EIP-1193 provider. 
-
-```js
-const providerWithCA = ca.getEVMProviderWithCA();
-```
-
-### Request
-
-Use the `getEVMProviderWithCA` to obtain an EIP-1193 provider and then issue the `request` method `eth_sendTransaction` operation for enabling a chain abstracted transaction. It uses unified balance funds to deposit funds in any smart contract or to transfer ERC20 tokens in a chain abstracted transaction.
-
-```js
-const providerWithCA = ca.getEVMProviderWithCA();
-
-await providerWithCA.request({
-    method: "eth_sendTransaction",
-    params: [{
-        to: "0xEa46Fb4b4Dc7755BA29D09Ef2a57C67bab383A2f", 
-        from: "0x7f521A827Ce5e93f0C6D773525c0282a21466f8d",
-        value: "0x001"
-    }],
-})
-```
-
-{% include "./text-snippets/ca/transfer_note.md" %}
 
 ### Bridge
 
-Use the `bridge` function to bridge chain abstracted funds via the unified balance on any destination chain by utilizing the approved source chain funds.
+Use chain abstracted transactions to bridge funds. Bridge to a specified token and chain using unified balance.
 
-```js
-await ca.bridge().token("usdt").amount(10).chain(137).exec();
+```ts
+const handler = await ca.bridge({
+  token: "usdt",
+  amount: 10,
+  chainID: 137,
+});
+
+// Execute the bridge
+await handler.exec();
+
+// Simulate the bridge, returns intent data and token info
+const response = await handler.simulate();
 ```
 
-`chain()` is optional, it will use the current chain as input if not specified.
+### Events
 
-### CA Events
+Handle intent processing events for the chain abstracted transactions.
 
 #### Add Listener
 
-```js
+```ts
 ca.caEvents.on("expected_steps", (data) => {
-    state.value.steps = data.map(s => ({ ...s, done: false }))
-})
+  state.value.steps = data.map((s) => ({ ...s, done: false }));
+});
 
-ca.caEvents.on("step_complete", data => {
-    const v = state.value.steps.find(s => {
-        return s.typeID === data.typeID
-    })
-    if (v) {
-        v.done = true
-    }
-})
-
-// @deprecated
-ca.addCAEventListener((data) => {
-    switch(data.type) {
-        case "EXPECTED_STEPS":{
-            // store data.data(an array of steps which will be followed)
-            state.value.steps = data.data.map(s => ({ ...s, done: false }))
-            break;
-        }
-        case "STEP_DONE": {
-            const v = state.value.steps.find(s => {
-                return s.typeID === data.data.typeID
-            })
-            if (v) {
-                v.done = true
-            }
-            break;
-        }
-    }
+ca.caEvents.on("step_complete", (data) => {
+  const v = state.value.steps.find((s) => {
+    return s.typeID === data.typeID;
+  });
+  if (v) {
+    v.done = true;
+  }
 });
 ```
 
 #### Remove Listener
 
-```js
+```ts
 ca.caEvents.removeListener("expected_steps", () => {...})
 ca.caEvents.removeListener("step_complete", () => {...})
-
-// @deprecated
-ca.removeCAEventListener((data) => {...})
-
 ```
 
-Refer to the [CA SDK Reference](https://ca-sdk-ref-guide.netlify.app/modules) for details.
+Refer to the [CA SDK Reference Guide](https://ca-sdk-ref-guide.netlify.app/modules) for details.

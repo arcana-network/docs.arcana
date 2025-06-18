@@ -1,11 +1,11 @@
 === "npm"
 
     ```bash
-    npm install --save @arcana/ca-wagmi
+    npm install --save @arcana/ca-sdk @arcana/ca-wagmi
     ```
 
 === "yarn"
 
     ```bash
-    yarn add @arcana/ca-wagmi
+    yarn add @arcana/ca-sdk @arcana/ca-wagmi
     ```

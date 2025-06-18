@@ -9,9 +9,9 @@ arcana:
 
 # Get Started: Wagmi Apps
 
-Enable [[concept-unified-balance|unified-balance]] and chain abstracted transactions in Web3 apps built with the [Wagmi](https://wagmi.sh/) library by integrating with the [[concept-cawagmi|{{config.extra.arcana.ca_wagmi_sdk_name}}]]. 
+Enable [[concept-unified-balance|unified-balance]] and chain abstracted transactions in Web3 apps built with the [Wagmi](https://wagmi.sh/) library. Integrate with the [[concept-cawagmi|{{config.extra.arcana.ca_wagmi_sdk_name}}]].
 
-{{config.extra.arcana.ca_wagmi_sdk_name}} lets you add chain abstracted `bridge` and `transfer` functions in `wagmi` apps. Replace the `useSendTransaction` and `useWriteContract` hooks of the Wagmi library with those provided by the SDK to enable chain abstraction in a transparent manner.
+{{config.extra.arcana.ca_wagmi_sdk_name}} enables chain abstracted `bridge` and `transfer` functions in `wagmi` apps. Replace the `useSendTransaction` and `useWriteContract` hooks of the Wagmi library with those provided by the SDK to enable chain abstraction in a transparent manner.
 
 !!! an-note "Wagmi Plug & Play Widget"
 
@@ -23,7 +23,8 @@ Enable [[concept-unified-balance|unified-balance]] and chain abstracted transact
 
 ## 2. Integrate
 
-Use the `CAProvider` component from {{config.extra.arcana.ca_wagmi_sdk_name}} in the app code. 
+Use the `CAProvider` component from {{config.extra.arcana.ca_wagmi_sdk_name}}. Specify the CA object as the `client`
+parameter of the component. 
 
 {% include "./code-snippets/new_ca_provider.md" %}
 
@@ -52,7 +53,15 @@ To use the chain abstraction enabled Wagmi hooks, make sure you import the follo
 
 {% include "./code-snippets/ca_wagmi_uni_balance.md" %}
 
-## 5. Bridge & Transfer
+##5. Get User Intents
+
+```ts
+import { useGetMyIntents } from "@arcana/ca-wagmi";
+
+const getMyIntentsResponse = useGetMyIntents(1);
+```
+
+## 6. Bridge & Transfer
 
 * `useCAFn` - Allows chain abstracted bridge and transfer functions
 
