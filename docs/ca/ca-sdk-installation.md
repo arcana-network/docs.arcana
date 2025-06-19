@@ -1,20 +1,21 @@
 ---
 alias: ca-sdk-installation
-title: 'Install CA SDK'
+title: 'Arcana CA SDKs'
 description: 'Multiple flavors of the Arcana CA SDK depending upon the app type. Use the correct SDK package for installation. For Web apps, use the CA SDK. For Wagmi apps, use the CA Wagmi SDK.'
 arcana:
   root_rel_path: ..
 ---
 
-# Install {{config.extra.arcana.ca_sdk_name}}
+# Chain Abstraction SDKs
 
-{{config.extra.arcana.company_name}}'s [[concept-ca|Chain Abstraction]] SDK enables [[concept-unified-balance|unified balance]] feature for Web3 app users and lets them spend on any chain.
+Enable [[concept-unified-balance|unified balance]] and [[concept-ca|chain abstracted]] transactions for Web3 app users.
 
-Web3 app developers must install the appropriate {{config.extra.arcana.company_name}} CA SDK package according to the Web3 app type listed in the table below.
+You may need to install one or more {{config.extra.arcana.company_name}} SDK packages
+according to the app type.
 
 {% include "./text-snippets/ca_sdk_flavors.md" %}
 
-## App Types
+## Install SDKs
 
 ### Web Apps
 

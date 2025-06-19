@@ -74,7 +74,7 @@ Use these Arcana hooks to access [[concept-unified-balance|unified balance]] via
 * [`useBalances`](#usebalances) - to get the unified balance values across all supported chains for all supported tokens associated with the EOA
 * [`useBalanceModal`](#usebalancemodal) - to display or hide the unified balance popup widget
 * [`useCAFn()`](#usecafn)  - for chain abstracted bridging and token transfer functionality
-* [`useGetMyIntent()`](usegetmyintent) - get the list of intents created by the user
+* [`useGetMyIntents()`](#usegetmyintents) - get the list of intents created by the user
 
 #### useBalance
 

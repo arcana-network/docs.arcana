@@ -474,18 +474,18 @@ nav:
     - ca-index.md
     - Developers:
       - Quick Start: 
-        - Web Apps: quick-start/ca-quick-start.md
         - Wagmi Apps: quick-start/ca-wagmi-quick-start.md
+        - Web Apps: quick-start/ca-quick-start.md
         - Auth & CA Apps: quick-start/auth-ca-wagmi-quick-start.md
       - Usage: 
         - Overview: ca/ca-usage-overview.md
         - Install: ca/ca-sdk-installation.md
         - Integrate: 
-          - ca/integrate/web.md
           - ca/integrate/wagmi.md
+          - ca/integrate/web.md
       - APIs: 
-        - Web: ca/ca-usage-guide.md
-        - Wagmi: ca/ca-wagmi-usage-guide.md
+        - ca-wagmi: ca/ca-wagmi-usage-guide.md
+        - ca-sdk: ca/ca-usage-guide.md
       - FAQ: faq/ca/faq.md
       - Concepts: 
         - Chain Abstraction: concepts/ca/chain-abstraction.md
@@ -520,14 +520,14 @@ nav:
         - CA for Users: ca/ca-users.md
         - Archives: 
           - relnotes/archives/ca-index.md
+          - CA Wagmi SDK:
+            - v0.0.6: relnotes/rn-ca-wagmi-sdk-v0.0.6.md
+            - v0.0.5: relnotes/rn-ca-wagmi-sdk-v0.0.5.md
           - CA SDK:
             - v0.0.7: relnotes/rn-ca-v0.0.7.md
             - v0.0.5: relnotes/rn-ca-v0.0.5.md
             - v0.0.3: relnotes/rn-ca-v0.0.3.md
             - v0.0.2: relnotes/rn-ca-v0.0.2.md
-          - CA Wagmi SDK:
-            - v0.0.6: relnotes/rn-ca-wagmi-sdk-v0.0.6.md
-            - v0.0.5: relnotes/rn-ca-wagmi-sdk-v0.0.5.md
       - Docs Collab:
         - Partners: partner-docs/ca.md
         - Linea:

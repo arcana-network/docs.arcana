@@ -297,64 +297,63 @@
     ```
 
 === "wallet-options.ts"
-    ```ts
+
+    ```js
     import * as React from "react";
     import { Connector, useConnect } from "wagmi";
 
-    function WalletOption({
-    connector,
-    onClick,
-    }: {
-    connector: Connector;
-    onClick: () => void;
-    }) {
-    const [ready, setReady] = React.useState(false);
-
-    React.useEffect(() => {
-        (async () => {
-        const provider = await connector.getProvider();
-        setReady(!!provider);
-        })();
-    }, [connector]);
-
-    return (
-        <>
-        <div>
-            <button
-            disabled={!ready}
-            type="button"
-            onClick={onClick}
-            >
-            <img
-                src={connector.icon}
-                aria-hidden="true"
-            />
-            {connector.name}
-            </button>
-        </div>
-        </>
-    );
+    export function WalletOptions() {
+        const { connectors, connect } = useConnect();
+        console.log({ connectors });
+        return (
+            <>
+            <h3>Wallets</h3>
+            <hr></hr>
+            {connectors
+                .filter((c) => c.id !== "injected")
+                    .map((connector) => (
+                        <WalletOption
+                            key={connector.uid}
+                            connector={connector}
+                            onClick={() => connect({ connector })}/>
+                    ))}
+            </>
+        );
     }
 
-    export function WalletOptions() {
-    const { connectors, connect } = useConnect();
+    function WalletOption({
+        connector,
+        onClick,
+        }: {
+        connector: Connector;
+        onClick: () => void;
+        }) {
+        const [ready, setReady] = React.useState(false);
 
-    return (
-        <>
-        <h3>
-            Wallets
-        </h3>
-        <hr></hr>
-        {connectors
-            .filter((c) => c.id !== "injected")
-            .map((connector) => (
-            <WalletOption
-                key={connector.uid}
-                connector={connector}
-                onClick={() => connect({ connector })}
-            />
-            ))}
-        </>
-    );
+        React.useEffect(() => {
+            (async () => {
+            const provider = await connector.getProvider();
+            setReady(!!provider);
+            })();
+        }, [connector]);
+
+        return (
+            <>
+            <div>
+                <button
+                disabled={!ready}
+                type="button"
+                onClick={onClick}
+                >
+                <img
+                    src={connector.icon}
+                    className="w-4 h-4 me-2 -ms-1 text-[#626890]"
+                    aria-hidden="true"
+                />
+                {connector.name}
+                </button>
+            </div>
+            </>
+        );
     }
     ```
