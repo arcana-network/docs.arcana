@@ -1,6 +1,6 @@
 === "`main.tsx`"
 
-    ```tsx
+    ```tsx hl_lines="5 6 10 17 19"
     import { StrictMode } from "react";
     import { createRoot } from "react-dom/client";
     import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
@@ -57,7 +57,7 @@
 
 === "account.tsx"
 
-    ```tsx
+    ```tsx hl_lines="8-13 20 25 26"
     import {
         useAccount,
         useDisconnect,

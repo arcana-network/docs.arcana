@@ -24,7 +24,7 @@ and bug fix. A few APIs have changed.
 - New hook added:  `useBalance({ symbol: string })` to get the specified token balance across the supported chains.
 - Added `transfer` and `bridge` functions to the hook `useCAFn()` for enabling chain abstracted functionality.
 - Added checks to disable chain abstraction and allow regular behavior for wallet transactions if the user denies the sign in with Arcana at the start of the transaction.
-- Other changes: UI enhancements, improved documentation. 
+- Other changes: UI enhancements, improved documentation.
 
 Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
 

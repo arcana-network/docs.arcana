@@ -8,15 +8,16 @@
 
 ---
  
-This major release of {{config.extra.arcana.ca_wagmi_sdk_name}}.
-Web3 apps integrated with the SDK must update the integration code.
+This is a major release of the {{config.extra.arcana.ca_wagmi_sdk_name}} with 
+usage changes.
 
-- **Installation change:** In addition to the `ca-wagmi` SDK, install `ca-sdk` also.
-- **`CAProvider` change:** The `CAProvider` component can be configured now with `client` and `network` (optional) params. Create a new `CA` object and specify it as the `client` parameter when creating the `CAProvider` component.
-- New hook: Use `useGetMyIntent())` to get a list of intents created in response to user's requests for funds. These requests are fulfilled as part of the chain abstraction protocol.
-- Added `transfer` and `bridge` functions to the hook `useCAFn()` for enabling chain abstracted functionality.
+- **Installation change:** In addition to the `ca-wagmi` SDK, also install `ca-sdk`.
+- **`CAProvider` change:** The `CAProvider` requires `client` and `network` (optional) params. Create a new `CA` object and specify it as the `client` parameter when creating the `CAProvider` component.
+- **New hook:** Use [`useGetMyIntent(page))`](https://ca-wagmi-sdk-ref-guide.netlify.app/functions/usegetmyintents) to get a list of intents created in response to user's requests for funds.
 
 Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
+
+See {% include "./text-snippets/cawagmisdkref_url.md" %} for details.
 
 [Changelog](https://github.com/arcana-network/ca-wagmi/releases/latest){ .md-button }
 

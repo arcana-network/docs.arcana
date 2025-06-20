@@ -9,18 +9,17 @@ arcana:
 
 # Get Started: Wagmi Apps
 
-Integrate Web3 apps built with the [Wagmi](https://wagmi.sh/) library with
-the [[concept-cawagmi|{{config.extra.arcana.ca_wagmi_sdk_name}}]] to enable:
+Integrate Web3 [Wagmi](https://wagmi.sh/) apps with the
+[[concept-cawagmi|{{config.extra.arcana.ca_wagmi_sdk_name}}]] to enable:
 
 * [[concept-unified-balance|Unified-balance]]
 * [[concept-ca|Chain abstracted]] transactions
 
 Replace the `useSendTransaction` and `useWriteContract` hooks from the Wagmi library.
-Instead, use the versions provided by the SDK.
-These support chain abstracted transactions.
+Instead, use the ones provided by the SDK. They support chain abstracted transactions.
 
 Use the [[concept-unified-balance-wagmi-pnp|plug-and-play UI modal]].
-It shows the [[concept-unified-balance|unified balance]] in the Wagmi app context.
+It shows the unified balance in the Wagmi app context.
 
 ## 1. Install
 
@@ -37,8 +36,6 @@ See [{{config.extra.arcana.ca_wagmi_sdk_name}} Reference]({{config.extra.arcana.
 The `useBalanceModal ` hook displays the unified balance plug and play widget.
 
 {% include "./code-snippets/ca_wagmi_use_balance_modal.md" %}
-
-{% include "./text-snippets/quick-start-deploy-ca.md" %}
 
 ## 4. CA Transactions
 
@@ -64,14 +61,14 @@ The SDK also provides chain abstraction hooks to:
 
 [[ca-integrate-wagmi#arcana-hooks| Learn more...]]
 
+{% include "./text-snippets/quick-start-deploy-ca.md" %}
+
 {% include "./text-snippets/quick-start-int-ca-wagmi-sdk.md" %}
 
 <figure markdown="span">
   <img class="width_85pc an-screenshots-noeffects width_50pc" alt="With CA" src="{{config.extra.arcana.img_dir}}/ca-sdk-example-bridge-transfer.{{config.extra.arcana.img_gif}}"/>
   <figcaption>`useCAFn`: Chain Abstracted Bridge and Transfer </figcaption>
 </figure>
-
-{% include "./text-snippets/quick-start-deploy-ca.md" %}
 
 ## See Also
 
