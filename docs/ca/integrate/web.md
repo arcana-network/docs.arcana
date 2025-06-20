@@ -14,8 +14,8 @@ Integrate {{page.meta.arcana.app_type}} apps with the
 [{{config.extra.arcana.ca_sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/ca/casdk.md) 
 to enable:
 
-* [[concept-unified-balance|unified balance]]
-* [[concept-ca|chain abstracted]] transactions
+* [[concept-unified-balance|Unified balance]]
+* [[concept-ca|Chain abstracted]] transactions
 
 App users can spend funds on any chain.
 They do not need to switch chains or bridge assets.

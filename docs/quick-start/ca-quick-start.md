@@ -39,6 +39,13 @@ enables chains abstraction for `eth_sendTransaction` operations via
 
 {% include "./code-snippets/ca_get_req_prov.md" %}
 
+## 5. Advanced
+
+The SDK also provides functions to:
+
+* View user intents
+* Issue chain abstracted `bridge` and `transfer` functions 
+
 [[ca-integrate-web#ca-transactions|Learn more...]]
 
 {% include "./text-snippets/quick-start-deploy-ca.md" %}
