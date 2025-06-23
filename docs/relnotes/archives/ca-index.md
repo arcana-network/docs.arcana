@@ -17,4 +17,5 @@ arcana:
 
 === "CA Wagmi SDK"
 
+    [[rn-ca-wagmi-v0.0.6| :material-note-text:{ .icon-color } CA v0.0.6]]{ .md-button }
     [[rn-ca-wagmi-v0.0.5| :material-note-text:{ .icon-color } CA v0.0.5]]{ .md-button }

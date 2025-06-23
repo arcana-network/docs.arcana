@@ -6,7 +6,7 @@
 
 ## What is New?
  
-This major SDK release contains refactored, optimized code and several usage improvements. It requires some changes to the  integration code that uses chain abstraction enabled `transfer`, `bridge` and `request` methods provided by the SDK. 
+This major SDK release contains refactored, optimized code and several usage improvements. It requires some changes to the  integration code that uses the following SDK methods. 
 
 * [[rn-latest-ca#transfer|`transfer`]]
 * [[rn-latest-ca#bridge|`bridge`]]
@@ -14,7 +14,8 @@ This major SDK release contains refactored, optimized code and several usage imp
 
 ### `transfer`
 
-Use `transfer` to issue a chain abstracted blockchain transaction and deposit funds to an EOA through the [[concept-unified-balance|unified balance]].
+Use `transfer` to issue a chain abstracted blockchain transaction. 
+Get the handler to simulate the transfer execution for intent details.
 
 === "New"
 
@@ -41,7 +42,8 @@ Use `transfer` to issue a chain abstracted blockchain transaction and deposit fu
 
 ### `bridge`
 
-Use `bridge` to issue a chain abstracted blockchain transaction and bridge the [[concept-unified-balance|unified balance]] funds to a desired destination chain.
+Use `bridge` to issue a chain abstracted blockchain transaction.
+Get the handler to simulate the bridge execution for intent details.
 
 === "New"
 
@@ -67,7 +69,10 @@ Use `bridge` to issue a chain abstracted blockchain transaction and bridge the [
 
 ### `getEVMProviderWithCA`
 
-The new [[web-ca-usage-guide#getevemproviderwithca|`getEVMProviderWithCA`]] method retrieves the chain abstraction enabled EIP-1193 provider. Use this provider to call [[web-ca-usage-guide#request|`request`]] and issue `eth_sendTransaction` operation.
+The new [[web-ca-usage-guide#getevemproviderwithca|`getEVMProviderWithCA`]] method 
+retrieves the chain abstraction enabled EIP-1193 provider. Use this provider to
+issue [[web-ca-usage-guide#request|`request`]] with `eth_sendTransaction`
+for chain abstracted transactions.
 
 ```ts
 
@@ -80,9 +85,8 @@ const providerWithCA = ca.getEVMProviderWithCA();  // Get EIP-1193 provider firs
 
 ### `request`
 
-The SDK now offers a better use model for `request` calls in a Web3 app that is easier to integrate. 
-
-Web3 apps must use the `getEVMProviderWithCA` method to get a chain abstraction enabled EIP-1193 provider. This provider must be used to issue the standard `request` calls for Web3 wallet operations. 
+Get a chain abstraction enabled EIP-1193 provider with `getEVMProviderWithCA`.
+Use this provider to issue chain abstracted `request` with `eth_sendTransaction`. 
 
 === "New"
 
@@ -123,6 +127,8 @@ Web3 apps must use the `getEVMProviderWithCA` method to get a chain abstraction 
     ```
 
 Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
+
+See {% include "./text-snippets/casdkref_url.md" %} for details.
 
 [Changelog](https://github.com/arcana-network/ca-sdk/releases/latest){ .md-button } 
 

@@ -8,76 +8,105 @@ arcana:
 
 # Solver Dashboard
 
-Solvers play a key role in enabling the users to spend any asset on any
-destination chain. A [[concept-solver| solver]] is a third-party market
-maker that runs the {{config.extra.arcana.company_name}} provided solver
-executable. 
+Solver Dashboard helps solver administrators in setting up solver profiles. They
+can track and manage solver funds for the configured solver profiles.
 
-Only a permitted set of solvers can interact with the 
-{{config.extra.arcana.company_name}} chain abstraction (CA) protocol.
+??? an-tip "What is a Solver?"
 
-The protocol converts user intents into requests for funds (RFF). It publishes
-these requests on a specified channel. Solvers watch the channel for new
-requests. They compete to provide the desired liquidity and fulfill each
-request.
+    A [[concept-solver| solver]] is a third-party market maker that runs the
+    {{config.extra.arcana.company_name}} provided solver executable. Solvers
+    play a key role in the {{config.extra.arcana.company_name}} chain abstraction
+    (CA) protocol. They provide liquidity and enable users to spend any asset on
+    any destination chain. 
 
-The Solver Dashboard allows an administrator to manage one or more solvers.
-It allows the admin to perform the following actions:
+    The protocol converts user intents into requests for funds (RFF). It publishes
+    these requests on a specified channel. Only a permitted set of solvers can
+    interact with the protocol.
+
+    Solvers watch the channel for new requests. They compete to provide the desired
+    liquidity and fulfill user requests.
+
+Solver admins can perform the following actions:
 
 {% include "./text-snippets/solver_actions.md" %}
-
-## Prerequisites
-
-To access the Solver Dashboard, you need two things:
-
-1. An EOA wallet address
-2. Registration with the {{config.extra.arcana.company_name}} protocol
-
-Solver administrators have to set up authorized EOA addresses when
-configuring a solver. The same admin address be authorized to 
-manage more than one solver. The dashboard displays details in the
-context of a single solver at a time.
-
-To run a solver, you need to:
-
-* [[solver-config|Configure the solver]] with the required settings
-* Run the executable on a server
-
-Once running, the solver takes part in the {{config.extra.arcana.company_name}}
-CA protocol.
-
-## Connect Wallet
-
-To access the dashboard, visit [https://solver.arcana.network/](https://solver.arcana.network/).
-
-Solver administrators must connect the wallet by using the same EOA address
-that was registered earlier. Sign the message displayed in the wallet UI
-asking for permission to connect to the dashboard and view the landing page.
 
 <figure markdown="span">
     <img alt="Solver Dashbaord" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_login.{{config.extra.arcana.img_png}}"/>
     <figcaption>Solver Dashboard</figcaption>
 </figure>
 
-### EOA Addresses
+## Prerequisites
 
-The landing page shows:
+To access the Solver Dashboard, the solver admin must:
 
-* EVM and non-EVM addresses for your connected wallet
-* A dropdown list of solvers you can manage
+1. Own an EOA, wallet address
+2. Register the EOA with the {{config.extra.arcana.company_name}} protocol
+3. Make sure the solver is accessible at a URL such as `ws://ip:port/api/v1/admin-api`
+
+!!! an-caution "Running a Solver"
+
+    To run a solver:
+    
+    * Get the solver executable from {{config.extra.arcana.company_name}}
+    * [[solver-config|Configure the solver]] settings
+    * Run the executable on a server; it should be accessible via WebSocket 
+      `ws:` or WebSocket with TLS `wss:`
+      
+    Once the executable runs, the solver is active and participates in the 
+    {{config.extra.arcana.company_name}} CA protocol. **The solver admin will
+    require the `wss` URL to set up and manage the solver profile in the solver 
+    dashboard.**
+
+## Connect Wallet
+
+To access the dashboard, visit [https://solver.arcana.network/](https://solver.arcana.network/).
+
+At the initial access, the admin must set up a solver profile by specifying:
+
+* Solver name
+* Solver URL
+
+### Solver URL
+
+Solver URL refers to the WebSocket communication channel specified as:
+ `wss://ip:port/api/v1/admin-api` or `ws://ip:port/api/v1/admin-api`
+
+<figure markdown="span">
+    <img alt="Solver URL" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_url.{{config.extra.arcana.img_png}}"/>
+    <figcaption>Solver Profiles</figcaption>
+</figure>
+
+Next, solver admins must use a registered EOA to connect the wallet to the solver 
+dashboard and log in.
+
+<figure markdown="span">
+    <img alt="Solver Dashbaord" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_connect.{{config.extra.arcana.img_png}}"/>
+    <figcaption>Connect Wallet</figcaption>
+</figure>
+
+After the wallet connects, the admin can view the total available solver funds. The dashboard also shows thresholds for various supported tokens. Admins can view and configure fees for the supported liquidity routes.
+
+## EOA Addresses
+
+The top RHS on the landing page shows:
+
+* EVM and non-EVM addresses for the connected wallet
+* Option to disconnect the wallet
 
 <figure markdown="span">
     <img alt="Solver EOA Addresses" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_eoa_addr.{{config.extra.arcana.img_png}}"/>
     <figcaption>Solver EOA Addresses</figcaption>
 </figure>
 
-### Select Solver
+## Select Solver
 
-You can manage one or more solvers with your registered EOA account. Select 
-the solver you want to view or configure by clicking on the dropdown on the
-top right next to the address.
+Manage one or more solvers registered for the EOA account. Choose the solver 
+profile via the dropdown list at the top RHS.
 
-The landing page shows the settings and solver usage data for the selected solver.
+The selected solver page shows:
+
+* Wallet balances: total balance, per token balance
+* Token threshold setting
 
 <figure markdown="span">
     <img alt="Solver Selection" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_solverinfo.{{config.extra.arcana.img_png}}"/>
@@ -141,12 +170,12 @@ You can filter the fees using these fields:
 
 The *Fees* field on the right is editable and solvers can change them as needed.
 The protocol uses the fees you set in the dashboard. When a user creates an intent,
-the protocol displays fee details including solver fees, when building the 
-request for funds ensuring fee transparency.
+the protocol displays all fee details, including solver fees. This ensures 
+transparency when building the request for funds.
 
-If the admin modifies the fees via the solver dashboard, the UI submits the
-updated fee information to the solver. The solver turns it into a Cosmos transaction
-and submits on chain. The updated fee value becomes effective from the next block.
+If the admin modifies the fees via the solver dashboard, the solver turns it
+into a Cosmos SDK transaction. It submits the transaction on chain. The updated 
+fee becomes effective from the next block.
 
 <figure markdown="span">
     <img alt="Solver Route Filters" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_filters.{{config.extra.arcana.img_png}}"/>
@@ -155,14 +184,14 @@ and submits on chain. The updated fee value becomes effective from the next bloc
 
 ### Route Earnings
 
-You can see the earnings for each route next to the fees field. A miniature 
-earnings chart appears next to it.
+You can see the earnings for each route next to the fees field.
 
 <figure markdown="span">
     <img alt="Solver Earnings" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_earnings.{{config.extra.arcana.img_png}}"/>
     <figcaption>Solver Earnings</figcaption>
 </figure>
 
+<!---
 ### Earnings Chart
 
 Find the chart icon next to the earnings field. Click it to see a historical 
@@ -173,8 +202,20 @@ view of earnings for that route.
     <figcaption>Earnings Chart</figcaption>
 </figure>
 
+NOT IMPLEMENTED YET
+--->
+
+## Profile
+
+The solver profile page displays all configured solvers. The connected admin EOA 
+manages these solvers. They can edit or delete the configured solver profiles.
+
+<figure markdown="span">
+    <img alt="Solver Profile" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/solver_db_profile.{{config.extra.arcana.img_png}}"/>
+    <figcaption>Solver Profiles</figcaption>
+</figure>
+
 ## Disconnect
 
-Click on the account icon in the top right corner to display the solver 
-selection drop down menu. Select 'log out' to disconnect your wallet from the 
-Solver Dashboard.
+Click on the account icon in the top right corner. Then select the option to 
+disconnect your wallet from the Solver Dashboard.

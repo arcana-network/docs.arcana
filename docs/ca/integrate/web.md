@@ -4,17 +4,21 @@ title: 'Web Apps'
 description: 'Integrate dApp with the CA SDK offering Arcana Chain Abstraction and enable unified balance for users.'
 arcana:
   root_rel_path: ../..
-  app_type: "'Web'"
+  app_type: "'Web3'"
   app_example_submodule: "'`ca-sdk-example`'"
 ---
 
 # Integrate Web App
 
-Integrate {{page.meta.arcana.app_type}} Web3 apps with the [{{config.extra.arcana.ca_sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/ca/casdk.md) to enable [[concept-unified-balance|unified balance]]. 
+Integrate {{page.meta.arcana.app_type}} apps with the 
+[{{config.extra.arcana.ca_sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/ca/casdk.md) 
+to enable:
 
-With unified balance, Web3 app users can access funds across chains.
-They can spend assets on any chain using chain abstraction.
-No need to switch chains or bridge assets for gas.
+* [[concept-unified-balance|Unified balance]]
+* [[concept-ca|Chain abstracted]] transactions
+
+App users can spend funds on any chain.
+They do not need to switch chains or bridge assets.
 
 ## Prerequisites
 
@@ -22,140 +26,90 @@ No need to switch chains or bridge assets for gas.
 
 {% include "./code-snippets/casdk_install.md" %}
 
-## Initialize `CA`
+## Initialize
 
 {% include "./text-snippets/quick-start-int-casdk.md" %}
 
-## Set up Allowance
+## Unified Balance
 
-Use the `setOnAllowanceHook` to enable unified balance by letting the app users confirm [[concept-allowances|allowances]] for chain abstracted transactions.
+Get unified balance on the supported source chains:
 
-```js
-ca.setOnAllowanceHook(async ({ allow, deny, sources }) => {
-    // This is a hook for the dev to show user the allowances that need to be setup for the current tx to happen
+* View the total EOA balance for all supported tokens and chains.
+* View the total EOA balance for a specified token across all chains.
 
-    // sources: an array of objects with minAllowance, chainID, token symbol etc
-    // allow(allowances): allowances is an array with allowance for each source (len(sources) == len(allowances))
-    // deny(): stop the flow
-})
-```
+{% include "./code-snippets/ca_get_ub.md" %}
 
-Use the `setOnIntentHook` UI hook to show the intent, funds source, and fees. 
-Let users confirm the transaction before spending on the target chain.
+## CA Transactions
 
-```js
-ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
-    // This is a hook for the dev to show user the intent, the sources and associated fees
+Enable chain abstracted transactions through:
 
-    // intent: Intent data containing sources and fees for display purpose
-    // allow(): accept the current intent
-    // deny(): deny the intent and stop the flow
-    // refresh(): should be on a timer of 5s to refresh the intent (if not refreshed old intents might fail due to fee changes)
-  })
-```
+* `transfer`
+* `request`
+* `bridge`
 
-## Access Unified Balance
+### `transfer`
 
-Use `getUnifiedBalances` to get the unified balance that covers all the supported tokens across all the chains in the wallet.
-It shows the total of every token across all chains in the wallet.
+Use unified balance for chain abstracted transactions.
 
-```js
-const balances = await ca.getUnifiedBalances()
-```
+{% include "./code-snippets/ca_transfer.md" %}
 
-Use `getUnifiedBalance` to get the total balance of a specified token.
-It sums up the input token balance across all chains in your wallet.
+### `request`
 
-```js
-const usdtBalance = await ca.getUnifiedBalance("usdt")
-```
+Replace the standard EIP-1193 provider with a chain-abstracted one using `getEVMProviderWithCA`. Then use it to call `request` with
+`eth_sendTransaction` to use unified balance.
 
-## CA Transaction
-
-### Transfer
-
-Use the `transfer` function to send funds from the unified balance to any wallet (EOA) on any chain using approved source chain funds.
-
-```js
-await ca.transfer().to("0x...").amount(5).chain(10).token("eth").exec()
-```
-
-`chain()` is optional, it will use the current chain as input if not specified.
-
-### Request
-
-Use EIP-1193 `request` to issue `eth_sendTransaction` operation that deposits unified balance funds to any smart contract.
-
-```js
-await ca.request({
-    method: "eth_sendTransaction",
-    params: [{
-        to: "0xEa46Fb4b4Dc7755BA29D09Ef2a57C67bab383A2f", 
-        from: "0x7f521A827Ce5e93f0C6D773525c0282a21466f8d",
-        value: "0x001"
-    }],
-})
-```
-
-{% include "./text-snippets/ca/transfer_note.md" %}
-
-## Advanced
-
-The SDK supports `eth_sendTransaction` for basic transfers. 
-It also offers chain abstracted `bridge` and `transfer` operations.
+{% include "./code-snippets/ca_get_req_prov.md" %}
 
 ### Bridge
 
-Use the `bridge` function to get tokens on any chain. 
-Chain abstraction uses your allowed funds from other chains to complete the transfer.
+Use the unified balance to deposit tokens on a different chain.
+Chain abstracted transactions handle the transfer.
 
-The function uses your current chain when you don't specify a `chain()` parameter.
-This is effectively swapping tokens on the current chain.
+{% include "./code-snippets/ca_bridge.md" %}
 
-```js
-await ca.bridge().token("pol").amount(10).chain(137).exec();
-```
+## Allowance
 
-### Manage Allowance
+Allowances are set to `unlimited` by default for all supported chains and tokens.
+Developers can update the allowance settings via `setOnAllowanceHook()`. App users
+can approve chain abstracted transactions. They cannot change the allowance set by
+the app developers.
 
-Use the following functions to get, set and revoke allowance limits in the EOA for the supported source chains and tokens.
+### `setOnAllowanceHook`
 
-#### Get Allowance
+Use `setOnAllowanceHook` to set up [[concept-allowances|allowances]] for chain
+abstracted transactions. The default value is set to `unlimited` for all chains.
 
-```js
-// Get USDC allowance for Polygon
-await ca.allowance().tokens(["USDC"]).chain(137).get()
-// Get USDC & USDT allowance for all supported chains
-await ca.allowance().tokens(["USDC", "USDT"]).get()
-// Get all supported token allowances for all supported chains
-await ca.allowance().get()
-```
+{% include "./code-snippets/ca_hook_allow.md" %}
 
-#### Set Allowance
+### Get Allowance
 
-```js
-await ca.allowance().tokens(["USDC"]).chain(42161).amount("max").set()
+Get allowance values configured for the chain abstracted transactions.
 
-// You can specify custom values for tokens and amount in hex, for example
-// await ca.allowance().tokens(["USDC"]).chain(42161).amount("0x989680").set()
+{% include "./code-snippets/ca_get_allow.md" %}
 
-// Alternatively, you can also specify the amount 10,000,000 for USDC tokens as follows:
-// await ca.allowance().tokens(["USDC"]).chain(42161).amount("10000000").set()
-```
+## Intents
 
-#### Revoke Allowance
+### `setOnIntentHook`
 
-```js
-await ca.allowance().tokens(["USDC"]).chain(42161).revoke()
-```
+Use `setOnIntentHook` to show the intent details such as
+the source of funds, applicable fees.
 
-### Handle Events
+{% include "./code-snippets/ca_hook_intent.md" %}
 
-Web3 apps integrating with the SDK can listen to user intent processing and display the various stages of intent processing when a chain abstracted transaction is in progress.
+### Get Intents
 
-Learn more about [[concept-intent| intents]] and various [[concept-intent#stages|intent processing events]] associated with chain abstracted transactions.
+Get the list of intents representing user's request for funds.
 
-#### Add Listener
+{% include "./code-snippets/ca_get_intents.md" %}
+
+## Events
+
+Keep track of the user [[concept-intent| intent]] processing stages.
+
+Set up a listener to monitor various [[concept-intent#stages|intent processing stages]]
+during a chain abstracted transaction.
+
+### Add Listener
 
 ```js
 ca.addCAEventListener((data) => {
@@ -179,7 +133,7 @@ ca.addCAEventListener((data) => {
 });
 ```
 
-#### Remove Listener
+### Remove Listener
 
 ```js
 ca.removeCAEventListener((data) => {...})
