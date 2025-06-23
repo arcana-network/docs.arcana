@@ -1,21 +1,23 @@
 === "`main.tsx`"
 
-    ```tsx
+    ```tsx hl_lines="5 6 10 17 19"
     import { StrictMode } from "react";
     import { createRoot } from "react-dom/client";
     import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
     import { WagmiProvider } from 'wagmi'
+    import { CA } from "@arcana/ca-sdk";
     import { CAProvider } from '@arcana/ca-wagmi'
     import App from "./App.tsx";
     import { config } from "./utils/config";
 
+    const ca = new CA();
     const queryClient = new QueryClient()
 
     createRoot(document.getElementById("root")!).render(
         <StrictMode>
             <WagmiProvider config={config}>
                 <QueryClientProvider client={queryClient}>
-                    <CAProvider>
+                    <CAProvider client={ca}>
                         <App />
                     </CAProvider>
                 </QueryClientProvider>
@@ -55,7 +57,7 @@
 
 === "account.tsx"
 
-    ```tsx
+    ```tsx hl_lines="8-13 20 25 26"
     import {
         useAccount,
         useDisconnect,
@@ -295,64 +297,63 @@
     ```
 
 === "wallet-options.ts"
-    ```ts
+
+    ```js
     import * as React from "react";
     import { Connector, useConnect } from "wagmi";
 
-    function WalletOption({
-    connector,
-    onClick,
-    }: {
-    connector: Connector;
-    onClick: () => void;
-    }) {
-    const [ready, setReady] = React.useState(false);
-
-    React.useEffect(() => {
-        (async () => {
-        const provider = await connector.getProvider();
-        setReady(!!provider);
-        })();
-    }, [connector]);
-
-    return (
-        <>
-        <div>
-            <button
-            disabled={!ready}
-            type="button"
-            onClick={onClick}
-            >
-            <img
-                src={connector.icon}
-                aria-hidden="true"
-            />
-            {connector.name}
-            </button>
-        </div>
-        </>
-    );
+    export function WalletOptions() {
+        const { connectors, connect } = useConnect();
+        console.log({ connectors });
+        return (
+            <>
+            <h3>Wallets</h3>
+            <hr></hr>
+            {connectors
+                .filter((c) => c.id !== "injected")
+                    .map((connector) => (
+                        <WalletOption
+                            key={connector.uid}
+                            connector={connector}
+                            onClick={() => connect({ connector })}/>
+                    ))}
+            </>
+        );
     }
 
-    export function WalletOptions() {
-    const { connectors, connect } = useConnect();
+    function WalletOption({
+        connector,
+        onClick,
+        }: {
+        connector: Connector;
+        onClick: () => void;
+        }) {
+        const [ready, setReady] = React.useState(false);
 
-    return (
-        <>
-        <h3>
-            Wallets
-        </h3>
-        <hr></hr>
-        {connectors
-            .filter((c) => c.id !== "injected")
-            .map((connector) => (
-            <WalletOption
-                key={connector.uid}
-                connector={connector}
-                onClick={() => connect({ connector })}
-            />
-            ))}
-        </>
-    );
+        React.useEffect(() => {
+            (async () => {
+            const provider = await connector.getProvider();
+            setReady(!!provider);
+            })();
+        }, [connector]);
+
+        return (
+            <>
+            <div>
+                <button
+                disabled={!ready}
+                type="button"
+                onClick={onClick}
+                >
+                <img
+                    src={connector.icon}
+                    className="w-4 h-4 me-2 -ms-1 text-[#626890]"
+                    aria-hidden="true"
+                />
+                {connector.name}
+                </button>
+            </div>
+            </>
+        );
     }
     ```

@@ -6,6 +6,52 @@ arcana:
   root_rel_path: ..
 ---
 
+
+??? an-faq "How do I fix the polyfilling issues right after import statement when integrating React and Vite app with the {{config.extra.arcana.ca_sdk_name}}?"
+
+    To fix polyfilling issues, make sure `vite.config.ts` has the polyfilling options configured.
+
+    ```ts
+    import { defineConfig, Plugin } from "vite";
+    import react from "@vitejs/plugin-react";
+    import { nodePolyfills, PolyfillOptions } from "vite-plugin-node-polyfills";
+    import tailwindcss from "@tailwindcss/vite";
+
+    const nodePolyfillsFix = (options?: PolyfillOptions | undefined): Plugin => {
+    return {
+        ...nodePolyfills(options),
+        resolveId(source: string) {
+        const m =
+            /^vite-plugin-node-polyfills\/shims\/(buffer|global|process)$/.exec(
+            source
+            );
+        if (m) {
+            return `node_modules/vite-plugin-node-polyfills/shims/${m[1]}/dist/index.cjs`;
+        }
+        },
+    };
+    };
+
+    // https://vite.dev/config/
+    export default defineConfig({
+    plugins: [
+        react(),
+        tailwindcss(),
+        nodePolyfillsFix({
+        include: ["buffer"],
+        globals: {
+            Buffer: true,
+            global: true,
+            process: true,
+        },
+        }),
+    ],
+    define: {
+        "process.env": {},
+    },
+    });
+    ```
+
 ??? an-faq "Is there a refund if a chain abstracted transaction fails after funds have been pulled out of the source chains in the user's EOA?"
 
     For chain abstracted transaction safety, follow these guidelines:
@@ -147,12 +193,10 @@ arcana:
         <figcaption>View Intent Details</figcaption>
     </figure>
 
-??? an-faq "Can I use `transfer` function to move chain abstracted unified balance funds to a smart contract?"
+??? an-faq "Can I use `transfer` function to deposit chain abstracted unified balance funds to a smart contract and update the blockchain state?"
 
-    No. Use [[web-ca-usage-guide#request|`request` and issue `sendTransaction`]] operation to deposit funds into a smart contract.
+    No. `transfer` does not support `data`. Use [[web-ca-usage-guide#request|`request` with `sendTransaction`]] to deposit funds to a smart contract and update the blockchain state.
     
-    {% include "./text-snippets/ca/transfer_note.md" %}
-
 ??? an-faq "Sending 0.1 USDC from 0.3 USDC balance uses funds from other chains. Why isn't this a normal transaction since sufficient balance exists locally?"
 
     The transaction uses chain abstraction because you need both sufficient tokens AND gas fees for a normal transaction.
