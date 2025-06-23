@@ -9,13 +9,17 @@ arcana:
 
 # Get Started: Wagmi Apps
 
-Enable [[concept-unified-balance|unified-balance]] and chain abstracted transactions in Web3 apps built with the [Wagmi](https://wagmi.sh/) library by integrating with the [[concept-cawagmi|{{config.extra.arcana.ca_wagmi_sdk_name}}]]. 
+Integrate Web3 [Wagmi](https://wagmi.sh/) apps with the
+[[concept-cawagmi|{{config.extra.arcana.ca_wagmi_sdk_name}}]] to enable:
 
-{{config.extra.arcana.ca_wagmi_sdk_name}} lets you add chain abstracted `bridge` and `transfer` functions in `wagmi` apps. Replace the `useSendTransaction` and `useWriteContract` hooks of the Wagmi library with those provided by the SDK to enable chain abstraction in a transparent manner.
+* [[concept-unified-balance|Unified-balance]]
+* [[concept-ca|Chain abstracted]] transactions
 
-!!! an-note "Wagmi Plug & Play Widget"
+Replace the `useSendTransaction` and `useWriteContract` hooks from the Wagmi library.
+Instead, use the ones provided by the SDK. They support chain abstracted transactions.
 
-    The [[concept-cawagmi|{{config.extra.arcana.ca_wagmi_sdk_name}}]] supports a [[concept-unified-balance-wagmi-pnp|plug-and-play UI modal]] that displays the [[concept-unified-balance|unified balance]] within the Wagmi app context. Authenticated app users can view the unified balance via the plug-and-play widget and issue blockchain transactions through any browser-based third-party wallets connected to the Wagmi app.
+Use the [[concept-unified-balance-wagmi-pnp|plug-and-play UI modal]].
+It shows the unified balance in the Wagmi app context.
 
 ## 1. Install
 
@@ -23,18 +27,21 @@ Enable [[concept-unified-balance|unified-balance]] and chain abstracted transact
 
 ## 2. Integrate
 
-Use the `CAProvider` component from {{config.extra.arcana.ca_wagmi_sdk_name}} in the app code. 
-
 {% include "./code-snippets/new_ca_provider.md" %}
 
-For details on the `CAProvider`, see [{{config.extra.arcana.ca_wagmi_sdk_name}} Reference]({{config.extra.arcana.ca_wagmi_sdk_ref_url}}).
+See [{{config.extra.arcana.ca_wagmi_sdk_name}} Reference]({{config.extra.arcana.ca_wagmi_sdk_ref_url}}) for details.
 
-## 3. Wagmi Hooks
+## 3. Unified Balance
 
-To use the chain abstraction enabled Wagmi hooks, make sure you import the following functions from the {{config.extra.arcana.ca_wagmi_sdk_pkg_name}} and **not from the wagmi SDK**.
+The `useBalanceModal ` hook displays the unified balance plug and play widget.
 
-* `useSendTransaction` - Chain abstracted Send Transaction
-* `useWriteContract` - Chain abstracted Write Contract
+{% include "./code-snippets/ca_wagmi_use_balance_modal.md" %}
+
+## 4. CA Transactions
+
+Import `useSendTransaction` and `useWriteContract` hooks from the
+{{config.extra.arcana.ca_wagmi_sdk_pkg_name}}, **not from the wagmi SDK**, to
+enable chain abstracted transactions.
 
 ### `useSendTransaction`
 
@@ -44,34 +51,24 @@ To use the chain abstraction enabled Wagmi hooks, make sure you import the follo
 
 {% include "./code-snippets/ca_wagmi_writeContract.md" %}
 
-## 4. Access Unified Balance
+## 5. Advanced
 
-* `useBalance`  - Unify the specified token balance across chains - USDC, USDT, ETH
-* `useUnifiedBalance` - Get unified balance for all tokens across all chains
-* `useBalanceModal`  - Display a plug and play widget containing the unified balance
+The SDK also provides chain abstraction hooks to:
 
-{% include "./code-snippets/ca_wagmi_uni_balance.md" %}
+* Get unified balance for a specific token
+* View user intents
+* Issue chain abstracted `bridge` and `transfer` functions 
 
-## 5. Bridge & Transfer
-
-* `useCAFn` - Allows chain abstracted bridge and transfer functions
-
-{% include "./code-snippets/ca_wagmi_useCAFn.md" %}
+[[ca-integrate-wagmi#arcana-hooks| Learn more...]]
 
 {% include "./text-snippets/quick-start-deploy-ca.md" %}
 
-Refer to the following sample integration code and hook usage.
-
 {% include "./text-snippets/quick-start-int-ca-wagmi-sdk.md" %}
-
-[[ca-integrate-wagmi| Learn more]] about supported Wagmi hooks and Arcana hooks for unified balance and chain abstracted `bridge` and `transfer` functions.
 
 <figure markdown="span">
   <img class="width_85pc an-screenshots-noeffects width_50pc" alt="With CA" src="{{config.extra.arcana.img_dir}}/ca-sdk-example-bridge-transfer.{{config.extra.arcana.img_gif}}"/>
   <figcaption>`useCAFn`: Chain Abstracted Bridge and Transfer </figcaption>
 </figure>
-
-{% include "./text-snippets/quick-start-deploy-ca.md" %}
 
 ## See Also
 
