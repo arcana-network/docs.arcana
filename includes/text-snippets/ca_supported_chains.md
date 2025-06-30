@@ -8,6 +8,7 @@
 * Optimism
 * Polygon
 * Scroll
+* Sophon
 * --->
 <div class="img-grid-cards">
 
@@ -61,4 +62,8 @@
         <figcaption>Scroll</figcaption>
     </figure>
 
+    <figure markdown="span">
+        <img src="{{config.extra.arcana.img_dir}}/logos/sophon.{{config.extra.arcana.img_png}}"/>
+        <figcaption>Sophon</figcaption>
+    </figure>
 </div>
