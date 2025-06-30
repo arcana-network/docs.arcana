@@ -5,6 +5,7 @@ template: no-announcements.html
 description: 'Need help? Contact Arcana support team for any questions. We are happy to help!'
 arcana:
   root_rel_path: ..
+timetoread: False
 ---
 
 # Support

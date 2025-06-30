@@ -4,6 +4,7 @@ title: 'Contents'
 description: 'If you are not using the latest version of the Arcana Auth SDK, we strongly recommend that you migrate to the latest release.'
 arcana:
   root_rel_path: ../..
+timetoread: False
 ---
 
 # Migration Guide Archives
