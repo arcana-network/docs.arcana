@@ -20,3 +20,7 @@ The cross-chain swap enables users to:
   <img alt="With CA" src="{{config.extra.arcana.img_dir}}/ca_unified_balance.{{config.extra.arcana.img_png}}"/>
   <figcaption>Single chain liquidity vs. Unified Balance with Chain Abstraction</figcaption>
 </figure>
+
+**Plug & Play Widget**
+
+{% include "./text-snippets/ca/unified_balance_wagmi_pnp.md" %}

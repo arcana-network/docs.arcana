@@ -238,12 +238,42 @@ plugins:
       full_output: llms.txt
       sections:
         Chain Abstraction:
-        - index.md
-        - ca/*/**.md
+        - ca-index.md
+        - ca/*.md
+        - ca/introduction/*.md
+        - ca/integrate/*.md
+        - faq/ca/*.md
         Auth:
         - auth-index.md
+        - auth/*.md
+        - auth/integrate/*.md
+        - auth/introduction/*.md
+        - auth/onboard/*.md
+        - auth/onboard/wagmi/*.md
+        - auth/onboard/walletconnect/*.md
+        - auth/onboard/passkey-auth/*.md
+        - auth/onboard/vue/*.md
+        - auth/onboard/vanilla/*.md
+        - auth/onboard/react-nextjs/*.md
+        - auth/web3-ops/*.md
+        - auth/mobile/*.md
         - auth/*/**.md
-
+        Reference:
+        - index.md
+        - ../includes/*.md
+        - audit/*.md
+        - concepts/*.md
+        - faq/*.md
+        - introduction/*.md
+        - migration/*.md
+        - quick-start/*.md
+        - relnotes/*.md
+        - solvers/*.md
+        - support/*/**.md
+        - user-guides/*/**.md
+        - validators/*.md
+        - web3-stack/*.md
+        - setup/*.md
   - redirects:
         redirect_maps:
           # Linea docs backlinks
