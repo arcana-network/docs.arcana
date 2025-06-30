@@ -10,6 +10,7 @@
 * Optimism
 * Polygon
 * Scroll
+* Sophon
 --->
 
 <div class="img-grid-cards">
