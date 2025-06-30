@@ -4,6 +4,7 @@ title: 'Arcana Auth Changelog'
 description: 'GitHub commit details listing all the changes in various Arcana Auth components.'
 arcana:
   root_rel_path: ..
+timetoread: False
 ---
 
 # Changelog
