@@ -4,6 +4,8 @@
 * Base
 * Ethereum
 * Fuel
+* HyperEVM
+* Kaia
 * Linea
 * Optimism
 * Polygon
@@ -35,6 +37,16 @@
       <figure markdown="span">
         <img src="{{config.extra.arcana.img_dir}}/logos/fuel.{{config.extra.arcana.img_png}}"/>
         <figcaption>Fuel</figcaption>
+      </figure>
+            
+      <figure markdown="span">
+        <img src="{{config.extra.arcana.img_dir}}/logos/hyperevm.{{config.extra.arcana.img_png}}"/>
+        <figcaption>HyperEVM</figcaption>
+      </figure>
+            
+      <figure markdown="span">
+        <img src="{{config.extra.arcana.img_dir}}/logos/kaia.{{config.extra.arcana.img_png}}"/>
+        <figcaption>Kaia</figcaption>
       </figure>
       
       <figure markdown="span">

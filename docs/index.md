@@ -4,6 +4,7 @@ title: 'Welcome'
 hide: 
     - toc
     - feedback
+timetoread: false
 ---
 
 #

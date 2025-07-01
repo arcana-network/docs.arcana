@@ -2,6 +2,8 @@
 * Arbitrum
 * Base
 * Ethereum
+* HyperEVM
+* Kaia
 * Linea
 * Optimism
 * Polygon
@@ -27,6 +29,16 @@
     <figure markdown="span">
         <img src="{{config.extra.arcana.img_dir}}/logos/ethereum.{{config.extra.arcana.img_png}}"/>
         <figcaption>Ethereum</figcaption>
+    </figure>
+
+    <figure markdown="span">
+        <img src="{{config.extra.arcana.img_dir}}/logos/hyperliquid.{{config.extra.arcana.img_png}}"/>
+        <figcaption>HyperEVM</figcaption>
+    </figure>
+        
+    <figure markdown="span">
+        <img src="{{config.extra.arcana.img_dir}}/logos/kaia.{{config.extra.arcana.img_png}}"/>
+        <figcaption>Kaia</figcaption>
     </figure>
 
     <figure markdown="span">

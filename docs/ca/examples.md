@@ -4,6 +4,7 @@ title: 'CA SDK Integration Examples'
 description: 'Learn how to integrate with the Arcana Chain Abstraction SDK and enable unified balance for dApp users.'
 arcana:
   root_rel_path: ..
+timetoread: False
 ---
 
 # Examples

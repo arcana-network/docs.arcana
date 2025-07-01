@@ -71,6 +71,11 @@ case "$sdk_name" in
          update_env_var "AUTH_SDK_REL_DATE" "$(cat RELEASEDATE)"
          ;;
 
+    "auth-wagmi")
+         update_env_var "AUTH_WAGMI_SDK_VERSION" "$(cat VERSION)"
+         update_env_var "AUTH_WAGMI_SDK_REL_DATE" "$(cat RELEASEDATE)"
+         ;;
+
     "ca-sdk")
          update_env_var "CA_SDK_VERSION" "$(cat VERSION)"
          update_env_var "CA_SDK_REL_DATE" "$(cat RELEASEDATE)"
