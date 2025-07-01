@@ -195,7 +195,7 @@ arcana:
 
 ??? an-faq "Can I use `transfer` function to deposit chain abstracted unified balance funds to a smart contract and update the blockchain state?"
 
-    No. `transfer` does not support `data`. Use [[web-ca-usage-guide#request|`request` with `sendTransaction`]] to deposit funds to a smart contract and update the blockchain state.
+    No. `transfer` does not support `data`. Use [`request` with `sendTransaction`](https://ca-sdk-ref-guide.netlify.app/#quick-start) to deposit funds to a smart contract and update the blockchain state.
     
 ??? an-faq "Sending 0.1 USDC from 0.3 USDC balance uses funds from other chains. Why isn't this a normal transaction since sufficient balance exists locally?"
 

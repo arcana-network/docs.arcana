@@ -4,6 +4,7 @@ title: 'Contents'
 description: 'Release Notes for the past, older Arcana CA Versions, only for reference. Note these are not supported anymore.'
 arcana:
   root_rel_path: ../../../..
+timetoread: False
 ---
 
 # Archives: CA SDK

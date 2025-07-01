@@ -21,7 +21,7 @@ This is the first release of the {{config.extra.arcana.ca_wagmi_sdk_name}}.
 Wagmi-based Web3 apps can now use {{config.extra.arcana.ca_wagmi_sdk_name}} to:
 
 - Let users send transactions across any supported chain without switching networks
-- Access a [[concept-unified-balance|unified balance]] view through the[[wagmi-ca-usage-guide#usebalance|`useBalance`]] hook
+- Access a [[concept-unified-balance|unified balance]] view through the [`useBalance`](https://ca-wagmi-sdk-ref-guide.netlify.app/#md:usebalance) hook
 - Enable cross-chain functionality transparently with zero code changes within Web3 apps using the standard [`useSendTransaction`](https://wagmi.sh/react/api/hooks/useSendTransaction) and [`useWriteContract`](https://wagmi.sh/react/api/hooks/useWriteContract) hooks
 
 Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].

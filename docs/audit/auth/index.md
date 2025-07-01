@@ -4,6 +4,7 @@ title: 'Audit Reports'
 description: 'Audit reports for Arcana Auth protocol.'
 arcana:
   root_rel_path: ../..
+timetoread: False
 ---
 
 # Audit Reports

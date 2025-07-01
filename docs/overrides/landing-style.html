@@ -29,7 +29,7 @@
     text-align: left;
   }
 
-  .an-docs-landing-center {
+  .an-docs-landing-center, h1.an-docs-landing-center {
     text-align: center;
   }
 
@@ -74,56 +74,95 @@
   }
 </style>
 
-<div class="top-hr">
+<!---
+div class="top-hr">
   <div class="hr">
     <h1 class="an-docs-landing-left">Arcana Documentation</h1>
   </div>
-  <div>
-    <p><b>Build seamless Web3 user experiences with Arcana's SDKs.</b></p>
-  </div>
-  <div>
-    <p>Developers can build Web3 apps that support chain abstraction and social login. Chain abstraction allows users to spend on any chain through unified balance. Social login lets users onboard Web3 apps and access in-app wallet to sign blockchain transactions.</p>
-  </div>
 </div>
-
+--->
+<div class="an-seamless-glow">
+  <h1>Seamless Web3 UX</h1>
+</div>
 <div class="tx-hero-container">
-  <div class="tx-hero-card">
-    <div class="tx-hero-content">
-      <h1 class="an-docs-landing-left">Chain Abstraction (CA)</h1>
-      <p>Beat liquidity fragmentation across chains with unified balance. Users can spend on any chain without bothering about bridging assets to transact on a new chain.</p>
-      <p>Integrate Web3 app with the Arcana Chain Abstraction SDK to enable unified balance. <a href="./ca-index/">Learn more...</a></p>
-      <div class="tx-button-container">
-        <a href="./quick-start/ca-quick-start/" class="md-button">Get Started ↗️</a>
+    <p>
+      Let users spend on any chain with <a href="./concepts/ca/unified-balance/">unified balance</a> and <a href="./concepts/ca/chain-abstraction/"> chain abstracted</a> transactions. 
+    </p>
+  </div>
+  <div class="tx-hero-container">
+    <p>
+      Onboard users with <a href="./concepts/social-login/">social login.</a>
+    </p>
+</div>
+</hr>
+<div class = "hr">
+  <div class="tx-hero-container">
+    <div class="tx-hero-card">
+      <div class="tx-hero-content">
+        <h1 class="an-docs-landing-center">Chain Abstraction (CA)</h1>
+        <p class="an-docs-landing-center">Web3 app + <a href="https://www.npmjs.com/package/@arcana/ca-sdk">CA SDK</a> lets users: </p>
+        <ul>
+          <li>Beat liquidity fragmentation, no bridging</li>
+          <li>Use unified balance across chains</li>
+          <li>Spend on any chain</li>
+          <li>Transact on a new chain with zero assets</li>
+        </ul>
+        <p style="text-transform:uppercase; text-align: center;">| <a href="https://ca-sdk-ref-guide.netlify.app/" target=“_blank”>CA API</a> | <a href="./ca-index/">Tutorials & Guides</a> |</p>
+      </div>
+    </div>
+    <div class="tx-hero-card">
+      <div class="tx-hero-content">
+        <h1 class="an-docs-landing-center">Social Login</h1>
+        <p class="an-docs-landing-center">Web3 app + <a href="https://www.npmjs.com/package/@arcana/auth">Auth SDK</a> lets users:</p>
+        <ul>
+          <li>Onboard Web3 with Web2 login</li>
+          <li>Access Web3 apps without prior wallet or keys</li>
+          <li>Use Web3 without having to download a wallet</li>
+          <li>Sign blockchain transactions within app context</li>
+        </ul>
+        <p style="text-transform:uppercase; text-align: center">| <a href="https://authsdk-ref-guide.netlify.app/" target=“_blank”>Auth API</a> | <a href="./auth-index/">Tutorials & Guides</a> |</p>
       </div>
     </div>
   </div>
-  <div class="tx-hero-card">
-    <div class="tx-hero-content">
-      <h1 class="an-docs-landing-left">Social Login</h1>
-      <p>No need to create or download a wallet to use Web3 apps. Users onboard with Web2 logins, get instant access to the in-app, self-custodial Arcana wallet to sign blockchain transactions.</p>
-      <p>Integrate Web3 app with the Arcana Auth SDK to enable social login. <a href="./auth-index/">Learn more...</a></p>
+  <div class="tx-hero-container">
       <div class="tx-button-container">
-        <a href="./quick-start/wagmi-quick-start/" class="md-button">Get Started 🚀</a>
+        <a href="./quick-start/ca-quick-start/" target=“_blank” class="md-button">Quick Start CA</a>
+      </div>
+      <div class="tx-button-container">
+        <a href="./quick-start/wagmi-quick-start/" target=“_blank” class="md-button">Quick Start Auth</a>
+      </div>
+  </div>
+  <div class="tx-hero-container">
+    <div class="tx-hero-card tx-hero-content">
+      <p></p>
+        <h1>Give it a go!</h1>
       </div>
     </div>
   </div>
+  <div class="tx-hero-container">
+    <div class="tx-hero-card tx-hero-card-highlight">
+      <div class="tx-hero-content">
+        <p><b>Experience Chain Abstraction:</b></p>
+        <ul>
+          <li><a href="https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi?hl=en-GB&authuser=0&pli=1"> Download</a> the Arcana CA wallet and use with <a href="./web3-stack/ca_stack/#apps">supported dApps</a></li>
+          <li>Use MetaMask or third-party wallet with<a href="https://sdk.arcana.network"> CA SDK Demo app</a></li>
+          <li>View CA intent details with the<a href="https://explorer.arcana.network/"> Arcana Intent Explorer</a></li>
+        </ul>
+        </div>
+      </div>
+    <div class="tx-hero-card tx-hero-card-highlight">
+      <div class="tx-hero-content">
+        <p><b>Try Social Login: </b> </p>
+        <ul>
+          <li>Use Web2 authentication to onboard the<a href="https://demo.arcana.network/"> demo Web3 app</a> integrated with the Arcana's Auth SDK</li>
+          <li>Get instant access to your self-custodial, in-app Arcana wallet</li>
+          <li>Sign blockchain transactions right after Web2 login</li>
+        </ul>
+      </div>
+    </div>
 </div>
-<div class="tx-hero-card">
-  <div class="tx-hero-content">
-    <h1 class="an-docs-landing-left">Give it a go!</h1>
-    <p><b>Experience Chain Abstraction: </b><a href="https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi?hl=en-GB&authuser=0&pli=1"> Download</a> the standalone, CA enabled, Arcana wallet and try it in the context of any <a href="./web3-stack/ca_stack/#apps">supported</a> app. Want to try chain abstraction with MetaMask or any other third-party browser based wallet? Connect your wallet to the <a href="https://sdk.arcana.network">SDK Demo app</a>.</p><p>Check status of submitted intents for chain abstracted transactions via the <a href="https://explorer.arcana.network/">Arcana Intent Explorer</a>. </p>
-    <p><b>Try Social Login: </b> Use Web2 authentication to onboard the <a href="https://demo.arcana.network/">demo Web3 app</a> integrated with Arcana's Auth SDK. Get instant access to your self-custodial, in-app Arcana wallet and sign blockchain transactions.</p>
-    <p></p>
-    <p><i>Questions?</i></p>
-    <p>Email <a href="mailto:support@arcana.network">support@arcana.network</a>.</p><p><i>We are actively listening on the social channels listed in the footer.</i></p>
-  </div>
-</div>
-
-<div class="tx-button-container an-docs-landing-center">
-  <p>| <a href="https://arcana.network">About Arcana Network</a> | <a href="https://github.com/orgs/arcana-network/discussions/categories/announcements">Announcements</a> | <a href="https://status.arcana.network/">Uptime</a> | <a href="./support/">Support</a> |</p>
-</div>
-
-
+<hr>
+<p><i>Questions?</i> <a href="mailto:support@arcana.network">support@arcana.network</a></p>
 
 {% endblock %}
 
