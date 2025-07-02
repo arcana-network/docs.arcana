@@ -253,27 +253,50 @@ plugins:
         - auth/onboard/walletconnect/*.md
         - auth/onboard/passkey-auth/*.md
         - auth/onboard/vue/*.md
+        - auth/onboard/vue/custom-ui/*.md
         - auth/onboard/vanilla/*.md
+        - auth/onboard/vanilla/custom-ui/*.md
         - auth/onboard/react-nextjs/*.md
+        - auth/onboard/react-nextjs/custom-ui/*.md
+        - auth/onboard/rainbow/*.md
+        - auth/onboard/web3-react/*.md
         - auth/web3-ops/*.md
         - auth/mobile/*.md
         - auth/*/**.md
         Reference:
         - index.md
-        - ../includes/*.md
-        - audit/*.md
+        - ../includes/text-snippets/*.md
+        - ../includes/code-snippets/*.md
+        - audit/ca/*.md
+        - audit/auth/*.md
         - concepts/*.md
         - faq/*.md
         - introduction/*.md
         - migration/*.md
         - quick-start/*.md
         - relnotes/*.md
+        - relnotes/archives/*.md
         - solvers/*.md
         - support/*/**.md
-        - user-guides/*/**.md
+        - user-guides/*.md
+        - user-guides/wallet-ui/*.md
+        - user-guides/mfa/*.md
         - validators/*.md
         - web3-stack/*.md
         - setup/*.md
+        - changelog/*.md
+        - checklist/*.md
+        - concepts/ansmartc/*.md
+        - concepts/anwallet/*.md
+        - concepts/authtype/*.md
+        - concepts/ca/*.md
+        - deploy/*.md
+        - faq/*.md
+        - faq/ca/*.md
+        - introduction/*.md
+        - migration/*.md
+        - quick-start/*.md
+        - partner-docs/*.md
   - redirects:
         redirect_maps:
           # Linea docs backlinks
@@ -509,6 +532,7 @@ nav:
         - Web Apps: quick-start/ca-quick-start.md
         - Wagmi Apps: quick-start/ca-wagmi-quick-start.md
         - Auth & CA Apps: quick-start/auth-ca-wagmi-quick-start.md
+      - Chains: web3-stack/ca_stack.md
       - Usage: 
         - Overview: ca/ca-usage-overview.md
         - Install: ca/ca-sdk-installation.md
@@ -518,6 +542,8 @@ nav:
       - APIs: 
         - ca-sdk: ca/ca-usage-guide.md
         - ca-wagmi: ca/ca-wagmi-usage-guide.md
+      - Examples: ca/examples.md
+      - CA Demo: ca/ca-demo.md
       - FAQ: faq/ca/faq.md
       - Concepts: 
         - Chain Abstraction: concepts/ca/chain-abstraction.md
@@ -532,8 +558,6 @@ nav:
       - Release Notes: 
         - CA SDK: relnotes/latest-ca-release-note.md
         - CA Wagmi SDK: relnotes/latest-ca-wagmi-release-note.md
-      - Examples: ca/examples.md
-      - CA Demo: ca/ca-demo.md
     - Resources:
       - Audit: 
         - audit/ca/index.md
@@ -545,7 +569,6 @@ nav:
         - Dashboard: solvers/solver-dashboard.md
       - Intent Explorer: https://explorer.arcana.network/
       - References:
-        - Supported Chains: web3-stack/ca_stack.md
         - Architecture: ca/introduction/ca.md
         - Use Cases: ca/introduction/use-cases.md
         - Why CA SDK?: ca/why-ca-sdk.md
@@ -582,6 +605,14 @@ nav:
         - MultiversX: quick-start/mvx-quick-start.md
         - Near: quick-start/near-quick-start.md
         - Unity: quick-start/unity-quick-start.md
+      - Tech Stack:
+        - Chains: web3-stack/chains.md
+        - App Types: web3-stack/apps.md
+        - Auth Providers: web3-stack/auth.md
+        - Browsers: web3-stack/browsers.md
+        - Protocol: web3-stack/protocol.md
+        - Validators: web3-stack/validators.md
+        - Wallets: web3-stack/wallets.md
       - Usage:
         - Overview: introduction/index.md
         - Register App: setup/config-auth/register-app.md
@@ -812,14 +843,6 @@ nav:
         - Onboarding Guide: validators/onboard-validators.md
         - Validator FAQ: faq/faq-validator.md
       - References:
-        - Supported Chains:
-          - App Types: web3-stack/apps.md
-          - Auth Providers: web3-stack/auth.md
-          - Browsers: web3-stack/browsers.md
-          - Chains: web3-stack/chains.md
-          - Protocol: web3-stack/protocol.md
-          - Validators: web3-stack/validators.md
-          - Wallets: web3-stack/wallets.md 
         - Architecture: auth/introduction/auth-architecture.md
         - Use Cases: auth/introduction/use-cases.md
         - Why Auth SDK?: auth/introduction/why-auth-sdk.md

@@ -1,6 +1,12 @@
-# Working with `auth-mkdocs`
+# Arcana Documentation
 
-The repository `auth-mkdocs` contains the documentation sources and scripts for building the Arcana Network's CA and the Auth SDK. The following documentation tools are used to build a static site generator deployed via Netlify:
+The repository `docs.arcana` contains the documentation sources and scripts for building 
+the Arcana Network's SDKs:
+
+* [Chain Abstraction](https://docs.arcana.network/concepts/ca/chain-abstraction/)
+* [Auth](https://docs.arcana.network/concepts/authtype/). 
+
+The following documentation tools are used to build a static site generator deployed via Netlify:
 
 * `mkdocs`
 * `mkdocs-material`
@@ -12,11 +18,13 @@ Follow these instructions to add/update content in this repository.
 1. Install `mkdocs`, version 1.6.0 or higher
 2. Install all packages listed in the requirements.txt file
 3. Use `python` version 3.9.7 or higher
-4. For Mac build, besides enabling all packages in requirements.txt make sure these are installed for meta tags used in social preview of shared links
+4. For Mac build, besides enabling all packages in requirements.txt
+   make sure these are installed for meta tags used in social preview of shared links
 
 `brew install cairo freetype libffi libjpeg libpng zlib`
 
-For more details, see dependencies listed in [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/setup/dependencies/image-processing/).
+For more details, see dependencies listed in 
+[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/setup/dependencies/image-processing/).
 
 If you see build issues on Mac due to `cairo` library path try adding:
 
@@ -28,9 +36,7 @@ If you see build issues on Mac due to `cairo` library path try adding:
 
 `DOCS_SITE_URL='https://docs.arcana.network'`
 
-`MARKER_IO_DESTINATION_ID="Use from Arcana Vault - Contact Ajay>"`
-
-`PYTHON_VERSION="3.9"`
+`PYTHON_VERSION="3.13.0"`
 
 ## Build
 
@@ -38,11 +44,10 @@ If you see build issues on Mac due to `cairo` library path try adding:
 mkdocs build
 ```
 
-## Generate Local Site
+## Development
 
 ```sh
-mkdocs serve -a localhost:8100
-
+ mkdocs serve -a localhost:<port num>
 ```
 
 ## Troubleshooting
