@@ -1,4 +1,4 @@
-The {{config.extra.arcana.company_name}} chain abstraction unified balance feature is available for the following app types:
+You can enable unified balance and chain abstracted transactions in these apps:
 
 * Web3 apps (Vue, Vite, HTML/CSS/JS)
 * Wagmi apps
