@@ -5,11 +5,12 @@
 * Fuel
 * HyperEVM
 * Kaia
-<!---* ~~Linea~~--->
 * Optimism
 * Polygon
 * Scroll
 * Sophon
+
+<!---* ~~Linea~~--->
 
 <!---
 <div class="img-grid-cards">

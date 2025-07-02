@@ -4,11 +4,12 @@
 * Ethereum
 * HyperEVM
 * Kaia
-<!---* ~~Linea~~--->
 * Optimism
 * Polygon
 * Scroll
 * Sophon
+
+<!---* ~~Linea~~--->
 
 <!---
 >>>>>>> 9ae43e19 (Fix: #AR-9538 supported chains layout similar to onebalance)
