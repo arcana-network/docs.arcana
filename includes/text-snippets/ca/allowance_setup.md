@@ -1,4 +1,5 @@
-Users have two allowance setup choices that differ by:
+Users of the {{config.extra.arcana.company_name}} CA wallet
+have two allowance setup choices that differ by:
 
 * Which chains are included for chain abstraction allowance setup?
 * Who pays the gas fees for the allowance transaction?

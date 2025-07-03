@@ -97,7 +97,7 @@ arcana:
     
     Alternatively, wallet users can [download]({{config.extra.arcana.ca_wallet_download_url}}) and install the {{config.extra.arcana.company_name}} Standalone CA wallet browser extension to try [[concept-unified-balance|unified balance]] in the context of some of the popular [[ca-stack#apps|Web3 apps]].
 
-??? an-faq "Why do users need to pay gas fees to set up CA with Layer 1 chains?"
+??? an-faq "Why do Arcana CA wallet users need to pay gas fees to set up CA with Layer 1 chains?"
 
     When setting up {{config.extra.arcana.company_name}} chain abstraction to include Layer 1 chains, users need ETH to pay gas fees for signing the token allowance transaction with the {{config.extra.arcana.company_name}} vault smart contract. The {{config.extra.arcana.company_name}} standalone CA wallet doesn't cover these Layer 1 chain gas fees. As a result, users who choose to include Layer 1 chains in their CA scope must pay these gas fees themselves to set up the CA allowance.
 
@@ -105,7 +105,12 @@ arcana:
 
     Allowance or 'Permit' in the blockchain context allows a third party, such as a smart contract, to perform transactions from a user's EOA for a specified amount — without accessing the user's private key. 
     
-    In {{config.extra.arcana.company_name}} chain abstraction, [[concept-allowances|allowances]] enable unified balance. This lets users spend on any destination chain when they have enough funds and gas fees on their source chains.
+    In the {{config.extra.arcana.company_name}}'s CA context, [[concept-allowances|allowances]] 
+    enable unified balance and chain abstracted transactions. This lets users 
+    spend on any destination chain provided they have sufficient funds on the
+    source chains. Allowance lets the protocol collect required funds from the 
+    source chains. It uses these funds to pay for gas and the transaction amount.
+    
 
 ??? an-faq "Which ERC20 tokens does the unified balance feature support?"
 
@@ -164,7 +169,7 @@ arcana:
 
     With chain abstraction, users first set up allowances before issuing a multi-chain transaction intent.
 
-    In this case, the user signs an intent to send 5 USDC to Base by pledging 3 USDC from Arbitrum and 2.2 USDC from Optimism (including gas and service fees). The intent specifies the amount to be deposited on source chains and the agreed amount received on the destination chain.
+    In this case, the user signs an intent to send 5 USDC to Base. They pledge 3 USDC from Arbitrum and 2.2 USDC from Optimism (including gas and service fees). The intent specifies the amount to be deposited on source chains and the agreed amount received on the destination chain.
 
     {{config.extra.arcana.company_name}}'s Chain Abstraction protocol collects the pledged tokens and gas fees based on the user's allowances. Once the intent is signed, {{config.extra.arcana.company_name}} processes the 5 USDC transaction on Base and deducts the gas fee from the pledged USDC.
 

@@ -14,6 +14,6 @@ arcana:
 
 {% include "./text-snippets/ca/allowance_flow.md" %}
 
-## Allowance Setup
+## Allowance Options
 
 {% include "./text-snippets/ca/allowance_setup.md" %}

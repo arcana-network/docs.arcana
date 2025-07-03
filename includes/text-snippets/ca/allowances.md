@@ -1,16 +1,30 @@
-Allowances activate Arcana Network's Chain Abstraction feature. 
+The {{config.extra.arcana.company_name}} CA SDKs requires allowances. 
 
-Allowances must be set up to enable a chain abstracted transaction that involves multiple source chains. With allowance setup, users can unlock the fragmented liquidity across multiple chains in their EOA. Effectively, this lets the user spend on any destination chain—even with insufficient balance on the destination chain.
+Through allowances, a user permits the use of EOA funds in the source chains.
+The protocol uses these funds to pay the gas fee and the transaction amount
+on the destination chain.
+
+The default allowance limit set in the CA SDK for each supported chain is `unlimited`.
+
+Developers can change the allowance for each chain abstracted transaction.
+They can do this using the `setOnAllowanceHook` hook.
+
+Users can review the chain abstracted transaction details via [[concept-intent|intent]]. 
+The intent details list the amounts collected per source chain to transact on the
+destination chain. Users can choose to accept or reject a chain abstracted transaction.
+They cannot change allowances specified by the developers.
+
+Until a user **permits** allowance, the {{config.extra.arcana.company_name}}
+Vault contracts on the source chains cannot collect the user funds.
 
 By approving allowances for chain abstraction on the source chains, users can:
 
-* Spend anywhere with funds from multiple chains.
+* Spend anywhere with funds from two or more source chains.
 * Bypass bridging to enable liquidity on the destination chain.
-* Transact seamlessly across chains.
-* Setup once, use repeatedly.
+* Transact on newer chains with zero or insufficient liquidity.
 
-As part of allowance setup, users **permit {{config.extra.arcana.company_name}} Vault contracts on the source chains to collect the funds required** to execute the transaction seamlessly on the destination chain. 
+Users must pay a **gas fee to set up the allowance**. This is besides the
+gas fee payable for the transaction on the destination chain.
 
-Note that the allowance set up transaction itself requires gas fee. This gas fee is payable by the user. In some cases, {{config.extra.arcana.company_name}} may sponsor gas fee for the allowance setup.
-
-By default, the allowance limit for each supported chain is set to `unlimited`. This default setting ensure that all the supported tokens on the chain can be utilized as the unified balance available to spend. The protocol can collect the required funds according to the allowance limit and pay for the chain abstracted transactions on any destination chain. Developers can choose to modify the default allowance limits via the `setOnAllowanceHook`.
+In some cases, {{config.extra.arcana.company_name}} may sponsor this gas fee for
+setting up the allowances.
