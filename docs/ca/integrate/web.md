@@ -104,39 +104,31 @@ Get the list of intents representing user's request for funds.
 
 ## Events
 
-Keep track of the user [[concept-intent| intent]] processing stages.
-
-Set up a listener to monitor various [[concept-intent#stages|intent processing stages]]
-during a chain abstracted transaction.
+Set up event listeners.
+Track the [[concept-intent#stages|intent processing stages]].
 
 ### Add Listener
 
 ```js
-ca.addCAEventListener((data) => {
-    switch(data.type) {
-        case "EXPECTED_STEPS":{
-            // store data.data(an array of steps which will be followed)
-            state.value.steps = data.data.map(s => ({ ...s, done: false }))
-            state.value.inProgress = true
-            break;
-        }
-        case "STEP_DONE": {
-            const v = state.value.steps.find(s => {
-                return s.typeID === data.data.typeID
-            })
-            if (v) {
-                v.done = true
-            }
-            break;
-        }
-    }
+ca.caEvents.on("expected_steps", (data) => {
+  state.value.steps = data.map((s) => ({ ...s, done: false }));
+});
+
+ca.caEvents.on("step_complete", (data) => {
+  const v = state.value.steps.find((s) => {
+    return s.typeID === data.typeID;
+  });
+  if (v) {
+    v.done = true;
+  }
 });
 ```
 
 ### Remove Listener
 
 ```js
-ca.removeCAEventListener((data) => {...})
+ca.caEvents.removeListener("expected_steps", () => {...})
+ca.caEvents.removeListener("step_complete", () => {...})
 ```
 
 Check out the [integration example]({{config.extra.arcana.ca_sdk_sandbox_url}}) code.
