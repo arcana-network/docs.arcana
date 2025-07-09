@@ -15,5 +15,5 @@ Chain abstraction enables unified balance to simplify and streamline Web3 transa
 
 * **Faster Intent Processing:** Enables quick and seamless transaction execution across chains.
 * **Unified Liquidity:** Provides a consolidated view of user assets across wallet-linked chains with no asset bridging.
-* **Simplified UX:** Removes multi-step hurdles for a seamless experience, making transactions easy for all users.
+* **Simplified UX:** Removes multi-step hurdles for a seamless experience for users.
 * **Streamlined DX:** Developers can add unified balances to dApps with minimal changes and no smart contract updates for new chains.

@@ -1,6 +1,6 @@
 ---
 alias: auth-core-usage-guide
-title: 'Arcana Auth-Core SDK Usage Guide'
+title: 'Arcana Auth Core SDK Usage Guide'
 description: 'How to install and use the Arcana Auth-Core SDK with sample code and references.'
 arcana:
   root_rel_path: ..
@@ -11,7 +11,7 @@ Note, from here the content is a pure markdown file with no mkdocs related tags 
 of the file in the `auth-core` repo: https://github.com/arcana-network/auth/blob/main/usage.md
 -->
 
-# Auth-Core SDK
+# {{config.extra.arcana.auth_core_sdk_name}} Usage
 
 {% include "./text-snippets/auth-core-sdk.md" %}
 

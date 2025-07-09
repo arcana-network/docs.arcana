@@ -558,6 +558,7 @@ html-js-code-sample
 htmljscodesample
 http
 HW
+HyperEVM
 Hyperliquid
 IAM
 IBFT
@@ -844,6 +845,7 @@ JWKs
 JWKS
 JWT
 JWTs
+Kaia
 Kakaotalk
 keccak256
 Keyset

@@ -24,7 +24,7 @@ Web3 apps integrated with the {{config.extra.arcana.company_name}}'s [[concept-c
 
 ## {{config.extra.arcana.company_name}} CA Wallet
 
-To try unified balance and chain abstracted transactions, connect the [standalone {{config.extra.arcana.company_name}} CA Wallet]({{config.extra.arcana.ca_wallet_download_url}}) with any of the the supported apps. Note the supported^*^ [tokens](#tokens_1) and [chains](#chains_1).
+To try unified balance and chain abstracted transactions, connect the [standalone {{config.extra.arcana.company_name}} CA Wallet]({{config.extra.arcana.ca_wallet_download_url}}) with any of the supported apps. Note the supported^*^ [tokens](#tokens_1) and [chains](#chains_1).
 
 ### Tokens
 

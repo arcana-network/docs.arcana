@@ -539,7 +539,7 @@ nav:
         - Integrate: 
           - ca/integrate/wagmi.md
           - ca/integrate/web.md
-      - APIs: 
+      - CA API: 
         - ca-sdk: ca/ca-usage-guide.md
         - ca-wagmi: ca/ca-wagmi-usage-guide.md
       - Examples: ca/examples.md
@@ -759,9 +759,10 @@ nav:
               - Sign-Up & Login: auth/onboard/passkey-auth/passkey-signup.md
               - Login: auth/onboard/passkey-auth/passkey-login.md
             - Auth-Core SDK: quick-start/auth-core-quick-start.md
-      - APIs:
-        - Auth: auth/auth-usage-guide.md
-        - Auth-Core: auth/auth-core-usage-guide.md     
+      - Auth API:
+        - auth: auth/auth-usage-guide.md
+        - auth-wagmi: auth/auth-wagmi-usage-guide.md
+        - auth-core: auth/auth-core-usage-guide.md     
       - Examples: 
         - Auth-Examples: https://github.com/arcana-network/auth-examples
         - Try Auth: https://codesandbox.io/p/github/shaloo/auth-sdk-example-vite-vue/main?import=true
