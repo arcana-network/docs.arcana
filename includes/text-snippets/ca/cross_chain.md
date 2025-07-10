@@ -4,7 +4,7 @@ Cross-chain Chain Abstraction (CCA) takes it further. Users can now *combine mul
 
 The cross-chain chain abstraction is atomic in nature. It involves multiple source chains and token types and batches transactions. If any one sub-transaction fails, the entire cross-chain transaction fails.
 
-There are no overheads for cross-chain CA transactions. These may be marginally faster than the basic chain abstracted transactions (single token type).
+Cross-chain CA transactions do not have any overheads as compared to the basic chain abstracted transactions. These may be marginally faster than the basic chain abstracted transactions (single token type).
 
 ??? an-note "Pectra Support"
 
