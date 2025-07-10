@@ -2,6 +2,7 @@
 | :-------- | :------- | :-------------- | :----- |
 | Ethereum  | 1        | ETH             | ✅     |
 | Optimism  | 10       | ETH             | ✅     |
+| BSC       | 97       | BNB             | ✅     |
 | Polygon   | 137      | MATIC           | ✅     |
 | HyperEVM  | 999      | HYPE            | ✅     |
 | Kaia      | 8217     | KAIA            | ✅     |
