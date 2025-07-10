@@ -1,8 +1,7 @@
-{% include "./code-snippets/import_ca.md" %}
+The process for integrating the SDK differs for dApps that need to support both EVM and non-EVM chains, such as Fuel.
 
-{% include "./code-snippets/new_ca.md" %}
 
-{% include "./code-snippets/init_ca.md" %}
+{% include "./code-snippets/int_ca_sdk.md" %}
 
 !!! an-caution "`ca.init()`"
 
