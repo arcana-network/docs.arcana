@@ -3,7 +3,7 @@
 | :-------- | :------- | :-------------- | :----- |
 | Ethereum  | 1        | ETH             | ✅     |
 | Optimism  | 10       | ETH             | ✅     |
-| Polygon   | 137      | MATIC           | ✅     |
+| Polygon   | 137      | POL             | ✅     |
 | HyperEVM  | 999      | HYPE            | ✅     |
 | Kaia      | 8217     | KAIA            | ✅     |
 | Base      | 8453     | ETH             | ✅     |
