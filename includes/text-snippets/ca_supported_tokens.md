@@ -1,11 +1,10 @@
 |Tokens|Status|
 |:---|:---|
-|ETH  | ✅ |
-|WETH^*^ | ✅ |
+|ETH/WETH^*^  | ✅ |
 |USDT | ✅ |
 |USDC | ✅ |
 |POL  | ✅ |
-|AVAX  | ✅ |
+|AVAX | ✅ |
 |BNB  | ✅ |
 |HYPE  | ✅ |
 |KAIA  | ✅ |
