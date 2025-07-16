@@ -6,124 +6,43 @@
 
 ## What is New?
  
-This major SDK release contains refactored, optimized code and several usage improvements. It requires some changes to the  integration code that uses the following SDK methods. 
+This major SDK release supports chain abstracted transaction for the following chains:
 
-* [[rn-latest-ca#transfer|`transfer`]]
-* [[rn-latest-ca#bridge|`bridge`]]
-* [[rn-latest-ca#request|`request`]]
+* BSC chain,  BNB token
+* Fuel chain
 
-### `transfer`
+Web3 apps integrating with the SDK do not need any integration code changes if they are using BSC chain for chain abstracted transactions.
 
-Use `transfer` to issue a chain abstracted blockchain transaction. 
-Get the handler to simulate the transfer execution for intent details.
+For Fuel, the integration code will need some updates.
 
-=== "New"
-
-    ```ts
-    const handler = await ca.transfer({
-    to: "0x...",
-    amount: 5,
-    chainID: 10,
-    token: "eth",
-    });
-
-    // Execute the transfer
-    const hash = await handler.exec();
-
-    // Simulate the transfer, returns intent data and token info
-    const response = await handler.simulate();
-    ```
-
-=== "Old"
-
-    ```js
-    await ca.transfer().to("0x...").amount(5).chain(10).token("eth").exec()
-    ```
-
-### `bridge`
-
-Use `bridge` to issue a chain abstracted blockchain transaction.
-Get the handler to simulate the bridge execution for intent details.
-
-=== "New"
-
-    ```ts
-    const handler = await ca.bridge({
-    token: "usdt",
-    amount: 10,
-    chainID: 137,
-    });
-
-    // Execute the bridge
-    await handler.exec();
-
-    // Simulate the bridge, returns intent data and token info
-    const response = await handler.simulate();
-    ```
-
-=== "Old"
-
-    ```js
-    await ca.bridge().token("usdt").amount(10).chain(137).exec();
-    ```
-
-### `getEVMProviderWithCA`
-
-The new [`getEVMProviderWithCA`](https://ca-sdk-ref-guide.netlify.app/#quick-start) method 
-retrieves the chain abstraction enabled EIP-1193 provider. Use this provider to
-issue `request`] with `eth_sendTransaction` for chain abstracted transactions.
+Refer to the code below for details on how to enable Fuel in a Web3 app 
+and utilize the [Fuel connector](https://github.com/FuelLabs/fuel-connectors/wiki)
+for chain abstracted transactions.
 
 ```ts
-
-let provider = window.ethereum;
-
+import { CA } from '@arcana/ca-sdk';
+const provider = window.ethereum;
 const ca = new CA();
+//Set the EVM provider  
 ca.setEVMProvider(provider);
-const providerWithCA = ca.getEVMProviderWithCA();  // Get EIP-1193 provider first
+
+//Initialize ca
+await ca.init();
+
+//connector refers to https://github.com/FuelLabs/fuel-connectors/wiki
+await ca.setFuelConnector(connector);
+const { provider, connector: CAconnector } = await ca.getFuelWithCA();
+
+const address = CAconnector.currentAccount()!;
+const account = new Account(address, provider, CAconnector);
+
+//chain abstraction enabled transfer
+await account.transfer(
+    "0xE78655DfAd552fc3658c01bfb427b9EAb0c628F54e60b54fDA16c95aaAdE797A",
+    1000000,
+    "0xa0265fb5c32f6e8db3197af3c7eb05c48ae373605b8165b6f4a51c5b0ba4812e",
+);
 ```
-
-### `request`
-
-Get a chain abstraction enabled EIP-1193 provider with `getEVMProviderWithCA`.
-Use this provider to issue chain abstracted `request` with `eth_sendTransaction`. 
-
-=== "New"
-
-    ```ts
-
-    let provider = window.ethereum;
-
-    const ca = new CA();
-    ca.setEVMProvider(provider);
-    const providerWithCA = ca.getEVMProviderWithCA();  // Get EIP-1193 provider first
-
-    await providerWithCA.request({   // Then use EIP-1193 provider to issue request
-        method: "eth_sendTransaction",
-        params: [{
-            to: "0xEa46Fb4b4Dc7755BA29D09Ef2a57C67bab383A2f", 
-            from: "0x7f521A827Ce5e93f0C6D773525c0282a21466f8d",
-            value: "0x001"
-        }],
-    })
-    ```
-
-=== "Old"
-
-    ```ts
-    let provider = window.ethereum;
-
-    const ca = new CA();
-    ca.setEVMProvider(provider);
-
-    await ca.request({  //This has changed, there is no request method implemented for CA class
-        method: "eth_sendTransaction",
-        params: [{
-            to: "0xEa46Fb4b4Dc7755BA29D09Ef2a57C67bab383A2f", 
-            from: "0x7f521A827Ce5e93f0C6D773525c0282a21466f8d",
-            value: "0x001"
-        }],
-    })
-    ```
 
 Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
 
@@ -143,6 +62,6 @@ Are you using an older version of the {{config.extra.arcana.ca_sdk_name}}?
 
 Refer to the [[ca-index-release-notes| release notes archive]]. Upgrade to the latest version.
 
-## Questions? 
+## Questions?
 
 Can't find what you are looking for? Contact [{{config.extra.arcana.company_name}} Support]({{page.meta.arcana.root_rel_path}}/support/index.md).

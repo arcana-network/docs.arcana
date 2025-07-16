@@ -576,6 +576,7 @@ nav:
         - Archives: 
           - relnotes/archives/ca-index.md
           - CA SDK:
+            - v1.0.3: relnotes/rn-ca-v1.0.3.md
             - v0.0.7: relnotes/rn-ca-v0.0.7.md
             - v0.0.5: relnotes/rn-ca-v0.0.5.md
             - v0.0.3: relnotes/rn-ca-v0.0.3.md
