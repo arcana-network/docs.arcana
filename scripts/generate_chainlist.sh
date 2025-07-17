@@ -27,27 +27,9 @@ if ! grep -q 'const RawData' "$FILE2"; then
 fi
 
 # Step 1: Create currency mapping from file1
-currency_map=$(cat "$FILE1" | grep -A 100 'export enum CurrencyID {' | awk '
-    BEGIN { in_enum=0 }
-    /export enum CurrencyID {/ { in_enum=1; next }
-    in_enum && /}/ { in_enum=0; next }
-    in_enum && /=/ {
-        if ($0 ~ /[A-Z]+[ ]*=[ ]*(0x[0-9a-fA-F]+|[0-9]+)/) {
-            split($0, arr, "=")
-            symbol=arr[1]
-            id=arr[2]
-            gsub(/[ ,]/, "", symbol)
-            gsub(/[ ,;]*/, "", id)
-            # Convert hex ID to decimal if it starts with 0x
-            if (id ~ /^0x/) {
-                printf "%d:", ("0x" substr(id, 3))
-            } else {
-                printf "%s:", id
-            }
-            print symbol
-        }
-    }
-')
+
+currency_map=$(awk '/export enum CurrencyID {/{flag=1; next} /}/{flag=0} flag' "$FILE1" | grep -v '^$' | awk -F'[=,] *' '{gsub(/^[ \t]+|[ \t]+$/, "", $1); gsub(/^[ \t]+|[ \t]+$/, "", $2); if ($2) print "\"" $2 "\": \"" $1 "\""}' | awk 'BEGIN {print "{"} NR>1 {print ","} {print} END {print "}"}')
+echo $currency_map
 
 if [ -z "$currency_map" ]; then
     echo "Error: Failed to parse currency mappings from $FILE1"
@@ -131,6 +113,15 @@ echo "$chain_data" > /dev/stderr
 # Step 3: Create output file
 echo "" > "$OUTPUT"
 
+# Function to search for a currency symbol given a hex string
+get_currency_symbol() {
+    local id="$1"
+    # Search for the curr_id in currency_map and extract the symbol
+    symbol=$(echo "$currency_map" | grep -o "$id" | cut -d':' -f2 | tr -d '"')
+    [[ -z "$symbol" ]] && symbol="Not found"
+    echo "$symbol"
+}
+
 # Process each chain
 echo "$chain_data" | while IFS='|' read chain_id currencies; do
     # Get chain name using curl, targeting the <title> tag
@@ -141,21 +132,17 @@ echo "$chain_data" | while IFS='|' read chain_id currencies; do
 
     # Convert currency IDs to symbols
     currency_symbols=""
-    for curr_id in $currencies; do
-        # Trim whitespace from curr_id
-        curr_id=$(echo "$curr_id" | tr -d '[:space:]')
-        echo "DEBUG: Processing curr_id: '$curr_id'" > /dev/stderr
-        symbol=$(echo "$currency_map" | grep "^$curr_id:" | cut -d':' -f2)
-        echo "DEBUG: grep output for ^$curr_id:: '$symbol'" > /dev/stderr
-        if [ -n "$symbol" ]; then
-            # Trim whitespace from symbol
-            symbol=$(echo "$symbol" | tr -d '[:space:]')
-            if [ -z "$currency_symbols" ]; then
-                currency_symbols="$symbol"
-            else
-                currency_symbols="$currency_symbols, $symbol"
-            fi
-        fi
+
+    # Traverse the currencies string without converting to an array
+    echo "Traverse"
+    echo $currencies
+    echo "$currencies" | tr ' ' '\n' | while IFS= read -r curr_id; do
+      symbol=$(get_currency_symbol "$curr_id")
+      if [ -z "$currency_symbols" ]; then
+      	currency_symbols="$symbol"
+      else
+      	currency_symbols="$currency_symbols, $symbol"
+      fi
     done
 
     # Write to markdown

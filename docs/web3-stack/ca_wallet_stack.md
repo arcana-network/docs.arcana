@@ -113,6 +113,7 @@ To try unified balance and chain abstracted transactions, connect the [standalon
 
       | Tokens | Coral | 
       | :--- | :--- | 
+      | ETH | ✅  |  
       | USDC | ✅  |
       | USDT | ✅  |
 
@@ -120,8 +121,8 @@ To try unified balance and chain abstracted transactions, connect the [standalon
 
       | Tokens | Folly |
       | :--- | :--- |
-      | USDC | ✅  |
       | ETH | ✅  |  
+      | USDC | ✅  |
 
 ## Fuel
 
@@ -129,6 +130,7 @@ To try unified balance and chain abstracted transactions, connect the [standalon
 
       | Tokens | Coral |
       | :--- | :--- |
+      | ETH | ✅  |  
       | USDC | ✅  |
       | USDT | ✅  |
 
