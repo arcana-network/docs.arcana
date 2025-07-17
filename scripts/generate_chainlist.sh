@@ -27,9 +27,7 @@ if ! grep -q 'const RawData' "$FILE2"; then
 fi
 
 # Step 1: Create currency mapping from file1
-
 currency_map=$(awk '/export enum CurrencyID {/{flag=1; next} /}/{flag=0} flag' "$FILE1" | grep -v '^$' | awk -F'[=,] *' '{gsub(/^[ \t]+|[ \t]+$/, "", $1); gsub(/^[ \t]+|[ \t]+$/, "", $2); if ($2) print "\"" $2 "\": \"" $1 "\""}' | awk 'BEGIN {print "{"} NR>1 {print ","} {print} END {print "}"}')
-echo $currency_map
 
 if [ -z "$currency_map" ]; then
     echo "Error: Failed to parse currency mappings from $FILE1"
@@ -41,10 +39,10 @@ echo "DEBUG: currency_map:" > /dev/stderr
 echo "$currency_map" > /dev/stderr
 
 # Step 2: Process file2 to get chain data
-# Capture grep output for debugging
 grep_output=$(cat "$FILE2" | grep -A 1000 'const RawData[ ]*=[ ]*\[')
 if [ -z "$grep_output" ]; then
     echo "Error: Failed to find 'const RawData = [' in $FILE2"
+    echo "$grep_output" | head -n 10
     exit 1
 fi
 
@@ -77,7 +75,6 @@ chain_data=$(echo "$grep_output" | awk '
             } else {
                 currency_list=currency_list " " id
             }
-            print "DEBUG: Matched CurrencyID: " id > "/dev/stderr"
         }
         next
     }
@@ -93,7 +90,6 @@ chain_data=$(echo "$grep_output" | awk '
             gsub(/^ /, "", currency_list)
             gsub(/ $/, "", currency_list)
             print currency_list
-            print "DEBUG: Output currency_list: " currency_list > "/dev/stderr"
         }
         next
     }
@@ -101,7 +97,6 @@ chain_data=$(echo "$grep_output" | awk '
 
 if [ -z "$chain_data" ]; then
     echo "Error: Failed to parse chain data from $FILE2"
-    echo "Debug: First 10 lines of grep output:"
     echo "$grep_output" | head -n 10
     exit 1
 fi
@@ -109,18 +104,6 @@ fi
 # Debug: Print chain_data
 echo "DEBUG: chain_data:" > /dev/stderr
 echo "$chain_data" > /dev/stderr
-
-# Step 3: Create output file
-echo "" > "$OUTPUT"
-
-# Function to search for a currency symbol given a hex string
-get_currency_symbol() {
-    local id="$1"
-    # Search for the curr_id in currency_map and extract the symbol
-    symbol=$(echo "$currency_map" | grep -o "$id" | cut -d':' -f2 | tr -d '"')
-    [[ -z "$symbol" ]] && symbol="Not found"
-    echo "$symbol"
-}
 
 # Process each chain
 echo "$chain_data" | while IFS='|' read chain_id currencies; do
@@ -130,35 +113,10 @@ echo "$chain_data" | while IFS='|' read chain_id currencies; do
         chain_name="Unknown Chain"
     fi
 
-    # Convert currency IDs to symbols
-    currency_symbols=""
+    echo "Chain id: $chain_id" > /dev/stderr
+    echo "Chain name: $chain_name" > /dev/stderr
+    echo "currencies: $currencies" > /dev/stderr
 
-    # Traverse the currencies string without converting to an array
-    echo "Traverse"
-    echo $currencies
-    echo "$currencies" | tr ' ' '\n' | while IFS= read -r curr_id; do
-      symbol=$(get_currency_symbol "$curr_id")
-      if [ -z "$currency_symbols" ]; then
-      	currency_symbols="$symbol"
-      else
-      	currency_symbols="$currency_symbols, $symbol"
-      fi
-    done
-
-    # Write to markdown
-    {
-        echo "# $chain_name"
-        echo ""
-        echo "| Tokens |"
-        echo "|--------|"
-        for symbol in ${(s:, :)currency_symbols}; do
-            echo "| $symbol |"
-        done
-        echo ""
-    } >> "$OUTPUT"
-
-    # Print to console for verification
-    echo "Chain ID: $chain_id - Chain name: $chain_name - Currencies: $currencies Sym: $currency_symbols"
 done
 
 exit 0

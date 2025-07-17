@@ -33,7 +33,6 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
       | :--- | :---|
       | ETH |  ✅  |
       | USDC |  ✅  |
-      | USDT |  ✅  |
 
 ## Optimism
 
@@ -96,7 +95,6 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
 
       | Tokens | Coral | 
       | :--- | :--- | 
-      | USDC | ✅  | 
       | USDT | ✅  | 
       | KAIA | ✅  |
 
@@ -172,6 +170,7 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
 
       | Tokens | Coral |
       | :--- | :--- | 
+      | ETH | ✅  |
       | USDC | ✅  |
       | USDT | ✅  |
 >>>>>>> main

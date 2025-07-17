@@ -40,7 +40,6 @@ To try unified balance and chain abstracted transactions, connect the [standalon
       | :--- | :---|
       | ETH |  ✅  |
       | USDC |  ✅  |
-      | USDT |  ✅  |
 
 ## Optimism
 
@@ -103,7 +102,6 @@ To try unified balance and chain abstracted transactions, connect the [standalon
 
       | Tokens | Coral | 
       | :--- | :--- | 
-      | USDC | ✅  | 
       | USDT | ✅  | 
       | KAIA | ✅  |
 
@@ -179,5 +177,6 @@ To try unified balance and chain abstracted transactions, connect the [standalon
 
       | Tokens | Coral |
       | :--- | :--- | 
+      | ETH | ✅  |
       | USDC | ✅  |
       | USDT | ✅  |
