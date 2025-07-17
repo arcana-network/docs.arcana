@@ -22,7 +22,7 @@ Follow this guide to onboard users in a Web3 app via social login and enable cha
     * Integrate with the {{config.extra.arcana.ca_wagmi_sdk_name}} and let users spend on any chain with unified balance. 
     * The SDK implements Wagmi `useSendTransaction` and `useWriteContract` hooks so that the Web3 apps can seamlessly switch to using these same hooks from the {{config.extra.arcana.ca_wagmi_sdk_name}} for enabling chain abstracted transactions. 
     * It offers additional hooks to enable unified balance: `useBalance`, `useBalanceModal`.
-    * The `useCAFn` hook allows chain abstracted `bridge` and `transfer` functionality for [[ca-stack#tokens|tokens]] on [[ca-stack#chains|supported chains]].
+    * The `useCAFn` hook allows chain abstracted `bridge` and `transfer` functionality for [[ca-stack|supported chains and tokens]].
 
 ## Prerequisites
 

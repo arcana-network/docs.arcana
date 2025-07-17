@@ -18,7 +18,7 @@ Version: **v0.0.2**
  
 **Unified Balance:** Integrate Web3 apps with the CA-SDK to enable unified balance for users. Unified balance lets users view combined balance in the wallet and beat liquidity fragmentation via Arcana's chain abstraction. Users can spend unified balance on any chain. [[concept-unified-balance|Learn more...]]
 
-See supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
+See supported [[ca-stack|chains and tokens]].
 
 [Changelog](https://github.com/arcana-network/ca-sdk/releases/latest){ .md-button } 
 

@@ -14,7 +14,7 @@ hide:
 
 === "Web3 Developers"
 
-    Let users spend [[ca-stack#tokens| any]] crypto asset on [[ca-stack#chains| any]] blockchain instantly - no chain switching, no bridging, no cross-chain swaps necessary. 
+    Let users spend any supported crypto asset on [[ca-stack| any blockchain]] instantly - no chain switching, no bridging, no cross-chain swaps necessary. 
         
     No hassle. Seamless transaction experience.
     

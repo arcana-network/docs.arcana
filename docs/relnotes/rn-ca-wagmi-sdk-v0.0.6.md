@@ -26,7 +26,7 @@ and bug fix. A few APIs have changed.
 - Added checks to disable chain abstraction and allow regular behavior for wallet transactions if the user denies the sign in with Arcana at the start of the transaction.
 - Other changes: UI enhancements, improved documentation.
 
-Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
+Check out the complete list of supported [[ca-stack|chains and tokens]].
 
 [Changelog](https://github.com/arcana-network/ca-wagmi/releases/latest){ .md-button }
 

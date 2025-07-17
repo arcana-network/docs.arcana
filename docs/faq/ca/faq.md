@@ -95,7 +95,7 @@ arcana:
 
     Web3 wallet users can unify assets across chains and spend on any chain. To do this, they must log into a Web3 app that is integrated with the {{config.extra.arcana.ca_sdk_name}} and supports any third-party browser-based wallet. 
     
-    Alternatively, wallet users can [download]({{config.extra.arcana.ca_wallet_download_url}}) and install the {{config.extra.arcana.company_name}} Standalone CA wallet browser extension to try [[concept-unified-balance|unified balance]] in the context of some of the popular [[ca-stack#apps|Web3 apps]].
+    Alternatively, wallet users can [download]({{config.extra.arcana.ca_wallet_download_url}}) and install the {{config.extra.arcana.company_name}} Standalone CA wallet browser extension to try [[concept-unified-balance|unified balance]] in the context of some of the popular [[ca-stack-wallet#apps|Web3 apps]].
 
 ??? an-faq "Why do Arcana CA wallet users need to pay gas fees to set up CA with Layer 1 chains?"
 
@@ -112,14 +112,12 @@ arcana:
     source chains. It uses these funds to pay for gas and the transaction amount.
     
 
-??? an-faq "Which ERC20 tokens does the unified balance feature support?"
+??? an-faq "Which chains and ERC20 tokens does the unified balance feature support for chain abstraction SDKs?"
 
-    Refer to the latest [[ca-stack#tokens|supported token list]].
+    Refer to the latest [[ca-stack|supported chains and token list]].
 
-??? an-faq "Which chains does the unified balance feature support?"
+    For the standalone {{config.extra.arcana.company_name}} CA wallet used to demonstrate chain abstraction the [[ca-stack-wallet|supported chain and token list]] may vary from the SDK. It can be used only in the context of a limited set of [[ca-stack-wallet|supported apps]].
 
-    {{config.extra.arcana.company_name}}'s chain abstraction and unified balance works for some select [[ca-stack#chains|chains ]] and [[ca-stack#tokens|tokens]]. We are working on adding support for more chains in the future. 
-    
 ??? an-faq "Does dApp integration with the {{config.extra.arcana.company_name}} CA SDK enable an in-app wallet like the Auth SDK?"
 
     No there is no built-in in-app wallet offered by the {{config.extra.arcana.company_name}} SDKs. Web3 apps integrating with the {{config.extra.arcana.company_name}} CA SDK must use a third-party wallet for blockchain transactions.
@@ -144,9 +142,9 @@ arcana:
 
 ??? an-faq "Who is the target audience for the standalone {{config.extra.arcana.company_name}} standalone CA wallet?"
 
-    The standalone {{config.extra.arcana.company_name}} standalone CA wallet is meant for wallet users that want to try unified balance in the context of some of the popular [[ca-stack#apps|Web3 apps]]. 
+    The standalone {{config.extra.arcana.company_name}} standalone CA wallet is meant for wallet users that want to try unified balance in the context of some of the popular [[ca-stack-wallet|Web3 apps]]. 
     
-    It enables unified balance and solves liquidity fragmentation when using any of the supported [[ca-stack#chains| chains]] and [[ca-stack#tokens|tokens]] in the context of these supported [[ca-stack#apps|Web3 apps]]. We will be adding support for newer Web3 apps soon.
+    It enables unified balance and solves liquidity fragmentation when using any of the supported [[ca-stack-wallet| chains and tokens]] in the context of these supported [[ca-stack-wallet#apps|Web3 apps]]. We will be adding support for newer Web3 apps soon.
 
     !!! an-tip "$100 limit"
 

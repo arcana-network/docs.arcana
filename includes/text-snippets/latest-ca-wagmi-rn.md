@@ -15,7 +15,7 @@ usage changes.
 - **`CAProvider` change:** The `CAProvider` requires `client` and `network` (optional) params. Create a new `CA` object and specify it as the `client` parameter when creating the `CAProvider` component.
 - **New hook:** Use [`useGetMyIntent(page))`](https://ca-wagmi-sdk-ref-guide.netlify.app/functions/usegetmyintents) to get a list of intents created in response to user's requests for funds.
 
-Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
+Check out the complete list of supported [[ca-stack|chains and tokens]].
 
 See {% include "./text-snippets/cawagmisdkref_url.md" %} for details.
 

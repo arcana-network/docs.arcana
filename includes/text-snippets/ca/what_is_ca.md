@@ -2,7 +2,7 @@ Managing multiple chains, tokens, and accounts fragments wallet liquidity for We
 
 Chain abstraction lets users access a [[concept-unified-balance|unified balance]] across all wallet-linked chains, enabling transactions anywhere. Instead of converting funds first, users specify a [[concept-intent|clear intent]]. The protocol collects funds from source chains, shows intent and fees for confirmation, then publishes the intent to solvers. Solvers compete to provide liquidity on the destination chain, and once available, users confirm the transaction. Settlement with solvers happens asynchronously using the collected funds.
 
-As part of setup, devs configure [[concept-allowances|allowances]] per chain and token. Users approve or reject these allowances. For [[ca-stack#tokens|supported tokens]] on [[ca-stack#chains|source chains]], the protocol uses these allowances to deposit required funds for transactions on the destination chain.
+As part of setup, devs configure [[concept-allowances|allowances]] per chain and token. Users approve or reject these allowances. For supported [[ca-stack|chains and tokens]], the protocol uses these allowances to deposit required funds for transactions on the destination chain.
 
 <figure markdown="span">
   <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}"/>

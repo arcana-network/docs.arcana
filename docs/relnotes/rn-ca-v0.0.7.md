@@ -25,7 +25,7 @@ const ca = new CA();
 ca.setEVMProvider(provider);
 ```
 
-Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
+Check out the complete list of supported [[ca-stack|chains and tokens]].
 
 [Changelog](https://github.com/arcana-network/ca-sdk/releases/latest){ .md-button } 
 

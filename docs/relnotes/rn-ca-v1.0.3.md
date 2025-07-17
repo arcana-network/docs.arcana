@@ -135,7 +135,7 @@ Use this provider to issue chain abstracted `request` with `eth_sendTransaction`
     })
     ```
 
-Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
+Check out the complete list of supported [[ca-stack|chains and tokens]].
 
 See {% include "./text-snippets/casdkref_url.md" %} for details.
 

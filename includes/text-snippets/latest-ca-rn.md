@@ -44,7 +44,7 @@ await account.transfer(
 );
 ```
 
-Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
+Check out the complete list of supported [[ca-stack|chains and tokens]].
 
 See {% include "./text-snippets/casdkref_url.md" %} for details.
 
