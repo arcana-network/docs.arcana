@@ -1,5 +1,12 @@
 #!/bin/zsh
 
+# Author: Shaloo Shalini
+# This script uses input files in common repo to 
+# determine the list of supported chains and tokens
+# for Arcana chain abstraction
+# Input File 1: https://github.com/arcana-network/ca-common/blob/main/src/data/chainid.ts
+# Input file 2: https://github.com/arcana-network/ca-common/blob/main/src/data/chaindata.ts
+
 # Check if two input files are provided
 if [ $# -ne 2 ]; then
     echo "Usage: $0 file1 file2"
@@ -35,8 +42,8 @@ if [ -z "$currency_map" ]; then
 fi
 
 # Debug: Print currency_map
-echo "DEBUG: currency_map:" > /dev/stderr
-echo "$currency_map" > /dev/stderr
+#echo "DEBUG: currency_map:" > /dev/stderr
+#echo "$currency_map" > /dev/stderr
 
 # Step 2: Process file2 to get chain data
 grep_output=$(cat "$FILE2" | grep -A 1000 'const RawData[ ]*=[ ]*\[')
@@ -102,8 +109,39 @@ if [ -z "$chain_data" ]; then
 fi
 
 # Debug: Print chain_data
-echo "DEBUG: chain_data:" > /dev/stderr
-echo "$chain_data" > /dev/stderr
+#echo "DEBUG: chain_data:" > /dev/stderr
+#echo "$chain_data" > /dev/stderr
+
+# Declare an associative array
+typeset -A currency_array
+
+# Parse currency_map into key-value pairs with decimal keys
+pairs=$(echo "$currency_map" | sed 's/[{},]//g' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sed 's/"\([^"]*\)":[[:space:]]*"\([^"]*\)"/\1:\2 /g' | tr -s ' ' '\n' | grep -v '^$' | awk -F':' '{ key=$1; if (key ~ /^0x[0-9A-Fa-f]+$/) { cmd="printf %d " key; cmd | getline dec; close(cmd); print dec ":" $2 } else { print $1 ":" $2 } }')
+
+# Debug: Print the parsed pairs
+#echo "Parsed pairs:"
+#echo "$pairs"
+
+# Populate the associative array
+while IFS=':' read -r key value; do
+    currency_array[$key]=$value
+done <<< "$pairs"
+
+# Print the entire array for verification
+#echo -e "\nCurrency array contents:"
+#for key in ${(k)currency_array}; do
+    #echo "currency_array[$key]=${currency_array[$key]}"
+#done
+
+# Function to search for a value by key
+search_currency() {
+    local key="$1"
+    if [[ -n "${currency_array[$key]}" ]]; then
+        echo "${currency_array[$key]}"
+    else
+        echo "Not found"
+    fi
+}
 
 # Process each chain
 echo "$chain_data" | while IFS='|' read chain_id currencies; do
@@ -113,9 +151,14 @@ echo "$chain_data" | while IFS='|' read chain_id currencies; do
         chain_name="Unknown Chain"
     fi
 
-    echo "Chain id: $chain_id" > /dev/stderr
-    echo "Chain name: $chain_name" > /dev/stderr
-    echo "currencies: $currencies" > /dev/stderr
+    echo "---"
+    echo "Chain id: $chain_id"
+    echo "Chain name: name: $chain_name"
+    #echo "currencies: $currencies"
+
+    echo "$currencies" | tr -s ' ' '\n' | while read -r value; do
+        [[ -n "$value" ]] && search_currency "$value"
+    done
 
 done
 
