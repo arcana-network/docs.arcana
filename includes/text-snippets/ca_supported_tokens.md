@@ -1,9 +1,14 @@
 |Tokens|Status|
 |:---|:---|
-|ETH  | ✅ |
+|ETH/WETH^*^  | ✅ |
 |USDT | ✅ |
 |USDC | ✅ |
-|WETH^*^ | ✅ |
+|POL  | ✅ |
+|AVAX | ✅ |
+|BNB  | ✅ |
+|HYPE  | ✅ |
+|KAIA  | ✅ |
+|SOPH  | ✅ |
 |Native/Gas Tokens | ✅ |
 
 ^*^ *where applicable, on supported chains.*
