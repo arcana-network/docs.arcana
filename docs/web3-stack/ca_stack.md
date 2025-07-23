@@ -15,9 +15,11 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
 
 ^*^ *Every chain may not support all tokens. The list of supported chains and tokens may differ for the Coral and the Folly testnet. The chains supported by the SDK and those supported in the standalone, CA wallet used in the demos may not always be the same.*
 
+## Chains and Tokens
+
 {% include "./text-snippets/ca_token_qualifier.md" %}
 
-## Ethereum
+### Ethereum
 
 === "Mainnet"
 
@@ -34,7 +36,7 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
       | ETH |  ✅  |
       | USDC |  ✅  |
 
-## Optimism
+### Optimism
 
 === "Mainnet"
 
@@ -52,7 +54,7 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
       | USDC | ✅  |
       | USDT | ✅  |
 
-## BSC
+### BSC
 
 === "Mainnet"
 
@@ -63,7 +65,7 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
       | USDT | ✅  |
       | BNB | ✅  |
 
-## Polygon
+### Polygon
 
 === "Mainnet"
 
@@ -80,7 +82,10 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
       | USDC | ✅  |
       | POL | ✅  |
 
-## HyperEVM
+
+<!--- Commenting out HyperEVM July 21 casdk update
+
+### HyperEVM
 
 === "Mainnet"
 
@@ -88,8 +93,9 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
       | :--- | :--- | 
       | USDT | ✅  |
       | HYPE | ✅  |
+-->
 
-## Kaia
+### Kaia
 
 === "Mainnet"
 
@@ -98,7 +104,7 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
       | USDT | ✅  | 
       | KAIA | ✅  |
 
-## Base
+### Base
 
 === "Mainnet"
 
@@ -115,7 +121,7 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
       | ETH | ✅  |  
       | USDC | ✅  |
 
-## Fuel
+### Fuel
 
 === "Mainnet"
 
@@ -125,7 +131,7 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
       | USDC | ✅  |
       | USDT | ✅  |
 
-## Arbitrum
+### Arbitrum
 
 === "Mainnet"
 
@@ -143,7 +149,7 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
       | USDC |  ✅  |
       | USDT |  ✅  |
 
-## Avalanche
+### Avalanche
 
 === "Mainnet"
 
@@ -153,7 +159,7 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
       | USDT | ✅  |
       | AVAX | ✅  |
 
-## Sophon
+### Sophon
 
 === "Mainnet"
 
@@ -164,7 +170,7 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
       | USDT | ✅  | 
       | SOPH | ✅  |
 
-## Scroll
+### Scroll
 
 === "Mainnet"
 

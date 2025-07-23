@@ -24,7 +24,7 @@ To try unified balance and chain abstracted transactions, connect the [standalon
 
 {% include "./text-snippets/ca_token_qualifier.md" %}
 
-## Ethereum
+### Ethereum
 
 === "Mainnet"
 
@@ -41,7 +41,7 @@ To try unified balance and chain abstracted transactions, connect the [standalon
       | ETH |  ✅  |
       | USDC |  ✅  |
 
-## Optimism
+### Optimism
 
 === "Mainnet"
 
@@ -59,7 +59,7 @@ To try unified balance and chain abstracted transactions, connect the [standalon
       | USDC | ✅  |
       | USDT | ✅  |
 
-## BSC
+### BSC
 
 === "Mainnet"
 
@@ -70,7 +70,7 @@ To try unified balance and chain abstracted transactions, connect the [standalon
       | USDT | ✅  |
       | BNB | ✅  |
 
-## Polygon
+### Polygon
 
 === "Mainnet"
 
@@ -87,7 +87,10 @@ To try unified balance and chain abstracted transactions, connect the [standalon
       | USDC | ✅  |
       | POL | ✅  |
 
-## HyperEVM
+
+<!--- Commenting out HyperEVM July 21 casdk update
+
+### HyperEVM
 
 === "Mainnet"
 
@@ -95,8 +98,9 @@ To try unified balance and chain abstracted transactions, connect the [standalon
       | :--- | :--- | 
       | USDT | ✅  |
       | HYPE | ✅  |
+-->
 
-## Kaia
+### Kaia
 
 === "Mainnet"
 
@@ -105,7 +109,7 @@ To try unified balance and chain abstracted transactions, connect the [standalon
       | USDT | ✅  | 
       | KAIA | ✅  |
 
-## Base
+### Base
 
 === "Mainnet"
 
@@ -122,7 +126,7 @@ To try unified balance and chain abstracted transactions, connect the [standalon
       | ETH | ✅  |  
       | USDC | ✅  |
 
-## Fuel
+### Fuel
 
 === "Mainnet"
 
@@ -132,7 +136,7 @@ To try unified balance and chain abstracted transactions, connect the [standalon
       | USDC | ✅  |
       | USDT | ✅  |
 
-## Arbitrum
+### Arbitrum
 
 === "Mainnet"
 
@@ -150,7 +154,7 @@ To try unified balance and chain abstracted transactions, connect the [standalon
       | USDC |  ✅  |
       | USDT |  ✅  |
 
-## Avalanche
+### Avalanche
 
 === "Mainnet"
 
@@ -160,7 +164,7 @@ To try unified balance and chain abstracted transactions, connect the [standalon
       | USDT | ✅  |
       | AVAX | ✅  |
 
-## Sophon
+### Sophon
 
 === "Mainnet"
 
@@ -171,7 +175,7 @@ To try unified balance and chain abstracted transactions, connect the [standalon
       | USDT | ✅  | 
       | SOPH | ✅  |
 
-## Scroll
+### Scroll
 
 === "Mainnet"
 

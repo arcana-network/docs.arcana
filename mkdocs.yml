@@ -86,6 +86,7 @@ extra:
   # homepage: https://arcana.network
   arcana:
     company_name: Arcana
+    ca_transaction_limit: $100
     ca_wallet_download_url: https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi
     ca_intent_explorer_name: Arcana Intent Explorer
     ca_intent_explorer_dev: https://arcana-intent-dev.netlify.app/

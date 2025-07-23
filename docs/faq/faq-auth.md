@@ -13,11 +13,12 @@ toc_depth: 2
 
 ---
 
-??? an-faq "Can app users onboard app only via social login or do they have the flexibility to use any third-party Web3 wallets to connect to an app integrated with the {{config.extra.arcana.sdk_name}}?"
+??? an-faq "Is it possible to onboard users via social login as well as via a wallet when using the {{config.extra.arcana.sdk_name}}?"
 
       Yes. 
 
-      Besides social login, {{config.extra.arcana.sdk_name}} allows Web3 app users to log in to a Web3 app via any supported third-party browser-based Web3 wallets. 
+      Besides social login, {{config.extra.arcana.sdk_name}} allows user onboarding
+      via any supported third-party browser-based Web3 wallets. 
       
       Apps using wallet connectors, [[wagmi-quick-start|Wagmi]], and [[rainbowkit-quick-start|RainbowKit]], [[web3-react-quick-start|Web3-React]], and [[walletconnect-quick-start|WalletConnect]] SDKs can enable {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
 
