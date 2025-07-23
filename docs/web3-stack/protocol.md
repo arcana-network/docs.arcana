@@ -18,7 +18,7 @@ The {{config.extra.arcana.company_name}} blockchain protocol is offered through 
 
 ## Chain Abstraction
 
-The {{config.extra.arcana.company_name}} unified balance feature is available through the {{config.extra.arcana.ca_sdk_name}} v0.0.3 released in January 2025 on the Testnet. A limited set of [[ca-stack#tokens|tokens]] and [[ca-stack#chains|chains]] are supported for chain abstraction as of this release.
+The {{config.extra.arcana.company_name}} unified balance feature is available through the {{config.extra.arcana.ca_sdk_name}} v0.0.3 released in January 2025 on the Testnet. A limited set of [[ca-stack|chains and tokens]] are supported for chain abstraction as of this release.
 
 Chain Abstraction is available on Arcana Testnet. We are actively working towards enabling this feature on the Arcana Mainnet.
 

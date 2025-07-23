@@ -22,5 +22,4 @@
             </WagmiProvider>
         </StrictMode>
     );
-
 ```

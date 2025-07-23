@@ -86,6 +86,7 @@ extra:
   # homepage: https://arcana.network
   arcana:
     company_name: Arcana
+    ca_transaction_limit: $100
     ca_wallet_download_url: https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi
     ca_intent_explorer_name: Arcana Intent Explorer
     ca_intent_explorer_dev: https://arcana-intent-dev.netlify.app/
@@ -532,14 +533,16 @@ nav:
         - Web Apps: quick-start/ca-quick-start.md
         - Wagmi Apps: quick-start/ca-wagmi-quick-start.md
         - Auth & CA Apps: quick-start/auth-ca-wagmi-quick-start.md
-      - Chains: web3-stack/ca_stack.md
+      - Chains & Tokens: 
+        - SDK: web3-stack/ca_stack.md
+        - Wallet: web3-stack/ca_wallet_stack.md
       - Usage: 
         - Overview: ca/ca-usage-overview.md
         - Install: ca/ca-sdk-installation.md
         - Integrate: 
           - ca/integrate/wagmi.md
           - ca/integrate/web.md
-      - APIs: 
+      - CA API: 
         - ca-sdk: ca/ca-usage-guide.md
         - ca-wagmi: ca/ca-wagmi-usage-guide.md
       - Examples: ca/examples.md
@@ -576,6 +579,7 @@ nav:
         - Archives: 
           - relnotes/archives/ca-index.md
           - CA SDK:
+            - v1.0.3: relnotes/rn-ca-v1.0.3.md
             - v0.0.7: relnotes/rn-ca-v0.0.7.md
             - v0.0.5: relnotes/rn-ca-v0.0.5.md
             - v0.0.3: relnotes/rn-ca-v0.0.3.md
@@ -759,9 +763,10 @@ nav:
               - Sign-Up & Login: auth/onboard/passkey-auth/passkey-signup.md
               - Login: auth/onboard/passkey-auth/passkey-login.md
             - Auth-Core SDK: quick-start/auth-core-quick-start.md
-      - APIs:
-        - Auth: auth/auth-usage-guide.md
-        - Auth-Core: auth/auth-core-usage-guide.md     
+      - Auth API:
+        - auth: auth/auth-usage-guide.md
+        - auth-wagmi: auth/auth-wagmi-usage-guide.md
+        - auth-core: auth/auth-core-usage-guide.md     
       - Examples: 
         - Auth-Examples: https://github.com/arcana-network/auth-examples
         - Try Auth: https://codesandbox.io/p/github/shaloo/auth-sdk-example-vite-vue/main?import=true

@@ -3,10 +3,12 @@
 | :-------- | :------- | :-------------- | :----- |
 | Ethereum  | 1        | ETH             | ✅     |
 | Optimism  | 10       | ETH             | ✅     |
+| BSC       | 97       | BNB             | ✅     |
 | Polygon   | 137      | MATIC           | ✅     |
 | HyperEVM  | 999      | HYPE            | ✅     |
 | Kaia      | 8217     | KAIA            | ✅     |
 | Base      | 8453     | ETH             | ✅     |
+| Fuel      | 9889     | FUEL            | ✅     |
 | Arbitrum  | 42161    | ARB             | ✅     |
 | Avalanche | 43114    | AVAX            | ✅     |
 | Sophon    | 50104    | SOPH            | ✅     |
@@ -15,7 +17,6 @@
 <!---* ~~Linea~~--->
 
 <!---
->>>>>>> 9ae43e19 (Fix: #AR-9538 supported chains layout similar to onebalance)
 <div class="img-grid-cards">
 
     <figure markdown="span">

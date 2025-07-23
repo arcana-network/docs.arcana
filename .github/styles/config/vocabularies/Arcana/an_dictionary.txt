@@ -1,3 +1,6 @@
+Sophon
+Kaia
+HyperEVM
 .an-screenshots
 .dmg
 .json

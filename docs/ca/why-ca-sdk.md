@@ -8,7 +8,7 @@ arcana:
 
 # Why CA SDK?
 
-{{config.extra.arcana.company_name}}’s Chain Abstraction SDK can integrate with any Web3 app and enable unified balance for the app users. Unified balance allows users to spend the consolidated multi-chain balance of source chain [[ca-stack#tokens|tokens]] within the app context on any destination [[ca-stack#chains|chain]]. 
+{{config.extra.arcana.company_name}}’s Chain Abstraction SDK can integrate with any Web3 app and enable unified balance for the app users. Unified balance allows users to spend the consolidated multi-chain balance of [[ca-stack|supported source chain tokens]] within the app context on any destination chain. 
     
 This allows Web3 apps to onboard users from any ecosystem effortlessly. Integration with the SDK requires minimal effort.
 
