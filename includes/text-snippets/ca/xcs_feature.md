@@ -3,7 +3,7 @@ enabled unified balance.
 
 **Unified Balance**
 
-- Users could combine the same token type (e.g., USDT) held across
+- Users could combine the same token type (for example, USDT) held across
   multiple source chains into a single, unified balance.
 - This allowed spending that token on any destination chain.
 - **Limitation:** Users could only use the unified balance of a single
@@ -30,7 +30,7 @@ enabled unified balance.
 **Unified Balance + XCS**
 
 - The new improved unified balance approach allows cross-chain swaps. 
-- Users can now spend any supported token (e.g., USDT, USDC) from 
+- Users can now spend any supported token (for example, USDT, USDC) from 
   any supported source chain to pay on any destination chain.
 - The protocol automatically combines multiple token types and 
   sources to fulfill the transaction, even if the user lacks
