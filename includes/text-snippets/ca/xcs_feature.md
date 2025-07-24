@@ -37,8 +37,9 @@ enabled unified balance.
     With no unified balance or chain abstraction, user cannot spend any USDT on Scroll unless
     they use a bridge to convert tokens.
 
-    With basic unified balance and chain abstracted transaction, user can spend 18 USDT on Scroll.
-    XCS feature lets user spend 18 USDC on Scroll which is not possible with basic unified balance.
+    With basic unified balance and chain abstracted transaction, user can spend *18 USDT on Scroll*.
+
+    XCS feature lets user spend **18 USDC on Scroll** which is not possible with basic unified balance.
 
     | Intent | No Unified Balance / CA | Unified Balance  |  Unified Balance + XCS |
     |:---|:---|:---|:--- | 
