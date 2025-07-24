@@ -6,6 +6,6 @@ arcana:
   root_rel_path: ..
 ---
 
-# Unified Cross-Chain Swap
+# Cross-Chain Swap (XCS)
 
 {% include "./text-snippets/ca/xcs_feature.md" %}

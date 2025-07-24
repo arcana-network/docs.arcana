@@ -1,8 +1,8 @@
 !!! an-note "Unified Balance (XCS)"
 
-    Cross-Chain Support (XCS) enhances unified balance by allowing users to spend any supported token (e.g., USDT, USDC) from any source chain on any destination chain—provided the chain and token contract support the EIP-2612 `permit` function.
+    [[concept-xcs|Cross-Chain Support (XCS)]] enhances unified balance by allowing users to spend any supported token (e.g., USDT, USDC) from any source chain on any destination chain—provided the chain and token contract support the EIP-2612 `permit` function.
 
-    For chains or tokens without `permit/EIP-2612`, the protocol reverts to the older unified balance, which only combines the same token type across source chains.
+    For chains or tokens without `permit/EIP-2612`, the protocol reverts to the basic unified balance, which only combines the same token type across source chains.
 
 ### Ethereum
 
