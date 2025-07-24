@@ -1006,6 +1006,7 @@ passwordless
 Passwordless
 PasswordlessOptions
 Peaq
+Pectra
 performant
 permissioned
 Permissioned
