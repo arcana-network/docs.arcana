@@ -37,6 +37,27 @@ arcana:
     and use the {{config.extra.arcana.company_name}} CA wallet in the context of any 
     [[ca-stack-wallet|supported app, chains and tokens]]. 
 
+??? an-faq "How does chain abstraction protocol decide which chain to source the tokens from?"
+
+    Consider a wallet balance:
+    
+    Optimism: 1 ETH
+    Arbitrum: 1 ETH 
+    Scroll:  0 ETH
+
+    User Intent: Spend 0.5 ETH on Scroll
+    
+    The selection of source chains and tokens for a chain abstracted transaction is governed by the following logic:
+
+    * Source chains are sorted by token balance (descending order)
+    * Chains with the same balance are sorted by gas price (ascending order) 
+    
+    If multiple chains have the same balance, the one with lower gas price will be picked up to source the tokens.
+
+    The protocol selects the first chain in the sorted list. If its balance isn’t enough to cover the transaction amount and gas on the destination chain, it automatically uses the next chain(s) as needed.
+    
+    
+
 ## CA SDK
 
 ??? an-faq "How do I fix the polyfill issues right after import statement when integrating React and Vite app with the {{config.extra.arcana.ca_sdk_name}}?"
