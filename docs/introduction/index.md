@@ -23,8 +23,8 @@ arcana:
           C0 -- Configure App --> D0[SDK Settings]   
         end
 
-    classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem;
-    class E0 an-pink
+    classDef an-highlight stroke:#3169b3,stroke-width:0.25rem;
+    class E0 an-highlight
     ```
 
 === "Install & Integrate"
@@ -38,8 +38,8 @@ arcana:
           G00 --> H00(Call SDK Functions)
         end
 
-    classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem;
-    class E00 an-pink
+    classDef an-highlight stroke:#3169b3,stroke-width:0.25rem;
+    class E00 an-highlight
     ```
 
 ## Usage
@@ -57,8 +57,8 @@ arcana:
             E1 --> G1[Web3 Wallet Ops]
         end
 
-    classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem;
-    class C1 an-pink
+    classDef an-highlight stroke:#3169b3,stroke-width:0.25rem;
+    class C1 an-highlight
     ```
 
     **Key Features**

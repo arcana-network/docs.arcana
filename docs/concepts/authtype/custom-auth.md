@@ -30,8 +30,8 @@ The custom Auth feature enables Web3 apps to use the {{config.extra.arcana.sdk_n
             SP1[1.Register App] --> CLID((Unique ClientID))
             SP2[2.Configure App] --> SP3[Edit/Save Custom Auth Settings]
         end
-        classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
-        class CLID an-pink
+        classDef an-highlight stroke:#3169b3,stroke-width:0.25rem; 
+        class CLID an-highlight
 
     ```
 
@@ -47,7 +47,7 @@ The custom Auth feature enables Web3 apps to use the {{config.extra.arcana.sdk_n
         end
         IAP --> CL -->  MMM --->|JWT Token| CL
 
-        linkStyle 2 stroke: deeppink;
+        linkStyle 2 stroke: #3169b3;
     ```
 
 3. Next, install {{config.extra.arcana.sdk_name}}, integrate app with the SDK, initialize `AuthProvider` and then use the JWT obtained after the Custom Auth processing to call the `loginWithCustomProvider()` method.
@@ -65,7 +65,7 @@ The custom Auth feature enables Web3 apps to use the {{config.extra.arcana.sdk_n
                 SDK1[AuthProvider Interface] 
             end
         end
-        linkStyle 1,2 stroke: deeppink;
+        linkStyle 1,2 stroke: #3169b3;
         authsdk --Verify JWT Claims --> STD[Standard JWT/JWK Validation]
         authsdk --Fetch Key Shares --> BEP[{{config.extra.arcana.company_name}} Auth Protocol] <--> BEK[DKG]
     ```
