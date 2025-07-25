@@ -39,13 +39,17 @@ arcana:
 
 ??? an-faq "How does chain abstraction protocol decide which chain to source the tokens from?"
 
-    Consider a wallet balance:
-    
-    Optimism: 1 ETH
-    Arbitrum: 1 ETH 
-    Scroll:  0 ETH
+    Let us take the following case:
 
-    User Intent: Spend 0.5 ETH on Scroll
+    !!! an-example "Wallet Balance"
+    
+        *Optimism:* 1 ETH
+
+        *Arbitrum:* 1 ETH
+        
+        *Scroll:*  0 ETH
+
+    **User Intent:** Spend 0.5 ETH on Scroll
     
     The selection of source chains and tokens for a chain abstracted transaction is governed by the following logic:
 
