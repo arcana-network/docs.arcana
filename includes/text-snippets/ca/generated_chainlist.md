@@ -126,6 +126,8 @@
       | USDC | ✅  | ❌ |
       | USDT | ✅  | ❌ |
 
+{% include "./text-snippets/warn_no_fuel_support_ca_wagmi.md" %}
+
 ### Arbitrum
 
 === "Mainnet"
