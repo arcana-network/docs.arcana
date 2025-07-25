@@ -1,22 +1,42 @@
-Unified balance shows all the liquidity in a user's EOA account across multiple chains in one view. It lets users transact seamlessly on any chain without needing bridges or pre-provisioning gas for token swaps. Chain abstraction handles all the complexity involved in a cross-chain transaction while enabling better UX through a single intent approval.
+Unified balance shows the total liquidity in a user's EOA account. It
+combines the token balance across multiple chains. This lets users spend 
+the available liquidity on any destination chain via chain
+abstracted transactions. 
 
-For instance, let us take the case where a user intends to spend 18 USDC on Scroll and does not have any balance on Scroll.
+No bridges or pre-provisioned gas are needed. All cross-chain complexity is handled behind the scenes. Users approve their intent to spend just once for a seamless experience.
 
-* Optimism: 0.1 ETH, O USDT, 0 USDC
-* Arbitrum: 0 ETH, 12 USDT, 0 USDC
-* Base: 0 ETH, 10 USDT, 0 USDC
-* Scroll: 0 ETH, 0 USDT, 0 USDC
+!!! an-example "Example"
 
-To spend 18 USDC on Scroll (destination chain) with the given liquidity fragmentation, it would typically require multiple clicks and steps for swapping or bridging different assets available on the source chains, so that user can convert the assets to the desired token balance on Scroll. 
+    Consider a wallet balance:
+      
+    - *Optimism:* 0.1 ETH, 0 USDT, 0 USDC 
+    - *Arbitrum:* 0 ETH, 12 USDT, 0 USDC 
+    - *Base:* 0 ETH, 10 USDT, 0 USDC 
+    - *Scroll:* 0 ETH, 0 USDT, 0 USDC 
 
-Through chain abstraction and ability to swap cross-chain, users have the convenience to view the consolidated token balance across supported tokens and chains. This simplifies the process of sending 18 USDC on Scroll, as users can sign the intent without the need for bridging, swapping, or considering the optimal routes. 
+    With no unified balance or chain abstraction, user *cannot spend any USDT on Scroll* unless
+    they use a bridge to convert tokens.
 
-The cross-chain swap enables users to:
+    With basic unified balance and chain abstracted transaction, user **can spend 18 USDT on Scroll**.
 
-- Spend assets on any destination chain without prior liquidity.
-- Collate payable amount by combining multiple supported assets across source chains to address liquidity fragmentation.
+    | Intent | No Unified Balance / CA | Unified Balance  | 
+    |:---|:---|:---| 
+    | Spend 18 **USDT** on Scroll | ❌ | ✅ | 
 
 <figure markdown="span">
   <img alt="With CA" src="{{config.extra.arcana.img_dir}}/ca_unified_balance.{{config.extra.arcana.img_png}}"/>
-  <figcaption>Single chain liquidity vs. Unified Balance with Chain Abstraction</figcaption>
+  <figcaption>Basic Unified Balance with Chain Abstraction</figcaption>
 </figure>
+
+**Cross Chain Swap (XCS)**
+
+Balance unification works at two levels, depending upon whether single token type is combined from source chains or can multiple token types be combined from source chains. The capability is subject to whether the chain and tokens supports `permit/EIP-2612':
+
+* Unified Balance (Basic)
+* Unified Balance with Cross-Chain Swap (XCS)
+
+{% include "./text-snippets/ca/xcs_feature.md" %}
+
+
+
+
