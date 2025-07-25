@@ -440,7 +440,13 @@ arcana:
     Layer 1 chains such as Ethereum and Fuel require the user to pay for the gas fee
     and pay for the allowance set up transaction. For Layer 2 chains and Avalanche, 
     the gas fee required to make the allowance set up transaction is sponsored by
-    {{config.extra.arcana.company_name}} until further notice.
+    {{config.extra.arcana.company_name}} until further notice. 
+
+    !!! an-caution "Limited Gas Sponsorship"
+
+        The gas fee sponsored for the allowance setup transaction is limited. 
+        
+        For BSC chain, it is capped at $0.05. If gas fees are high at the time of allowance setup, then the allowance setup transaction may fail if the user does not have tokens to pay for the gas fee.
 
 ??? an-faq "Does the {{config.extra.arcana.company_name}} CA wallet allow any CA transactions?"
 
