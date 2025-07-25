@@ -24,6 +24,8 @@ Follow this guide to onboard users in a Web3 app via social login and enable cha
     * It offers additional hooks to enable unified balance: `useBalance`, `useBalanceModal`.
     * The `useCAFn` hook allows chain abstracted `bridge` and `transfer` functionality for [[ca-stack|supported chains and tokens]].
 
+{% include "./text-snippets/warn_no_fuel_support_ca_wagmi.md" %}
+
 ## Prerequisites
 
 Before installing and integrating with the {{config.extra.arcana.wagmi_sdk_name}}, developers need to configure the authentication settings.
