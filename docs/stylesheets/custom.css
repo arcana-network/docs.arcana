@@ -84,7 +84,7 @@
   --md-an-color-light-purple: rgb(26, 24, 38);
   --md-accent-bg-color: var(--md-default-bg-color);
   --md-an-img-bg: rgba(36, 37, 46, 0.85);
-  --md-nav-bg-active-color: #311d30;
+  --md-nav-bg-active-color: rgba(49, 105, 179, 0.75);
   --md-nav-bg-hover-color: rgb(#321724);
   --md-an-admonition-note: #202331;
   --md-an-admonition-info: #27373b;
