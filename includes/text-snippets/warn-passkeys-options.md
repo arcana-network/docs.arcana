@@ -1,4 +1,4 @@
-!!! an-caution "Passkeys: Alternate Login vs. Sign-up"
+!!! an-warning "Passkeys: Alternate Login vs. Sign-up"
 
       Apps that use {{config.extra.arcana.sdk_name}} passkey auth let users log in with a passkey, but only after they've first signed up or logged in using another option. Then, they can create and link passkeys to their account.
 

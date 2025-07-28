@@ -237,7 +237,7 @@ The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer a
   <figcaption>App Usage Metrics</figcaption>
 </figure>
 
-!!! an-caution "Mainnet Billing"
+!!! an-warning "Mainnet Billing"
 
       The billing data only applies to Mainnet usage and will be available in the forthcoming releases.
 

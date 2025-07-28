@@ -16,7 +16,7 @@ Developers have two options to enable the embedded, non-custodial Arcana Web3 wa
 
 You must decide to implement the custom wallet UI **before** installing and integrating with the {{config.extra.arcana.sdk_name}}. At the time of registering the app through {{config.extra.arcana.dashboard_name}}, enter the app name, default chain and then select *Wallet UI Mode* value as `Custom UI` instead of the `Arcana UI`. In this case, the onus of creating user interface for signing blockchain transaction, displaying the user's account information, Web3 assets such as tokens, NFTs, etc., lies with the developer.
 
-!!! an-caution "One time setting"
+!!! an-warning "One time setting"
 
       Custom Wallet UI option is selected at the time of registering the app and cannot be reverted later. 
 

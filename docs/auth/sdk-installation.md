@@ -36,7 +36,7 @@ For example, Vue apps, HTML/CSS/JS apps only require installation of the `{{conf
 
 {% include "./code-snippets/auth_unity_install.md" %}
 
-!!! an-caution "Unity Settings"
+!!! an-warning "Unity Settings"
 
       Developers must update the Unity Project settings in addition to installing the {{config.extra.arcana.gaming_sdk_name}}. This is required to enable SDK usage in Unity Apps. See [[unity-quick-start#1-unity-setup-auth-install| Unity Setup]].
 

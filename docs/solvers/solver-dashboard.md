@@ -43,7 +43,7 @@ To access the Solver Dashboard, the solver admin must:
 2. Register the EOA with the {{config.extra.arcana.company_name}} protocol
 3. Make sure the solver is accessible at a URL such as `ws://ip:port/api/v1/admin-api`
 
-!!! an-caution "Running a Solver"
+??? an-warning "Running a Solver"
 
     To run a solver:
     

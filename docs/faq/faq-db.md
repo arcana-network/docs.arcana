@@ -45,7 +45,7 @@ toc_depth: 2
 
       3. Use the 'Mainnet' profile **{{config.extra.arcana.app_address}}** and update it in the app integration code instead of the earlier value which corresponds to 'Testnet'. You will need to restart your application after this change. This is important to ensure that the app uses the 'Mainnet' configuration settings.
 
-    !!! an-caution "Use appropriate **{{config.extra.arcana.app_address}}** "
+    !!! an-warning "Use appropriate **{{config.extra.arcana.app_address}}** "
 
           To migrate an app from using Testnet to Mainnet, the developers must ensure that the new **{{config.extra.arcana.app_address}}** corresponding to the application's 'Mainnet' profile is used to initialize the `AuthProvider` while integrating the app with the {{config.extra.arcana.sdk_name}}. After that, the app must be restarted to switch over from using {{config.extra.arcana.company_name}} Testnet to the Mainnet. 
 

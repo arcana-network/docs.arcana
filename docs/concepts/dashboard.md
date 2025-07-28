@@ -21,6 +21,6 @@ It lets Web3 developers register apps with {{config.extra.arcana.company_name}} 
   <figcaption>Developer Dashboard</figcaption>
 </figure>
 
-!!! an-caution "Register, Configure then Integrate!"
+!!! an-warning "Register, Configure then Integrate!"
 
     Before integrating any application with the {{config.extra.arcana.sdk_name}}, it must be [[register-app-auth|registered]] and [[index-configure-auth|configured for user onboarding]] through the {{config.extra.arcana.dashboard_name}}.

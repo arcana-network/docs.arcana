@@ -108,7 +108,7 @@ Also, configure the key to use the correct **AppId** that was created earlier.
 
 **Download the key**. It can only be downloaded once. 
 
-!!! an-caution "Apple Key Security"
+!!! an-warning "Apple Key Security"
 
       Keep the downloaded Apple Key safe. 
       

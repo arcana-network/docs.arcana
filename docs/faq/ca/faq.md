@@ -120,7 +120,7 @@ arcana:
     For failed transactions, the protocol itself starts the refund process. If for
     some reason that does not work, contact [support@arcana.network](mailto:support@arcana.network).
 
-    !!! an-caution "Viewing Refund"
+    !!! an-warning "Viewing Refund"
 
         To view the refund, a user must open or log into the app and access the wallet.
         For refunds, ensure that an active session exists. The same wallet should
@@ -442,7 +442,7 @@ arcana:
     the gas fee required to make the allowance set up transaction is sponsored by
     {{config.extra.arcana.company_name}} until further notice. 
 
-    !!! an-caution "Limited Gas Sponsorship"
+    !!! an-warning "Limited Gas Sponsorship"
 
         The gas fee sponsored for the allowance setup transaction is limited. 
         

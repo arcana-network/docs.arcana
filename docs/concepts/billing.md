@@ -53,7 +53,7 @@ Using the {{config.extra.arcana.dashboard_name}}, developers can configure their
 * Billing Address Details
 * Payment Method
 
-!!! an-caution "Adding Payment Method"
+!!! an-warning "Adding Payment Method"
 
       It is a mandatory requirement to enter and save a valid address in your developer account prior to providing payment method details through the {{config.extra.arcana.dashboard_name}}. 
 

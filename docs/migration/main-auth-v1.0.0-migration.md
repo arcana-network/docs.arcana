@@ -18,7 +18,7 @@ When you migrate from using the {{config.extra.arcana.sdk_name}}  v0.3.0 to the 
 
 The following section lists changes between {{config.extra.arcana.sdk_name}} v0.3.0 and v1.0.0. 
 
-!!! an-caution "Use Latest Release"
+!!! an-warning "Use Latest Release"
 
       If you are using {{config.extra.arcana.sdk_name}} v0.2.2 or older, please see [[migration-guide-v0.3.0|How to migrate to {{config.extra.arcana.sdk_name}} v0.3.0]].
 

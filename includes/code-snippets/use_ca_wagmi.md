@@ -1,4 +1,4 @@
-=== "`main.tsx`"
+=== "main.tsx"
 
     ```tsx hl_lines="5 6 10 17 19"
     import { StrictMode } from "react";

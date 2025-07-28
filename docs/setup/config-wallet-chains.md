@@ -110,7 +110,7 @@ When a user logs into the wallet, the default active chain is selected. To switc
   <figcaption>Set Polygon as the Active Chain</figcaption>
 </figure>
 
-!!! an-caution "Non-EVM Chains"
+!!! an-warning "Non-EVM Chains"
 
       If the chain type selected during app registration is a non-EVM chain type, then you will not see any EVM-compatible chains displayed in the dashboard. 
       

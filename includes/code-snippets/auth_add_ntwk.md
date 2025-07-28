@@ -1,4 +1,4 @@
-!!! an-caution "Only EVM Chains"
+!!! an-warning "Only EVM Chains"
 
       Apps can programmatically add only the EVM-compatible chains to the preconfigured chain list if not already present.
 

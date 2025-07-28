@@ -87,8 +87,6 @@ The {{config.extra.arcana.ca_wagmi_sdk_name}} also provides the following additi
 * `useCAFn` - Allow chain abstracted token bridge and transfer functions
 * `useGetMyIntent` - Get a list of intents created for the user
 
-Refer to the following sample integration code and hook usage.
-
 {% include "./text-snippets/quick-start-int-ca-wagmi-sdk.md" %}
 
 For details, see [{{config.extra.arcana.ca_wagmi_sdk_name}} Reference]({{config.extra.arcana.ca_wagmi_sdk_ref_url}}).

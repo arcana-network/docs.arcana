@@ -22,7 +22,7 @@ Users can select any 5 security questions from the provided options or create cu
 
 Users must also create a 6-digit alphanumeric PIN. This PIN encrypts and stores one of the multiple verification factors used by MFA. It serves as a backup, stored securely with {{config.extra.arcana.company_name}}, in case the user changes devices or loses the locally stored encrypted component in their browser's cache.
 
-!!! an-caution "Cannot Disable MFA"
+!!! an-warning "Cannot Disable MFA"
 
       MFA, once enabled, cannot be disabled to ensure maximum security.
 

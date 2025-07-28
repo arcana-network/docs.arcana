@@ -163,7 +163,7 @@ When using the default {{config.extra.arcana.wallet_name}} UI, authenticated use
     }
     ```
     
-!!! an-caution "Access Limitation"
+!!! an-warning "Access Limitation"
 
     If the app is configured through the {{config.extra.arcana.dashboard_name}} for using the default [[concept-keyspace-type|app specific keys option]], then `_arcana_getPrivateKey` can be used. Not available for the Global Keys [[concept-keyspace-type|Keyspace configuration setting]] for security reason.
 ## What's Next?
