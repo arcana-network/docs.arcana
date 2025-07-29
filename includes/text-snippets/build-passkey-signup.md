@@ -40,4 +40,4 @@ Authenticated users can instantly access the in-app {{config.extra.arcana.wallet
 * [[index-config-social-providers|Configure Social Providers]]
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
-* {% include "./text-snippets/authsdkref_url.md" %}
+* [Auth SDK Reference]({{config.extra.arcana.auth_sdk_ref_url}})

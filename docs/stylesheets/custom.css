@@ -3,13 +3,13 @@
 :root > * {
   --md-nav-padding: 0.05rem;
   --md-an-pink-color: #FF4E9F;
-  --md-an-pink-color-light: #FF4E9F;
-  --md-an-highlight-color: var(--md-an-blue-color);
-  --md-an-highlight-color-light: var(--md-an-blue-color-light);
+  --md-an-pink-color-light: #f8eaf0;
+  --md-an-highlight-color: var(--md-an-pink-color);
+  --md-an-highlight-color-light: var(--md-an-pink-color-light);
   --md-an-blue-color: #3169b3;
   --md-an-blue-color-light: rgba(49, 105, 179, 0.25);
   --md-an-green-color: #0f8584;
-  --md-an-green-color-light: #D1EEEC;
+  --md-an-green-color-light: #d1eeec70;
   --md-an-black-color: #19191D;
   --md-an-gray-light-color: #DBDFE7;
   --md-an-gray-dark-color: #5F6776;
@@ -22,6 +22,9 @@
   --md_an_yellow-color-light: #FFF9DE;
   --md-an-purple-color: #5A2ABD;
   --md-an-cyan-color: #25BAEF;
+  --md-an-cyan-color-light: #bfe4f4bf;
+  --md-an-admonition-blue-color: #406edad0;
+  --md-an-admonition-blue-color-light: #406eda26;
   --md-an-gray-color-lighter: #ece6e81c;
   --md-an-img-bg: var(--md-an-gray-color-lighter);
   --md-default-bg-color--light: #aaaaaa;
@@ -29,8 +32,7 @@
   --md-typeset-a-color: var(--md-an-highlight-color);
   --md-accent-fg-color: rgb(132, 144, 149);
   --md-accent-fg-color--transparent: hsla(190, 5%, 49%, 0.1);
-  --md-accent-bg-color: hsla(0, 0%, 100%, 1);
-  --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
+  --md-accent-bg-color: hsl(56, 84%, 93%);
   --md-text-font: "Inter";
   --md-admonition-icon-an-faq: url('/img/icons/icons8-question-mark-48.webp');
   --md-admonition-icon-an-trbs: url('/img/icons/exclamation.webp');
@@ -46,10 +48,9 @@
   --md-an-banner-bg: var(--md-an-highlight-color);
   --md-text-font-family: "Inter";
   --md-mermaid-node-bg-color: var(--md-default-bg-color);
-  --md-nav-bg-active-color: var(--md-an-highlight-color-light);
   --md-nav-bg-hover-color: #eaeaea;
-  --md-an-admonition-note: var(--md-an-blue-color-light);
-  --md-admonition-icon-an-note-color: var(--md-an-blue-color);
+  --md-an-admonition-note: var(--md-an-admonition-blue-color-light);
+  --md-admonition-icon-an-note-color: var(--md-an-admonition-blue-color);
   --md-an-admonition-info: var(--md-an-gray-light-color);
   --md-admonition-icon-an-info-color: var(--md-an-gray-dark-color);
   --md-an-admonition-tip: var(--md-an-green-color-light);
@@ -60,9 +61,10 @@
   --md-admonition-icon-an-danger-color: var(--md-an-red-color);
   --md-an-admonition-example: #f6e3f865;
   --md-admonition-icon-an-example-color: var(--md-an-purple-color);
-  --md-an-admonition-abstract: #e9f2f663;
+  --md-an-admonition-abstract: var(--md-an-cyan-color-light);
   --md-admonition-icon-an-abstract-color: var(--md-an-cyan-color);
   --md-an-header-shadow-color: #eaeaea;
+  --md-an-img-bg: var(--md-an-gray-color-lighter);
   --md-primary-fg-color: #101010;
   --md-primary-fg-color--lighter: #929292;
   --md-primary-fg-color--light: #c2c2c2;
@@ -93,7 +95,6 @@
   --md-an-color-light-purple: rgb(26, 24, 38);
   --md-accent-bg-color: var(--md-default-bg-color);
   --md-an-img-bg: rgba(36, 37, 46, 0.85);
-  --md-nav-bg-active-color: rgba(49, 105, 179, 0.75);
   --md-nav-bg-hover-color: rgb(#321724);
   --md-an-admonition-note: #202331;
   --md-admonition-icon-an-note-color: var(--md-an-blue-color);
@@ -215,7 +216,7 @@
   /*padding-top: 0.25rem;
   padding-bottom: 0.25rem;*/
   border-radius: 5px;
-  background-color: var(--md-nav-bg-active-color);  /*background-color: #f4c3d9e6;*/
+  background-color: var(--md-an-highlight-color-light);  /*background-color: #f4c3d9e6;*/
   color: var(--md-an-highlight-color);
 }
 
@@ -271,14 +272,14 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
 }*/
 
 .md-typeset .tabbed-set {
-  border: 0.0125rem solid var(--md-an-highlight-color);
+  border: 0.0125rem solid var(--md-an-highlight-color-light);
   border-radius: 9px;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .md-typeset .tabbed-labels>label>[href]:first-child {
-  background-color: var(--md-an-highlight-color-light);
+  /*background-color: var(--md-an-highlight-color-light);*/
 }
 
 .md-typeset h3 {
@@ -317,7 +318,7 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
 }
 
 .md-typeset .tabbed-labels {
-  background-color: var(--md-nav-bg-active-color);
+  /*background-color: var(--md-an-highlight-color-light);*/
   border-top-right-radius: inherit;
   border-top-left-radius: inherit;
 }
@@ -722,6 +723,7 @@ details.an-abstract {
 
 .md-typeset .critic.block {
   border-radius: 9px;
+  background-color: var(--md-accent-bg-color);
 }
 
 /* Text Marker Highlight: Arcana Styling */

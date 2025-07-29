@@ -15,7 +15,7 @@ of the file in the `auth` repo: https://github.com/arcana-network/auth/blob/main
 
 Use the {{config.extra.arcana.sdk_name}} to onboard users via social login, allow users to access the in-app {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
 
-[:octicons-cross-reference-16:{ .icon-color } {% include "./text-snippets/authsdkref_url.md" %}](https://authsdk-ref-guide.netlify.app/){ .md-button }
+[:octicons-cross-reference-16:{ .icon-color } SDK Reference]({{config.extra.arcana.auth_sdk_ref_url}}){ .md-button }
 
 ## Installation
 

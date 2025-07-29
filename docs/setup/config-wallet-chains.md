@@ -171,4 +171,4 @@ For details refer to the [[web-auth-usage-guide#wallet_addethereumchain|{{config
 * [[solana-dashboard-user-guide| Configure Solana Chains]]
 * [[mvx-dashboard-user-guide| Configure MultiversX Chains]]
 * [[near-dashboard-user-guide| Configure Near Chains]]
-* {% include "./text-snippets/authsdkref_url.md" %}
+* [Auth SDK Reference]({{config.extra.arcana.auth_sdk_ref_url}})
