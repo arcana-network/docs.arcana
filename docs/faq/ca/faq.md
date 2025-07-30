@@ -4,6 +4,8 @@ title: 'CA FAQ'
 description: 'Frequently Asked Questions about the Arcana CA SDK.'
 arcana:
   root_rel_path: ..
+search:
+  boost: 3
 ---
 
 ## General
