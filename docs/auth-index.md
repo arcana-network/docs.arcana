@@ -29,12 +29,12 @@ This documentation contains everything you need to get started using [[introduct
 
 === "Web3 Developers"
 
-    Seamlessly onboard Web3 app users without friction. Web3 app usage should not necessitate setting up and connecting a Web3 wallet for login and authentication. 
+    Speed up user onboarding to Web3 apps by eliminating the complex setting up and connecting a Web3 wallet for login and authentication. 
     
-    Onboard Web3 app users via familiar Web2 login providers. Enable authenticated users to immediately access the in-app, non-custodial {{config.extra.arcana.wallet_name}} for signing blockchain transactions.
+    Onboard users to Web3 apps via familiar Web2 login providers. Let authenticated users instantly access the in-app, non-custodial {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
 
     Integrate Web3 apps with the {{config.extra.arcana.sdk_name}} to enable [[concept-social-login|social login]].
-    
+
 
     {==
 
