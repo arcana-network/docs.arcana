@@ -16,9 +16,9 @@ hide:
 
     Let users spend any supported crypto asset on [[ca-stack| any blockchain]] instantly - no chain switching, no bridging, no cross-chain swaps necessary. 
         
-    No hassle. Seamless transaction experience.
+    Build seamless, no hassle Web3 transaction experience.
     
-    Integrate Web3 app with the {{config.extra.arcana.company_name}}'s [[concept-ca|Chain Abstraction ]](CA) SDK. Enable app users to access [[concept-unified-balance|unified balance]] from all chains in one place.
+    Integrate Web3 app with the {{config.extra.arcana.company_name}}'s [[concept-ca|Chain Abstraction ]](CA) SDK. Enable app users to access and spend the [[concept-unified-balance|unified balance]] combining assets from all chains.
 
     {==
 
@@ -39,7 +39,7 @@ hide:
 
     What kind of Web3 app do you have? 
     
-    Select the appropriate app type and get started with integrating the {{config.extra.arcana.ca_sdk_name}}.
+    Select the appropriate app type and get started with integrating the [[concept-casdk|{{config.extra.arcana.ca_sdk_name}}]].
 
     <div class="tx-hero-container">
       <div class="tx-hero-content">
@@ -61,7 +61,7 @@ hide:
       <div class="tx-hero-content">
         <a href="https://sdk.arcana.network">
           <div class="tx-try-now-button-purple a-link-items">
-              <h3 style="color: var(--md-an-gray-light-color)">SDK Integration Demo</h3>
+              <h3 style="color: var(--md-an-gray-light-color)">SDK Integration Demo App</h3>
           </div>
         </a>
       </div>
@@ -78,7 +78,7 @@ hide:
       <div class="tx-hero-content">
         <a href="https://codesandbox.io/p/github/arcana-network/ca-wagmi-example/main">
           <div class="tx-try-now-button-purple a-link-items">
-              <h3 style="color: var(--md-an-gray-light-color)">Try Now</h3>
+              <h3 style="color: var(--md-an-gray-light-color)">Try Integration Sample Code</h3>
           </div>
         </a>
       </div>
