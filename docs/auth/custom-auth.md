@@ -31,7 +31,7 @@ Select the app type and follow the instructions to integrate the app with the SD
 
 {% include "./text-snippets/select_app_type_integrate.md" %}
 
-!!! an-caution "No user onboarding"
+!!! an-warning "No user onboarding"
 
       When using custom authentication, apps **do not onboard users** via the social login feature of the {{config.extra.arcana.sdk_name}}. Simply integrate with the SDK, access `AuthProvider` and call `loginWithCustomProvider` to provision the user's keys for signing blockchain transactions.
 

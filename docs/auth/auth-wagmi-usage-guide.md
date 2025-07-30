@@ -6,20 +6,11 @@ arcana:
   root_rel_path: ..
 ---
 
-<!--
-Note, this is a pure markdown file with no mkdocs related tags or keywords. It is a copy 
-of the file in the `auth` repo: https://github.com/arcana-network/auth/blob/main/usage.md
--->
-
 # {{config.extra.arcana.wagmi_sdk_name}} Usage
 
 Use the {{config.extra.arcana.wagmi_sdk_name}} to onboard users in a Wagmi app via social login. Let users instantly access the in-app {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
 
-<!--
-Latest auth-wagmi readme update PR not merged hence commenting https://wagmi-authsdk-ref-guide.netlify.app/ for now
--->
-
-[:octicons-cross-reference-16:{ .icon-color } {% include "./text-snippets/wagmi_authsdkref_url.md" %}](https://deploy-preview-28--wagmi-authsdk-ref-guide.netlify.app/){ .md-button }
+[:octicons-cross-reference-16:{ .icon-color } SDK Reference]({{config.extra.arcana.wagmi_sdk_ref_url}}){ .md-button }
 
 ## Install
 

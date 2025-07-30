@@ -14,7 +14,7 @@
 * Export private key and use it to import {{config.extra.arcana.wallet_name}} account to a third-party Web3 provider
 * Enable MFA for enhanced security
 
-!!! an-caution "**Not Supported**"
+!!! an-warning "**Not Supported**"
 
     The {{config.extra.arcana.wallet_name}} does not allow an app user to import any blockchain account created using a third-party wallet provider. 
 

@@ -17,7 +17,7 @@ arcana:
 
 {% include "./text-snippets/wallet_features.md" %}
 
-!!! an-caution "**Not Supported**"
+!!! an-warning "**Not Supported**"
 
     The {{config.extra.arcana.wallet_name}} does not allow an app user to import any blockchain account created using a third-party wallet provider. 
 

@@ -32,8 +32,8 @@ flowchart LR
         B1 -->Cz[App Z Settings] -- Configure Keyspace --> Dz[Global Keys]
     end
 
-classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
-class D1,Dz an-pink
+classDef an-highlight stroke:#3169b3,stroke-width:0.25rem; 
+class D1,Dz an-highlight
 ```
 
 ```mermaid
@@ -54,8 +54,8 @@ flowchart LR
         A3 --> B3(App A Login) -- Authenticated --> C3(Arcana Wallet in App A) --> D3[Wallet Address UA1]
     end
 
-classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem;
-class D3,DZ an-pink
+classDef an-highlight stroke:#3169b3,stroke-width:0.25rem;
+class D3,DZ an-highlight
 ```
 
 ## Enabling Global Keys

@@ -78,7 +78,7 @@ const userInfo = auth.getUserInfo();
 ...
 ```
 
-!!! an-caution "Configure Social Login"
+!!! an-warning "Configure Social Login"
       
       The login providers specified in [[auth-core-usage-guide#exported-enums|`SocialLoginType`]] parameter must be [[index-configure-auth| configured]] via the dashboard.
 

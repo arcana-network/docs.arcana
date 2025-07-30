@@ -28,7 +28,7 @@ Go to the [Steam Community Site](https://steamcommunity.com/login/home/?goto=%2F
   <figcaption>Steam Login</figcaption>
 </figure>
 
-!!! an-caution "Access Steam API Key"
+!!! an-warning "Access Steam API Key"
 
       Make sure you do not have a Steam limited account otherwise you cannot access the API Key. Refer to [Steam FAQ]( https://help.steampowered.com/en/faqs/view/71D3-35C2-AD96-AA3A) for more details. 
 

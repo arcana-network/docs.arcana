@@ -1,6 +1,6 @@
 This method is specified by [EIP-3326](https://eips.ethereum.org/EIPS/eip-3326).
 
-!!! an-caution "Chain Switching"
+!!! an-warning "Chain Switching"
 
       Apps can programmatically switch to another chain as long as it is of the same chain type. If an app is configured to use EVM chains, you cannot switch to a non-EVM chain and vice-versa.
 

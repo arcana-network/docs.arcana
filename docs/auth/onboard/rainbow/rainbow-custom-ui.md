@@ -64,5 +64,5 @@ Use the `ArcanaConnector` and set up [Wagmi config](https://wagmi.sh/react/getti
 
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
-* {% include "./text-snippets/authsdkref_url.md" %}
-* {% include "./text-snippets/wagmi_authsdkref_url.md" %}
+* [Auth SDK Reference]({{config.extra.arcana.auth_sdk_ref_url}})
+* [Auth Wagmi SDK Reference]({{config.extra.arcana.wagmi_sdk_ref_url}})
