@@ -6,6 +6,8 @@ arcana:
   root_rel_path: ../..
   app_type: "'Web3'"
   app_example_submodule: "'`ca-sdk-example`'"
+search:
+  boost: 3
 ---
 
 # Integrate Web App
