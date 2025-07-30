@@ -4,8 +4,8 @@
   --md-nav-padding: 0.05rem;
   --md-an-pink-color: #FF4E9F;
   --md-an-pink-color-light: #f8eaf0;
-  --md-an-highlight-color: var(--md-an-pink-color); /* Theme switch */
-  --md-an-highlight-color-light: var(--md-an-pink-color-light); /* Theme switch */
+  --md-an-highlight-color: var(--md-an-blue-color); /* Theme switch */
+  --md-an-highlight-color-light: var(--md-an-blue-color-light); /* Theme switch */
   --md-an-blue-color: #3169b3;
   --md-an-blue-color-light: rgba(49, 105, 179, 0.25);
   --md-an-green-color: #0f8584;
