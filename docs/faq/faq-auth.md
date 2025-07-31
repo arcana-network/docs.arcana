@@ -87,7 +87,7 @@ toc_depth: 2
 
 ??? an-faq "How does the app access an authenticated user's information such as name, email, login token, the wallet address?"
 
-      Apps can use the [`getUser()`](https://authsdk-ref-guide.netlify.app/classes/authprovider#getUser) method to obtain the user's name, email, login token ([[concept-arcana-jwt-token|{{config.extra.arcana.company_name}} JWT Token]], [[concept-did-token|DID Token]]), wallet address, etc. See {% include "./text-snippets/authsdkref_url.md" %} for details.
+      Apps can use the [`getUser()`](https://authsdk-ref-guide.netlify.app/classes/authprovider#getUser) method to obtain the user's name, email, login token ([[concept-arcana-jwt-token|{{config.extra.arcana.company_name}} JWT Token]], [[concept-did-token|DID Token]]), wallet address, etc. See [Auth SDK Reference]({{config.extra.arcana.auth_sdk_ref_url}}) for details.
 
 ??? an-faq "For Twitter, the `getUser()` function of the `AuthProvider` does not always return the user's email?"
 

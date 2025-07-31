@@ -1,1 +1,0 @@
-^*^ *ETH/native canonically bridged ERC-20 Ether*

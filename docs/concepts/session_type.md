@@ -29,7 +29,7 @@ Session cookies are used to manage session persistence. After the specified time
 
 A persistent session is convenient for app users but carries some risk since it automatically logs the user in when the app is reopened. Ensure the re-login time aligns with the app's security and risk management profile.
 
-!!! an-caution "Not supported for Global Keyspace Setting"
+!!! an-warning "Not supported for Global Keyspace Setting"
 
       The persistent session type is enabled only for the default [[concept-keyspace-type|app-specific keyspace]] setting. For security reasons, it is disabled for apps using global keyspace.
 

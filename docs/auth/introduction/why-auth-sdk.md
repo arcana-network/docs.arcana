@@ -48,6 +48,6 @@ Tailor the user experience for your Web3 applications as per your use case and t
 
 * [Social Login Demo App]({{config.extra.arcana.auth_sdk_demo_url}})
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
-* {% include "./text-snippets/authsdkref_url.md" %}
+* [Auth SDK Reference]({{config.extra.arcana.auth_sdk_ref_url}})
 
 {% include "./text-snippets/auth_sdk_quicklinks.md" %}

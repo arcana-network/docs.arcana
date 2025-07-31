@@ -20,6 +20,8 @@ to enable:
 App users can spend funds on any chain.
 They do not need to switch chains or bridge assets.
 
+{% include "./text-snippets/warn_no_fuel_support_ca_wagmi.md" %}
+
 ## Prerequisites
 
 Download and install the SDKs:

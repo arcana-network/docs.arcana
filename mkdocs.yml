@@ -1,4 +1,4 @@
-site_name: '📖 SDK Docs'
+site_name: '📖 Documentation'
 
 # For dev
 site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
@@ -20,6 +20,7 @@ copyright: Copyright &copy; 2025 Arcana Network
 theme:
   name: material
   language: en
+  #logo: img/arcana-logo-bw.png # Theme switch
   logo: img/arcana-logo-pink.png
   icon:
     repo: fontawesome/brands/git-alt
@@ -27,6 +28,7 @@ theme:
     view: material/eye
     admonition:
       note: fontawesome/solid/note-sticky
+  #favicon: /img/favicon-bw.webp # Theme switch
   favicon: /img/favicon-pink.webp
   custom_dir: docs/overrides
   features:
@@ -102,12 +104,15 @@ extra:
     ca_wagmi_sdk_codesandbox_url: https://codesandbox.io/p/github/arcana-network/ca-wagmi-example/main
     auth_ca_wagmi_sdk_codesandbox_url: https://codesandbox.io/p/github/shaloo/sample-arcana-auth-ca-wagmi-sdks/sample-auth-ca-wagmi-integration    
     auth_sdk_download_url: https://www.npmjs.com/package/@arcana/auth
+    auth_sdk_ref_url: https://authsdk-ref-guide.netlify.app/
     auth_sdk_demo_url: https://demo.arcana.network
     sdk_name: Arcana Auth SDK
     react_sdk_name: Arcana Auth React SDK
     react_sdk_download_url: https://www.npmjs.com/package/@arcana/auth-react
     wagmi_sdk_name: Arcana Auth Wagmi SDK
     wagmi_sdk_download_url: https://www.npmjs.com/package/@arcana/auth-wagmi
+    #wagmi_sdk_ref_url: https://wagmi-authsdk-ref-guide.netlify.app/ 
+    wagmi_sdk_ref_url: https://deploy-preview-28--wagmi-authsdk-ref-guide.netlify.app/
     web3_react_sdk_name: Arcana Auth Web3 React SDK
     web3_react_sdk_download_url: https://www.npmjs.com/package/@arcana/auth-web3-react
     auth_core_sdk_name: Arcana Auth-Core SDK
@@ -179,7 +184,7 @@ extra:
     provider: google
     property: !ENV [GOOGLE_ANALYTICS_ID, default='XXXXXXXXXX']
     feedback:
-      title: "Tell us what you think. Does this documentation fulfill your expectations?"
+      title: "Was this information helpful?"
       ratings:
         - icon: material/thumb-up-outline
           name: Yes, it was useful.

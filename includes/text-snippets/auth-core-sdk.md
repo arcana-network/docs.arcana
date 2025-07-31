@@ -2,7 +2,7 @@ The {{config.extra.arcana.auth_core_sdk_name}} is a client-side tool for develop
 
 When initializing {{config.extra.arcana.auth_core_sdk_name}}, the developer sets the redirect URL. The SDK performs OAuth2 login with the chosen provider and returns the login token from the provider. At the specified redirect URL, the developer uses this token to fetch the user's private key.
 
-!!! an-caution "Limited Feature SDK"
+!!! an-warning "Limited Feature SDK"
 
       The {{config.extra.arcana.auth_core_sdk_name}} has limited capabilities as compared to the {{config.extra.arcana.auth_core_sdk_name}}:
 

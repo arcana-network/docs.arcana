@@ -1,1 +1,0 @@
-<span><a href="https://authsdk-ref-guide.netlify.app/" target="_blank">{{config.extra.arcana.sdk_name}} Reference</a></span>

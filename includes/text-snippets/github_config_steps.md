@@ -44,7 +44,7 @@ Save the newly registered application in GitHub Developer Settings. GitHub will 
 
 Copy and save the **Client ID** and the **secret** assigned by GitHub for the newly registered app. It will be required in the next step while completing the {{config.extra.arcana.dashboard_name}} app configuration.
 
-!!! an-caution "GitHub Email Settings"
+!!! an-warning "GitHub Email Settings"
 
     Make sure your GitHub developer profile email settings are **NOT private**. If it is marked private then the [[concept-social-login|social login]] and the [[concept-aggregate-login|aggregate login]] features offered by the {{config.extra.arcana.sdk_name}} will not work due to [[troubleshooting#configuration-issues|configuration issues]].
 

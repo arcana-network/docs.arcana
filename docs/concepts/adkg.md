@@ -37,7 +37,7 @@ ADKG generates ECDSA keys on the [secp256k1](https://www.secg.org/sec2-v2.pdf) c
 
 Our ADKG implementation uses the [Practical Asynchronous Distributed Key Generation](https://eprint.iacr.org/2021/1591.pdf) protocol. It improves on the previous DKG by removing the need for a trusted dealer, reducing key exposure, and automating share regeneration. ADKG is resilient to attacks and works well in asynchronous networks. It ensures security by preventing any single node from accessing a user's key.
 
-!!! an-caution "ADKG Assumptions"
+!!! an-warning "ADKG Assumptions"
 
       The ADKG protocol works under the assumption that in an asynchronous network of `n ≥ 3t + 1` nodes, where at most `t` nodes could be malicious.
 

@@ -47,7 +47,7 @@ Provide the following inputs to register the app:
 
           The **Custom Wallet UI** option selected during app registration is a **one-time setting**. Once selected, the app cannot use the built-in {{config.extra.arcana.wallet_name}} UI at all. Developers must create a custom wallet UI and plug in the requisite Web3 wallet operations.
 
-    ??? an-caution "Global Keyspace Not Supported"
+    ??? an-warning "Global Keyspace Not Supported"
 
           If the **Custom Wallet UI** option is selected during app registration, the app is assigned app-specific keys by default. The app configuration does not have the option to configure global [[concept-keyspace-type|keyspace]].
 

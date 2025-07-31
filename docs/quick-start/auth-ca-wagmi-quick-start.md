@@ -24,6 +24,8 @@ Follow this guide to onboard users in a Web3 app via social login and enable cha
     * It offers additional hooks to enable unified balance: `useBalance`, `useBalanceModal`.
     * The `useCAFn` hook allows chain abstracted `bridge` and `transfer` functionality for [[ca-stack|supported chains and tokens]].
 
+{% include "./text-snippets/warn_no_fuel_support_ca_wagmi.md" %}
+
 ## Prerequisites
 
 Before installing and integrating with the {{config.extra.arcana.wagmi_sdk_name}}, developers need to configure the authentication settings.
@@ -64,7 +66,7 @@ To enable social login, you need to integrate with the {{config.extra.arcana.sdk
 
 {% include "./text-snippets/quick-start-deploy.md" %}
 
-For details, see {% include "./text-snippets/wagmi_authsdkref_url.md" %}.
+For details, see [Auth Wagmi SDK Reference]({{config.extra.arcana.wagmi_sdk_ref_url}}).
 
 Next, you need to integrate the Web3 app with the {{config.extra.arcana.ca_wagmi_sdk_name}} to enable chain abstracted transactions via unified balance.
 
@@ -84,8 +86,6 @@ The {{config.extra.arcana.ca_wagmi_sdk_name}} also provides the following additi
 * `useBalanceModal` - Display a plug and play widget containing the unified balance
 * `useCAFn` - Allow chain abstracted token bridge and transfer functions
 * `useGetMyIntent` - Get a list of intents created for the user
-
-Refer to the following sample integration code and hook usage.
 
 {% include "./text-snippets/quick-start-int-ca-wagmi-sdk.md" %}
 

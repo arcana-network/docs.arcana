@@ -21,6 +21,8 @@ Instead, use the ones provided by the SDK. They support chain abstracted transac
 Use the [[concept-unified-balance-wagmi-pnp|plug-and-play UI modal]].
 It shows the unified balance in the Wagmi app context.
 
+{% include "./text-snippets/warn_no_fuel_support_ca_wagmi.md" %}
+
 ## 1. Install
 
 {% include "./code-snippets/ca_wagmi_sdk_install.md" %}

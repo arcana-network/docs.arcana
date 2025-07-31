@@ -23,7 +23,7 @@ graph LR
   A\[[User]] -.-> C(Passwordless Login) -.-> E{Email ID Same?};
 ```
 
-!!! an-caution "Limited Auth Provider Support"
+!!! an-warning "Limited Auth Provider Support"
 
       Aggregate login feature does not work for the following providers:
 

@@ -72,7 +72,7 @@ Specify all the fields appropriately. Do not leave the optional fields empty.
 - Terms of Service
 - Privacy Policy
 
-!!! an-caution "Enable Email ID Access"
+!!! an-warning "Enable Email ID Access"
 
       {{config.extra.arcana.sdk_name}} requires the Twitter user's email ID to verify the logged-in user's credentials. To enable this, Twitter makes it necessary that the Privacy Policy and Terms of Service are appropriately provided while creating a new app entry. For details, see [here](https://developer.twitter.com/en/docs/twitter-api/v1/accounts-and-users/manage-account-settings/api-reference/get-account-verify_credentials).
 

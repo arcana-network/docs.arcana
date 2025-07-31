@@ -246,7 +246,7 @@ Clicking will open the provider interface in a new tab. {{config.extra.arcana.wa
 
       * [Transak coverage](https://docs.transak.com/docs/fiat-currency-country-payment-method-coverage-plus-fees-and-limits)
 
-??? an-caution "Buy Limitations"
+??? an-warning "Buy Limitations"
 
       1. Purchased ERC20 and ERC721 tokens will not update automatically in the {{config.extra.arcana.wallet_name}} assets screen. Users must manually add custom tokens, as on-ramp providers do not supply the token's contract address.
 

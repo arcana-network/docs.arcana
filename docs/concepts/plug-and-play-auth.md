@@ -23,8 +23,8 @@ flowchart LR
         B1  --> C1[Get Client ID] --> E1[Initialize <code>AuthProvider</code>]
         A1 -- 2.Integrate App --> D1[Install Auth SDK] --> E1 --> O[Onboard Users]
     end
-classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem;
-class F1 an-pink
+classDef an-highlight stroke:#3169b3,stroke-width:0.25rem;
+class F1 an-highlight
 ```
 
 ```mermaid
@@ -36,8 +36,8 @@ flowchart LR
         P1 -- IAM Provider Firebase --> H1[<code>loginWithBearer</code>]
     end
 
-classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem;
-class F1 an-pink
+classDef an-highlight stroke:#3169b3,stroke-width:0.25rem;
+class F1 an-highlight
 ```
 
 ## Compact Modal

@@ -2,7 +2,7 @@
 await auth.loginWithLink(`${email}`)
 ```
 
-!!! an-caution "Deprecated"
+!!! an-warning "Deprecated"
 
       `loginWithLink` is deprecated.
 

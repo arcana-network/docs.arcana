@@ -1,4 +1,4 @@
-??? an-caution "Update Redirect URIs"
+??? an-warning "Update Redirect URIs"
 
     After creating the 'Mainnet' profile, developers **must** also update the social login provider 'Redirect URI' settings via the respective provider developer consoles or dashboards. 
 

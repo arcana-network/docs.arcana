@@ -23,8 +23,8 @@ Web3 app developers can enable unified balance for app users by integrating the 
           G00 & H00 --> I00(Install & Integrate)
         end
 
-    classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem;
-    class E00 an-pink
+    classDef an-highlight stroke:#3169b3,stroke-width:0.25rem;
+    class E00 an-highlight
     ```
 === "Install & Integrate"
     ```mermaid
@@ -36,8 +36,8 @@ Web3 app developers can enable unified balance for app users by integrating the 
           G00 --> H00(Call SDK Functions)
         end
 
-    classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem;
-    class E00 an-pink
+    classDef an-highlight stroke:#3169b3,stroke-width:0.25rem;
+    class E00 an-highlight
     ```
 
 ## See Also

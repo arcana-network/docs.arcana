@@ -4,6 +4,8 @@ title: 'CA FAQ'
 description: 'Frequently Asked Questions about the Arcana CA SDK.'
 arcana:
   root_rel_path: ..
+search:
+  boost: 3
 ---
 
 ## General
@@ -36,6 +38,31 @@ arcana:
     **Wallet Users:** [Download]({{config.extra.arcana.ca_wallet_download_url}})
     and use the {{config.extra.arcana.company_name}} CA wallet in the context of any 
     [[ca-stack-wallet|supported app, chains and tokens]]. 
+
+??? an-faq "How does chain abstraction protocol decide which chain to source the tokens from?"
+
+    Let us take the following case:
+
+    !!! an-example "Wallet Balance"
+    
+        *Optimism:* 1 ETH
+
+        *Arbitrum:* 1 ETH
+        
+        *Scroll:*  0 ETH
+
+    **User Intent:** Spend 0.5 ETH on Scroll
+    
+    The selection of source chains and tokens for a chain abstracted transaction is governed by the following logic:
+
+    * Source chains are sorted by token balance (descending order)
+    * Chains with the same balance are sorted by gas price (ascending order) 
+    
+    If multiple chains have the same balance, the one with lower gas price will be picked up to source the tokens.
+
+    The protocol selects the first chain in the sorted list. If its balance isn’t enough to cover the transaction amount and gas on the destination chain, it automatically uses the next chain(s) as needed.
+    
+    
 
 ## CA SDK
 
@@ -120,7 +147,7 @@ arcana:
     For failed transactions, the protocol itself starts the refund process. If for
     some reason that does not work, contact [support@arcana.network](mailto:support@arcana.network).
 
-    !!! an-caution "Viewing Refund"
+    !!! an-warning "Viewing Refund"
 
         To view the refund, a user must open or log into the app and access the wallet.
         For refunds, ensure that an active session exists. The same wallet should
@@ -440,7 +467,13 @@ arcana:
     Layer 1 chains such as Ethereum and Fuel require the user to pay for the gas fee
     and pay for the allowance set up transaction. For Layer 2 chains and Avalanche, 
     the gas fee required to make the allowance set up transaction is sponsored by
-    {{config.extra.arcana.company_name}} until further notice.
+    {{config.extra.arcana.company_name}} until further notice. 
+
+    !!! an-warning "Limited Gas Sponsorship"
+
+        The gas fee sponsored for the allowance setup transaction is limited. 
+        
+        For BSC chain, it is capped at $0.05. If gas fees are high at the time of allowance setup, then the allowance setup transaction may fail if the user does not have tokens to pay for the gas fee.
 
 ??? an-faq "Does the {{config.extra.arcana.company_name}} CA wallet allow any CA transactions?"
 

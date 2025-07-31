@@ -10,7 +10,7 @@ arcana:
 
 Learn to use the {{config.extra.arcana.wallet_name}} UI to export private key.
 
-!!! an-caution "Security Risk"
+!!! an-warning "Security Risk"
 
       Exporting a private key from {{config.extra.arcana.wallet_name}} exposes your keys. Do not share them. Ensure no one can see or screenshot your private key during export.
 

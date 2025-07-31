@@ -1,4 +1,4 @@
-!!! an-caution "AuthProvider: `appMode` and `alwaysVisible` flags"
+!!! an-warning "AuthProvider: `appMode` and `alwaysVisible` flags"
 
       Developers can control the wallet UI mode and when the wallet UI is displayed in the app context through the following customizations:
 

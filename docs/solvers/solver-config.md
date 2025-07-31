@@ -109,7 +109,7 @@ Click appropriate dropdown below to see detailed instructions.
 
     3. Use `docker compose up` to bring up the Arcana Solver service inside a docker container.
 
-        !!! an-caution
+        !!! an-warning "Image Path"
 
                 Update the image path in the `docker compose` file for the `image` tag: `ca-solver`. This path depends upon whether you are accessing it locally from an installed binary or via an image published via a registry. ([Docker Hub](https://hub.docker.com/) / [GithHub Container Registry](https://codefresh.io/docs/docs/integrations/docker-registries/github-container-registry/) (GHCR) )
 

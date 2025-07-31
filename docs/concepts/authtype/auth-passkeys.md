@@ -23,8 +23,8 @@ The Passkeys Auth feature in the {{config.extra.arcana.sdk_name}} lets Web3 apps
 graph LR
   A\[[User]]--Create Passkey--> D(Public/Private Key)--Store-->C>Browser/User Device];
 
-classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
-class C,D an-pink
+classDef an-highlight stroke:#3169b3,stroke-width:0.25rem; 
+class C,D an-highlight
 ```
 
 ## Security & Privacy
@@ -70,8 +70,8 @@ graph LR
   U --Store Public Key--> K
   U --2.Login with Passkey--> K --> L((User Authenticated));
 
-  classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
-  class L an-pink
+  classDef an-highlight stroke:#3169b3,stroke-width:0.25rem; 
+  class L an-highlight
 ```
 
 For subsequent app logins, the browser or operating system will prompt the user to select and use one of the passkeys linked with the app. To validate and ensure that the rightful owner uses a passkey, the operating system may ask users to unlock their device before supplying the passkey for authentication.
@@ -90,8 +90,8 @@ graph LR
   U--Store Public Key-->K
   U--3.Login with Passkey-->K-->L((User Authenticated));
 
-  classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
-  class L an-pink
+  classDef an-highlight stroke:#3169b3,stroke-width:0.25rem; 
+  class L an-highlight
 ```
 
 After setting up passkey for an account, on the subsequent log in attempt to the website or app, passkeys can be used. When signing in via passkeys, the browser or operating system will prompt the user to select one of the passkey associated with the app or website. To validate and ensure that the rightful owner uses a passkey, the operating system may ask users to unlock their device before supplying the passkeys list to choose from.
@@ -109,8 +109,8 @@ After setting up passkey for an account, on the subsequent log in attempt to the
             SP1[1.Register App] --> CLID((Unique ClientID))
             SP2[2.Configure App] --> SP3[Edit/Save Passkey Usage Settings]
         end
-        classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
-        class CLID an-pink
+        classDef an-highlight stroke:#3169b3,stroke-width:0.25rem; 
+        class CLID an-highlight
 
     ```
 2. Install {{config.extra.arcana.sdk_name}}, integrate it with your app, and initialize `AuthProvide`r. Choose the passkey onboarding option that fits your needs: use `registerWithPasskey()` for [[concept-auth-passkeys#sign-up-login|sign-up with passkey]] option or `linkPasskey()` for using passkey as an [[concept-auth-passkeys#alternate-login|alternate login]]. Then, log in users with   `loginWithPasskeys()`.
@@ -129,7 +129,7 @@ After setting up passkey for an account, on the subsequent log in attempt to the
                 SDK1[AuthProvider Interface] 
             end
         end
-        linkStyle 1,2 stroke: deeppink;
+        linkStyle 1,2 stroke: #3169b3;
         authsdk --Process Passkeys Login --> STD[Standard Passkey Validation via OS/Browser]
         authsdk --Fetch Key Shares --> BEP[{{config.extra.arcana.company_name}} Auth Protocol] <--> BEK[DKG]
     ```

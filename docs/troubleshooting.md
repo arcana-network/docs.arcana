@@ -235,7 +235,7 @@ export default defineConfig({
 })
 ```
 
-!!! an-caution
+!!! an-warning
 
     The vite configuration example above demonstrates a generic configuration that covers all libraries. You need to specify only the ones that are referred to by your application.
 

@@ -10,12 +10,9 @@ timetoread: False
 
 # Support
 
-???+ an-abstract "Try Arcabot!"
-
-       *Get instant answers to your Arcana related queries and tips to explore related topics.*
+???+ an-abstract "Did you try Arcabot?"
        
-       Click on the 'Arcabot' icon at the bottom right of this page* and start a conversation 💬.
-       
+     Click the icon at the bottom right of this page, *state your question* and get instant response from **Arcabot**.
 
 ## Contact Us
 
