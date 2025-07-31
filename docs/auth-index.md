@@ -1,7 +1,7 @@
 ---
 alias: index-docs
 template: auth-style.html
-title: 'Social Login'
+title: 'Auth: Social Login for Web3'
 description: 'Fast, secure social login to enable Web3 app blockchain transactions.'
 arcana:
   root_rel_path: .
@@ -10,7 +10,7 @@ hide:
     - toc
 ---
 
-# Web3 Made Effortless
+# Auth: Social Login for Web3
 
 <!---
 
