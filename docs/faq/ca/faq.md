@@ -61,8 +61,6 @@ search:
     If multiple chains have the same balance, the one with lower gas price will be picked up to source the tokens.
 
     The protocol selects the first chain in the sorted list. If its balance isn’t enough to cover the transaction amount and gas on the destination chain, it automatically uses the next chain(s) as needed.
-    
-    
 
 ## CA SDK
 
