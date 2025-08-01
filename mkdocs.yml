@@ -1,4 +1,4 @@
-site_name: '📖 Documentation'
+site_name: 'Documentation'
 
 # For dev
 site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
@@ -57,12 +57,16 @@ theme:
     # Auto Mode
     - media: "(prefers-color-scheme)"
       scheme: auto
+      primary: white
+      accent: yellow
       toggle: 
         icon: material/brightness-auto
         name: Switch to Light Mode
     # Light Mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: white
+      accent: yellow
       toggle: 
         icon: material/brightness-7
         name: Switch to Dark Mode
@@ -213,12 +217,12 @@ plugins:
       max_length: 160
   - social:
       enabled: !ENV [SOCIAL_CARDS_META, true]
-      cards: !ENV [SOCIAL_CARDS_META, false]
-      cards_layout_options:
+      cards: !ENV [SOCIAL_CARDS_META, true]
+      cards_layout_options: # works for sponsors only
         font_family: Inter
-        #background_color: "#0D0D0E"  #sponsors only
-        #color: "#FFFFFF" #sponsors only
-        #background_image: img/social_card_image.png #sponsors only
+        background_color: "#0D0D0E"  #works for sponsors only
+        color: "#FFFFFF" #works for sponsors only
+        background_image: img/social_card_image.png #works for sponsors only
   - git-authors:
       show_email_address: false
   - git-revision-date-localized:

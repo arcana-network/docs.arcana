@@ -1,8 +1,8 @@
 ---
 alias: ca-index-docs
 template: ca-style.html
-title: 'Unify Balance'
-description: 'Get Unified balance to spend on any chain in Web3 apps with Arcana Network Chain Abstraction.'
+title: 'CA: Unify Balance Across Chains'
+description: 'Use Arcana Chain Abstraction (CA) to enable Unified balance and spend on any chain in Web3 apps.'
 arcana:
   root_rel_path: .
 timetoread: False
@@ -10,7 +10,7 @@ hide:
     - toc
 ---
 
-# Unify Balance Across Chains
+# CA: Unify Balance Across Chains
 
 === "Web3 Developers"
 
