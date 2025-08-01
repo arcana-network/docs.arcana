@@ -560,6 +560,7 @@ nav:
       - Concepts: 
         - Chain Abstraction: concepts/ca/chain-abstraction.md
         - Unified Balance: concepts/ca/unified-balance.md
+        - Cross-Chain Swap (XCS): concepts/ca/unified-xcs-balance.md
         - Allowances: concepts/ca/allowances.md
         - Intent: concepts/ca/intent.md
         - Intent Explorer: concepts/ca/intent-explorer.md

@@ -9,3 +9,7 @@ arcana:
 # Chain Abstraction
 
 {% include "./text-snippets/ca/what_is_ca.md" %}
+
+## Cross-Chain Chain Abstraction (CCA)
+
+{% include "./text-snippets/ca/cross_chain.md" %}
